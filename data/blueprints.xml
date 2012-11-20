@@ -3857,7 +3857,7 @@
 
 
 <!--OTHER IDEAS -- 
-<augBlueprint name="PERSONAL_TELEPORTER">            requires a teleporter system to be working???
+<augBlueprint name="PERSONAL_TELEPORTER">
 	<title>Personal Teleporters</title>
 	<desc>Crew on an enemy ship that is jumping or being destroyed will be automatically recalled.</desc>
 	<cost>150</cost>
@@ -3893,7 +3893,7 @@
 	
 <augBlueprint name="INTERNAL_AI">
 	<title>Improved Internal AI</title>
-	<desc>Your interior drones (repair and battle) are 20 percent more effective.</desc>    maybe they just move at normal human speed
+	<desc>Your interior drones (repair and battle) are 20 percent more effective.</desc>
 	<cost>100</cost>
 	<rarity>3</rarity>
 	<value>0.2</value>

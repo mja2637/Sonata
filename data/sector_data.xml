@@ -58,7 +58,7 @@ STRUCTURE SECTORS
 		<track>milkyway</track>
 	</trackList>
 	<startEvent>START_BEACON</startEvent>
-	<event name="STORE" min="1" max="2"/>
+	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
 	<event name="NOTHING" min="1" max="2"/>
@@ -86,19 +86,9 @@ STRUCTURE SECTORS
 	<event name="BOSS_NEUTRAL" min="7" max="10"/>
 </sectorDescription>
 
-
-
-
-
-
-
-
-
 <!-- --------------------
 CIVILIAN SECTORS
  ----------------------->
-
-
 <sectorDescription name="CIVILIAN_SECTOR" minSector="0" unique="false"> 
 	<nameList>
 		<name>Civilian Sector</name>
@@ -619,60 +609,3 @@ HIDDEN SECTORS
 	
 	
 </sectorDescrption>
-
-
-
-
-
-<!-- Old name lists
-
-
-		<name>Federation Sector B53</name>
-		<name>Federation Sector C21</name>
-		<name>Former Republic of Gilead</name>
-		
-		<name>New Colonies of Qarth</name>
-		<name>Varlian DMZ</name>
-		<name>The United Talrasi Planets</name>
-		<name>Planets of Lodor</name>
-		<name>Colonies of Marlith</name>
-		<name>The Remskar Colonies</name>
-		<name>Tasador 8</name>
-		<name>Local Trade Sector 51-A2</name>
-		<name>Local Trade Sector 21-F3</name>
-		<name>Local Trade Sector 125-S1</name>
-		<name>Local Trade Sector 42-MX</name>
-
-		<name>Quarantine Zone 13C</name>
-		<name>Quarantine Zone 45A</name>
-		<name>Hergarth Protectorate - Pirate Warning!</name>
-		<name>The Lawless Zone - Pirate Warning!</name>
-		<name>Freedom's End - Pirate Warning!</name>
-		<name>Parth Mining Colonies - Pirate Warning!</name>
-		
-		<name>Rebel Forward Base Omega</name>
-		<name>Rebel Forward Base Sigma</name>
-		<name>The Liberated Front - Rebel Controlled!</name>
-		<name>Or'Arst Protectorate - Rebel Controlled!</name>
-		<name>Yarin IV - Rebel Controlled!</name>
-		
-		<name>Kirrakthas - Mantis Prime</name>
-		
-		<name>Perasian Nebula</name>
-		<name>Erkarth Nebula</name>
-		<name>Nebula of Teras</name>
-		<name>Yis'ver Nebula</name>
-		<name>Ceris Nebula</name>
-		<name>Persey Nebula</name>	
-		<name>Uncharted Nebula 3.45</name>
-		<name>Uncharted Nebula 6.567</name>
-		<name>Uncharted Nebula 52.4.2</name>
-
-		<name>Uncharted Sector 42.53</name>
-		<name>Uncharted Sector 12.425.2</name>
-		<name>Uncharted Sector 51.26</name>
-		<name>Uncharted Sector 2.XM.42</name>
-		<name>Uncharted Sector Omega 42</name>
-		<name>Uncharted Sector 21.56</name>
-
-		<name>Vector 253.1 - Engi Home Sector</name>-->
