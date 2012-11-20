@@ -2915,35 +2915,35 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 
 
 <event name="DONOR_MANTIS_CHASE" unique="true">
-	<text>You are immediately hailed by an impressive looking Mantis ship, "Your ship would make a mighty fine prize. Prepare for battle!"</text>
+	<text>You are immediately hailed by an impressive looking Mantis ship, "We like this ship very much, very much indeed...oh, but we must first exterminate the vermin manning it!"</text>
 	<ship load="DONOR_MANTIS_CHASE1" hostile="true"/>
 </event>
 <ship name="DONOR_MANTIS_CHASE1" auto_blueprint="MANTIS_FIGHTER">
 	<escape timer="5" min="5" max="5">
-		<text>You pick up more chatter from the enemy ship, "You know what... Forget this. Prepare for retreat!" Looks like they're preparing to make a hasty get away!</text>
+		<text>You pick up more chatter from the enemy ship, "Our complements to your spacemanship, vermin...consider this your lucky day." Looks like they're preparing to make a hasty get away!</text>
 	</escape>
 	<gotaway>
-		<text>The ship made an emergency FTL jump, but it looks like they didn't mask their signatures. You could easily follow them if you want.</text>
+		<text>The ship hastily engaged string drive and jumped away, but it looks like they didn't mask their jump signature. Amateurs. You could easily track them if you want.</text>
 		<choice hidden="true">
-			<text>After them!</text>
+			<text>"Number 1, route maximum safe thrust to warp drive. Engage."</text>
 			<event>
-				<text>You input their coordinates into your map and prepare to follow.</text>
+				<text>Your navigator enters their signature into your navigational algorithm and initiates the jump.</text>
 				<quest event="DONOR_MANTIS_CHASE2"/>
 			</event>
 		</choice>
 		<choice hidden="true">
-			<text>Forget it.</text>
+			<text>"These amateurs aren't worth our fuel."</text>
 			<event>
-				<text>They're not worth the trouble. You prepare to leave.</text>
+				<text>Smug in your professional superiority, you prepare to leave.</text>
 			</event>
 		</choice>
 	</gotaway>
 	<destroyed>
-		<text>Their ship breaks apart and you move in to scrap the remains.</text>
+		<text>Although you intended merely to teach their ship a lesson, their damage control parties are unable to keep up with your ceaseless barrage. One of your shots finds their reactor core, and their ship is blown to bits.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>With no more crew on board you are free to salvage what you can from the remains.</text>
+		<text>Their guns fall silent for want of men to man them. After a thorough scan, you notify boarding parties to initiate salvage operations.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
 </ship>
@@ -2953,37 +2953,37 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text>"Not YOU again! Do you know how much these repairs are going to cost me? Time to take out the big guns."</text>
+			<text>"You should have left well enough alone, Mon Capitain...I do not think that even you can handle our cruiser's firepower."</text>
 		</event>
 	</choice>
 </event>
 <ship name="DONOR_MANTIS_CHASE2" auto_blueprint="MANTIS_BOMBER">
 	<escape timer="12" min="6" max="6">
-		<text>They appear to be trying to get away again. You doubt they'll forget to mask their jump signature this time.</text>
+		<text>The Mantis captain's confidence must have been feigned; they appear to be trying to get away again. You doubt they'll forget to mask their jump signature this time.</text>
 	</escape>
 	<gotaway>
 		<text>Looks like they got away. At least you're able to scrap their abandoned fighter.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</gotaway>
 	<surrender  min="2" max="2">
-		<text>"Look you proved your point. We don't want to die... Take this and let us go. Please?"</text>
+		<text>"We would like to avail ourselves of your...professional courtesy, my Captain friend. Please, take this token of goodwill and leave us be."</text>
 		<choice>
 			<text>Let them live.</text>
-			<event>
-				<text>"Thank you. But do you have any idea how much repairing TWO ships will set us back?..." What an odd Mantis. You prepare to leave.</text>
+			<event>			
+				<text>"You have my thanks. This has been an enlightening - albeit expensive - endeavor." What an odd Mantis. You prepare to leave.</text>
 				<autoReward level="HIGH">weapon</autoReward>
 				<ship hostile="false"/>
 			</event>
 		</choice>
 		<choice>
-			<text>Finish them off.</text>
+			<text>Finish the arrogant bastards.</text>
 			<event>
-				<text>"No! Hurry up, get us out of here! They're crazy!" You cut transmissions.</text>
+				<text>"Mon dieu - get those lancers online, power to engines! Recalibrate shield nutation for-" You cut transmissions.</text>
 			</event>
 		</choice>
 	</surrender>
 	<destroyed>
-		<text>Their ship breaks apart and you salvage the two ships.</text>
+		<text>Their ship's hull integity fails and it breaks apart. You salvage the two ships.</text>
 		<weapon name="RANDOM"/>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
@@ -3000,13 +3000,13 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 	<choice>
 		<text>Continue...</text>
 		<event>
-			<text>A young Mantis in a charred uniform has teleported onto the deck. He begs for sanctuary from the Engi, and offers to serve in exchange for your protection. The Engi have already traced the teleporter signal and are offering a deal in exchange for the prisoner.</text>
+			<text>A young Mantis in a charred uniform has teleported onto the deck. Through your ship's universal translator, you hear him beg for sanctuary from the Engi, and he offers to serve in exchange for your protection. The Engi have already traced the teleporter signal and are offering a deal in exchange for the prisoner.</text>
 			<choice hidden="true">
-				<text>Side with the fugitive and fight the Engi ship.</text>
+				<text>"We have no quarrel with the Engi, but they don't have to know that we have him - tell them he was dead on arrival."</text>
 				<event load="ALISON_MANTIS_CREW_HELP"/>
 			</choice>
 			<choice hidden="true">
-				<text>Agree to offer up the Mantis in exchange for a bounty</text>
+				<text>"A Mantis pirate pleading for us to save him from one of our allies? Hail the Engi; they ought to be pleased."</text>
 				<event load="ALISON_MANTIS_CREW_REJECT"/>
 			</choice>
 		</event>
@@ -3019,23 +3019,23 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<ship load="ENGI_MANTIS_CONTROLLED" hostile="true"/>
 	</event>
 	<event>
-		<text>He expresses his thanks and prepares to help you fight his pursuer.</text>
+		<text>You have underestimated the power of the Engi ship's sensors; your new Mantis crewmember rushes to his station as alarms warn you that the Engi have powered their weapons.</text>
 		<ship load="ENGI_SHIP" hostile="true"/>
 		<crewMember amount="1" class="mantis"/>	
 	</event>
 </eventList>
 <eventList name="ALISON_MANTIS_CREW_REJECT">
 	<event>
-		<text>The Engi captain is delighted, and quickly arranges for the transfer of the prisoner.</text>
+		<text>The Engi captain hails you. "Thank you for respecting the Engi-Pilgrim extradition treaty; I hope our nations will maintain mutually beneficial relations for millenia to come." He transfers several tons of useful scrap, as well as a bottle of the very finest Transvine wine from Sophis.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Fury sparks in the eyes of the Mantis. He won't go easily, and causes serious damage before he can be captured.</text>
+		<text>The Mantis ululates a haunting warcry and launches himself at your navigator! Your crewman leaps out of the way, and the Mantis crashes through a computer bank. As alarm klaxons wail, your crew chief calmly levels his weapon and puts high-velocity slugs through each of the Mantis' three hearts.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<damage amount="5"/>
 	</event>
 	<event>
-		<text>The pursuing ship responds with a completely unintelligible message. The young Mantis jerks to attention and assumes a battle stance. It was a trap!</text>
+		<text>Your computers pick up an encrypted transmission from the pursuing ship; the Mantis leaps to attention and unsheathes his claws!</text>
 		<boarders min="1" max="1" class="mantis"/>
 		<ship load="ENGI_MANTIS_CONTROLLED" hostile="true"/>
 	</event>
@@ -3043,18 +3043,18 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 
 
 <event name="ALISON_DEFECTOR" unique="true">
-	<text>A Rebel ship is patrolling this beacon, and immediately turns to engage. As your crew scramble to battle readiness, sensors detect a short-range teleporter signal. An intruder is on board!</text>
+	<text>A loyalist ship is patrolling this beacon, and immediately turns to engage. As your crew sprint to battle stations, sensors detect a short-range teleporter signal. An intruder is on board!</text>
 	<ship load="REBEL" hostile="true"/>
 	<choice>
 		<text>Continue...</text>
 		<event>
-			<text>A flushed and panicky rebel soldier has teleported aboard. The rebel, who appears unarmed, repeatedly declares his peaceful intentions. It seems the rebel life has lost its charm.</text>
+			<text>"Don't shoot! Don't shoot! I come seeking amnesty!" You detect the twang of a Ceti VI accent; perhaps this soldier is telling the truth?</text>
 			<choice>
-				<text>Accept his proposal, and prepare to fight the Rebel ship.</text>
+				<text>"Get to your station, boy - we can discuss your terms after we deal with your comrades."</text>
 				<event load="ALISON_DEFECTOR_HELP"/>
 			</choice>
 			<choice>
-				<text>Reject his offer. You can never trust these Rebels.</text>
+				<text>"Take him to the brig - we can't trust these godless loyalists. Bring her about and prepare to engage."</text>
 				<event load="ALISON_DEFECTOR_REJECT"/>
 			</choice>
 		</event>
@@ -3062,20 +3062,20 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 </event>
 <eventList name="ALISON_DEFECTOR_REJECT">
 	<event>
-		<text>Your fearless crew easily overcome the intruder, but the Rebel ship still needs to be dealt with.</text>
+		<text>A member of your crew zipties the intruder and throws him into a storage closet. You'll have to figure out what to do with him later.</text>
 	</event>
 	<event>
-		<text>Attempting to deal with attacks from inside and out is never easy!</text>
+		<text>A crewmember attempts to restrain the intruder, but he manages to escape!</text>
 		<boarders min="1" max="1" class="human"/>
 	</event>
 	<event>
-		<text>He offers to lead you to a secret cache of scrap nearby if you let him join your crew</text>
+		<text>He offers to lead you to an unguarded Empire supply dump as proof of his intentions.</text>
 		<choice>
 			<text>Reluctantly accept his proposal and fight the Rebel ship</text>
 			<event load="ALISON_DEFECTOR_HELP_2"/>
 		</choice>
 		<choice>
-			<text>Reject him outright and execute him on the spot.</text>
+			<text>"The only good loyalist is a dead loyalist. Shoot him."</text>
 			<event/>
 		</choice>
 		<choice>
@@ -3088,7 +3088,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 </eventList>
 <eventList name="ALISON_DEFECTOR_HELP">
 	<event>
-		<text>The dishonorable Rebel has deceived you. He damages your ship and steals your flight data before teleporting away. The fleet will be able to track you with ease. If they can't kill you now that is!</text>
+		<text>The dishonorable loyalist has deceived you. He damages your ship and steals your flight data before teleporting away. The fleet will be able to track you with ease - if the nearby ship doesn't blow you apart!</text>
 		<damage amount="3"/>
 		<modifyPursuit amount="1"/>
 	</event>
@@ -3098,19 +3098,19 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<damage amount="3"/>
 	</event>
 	<event>
-		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
+		<text>Your new crew member's relief is palpable; he gets right to work as the loyalist ship attacks.</text>
 		<crewMember amount="1" class="human"/>	
 	</event>
 	<event>
-		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
+		<text>You can tell his has mixed feelings; he has betrayed his comrades to be loyal to his beliefs. You find his humanity reassuring; you feel that you can trust him.</text>
 		<crewMember amount="1" class="human"/>	
 	</event>
 	<event>
-		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
+		<text>"I'm from one of the moons orbiting Ceti VI - my family's Pilgrim through and through. I was deployed at the time; you have no IDEA how they treat people with connections to the resistance. Do you think they're still alive?"</text>
 		<crewMember amount="1" class="human"/>	
 	</event>
 	<event>
-		<text>The Rebel makes to take his assigned station, then suddenly turns and eviscerates the nearest crew-member. Red Alert!</text>
+		<text>The loyalist makes to take his assigned station, then puts a small pistol to the head of the nearest crew member and fires!</text>
 		<boarders min="1" max="1" class="human"/>
 		<crewMember amount="-1"/>
 	</event>
@@ -3118,7 +3118,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 
 <eventList name="ALISON_DEFECTOR_HELP_2">
 	<event>
-		<text>The dishonorable Rebel has deceived you. He damages your ship and steals ship information before teleporting away. The fleet will be able to track you with ease. If they can't kill you now, that is!</text>
+		<text>The dishonorable loyalist has deceived you. He damages your ship and steals your flight data before teleporting away. The fleet will be able to track you with ease - if the nearby ship doesn't blow you apart!</text>
 		<damage amount="3"/>
 		<modifyPursuit amount="1"/>
 	</event>
@@ -3128,22 +3128,22 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<damage amount="3"/>
 	</event>
 	<event>
-		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
-		<crewMember amount="1" class="human"/>
+		<text>Your new crew member's relief is palpable; he gets right to work as the loyalist ship attacks.</text>
+		<crewMember amount="1" class="human"/>	
 		<quest event="ALISON_DEFECTOR_QUEST"/>
 	</event>
 	<event>
-		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
+		<text>You can tell his has mixed feelings; he has betrayed his comrades to be loyal to his beliefs. You find his humanity reassuring; you feel that you can trust him.</text>
 		<crewMember amount="1" class="human"/>
+		<quest event="ALISON_DEFECTOR_QUEST"/>		
+	</event>
+	<event>
+		<text>"I'm from one of the moons orbiting Ceti VI - my family's Pilgrim through and through. I was deployed at the time; you have no IDEA how they treat people with connections to the resistance. Do you think they're still alive?"</text>
+		<crewMember amount="1" class="human"/>	
 		<quest event="ALISON_DEFECTOR_QUEST"/>
 	</event>
 	<event>
-		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
-		<crewMember amount="1" class="human"/>
-		<quest event="ALISON_DEFECTOR_QUEST"/>
-	</event>
-	<event>
-		<text>The Rebel makes to take his assigned station, then suddenly turns and eviscerates the nearest crew-member. Red Alert!</text>
+		<text>The loyalist makes to take his assigned station, then puts a small pistol to the head of the nearest crew member and fires!</text>
 		<boarders min="1" max="1" class="human"/>
 		<crewMember amount="-1"/>
 	</event>
@@ -3155,19 +3155,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<autoReward level="HIGH">stuff</autoReward>
 	</event>
 	<event>
-		<text>You arrive at location of the hoard, but discover that it was not quite as large as advertised.</text>
+		<text>You arrive at location of the hoard, but it has clearly been recently cleaned out. Looking at an abandoned utility pad, your new crewmember sobs. "Ceti VI...it's been taken. Orbital bombardment. My family, they were in the capital..." You hope he can channel his sadness into rage. Your fight is far from over.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
-
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
