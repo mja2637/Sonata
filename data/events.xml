@@ -153,27 +153,27 @@ item - scrap + that thing  -->
 </event>
 
 <event name="START_GAME">
-	<text>There have always those who could not bear the secular democracy of the United Empire. With cries of "Sic Semper Tyrannis" in an antique language, nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the "Pilgrims". The Empire's legislature interpreted this secession as treason, and the overwhelming might of the United Empire's fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, your family and friends have all joined the resistance - and so you shall. With nothing but your wits and a few like-minded friends, you acquire a ship and set out to find the Pilgrim fleet.</text>
+	<text>The data you carry is vital to the remaining Pilgrim fleet. You'll need supplies for the journey, so make sure to explore each sector before moving on to the next. But get to the exit before the pursuing loyalist fleet can catch up!</text>z
 </event>
 
 <!-- demo gameover text-->
 <textList name="GAMEOVER">
-	<text>While defiance still glimmers in the eye of the resistance, the last of the light in your eyes fades as your ship breaks apart.</text>
+	<text>The last hope of the resistance dies as your ship breaks apart.</text>
 </textList>
 
 <event name="TUTORIAL_START">
-	<text>We're going to have to make this quick - this is a loyalist sector, and I want to keep my day job.</text>
+	<text>Welcome to FTL! You are the captain of a Pilgrim starship on a very important mission.</text>
 	<choice>
 		<text>Continue...</text>
 		<event>
-			<text>As you're aware, the Pilgrims have seceded from the United Empire - which has voted to use military force to stop them. Personally, I'm not a fan of their quaint little religion - no offense, Captain - but what's the harm in letting them go?</text>			
+			<text>The Pilgrims are currently succeeding from the United Empire - which has voted to use military force to stop them. Your ship is carrying data vital to the defense of the Pilgrims.</text>
 			<choice>
 				<text>Continue...</text>
 				<event>
-					<text>You're going to want to find the main Pilgrim fleet - it's quite a long way from here. The United Empire is vast, and the whole thing is covered with ships, drones, and surveillance devices. You'll only have a few days time in each sector before they realize you're there. Things could get pretty hot if they do.</text>
+					<text>You will be traveling through dangerous sectors of the galaxy with the loyalist fleet in hot pursuit. Make it to the exit beacon of each sector before the United Empire can catch you.</text>
 				</event>
 				<choice>
-					<text>Got any advice for me?</text>
+					<text>Start Tutorial.</text>
 					<event/>
 				</choice>
 			</choice>
@@ -183,13 +183,13 @@ item - scrap + that thing  -->
 
 
 <event name = "TUTORIAL_ENEMY">
-	<text>Every new location will have an event like this. You might have multiple choices available to you at an event. Many of them involve blowing shit up. You Pilgrims obviously don't have a problem with that.</text>
+	<text>Every new location will have an event like this. You might have multiple choices available to you at an event. In this example, a weak pirate ship is trying to destroy you.</text>
 	<choice>
-		<text>Ok...</text>
+		<text>Continue...</text>
 		<event/>
 	</choice>
 	<choice req="sensors" lvl="1" hidden="true">
-		<text>Special BLUE choices like these are unlocked by having certain upgrades or equipment. They are nearly always a good choice. Except now. Now you are going to be attacked by a pirate.</text>
+		<text>Special BLUE choices like these are unlocked by having certain upgrades or equipment. They are nearly always a good choice.</text>
 		<event/>
 	</choice>
 	<ship load = "TUTORIAL_PIRATE" hostile="true"/>
@@ -197,18 +197,18 @@ item - scrap + that thing  -->
 
 <ship name="TUTORIAL_PIRATE" blueprint="TUTORIAL_PIRATE">
 	<destroyed>
-		<text>Well, that wasn't exactly a subtle approach. As salvage, you gain some scrap and a weapon.</text>
+		<text>You destroyed the pirate ship! As salvage, you gain some scrap and a weapon.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
-		<weapon name="UE_DRIVER_1"/>
+		<weapon name="BEAM_2"/>
 	</destroyed>
 	<deadCrew>
-		<text>Well done! You have managed to murder all of the pirates while keeping their ship intact - which usually leads to better loot. You scrap the ship and discover a weapon.</text>
+		<text>You killed all of the pirates! You scrap the ship and discover a weapon.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
-		<weapon name="UE_DRIVER_1"/>
+		<weapon name="BEAM_2"/>
 	</deadCrew>
 </ship>
 
@@ -251,19 +251,26 @@ item - scrap + that thing  -->
 
 <event name = "FLEET_EASY">
 	<fleet>rebel</fleet>
-	<text>Fleet screening vessels have found you and are turning to engage! You have mere minutes to destroy them and jump away - their cruisers aren't far behind!</text>
+	<text>The United Empire fleet has found you, and a nearby scout turns to engage. You must flee before their cruisers open fire!</text>
 	<ship load = "LONG_FLEET" hostile ="true"/>
 </event>
 
+<!--
+<event name = "FLEET_EASY_AGAIN">
+	<fleet>rebel</fleet>
+	<text>Another ship approaches, the reinforcements seem endless!  You must jump away!</text>
+	<ship load = "LONG_FLEET" hostile ="true"/>
+</event>  -->
+
 <event name = "FLEET_EASY_BEACON">
 	<fleet>rebel</fleet>
-	<text>They've been waiting for you. You jump into the middle of a small United Empire fleet! Staying here is certain death - you must survive until your drive charges. You have 8 minutes.</text>
+	<text>You've found the exit beacon but the Empire got here first! You must survive long enough to be able to jump to the next sector.</text>
 	<ship load="LONG_FLEET" hostile ="true"/>
 </event>
 
 <event name = "FLEET_HARD">
 	<fleet>rebel</fleet>
-	<text>Fleet screening vessels have found you and are turning to engage! The main fleet is close behind, and your shields cannot repel firepower of that magnitude. Defeat the loyalist screen and jump away!</text>
+	<text>The loyalist fleet has found you, and a nearby scout turns to engage. You must flee before their cruisers open fire!</text>
 	<ship load = "LONG_FLEET" hostile ="true"/>
 </event>
 
@@ -281,7 +288,6 @@ item - scrap + that thing  -->
 	<text planet="PLANET_POPULATED_SMALL">The nearby planet shows sign of habitation and great beauty. A rudimentary automated planetary defense system is looping its message into space: "Warning! Quarantine Level 5 in effect under FHA Act 22, article 11.2. Warning! Quarantine Level 5 ..."</text>
 	<text planet="NONE">Your jump leads to a completely unremarkable binary star system. There is nothing else around.</text>
 	<text planet="NONE">Your jump leads to a remarkable binary star system. The view is beautiful, but there is nothing else around.</text>
-	<text planet="NONE">Space, the final frontier. In an Endless galaxy full of asses, these are the voyages of a starship destined to kick them all.</text>
 </textList>
 
 
@@ -290,6 +296,12 @@ item - scrap + that thing  -->
 					HOSTILE EVENTS
 		*********************************************
 -->
+
+
+
+
+
+
 
 <!--      **********************************************
 						NEUTRAL EVENTS
@@ -369,7 +381,7 @@ item - scrap + that thing  -->
 	<choice>
 		<text>Fight the ship.</text>
 		<event>
-			<text>Mercenaries don't care who they fight - why should you? You could use some spare scrap; you signal your crew to charge weapons.</text>
+			<text>Mercenaries are worse than loyalists. The only honorable course is to engage the mercenary in battle.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
@@ -380,42 +392,42 @@ item - scrap + that thing  -->
 </event>
 <textList name="MERCENARY">
 	<text>You find a mercenary for hire at this Beacon. Their unique skills can sometimes prove to be useful.</text>
-	<text>A mercenary hails you: "We're no friends of the United Empire. I think we could help each other."</text>
-	<text planet="PLANET_POPULATED">There's a ship with pirate markings orbiting the nearby planet. You receive his hail: "It looks like the Empire is hunting us both. Got some spare scrap? I'm sure we can help each other out."</text>
-	<text>The captain of this ship claims he can provide "services" as long as you've got the scrap. You're not sure whether "services" means drugs, sex, or violence - but you ARE sure that you don't care.</text>
-	<text>Mercenaries are swarming the galaxy now, knowing that their less-than-legal services can command a premium during a civil war. One is waiting at this beacon and hails you.</text>
-	<text>A ship with colonial markings hails you: "Hello, sahib! It seems you're having some troubles with the loyalists. I'd like nothing better than to help a man of means such as yourself... maybe we can come to an arrangement?"</text>
+	<text>A mercenary hails you: "Greetings, friend! We've heard tell of your quest and are here to offer our valuable services."</text>
+	<text planet="PLANET_POPULATED">There's a ship with pirate markings orbiting the nearby planet. You receive his hail: "Anything is possible, for the right price"</text>
+	<text>The captain of this ship claims he can provide "services" as long as you've got the scrap.</text>
+	<text>Mercenaries are swarming the galaxy now, knowing that their less-than-legal services are in demand during this period of unrest. One is waiting at this beacon and hails you.</text>
+	<text>A ship hails you: "Good, sir! It seems you're having some troubles with the loyalists. I'd like to help you, but I can't afford the upkeep required on this hunk of junk I'm flying... maybe we can come to an arrangement?"</text>
 </textList>
 
 
 
 <event name="PIRATE_STATION_CROPS" unique="true">
-	<text>Scans show a remote settlement being blockaded by a mercenary ship. The ship hastily messages you, "Stay out of this, or you'll be next!...Shift fire to sector..."</text>
+	<text>Scans show a remote settlement being blockaded by a pirate ship. The ship hastily messages you, "Stay out of this, or you'll be next!...Concentrate fire on..."</text>
 	<ship load="PIRATE_STATION_CROPS" hostile="false"/>
 	<choice hidden="true">
-		<text>Attack the mercenary.</text>
+		<text>Attack the pirate.</text>
 		<event>
-			<text>"Damnit, there's no such thing as a simple job!" They fire a parting shot at the planet and slew their ship to face you.</text>
+			<text>"You asked for it!" They pull away from the planet and move in to engage.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Ignore them.</text>
 		<event>
-			<text>Mercenaries or no, that's a loyalist settlement. You prepare to jump.</text>
+			<text>It's just not possible to save every civilian affected by this war. You prepare to jump.</text>
 		</event>
 	</choice>
 	<choice hidden="true" req="BEAM_FIRE">
 		<text>(Fire Beam) Show the pirate how to intimidate settlers: burn their crops!</text>
 		<event>
-			<text>The mercenary ship watches as you start to light the meager crops on fire. In a few moments the settlement surrenders, offering tribute to leave them alone. The mercenary seems impressed.</text>
+			<text>The pirate watches as you start to light the meager crops on fire. In a few moments the settlement surrenders, offering tribute to leave them alone. The pirate seems impressed.</text>
 			<autoReward level="HIGH">drone</autoReward>
 		</event>
 	</choice>		
 	<choice hidden="true" req="BOMB_FIRE">
-		<text>(Fire Bomb) Show the mercenary how to intimidate settlers: start fires in their crude dwellings</text>
+		<text>(Fire Bomb) Show the pirate how to intimidate settlers: start fires in their crude dwellings</text>
 		<event>
-			<text>The other ship watches as you teleport an incendiary explosive into their settlement. As the settlers scramble to put out the fires, their rudimentary planetary defenses power down. Forcing their surrender was almost laughably easy, but the merc seems impressed with your tactics and agrees to share the settlement's 'tribute'.</text>
+			<text>The pirate watches as you teleport an incendiary explosive into their settlement. As the settlers scramble to put out the fires, their rudimentary planetary defenses power down. Forcing their surrender was almost laughably easy, but the pirate seems impressed with your tactics and agrees to share the settlement's 'tribute'.</text>
 			<item_modify>
 				<item type="missiles" min="-1" max="-1"/>
 			</item_modify>
@@ -424,12 +436,12 @@ item - scrap + that thing  -->
 	</choice>
 </event>
 <event name="PIRATE_STATION_CROPS_RESULT">
-	<text>With the mercenaries gone you signal the station. "Not to be ungrateful, but if the Empire knows we've been dealing with the Pilgrims we'll have to handle worse than a mere mercenary. Sorry we can't give you more."</text>
+	<text>With the pirates gone you signal the station. "We appreciate what you've done, but there'll just be another ship looking to profit from our isolation soon enough. Sorry we can't give you more."</text>
 	<autoReward level="LOW">stuff</autoReward>
 </event>
 <ship name="PIRATE_STATION_CROPS" auto_blueprint="SHIPS_PIRATE"> 
 	<surrender  chance="0.5" min="2" max="4" >
-		<text>"Fine, we're done! This job ain't worth our necks."</text>
+		<text>"Alright! We give up! We're terrible at this pirating thing anyway..."</text>
 		<choice>
 			<text>Let them go.</text>
 			<event>
@@ -438,12 +450,12 @@ item - scrap + that thing  -->
 			</event>
 		</choice>
 		<choice>
-			<text>It is to you. Attack!</text>
+			<text>Piracy cannot be forgiven. Attack!</text>
 			<event/>
 		</choice>
 	</surrender>
 	<escape chance="0.5" min="3" max="4" >
-		<text>They reroute power from their weapons to their engines. They are trying to escape.</text>
+		<text>They look like they don't want to fight. They are trying to escape.</text>
 		<ship hostile="true"/>
 	</escape>
 	<gotaway load="PIRATE_STATION_CROPS_RESULT"/>
@@ -464,6 +476,13 @@ item - scrap + that thing  -->
 		</choice>
 	</deadCrew>
 </ship>
+
+
+
+
+
+
+
 
 <!-----------
 		DISTRESS!!!
@@ -508,12 +527,12 @@ item - scrap + that thing  -->
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>"Thank the Endless, we can finally get out of here! I'm glad we ran into Pilgrims out here - take this extra weapon. We won't need it, hopefully."</text>
+		<text>"Thank the Gods. We can finally get out of here!  We're jumping straight home so take this extra weapon. We won't need it, hopefully."</text>
 		<weapon name="RANDOM"/>
 	</event>
 </eventList>
 <textList name="FRIENDLY_BEACON">
-	<text>"Greetings! It is so good to see you! We've been out of fuel and floating out here for weeks. We were terrified a pirate or those damn loyalists would find us first. Could you spare some fuel?"</text>
+	<text>"Greetings! It is so good to see you! We've been out of fuel and floating out here for weeks. We were terrified a pirate or those damn Rebels would find us first. Could you spare some fuel?"</text>
 	<text>You arrive to find a ship floating among some debris. "Hello. Our impulse drives are shot and we can't jump. Could you give us some fuel?"</text>
 	<text>A small civilian ship flies over as soon as you arrive. You're prepared to fight but they just inform you that they're out of FTL fuel and can't jump.</text>
 	<text>"Hello. We used our last FTL fuel to jump to this station." They indicate a burnt out husk of debris and warped metal. "As you can see the war must have spread to this sector. We've been stranded ever since."</text>
@@ -556,7 +575,7 @@ item - scrap + that thing  -->
 	</event>
 </eventList>
 
-<!-- Do Ripley/Weyland-Yutani/Aliens storyline here -->
+
 <event name="STRANDED_BEACON" unique="true">
 	<text>It appears the distress beacon is coming from the surface of a nearby moon. Your sensors are picking up a single life form.</text>
 	<distressBeacon/>
@@ -666,7 +685,7 @@ item - scrap + that thing  -->
 </event>
 <textList name="TRAP_BEACON_TEXT">  <!-- JUSTIN - ADDED -->
 	<text>You arrive at the beacon and immediately detect a pirate ship. It seems this distress beacon was a trap!</text>
-	<text>"Haha, I'm glad you came! The Empire will pay handsomely for your deaths!" It appears this distress beacon was nothing but a decoy for a pirate ambush.</text>
+	<text>"Haha! I knew someone would fall into our dastardly trap!" It appears this distress beacon was nothing but a decoy for a pirate ambush.</text>
 	<text>Your cockpit lights up with warning signals. You are being targeted by a nearby ship. The distress call was a lure to attract unwitting ships into weapons range. You prepare for a fight.</text>
 	<text>As soon as you arrive at the distress signal, shots are fired toward your ship. A trap!.</text>
 </textList>
@@ -680,7 +699,7 @@ item - scrap + that thing  -->
 		<event load="CIVILIAN_ASTEROIDS_BEACON_LIST1"/>
 	</choice>
 	<choice>
-		<text>Foolishi yuppies. Leave them to their fate.</text>
+		<text>Don't risk our ship.  Leave them to their fate.</text>
 		<event load="CIVILIAN_ASTEROIDS_BEACON_LIST4"/>
 	</choice>
 	<choice req="DEFENSE" hidden="true">
@@ -794,25 +813,25 @@ item - scrap + that thing  -->
 	<choice>
 		<text>Aid the Pilgrim ship.</text>
 		<event>
-			<text>You power up your weapons and engage the Empire ship.</text>
+			<text>You power up your weapons and engage the Rebel ship.</text>
 			<ship load="REBEL_VS_FEDERATION" hostile="true"/>
 		</event>
 	</choice>
 	<choice>
 		<text>Use this chance to escape.</text>
 		<event>
-			<text>The loyalist's preoccupation with the Pilgrim ship allows you to slip away undetected.  However you can't help but feel you should have helped them.</text>
+			<text>The Rebel's preoccupation with the Pilgrim ship allows you to slip away undetected.  However you can't help but feel you should have helped them.</text>
 		</event>
 	</choice>
 </event>
 <textList name="REBEL_VS_FEDERATION">
-	<text>Upon arriving at this beacon, you detect a distress call.  Local scans reveal that a Pilgrim transport is under attack from a loyalist scout!</text>
-	<text>You immediately notice a United Earth ship chasing what appears to be a civilian transport.  However you are detecting chatter on an encrypted resistance channel...That transport is carrying Pilgrims!</text>
-	<text>Your sensors are picking up a distress call on an encrypted Pilgrim channel.  You eventually find a Pilgrim scout being chased by a loyalist fighter!</text>
+	<text>Upon arriving at this beacon, you detect a distress call.  Local scans reveal that a Pilgrim transport is under attack from a Rebel scout!</text>
+	<text>You immediately notice a Rebel ship chasing what appears to be a civilian transport.  However you are detecting chatter on an encrypted Pilgrim channel... That transport is carrying Pilgrim loyalists!</text>
+	<text>Your sensors are picking up a distress call on an encrypted Pilgrim channel.  You eventually find a Pilgrim scout being chased by a Rebel fighter!</text>
 </textList>
 <eventList name="REBEL_VS_FEDERATION_SAVED_LIST">  <!-- What happens once you save the Pilgrim ship from the rebel -->
 	<event>
-		<text>"Thank you for saving us.  This ship is transporting Pilgrim civilians on the run from the United Empire and we don't have the equipment to fight for ourselves.  I don't have much to offer, but I can inform you of a hidden Pilgrim base nearby.  Perhaps they can assist you more."</text>
+		<text>"Thank you for saving us.  This ship is transporting Pilgrim civilians on the run from the United Earth and we don't have the equipment to fight for ourselves.  I don't have much to offer, but I can inform you of a hidden Pilgrim base nearby.  Perhaps they can assist you more."</text>
 		<quest event="HIDDEN_FEDERATION_BASE_LIST"/>
 	</event>
 	<event>
@@ -844,7 +863,7 @@ item - scrap + that thing  -->
 		</choice>
 	</event>
 	<event>
-		<text>"Thanks, we didn't think there would be loyalist ships all the way out here.  They seem to be searching for something.  Take some extra supplies as thanks for your aid."</text>
+		<text>"Thanks, we didn't think there would be Rebel ships all the way out here.  They seem to be searching for something.  Take some extra supplies as thanks for your aid."</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
 </eventList>
@@ -901,7 +920,6 @@ item - scrap + that thing  -->
 	</event>
 </eventList>	
 	
-<!-- The Thing? Zombies? NAZI Zombies!? -->
 <event name="DISTRESS_INFESTATION" unique="true">
 	<text>You find a number of ships fleeing from a small space station. You hail them, asking what's wrong: "Help! We're being overrun by some sort of giant alien spiders!"</text>
 	<distressBeacon/>
@@ -910,9 +928,9 @@ item - scrap + that thing  -->
 		<event load="DISTRESS_INFESTATION_LIST"/>
 	</choice>
 	<choice hidden="true">
-		<text>"Nuke the whole place from orbit. It's the only way to be sure."</text>
+		<text>Leave them alone.</text>
 		<event>
-			<text>The...infection...had to be stopped. The lives you just ended will probably cost you some sleep; stoically, you prepare to jump.</text>
+			<text>You can't risk fighting some unknown alien on every backwater station you come across. You prepare to jump.</text>
 		</event>
 	</choice>
 	<choice hidden="true" req="BATTLE">
@@ -1075,8 +1093,6 @@ item - scrap + that thing  -->
 	</event>
 </eventList>
 
-<!-- No, THIS one is zombies. -->
-<!-- Seriously. We are going to ZOMBIE it the FUCK up. -->
 <event name="DISTRESS_STATION_DISEASE" unique="true">
 	<distressBeacon/>
 	<text>You locate the source of the distress call, a nearby human mining colony. An unknown disease has spread virulently among the workers. They are trying to set up a quarantine to mitigate the spread of the disease but lack any enforcement and a riot seems likely.</text>
@@ -1293,13 +1309,13 @@ item - scrap + that thing  -->
 
 <event name="AUTO_ASTEROID">
 	<img back="BG_DARK" planet="NONE"/>
-	<text>You arrive in an asteroid belt to discover that an Empire unmanned space vehicle has been stationed here. Prepare for a fight!</text>
+	<text>You arrive in an asteroid belt to discover that a Rebel automated-scout has been stationed here. Prepare for a fight!</text>
 	<ship load="REBEL_AUTO" hostile="true"/>
 	<environment type="asteroid"/>
 </event>
 
 <event name="AUTO_SUN" unique = "true">
-	<text>You arrive at the beacon to find yourself dangerously close to a star. An unmanned space vehicle, impervious to the heat, moves in to engage.</text>
+	<text>You arrive at the beacon to find yourself dangerously close to a star. An automated Rebel ship, impervious to the heat, moves in to engage.</text>
 	<ship load="REBEL_AUTO" hostile="true"/>
 	<environment type="sun"/>
 </event>
@@ -2899,35 +2915,35 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 
 
 <event name="DONOR_MANTIS_CHASE" unique="true">
-	<text>You are immediately hailed by an impressive looking Mantis ship, "We like this ship very much, very much indeed...oh, but we must first exterminate the vermin manning it!"</text>
+	<text>You are immediately hailed by an impressive looking Mantis ship, "Your ship would make a mighty fine prize. Prepare for battle!"</text>
 	<ship load="DONOR_MANTIS_CHASE1" hostile="true"/>
 </event>
 <ship name="DONOR_MANTIS_CHASE1" auto_blueprint="MANTIS_FIGHTER">
 	<escape timer="5" min="5" max="5">
-		<text>You pick up more chatter from the enemy ship, "Our complements to your spacemanship, vermin...consider this your lucky day." Looks like they're preparing to make a hasty get away!</text>
+		<text>You pick up more chatter from the enemy ship, "You know what... Forget this. Prepare for retreat!" Looks like they're preparing to make a hasty get away!</text>
 	</escape>
 	<gotaway>
-		<text>The ship hastily engaged string drive and jumped away, but it looks like they didn't mask their jump signature. Amateurs. You could easily track them if you want.</text>
+		<text>The ship made an emergency FTL jump, but it looks like they didn't mask their signatures. You could easily follow them if you want.</text>
 		<choice hidden="true">
-			<text>"Number 1, route maximum safe thrust to warp drive. Engage."</text>
+			<text>After them!</text>
 			<event>
-				<text>Your navigator enters their signature into your navigational algorithm and initiates the jump.</text>
+				<text>You input their coordinates into your map and prepare to follow.</text>
 				<quest event="DONOR_MANTIS_CHASE2"/>
 			</event>
 		</choice>
 		<choice hidden="true">
-			<text>"These amateurs aren't worth our fuel."</text>
+			<text>Forget it.</text>
 			<event>
-				<text>Smug in your professional superiority, you prepare to leave.</text>
+				<text>They're not worth the trouble. You prepare to leave.</text>
 			</event>
 		</choice>
 	</gotaway>
 	<destroyed>
-		<text>Although you intended merely to teach their ship a lesson, their damage control parties are unable to keep up with your ceaseless barrage. One of your shots finds their reactor core, and their ship is blown to bits.</text>
+		<text>Their ship breaks apart and you move in to scrap the remains.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>Their guns fall silent for want of men to man them. After a thorough scan, you notify boarding parties to initiate salvage operations.</text>
+		<text>With no more crew on board you are free to salvage what you can from the remains.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
 </ship>
@@ -2937,37 +2953,37 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text>"You should have left well enough alone, Mon Capitain...I do not think that even you can handle our cruiser's firepower."</text>
+			<text>"Not YOU again! Do you know how much these repairs are going to cost me? Time to take out the big guns."</text>
 		</event>
 	</choice>
 </event>
 <ship name="DONOR_MANTIS_CHASE2" auto_blueprint="MANTIS_BOMBER">
 	<escape timer="12" min="6" max="6">
-		<text>The Mantis captain's confidence must have been feigned; they appear to be trying to get away again. You doubt they'll forget to mask their jump signature this time.</text>
+		<text>They appear to be trying to get away again. You doubt they'll forget to mask their jump signature this time.</text>
 	</escape>
 	<gotaway>
 		<text>Looks like they got away. At least you're able to scrap their abandoned fighter.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</gotaway>
 	<surrender  min="2" max="2">
-		<text>"We would like to avail ourselves of your...professional courtesy, my Captain friend. Please, take this token of goodwill and leave us be."</text>
+		<text>"Look you proved your point. We don't want to die... Take this and let us go. Please?"</text>
 		<choice>
 			<text>Let them live.</text>
-			<event>			
-				<text>"You have my thanks. This has been an enlightening - albeit expensive - endeavor." What an odd Mantis. You prepare to leave.</text>
+			<event>
+				<text>"Thank you. But do you have any idea how much repairing TWO ships will set us back?..." What an odd Mantis. You prepare to leave.</text>
 				<autoReward level="HIGH">weapon</autoReward>
 				<ship hostile="false"/>
 			</event>
 		</choice>
 		<choice>
-			<text>Finish the arrogant bastards.</text>
+			<text>Finish them off.</text>
 			<event>
-				<text>"Mon dieu - get those lancers online, power to engines! Recalibrate shield nutation for-" You cut transmissions.</text>
+				<text>"No! Hurry up, get us out of here! They're crazy!" You cut transmissions.</text>
 			</event>
 		</choice>
 	</surrender>
 	<destroyed>
-		<text>Their ship's hull integity fails and it breaks apart. You salvage the two ships.</text>
+		<text>Their ship breaks apart and you salvage the two ships.</text>
 		<weapon name="RANDOM"/>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
@@ -2984,13 +3000,13 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 	<choice>
 		<text>Continue...</text>
 		<event>
-			<text>A young Mantis in a charred uniform has teleported onto the deck. Through your ship's universal translator, you hear him beg for sanctuary from the Engi, and he offers to serve in exchange for your protection. The Engi have already traced the teleporter signal and are offering a deal in exchange for the prisoner.</text>
+			<text>A young Mantis in a charred uniform has teleported onto the deck. He begs for sanctuary from the Engi, and offers to serve in exchange for your protection. The Engi have already traced the teleporter signal and are offering a deal in exchange for the prisoner.</text>
 			<choice hidden="true">
-				<text>"We have no quarrel with the Engi, but they don't have to know that we have him - tell them he was dead on arrival."</text>
+				<text>Side with the fugitive and fight the Engi ship.</text>
 				<event load="ALISON_MANTIS_CREW_HELP"/>
 			</choice>
 			<choice hidden="true">
-				<text>"A Mantis pirate pleading for us to save him from one of our allies? Hail the Engi; they ought to be pleased."</text>
+				<text>Agree to offer up the Mantis in exchange for a bounty</text>
 				<event load="ALISON_MANTIS_CREW_REJECT"/>
 			</choice>
 		</event>
@@ -3003,23 +3019,23 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<ship load="ENGI_MANTIS_CONTROLLED" hostile="true"/>
 	</event>
 	<event>
-		<text>You have underestimated the power of the Engi ship's sensors; your new Mantis crewmember rushes to his station as alarms warn you that the Engi have powered their weapons.</text>
+		<text>He expresses his thanks and prepares to help you fight his pursuer.</text>
 		<ship load="ENGI_SHIP" hostile="true"/>
 		<crewMember amount="1" class="mantis"/>	
 	</event>
 </eventList>
 <eventList name="ALISON_MANTIS_CREW_REJECT">
 	<event>
-		<text>The Engi captain hails you. "Thank you for respecting the Engi-Pilgrim extradition treaty; I hope our nations will maintain mutually beneficial relations for millenia to come." He transfers several tons of useful scrap, as well as a bottle of the very finest Transvine wine from Sophis.</text>
+		<text>The Engi captain is delighted, and quickly arranges for the transfer of the prisoner.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>The Mantis ululates a haunting warcry and launches himself at your navigator! Your crewman leaps out of the way, and the Mantis crashes through a computer bank. As alarm klaxons wail, your crew chief calmly levels his weapon and puts high-velocity slugs through each of the Mantis' three hearts.</text>
+		<text>Fury sparks in the eyes of the Mantis. He won't go easily, and causes serious damage before he can be captured.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<damage amount="5"/>
 	</event>
 	<event>
-		<text>Your computers pick up an encrypted transmission from the pursuing ship; the Mantis leaps to attention and unsheathes his claws!</text>
+		<text>The pursuing ship responds with a completely unintelligible message. The young Mantis jerks to attention and assumes a battle stance. It was a trap!</text>
 		<boarders min="1" max="1" class="mantis"/>
 		<ship load="ENGI_MANTIS_CONTROLLED" hostile="true"/>
 	</event>
@@ -3027,18 +3043,18 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 
 
 <event name="ALISON_DEFECTOR" unique="true">
-	<text>A loyalist ship is patrolling this beacon, and immediately turns to engage. As your crew sprint to battle stations, sensors detect a short-range teleporter signal. An intruder is on board!</text>
+	<text>A Rebel ship is patrolling this beacon, and immediately turns to engage. As your crew scramble to battle readiness, sensors detect a short-range teleporter signal. An intruder is on board!</text>
 	<ship load="REBEL" hostile="true"/>
 	<choice>
 		<text>Continue...</text>
 		<event>
-			<text>"Don't shoot! Don't shoot! I come seeking amnesty!" You detect the twang of a Ceti VI accent; perhaps this soldier is telling the truth?</text>
+			<text>A flushed and panicky rebel soldier has teleported aboard. The rebel, who appears unarmed, repeatedly declares his peaceful intentions. It seems the rebel life has lost its charm.</text>
 			<choice>
-				<text>"Get to your station, boy - we can discuss your terms after we deal with your comrades."</text>
+				<text>Accept his proposal, and prepare to fight the Rebel ship.</text>
 				<event load="ALISON_DEFECTOR_HELP"/>
 			</choice>
 			<choice>
-				<text>"Take him to the brig - we can't trust these godless loyalists. Bring her about and prepare to engage."</text>
+				<text>Reject his offer. You can never trust these Rebels.</text>
 				<event load="ALISON_DEFECTOR_REJECT"/>
 			</choice>
 		</event>
@@ -3046,20 +3062,20 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 </event>
 <eventList name="ALISON_DEFECTOR_REJECT">
 	<event>
-		<text>A member of your crew zipties the intruder and throws him into a storage closet. You'll have to figure out what to do with him later.</text>
+		<text>Your fearless crew easily overcome the intruder, but the Rebel ship still needs to be dealt with.</text>
 	</event>
 	<event>
-		<text>A crewmember attempts to restrain the intruder, but he manages to escape!</text>
+		<text>Attempting to deal with attacks from inside and out is never easy!</text>
 		<boarders min="1" max="1" class="human"/>
 	</event>
 	<event>
-		<text>He offers to lead you to an unguarded Empire supply dump as proof of his intentions.</text>
+		<text>He offers to lead you to a secret cache of scrap nearby if you let him join your crew</text>
 		<choice>
 			<text>Reluctantly accept his proposal and fight the Rebel ship</text>
 			<event load="ALISON_DEFECTOR_HELP_2"/>
 		</choice>
 		<choice>
-			<text>"The only good loyalist is a dead loyalist. Shoot him."</text>
+			<text>Reject him outright and execute him on the spot.</text>
 			<event/>
 		</choice>
 		<choice>
@@ -3072,7 +3088,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 </eventList>
 <eventList name="ALISON_DEFECTOR_HELP">
 	<event>
-		<text>The dishonorable loyalist has deceived you. He damages your ship and steals your flight data before teleporting away. The fleet will be able to track you with ease - if the nearby ship doesn't blow you apart!</text>
+		<text>The dishonorable Rebel has deceived you. He damages your ship and steals your flight data before teleporting away. The fleet will be able to track you with ease. If they can't kill you now that is!</text>
 		<damage amount="3"/>
 		<modifyPursuit amount="1"/>
 	</event>
@@ -3082,19 +3098,19 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<damage amount="3"/>
 	</event>
 	<event>
-		<text>Your new crew member's relief is palpable; he gets right to work as the loyalist ship attacks.</text>
+		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
 		<crewMember amount="1" class="human"/>	
 	</event>
 	<event>
-		<text>You can tell his has mixed feelings; he has betrayed his comrades to be loyal to his beliefs. You find his humanity reassuring; you feel that you can trust him.</text>
+		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
 		<crewMember amount="1" class="human"/>	
 	</event>
 	<event>
-		<text>"I'm from one of the moons orbiting Ceti VI - my family's Pilgrim through and through. I was deployed at the time; you have no IDEA how they treat people with connections to the resistance. Do you think they're still alive?"</text>
+		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
 		<crewMember amount="1" class="human"/>	
 	</event>
 	<event>
-		<text>The loyalist makes to take his assigned station, then puts a small pistol to the head of the nearest crew member and fires!</text>
+		<text>The Rebel makes to take his assigned station, then suddenly turns and eviscerates the nearest crew-member. Red Alert!</text>
 		<boarders min="1" max="1" class="human"/>
 		<crewMember amount="-1"/>
 	</event>
@@ -3102,7 +3118,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 
 <eventList name="ALISON_DEFECTOR_HELP_2">
 	<event>
-		<text>The dishonorable loyalist has deceived you. He damages your ship and steals your flight data before teleporting away. The fleet will be able to track you with ease - if the nearby ship doesn't blow you apart!</text>
+		<text>The dishonorable Rebel has deceived you. He damages your ship and steals ship information before teleporting away. The fleet will be able to track you with ease. If they can't kill you now, that is!</text>
 		<damage amount="3"/>
 		<modifyPursuit amount="1"/>
 	</event>
@@ -3112,22 +3128,22 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<damage amount="3"/>
 	</event>
 	<event>
-		<text>Your new crew member's relief is palpable; he gets right to work as the loyalist ship attacks.</text>
-		<crewMember amount="1" class="human"/>	
-		<quest event="ALISON_DEFECTOR_QUEST"/>
-	</event>
-	<event>
-		<text>You can tell his has mixed feelings; he has betrayed his comrades to be loyal to his beliefs. You find his humanity reassuring; you feel that you can trust him.</text>
+		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
 		<crewMember amount="1" class="human"/>
-		<quest event="ALISON_DEFECTOR_QUEST"/>		
-	</event>
-	<event>
-		<text>"I'm from one of the moons orbiting Ceti VI - my family's Pilgrim through and through. I was deployed at the time; you have no IDEA how they treat people with connections to the resistance. Do you think they're still alive?"</text>
-		<crewMember amount="1" class="human"/>	
 		<quest event="ALISON_DEFECTOR_QUEST"/>
 	</event>
 	<event>
-		<text>The loyalist makes to take his assigned station, then puts a small pistol to the head of the nearest crew member and fires!</text>
+		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
+		<crewMember amount="1" class="human"/>
+		<quest event="ALISON_DEFECTOR_QUEST"/>
+	</event>
+	<event>
+		<text>Relieved and light-headed, your new crew member gets to work as the Rebel ship attacks.</text>
+		<crewMember amount="1" class="human"/>
+		<quest event="ALISON_DEFECTOR_QUEST"/>
+	</event>
+	<event>
+		<text>The Rebel makes to take his assigned station, then suddenly turns and eviscerates the nearest crew-member. Red Alert!</text>
 		<boarders min="1" max="1" class="human"/>
 		<crewMember amount="-1"/>
 	</event>
@@ -3139,7 +3155,19 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<autoReward level="HIGH">stuff</autoReward>
 	</event>
 	<event>
-		<text>You arrive at location of the hoard, but it has clearly been recently cleaned out. Looking at an abandoned utility pad, your new crewmember sobs. "Ceti VI...it's been taken. Orbital bombardment. My family, they were in the capital..." You hope he can channel his sadness into rage. Your fight is far from over.</text>
+		<text>You arrive at location of the hoard, but discover that it was not quite as large as advertised.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
