@@ -153,20 +153,20 @@ item - scrap + that thing  -->
 </event>
 
 <event name="START_GAME">
-	<text>The data you carry is vital to the remaining Pilgrim fleet. You'll need supplies for the journey, so make sure to explore each sector before moving on to the next. But get to the exit before the pursuing loyalist fleet can catch up!</text>z
+	<text>With cries of "Sic Semper Tyrannis", nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the "Pilgrims". The Empire's legislature interpreted this secession as treason, and the overwhelming might of the loyalist fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, your family and friends have all joined the resistance - and so you shall.</text>
 </event>
 
 <!-- demo gameover text-->
 <textList name="GAMEOVER">
-	<text>The last hope of the resistance dies as your ship breaks apart.</text>
+	<text>While defiance still glimmers in the eye of the resistance, the last of the light in your eyes fades as your ship breaks apart.</text>
 </textList>
 
 <event name="TUTORIAL_START">
-	<text>Welcome to FTL! You are the captain of a Pilgrim starship on a very important mission.</text>
+	<text>We're going to have to make this quick - this is a loyalist sector, and I want to keep my day job.</text>
 	<choice>
 		<text>Continue...</text>
 		<event>
-			<text>The Pilgrims are currently succeeding from the United Empire - which has voted to use military force to stop them. Your ship is carrying data vital to the defense of the Pilgrims.</text>
+			<text>As you're aware, the Pilgrims have seceded from the United Empire - which has voted to use military force to stop them. Personally, I'm not a fan of their quaint little religion - no offense, Captain - but what's the harm in letting them go?</text>			
 			<choice>
 				<text>Continue...</text>
 				<event>
@@ -201,14 +201,14 @@ item - scrap + that thing  -->
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
-		<weapon name="BEAM_2"/>
+		<weapon name="UE_DRIVER_1"/>
 	</destroyed>
 	<deadCrew>
 		<text>Well done! You have managed to murder all of the pirates while keeping their ship intact - which usually leads to better loot. You scrap the ship and discover a weapon.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
-		<weapon name="BEAM_2"/>
+		<weapon name="UE_DRIVER_1"/>
 	</deadCrew>
 </ship>
 
@@ -255,22 +255,15 @@ item - scrap + that thing  -->
 	<ship load = "LONG_FLEET" hostile ="true"/>
 </event>
 
-<!--
-<event name = "FLEET_EASY_AGAIN">
-	<fleet>rebel</fleet>
-	<text>Another ship approaches, the reinforcements seem endless!  You must jump away!</text>
-	<ship load = "LONG_FLEET" hostile ="true"/>
-</event>  -->
-
 <event name = "FLEET_EASY_BEACON">
 	<fleet>rebel</fleet>
-	<text>You've found the exit beacon but the Empire got here first! You must survive long enough to be able to jump to the next sector.</text>
+	<text>They've been waiting for you. You jump into the middle of a small United Empire fleet! Staying here is certain death - you must survive until your drive charges. You have 8 minutes.</text>
 	<ship load="LONG_FLEET" hostile ="true"/>
 </event>
 
 <event name = "FLEET_HARD">
 	<fleet>rebel</fleet>
-	<text>The loyalist fleet has found you, and a nearby scout turns to engage. You must flee before their cruisers open fire!</text>
+	<text>Fleet screening vessels have found you and are turning to engage! The main fleet is close behind, and your shields cannot repel firepower of that magnitude. Defeat the loyalist screen and jump away!</text>
 	<ship load = "LONG_FLEET" hostile ="true"/>
 </event>
 
@@ -288,6 +281,7 @@ item - scrap + that thing  -->
 	<text planet="PLANET_POPULATED_SMALL">The nearby planet shows sign of habitation and great beauty. A rudimentary automated planetary defense system is looping its message into space: "Warning! Quarantine Level 5 in effect under FHA Act 22, article 11.2. Warning! Quarantine Level 5 ..."</text>
 	<text planet="NONE">Your jump leads to a completely unremarkable binary star system. There is nothing else around.</text>
 	<text planet="NONE">Your jump leads to a remarkable binary star system. The view is beautiful, but there is nothing else around.</text>
+	<text planet="NONE">Space, the final frontier. In an Endless galaxy full of asses, these are the voyages of a starship destined to kick them all.</text>
 </textList>
 
 
