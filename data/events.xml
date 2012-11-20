@@ -381,7 +381,7 @@ item - scrap + that thing  -->
 	<choice>
 		<text>Fight the ship.</text>
 		<event>
-			<text>Mercenaries are worse than loyalists. The only honorable course is to engage the mercenary in battle.</text>
+			<text>Mercenaries don't care who they fight - why should you? You could use some spare scrap; you signal your crew to charge weapons.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
@@ -392,42 +392,42 @@ item - scrap + that thing  -->
 </event>
 <textList name="MERCENARY">
 	<text>You find a mercenary for hire at this Beacon. Their unique skills can sometimes prove to be useful.</text>
-	<text>A mercenary hails you: "Greetings, friend! We've heard tell of your quest and are here to offer our valuable services."</text>
-	<text planet="PLANET_POPULATED">There's a ship with pirate markings orbiting the nearby planet. You receive his hail: "Anything is possible, for the right price"</text>
-	<text>The captain of this ship claims he can provide "services" as long as you've got the scrap.</text>
-	<text>Mercenaries are swarming the galaxy now, knowing that their less-than-legal services are in demand during this period of unrest. One is waiting at this beacon and hails you.</text>
-	<text>A ship hails you: "Good, sir! It seems you're having some troubles with the loyalists. I'd like to help you, but I can't afford the upkeep required on this hunk of junk I'm flying... maybe we can come to an arrangement?"</text>
+	<text>A mercenary hails you: "We're no friends of the United Empire. I think we could help each other."</text>
+	<text planet="PLANET_POPULATED">There's a ship with pirate markings orbiting the nearby planet. You receive his hail: "It looks like the Empire is hunting us both. Got some spare scrap? I'm sure we can help each other out."</text>
+	<text>The captain of this ship claims he can provide "services" as long as you've got the scrap. You're not sure whether "services" means drugs, sex, or violence - but you ARE sure that you don't care.</text>
+	<text>Mercenaries are swarming the galaxy now, knowing that their less-than-legal services can command a premium during a civil war. One is waiting at this beacon and hails you.</text>
+	<text>A ship with colonial markings hails you: "Hello, sahib! It seems you're having some troubles with the loyalists. I'd like nothing better than to help a man of means such as yourself... maybe we can come to an arrangement?"</text>
 </textList>
 
 
 
 <event name="PIRATE_STATION_CROPS" unique="true">
-	<text>Scans show a remote settlement being blockaded by a pirate ship. The ship hastily messages you, "Stay out of this, or you'll be next!...Concentrate fire on..."</text>
+	<text>Scans show a remote settlement being blockaded by a mercenary ship. The ship hastily messages you, "Stay out of this, or you'll be next!...Shift fire to sector..."</text>
 	<ship load="PIRATE_STATION_CROPS" hostile="false"/>
 	<choice hidden="true">
-		<text>Attack the pirate.</text>
+		<text>Attack the mercenary.</text>
 		<event>
-			<text>"You asked for it!" They pull away from the planet and move in to engage.</text>
+			<text>"Damnit, there's no such thing as a simple job!" They fire a parting shot at the planet and slew their ship to face you.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Ignore them.</text>
 		<event>
-			<text>It's just not possible to save every civilian affected by this war. You prepare to jump.</text>
+			<text>Mercenaries or no, that's a loyalist settlement. You prepare to jump.</text>
 		</event>
 	</choice>
 	<choice hidden="true" req="BEAM_FIRE">
 		<text>(Fire Beam) Show the pirate how to intimidate settlers: burn their crops!</text>
 		<event>
-			<text>The pirate watches as you start to light the meager crops on fire. In a few moments the settlement surrenders, offering tribute to leave them alone. The pirate seems impressed.</text>
+			<text>The mercenary ship watches as you start to light the meager crops on fire. In a few moments the settlement surrenders, offering tribute to leave them alone. The mercenary seems impressed.</text>
 			<autoReward level="HIGH">drone</autoReward>
 		</event>
 	</choice>		
 	<choice hidden="true" req="BOMB_FIRE">
-		<text>(Fire Bomb) Show the pirate how to intimidate settlers: start fires in their crude dwellings</text>
+		<text>(Fire Bomb) Show the mercenary how to intimidate settlers: start fires in their crude dwellings</text>
 		<event>
-			<text>The pirate watches as you teleport an incendiary explosive into their settlement. As the settlers scramble to put out the fires, their rudimentary planetary defenses power down. Forcing their surrender was almost laughably easy, but the pirate seems impressed with your tactics and agrees to share the settlement's 'tribute'.</text>
+			<text>The other ship watches as you teleport an incendiary explosive into their settlement. As the settlers scramble to put out the fires, their rudimentary planetary defenses power down. Forcing their surrender was almost laughably easy, but the merc seems impressed with your tactics and agrees to share the settlement's 'tribute'.</text>
 			<item_modify>
 				<item type="missiles" min="-1" max="-1"/>
 			</item_modify>
@@ -436,12 +436,12 @@ item - scrap + that thing  -->
 	</choice>
 </event>
 <event name="PIRATE_STATION_CROPS_RESULT">
-	<text>With the pirates gone you signal the station. "We appreciate what you've done, but there'll just be another ship looking to profit from our isolation soon enough. Sorry we can't give you more."</text>
+	<text>With the mercenaries gone you signal the station. "Not to be ungrateful, but if the Empire knows we've been dealing with the Pilgrims we'll have to handle worse than a mere mercenary. Sorry we can't give you more."</text>
 	<autoReward level="LOW">stuff</autoReward>
 </event>
 <ship name="PIRATE_STATION_CROPS" auto_blueprint="SHIPS_PIRATE"> 
 	<surrender  chance="0.5" min="2" max="4" >
-		<text>"Alright! We give up! We're terrible at this pirating thing anyway..."</text>
+		<text>"Fine, we're done! This job ain't worth our necks."</text>
 		<choice>
 			<text>Let them go.</text>
 			<event>
@@ -450,12 +450,12 @@ item - scrap + that thing  -->
 			</event>
 		</choice>
 		<choice>
-			<text>Piracy cannot be forgiven. Attack!</text>
+			<text>It is to you. Attack!</text>
 			<event/>
 		</choice>
 	</surrender>
 	<escape chance="0.5" min="3" max="4" >
-		<text>They look like they don't want to fight. They are trying to escape.</text>
+		<text>They reroute power from their weapons to their engines. They are trying to escape.</text>
 		<ship hostile="true"/>
 	</escape>
 	<gotaway load="PIRATE_STATION_CROPS_RESULT"/>
@@ -476,13 +476,6 @@ item - scrap + that thing  -->
 		</choice>
 	</deadCrew>
 </ship>
-
-
-
-
-
-
-
 
 <!-----------
 		DISTRESS!!!
@@ -527,12 +520,12 @@ item - scrap + that thing  -->
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>"Thank the Gods. We can finally get out of here!  We're jumping straight home so take this extra weapon. We won't need it, hopefully."</text>
+		<text>"Thank the Endless, we can finally get out of here! I'm glad we ran into Pilgrims out here - take this extra weapon. We won't need it, hopefully."</text>
 		<weapon name="RANDOM"/>
 	</event>
 </eventList>
 <textList name="FRIENDLY_BEACON">
-	<text>"Greetings! It is so good to see you! We've been out of fuel and floating out here for weeks. We were terrified a pirate or those damn Rebels would find us first. Could you spare some fuel?"</text>
+	<text>"Greetings! It is so good to see you! We've been out of fuel and floating out here for weeks. We were terrified a pirate or those damn loyalists would find us first. Could you spare some fuel?"</text>
 	<text>You arrive to find a ship floating among some debris. "Hello. Our impulse drives are shot and we can't jump. Could you give us some fuel?"</text>
 	<text>A small civilian ship flies over as soon as you arrive. You're prepared to fight but they just inform you that they're out of FTL fuel and can't jump.</text>
 	<text>"Hello. We used our last FTL fuel to jump to this station." They indicate a burnt out husk of debris and warped metal. "As you can see the war must have spread to this sector. We've been stranded ever since."</text>
@@ -575,7 +568,7 @@ item - scrap + that thing  -->
 	</event>
 </eventList>
 
-
+<!-- Do Ripley/Weyland-Yutani/Aliens storyline here -->
 <event name="STRANDED_BEACON" unique="true">
 	<text>It appears the distress beacon is coming from the surface of a nearby moon. Your sensors are picking up a single life form.</text>
 	<distressBeacon/>
@@ -685,7 +678,7 @@ item - scrap + that thing  -->
 </event>
 <textList name="TRAP_BEACON_TEXT">  <!-- JUSTIN - ADDED -->
 	<text>You arrive at the beacon and immediately detect a pirate ship. It seems this distress beacon was a trap!</text>
-	<text>"Haha! I knew someone would fall into our dastardly trap!" It appears this distress beacon was nothing but a decoy for a pirate ambush.</text>
+	<text>"Haha, I'm glad you came! The Empire will pay handsomely for your deaths!" It appears this distress beacon was nothing but a decoy for a pirate ambush.</text>
 	<text>Your cockpit lights up with warning signals. You are being targeted by a nearby ship. The distress call was a lure to attract unwitting ships into weapons range. You prepare for a fight.</text>
 	<text>As soon as you arrive at the distress signal, shots are fired toward your ship. A trap!.</text>
 </textList>
@@ -699,7 +692,7 @@ item - scrap + that thing  -->
 		<event load="CIVILIAN_ASTEROIDS_BEACON_LIST1"/>
 	</choice>
 	<choice>
-		<text>Don't risk our ship.  Leave them to their fate.</text>
+		<text>Foolishi yuppies. Leave them to their fate.</text>
 		<event load="CIVILIAN_ASTEROIDS_BEACON_LIST4"/>
 	</choice>
 	<choice req="DEFENSE" hidden="true">
@@ -813,25 +806,25 @@ item - scrap + that thing  -->
 	<choice>
 		<text>Aid the Pilgrim ship.</text>
 		<event>
-			<text>You power up your weapons and engage the Rebel ship.</text>
+			<text>You power up your weapons and engage the Empire ship.</text>
 			<ship load="REBEL_VS_FEDERATION" hostile="true"/>
 		</event>
 	</choice>
 	<choice>
 		<text>Use this chance to escape.</text>
 		<event>
-			<text>The Rebel's preoccupation with the Pilgrim ship allows you to slip away undetected.  However you can't help but feel you should have helped them.</text>
+			<text>The loyalist's preoccupation with the Pilgrim ship allows you to slip away undetected.  However you can't help but feel you should have helped them.</text>
 		</event>
 	</choice>
 </event>
 <textList name="REBEL_VS_FEDERATION">
-	<text>Upon arriving at this beacon, you detect a distress call.  Local scans reveal that a Pilgrim transport is under attack from a Rebel scout!</text>
-	<text>You immediately notice a Rebel ship chasing what appears to be a civilian transport.  However you are detecting chatter on an encrypted Pilgrim channel... That transport is carrying Pilgrim loyalists!</text>
-	<text>Your sensors are picking up a distress call on an encrypted Pilgrim channel.  You eventually find a Pilgrim scout being chased by a Rebel fighter!</text>
+	<text>Upon arriving at this beacon, you detect a distress call.  Local scans reveal that a Pilgrim transport is under attack from a loyalist scout!</text>
+	<text>You immediately notice a United Earth ship chasing what appears to be a civilian transport.  However you are detecting chatter on an encrypted resistance channel...That transport is carrying Pilgrims!</text>
+	<text>Your sensors are picking up a distress call on an encrypted Pilgrim channel.  You eventually find a Pilgrim scout being chased by a loyalist fighter!</text>
 </textList>
 <eventList name="REBEL_VS_FEDERATION_SAVED_LIST">  <!-- What happens once you save the Pilgrim ship from the rebel -->
 	<event>
-		<text>"Thank you for saving us.  This ship is transporting Pilgrim civilians on the run from the United Earth and we don't have the equipment to fight for ourselves.  I don't have much to offer, but I can inform you of a hidden Pilgrim base nearby.  Perhaps they can assist you more."</text>
+		<text>"Thank you for saving us.  This ship is transporting Pilgrim civilians on the run from the United Empire and we don't have the equipment to fight for ourselves.  I don't have much to offer, but I can inform you of a hidden Pilgrim base nearby.  Perhaps they can assist you more."</text>
 		<quest event="HIDDEN_FEDERATION_BASE_LIST"/>
 	</event>
 	<event>
@@ -863,7 +856,7 @@ item - scrap + that thing  -->
 		</choice>
 	</event>
 	<event>
-		<text>"Thanks, we didn't think there would be Rebel ships all the way out here.  They seem to be searching for something.  Take some extra supplies as thanks for your aid."</text>
+		<text>"Thanks, we didn't think there would be loyalist ships all the way out here.  They seem to be searching for something.  Take some extra supplies as thanks for your aid."</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
 </eventList>
@@ -920,6 +913,7 @@ item - scrap + that thing  -->
 	</event>
 </eventList>	
 	
+<!-- The Thing? Zombies? NAZI Zombies!? -->
 <event name="DISTRESS_INFESTATION" unique="true">
 	<text>You find a number of ships fleeing from a small space station. You hail them, asking what's wrong: "Help! We're being overrun by some sort of giant alien spiders!"</text>
 	<distressBeacon/>
@@ -928,9 +922,9 @@ item - scrap + that thing  -->
 		<event load="DISTRESS_INFESTATION_LIST"/>
 	</choice>
 	<choice hidden="true">
-		<text>Leave them alone.</text>
+		<text>"Nuke the whole place from orbit. It's the only way to be sure."</text>
 		<event>
-			<text>You can't risk fighting some unknown alien on every backwater station you come across. You prepare to jump.</text>
+			<text>The...infection...had to be stopped. The lives you just ended will probably cost you some sleep; stoically, you prepare to jump.</text>
 		</event>
 	</choice>
 	<choice hidden="true" req="BATTLE">
@@ -1093,6 +1087,8 @@ item - scrap + that thing  -->
 	</event>
 </eventList>
 
+<!-- No, THIS one is zombies. -->
+<!-- Seriously. We are going to ZOMBIE it the FUCK up. -->
 <event name="DISTRESS_STATION_DISEASE" unique="true">
 	<distressBeacon/>
 	<text>You locate the source of the distress call, a nearby human mining colony. An unknown disease has spread virulently among the workers. They are trying to set up a quarantine to mitigate the spread of the disease but lack any enforcement and a riot seems likely.</text>
@@ -1309,13 +1305,13 @@ item - scrap + that thing  -->
 
 <event name="AUTO_ASTEROID">
 	<img back="BG_DARK" planet="NONE"/>
-	<text>You arrive in an asteroid belt to discover that a Rebel automated-scout has been stationed here. Prepare for a fight!</text>
+	<text>You arrive in an asteroid belt to discover that an Empire unmanned space vehicle has been stationed here. Prepare for a fight!</text>
 	<ship load="REBEL_AUTO" hostile="true"/>
 	<environment type="asteroid"/>
 </event>
 
 <event name="AUTO_SUN" unique = "true">
-	<text>You arrive at the beacon to find yourself dangerously close to a star. An automated Rebel ship, impervious to the heat, moves in to engage.</text>
+	<text>You arrive at the beacon to find yourself dangerously close to a star. An unmanned space vehicle, impervious to the heat, moves in to engage.</text>
 	<ship load="REBEL_AUTO" hostile="true"/>
 	<environment type="sun"/>
 </event>
