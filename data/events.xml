@@ -170,10 +170,10 @@ item - scrap + that thing  -->
 			<choice>
 				<text>Continue...</text>
 				<event>
-					<text>You will be traveling through dangerous sectors of the galaxy with the loyalist fleet in hot pursuit. Make it to the exit beacon of each sector before the United Empire can catch you.</text>
+					<text>You're going to want to find the main Pilgrim fleet - it's quite a long way from here. The United Empire is vast, and the whole thing is covered with ships, drones, and surveillance devices. You'll only have a few days time in each sector before they realize you're there. Things could get pretty hot if they do.</text>
 				</event>
 				<choice>
-					<text>Start Tutorial.</text>
+					<text>Got any advice for me?</text>
 					<event/>
 				</choice>
 			</choice>
@@ -183,13 +183,13 @@ item - scrap + that thing  -->
 
 
 <event name = "TUTORIAL_ENEMY">
-	<text>Every new location will have an event like this. You might have multiple choices available to you at an event. In this example, a weak pirate ship is trying to destroy you.</text>
+	<text>Every new location will have an event like this. You might have multiple choices available to you at an event. Many of them involve blowing shit up. You Pilgrims obviously don't have a problem with that.</text>
 	<choice>
-		<text>Continue...</text>
+		<text>Ok...</text>
 		<event/>
 	</choice>
 	<choice req="sensors" lvl="1" hidden="true">
-		<text>Special BLUE choices like these are unlocked by having certain upgrades or equipment. They are nearly always a good choice.</text>
+		<text>Special BLUE choices like these are unlocked by having certain upgrades or equipment. They are nearly always a good choice. Except now. Now you are going to be attacked by a pirate.</text>
 		<event/>
 	</choice>
 	<ship load = "TUTORIAL_PIRATE" hostile="true"/>
@@ -197,14 +197,14 @@ item - scrap + that thing  -->
 
 <ship name="TUTORIAL_PIRATE" blueprint="TUTORIAL_PIRATE">
 	<destroyed>
-		<text>You destroyed the pirate ship! As salvage, you gain some scrap and a weapon.</text>
+		<text>Well, that wasn't exactly a subtle approach. As salvage, you gain some scrap and a weapon.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
 		<weapon name="BEAM_2"/>
 	</destroyed>
 	<deadCrew>
-		<text>You killed all of the pirates! You scrap the ship and discover a weapon.</text>
+		<text>Well done! You have managed to murder all of the pirates while keeping their ship intact - which usually leads to better loot. You scrap the ship and discover a weapon.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
@@ -251,7 +251,7 @@ item - scrap + that thing  -->
 
 <event name = "FLEET_EASY">
 	<fleet>rebel</fleet>
-	<text>The United Empire fleet has found you, and a nearby scout turns to engage. You must flee before their cruisers open fire!</text>
+	<text>Fleet screening vessels have found you and are turning to engage! You have mere minutes to destroy them and jump away - their cruisers aren't far behind!</text>
 	<ship load = "LONG_FLEET" hostile ="true"/>
 </event>
 
@@ -296,12 +296,6 @@ item - scrap + that thing  -->
 					HOSTILE EVENTS
 		*********************************************
 -->
-
-
-
-
-
-
 
 <!--      **********************************************
 						NEUTRAL EVENTS
