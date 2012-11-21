@@ -101,6 +101,12 @@ Some art by Jeremy McKellips
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
 
+3b
+	Gave kestrel_2 kestrel_1's layout/floor
+	Altered kestrel 1/2 layout so that thrusters are no longer visible
+	Set new weapon images/projectiles to the closest vanilla equivalent
+	Tweaked a few weapon values
+	Fixed an error in the UE Driver animations
 3a
 	Updated Main Menu graphic
 	Created this document
