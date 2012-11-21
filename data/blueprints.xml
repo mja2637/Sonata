@@ -827,7 +827,7 @@
 	<cost>20</cost>
 	<bp>2</bp>
 	<rarity>1</rarity>
-	<image>laser_light1</image>
+	<image>UE_DRIVER_PROJ_1</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -845,7 +845,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>UE_DRIVER_1</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOWER_AUTOCANNON_2">
@@ -864,7 +864,7 @@
 	<cost>35</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
-	<image>laser_light1</image>
+	<image>UE_DRIVER_PROJ_2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -882,7 +882,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>UE_DRIVER_2</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOWER_AUTOCANNON_3">
@@ -902,7 +902,7 @@
 	<cost>80</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
-	<image>missile_1</image>
+	<image>SOWER_CANNON_PROJ_1</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -918,7 +918,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>missiles_1</weaponArt>
+	<weaponArt>UE_DRIVER_3</weaponArt>
 </weaponBlueprint>
 
  <weaponBlueprint name="SOWER_AUTOCANNON_4">
@@ -937,7 +937,7 @@
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>laser_light1</image>
+	<image>UE_DRIVER_PROJ_4</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -955,7 +955,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>UE_DRIVER_4</weaponArt> 
 </weaponBlueprint>
  
  <!-- BEAM WEAPONS -->
@@ -980,7 +980,7 @@
 	<launchSounds>
 		<sound>beam1</sound>
 	</launchSounds>
-	<weaponArt>beam_1</weaponArt> 
+	<weaponArt>laser_burst_1</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOPHON_LASER_2">
@@ -1004,7 +1004,7 @@
 	<launchSounds>
 		<sound>beam1</sound>
 	</launchSounds>
-	<weaponArt>beam_1</weaponArt>  
+	<weaponArt>laser_burst_2</weaponArt>  
 </weaponBlueprint>
 
  <weaponBlueprint name="SOPHON_LASER_3">
@@ -1027,7 +1027,7 @@
 	<launchSounds>
 		<sound>beam2</sound>
 	</launchSounds>
-	<weaponArt>beam_2</weaponArt> 
+	<weaponArt>laser_burst_3</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOPHON_LASER_4">
@@ -1050,7 +1050,7 @@
 	<launchSounds>
 		<sound>beam2</sound>
 	</launchSounds>
-	<weaponArt>beam_fire</weaponArt> 
+	<weaponArt>laser_burst_5</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOPHON_LASER_5">
@@ -1073,7 +1073,7 @@
 	<launchSounds>
 		<sound>beam2</sound>
 	</launchSounds>
-	<weaponArt>beam_3</weaponArt>
+	<weaponArt>laser_hull</weaponArt>
 </weaponBlueprint>
 
 <weaponBlueprint name="SOPHON_PULSE_1">
@@ -1129,7 +1129,7 @@
 	<cost>45</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
-	<image>laser_light1</image>
+	<image>laser_light2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -1147,7 +1147,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>laser_burst_3</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOPHON_PULSE_3">
@@ -1166,7 +1166,7 @@
 	<cost>20</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>laser_light1</image>
+	<image>ion_2_shot</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -1184,7 +1184,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>laser_heavy_1</weaponArt> 
 </weaponBlueprint>
  
 <!-------------------------
@@ -1211,7 +1211,7 @@
 	<launchSounds>
 		<sound>beam1</sound>
 	</launchSounds>
-	<weaponArt>beam_1</weaponArt> 
+	<weaponArt>laser_burst_1</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_LASER_2">
@@ -1235,7 +1235,7 @@
 	<launchSounds>
 		<sound>beam1</sound>
 	</launchSounds>
-	<weaponArt>beam_1</weaponArt> 
+	<weaponArt>laser_burst_2</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_LASER_3">
@@ -1259,7 +1259,7 @@
 	<launchSounds>
 		<sound>beam1</sound>
 	</launchSounds>
-	<weaponArt>beam_1</weaponArt> 
+	<weaponArt>laser_burst_3</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_LASER_4">
@@ -1283,7 +1283,7 @@
 	<launchSounds>
 		<sound>beam1</sound>
 	</launchSounds>
-	<weaponArt>beam_1</weaponArt> 
+	<weaponArt>laser_burst_5</weaponArt> 
 </weaponBlueprint>
 
 <!-------------------------
@@ -1305,7 +1305,7 @@
 	<cost>20</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
-	<image>laser_light1</image>
+	<image>UE_GAUSS_PROJ_1</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -1323,7 +1323,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>UE_DRIVER_1</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_KINETIC_2">
@@ -1342,7 +1342,7 @@
 	<cost>35</cost>
 	<bp>2</bp>
 	<rarity>1</rarity>
-	<image>laser_light1</image>
+	<image>UE_GAUSS_PROJ_2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -1360,7 +1360,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>UE_DRIVER_1</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_KINETIC_3">
@@ -1379,7 +1379,7 @@
 	<cost>20</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
-	<image>laser_light1</image>
+	<image>UE_GAUSS_PROJ_3</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -1397,7 +1397,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>UE_DRIVER_1</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_KINETIC_4">
@@ -1416,7 +1416,7 @@
 	<cost>20</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>laser_light1</image>
+	<image>UE_GAUSS_PROJ_4</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
@@ -1434,7 +1434,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>laser_burst_1</weaponArt> 
+	<weaponArt>UE_DRIVER_1</weaponArt> 
 </weaponBlueprint>
 
 <!--------------
@@ -1458,7 +1458,7 @@
 	<cost>20</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
-	<image>missile_1</image>
+	<image>missile_2</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -1530,7 +1530,7 @@
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
-	<image>missile_1</image>
+	<image>missile_3</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -1546,7 +1546,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>missiles_1</weaponArt> 
+	<weaponArt>missiles_2</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_MISSILE_4">
@@ -1566,7 +1566,7 @@
 	<cost>70</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
-	<image>missile_1</image>
+	<image>missile_breach</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -1582,7 +1582,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>missiles_1</weaponArt> 
+	<weaponArt>missiles_2</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="ARTILLERY_WEAPON">
@@ -4060,8 +4060,8 @@
 <!-- THE KESTREL -->
 <!-- LAYOUT = DEFAULT --> 
 <!-- SHIP ID = 0 -->    
-<shipBlueprint name="PLAYER_SHIP_HARD" img="kestral" layout="kestral">
-  <class>Stolen UE Frigate</class>
+<shipBlueprint name="PLAYER_SHIP_HARD" layout="kestral_a" img="kestral">
+  <class>United Empire Frigate</class>
   <name>UES Ranger</name>
   <desc>That old workhorse, the United Empire frigate is the eyes of the fleet. This example has been stolen by the Pilgrims.</desc>
   <systemList>
@@ -4085,7 +4085,7 @@
     <weapon name="BASIC_MISSILE_1" />
   </weaponList>
   <droneList count="0" drones="0" />
-  <health amount="30" />
+  <health amount="28" />
   <maxPower amount="8" />
   <crewCount amount="3" class="human" />
   <aug name="ADV_SCANNERS" />
@@ -4095,59 +4095,35 @@
 <!-- LAYOUT = 2 --> 
 <!-- SHIP ID = ?? -->
 
-<shipBlueprint name="PLAYER_SHIP_HARD_2" layout="kestral_2" img="kestral_2">
+<shipBlueprint name="PLAYER_SHIP_HARD_2" layout="kestral_b" img="kestral_2">
 	<class>United Empire Destroyer</class>
 	<name>UES Long Island</name>
 	<desc>Empire destroyers embody the age-old virtues of front line warriors: speed, surprise, violence of action.</desc>
 
 	<systemList>
-		<pilot power="1" room="9" start="true" img="room_pilot_3">
-			<slot>
-				<direction>right</direction>
-				<number>1</number> 
-			</slot>
-		</pilot>  
-		<doors power="1" room="7" start="true" img="room_doors"/>
-		<sensors power="1" room="11" start="true" img="room_sensors_2"/>
-		<medbay power="1" room="0" start="true" img="room_medbay_4">
-			<slot>
-				<number>0</number> 
-			</slot>
-		</medbay>
-		<oxygen power="1" room="3" start="true" img="room_oxygen_11"/>
-		<shields power="2" room="2" start="true" img="room_shields_9">
-			<slot>
-				<direction>up</direction>
-				<number>1</number>
-			</slot>
-		</slot>
-		<engines power="2" room="5" start="true" img="room_engines_3">
-			<slot>
-				<direction>right</direction>
-				<number>1</number> 
-			</slot>
-		</engines>
-		<weapons power="4" room="10" start="true" img="room_weapons"/>
-		<drones power="2" room="13" start="false" img="room_drones_12"/>
-		<teleporter power="1" room="4"	start="false"/>
-		<cloaking power="1" room="12" start="false" img="room_cloaking_2"/>
+		<pilot power="1" room="5" start="true" img="room_pilot" />
+		<doors power="1" room="9" start="true" img="room_doors" />
+		<sensors power="1" room="7" start="true" img="room_sensors" />
+		<medbay power="1" room="0" start="true" img="room_medbay" />
+		<oxygen power="1" room="3" start="true" img="room_oxygen" />
+		<shields power="2" room="4" start="true" img="room_pilot" />
+		<engines power="3" room="6" start="true" img="room_engines" />
+		<weapons power="4" room="1" start="true" img="room_weapons" />
+		<drones power="0" room="8" start="false" img="room_drones" />
+		<teleporter power="1" room="10" start="false" img="room_teleporter" />
+		<cloaking power="1" room="2" start="false" img="room_cloaking" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
+	<droneSlots>0</droneSlots>
 	<weaponList count="2" missiles="5">
-		<weapon name="UE_DRIVER_3"/>
-		<weapon name="BASIC_MISSILE_2"/>
-
-
+		<weapon name="UE_GAUSS_2"/>
+		<weapon name="UE_GAUSS_2"/>
 	</weaponList>
-	<health amount="30"/>
+	<health amount="34"/>
 	<maxPower amount ="8"/> 
 	<crewCount amount = "4" class="human"/>
-
-
 	<!-- can use these to override images for reuse -->
 	<shieldImage>kestral</shieldImage>
-
 </shipBlueprint>
 
 <!--  
@@ -4188,6 +4164,8 @@
 	<maxPower amount ="7"/> 
 	<crewCount amount = "3" class="mantis"/>
 	<crewCount amount = "1" class="engi"/>
+	<!-- can use these to override images for reuse -->
+	<shieldImage>kestral</shieldImage>
 </shipBlueprint> 
 
 
@@ -4280,6 +4258,8 @@
 	<health amount="30"/>
 	<maxPower amount ="8"/> 
 	<crewCount amount = "3" class="human"/>
+	<!-- can use these to override images for reuse -->
+	<shieldImage>kestral</shieldImage>
 </shipBlueprint> 
 
 
@@ -4329,6 +4309,7 @@
 		<cloaking power="2" room="11" start="true" img="room_cloaking"/>
 	</systemList>
 	<weaponList count="1" missiles="0">
+		<weapon name="BASIC_KINETIC_1"/>
 		<weapon name="SOPHON_LASER_4"/>
 	</weaponList>
 	<weaponSlots>3</weaponSlots>
@@ -4533,7 +4514,7 @@
 	<droneSlots>2</droneSlots>
 	<weaponList count="4" missiles="9">
 		<weapon name="SOPHON_PULSE_1"/>
-		<weapon name="SOWER_CANNON_1"/>
+		<weapon name="UE_DRIVER_1"/>
 	</weaponList>
 	<droneList drones="0"/>
 	<health amount="30"/>
@@ -4583,7 +4564,7 @@
 	<weaponList count="3" missiles="15">
 		<weapon name="BEAM_BIO"/>
 		<weapon name="BOMB_BREACH_1"/>
-		<weapon name="SOPHON_PULSE_1"/>
+		<weapon name="BASIC_KINETIC_1"/>
 	</weaponList>
 	<aug name="SLUG_GEL"/>
 	<health amount="30"/>
@@ -4638,12 +4619,6 @@
 	<cloakImage>jelly_cruiser</cloakImage>
 </shipBlueprint>
 
-
-
-
-
-
-
 <!--  
    ***********************
    ROCK SHIP
@@ -4683,8 +4658,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="2" missiles="28">
-		<weapon name="SOWER_CANNON_2"/>
-		<weapon name="SOWER_AUTOCANNON_1"/>
+		<weapon name="SOWER_AUTOCANNON_3"/>
 	</weaponList>
 	<droneList drones="0"/>
 	<health amount="30"/>
@@ -4722,7 +4696,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="2" missiles="18">
-		<weapon name="SOPHON_LASER_1"/>
+		<weapon name="SOWER_AUTOCANNON_2"/>
 		<weapon name="BOMB_FIRE"/>
 		<weapon name="BOMB_1"/>
 	</weaponList>
