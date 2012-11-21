@@ -419,7 +419,7 @@
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>11</cooldown>
 	<power>2</power>
 	<cost>40</cost>
 	<bp>2</bp>
@@ -456,7 +456,7 @@
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>13</cooldown>
 	<power>3</power>
 	<cost>60</cost>
 	<bp>2</bp>
@@ -493,7 +493,7 @@
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>15</cooldown>
 	<power>4</power>
 	<cost>80</cost>
 	<bp>2</bp>
@@ -595,7 +595,7 @@
 
  <weaponBlueprint name="UE_DRIVER_3">
 	<type>LASER</type>
-	<title>Mk 1 Gauss Driver, software-defined, remote, configurable</title>
+	<title>Mk 1 Gauss Driver, software-defined</title>
 	<short>Gauss Driver</short>
 	<desc>Advanced knowledge of electroweak theory and computer science allow us to mount Gauss guns on our ships in arbitrary configurations. The projectile may take a curved path or even double back on itself; the rail firing pattern is developed in real time. This effectively seperates the Gauss Driver itself from the location of the turret which fires the projectile. One Driver may supply several turrets or vice versa; this increases both firing rate and accuracy.</desc>
 	<tooltip>Versatile weapon; ignores 1 shield, chance to breach.</tooltip>
@@ -679,7 +679,7 @@
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>11</cooldown>
 	<power>1</power>
 	<cost>20</cost>
 	<bp>2</bp>
@@ -715,7 +715,7 @@
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>11</cooldown>
 	<power>1</power>
 	<cost>35</cost>
 	<bp>2</bp>
@@ -926,13 +926,13 @@
 	<title>Anti-Baryon Mag AutoCannon</title>
 	<short>!Baryon Mag AC</short>
 	<desc>By manipulating the nucleic structure of certain crystalline solids and then splitting them into "shards" inside a programmed baryonic field, we can create an improbable substance which radiates antibaryons when struck violently. When a sabot-launched shard strikes an enemy, the matter in contact is literally annihilated - it ceases to exist. Such a projectile is essentially unstoppable.</desc>
-	<tooltip>3 shots every 6 seconds, 1 damage, ignore 3 shields, excellent chance to breach.</tooltip>
+	<tooltip>3 shots every 8 seconds, 1 damage, ignore 3 shields, excellent chance to breach.</tooltip>
 	<damage>1</damage>
-	<shots>1</shots>
+	<shots>3</shots>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance>
-	<cooldown>6</cooldown>
+	<cooldown>8</cooldown>
 	<power>4</power>
 	<cost>100</cost>
 	<bp>2</bp>
@@ -967,9 +967,9 @@
 	<tooltip>One damage per room, moderate beam size.</tooltip>
 	<damage>1</damage>
 	<sp>0</sp>
-	<fireChance>1</fireChance>
+	<fireChance>3</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>11</cooldown>
 	<speed>3</speed>
 	<power>1</power>
 	<cost>20</cost>
@@ -991,7 +991,7 @@
 	<tooltip>1 damage per room, fast firing, good beam size.</tooltip>
 	<damage>1</damage>
 	<sp>0</sp>
-	<fireChance>1</fireChance>
+	<fireChance>2</fireChance>
 	<breachChance>0</breachChance>
 	<cooldown>7</cooldown>
 	<speed>3</speed>
@@ -1224,7 +1224,7 @@
 	<sp>0</sp>
 	<fireChance>2</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>13</cooldown>
 	<speed>3</speed>
 	<power>1</power>
 	<cost>30</cost>
@@ -1328,8 +1328,8 @@
 
 <weaponBlueprint name="BASIC_KINETIC_2">
 	<type>LASER</type>
-	<title>Basic Railgun</title>
-	<short>Slugger II</short>
+	<title>Rail Slugger</title>
+	<short>Rail Slugger</short>
 	<desc>An excellent way to put holes in almost anything, this version of the Railgun drives plasma-shielded slugs into enemy vessels.</desc>
 	<tooltip>Two damage per shot.</tooltip>
 	<damage>2</damage>
@@ -1412,7 +1412,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
 	<cooldown>14</cooldown>
-	<power>1</power>
+	<power>4</power>
 	<cost>20</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
@@ -1561,7 +1561,7 @@
 	<sp>5</sp>
 	<fireChance>2</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>15</cooldown>
 	<power>4</power>
 	<cost>70</cost>
 	<bp>2</bp>

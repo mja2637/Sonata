@@ -1,1 +1,121 @@
-Sonata FTL mod
+SONATA
+
+An FTL mod.
+
+
+You are a United Empire pilot who steals a ship and joins the Pilgrims as they attempt to secede from the United Empire. You must travel from sector to sector ahead of the loyalists searching for you, and make your last stand with the resistance fleet.
+
+This mod is based on the storyline of Endless Space by Amplitude Studios, with modifications.
+
+1 RACES
+2 WEAPONS
+3 VERSION INFO
+
+1 RACES
+UNITED EMPIRE
+The United Empire is a liberal democracy, the capital being Earth; the vast majority of humans are citizens, as well as many aliens. The Empire, in fact, is quite liberal - and there is widespread sexual liberalism, drug use, and body modification. Its Democratic government presides over a population which is fiercely proud and expansion-hungry to the point of jingoism.
+ 
+The United Empire uses kinetic weaponry: rail guns, gauss guns, and drivers. Drivers tend to fire more quickly than the other types.
+
+PILGRIMS
+What does it take to drive an entire planet to secede from the United Empire, to seemingly turn their back on their race? In the case of the Pilgrims, it was shame. Shame at being part of an Empire that laughed at the gods, the Endless. Shame at being part of an Empire that allowed hedonism, all sorts of absolute moral depravity, within its borders. Shame, truth be told, at an Empire that would manipulate and conquer other children of the Endless to accomplish its goals.
+
+In any case, almost 40% of the worlds of the United Empire seceded in the space of one year. This 40%, however, only included around 15% of the Empire's population, and an even smaller fraction of its industrial capability. The Pilgrim situation is militarily hopeless.
+
+The Pilgrims use the same weapons that the United Earth and most other humans do.
+ 
+SOPHON
+The Sophon are a race of highly intelligent scientists with little actual government that seem to do just fine, nevertheless. Relations between the Sophon and humans have always been at least cordial, and usually are quite friendly; the Sophon government has elected not to recognize the Pilgrims diplomatically in interests of there relationship with the United Empire, but are certainly not on bad terms with the Pilgrims. Most Sophon are concerned with nothing but researching the hell out of whatever pleases them.
+
+The Sophons use beam and pulse lasers.
+
+SOWER
+The Sower were created by an ancient race of beings called the Endless as advanced robotic terraformers, preparing worlds for future colonization. The Endless have long since disappeared, but these immense robots still fulfill their programming. Whether individual Sower - or possibly the race as a whole - are merely intelligent or actually sentient is unknown.
+
+The Sower use massive cannon and autocannon.
+
+ENDLESS
+An ancient race of beings with godlike technological prowess, long extinct. Many religions believe that they created the races that now populate the galaxy, or at least some of them: the Sower and Sophon. Humans are sharpely divided: some, including the Pilgrims, believe that the Endless created humans. Some humans don't believe that. 
+
+A sizeable fraction of humanity believes that they were created by the Endless, and think "give us a thousand years, and we'll do better than that." Do I detect a whiff of manifest destiny? This goes a long way to explain the United Empire's foreign policies.
+
+2 WEAPONS
+Weapons in Sonata are divided into 3 categories (Kinetic, Laser, Missile) and 2 classes (Racial, Generic). Within each category and class, there are 4 power levels (with some exceptions).
+
+Kinetic Weapons:
+KW map to the "shot" type weapons/non-beam lasers of vanilla FTL. Good at breaching.
+
+High Isotope Slug Thrower: 1 bar, 1 damage, 8 second cooldown.
+Caseless AutoCannon (Sower): 1 bar, 2 shots, 1 damage, 10s cooldown.
+Mk 1 mod 3 Accelerator, linear (UE): 1 bar, 1 damage, very low breach chance, 8 second cooldown.
+Mk 1 Driver, supercooled, mono-rail (UE): 1 bar, 1 damage, 6 second cooldown.
+Rail Slugger: 1 bar, 2 damage, 10 second cooldown.
+Focused EFP AutoCannon (Sower): 1 bar, 2 shots, 0 damage, excellent chance of fire, low chance of breach, 6s cooldown.
+Mk 2 Driver, helical configuration (UE): 3 bars, 3 shots, 1 damage, 10 second cooldown.
+Mk 1 Gauss Gun, relativistic (UE): 2 bars, 2 damage, pierces 1 shield, low breach chance, 11 second cooldown.
+Plasma Slugger: 3 bars, 3 damage, very low fire chance, 12 second cooldown.
+Mk 1 Gauss Gun, software-defined (UE): 2 bars, 3 shots, 1 damage, low breach chance, 11 second cooldown.
+Mk 2 Gauss Gun, boson (UE): 3 bars, 3 damage, low breach chance, 13 second cooldown.
+Unstable Slugger: 4 bars, 5 damage, very low breach chance, 14 second cooldown.
+Anti-Baryon Mag AutoCannon (Sower): 4 bars, 3 shots, 1 damage, excellent chance to breach, ignores 3 shields, 8s cooldown.
+Mk 2 Accelerator, tachyon (UE): 4 bars, 5 damage, 2 shield piercing, 15 second cooldown.
+Mk 2 Gauss Driver, proton exchange (UE): 4 bars, 3 shots, 2 damage, 1 shield piercing, good fire/breach chance, 18s cooldown.
+
+Some lasers also act like kinetic weapons:
+Radiothermal Burst Maser (Sophon): 1 bar, 2 shots, 1 damage, very low chance of fire, 11s cooldown.
+Quantized Photonic Burst Laser (Sophon): 2 bars, 2 shots, 1 damage, good chance of fire, 8s cooldown.
+Contained Higgs Pulse Beam (Sophon): 4 bars, 2 shots, 3 damage, excellent chance to breach, 15s cooldown.
+
+
+Missile Weapons:
+MW map to the missiles of vanilla FTL, where missiles have been gernalized to mean any sort of special or expensive ammunition. All require 1 missile unless noted.
+
+Ion Torpedo: 1 bar, 1 damage, ignores 5 shields, very low chance of fire/breach, 9s cooldown.
+Liquid Propellant Cannon (Sower): 1 bar, 1 damage, ignores 2 shields, doesn't require missiles, 11s cooldown.
+Plasma Torpedo: 2 bars, 2 damage, ignores 5 shields, 9s cooldown.
+Fluidic Projectile Cannon (Sower): 1 bar, 2 damage, ignores 2 shields, very low chance to breach, 11s cooldown.
+Positron Torpedo: 3 bars, 3 damage, ignores 5 shields, very low chance to breach, 12s cooldown.
+Mag Cannon (Sower): 2 bars, 3 damage, ignores 3 shields, low chance to breach, 13s cooldown.
+Compensated Mag AutoCannon (Sower): 3 bars, 3 shots, 1 damage, low chance to breach, ignores 2 shields, 12s cooldown.
+Non-Baryonic Torpedo: 4 bars, 4 damage, low chance of fire, very good chance to breach, ignores 5 shields, 15s cooldown.
+Baryon-Gravitophoric Cannon (Sower): 4 bars, 5 damage, ignores 4 shields, excellent chance to breach, requires 2 missiles, 20s cooldown.
+
+Laser Weapons:
+Beams. Good at setting fire.
+
+Chemical Laser: 1 bar, 1 damage, 45 length, very low chance of fire, 12s cooldown.
+Gas-Dynamic COIL Laser (Sophon): 1 bar, 1 damage, 45 length, good chance of fire, 11s cooldown.
+Synchrotron Laser: 1 bar, 1 damage, 70 length, low chance of fire, 13s cooldown.
+Supercooled Titanium-Sapphire Laser (Sophon): 2 bars, 1 damage, 55 length, low chance of fire, 7s cooldown.
+Phased Plasmic Laser: 2 bars, 2 damage, 50 length, very low chance of fire, 12s cooldown.
+Thermophotonic Xaser (Sophon): 3 bars, 1 damage, 95 length, pierces 1 shield, excellent chance of fire, 16s cooldown.
+Disruptor Beam: 3 bars, 2 damage, 45 length, ignores 1 shield, very good chance to breach, 12s cooldown.
+Bose-Einstein Particle Beam (Sophon): 3 bars, 2 damage, 35 length, insance breach chance, 15s cooldown.
+Condensed Anti-Neutrino Beam (Sophon): 4 bars, 3 damage, 65 length, ignores 1 shield, 20s cooldown.
+
+
+3 VERSION INFO
+Created by Matt Alioto
+Some art by Jeremy McKellips
+
+The latest version/build of the mod can always be grabbed from github at this URL:
+https://github.com/mja2637/Sonata/archive/master.zip
+
+3a
+	Updated Main Menu graphic
+	Created this document
+3
+	Kestrel 1 finished
+	Kestrel 2 graphic
+	Changed Kestrel shield color
+	UE, Sower, Sophon weapon stats added
+	New weapons added to enemy ships based on race
+	New Main Menu BG courtesy of A9 (Jeremy)
+	Gauss 1 projectile created, added
+	UE Gause 1, Driver 1 graphics created, animations complete
+	Sower Cannon 1 graphics created, animations complete
+	~75% of events files modified with altered text, new stories, lore, etc
+	All references changed Rocks->Sower, Zoltan->Sophon changed in context
+	Mod added to Git repo
+	All material from diversityMod removed
+	Mod released on FTL forum
