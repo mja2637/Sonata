@@ -101,7 +101,11 @@ Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
-
+4
+	Added layout/floor for UE destroyer; fine tuned
+	Added image/layout/floor for Sower ship 1
+	Added hit animation for Sower Cannon 4 (from Obsidian Cruiser)
+	(Bug fixes)
 3b
 	Gave kestrel_2 kestrel_1's layout/floor
 	Altered kestrel 1/2 layout so that thrusters are no longer visible
