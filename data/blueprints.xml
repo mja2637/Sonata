@@ -707,7 +707,7 @@
 	<type>MISSILES</type>
 	<title>Fluidic Projectile Cannon</title>
 	<short>Fluidic Cannon</short>
-	<desc>Replacing solid projectiles and their loading mechanism with a multipurpose fluid allows us to re-use the propellant injection nozzles to load it, simplifying the weapon. This also allows us to redesign the chamber for much higher strength. More importantly, the carefully engineered liquid projectiles also act as a catalyst in the propulsion fluid's combustion process, vastly increasing the brissance of its explosion. If a weapon is built strongly enough, muzzle velocity can be increased by a factor of 2.5.</desc>
+	<desc>Replacing solid projectiles and their loading mechanism with a multipurpose fluid allows us to re-use the propellant injection nozzles to load it, simplifying the weapon. This also allows us to redesign the chamber for much higher strength. More importantly, the carefully engineered liquid projectiles also act as a catalyst in the propulsion fluid's combustion process, vastly increasing the brissance of its explosion.</desc>
 	<tooltip>2 damage, ignore 2 shields, doesn't require ammo.</tooltip>
 	<damage>2</damage>
 	<missiles>0</missiles>
@@ -779,7 +779,7 @@
 	<type>MISSILES</type>
 	<title>Baryon-Gravitophoric Cannon</title>
 	<short>BG Cannon</short>
-	<desc>To create is truly more precious than to destroy. Baryon-Gravitophoric cannons fire massive shells fitted with baryon/antibaryon annihilation reactors. The reactors are fitted to a modified Mag recoil device. On impact, the reactors seeminly shred the conventional theory of electroweak baryongenesis and symmetry; the Mag devices funnel millions of tons of baryons into a 1 millimeter cube. Some shots impact with the density of a neutron star; most collapse into miniature black holes. When the magnetic bottle containing the leftover antibaryons needed to maintain symmetry is released, they mutually annihilate whatever is left.</desc>
+	<desc>This cannon fires massive shells fitted with baryon/antibaryon annihilation reactors. On impact, the reactors shred the theory of electroweak baryongenesis and funnel millions of tons of baryons into a 1 millimeter cube. Some shots impact with the density of a neutron star; most collapse into miniature black holes. When the leftover antibaryons needed to maintain symmetry are released, they mutually annihilate whatever is left.</desc>
 	<tooltip>Turn out the sun. Boss killer.</tooltip>
 	<damage>5</damage>
 	<missiles>2</missiles>
@@ -792,7 +792,8 @@
 	<cost>120</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
-	<image><image>SOWER_CANNON_PROJ_4</image></image>
+	<image>SOWER_CANNON_PROJ_4</image>
+	<explosion>explosion_sower_cannon_4</explosion>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -4300,7 +4301,7 @@
 		<oxygen power="1" room="15" start="true" img="room_oxygen_4"/>
 		<engines power="2" room="2" start="true" img="room_engines_2"/> 
 		<shields power="2" room="3" start="true" img="room_shields_4"/> 
-		<weapons power="3" room="11" start="true"/> 
+		<weapons power="4" room="11" start="true"/> 
 		<drones power="3" room="0" start="true"/> 
 		<medbay power="1" room="7" start="true"/>   
 		<teleporter power="1" room="9" start="false"/>
@@ -4308,15 +4309,15 @@
 	</systemList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
-	<weaponList count="1" missiles="0">
-		<weapon name="ION_4"/>
+	<weaponList count="1" missiles="10">
+		<weapon name="SOWER_CANNON_4"/>
 	</weaponList>
 	<droneList count="1" drones="15">
 		<drone name="COMBAT_1"/>
 	</droneList>
 	<aug name="NANO_MEDBAY"/>
 	<health amount="30"/>
-	<maxPower amount ="10"/> 
+	<maxPower amount ="14"/> 
 	<crewCount amount = "2" class="engi"/>
 	<crewCount amount = "1" class="human"/>
 </shipBlueprint>

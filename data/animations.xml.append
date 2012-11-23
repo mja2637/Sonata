@@ -191,6 +191,12 @@
 	<desc length="6" x="0" y="0"/>
 	<time>0.05</time>
 </anim>
+<animSheet name="explosion_sower_cannon_4" w="384" h="32" fw="32" fh="32">effects/explosion_sower_cannon_4.png</animSheet>
+<anim name="explosion_sower_cannon_4">
+	<sheet>explosion_sower_cannon_4</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
 
 <animSheet name="SOPHON_LASER_1" w="192" h="33" fw="24" fh="33">weapons/beam_1_strip8.png</animSheet>
 <weaponAnim name="SOPHON_LASER_1">
