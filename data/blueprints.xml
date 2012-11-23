@@ -4297,7 +4297,7 @@
 <!-- ROCK SHIP -->
 <!-- LAYOUT = DEFAULT --> 
 <!-- SHIP ID = 6 -->   
-<shipBlueprint name="PLAYER_SHIP_CIRCLE" layout="rock_cruiser" img="rock_cruiser">
+<shipBlueprint name="PLAYER_SHIP_ROCK" layout="rock_cruiser" img="rock_cruiser">
 	<class>Sower Terraformer</class>
 	<name>SANgluk:0x16b3impl</name>
 	<unlock>Prove yourself to the Sower to earn this powerful cruiser.</unlock>
@@ -4378,7 +4378,7 @@
 <!-- ENGI SHIP -->
 <!-- LAYOUT = DEFAULT --> 
 <!-- SHIP ID = 3 -->
-<shipBlueprint name="PLAYER_SHIP_ROCK" layout="circle_cruiser" img="circle_cruiser">
+<shipBlueprint name="PLAYER_SHIP_CIRCLE" layout="circle_cruiser" img="circle_cruiser">
 	<class>Engi Cruiser</class>
 	<name>The Torus</name>
 	<unlock>To unlock this Engi ship you'll need to get to the 5th sector.</unlock>
