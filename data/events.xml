@@ -196,7 +196,7 @@ item - scrap + that thing  -->
 </event>
 
 <ship name="TUTORIAL_PIRATE" blueprint="TUTORIAL_PIRATE">
-	<destroyed>
+	<destroyed>	
 		<text>Well, that wasn't exactly a subtle approach. As salvage, you gain some scrap and a weapon.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>

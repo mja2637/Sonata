@@ -4042,6 +4042,7 @@
   <health amount="28" />
   <maxPower amount="8" />
   <crewCount amount="3" class="human" />
+  <shieldImage>kestral</shieldImage>
   <aug name="ADV_SCANNERS" />
 </shipBlueprint>
 
@@ -4056,7 +4057,7 @@
 
 	<systemList>
 		<pilot power="1" room="5" start="true" img="room_pilot" />
-		<doors power="1" room="9" start="true" img="room_doors" />
+		<doors power="1" room="10" start="true" img="room_doors" />
 		<sensors power="1" room="7" start="true" img="room_sensors" />
 		<medbay power="1" room="0" start="true" img="room_medbay" />
 		<oxygen power="1" room="3" start="true" img="room_oxygen" />
@@ -4064,7 +4065,7 @@
 		<engines power="3" room="6" start="true" img="room_engines" />
 		<weapons power="4" room="1" start="true" img="room_weapons" />
 		<drones power="0" room="8" start="false" img="room_drones" />
-		<teleporter power="1" room="10" start="false" img="room_teleporter" />
+		<teleporter power="1" room="9" start="false" img="room_teleporter" />
 		<cloaking power="1" room="2" start="false" img="room_cloaking" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -4905,30 +4906,34 @@ TUTORIAL SHIPS
 	<crewCount amount = "1"  class="human"/>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_TUTORIAL" layout="kestral" img="kestral">
-	<class>Kestral</class>
-	<name>The Kestrel</name>
-	<systemList>
-		<pilot power="1" room="0" start="true"/>
-		<doors power="2" room="2" start="true"/>
-		<sensors power="2" room="3" start="true"/>
-		<medbay power="1" room="4" start="true"/>
-		<oxygen power="1" room="13" start="true"/>
-		<shields power="2" room="5" start="true"/>
-		<engines power="2" room="14" start="true"/>
-		<weapons power="2" room="10" start="true"/>
-		<drones power="2" room="1" start="false"/>
-		<teleporter power="1" room="15"	start="false"/>
-		<cloaking power="1" room="8" start="false"/>
-	</systemList>
-	<weaponList count="1" missiles="20">
-		<weapon name="BASIC_KINETIC_2"/>
-	</weaponList>
-	<weaponSlots>2</weaponSlots>
-	<droneSlots>2</droneSlots>
-	<health amount="30"/>
-	<maxPower amount ="9"/> 
-	<crewCount amount = "4" class="human"/>
+<shipBlueprint name="PLAYER_SHIP_TUTORIAL" layout="kestral_a" img="kestral">
+  <class>Training Ship</class>
+  <name>Port Arthur</name>
+  <desc>This frigate was built to UE spec decades ago, before being picked up by civilians in the military surplus market. Old frigates are easy to handle and are commonly used for guard duty, law enforcement, or (in this case) instruction.</desc>
+  <systemList>
+    <pilot power="1" room="5" start="true" img="room_pilot" />
+    <doors power="1" room="9" start="true" img="room_doors" />
+    <sensors power="1" room="7" start="true" img="room_sensors" />
+    <medbay power="1" room="0" start="true" img="room_medbay" />
+    <oxygen power="1" room="3" start="true" img="room_oxygen" />
+    <shields power="2" room="4" start="true" img="room_pilot" />
+    <engines power="2" room="6" start="true" img="room_engines" />
+    <weapons power="4" room="1" start="true" img="room_weapons" />
+    <drones power="2" room="8" start="false" img="room_drones" />
+    <teleporter power="1" room="10" start="false" img="room_teleporter" />
+    <cloaking power="1" room="2" start="false" img="room_cloaking" />
+  </systemList>
+  <weaponSlots>2</weaponSlots>
+  <droneSlots>2</droneSlots>
+  <weaponList count="3" missiles="20">
+    <weapon name="UE_GAUSS_2" />
+    <weapon name="BASIC_MISSILE_2" />
+  </weaponList>
+  <droneList count="0" drones="0" />
+  <health amount="25" />
+  <maxPower amount="9" />
+  <crewCount amount="2" class="human" />
+  <aug name="ADV_SCANNERS" />
 </shipBlueprint>
 
 <shipBlueprint name="IMPOSSIBLE_PIRATE" layout="jelly_truffle" img="jelly_truffle_pirate">

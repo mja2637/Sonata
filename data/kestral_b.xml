@@ -1,7 +1,7 @@
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
 <!-- 4 + 3-->
-<img x="-55" y="-185" w="623" h="461"/>
+<img x="-22" y="-138" w="623" h="461"/>
 
 <weaponMounts>
 	<mount x="610" y="200" rotate="true" mirror="true" gib="6" slide="up"/>

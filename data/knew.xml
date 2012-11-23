@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<shipBlueprint name="PLAYER_SHIP_HARD_2" img="kestral_2" layout="kestral_b">
+  <class>United Empire Destroyer</class>
+  <name>UES Long Island</name>
+  <desc>Empire destroyers embody the age-old virtues of front line warriors: speed, surprise, violence of action.</desc>
+  <systemList>
+    <pilot power="1" room="5" start="true" img="room_pilot" />
+    <doors power="1" room="10" start="true" img="room_doors" />
+    <sensors power="1" room="7" start="true" img="room_sensors" />
+    <medbay power="1" room="0" start="true" img="room_medbay" />
+    <oxygen power="1" room="3" start="true" img="room_oxygen" />
+    <shields power="2" room="4" start="true" img="room_pilot" />
+    <engines power="3" room="6" start="true" img="room_engines" />
+    <weapons power="4" room="1" start="true" img="room_weapons" />
+    <drones power="0" room="8" start="false" img="room_drones" />
+    <teleporter power="1" room="9" start="false" img="room_teleporter" />
+    <cloaking power="1" room="2" start="false" img="room_cloaking" />
+  </systemList>
+  <weaponSlots>4</weaponSlots>
+  <droneSlots>0</droneSlots>
+  <weaponList count="2" missiles="5">
+    <weapon name="UE_GAUSS_2" />
+    <weapon name="UE_GAUSS_2" />
+  </weaponList>
+  <droneList count="0" drones="0" />
+  <health amount="34" />
+  <maxPower amount="8" />
+  <crewCount amount="4" class="human" />
+  <crewCount amount="0" class="slug" />
+</shipBlueprint>
