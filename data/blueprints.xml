@@ -4075,7 +4075,7 @@
 		<weapon name="UE_GAUSS_2"/>
 	</weaponList>
 	<health amount="34"/>
-	<maxPower amount ="8"/> 
+	<maxPower amount ="10"/> 
 	<crewCount amount = "4" class="human"/>
 	<!-- can use these to override images for reuse -->
 	<shieldImage>kestral</shieldImage>
