@@ -438,7 +438,7 @@
   --------------------->
 
 <shipBlueprint name="REBEL_FAT" layout="rebel_squat" img="rebel_squat">
-	<class>Patrol Sloop</class>
+	<class>Boghammer</class>
 	<systemList>
 		<pilot power="1" max="2" room="0"/>
 		<oxygen power="1" max="2" room="2"/>
@@ -479,7 +479,7 @@
 </shipBlueprint>
 		
 <shipBlueprint name="REBEL_SKINNY_ELITE" layout="rebel_long" img="rebel_long_elite">
-	<class>Gunship</class>
+	<class>Corvette Leader</class>
 	<systemList>
 		<oxygen power="1" max="2" room="2"/>
 		<pilot power="1" max="3" room="0"/>
@@ -497,7 +497,7 @@
 </shipBlueprint>
 		
 <shipBlueprint name="REBEL_TRANSPORT" layout="rebel_squat" img="rebel_squat">  <!-- This will eventually be a different ship image, using rebel_squat for now -->
-	<class>Transport</class>
+	<class>Patrol Sloop</class>
 	<systemList>
 		<pilot power="1" max="2" room="0"/>
 		<oxygen power="1" max="2" room="2"/>
@@ -723,7 +723,7 @@
   --------------------->
   
   <shipBlueprint name="MANTIS_SCOUT" layout="mantis_scout" img="mantis_scout">
-	<class>Mantis Scout</class>
+	<class>Peregrine</class>
 	<maxSector>5</maxSector>
 	<systemList>
 		<pilot power="1"max="3" room="1"/>
@@ -732,8 +732,8 @@
 		<medbay power="1" max="3" room="6" start="false"/>
 		<teleporter power="1" max="3" room="4" start="false"/>
 		<shields power="2" max="8" room="0"/>
-		<engines power="1" max="5" room="7"/>
-		<weapons power="2" max="8" room="3"/>
+		<engines power="1" max="8" room="7"/>
+		<weapons power="2" max="6" room="3"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_MANTIS"/>
 	<health amount="7"/>	
@@ -743,7 +743,7 @@
 </shipBlueprint>
   
 <shipBlueprint name="MANTIS_FIGHTER" layout="mantis_fighter" img="mantis_fighter">
-	<class>Mantis Fighter</class>
+	<class>Falcon</class>
 	<minSector>1</minSector>
 	<systemList>
 		<pilot power="1"max="3" room="9"/>
@@ -752,7 +752,7 @@
 		<medbay power="1" max="3" room="8" start="false"/>
 		<teleporter power="1" max="3" room="4"/>
 		<shields power="2" max="8" room="0"/>
-		<engines power="1" max="5" room="7"/>
+		<engines power="2" max="8" room="7"/>
 		<weapons power="2" max="8" room="3"/>
 	</systemList>
 	<weaponList missiles="10" load="WEAPONS_MANTIS"/>
@@ -763,7 +763,7 @@
 </shipBlueprint>
     
 <shipBlueprint name="MANTIS_BOMBER" layout="mantis_bomber" img="mantis_bomber">
-	<class>Mantis Bomber</class>
+	<class>Pterix</class>
 	<minSector>4</minSector>
 	<systemList>
 		<pilot power="1"max="3" room="3"/>
