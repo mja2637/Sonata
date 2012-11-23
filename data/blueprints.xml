@@ -4280,6 +4280,86 @@
 	<cloakImage>stealth</cloakImage>
 </shipBlueprint> 
 
+<!--  
+   ***********************
+   ROCK SHIP
+   ***********************
+ -->
+
+<!-- ROCK SHIP -->
+<!-- LAYOUT = DEFAULT --> 
+<!-- SHIP ID = 6 -->   
+<shipBlueprint name="PLAYER_SHIP_ROCK" layout="rock_cruiser" img="rock_cruiser">
+	<class>Sower Terraformer</class>
+	<name>SANgluk:0x16b3impl</name>
+	<unlock>Prove yourself to the Sower to earn this powerful cruiser.</unlock>
+	<desc>Typical Sower ships are massive and ancient - and this one is no different. You get the feeling that the weapons are attached to this ship as an afterthought. Definitely not meant for human pilots.</desc>
+	<systemList>
+		<pilot power="1" room="1" start="true" img="room_pilot" />
+		<doors power="2" room="3" start="true" img="room_doors" />
+		<sensors power="2" room="7" start="true" img="room_sensors" />
+		<medbay power="1" room="10" start="false" img="room_medbay" />
+		<oxygen power="1" room="4" start="true" img="room_oxygen" />
+		<shields power="4" room="0" start="true" img="room_pilot" />
+		<engines power="1" room="2" start="true" img="room_engines" />
+		<weapons power="3" room="5" start="true" img="room_weapons" />
+		<drones power="2" room="9" start="false" img="room_drones" />
+		<teleporter power="1" room="8" start="false" img="room_teleporter" />
+		<cloaking power="1" room="6" start="false" img="room_cloaking" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList count="2" missiles="5">
+		<weapon name="SOWER_AUTOCANNON_3"/>
+	</weaponList>
+	<droneList drones="0"/>
+	<health amount="40"/>
+	<maxPower amount ="9"/> 
+	<crewCount amount = "3" class="rock"/>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+<!-- ROCK SHIP -->
+<!-- LAYOUT = ALTERNATE -->    <!-- name it after FP2 Shivans? - Rakshasa - Moloch - Ravana - Sathanas-->
+<!-- SHIP ID = 6 -->   
+<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser_2" img="rock_cruiser_2">
+	<class>Rock Cruiser</class>
+	<name>Shivan</name> 
+	<unlock>Locked -- Not in Game Yet</unlock>
+	<desc>Similar to its designers, this super dense behemoth uses brute force to overwhelm its foes.</desc>
+	<systemList>
+		<pilot power="1" room="8" start="true"img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number> 
+			</slot>
+		</pilot>       
+		<doors power="1" room="15" start="false" img="room_doors_5"/>     
+		<sensors power="1" room="3" start="true" img="room_sensors_4"/>  
+		<oxygen power="2" room="4" start="true" img="room_oxygen_6"/>    
+		<engines power="2" room="0" start="true"img="room_engines_2"/>    
+		<shields power="2" room="2" start="true" img="room_shields_4"/>     
+		<weapons power="3" room="12" start="true"/>  
+		<drones power="2" room="14" start="false" img="room_drones_9"/>     
+		<medbay power="1" room="1" start="true"/>     
+		<teleporter power="1" room="10" start="false"/>  
+		<cloaking power="1" room="13" start="false"img="room_cloaking_2"/>      
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList count="2" missiles="18">
+		<weapon name="SOWER_AUTOCANNON_2"/>
+		<weapon name="BOMB_FIRE"/>
+		<weapon name="BOMB_1"/>
+	</weaponList>
+	<droneList drones="0"/>
+	<health amount="30"/>
+	<maxPower amount="8"/> 
+	<crewCount amount="4" class="rock"/>
+	<aug name="ROCK_ARMOR"/>
+	<shieldImage>rock_cruiser</shieldImage>
+	<cloakImage>rock_cruiser</cloakImage>
+</shipBlueprint>
 
 <!--  
    ***********************
@@ -4573,104 +4653,6 @@
 	<shieldImage>jelly_cruiser</shieldImage>
 	<cloakImage>jelly_cruiser</cloakImage>
 </shipBlueprint>
-
-<!--  
-   ***********************
-   ROCK SHIP
-   ***********************
- -->
-
-<!-- ROCK SHIP -->
-<!-- LAYOUT = DEFAULT --> 
-<!-- SHIP ID = 6 -->   
-<shipBlueprint name="PLAYER_SHIP_ROCK" layout="rock_cruiser" img="rock_cruiser">
-	<class>Rock Cruiser</class>
-	<name>Bulwark</name>
-	<unlock>Prove yourself to the Rockmen to earn this powerful cruiser.</unlock>
-	<desc>Similar to its designers, this super dense behemoth uses brute force to overwhelm its foes.</desc>
-	<systemList>
-		<pilot power="1" room="5" start="true"/>  
-		<doors power="1" room="1" start="true" img="room_doors_5"/>     
-		<sensors power="1" room="12" start="true" img="room_sensors_4"/>  
-		<oxygen power="1" room="0" start="true" img="room_oxygen_7"/>    
-		<engines power="2" room="14" start="true"/>  
-		<shields power="2" room="2" start="true" img="room_shields_4"/>     
-		<weapons power="3" room="15" start="true"img="room_weapons_5">
-			<slot>
-				<direction>right</direction>
-				<number>1</number> 
-			</slot>
-		</weapons>     
-		<drones power="2" room="4" start="false" img="room_drones_7"/>     
-		<medbay power="1" room="16" start="true" img="room_medbay_7"> 
-			<slot>
-				<number>2</number> 
-			</slot>
-		</medbay>        
-		<teleporter power="1" room="17" start="false"/>  
-		<cloaking power="1" room="3" start="false"/>  
-	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
-	<weaponList count="2" missiles="28">
-		<weapon name="SOWER_AUTOCANNON_3"/>
-	</weaponList>
-	<droneList drones="0"/>
-	<health amount="30"/>
-	<maxPower amount ="8"/> 
-	<crewCount amount = "3" class="rock"/>
-	<aug name="ROCK_ARMOR"/>
-</shipBlueprint>
-
-<!-- ROCK SHIP -->
-<!-- LAYOUT = ALTERNATE -->    <!-- name it after FP2 Shivans? - Rakshasa - Moloch - Ravana - Sathanas-->
-<!-- SHIP ID = 6 -->   
-<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser_2" img="rock_cruiser_2">
-	<class>Rock Cruiser</class>
-	<name>Shivan</name> 
-	<unlock>Locked -- Not in Game Yet</unlock>
-	<desc>Similar to its designers, this super dense behemoth uses brute force to overwhelm its foes.</desc>
-	<systemList>
-		<pilot power="1" room="8" start="true"img="room_pilot_2">
-			<slot>
-				<direction>right</direction>
-				<number>1</number> 
-			</slot>
-		</pilot>       
-		<doors power="1" room="15" start="false" img="room_doors_5"/>     
-		<sensors power="1" room="3" start="true" img="room_sensors_4"/>  
-		<oxygen power="2" room="4" start="true" img="room_oxygen_6"/>    
-		<engines power="2" room="0" start="true"img="room_engines_2"/>    
-		<shields power="2" room="2" start="true" img="room_shields_4"/>     
-		<weapons power="3" room="12" start="true"/>  
-		<drones power="2" room="14" start="false" img="room_drones_9"/>     
-		<medbay power="1" room="1" start="true"/>     
-		<teleporter power="1" room="10" start="false"/>  
-		<cloaking power="1" room="13" start="false"img="room_cloaking_2"/>      
-	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
-	<weaponList count="2" missiles="18">
-		<weapon name="SOWER_AUTOCANNON_2"/>
-		<weapon name="BOMB_FIRE"/>
-		<weapon name="BOMB_1"/>
-	</weaponList>
-	<droneList drones="0"/>
-	<health amount="30"/>
-	<maxPower amount="8"/> 
-	<crewCount amount="4" class="rock"/>
-	<aug name="ROCK_ARMOR"/>
-	<shieldImage>rock_cruiser</shieldImage>
-	<cloakImage>rock_cruiser</cloakImage>
-</shipBlueprint>
-
-
-
-
-
-
-
-
 
 <!--  
    ***********************

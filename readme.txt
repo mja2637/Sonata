@@ -97,6 +97,7 @@ Condensed Anti-Neutrino Beam (Sophon): 4 bars, 3 damage, 65 length, ignores 1 sh
 3 VERSION INFO
 Created by Matt Alioto
 Some art by Jeremy McKellips
+Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
