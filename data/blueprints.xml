@@ -4037,7 +4037,7 @@
     <weapons power="3" room="1" start="true" img="room_weapons" />
     <drones power="2" room="8" start="false" img="room_drones" />
     <teleporter power="1" room="10" start="false" img="room_teleporter" />
-    <cloaking power="1" room="2" start="true" img="room_cloaking" />
+    <cloaking power="1" room="2" start="false" img="room_cloaking" />
   </systemList>
   <weaponSlots>4</weaponSlots>
   <droneSlots>2</droneSlots>
@@ -4075,7 +4075,7 @@
 		<weapons power="4" room="1" start="true" img="room_weapons" />
 		<drones power="0" room="8" start="false" img="room_drones" />
 		<teleporter power="1" room="9" start="false" img="room_teleporter" />
-		<cloaking power="1" room="2" start="true" img="room_cloaking" />
+		<cloaking power="1" room="2" start="false" img="room_cloaking" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>

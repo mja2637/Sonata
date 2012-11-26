@@ -729,7 +729,7 @@ item - scrap + that thing  -->
 		<damage amount="4"/>
 	</event>
 	<event>
-		<text>The drone keeps the ship stable enough to allow them to escape the asteroid field.  They message you with map coordinates, "You're that Pilgrim ship the Rebels are after, aren't you?  I can't offer much but I heard there was a Pilgrim loyalist base nearby. Maybe they can help you?"</text>
+		<text>The drone keeps the ship stable enough to allow them to escape the asteroid field.  They message you with map coordinates, "You're that ship the UE is after, aren't you?  I can't offer much but I heard there was a Pilgrim base nearby. Maybe they can help you?"</text>
 		<quest event="HIDDEN_FEDERATION_BASE_LIST"/>
 		<item_modify>
 			<item type="drones" min="-1" max="-1"/>
@@ -751,7 +751,7 @@ item - scrap + that thing  -->
 </eventList>
 <eventList name="CIVILIAN_ASTEROIDS_BEACON_LIST4">
 	<event>
-		<text>You regretfully leave the area, not able to watch them get destroyed.   A short while later you get a second message, "We survived, no thanks to you!  Don't think I don't know that the Rebels are hunting for you.  I'll be sure to tell them where you are the next time I see them!"</text>
+		<text>You regretfully leave the area, not able to watch them get destroyed.   A short while later you get a second message, "We survived, no thanks to you!  Don't think I don't know that the loyalists are hunting for you.  I'll be sure to tell them where you are the next time I see them!"</text>
 		<modifyPursuit amount="1"/>
 	</event>
 	<event>
@@ -1342,8 +1342,8 @@ item - scrap + that thing  -->
 </event>
 <textList name="FIND_WEAPON">
 	<text planet="NONE" back="BG_NEBULA">Holy crap! A weapon is just floating in space!</text>
-	<text planet="PLANET_UNPOPULATED" back="BG_NEBULA">You inform a nearby station of your flight from the Rebels. They offer to outfit your ship with a weapon and wish you well.</text>
-	<text planet="PLANET_POPULATED" back="BG_NEBULA">A settlement still loyal to the Pilgrim hails your ship. They have prepared a weapon to aid your escape from the Rebels.</text>
+	<text planet="PLANET_UNPOPULATED" back="BG_NEBULA">You inform a nearby station of your flight from the loyalists. They offer to outfit your ship with a weapon and wish you well.</text>
+	<text planet="PLANET_POPULATED" back="BG_NEBULA">A settlement friendly to the resistance hails your ship. They have prepared a weapon to aid your escape from the United Empire.</text>
 	<text>As soon as you arrive a small Mantis ship detaches from a wreck and jumps away.  You must have interrupted their salvage operation because you find a weapon ready to be installed!</text>
 	<text>A small merchant ship messages you, "Underground Pilgrim comm channels are all talking about your 'secret' mission. Let us install a weapon to help. Good luck!"</text>
 	<text>Debris from a battle is scattered around this system. A few pieces bounce against your ship. You passively scan them and discover there is a functioning weapon among them!</text> 
@@ -1927,19 +1927,19 @@ item - scrap + that thing  -->
 		<quest event="HIDDEN_FEDERATION_BASE_LIST"/>
 	</event>
 	<event>
-		<text>You find a hidden Pilgrim outpost.  They message you, "Quick, we just got word from a sister outpost that they've been discovered by the Rebels and are under attack!  If you are still loyal to the Pilgrim, go save them!"</text>
+		<text>You find a hidden Pilgrim outpost.  They message you, "Quick, we just got word from a sister outpost that they've been discovered by the Empire and are under attack!  If you are still loyal to the resistance, go save them!"</text>
 		<autoReward level="MED">stuff</autoReward>
 		<quest event="FEDERATION_BASE_ASSIST"/>
 	</event>
 	<event>
-		<text>You find a secret Pilgrim outpost... but it appears the Rebels have found it before you; the place is empty and faint bloodstains can be seen in the living quarters.  You find the encrypted signal emitter and shut it off before leaving.</text>
+		<text>You find a secret Pilgrim outpost... but it appears the loyalists have found it before you; the place is empty and faint bloodstains can be seen in the living quarters.  You find the encrypted signal emitter and shut it off before leaving.</text>
 	</event>
 	<event>
 		<text>You find a small cache of supplies that were surely left for any loyal Pilgrim ships in trouble.  You take all that you need, leaving some for others to find.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 	<event>
-		<text>As you approach the signal you receive a message on a Rebel channel, "I knew we'd catch some Pilgrim fish with this signal.  Prepare to be boarded, scum!"</text>
+		<text>As you approach the signal you receive a message on an Empire channel, "I knew we'd catch some Pilgrim fish with this signal.  Prepare to be boarded, scum!"</text>
 		<ship load="REBEL" hostile="true"/>
 		<boarders min="2" max="3" class="human"/>
 	</event>
@@ -2037,11 +2037,11 @@ item - scrap + that thing  -->
 
 <event name="STORE_RESCUE" unique="true">
 	<img planet="PLANET_POPULATED"/>
-	<text>Once you arrive at this populated region, you immediately pick up a distress signal.  A small shuttle is asking anyone who'll listen for help protecting their family from a Rebel ship.  Unsurprisingly, no one has yet responded to their request.</text>
+	<text>Once you arrive at this populated region, you immediately pick up a distress signal.  A small shuttle is asking anyone who'll listen for help protecting their family from a United Empire ship.  Unsurprisingly, no one has yet responded to their request.</text>
 	<choice>
 		<text>See if you can assist them.</text>
 		<event>
-			<text>It seems that a small space dock has done something to anger the Rebels.  The store there is run by his family and he pleads that you rescue them.  He uploads the coordinates of the station to your navigation system.</text>
+			<text>It seems that a small space dock has done something to anger the loyalists.  The store there is run by his family and he pleads that you rescue them.  He uploads the coordinates of the station to your navigation system.</text>
 			<quest event="QUEST_STORE_RESCUE"/>
 		</event>
 	</choice>
@@ -2057,9 +2057,9 @@ item - scrap + that thing  -->
 	<store/>
 </event>
 <event name="QUEST_STORE_RESCUE">
-	<text>Once you arrive at the beacon you detect a Rebel scout assaulting a compound on a nearby desolate moon.</text>
+	<text>Once you arrive at the beacon you detect a loyalist scout assaulting a compound on a nearby desolate moon.</text>
 	<choice>
-		<text>Engage the Rebel and rescue the space dock.</text>
+		<text>Engage the loyalist and rescue the space dock.</text>
 		<event>
 			<ship load="SQUAT_STORE_RESCUE" hostile="true"/>
 		</event>
@@ -2088,7 +2088,7 @@ item - scrap + that thing  -->
 </event>
 <eventList name="MERCENARY_WORK_LIST">
 	<event>
-		<text>"A space dock is under assault from the Rebels.  Although the dock is... technically... illegal within their laws, it's very important for our trade.  We'll pay you in fuel and scrap if you promise to save them."</text>
+		<text>"A space dock is under assault from the United Empire.  Although the dock is... technically... illegal within their laws, it's very important for our trade.  We'll pay you in fuel and scrap if you promise to save them."</text>
 		<choice>
 			<text>Agree to rescue the store.</text>
 			<event>
@@ -2133,11 +2133,11 @@ item - scrap + that thing  -->
 
 		
 <event name="QUEST_MANTIS_INVASION_START" unique="true">
-	<text>You receive a request, "All of our military ships have been destroyed or damaged during the United Earth. However, there have been reports of a Mantis war camp only a few jumps from us. Can you help?"</text>
+	<text>You receive a request, "All of our military ships have been destroyed or damaged during the civil war. However, there have been reports of a Mantis war camp only a few jumps from us. Can you help?"</text>
 	<choice hidden="true">
 		<text>Pledge to do what you can.</text>
 		<event>
-			<text>"Thank you! If you can just give us a count on their numbers perhaps we can get the Rebels to help."</text>
+			<text>"Thank you! If you can just give us a count on their numbers perhaps we can get the Empire to help."</text>
 			<quest event="QUEST_MANTIS_INVASION"/>
 			<autoReward level="MED">scrap_only</autoReward>
 		</event>
@@ -2377,15 +2377,15 @@ item - scrap + that thing  -->
 		<choice hidden="true">
 			<text>Demand the Mantis joins your crew but release the rest.</text>
 			<event>
-				<text>The Mantis seems fine with the orders, saying "I'm on board if it means we kill some rebels!" You drop the rest off at a nearby station.</text>
+				<text>The Mantis seems fine with the orders, saying "I'm on board if it means we kill some loyalists!" You drop the rest off at a nearby station.</text>
 				<crewMember amount="1" class="mantis"/>  
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true">
-			<text>Demand the Sowerman joins your crew but release the rest.</text>
+			<text>Demand the Sower joins your crew but release the rest.</text>
 			<event>
-				<text>The Sowerman remains silent and you worry there might be trouble. However when you ask him to perform a task he acts without complaint. Perhaps he won't be a problem.</text>
+				<text>It remains silent and you worry there might be trouble. However when you ask it to perform a task it acts without complaint. Perhaps there won't be a problem.</text>
 				<crewMember amount="1" class="rock"/>  
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
@@ -2393,7 +2393,7 @@ item - scrap + that thing  -->
 		<choice hidden="true">
 			<text>Demand the Engi joins your crew but release the rest.</text>
 			<event>
-				<text>"Verify primary object is to defeat rebels, re-establish peace?" You nod and it responds, "Acceptable." You drop the rest off at a nearby station and strip the ship.</text>
+				<text>"Verify primary object is to defeat United Empire, re-establish peace?" You nod and it responds, "Acceptable." You drop the rest off at a nearby station and strip the ship.</text>
 				<crewMember amount="1" class="engi"/>  
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
@@ -3055,7 +3055,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 	<event>
 		<text>He offers to lead you to an unguarded Empire supply dump as proof of his intentions.</text>
 		<choice>
-			<text>Reluctantly accept his proposal and fight the Rebel ship</text>
+			<text>Reluctantly accept his proposal and fight the Empire ship</text>
 			<event load="ALISON_DEFECTOR_HELP_2"/>
 		</choice>
 		<choice>
