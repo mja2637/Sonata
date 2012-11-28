@@ -807,7 +807,7 @@ item - scrap + that thing  -->
 </event>
 <textList name="REBEL_VS_FEDERATION">
 	<text>Upon arriving at this beacon, you detect a distress call.  Local scans reveal that a Pilgrim transport is under attack from a loyalist scout!</text>
-	<text>You immediately notice a United Earth ship chasing what appears to be a civilian transport.  However you are detecting chatter on an encrypted resistance channel...That transport is carrying Pilgrims!</text>
+	<text>You immediately notice a United Empire ship chasing what appears to be a civilian transport.  However you are detecting chatter on an encrypted resistance channel...That transport is carrying Pilgrims!</text>
 	<text>Your sensors are picking up a distress call on an encrypted Pilgrim channel.  You eventually find a Pilgrim scout being chased by a loyalist fighter!</text>
 </textList>
 <eventList name="REBEL_VS_FEDERATION_SAVED_LIST">  <!-- What happens once you save the Pilgrim ship from the rebel -->
@@ -1152,7 +1152,7 @@ item - scrap + that thing  -->
 	<text>A heavily damaged ship is drifting near this beacon. You receive a communication: "Hello! Nice of you to drop by. As you can see, our ship has seen better days. Yours is looking quite nice, I think we might be taking it from you now." Intruders beam aboard.</text>
 	<text>You detect life-signs actually on the beacon itself! A teleporter signal warns you but it's too late, they've beamed from the beacon onto your ship and seem intent on taking it over.</text>
 	<text>Your ship detects a faint distress signal on a nearby moon.  As you approach the rock, warning lights flash as hostiles beam aboard the ship from some hidden location.</text>
-	<text>As you arrive, you become aware of a small Rebel outpost near the beacon.  You are hardly able to bark an order before a small team is beamed aboard your ship.  They must have been expecting you...</text>
+	<text>As you arrive, you become aware of a small Empire outpost near the beacon.  You are hardly able to bark an order before a small team is beamed aboard your ship.  They must have been expecting you...</text>
 </textList>
 
 <event name="BOARDERS_HACKING" unique="true">
@@ -2020,7 +2020,7 @@ item - scrap + that thing  -->
 </textList>
 <eventList name="QUEST_ESCORT_ARRIVE">
 	<event>
-		<text>You escort the ship to the requested beacon.  Much to your dismay you are ambushed by a Rebel ship.  You walked right into their trap!</text>
+		<text>You escort the ship to the requested beacon.  Much to your dismay you are ambushed by a loyalist ship.  You walked right into their trap!</text>
 		<ship load="REBEL" hostile="true"/>
 	</event>
 	<event>

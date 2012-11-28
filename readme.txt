@@ -101,6 +101,15 @@ Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
+5
+	New hangar background
+	Reworked weapon prices and rarities
+	Removed vanilla weapons from random spawn
+	Added rebel_long sprite and pirate variant
+	Removed last of vanilla references to rebels/federation/rock/zoltan
+	Added new tooltips
+	Reworked weapon description box for readability
+	Several small tweaks and bug fixes
 4
 	Added layout/floor for UE destroyer; fine tuned
 	Added image/layout/floor for Sower ship 1

@@ -962,7 +962,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		</event>
 	</choice>
 	<choice hidden="true" req="rock">
-		<text>(Rock Crew) Have your Sower unit communicate with the Slug.</text>
+		<text>(Sower Crew) Have your Sower unit communicate with the Slug.</text>
 		<event load="SLUG_DRINK_ROCK"/>
 	</choice>
 </event>

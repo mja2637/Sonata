@@ -1,0 +1,51 @@
+Remove Engi???
+
+So just:
+UE
+Pilgrim
+Sophon
+Hissho
+Sower
+
+Maybe:
+Automaton as Engi (MINOR role)
+Crystal->Swarm?
+Slug->Amoeba?
+
+No:
+Horatio
+IHTG as faction
+Craver (mostly)
+Automaton
+Amoeba
+
+
+
+Need events:
+- UE losing will to fight Pilgrim secession
+- You defeat the most war-hungry admiral's dreadnought
+- Pilgrims are allowed to begin, uh, a pilgrimage
+- Sophon mediated?
+
+
+Events files:
+events.xml - Seems like generic events than can happen in any sector, as well as civilian sector events. Editing here will improve the atmosphere of the mod greatly. Human/Sower/Sophon references changed already.
+events_nebula - Deals w/ the obvious; these events are fairly common and so key for mod atmosphere. References changed already.
+events_pirate
+events_rebel
+events_ships
+events_imagelist
+events_boss
+
+
+events_rock
+events_zoltan
+
+
+events_mantis - Mantis sector events & ship unlock. Surprisingly short/little in there. References changed already but needs to be converted to Hissho. Lots of lore work to be done/added.
+events_engi - Engi sectors & depicts the war between Mantis and Engi. Will be updated to depict a Hissho conquest-in-progress (I think, atm).
+
+events_fuel - Random events that occur when you're out of fuel. Probably very little point to further modification. It looks like there are some sector-specific events as well. Human/Sower/Sophon references changed already.
+
+events_crystal - "Unknown" sector events. Will be changed to deal with the Cravers.
+events_slug

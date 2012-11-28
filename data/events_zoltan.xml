@@ -255,7 +255,7 @@ shield research center - jams shields
 		</event>
 	</choice>
 	<choice hidden="true" req="energy">
-		<text>(Zoltan) Have your crewmember present his official documentation and pay the entry fee [ Scrap: -10 ].</text>
+		<text>(Sophon) Have your crewmember present his official documentation and pay the entry fee [ Scrap: -10 ].</text>
 		<event>
 			<text>They scan ID that declares your crewmember an official citizen, collect their fee, and let you pass.</text>
 			<item_modify>
@@ -305,7 +305,7 @@ shield research center - jams shields
 </eventList>
 
 <event name="ZOLTAN_QUEST_PRIMITIVES" unique="true">
-	<text>You arrive at the primitive planet that you heard about at the cantina and are surprised to see a Sophon ship facing off against a United Earth assault craft.</text>
+	<text>You arrive at the primitive planet that you heard about at the cantina and are surprised to see a Sophon ship facing off against a United Empire warship.</text>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -318,16 +318,16 @@ shield research center - jams shields
 				</event>
 			</choice>
 			<choice hidden="true">
-				<text>Protect the aliens' way of life - Attack the Rebel ship.</text>
+				<text>Protect the aliens' way of life - Attack the United Empire ship.</text>
 				<event>
-					<text>These creatures should be left to develop at their own pace. You direct all weapons on the United Earth ship and begin the firing sequence.</text>
+					<text>These creatures should be left to develop at their own pace. You direct all weapons on the United Empire ship and begin the firing sequence.</text>
 					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
 				</event>
 			</choice>
 			<choice hidden="true">
 				<text>Leave.</text>
 				<event>
-					<text>You don't want to alert the United Earth of your presence and you don't want to anger the Sophon in their territory. The best solution is to leave.</text>
+					<text>You don't want to alert the United Empire of your presence and you don't want to anger the Sophon in their territory. The best solution is to leave.</text>
 				</event>
 			</choice>
 		</event>
@@ -578,7 +578,7 @@ shield research center - jams shields
 	<choice hidden="true">
 		<text>Crystalline Beings</text>
 		<event>
-			<text>The Zoltan is quiet for a moment, and then whispers, "Are you sure? Well, so be it then." A huge wormhole opens, and from within it looms a Crystalline ship, prepared for war.</text>
+			<text>The Sophon is quiet for a moment, and then whispers, "Are you sure? Well, so be it then." A huge wormhole opens, and from within it looms a Crystalline ship, prepared for war.</text>
 			<ship load= ?!?!
 					JUSTIN DO THIS STILL!!!!!!! JUSTIN - TO DO
 		</event>
@@ -773,7 +773,7 @@ shield research center - jams shields
 </eventList>
 
 <event name="ZOLTAN_PEACE_QUEST2">
-	<text>You arrive at the location specified by the peace-loving Sophon, but the only thing nearby is a United Earth ship, closing in fast! "We've found you! You're not getting away this time!"</text>
+	<text>You arrive at the location specified by the peace-loving Sophon, but the only thing nearby is a United Empire ship, closing in fast! "We've found you! You're not getting away this time!"</text>
 	<ship load="REBEL" hostile="false"/>
 	<choice hidden="true">
 		<text>Attack.</text>
@@ -821,7 +821,7 @@ shield research center - jams shields
 				</event>
 			</choice>
 			<choice hidden="true">
-				<text>"Your damned jingoism is causing millions of deaths! The United Earth is an evil empire, and Human nationalism is the focus of evil in the modern galaxy!"</text>
+				<text>"Your damned jingoism is causing millions of deaths! The United Empire is an evil one, and Human nationalism is the root of evil in the modern galaxy!"</text>
 				<event>
 					<text>"Spreading humanity throughout the stars is our manifest destiny. You have forgotten who you are - I, for one, am still proud to be human!" They charge.</text>
 					<ship hostile="true"/>

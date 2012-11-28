@@ -71,12 +71,12 @@
 </crewBlueprint>
 
 <crewBlueprint name="engi">
-	<desc>It's unclear if the 'Engi' are partly organic or entirely mechanical, but it's well known that they make exceptional engineers.</desc>
-	<cost>50</cost>
+	<desc>Automatons are content to live in peace on their home planet and have only recently expanded into nearby sectors. It is doubtful that they will last much longer against the Hissho.</desc>
+	<cost>65</cost>
 	<bp>2</bp>
-	<title>Engi</title>
-	<short>Engi</short>
-	<rarity>2</rarity>
+	<title>Automaton</title>
+	<short>Automaton</short>
+	<rarity>4</rarity>
 	<powerList>
 		<power>Repair speed is doubled</power>
 		<power>Combat damage inflicted is halved</power>
@@ -84,12 +84,12 @@
 </crewBlueprint>
 
 <crewBlueprint name="mantis">
-	<desc>The Mantis disregard for individual lives led to their evolution as a vicious, warrior race.</desc>
-	<title>Mantis</title>
-	<short>Mantis</short>
-	<cost>45</cost>
+	<desc>A highly competitive race of tribal warriors, the Hissho resemble feathered pterodactyls. They are violent, but honorable, modern, and civilized.</desc>
+	<title>Hissho</title>
+	<short>Hissho</short>
+	<cost>55</cost>
 	<bp>2</bp>
-	<rarity>2</rarity>
+	<rarity>3</rarity>
 	<powerList>
 		<power>Double damage in combat</power>
 		<power>1.2x move speed</power>
@@ -98,9 +98,9 @@
 </crewBlueprint>
 
 <crewBlueprint name="slug">
-	<desc>These telepathic Slugs were shunned in the Galactic Federation for their constant thievery and manipulation of other sentient beings.</desc>
-	<title>Slug</title>
-	<short>Slug</short>
+	<desc>Amoebas are incredible empaths and have extremely high emotional intelligence; perhaps that explains why few are to be found near United Empire territory..</desc>
+	<title>Amoeba</title>
+	<short>Amoeba</short>
 	<cost>45</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
@@ -116,7 +116,7 @@
 	<short>Sower</short>
 	<cost>65</cost>
 	<bp>4</bp>
-	<rarity>3</rarity>
+	<rarity>4</rarity>
 	<powerList>
 		<power>Immune to fire</power>
 		<power>Movement speed is halved</power>
@@ -125,9 +125,9 @@
 </crewBlueprint>
 
 <crewBlueprint name="crystal">
-	<desc>Ancient ancestors of the Rockmen.</desc>
-	<title>Crystal</title>
-	<short>Crystal</short>
+	<desc>A horrifying mass of teeth, claws, sinew, and hunger.</desc>
+	<title>Craver</title>
+	<short>Craver</short>
 	<cost>65</cost>
 	<bp>4</bp>
 	<rarity>0</rarity>
@@ -145,7 +145,7 @@
 	<short>Sophon</short>
 	<cost>65</cost>
 	<bp>4</bp>
-	<rarity>5</rarity>
+	<rarity>3</rarity>
 	<powerList>
 		<power>Provides power to occupied system</power>
 		<power>Maximum health is reduced.</power>
@@ -362,11 +362,11 @@
 		
 		Humans - UE/Pilgrim/IHTG
 		Mantis - Hissho
-		Engi - Horatio (or Swarm?)
+		Engi - Automaton
 		Slug - Amoeba
 		Rock - Sower
 		Zoltan - Sophon
-		Chrystal - Swarm (or Endless?)
+		Chrystal - Endless
 -->
 
 <!-- For weapon art, all weapons will default to 'default' unless you give it something else... 
@@ -429,9 +429,9 @@
 	<breachChance>3</breachChance>
 	<cooldown>11</cooldown>
 	<power>2</power>
-	<cost>40</cost>
+	<cost>50</cost>
 	<bp>2</bp>
-	<rarity>2</rarity>
+	<rarity>3</rarity>
 	<image>UE_GAUSS_PROJ_2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -461,14 +461,14 @@
 	<tooltip>3 damage, chance to breach.</tooltip>
 	<damage>3</damage>
 	<shots>1</shots>
-	<sp>0</sp>
+	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
 	<cooldown>13</cooldown>
 	<power>3</power>
-	<cost>60</cost>
+	<cost>75</cost>
 	<bp>2</bp>
-	<rarity>3</rarity>
+	<rarity>4</rarity>
 	<image>UE_GAUSS_PROJ_3</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -503,9 +503,9 @@
 	<breachChance>0</breachChance>
 	<cooldown>15</cooldown>
 	<power>4</power>
-	<cost>80</cost>
+	<cost>100</cost>
 	<bp>2</bp>
-	<rarity>4</rarity>
+	<rarity>5</rarity>
 	<image>UE_GAUSS_PROJ_4</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -540,9 +540,9 @@
 	<breachChance>0</breachChance>
 	<cooldown>6</cooldown>
 	<power>1</power>
-	<cost>30</cost>
+	<cost>25</cost>
 	<bp>2</bp>
-	<rarity>1</rarity>
+	<rarity>2</rarity>
 	<image>UE_DRIVER_PROJ_1</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -579,7 +579,7 @@
 	<power>3</power>
 	<cost>50</cost>
 	<bp>2</bp>
-	<rarity>2</rarity>
+	<rarity>3</rarity>
 	<image>UE_DRIVER_PROJ_2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -616,7 +616,7 @@
 	<power>2</power>
 	<cost>75</cost>
 	<bp>2</bp>
-	<rarity>3</rarity>
+	<rarity>4</rarity>
 	<image>UE_DRIVER_PROJ_3</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -650,7 +650,7 @@
 	<fireChance>3</fireChance>
 	<breachChance>3</breachChance>
 	<cooldown>18</cooldown>
-	<power>4</power>
+	<power>5</power>
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
@@ -689,9 +689,9 @@
 	<breachChance>0</breachChance>
 	<cooldown>11</cooldown>
 	<power>1</power>
-	<cost>20</cost>
+	<cost>25</cost>
 	<bp>2</bp>
-	<rarity>1</rarity>
+	<rarity>2</rarity>
 	<image>SOWER_CANNON_PROJ_1</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -725,9 +725,9 @@
 	<breachChance>1</breachChance>
 	<cooldown>11</cooldown>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>50</cost>
 	<bp>2</bp>
-	<rarity>2</rarity>
+	<rarity>3</rarity>
 	<image>SOWER_CANNON_PROJ_2</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -761,9 +761,9 @@
 	<breachChance>2</breachChance>
 	<cooldown>13</cooldown>
 	<power>2</power>
-	<cost>80</cost>
+	<cost>75</cost>
 	<bp>2</bp>
-	<rarity>3</rarity>
+	<rarity>4</rarity>
 	<image>SOWER_CANNON_PROJ_3</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -797,7 +797,7 @@
 	<breachChance>5</breachChance>
 	<cooldown>20</cooldown>
 	<power>4</power>
-	<cost>120</cost>
+	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>SOWER_CANNON_PROJ_4</image>
@@ -833,7 +833,7 @@
 	<breachChance>0</breachChance>
 	<cooldown>10</cooldown>
 	<power>1</power>
-	<cost>20</cost>
+	<cost>25</cost>
 	<bp>2</bp>
 	<rarity>1</rarity>
 	<image>UE_DRIVER_PROJ_1</image>
@@ -870,7 +870,7 @@
 	<breachChance>2</breachChance>
 	<cooldown>6</cooldown>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
 	<image>UE_DRIVER_PROJ_2</image>
@@ -908,9 +908,9 @@
 	<breachChance>2</breachChance>
 	<cooldown>12</cooldown>
 	<power>3</power>
-	<cost>80</cost>
+	<cost>75</cost>
 	<bp>2</bp>
-	<rarity>3</rarity>
+	<rarity>4</rarity>
 	<image>SOWER_CANNON_PROJ_1</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -945,7 +945,7 @@
 	<power>4</power>
 	<cost>100</cost>
 	<bp>2</bp>
-	<rarity>4</rarity>
+	<rarity>5</rarity>
 	<image>UE_DRIVER_PROJ_4</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -983,7 +983,7 @@
 	<power>1</power>
 	<cost>20</cost>
 	<bp>2</bp>
-	<rarity>1</rarity>
+	<rarity>2</rarity>
 	<image>beam_contact</image>
 	<length>45</length>
 	<launchSounds>
@@ -1005,7 +1005,7 @@
 	<cooldown>7</cooldown>
 	<speed>3</speed>
 	<power>2</power>
-	<cost>50</cost>
+	<cost>40</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
 	<image>beam_contact</image>
@@ -1028,7 +1028,7 @@
 	<breachChance>0</breachChance>
 	<cooldown>16</cooldown>
 	<power>3</power>
-	<cost>70</cost>
+	<cost>60</cost>
 	<bp>7</bp>
 	<rarity>3</rarity>
 	<length>95</length>
@@ -1051,9 +1051,9 @@
 	<breachChance>8</breachChance>
 	<cooldown>15</cooldown>
 	<power>3</power>
-	<cost>75</cost>
+	<cost>80</cost>
 	<bp>6</bp>
-	<rarity>3</rarity>
+	<rarity>4</rarity>
 	<length>35</length>
 	<image>beam_contact</image>
 	<launchSounds>
@@ -1074,7 +1074,7 @@
 	<breachChance>0</breachChance>
 	<cooldown>20</cooldown>
 	<power>4</power>
-	<cost>140</cost>
+	<cost>100</cost>
 	<bp>12</bp>
 	<rarity>5</rarity>
 	<length>65</length>
@@ -1098,9 +1098,9 @@
 	<breachChance>0</breachChance>
 	<cooldown>11</cooldown>
 	<power>1</power>
-	<cost>20</cost>
+	<cost>30</cost>
 	<bp>2</bp>
-	<rarity>1</rarity>
+	<rarity>2</rarity>
 	<image>laser_light1</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -1135,9 +1135,9 @@
 	<breachChance>0</breachChance>
 	<cooldown>8</cooldown>
 	<power>2</power>
-	<cost>45</cost>
+	<cost>60</cost>
 	<bp>2</bp>
-	<rarity>2</rarity>
+	<rarity>3</rarity>
 	<image>laser_light2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -1172,7 +1172,7 @@
 	<breachChance>5</breachChance>
 	<cooldown>15</cooldown>
 	<power>4</power>
-	<cost>20</cost>
+	<cost>90</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>ion_2_shot</image>
@@ -1214,7 +1214,7 @@
 	<power>1</power>
 	<cost>20</cost>
 	<bp>2</bp>
-	<rarity>0</rarity>
+	<rarity>1</rarity>
 	<image>beam_contact</image>
 	<length>45</length>
 	<launchSounds>
@@ -1236,9 +1236,9 @@
 	<cooldown>13</cooldown>
 	<speed>3</speed>
 	<power>1</power>
-	<cost>30</cost>
+	<cost>40</cost>
 	<bp>2</bp>
-	<rarity>1</rarity>
+	<rarity>2</rarity>
 	<image>beam_contact</image>
 	<length>70</length>
 	<launchSounds>
@@ -1260,9 +1260,9 @@
 	<cooldown>12</cooldown>
 	<speed>3</speed>
 	<power>2</power>
-	<cost>50</cost>
+	<cost>60</cost>
 	<bp>2</bp>
-	<rarity>0</rarity>
+	<rarity>3</rarity>
 	<image>beam_contact</image>
 	<length>50</length>
 	<launchSounds>
@@ -1284,9 +1284,9 @@
 	<cooldown>12</cooldown>
 	<speed>3</speed>
 	<power>3</power>
-	<cost>75</cost>
+	<cost>80</cost>
 	<bp>2</bp>
-	<rarity>0</rarity>
+	<rarity>4</rarity>
 	<image>beam_contact</image>
 	<length>45</length>
 	<launchSounds>
@@ -1313,7 +1313,7 @@
 	<power>1</power>
 	<cost>20</cost>
 	<bp>2</bp>
-	<rarity>0</rarity>
+	<rarity>1</rarity>
 	<image>UE_GAUSS_PROJ_1</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -1348,9 +1348,9 @@
 	<breachChance>0</breachChance>
 	<cooldown>10</cooldown>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>40</cost>
 	<bp>2</bp>
-	<rarity>1</rarity>
+	<rarity>2</rarity>
 	<image>UE_GAUSS_PROJ_2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -1385,9 +1385,9 @@
 	<breachChance>0</breachChance>
 	<cooldown>12</cooldown>
 	<power>3</power>
-	<cost>20</cost>
+	<cost>60</cost>
 	<bp>2</bp>
-	<rarity>2</rarity>
+	<rarity>3</rarity>
 	<image>UE_GAUSS_PROJ_3</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -1422,7 +1422,7 @@
 	<breachChance>1</breachChance>
 	<cooldown>14</cooldown>
 	<power>4</power>
-	<cost>20</cost>
+	<cost>80</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>UE_GAUSS_PROJ_4</image>
@@ -1466,7 +1466,7 @@
 	<power>1</power>
 	<cost>20</cost>
 	<bp>2</bp>
-	<rarity>0</rarity>
+	<rarity>1</rarity>
 	<image>missile_2</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -1502,7 +1502,7 @@
 	<power>2</power>
 	<cost>40</cost>
 	<bp>2</bp>
-	<rarity>0</rarity>
+	<rarity>2</rarity>
 	<image>missile_1</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -1536,9 +1536,9 @@
 	<breachChance>1</breachChance>
 	<cooldown>12</cooldown>
 	<power>3</power>
-	<cost>50</cost>
+	<cost>60</cost>
 	<bp>2</bp>
-	<rarity>0</rarity>
+	<rarity>3</rarity>
 	<image>missile_3</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -1572,9 +1572,9 @@
 	<breachChance>4</breachChance>
 	<cooldown>15</cooldown>
 	<power>4</power>
-	<cost>70</cost>
+	<cost>80</cost>
 	<bp>2</bp>
-	<rarity>0</rarity>
+	<rarity>4</rarity>
 	<image>missile_breach</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -1924,7 +1924,7 @@
 	<power>2</power>
 	<cost>50</cost>
 	<bp>4</bp>
-	<rarity>1</rarity>
+	<rarity>0</rarity>
 	<image>laser_light1</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -1961,7 +1961,7 @@
 	<power>2</power>
 	<cost>80</cost>
 	<bp>7</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<image>laser_light2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -1998,7 +1998,7 @@
 	<power>4</power>
 	<cost>110</cost>
 	<bp>10</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<image>laser_light2</image>
 	<launchSounds>
 		<sound>lightLaser1</sound>
@@ -2041,7 +2041,7 @@
 	<power>1</power>
 	<cost>55</cost>
 	<bp>6</bp>
-	<rarity>2</rarity>
+	<rarity>0</rarity>
 	<image>laser_heavy1</image>
 	<launchSounds>
 		<sound>heavyLaser1</sound>
@@ -2077,7 +2077,7 @@
 	<power>3</power>
 	<cost>75</cost>
 	<bp>10</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<image>laser_heavy1</image>
 	<launchSounds>
 		<sound>heavyLaser1</sound>
@@ -2219,7 +2219,7 @@
 	<type>MISSILES</type>
 	<title>Artemis Missiles</title>
 	<short>Artemis</short>
-	<desc>Standard missile launcher on most Federation ships.</desc>
+	<desc>Standard missile launcher on most Empire ships.</desc>
 	<tooltip>Fires 1 missile; does 2 damage; pierces all shields.</tooltip>
 	<damage>2</damage>
 	<missiles>1</missiles>
@@ -2255,7 +2255,7 @@
 	<type>MISSILES</type>
 	<title>Artemis Missiles</title>
 	<short>Artemis</short>
-	<desc>Standard missile launcher on most Federation ships.</desc>
+	<desc>Standard missile launcher on most Empire ships.</desc>
 	<tooltip>Fires 1 missile; does 2 damage; pierces all shields.</tooltip>
 	<damage>2</damage>
 	<missiles>1</missiles>
@@ -2304,7 +2304,7 @@
 	<power>3</power>
 	<cost>50</cost>
 	<bp>6</bp>
-	<rarity>2</rarity>
+	<rarity>0</rarity>
 	<image>missile_3</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -2341,7 +2341,7 @@
 	<power>3</power>
 	<cost>80</cost>
 	<bp>7</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<image>missile_2</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -2378,7 +2378,7 @@
 	<power>3</power>
 	<cost>70</cost>
 	<bp>7</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<image>missile_breach</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -2446,7 +2446,7 @@
 	<power>2</power>
 	<cost>60</cost>
 	<bp>5</bp>
-	<rarity>2</rarity>
+	<rarity>0</rarity>
 	<image>beam_contact</image>
 	<length>170</length>
 	<launchSounds>
@@ -2470,7 +2470,7 @@
 	<power>3</power>
 	<cost>70</cost>
 	<bp>7</bp>
-	<rarity>2</rarity>
+	<rarity>0</rarity>
 	<length>80</length>
 	<image>beam_contact</image>
 	<launchSounds>
@@ -2494,7 +2494,7 @@
 	<power>4</power>
 	<cost>120</cost>
 	<bp>12</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<length>80</length>
 	<image>beam_contact</image>
 	<launchSounds>
@@ -2518,7 +2518,7 @@
 	<power>2</power>
 	<cost>70</cost>
 	<bp>6</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<length>140</length>
 	<image>beam_contact</image>
 	<launchSounds>
@@ -2576,7 +2576,7 @@
 	<hullBust>1</hullBust>
 	<power>2</power>
 	<cost>65</cost>
-	<rarity>2</rarity>
+	<rarity>0</rarity>
 	<speed>75</image>
 	<image>laser_heavy1</image>
 	<launchSounds>
@@ -2616,7 +2616,7 @@
 	<power>3</power>
 	<cost>100</cost>
 	<bp>7</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<image>laser_heavy1</image>
 	<speed>90</image>
 	<launchSounds>
@@ -2654,7 +2654,7 @@
 	<power>2</power>
 	<cost>70</cost>
 	<bp>8</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<image>beam_contact</image>
 	<length>100</length>
 	<launchSounds>
@@ -2681,7 +2681,7 @@
 	<power>2</power>
 	<cost>75</cost>
 	<bp>6</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<image>missile_hull</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -2726,7 +2726,7 @@
 	<power>1</power>
 	<cost>30</cost>
 	<bp>3</bp>
-	<rarity>3</rarity>
+	<rarity>5</rarity>
 	<image>ion_1_shot</image>
 	<explosion>explosion_small_ion</explosion>
 	<launchSounds>
@@ -2768,7 +2768,7 @@
 	<power>2</power>
 	<cost>45</cost>
 	<bp>4</bp>
-	<rarity>3</rarity>
+	<rarity>5</rarity>
 	<image>ion_4_shot</image>
 	<explosion>explosion_small_ion</explosion>
 	<launchSounds>
@@ -2810,7 +2810,7 @@
 	<power>3</power>
 	<cost>80</cost>
 	<bp>6</bp>
-	<rarity>4</rarity>
+	<rarity>5</rarity>
 	<image>ion_1_shot</image>
 	<explosion>explosion_small_ion</explosion>
 	<launchSounds>
@@ -2860,7 +2860,7 @@
 	<power>1</power>
 	<cost>55</cost>
 	<bp>4</bp>
-	<rarity>1</rarity>
+	<rarity>5</rarity>
 	<image>bomb1</image>
 	<explosion>explosion_big1</explosion>
 	<launchSounds>
@@ -2892,7 +2892,7 @@
 	<power>1</power>
 	<cost>70</cost>
 	<bp>4</bp>
-	<rarity>0</rarity>
+	<rarity>5</rarity>
 	<image>bomb_breach</image>
 	<explosion>explosion_big1</explosion>
 	<launchSounds>
@@ -2924,7 +2924,7 @@
 	<power>2</power>
 	<cost>70</cost>
 	<bp>4</bp>
-	<rarity>4</rarity>
+	<rarity>5</rarity>
 	<image>bomb_breach</image>
 	<explosion>explosion_big1</explosion>
 	<launchSounds>
@@ -2955,7 +2955,7 @@
 	<power>2</power>
 	<cost>55</cost>
 	<bp>5</bp>
-	<rarity>2</rarity>
+	<rarity>5</rarity>
 	<image>bomb_fire</image>
 	<explosion>explosion_big1</explosion>
 	<launchSounds>
@@ -2985,7 +2985,7 @@
 	<power>1</power>
 	<cost>65</cost>
 	<bp>4</bp>
-	<rarity>3</rarity>
+	<rarity>5</rarity>
 	<image>bomb_ion</image>
 	<explosion>explosion_big1_ion</explosion>
 	<launchSounds>
@@ -3018,7 +3018,7 @@
 	<power>1</power>
 	<cost>40</cost>
 	<bp>4</bp>
-	<rarity>3</rarity>
+	<rarity>5</rarity>
 	<image>bomb_heal</image>
 	<explosion>explosion_big1_heal</explosion>
 	<launchSounds>
@@ -4073,7 +4073,6 @@
 		<shields power="2" room="4" start="true" img="room_pilot" />
 		<engines power="3" room="6" start="true" img="room_engines" />
 		<weapons power="4" room="1" start="true" img="room_weapons" />
-		<drones power="0" room="8" start="false" img="room_drones" />
 		<teleporter power="1" room="9" start="false" img="room_teleporter" />
 		<cloaking power="1" room="2" start="false" img="room_cloaking" />
 	</systemList>

@@ -173,7 +173,7 @@ Beacon Off.....
 		<text>No ships respond to your hails and you find nothing of interest.</text>
 	</event>
 	<event>
-		<text>You wander within scanning range of a small Rebel automated scout!</text>
+		<text>You wander within scanning range of a small Empire automated scout!</text>
 		<ship load="REBEL_AUTO_FUEL" hostile="true"/>
 	</event>
 </eventList>
@@ -316,7 +316,7 @@ Beacon On!!!!
 	<text>Scanners show that the United Empire has ceased its pursuit for a short time.</text>
 	<text>Your intuition as captain is telling you that the loyalists are having a hard time trying to find your ship.</text>
 	<text>Without a distress beacon or any FTL signatures to trace, you're sure that the Empire is struggling to find you.  You can only hope their confusion lasts until more fuel can be found.</text>
-	<text>The United Empire seems to be unable to locate your ship's signature.  If only you could get some fuel, you might still have a chance to place some distance between you and the Rebels...</text>
+	<text>The United Empire seems to be unable to locate your ship's signature.  If only you could get some fuel, you might still have a chance to place some distance between you and the loyalists...</text>
 </textList>
 
 <event name="FUEL_NOTHING_DISTRESS">
@@ -578,12 +578,12 @@ Beacon On!!!!
 <textList name="FUEL_ON_MANTIS_ATTACK">
 	<text>A Mantis ship hails you, "Looks like we found the poor fools that need some help. Come brothers, let's 'help them!" They move in to attack.</text>
 	<text>Before long a ship jumps nearby, no doubt responding to your beacon. However any relief you felt disappears as soon as you recognize the ship is of Mantis design. Prepare for a fight.</text>
-	<text>You detect a Mantis ship approaching and hack into their comm channel and hear, "...hope they put up more of a fight than the last Federation ship. This has been a disappointing day so far." Looks like they're not here to help.</text>
+	<text>You detect a Mantis ship approaching and hack into their comm channel and hear, "...hope they put up more of a fight than the last Pilgrim ship. This has been a disappointing day so far." Looks like they're not here to help.</text>
 	<text>A Mantis ship jump nearby. Sensors detect weapon locks and all hope of avoiding a fight fades away.</text>
 	
 	<text>A Mantis ship hails you, "Looks like we found the poor fools that need some help. Come brothers, let's 'help them!" They move in to attack.</text>
 	<text>Before long a ship jumps nearby, no doubt responding to your beacon. However any relief you felt disappears as soon as you recognize the ship is of Mantis design. Prepare for a fight.</text>
-	<text>You detect a Mantis ship approaching and hack into their comm channel and hear, "...hope they put up more of a fight than the last Federation ship. This has been a disappointing day so far." Looks like they're not here to help.</text>
+	<text>You detect a Mantis ship approaching and hack into their comm channel and hear, "...hope they put up more of a fight than the last Pilgrim ship. This has been a disappointing day so far." Looks like they're not here to help.</text>
 	<text>A Mantis ship jump nearby. Sensors detect weapon locks and all hope of avoiding a fight fades away.</text>
 </event>
 		

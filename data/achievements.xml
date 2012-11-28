@@ -176,7 +176,7 @@
 
 <achievement id="ACH_ENERGY_SHIELDS">
 	<name>Shields Holding</name>
-	<desc>Destroy a ship before it gets through the Zoltan Shield.</desc>
+	<desc>Destroy a ship before it gets through the Sophon Shield.</desc>
 	<img>achievements/energy_cruiser_1.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_ENERGY</ship>
@@ -184,7 +184,7 @@
 
 <achievement id="ACH_ENERGY_POWER">
 	<name>Givin' her all she's got, Captain!</name>
-	<desc>With the Zoltan Cruiser, have 29 power in systems at the same time.</desc>
+	<desc>With a Sophon warship, have 29 power in systems at the same time.</desc>
 	<img>achievements/energy_cruiser_2.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_ENERGY</ship>
@@ -192,7 +192,7 @@
 
 <achievement id="ACH_ENERGY_MANPOWER">
 	<name>Manpower</name>
-	<desc>Get to sector 5 without upgrading your reactor in the Zoltan Cruiser.</desc>
+	<desc>Get to sector 5 without upgrading your reactor in a Sophon vessel.</desc>
 	<img>achievements/energy_cruiser_3.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_ENERGY</ship>
@@ -378,7 +378,7 @@
 
 <achievement id="ACH_CRYSTAL_CLASH">
 	<name>Clash of the Titans</name>
-	<desc>Destroy 15 Rock Ships (pirates count) using the Crystal Cruiser.</desc>
+	<desc>Destroy 15 Sower Ships (pirates count) using the Crystal Cruiser.</desc>
 	<img>achievements/crystal_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_CRYSTAL</ship>
 	<multiDifficulty>1</multiDifficulty>

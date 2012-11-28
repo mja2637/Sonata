@@ -106,11 +106,11 @@ Environmnt:
 	<text load="START_BEACON_REBEL"/>
 </event>
 <textList name="START_BEACON_REBEL">
-	<text>This sector was bustling with activity just a few years ago. It attempted to secede but the United Earth "pacified" it. Now, more than half of the jump beacons have been destroyed, many settlements have been abandoned and the UE loyalists patrol constantly.</text>
+	<text>This sector was bustling with activity just a few years ago. It attempted to secede but the United Empire "pacified" it. Now, more than half of the jump beacons have been destroyed, many settlements have been abandoned and the UE loyalists patrol constantly.</text>
 	<text>This sector was hit hard by the war. The many Pilgrim settlements and stations located here are now watched over by almost an equal number of loyalist bases, heavy-handedly 'keeping the peace'.</text>
-	<text>Once the Pilgrim forces were scattered, the United Earth came down hard on the locals here.  The United Earth is still actively conducting counter-insurgency operations.</text>
+	<text>Once the Pilgrim forces were scattered, the United Empire came down hard on the locals here.  The United Empire is still actively conducting counter-insurgency operations.</text>
 	<text>At one point this was one of the most commonly traveled sectors.  Knowing that, the loyalists have stationed a number of fleets here.  Be careful.</text>
-	<text>You will have to be very cautious in this sector.  The Rebels have full control and are no doubt looking for you.</text>
+	<text>You will have to be very cautious in this sector.  The Empire has full control and is no doubt looking for you.</text>
 </textList>
 
 <event name="STORE_REBEL">
@@ -128,7 +128,7 @@ Environmnt:
 </event>
 <textList name="NOTHING_REBEL">
 	<text>You enter a system bustling with loyalist activity.  Supply freighters and re-supply stations are dwarfed by a few heavy warships.  Luckily, no one seems to be paying attention to small cruisers.  No ships are scanning or messaging you.</text>
-	<text>You arrive near a small United Earth refueling depot.  Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity.  The only message you receive is a denial to your request to dock at the depot.</text> 
+	<text>You arrive near a small United Empire refueling depot.  Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity.  The only message you receive is a denial to your request to dock at the depot.</text> 
 	<text>There is not much of interest nearby.   A small sun in the distance with a few orbiting planets in nearby space provide little of interest.</text>
 	<text planet="NONE">There are no other ships near this beacon, however you detect a small communication relay.  You tap into it without a problem; there are no encryptions.  Most of the chatter revolves around troop and fleet movements, not particularly interesting.</text>
 	<text planet="PLANET_POPULATED_SMALL">There is a small planet nearby with scattered settlements.  A small loyalist fleet is in orbit with many ships ferrying back and forth.  It must be a more recently 'recovered' planet.</text>
@@ -156,10 +156,10 @@ Environmnt:
 	<ship load="REBEL_AUTO_WARNING" hostile="true"/>
 </event>
 <textList name="REBEL_AUTO">
-	<text>You discover one of the United Earth's autonomous scouts. The ship's AI wastes no time in engaging your ship.</text>
-	<text>Your ship is hailed: "This is an automated message. Secession is treason. Prepare to die." It appears this United Earth ship is run by an AI.</text>
+	<text>You discover one of the United Empire's unmanned space vehicles. The ship's AI wastes no time in engaging your ship.</text>
+	<text>Your ship is hailed: "This is an automated message. Secession is treason. Prepare to die." It appears this United Empire ship is run by an AI.</text>
 	<text>A loyalist autonomous scout is exploring this beacon. You attempt to hide behind a nearby moon, but the ship finds you and begins its assault.</text>
-	<text>The AI of a nearby small United Earth scout immediately identifies you as a threat and engages.</text>
+	<text>The AI of a nearby small United Empire scout immediately identifies you as a threat and engages.</text>
 	<text>A loyalist ship moves in to engage. You attempt to open communications, but realize the futility of that action when you see the ship is run by an AI.</text>
 	<text>This must be one of the United Empire's unmanned scout ships. Looks like there's no way around a fight.</text>
 	<text>Another unmanned ship patrols this area. You prepare the ship for combat.</text>
@@ -168,7 +168,7 @@ Environmnt:
 </textList>
 
 <event name="AUTO_HACKER" unique="true">
-	<text>Your arrival is greeted by numerous computer alerts. The nearby automated United Earth scout has deployed a virus and disrupted your shield system. Hopefully it won't cause further problems before you can destroy it.</text>
+	<text>Your arrival is greeted by numerous computer alerts. The nearby automated United Empire scout has deployed a virus and disrupted your shield system. Hopefully it won't cause further problems before you can destroy it.</text>
 	<ship load="REBEL_AUTO_HACKSHIELDS" hostile="true"/>
 	<status type="divide" target="player" system="shields" amount="2"/>
 </event>	
@@ -180,16 +180,16 @@ Environmnt:
 <textList name="REBEL">
 	<text>Your ship is hailed. "We've found you at last. Prepare to die!"</text>
 	<text>A small loyalist ship is docked at a small station. You try to lay low but it spots you. Power up the weapons!</text>
-	<text>A United Earth ship has been patrolling this region. As soon as you arrive it begins its assault.</text>
+	<text>A United Empire ship has been patrolling this region. As soon as you arrive it begins its assault.</text>
 	<text>A loyalist ship hails you: "Enough running - the punishment for treason is death!"</text>
-	<text>You receive a transmission: "Sorry sir, this is nothing personal but we're under orders." The United Earth ship's weapons go hot.</text>
-	<text>You receive a transmission: "I sympathize with the Pilgrims - but treason is treason. Gridley, you may fire when ready." The United Earth ship's weapons go hot.</text>
-	<text>You come out of FTL just in time to see a Pilgrim escort craft's reactor breach under sustained Gauss fire: it explodes. You are hailed by a loyalist, crying and screaming about treason, duty, and the brother whose ship he just destroyed...you find it unprofessional. A United Earth destroyer approaches.</text>
+	<text>You receive a transmission: "Sorry sir, this is nothing personal but we're under orders." The United Empire ship's weapons go hot.</text>
+	<text>You receive a transmission: "I sympathize with the Pilgrims - but treason is treason. Gridley, you may fire when ready." The loyalist ship's weapons go hot.</text>
+	<text>You come out of FTL just in time to see a Pilgrim escort craft's reactor breach under sustained Gauss fire: it explodes. You are hailed by a loyalist, crying and screaming about treason, duty, and the brother whose ship he just destroyed...you find it unprofessional. A United Empire destroyer approaches.</text>
 	<text>By the time you notice the loyalist ship behind the beacon, it's too late to avoid a fight.</text>
-	<text>A United Earth ship hails. "To the last, I will grapple with thee...from Hell's heart, I stab at thee! For hate's sake, I spit my last breath at thee!" What a melodramatic, pretentious prick. You lock weapons.</text>
+	<text>A United Empire ship hails. "To the last, I will grapple with thee...from Hell's heart, I stab at thee! For hate's sake, I spit my last breath at thee!" What a melodramatic, pretentious prick. You lock weapons.</text>
 	<text>A loyalist ship approaches cautiously. "Personally," says the captain, "I'd have joined the Pilgrims...I'm from Bernard's Star, myself. But I signed an oath when I joined the UE military, sir, and without integrity a man is nothing. Raise your shields!"</text>
-	<text>You're hailed by a United Earth ship: "When this is all over you'll see the United Empire as strong as it ever was. Well, YOU won't, but you get the point." They arm weapons.</text>
-	<text>A United Earth ship is guarding this beacon. You order a pursuit course and prepare to scratch up one more.</text>
+	<text>You're hailed by a United Empire ship: "When this is all over you'll see the United Empire as strong as it ever was. Well, YOU won't, but you get the point." They arm weapons.</text>
+	<text>A loyalist ship is guarding this beacon. You order a pursuit course and prepare to scratch up one more.</text>
 </textList>
 
 <event name="SQUAT_WARNING" unique="true">
@@ -229,7 +229,7 @@ Environmnt:
 
 <event name="SQUAT_REFUEL_STATION" unique="true">  
 	<img planet="PLANET_POPULATED_SMALL"/>
-	<text>You detect a United Earth scout on an attack approach to a small refueling outpost. Their weapons are charged, but they're not firing yet.</text>
+	<text>You detect a United Empire scout on an attack approach to a small refueling outpost. Their weapons are charged, but they're not firing yet.</text>
 	<ship load="SQUAT_REFUEL_STATION" hostile="false"/>
 	<choice>
 		<text>Intervene to defend the outpost.</text>
@@ -241,7 +241,7 @@ Environmnt:
 	<choice>
 		<text>Avoid the conflict.</text>
 		<event>
-			<text>The United Earth ship fires some warning shots but eventually powers down their weapons. The outpost seems to have given them what they demanded.</text> 
+			<text>The United Empire ship fires some warning shots but eventually powers down their weapons. The outpost seems to have given them what they demanded.</text> 
 		</event>
 	</choice>
 </event>
@@ -267,7 +267,7 @@ Environmnt:
 
 <event name="AUTO_DEFENSE_MAP" unique="true">
 	<img planet="PLANET_POPULATED"/>
-	<text>You detect a United Earth automated ship nearby. It does not engage and seems to be patrolling around a long-range sensor station.</text>
+	<text>You detect a United Empire automated ship nearby. It does not engage and seems to be patrolling around a long-range sensor station.</text>
 	<ship load="REBEL_AUTO_MAP" hostile="false"/>
 	<choice>
 		<text>Attack the automated ship to get to the sensor station.</text>
@@ -338,7 +338,7 @@ Environmnt:
 		<text>The station was either abandoned or stripped clean. It seems to have lain unused for quite some time. You find nothing useful.</text>
 	</event>
 	<event>
-		<text>The station was apparently designed to outfit United Earth ships with Drone Systems. You find a functioning Schematic.</text>
+		<text>The station was apparently designed to outfit United Empire ships with Drone Systems. You find a functioning Schematic.</text>
 		<autoReward level="LOW">drone</autoReward>
 	</event>
 	<event>
@@ -506,7 +506,7 @@ Environmnt:
 
 
 <event name="BROKEN_REBEL_DRONE" unique="true">
-	<text>You find a United Earth automated scout floating near this beacon. Despite its pristine condition, it appears to be de-activated.</text>
+	<text>You find a United Empire automated scout floating near this beacon. Despite its pristine condition, it appears to be de-activated.</text>
 	<ship load="REBEL_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>Attempt to download the ship's data stores.</text>
@@ -588,8 +588,8 @@ Environmnt:
 </event>
 <textList name="BOARDERS_REBEL_SHIP" unique="false">
 	<text>You receive a message from a nearby loyalist station, "You have a lot of guts passing through our space, I'll give you that."  He turns giving an order, "Kill the turncoats, I want that ship intact."</text>
-	<text>Your sensors warn of an incoming United Earth ship at the same time as you hear the telltale signs of a teleporter.   You hear someone taunt from within the ship, "Ready to join the Endless?  I sure am ready to get a promotion!"</text>
-	<text>Incoming video communitation: "Rebel scum," says an Empire in officer's garb.  "How very generous of you to turn yourself in.  Prepare to be boarded."</text>
+	<text>Your sensors warn of an incoming loyalist ship at the same time as you hear the telltale signs of a teleporter.   You hear someone taunt from within the ship, "Ready to join the Endless?  I sure am ready to get a promotion!"</text>
+	<text>Incoming video communitation: "Rebel scum," sneers an Empire officer, "How very generous of you to turn yourself in.  Prepare to be boarded."</text>
 	<text>You receive a message on a low-band channel.  "You're surrounded, just like the last of your Pilgrim friends.  Just give up already."  The enemy has teleported onto our ship!</text>
 </textList>
 
