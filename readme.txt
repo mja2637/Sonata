@@ -101,6 +101,10 @@ Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
+5a
+	Reworked ship interior room graphics
+	Reworked crew placement
+	Fixed nerfed medbay in UES Ranger
 5
 	New hangar background
 	Reworked weapon prices and rarities
