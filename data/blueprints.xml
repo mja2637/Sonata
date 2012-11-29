@@ -4027,14 +4027,48 @@
   <name>UES Ranger</name>
   <desc>That old workhorse, the United Empire frigate is the eyes of the fleet. This example has been stolen by the Pilgrims.</desc>
   <systemList>
-    <pilot power="1" room="5" start="true" img="room_pilot" />
-    <doors power="1" room="9" start="true" img="room_doors" />
+    <pilot power="1" room="5" start="true" img="room_pilot_2" >
+		<slot>
+			<direction>right</direction>
+			<number>2</number> 
+		</slot>
+	</pilot>	
+    <doors power="1" room="9" start="true" img="room_doors_6" >
+		<slot>
+			<direction>down</direction>
+			<number>1</number> 
+		</slot>
+	</doors>	
     <sensors power="1" room="7" start="true" img="room_sensors" />
-    <medbay power="1" room="0" start="true" img="room_medbay" />
-    <oxygen power="1" room="3" start="true" img="room_oxygen" />
-    <shields power="2" room="4" start="true" img="room_pilot" />
-    <engines power="2" room="6" start="true" img="room_engines" />
-    <weapons power="3" room="1" start="true" img="room_weapons" />
+    <medbay power="1" room="0" start="true" img="room_medbay_5" >
+		<slot>
+			<number>4</number> 
+		</slot>
+	</medbay>		
+    <oxygen power="1" room="3" start="true" img="room_oxygen_11" >
+		<slot>
+			<direction>up</direction>
+			<number>0</number> 
+		</slot>
+	</oxygen>
+    <shields power="2" room="4" start="true" img="room_shields_8">
+		<slot>
+			<direction>right</direction>
+			<number>1</number> 
+		</slot>
+	</shields>
+    <engines power="2" room="6" start="true" img="room_engines" >
+		<slot>
+			<direction>right</direction>
+			<number>3</number> 
+		</slot>
+	</engines>
+    <weapons power="3" room="1" start="true" img="room_weapons_3" >
+		<slot>
+			<direction>right</direction>
+			<number>0</number> 
+		</slot>
+	</weapons>	
     <drones power="2" room="8" start="false" img="room_drones" />
     <teleporter power="1" room="10" start="false" img="room_teleporter" />
     <cloaking power="1" room="2" start="false" img="room_cloaking" />
@@ -4065,14 +4099,43 @@
 	<desc>Empire destroyers embody the age-old virtues of front line warriors: speed, surprise, violence of action.</desc>
 
 	<systemList>
-		<pilot power="1" room="5" start="true" img="room_pilot" />
-		<doors power="1" room="10" start="true" img="room_doors" />
-		<sensors power="1" room="7" start="true" img="room_sensors" />
-		<medbay power="1" room="0" start="true" img="room_medbay" />
+		<pilot power="1" room="5" start="true" img="room_pilot_2" >
+			<slot>
+				<direction>right</direction>
+				<number>1</number> 
+			</slot>
+		</pilot>	
+		<doors power="1" room="10" start="true" img="room_doors_8" >
+			<slot>
+				<direction>right</direction>
+				<number>1</number> 
+			</slot>
+		</doors>	
+		<sensors power="1" room="7" start="true" img="room_sensors_2" />
+		<medbay power="1" room="0" start="true" img="room_medbay_7" >
+			<slot>
+				<number>2</number> 
+			</slot>
+		</medbay>			
 		<oxygen power="1" room="3" start="true" img="room_oxygen" />
-		<shields power="2" room="4" start="true" img="room_pilot" />
-		<engines power="3" room="6" start="true" img="room_engines" />
-		<weapons power="4" room="1" start="true" img="room_weapons" />
+		<shields power="2" room="4" start="true" img="room_pilot" >
+			<slot>
+				<direction>right</direction>
+				<number>0</number> 
+			</slot>
+		</shields>	
+		<engines power="3" room="6" start="true" img="room_engines_2" >
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</engines>			
+		<weapons power="4" room="1" start="true" img="room_sensors_4" >
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</weapons>	
 		<teleporter power="1" room="9" start="false" img="room_teleporter" />
 		<cloaking power="1" room="2" start="false" img="room_cloaking" />
 	</systemList>
@@ -4304,14 +4367,19 @@
 	<unlock>Prove yourself to the Sower to earn this powerful cruiser.</unlock>
 	<desc>Typical Sower ships are massive and ancient - and this one is no different. You get the feeling that the weapons are attached to this ship as an afterthought. Definitely not meant for human pilots.</desc>
 	<systemList>
-		<pilot power="1" room="1" start="true" img="room_pilot" />
+		<pilot power="1" room="1" start="true" img="room_pilot_2" >
+			<slot>
+				<direction>right</direction>
+				<number>1</number> 
+			</slot>
+		</pilot>		
 		<doors power="2" room="3" start="true" img="room_doors" />
 		<sensors power="2" room="7" start="true" img="room_sensors" />
 		<medbay power="1" room="10" start="false" img="room_medbay" />
 		<oxygen power="1" room="4" start="true" img="room_oxygen" />
-		<shields power="2" room="0" start="true" img="room_pilot" />
-		<engines power="1" room="2" start="true" img="room_engines" />
-		<weapons power="3" room="5" start="true" img="room_weapons" />
+		<shields power="2" room="0" start="true" img="room_shields_4" />
+		<engines power="1" room="2" start="true" img="room_engines_2" />		
+		<weapons power="3" room="5" start="true" img="room_weapons_7" />
 		<drones power="2" room="9" start="false" img="room_drones" />
 		<teleporter power="1" room="8" start="false" img="room_teleporter" />
 		<cloaking power="1" room="6" start="false" img="room_cloaking" />

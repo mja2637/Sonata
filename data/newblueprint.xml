@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<shipBlueprint name="PLAYER_SHIP_HARD" img="kestral" layout="kestral_a">
+  <class>United Empire Frigate</class>
+  <name>UES Ranger</name>
+  <desc>That old workhorse, the United Empire frigate is the eyes of the fleet. This example has been stolen by the Pilgrims.</desc>
+  <systemList>
+    <pilot power="1" room="5" start="true" img="room_pilot" />
+    <doors power="1" room="9" start="true" img="room_doors" />
+    <sensors power="1" room="7" start="true" img="room_sensors" />
+    <medbay power="1" room="0" start="true" img="room_medbay" />
+    <oxygen power="1" room="3" start="true" img="room_oxygen" />
+    <shields power="2" room="4" start="true" img="room_pilot" />
+    <engines power="2" room="6" start="true" img="room_engines" />
+    <weapons power="3" room="1" start="true" img="room_weapons" />
+    <drones power="2" room="8" start="false" img="room_drones" />
+    <teleporter power="1" room="10" start="false" img="room_teleporter" />
+    <cloaking power="1" room="2" start="false" img="room_cloaking" />
+  </systemList>
+  <weaponSlots>4</weaponSlots>
+  <droneSlots>2</droneSlots>
+  <weaponList count="3" missiles="8">
+    <weapon name="UE_GAUSS_1" />
+    <weapon name="UE_GAUSS_1" />
+    <weapon name="BASIC_MISSILE_1" />
+  </weaponList>
+  <droneList count="0" drones="0" />
+  <health amount="28" />
+  <maxPower amount="8" />
+  <crewCount amount="3" class="human" />
+  <crewCount amount="0" class="slug" />
+  <aug name="ADV_SCANNERS" />
+</shipBlueprint>
