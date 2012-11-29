@@ -3747,8 +3747,8 @@
 </augBlueprint>
 
 <augBlueprint name="REPAIR_ARM"> 
-	<title>Repair Arm</title>
-	<desc>Repairs your hull every time you collect scrap, but reduces scrap collected by 15 percent.</desc>
+	<title>Self-Repairing Hull</title>
+	<desc>Repairs your hull every time you collect Dust, but reduces Dust collected by 15 percent.</desc>
 	<cost>50</cost>
 	<bp>8</bp>
 	<rarity>3</rarity>
@@ -3767,8 +3767,8 @@
 </augBlueprint>-->
 
 <augBlueprint name="SCRAP_COLLECTOR"> 
-	<title>Scrap Recovery Arm</title>
-	<desc>Allows the ship to collect 10 percent more scrap from any source.</desc>
+	<title>Bussard Ramscoop</title>
+	<desc>Allows the ship to collect 10 percent more Dust from any source.</desc>
 	<cost>50</cost>
 	<bp>8</bp>
 	<rarity>1</rarity>

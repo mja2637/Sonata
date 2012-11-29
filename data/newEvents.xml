@@ -226,19 +226,19 @@
 	<text>TIP: Pausing -  Press SPACE at any time to pause the game. You can still issue orders to crew or manipulate system power while paused.</text>
 	<text>TIP: Upgrading - Weapons are deadlier in Sonata, and many ignore shields. Upgrade your ship's defense as soon as possible.</text>
 	<text>TIP: Weapon types - The United Empire uses kinetic weapons like railguns and Gauss guns. Drivers fire more quickly; Empire weapons tend to breach and ignore one or two shield layers.</text>
-	<text>TIP: Weapon types - The Sower use massive cannon and quick-firing autocannon; some require expensive ammunition. Their ships were constructed by the Endless, but their weaponry is somewhat newer and more primitive.</text>
+	<text>TIP: Weapon types - The Sower use massive cannon and quick-firing autocannon; some require expensive ammunition. Their ships were built by the Endless, but their weaponry is somewhat more primitive.</text>
 	<text>TIP: Weapon types - Sophons expertly wield lasers, incredibly deadly weapons that cause fires and damage multiple rooms. Make sure your opponent's shields are down before firing.</text>
 	<text>TIP: System Damage -  When a System fully breaks due to fire or boarders, the hull also takes one damage.</text>
-	<text>TIP: United Empire - Most humans are members of the UE, which has liberal laws and provides several social services. The Empire is a democracy but, humans being human, is quite aggressive towards other species.</text>
-	<text>TIP: The Sower - The Endless constructed the Sower as intelligent terraformers. They have clearly evolved to some extent, but their core purpose remains the same: prepare the universe for the return of the Endless.</text>
+	<text>TIP: United Empire - Most humans are citizens. It has liberal laws and provides social services. The Empire is a democracy but, humans being human, is quite aggressive towards other species.</text>
+	<text>TIP: The Sower - The Endless constructed the Sower as intelligent terraformers. They have clearly evolved, but their purpose remains the same: prepare the universe for the return of the Endless.</text>
 	<text>TIP: Sophons - The Sophon are an intelligent, inquisitive, emotional, social race. Although they are driven researchers, their interests extend to art and more...prurient...activities.</text>
 	<text>TIP: The Endless - Artifacts of an incredibly advanced, ancient race called the Endless have been found throughout the galaxy; they are believed to be extinct.</text>
 	<text>TIP: Civil war - Many humans, unsatisfied with Empire government and society, have seceded. They are in a desparate fight for survival.</text>
-	<text>TIP: Pilgrims - Most humans view the Pilgrims and the seceding humans as one in the same, although this is not necessarily true. Pilgrims are unique among a mostly-secular humanity in that they view the Endless as the Gods of old.</text>
+	<text>TIP: Pilgrims - Most humans group the Pilgrims and the seceding humans together, although this is not always true. Pilgrims are unique among humanity in that they view the Endless as the Gods of old.</text>
 	<text>TIP: Shields - Modern starships are equipped with a full suite of defensive measures that include armor, soft-kill mechanisms, active anti-missile point defense systems, and energy shields.</text>
-	<text>TIP: Shield Piercing - Missiles are agile enough to avoid being shot down and too massive to be stopped by energy shields.  Use missiles to damage a powerful ship's Shields System.  Just remember that Defense Drones can shoot down missiles!</text>
+	<text>TIP: Shield Piercing - Missiles are agile enough to avoid being shot down and too massive to be stopped by energy shields. Just remember that Defense Drones can shoot down missiles!</text>
 	<text>TIP: Fire - As in ancient navies, fire is a starship's worst enemy. Many warships are built to allow atmosphere venting to prevent infernos.</text>
-	<text>TIP: Breach - Ship hulls are incredibly tough, and some are self-sealing or even constructed of healing materials. However, it is still possible to blow a hole large enough to require manual repair.</text>
+	<text>TIP: Breach - Ship hulls are incredibly tough, and some are self-sealing or constructed of healing materials. However, it is still possible to blow a hole large enough to require manual repair.</text>
 	<text>TIP: Evasion -  Evading enemy shots is crucial, but it requires functioning engines AND a pilot. Assigning an expert crewmember to man the engines will increase your evasion as well.</text>
 	<text>TIP: Sensors - If the ship goes dark, you need not panic. Just fix the Sensors Subsystem. Be forewarned that in the icy blackness of space, panic may well be appropriate.</text>
 	<text>TIP: Survival - I hope you know where your fucking towel is at.</text>
@@ -250,20 +250,25 @@
 	<text>TIP: Asteroids - Fighting in asteroid fields is dangerous, but use it to your advantage. Take out enemy shields and let the rocks take care of the rest.</text>
 	<text>TIP: Nebulas -  Passing through a Nebula will allow you to temporarily slow down the fleet advancement but they contain their own unique dangers.</text>
 	<text>TIP: Solar Flares - Solar flares will cause hull damage in addition to starting fires. Make sure your shields are up to help mitigate this effect.</text>
-	<text>TIP: Sower-Sophon relations - It is probably safe to assume that the Sophon need to research and understand has extended to studying the Sower; hostile incidents between the two races are believed to be rare.</text>
+	<text>TIP: Sower-Sophon relations - It is probably safe to assume that the Sophon need to research and understand has extended to studying the Sower; hostile incidents between the two races are rare.</text>
 	<text>TIP: Hotkeys -  You can charge or arm weapons using number hotkeys:  The Weapon Slots are 1-4 on your keyboard, and the Drones are 5-7.</text>
-	<text>TIP: Sophon-Human relations - The Sophon were the first friendly race contacted by humanity, and vice versa; theirs is a "special relationship" characterized by curiousity and a sense of mateship on a galactic scale.</text>
-	<text>TIP: Sophon-Human relations - In the literal sense, Sophon-Human relations are not at all rare. Interbreeding is of course impossible, but that certainly hasn't stopped many couples from enjoying the attempt.</text>
-	<text>TIP: Sophon-Empire relations - Unusually, the United Empire has refrained from expanding into traditional Sophon space. Still, Empire strategists have likely made war plans should the unthinkable happen and war erupt.</text>
-	<text>TIP: Sophon-Empire relations - There are far more Humans than Sophon, and they have more of a taste for war. Still, top Empire generals concede than any war against the Sophon would be incredibly costly. The United Empire is more protective of the Sophon than anything else, fortunately.</text>
+	<text>TIP: Sophon-Human relations - The Sophon were the first friendly race contacted by humanity; theirs is a "special relationship" characterized by curiousity and a sense of mateship on a galactic scale.</text>
+	<text>TIP: Sophon-Human relations - In the literal sense, Sophon-Human relations are not rare. Interbreeding is of course impossible, but that hasn't stopped many couples from enjoying the attempt.</text>
+	<text>TIP: Sophon-Empire relations - Unusually, the United Empire has refrained from expanding into traditional Sophon space. Still, Empire strategists have likely made war plans should war erupt.</text>
+	<text>TIP: Sophon-Empire relations - There are far more Humans than Sophon, and they have more of a taste for war. The United Empire is more protective of the Sophon than anything else, fortunately.</text>
 	<text>TIP: Sophon-Pilgrim relations - Most Sophon strongly believe in freedom and independence, and hence support the right to peaceful secession even if they disagree with some Pilgrim ideals.</text>
 	<text>TIP: Sophon-Pilgrim relations - It is well known that the Sophon disapprove of the Empire's violent handling of the secession incident.</text>
-	<text>TIP: Sophon-Pilgrim relations - The Sophon dare not openly support the seceding humans for fear of a reprisal from the United Empire. Unofficially, however, they have no more quarrel with a Pilgrim than any other human.</text>
+	<text>TIP: Sophon-Pilgrim relations - Sophon relations with the UE make open support for the Pilgrims diplomatically unteneble. The Sophon do provide technical and cultural support behind the scenes.</text>
 	<text>TIP: Loyalists - Aside from existing political disagreement, loyal Empire citizens view the seceding Pilgrims as traitors. Humanity is the only known race that does not present a united front.</text>
 	<text>TIP: Civil war - The United Empire legislature hastily declared war as planets began to secede. The official position, of course, is that it is not a war but an internal police action.</text>
-	<text>TIP: Civil war - The United Empire retained the vast majority of its industrial capacity after the secession. It will eventually see military victory against the Pilgrims - if it has the stomach for it.</text>
+	<text>TIP: Civil war - The United Empire retained the majority of its industrial capacity after the secession. It will eventually see military victory against the Pilgrims - if it has the stomach for it.</text>
 	<text>TIP: Civil war - The Pilgrims are frantically seeking a diplimatic resolution, but so far the United Empire will not accept anything other than a return to the pre-bellum status quo.</text>
 	<text>TIP: Breaches -  If a room with a breach has no Oxygen, try opening all the doors surrounding it to make it less hazardous.</text>
+	<text>TIP: Dust - The galaxy is covered in this stuff. It is an intelligent nanomaterial useful for science, repair, medicine, and even currency.</text>
+	<text>TIP: Dust - Dust was created by the Endless. Current technology cannot create it, but it is extremely useful in every field.</text>
+	<text>TIP: Dust - All intelligent races discovered the existence of Dust soon after achieving interstellar spaceflight. Its properties are so advanced as to be indestinguishable from magic.</text>
+	<text>TIP: Dust - Although intense concentrations can be seen with the naked eye, Dust is normally detected and interacted with via specialized instruments: amber spyglasses and golden compasses.</text>
+	<text>TIP: Dust - Almost all advanced equipment - ships, weapons - makes use of Dust in its construction. Dust is near-indestructible and most can be recovered after the equipment is destroyed.</text>
 	<text>TIP: Font Size -  Pressing +/- will increase and decrease the font size of event texts.</text>
 	<text>TIP: Weapon Order - Rearrange a weapon or drone schematic by dragging it into the desired position. The left-most slot will be the last to power down if the system is damaged.</text>
 	<text>TIP: Door Subsystem - Upgrading your doors once will greatly reduce the chance fire will spread between rooms.  Upgrading them again will cause doors to significantly slow boarder movement.</text>
@@ -336,7 +341,7 @@
 </event>
 <ship name="NEW_TESTS" auto_blueprint="REBEL_FAT"> 
 	<destroyed>
-		<text>You are able to salvage scrap from the ship's debris.</text>
+		<text>You are able to collect Dust from the ship's debris.</text>
 	</destroyed>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
@@ -432,7 +437,7 @@
 
 
 <event name="CASH_IN_DRONE">
-	<text>Your ship is currently not equipped with a drone system. You reduce the drone schematic to scrap.</text>
+	<text>Your ship is currently not equipped with a drone system. You reduce the drone schematic to Dust.</text>
 	<choice>
 		<text>Continue...</text>
 		<event/>

@@ -106,7 +106,7 @@ Storm Environment:
 	<text>Seeing a trade depot set up near the beacon implies there is an alien settlement on some nearby rock. You decide to check out their wares.</text>
 	<text>The centre of a hydrogen cloud doesn't seem like a very usual place for a store, but the Engi aren't a usual species. Wouldn't hurt to take a look.</text>
 	<text>An Engi cargo vessel hails: "Propose mutually beneficial exchange of properties." That smells like a bargain.</text>
-	<text>You discover a cluster of Pilgrim refugee ships taking shelter in the folds of the nebula. "I'm sorry we've got nothing to give you, but we need scrap to keep the engines running." You sense they'll strike a trade.</text>
+	<text>You discover a cluster of Pilgrim refugee ships taking shelter in the folds of the nebula. "I'm sorry we've got nothing to give you, but we need Dust to keep the engines running." You sense they'll strike a trade.</text>
 </textList>
 
 <event name="NEBULA_EMPTY">
@@ -376,20 +376,20 @@ Storm Environment:
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Purchase "more dakka". [Scrap: -65]</text>
+		<text>Purchase "more dakka". [Dust: -65]</text>
 		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
 	</choice>
 </event>
 <eventList name="NEBULA_WEAPONS_TRADER_LIST">
 	<event>
-		<text>You transfer the scrap and receive a weapon in return. Lets hope it was worth it.</text>
+		<text>You transfer the Dust and receive a weapon in return. Lets hope it was worth it.</text>
 		<item_modify>
 			<item type="scrap" min="-65" max="-65"/>
 		</item_modify>
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>You transfer over the scrap, but he reneges on the agreement. "I told you this was a dangerous place!"</text>
+		<text>You transfer over the Dust, but he reneges on the agreement. "I told you this was a dangerous place!"</text>
 		<item_modify>
 			<item type="scrap" min="-65" max="-65"/>
 		</item_modify>
@@ -617,11 +617,11 @@ Storm Environment:
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
-		<text>Among the junk and scrap you find a salvageable drone schematic. You decide to quit while ahead and prepare to jump with your recent find.</text>
+		<text>Among the junk and Dust you find a salvageable drone schematic. You decide to quit while ahead and prepare to jump with your recent find.</text>
 		<autoReward level="MED">drone</autoReward>
 	</event>
 	<event>
-		<text>Most of the debris is hardly even usable as scrap. However, you eventually find an intact weapon that can be mounted on your ship.</text>
+		<text>Most of the debris is sucked bare of Dust. However, you eventually find an intact weapon that can be mounted on your ship.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
 </eventList>
@@ -632,11 +632,11 @@ Storm Environment:
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
-		<text>Among the junk and scrap you find a salvageable drone schematic. You decide to quit while ahead and prepare to jump with your recent find.</text>
+		<text>Among the junk and Dust you find a salvageable drone schematic. You decide to quit while ahead and prepare to jump with your recent find.</text>
 		<autoReward level="MED">drone</autoReward>
 	</event>
 	<event>
-		<text>Most of the debris is hardly even usable as scrap. However, you eventually find an intact weapon that can be mounted on your ship.</text>
+		<text>Most of the debris is sucked bare of Dust. However, you eventually find an intact weapon that can be mounted on your ship.</text>
 		<autoReward level="LOW">weapon</autoReward>
 	</event>
 	<event>

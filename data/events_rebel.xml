@@ -440,7 +440,7 @@ Environmnt:
 		<autoReward level="MED">weapon</autoReward>
 	</event>
 	<event>
-		<text>You search the remains of the ship, but only come across blueprints and debris from broken machinery. A shame, but you take what scrap you can salvage.</text>
+		<text>You search the remains of the ship, but only come across blueprints and debris from broken machinery. A shame, but you take what dust you can scavenge.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
@@ -478,7 +478,7 @@ Environmnt:
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
-		<text>The ship was carrying military supplies. You pick up anything that looks salvageable from the debris.</text>
+		<text>The ship was carrying military supplies. You pick up the Dust left behind in the wreckage.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 </eventList>
@@ -493,7 +493,7 @@ Environmnt:
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>This ship was apparently carrying information about the surrounding beacons. You download what you can to the ship's map, and scrap the rest of the ship.</text>
+		<text>This ship was apparently carrying information about the surrounding beacons. You download what you can to the ship's map, and strip what Dust you can.</text>
 		<reveal_map/>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
@@ -513,7 +513,7 @@ Environmnt:
 		<event load="DOWNLOAD_DRONE_DATA"/>
 	</choice>
 	<choice>
-		<text>Don't risk activating it, and just strip the ship for any useful scrap.</text>
+		<text>Don't risk activating it, and just strip the ship for any useful Dust.</text>
 		<event>
 			<autoReward level="LOW">scrap_only</autoReward>
 		</event>

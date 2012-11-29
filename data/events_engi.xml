@@ -133,8 +133,8 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<store/>
 </event>
 <textList name="STORE_ENGI">
-	<text>The Engi can do remarkable things with just a pile of scrap. The Engi hive at this beacon are selling equipment for just that.</text>
-	<text>A message arrives: "Your scrap, ours. Our weapons for you." You're about to raise the shields when you realise it's just an Engi trader looking for a trade.</text>
+	<text>The Engi can do remarkable things with nothing but metal and Dust. The Engi hive at this beacon are selling equipment for just that.</text>
+	<text>A message arrives: "Your Dust, ours. Our weapons for you." You're about to raise the shields when you realise it's just an Engi trader looking for a trade.</text>
 	<text>An Engi ship hails: "Engine upgrade necessary for travel home. Sale of equipment necessary for engine upgrade."</text>
 </textList>
 
@@ -372,11 +372,11 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 <event name="DISTRESS_ENGI_REBEL_RESULT">
 	<text>The Engi vessel turns out to be very poorly equipped - barely a runabout, really. They're trying to outrun the Empire, and need all the help they can get.</text>
 	<choice hidden="true">
-		<text>Give them 25 scrap.</text>
+		<text>Give them 25 Dust.</text>
 		<event load="DISTRESS_ENGI_REBEL_LIST1"/>
 	</choice>
 	<choice hidden="true">
-		<text>Give them 40 scrap, 2 missiles and 2 fuel.</text>
+		<text>Give them 40 Dust, 2 missiles and 2 fuel.</text>
 		<event load="DISTRESS_ENGI_REBEL_LIST2"/>
 	</choice>
 	<choice hidden="true">

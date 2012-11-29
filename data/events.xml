@@ -94,18 +94,18 @@ engi - asks for a weapon to use - can give you an upgrade?
 
 <!--<autoReward level=<LOW/MED/HIGH/RANDOM>> tag </autoreward>
 where tag is
-standard  - which is scrap + 2 resources (possible a weapon)
-stuff     - less scrap, mostly resources (intended for surrenders)
+standard  - which is Dust + 2 resources (possible a weapon)
+stuff     - less Dust, mostly resources (intended for surrenders)
 fuel 
 missiles 
-droneparts  - scrap + that resource
+droneparts  - Dust + that resource
 fuel_only 
 missiles_only 
 droneparts_only - self explanatory
 weapon 
 augment 
 drone 
-item - scrap + that thing  -->
+item - Dust + that thing  -->
 
 <event name="TEST_EVENT">
 	<text>TESTING!</text>
@@ -149,7 +149,7 @@ item - scrap + that thing  -->
 </event>
 
 <event name="AUGMENT_FULL">
-	<text>Your ship already has this augment and its effect cannot stack. You break it down into scrap.</text>
+	<text>Your ship already has this augment and its effect cannot stack. You break it down into Dust.</text>
 </event>
 
 <event name="START_GAME">
@@ -197,7 +197,7 @@ item - scrap + that thing  -->
 
 <ship name="TUTORIAL_PIRATE" blueprint="TUTORIAL_PIRATE">
 	<destroyed>	
-		<text>Well, that wasn't exactly a subtle approach. As salvage, you gain some scrap and a weapon.</text>
+		<text>Well, that wasn't exactly a subtle approach. As salvage, you gain some Dust and a weapon.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
@@ -298,9 +298,9 @@ item - scrap + that thing  -->
 -->
 
 <event name="ASTEROID_EXPLORE" unique="true">
-	<text>Scans reveal a large asteroid field nearby. Short-range scanners may discover useful materials while we wait for the FTL to recharge.</text>
+	<text>Scans reveal a large gas cloud nearby. Short-range scanners may discover useful materials while we wait for the FTL to recharge.</text>
 	<choice hidden="true">
-		<text>Explore the asteroid field</text>
+		<text>Explore the gas cloud</text>
 		<event load="ASTEROID_EXPLORE_RESULTS"/>
 	</choice>
 	<choice>	
@@ -308,9 +308,9 @@ item - scrap + that thing  -->
 		<event/>
 	</choice>
 	<choice req="SCRAP_COLLECTOR" hidden="true">
-		<text>(Scrap Recovery Arm) Attempt to mine the asteroids.</text> 
+		<text>(Bussard Ramscoop) Attempt to recover Dust from the cloud.</text> 
 		<event>
-			<text>You carefully extract as much usable material as possible from the nearest asteroids while waiting for the FTL to charge.</text>
+			<text>You carefully extract as much Dust as possible from the cloud while waiting for the FTL to charge.</text>
 			<autoReward level="HIGH">scrap_only</autoReward>
 		</event>
 	</choice>
@@ -320,7 +320,7 @@ item - scrap + that thing  -->
 		<text>A brief exploration yields nothing of interest.</text>
 	</event>
 	<event>
-		<text>Scans reveal a number of asteroids with useful compositions. You extract some fuel.</text>
+		<text>Scans reveal a number of gasses with useful compositions. You extract some fuel.</text>
 		<autoReward level="HIGH">fuel_only</autoReward>
 	</event>
 	<event>
@@ -328,15 +328,15 @@ item - scrap + that thing  -->
 		<autoReward level="MED">missiles</autoReward>
 	</event>
 	<event>
-		<text>You happen upon an abandoned mining site. A few mining drones were left behind and could be re-purposed</text>
+		<text>You happen upon an abandoned processing facility. A few drones were left behind and could be re-purposed</text>
 		<autoReward level="MED">droneparts</autoReward>
 	</event>
 	<event>
-		<text>The asteroid field proved more dangerous than expected. Some asteroids managed to get through your ship's defenses.</text>
+		<text>The gas cloud proved more dangerous than expected - caustic chemicals have eaten away at your hull.</text>
 		<damage amount="5"/>
 	</event>
 	<event>
-		<text>A pirate ship hiding behind one of the larger asteroids attacks you!</text>
+		<text>A pirate ship hiding in a dense section of the gas cloud attacks you!</text>
 		<ship load="PIRATE" hostile="true"/>
 		<environment type="asteroid"/>
 	</event>
@@ -369,7 +369,7 @@ item - scrap + that thing  -->
 	<choice>
 		<text>Fight the ship.</text>
 		<event>
-			<text>Mercenaries don't care who they fight - why should you? You could use some spare scrap; you signal your crew to charge weapons.</text>
+			<text>Mercenaries don't care who they fight - why should you? You could use some spare Dust; you signal your crew to charge weapons.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
@@ -381,8 +381,8 @@ item - scrap + that thing  -->
 <textList name="MERCENARY">
 	<text>You find a mercenary for hire at this Beacon. Their unique skills can sometimes prove to be useful.</text>
 	<text>A mercenary hails you: "We're no friends of the United Empire. I think we could help each other."</text>
-	<text planet="PLANET_POPULATED">There's a ship with pirate markings orbiting the nearby planet. You receive his hail: "It looks like the Empire is hunting us both. Got some spare scrap? I'm sure we can help each other out."</text>
-	<text>The captain of this ship claims he can provide "services" as long as you've got the scrap. You're not sure whether "services" means drugs, sex, or violence - but you ARE sure that you don't care.</text>
+	<text planet="PLANET_POPULATED">There's a ship with pirate markings orbiting the nearby planet. You receive his hail: "It looks like the Empire is hunting us both. Got some spare Dust? I'm sure we can help each other out."</text>
+	<text>The captain of this ship claims he can provide "services" as long as you've got the Dust. You're not sure whether "services" means drugs, sex, or violence - but you ARE sure that you don't care.</text>
 	<text>Mercenaries are swarming the galaxy now, knowing that their less-than-legal services can command a premium during a civil war. One is waiting at this beacon and hails you.</text>
 	<text>A ship with colonial markings hails you: "Hello, sahib! It seems you're having some troubles with the loyalists. I'd like nothing better than to help a man of means such as yourself... maybe we can come to an arrangement?"</text>
 </textList>
@@ -500,11 +500,11 @@ item - scrap + that thing  -->
 		<reveal_map/>
 	</event>
 	<event>
-		<text>"Thank you. Here, have this extra scrap as payment."</text>
+		<text>"Thank you. Here, have this extra Dust as payment."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>"Thank you. Here, have this extra scrap as payment."</text>
+		<text>"Thank you. Here, have this extra Dust as payment."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
@@ -698,14 +698,14 @@ item - scrap + that thing  -->
 	<choice req="ROCK_ARMOR" hidden="true"> 
 		<text>(Sower Armor) Effectively shield their ship with yours and escort them out of the field.</text>
 		<event>	
-			<text>You succeed in preventing them from being entirely destroyed, your improved hull taking the brunt of the asteroids that make it past your defenses.  They offer you some of the scrap and fuel they were mining out of the asteroid as thanks.</text>
+			<text>You succeed in preventing them from being entirely destroyed, your improved hull taking the brunt of the asteroids that make it past your defenses.  They offer you Dust and some of the fuel they were mining out of the asteroid as thanks.</text>
 			<autoReward level="MED">fuel</autoReward>
 		</event>
 	</choice>
 </event>
 <eventList name="CIVILIAN_ASTEROIDS_BEACON_LIST1">
 	<event>
-		<text>You succeed in preventing them from being entirely destroyed, but your ship took a number of hits in the process.  They offer some of the scrap and fuel they were mining out of the asteroid as thanks.</text>
+		<text>You succeed in preventing them from being entirely destroyed, but your ship took a number of hits in the process. They offer Dust and some of the fuel they were mining out of the asteroid as thanks.</text>
 		<autoReward level="HIGH">fuel</autoReward>	
 		<damage amount="2"/>
 	</event>
@@ -767,7 +767,7 @@ item - scrap + that thing  -->
 	<choice hidden="true">
 		<text>Lead them to their destination.</text>
 		<event>
-			<text>"Take this bit of scrap as a down-payment.  We'll use your jump signatures to follow you.  You're really helping us out here."</text>
+			<text>"Take this bit of Dust as a down-payment. We'll use your jump signatures to follow you. You're really helping us out here."</text>
 			<quest event="QUEST_ESCORT_ARRIVE"/>
 			<autoReward level="LOW">scrap_only</autoReward>
 		</event>
@@ -828,7 +828,7 @@ item - scrap + that thing  -->
 		<choice req="NANO_MEDBAY" hidden="true"> 
 			<text>(Nano Med-bot Dispersal) Pump their ship with nano med-bots to aid in the rescue.</text>
 			<event>
-				<text>You drag the injured and dying crew on to your ship.  The med-bots help stabilize their condition, but most perish.  The survivor offers to join your crew and helps you strip their broken ship of scrap.</text>
+				<text>You drag the injured and dying crew on to your ship.  The med-bots help stabilize their condition, but most perish.  The survivor offers to join your crew and helps you collect the Dust from their shattered ship.</text>
 				<crewMember amount="1"/> <!---->
 				<autoReward level="HIGH">fuel</autoReward>
 			</event>
@@ -896,7 +896,7 @@ item - scrap + that thing  -->
 		<autoReward level="MED">standard</autoReward>
 	</event>
 	<event>
-		<text>You decide the pirate is not worth saving and fire a few volleys into their hull. Before you can scrap the remains another pirate ship flashes on your radar. Perhaps they saw your deed, or perhaps they want to claim the spoils for themselves, but for whatever reason, they're charging weapons!</text>
+		<text>You decide the pirate is not worth saving and fire a few volleys into their hull. Before you can scavenge the remains another pirate ship flashes on your radar. Perhaps they saw your deed, or perhaps they want to claim the spoils for themselves, but for whatever reason, they're charging weapons!</text>
 		<ship load="PIRATE" hostile="true"/>
 	</event>
 </eventList>	
@@ -1355,7 +1355,7 @@ item - scrap + that thing  -->
 </event>
 <textList name="FREE_ITEMS">
 	<text>You arrive in a system and immediately discover a pirate ship nearby. Strangely, scans indicate there are no lifeforms aboard. You salvage anything useful, but find no clue as to the whereabouts of the former crew.</text>
-	<text>Not much remains in this abandoned system; however, scans reveal a nearby mining platform with some salvageable materials.</text>
+	<text>Not much remains in this abandoned system; however, scans reveal a nearby mining platform with some salvageable Dust stores.</text>
 	<text planet="PLANET_POPULATED">As you arrive in the system you are hailed by a loyalist settlement. Upon learning of your quest, they offer you supplies.</text>
 	<text planet="PLANET_GAS">Debris from a forgotten battle still orbits the gas giant in this system. Some of it still might be usable.</text>
 </textList>
@@ -1382,10 +1382,10 @@ item - scrap + that thing  -->
 	<text>You arrive in the sector and are greeted by a science vessel waiting by the beacon. They hail you, "We find ourselves low on fuel and have a proposition."</text>
 </textList>
 
-<event name="REFUEL_STATION" unique="true">   <!-- NEED - checks to see if you have enough scrap!-->
+<event name="REFUEL_STATION" unique="true">   <!-- NEED - checks to see if you have enough Dust!-->
 	<text>A ship re-fueling station is stationed at this beacon. We can purchase fuel here.</text>
 	<choice hidden="true">
-		<text>6 Fuel for 12 Scrap</text>
+		<text>6 Fuel for 12 Dust</text>
 		<event>
 			<text>"Thank you for your business."</text>
 			<item_modify>
@@ -1395,7 +1395,7 @@ item - scrap + that thing  -->
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>3 Fuel for 6 Scrap</text>
+		<text>3 Fuel for 6 Dust</text>
 		<event>
 			<text>"Thank you for your business."</text>
 			<item_modify>
@@ -1405,7 +1405,7 @@ item - scrap + that thing  -->
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Buy 1 Fuel for 2 Scrap</text>
+		<text>Buy 1 Fuel for 2 Dust</text>
 		<event>
 			<text>"Thank you for your business."</text>
 			<item_modify>
@@ -1423,7 +1423,7 @@ item - scrap + that thing  -->
 <event name="REPAIR_STATION" unique="true">   <!-- NEED - checks to see if you have enough scrap!-->
 	<text>You see a small station fitted with hundreds of repair drones.  You receive an automated message, "We don't know who you are and we don't care, but this is the right place for some ship repair!"</text>
 	<choice hidden="true">
-		<text>Repair 20 damage for 40 scrap.</text>
+		<text>Repair 20 damage for 40 Dust.</text>
 		<event>
 			<text>"Thank you for your business, no refunds!"</text>
 			<item_modify>
@@ -1433,7 +1433,7 @@ item - scrap + that thing  -->
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Repair 10 damage for 20 scrap.</text>
+		<text>Repair 10 damage for 20 Dust.</text>
 		<event>
 			<text>"Thank you for your business, no refunds!"</text>
 			<item_modify>
@@ -1443,7 +1443,7 @@ item - scrap + that thing  -->
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Repair 5 damage for 10 scrap.</text>
+		<text>Repair 5 damage for 10 Dust.</text>
 		<event>
 			<text>"Thank you for your business, no refunds!"</text>
 			<item_modify>
@@ -1461,7 +1461,7 @@ item - scrap + that thing  -->
 <event name="SELL_MISSILES_STATION" unique="true">  
 	<text>There is a black market hub here.  You receive a message, "These are dangerous times.  If you have extra military-grade explosives, we'll gladly pay you for them."</text>
 	<choice hidden="true">
-		<text>Sell 5 missiles for 15 scrap.</text>
+		<text>Sell 5 missiles for 15 Dust.</text>
 		<event>
 			<text>"Thank you, this will help greatly."</text>
 			<item_modify>
@@ -1471,7 +1471,7 @@ item - scrap + that thing  -->
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Sell 10 missiles for 30 scrap.</text>
+		<text>Sell 10 missiles for 30 Dust.</text>
 		<event>
 			<text>"Thank you, this will help greatly."</text>
 			<item_modify>
@@ -1481,7 +1481,7 @@ item - scrap + that thing  -->
 		</event>
 	</choice>
 		<choice hidden="true">
-		<text>Sell 15 missiles for 45 scrap.</text>
+		<text>Sell 15 missiles for 45 Dust.</text>
 		<event>
 			<text>"Thank you, this will help greatly."</text>
 			<item_modify>
@@ -1499,7 +1499,7 @@ item - scrap + that thing  -->
 <event name="SELL_DRONES_STATION" unique="true"> 
 	<text>You see a civilian space station with heavy damage. You receive a message, "We've been hit hard by the war. We need more drone parts to speed up our repairs. We'll buy some from you if you have extra."</text>
 	<choice hidden="true">
-		<text>Sell 3 drone parts for 12 scrap.</text>
+		<text>Sell 3 drone parts for 12 Dust.</text>
 		<event>
 			<text>"Thank you for your business"</text>
 			<item_modify>
@@ -1509,7 +1509,7 @@ item - scrap + that thing  -->
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Sell 6 drone parts for 24 scrap.</text>
+		<text>Sell 6 drone parts for 24 Dust.</text>
 		<event>
 			<text>"Thank you for your business"</text>
 			<item_modify>
@@ -1519,7 +1519,7 @@ item - scrap + that thing  -->
 		</event>
 	</choice>
 		<choice hidden="true">
-		<text>Sell 12 drone parts for 48 scrap.</text>
+		<text>Sell 12 drone parts for 48 Dust.</text>
 		<event>
 			<text>"Thank you for your business"</text>
 			<item_modify>
@@ -1605,7 +1605,7 @@ item - scrap + that thing  -->
 		<event load="GHOST_DOCK"/>
 	</choice>
 	<choice hidden="true">
-		<text>We're in a hurry, let's just quickly pull some scrap off the ship.</text>
+		<text>We're in a hurry, let's just quickly suck some Dust off the ship.</text>
 		<event load="GHOST_SCRAP"/>
 	</choice>
 	<choice hidden="true">
@@ -1739,11 +1739,11 @@ item - scrap + that thing  -->
 
 <eventList name="MERCHANT_REQUEST_LIST">
 	<event>
-		<text>"Great, I was worried no one would respond.  My usual carrier is days late. I need you to deliver this cargo of drone parts to a small station a few jumps from here.  I'll pay you a bit of scrap now, but they will surely tip you generously.</text>
+		<text>"Great, I was worried no one would respond.  My usual carrier is days late. I need you to deliver this cargo of drone parts to a small station a few jumps from here.  I'll pay you a bit of Dust now, but they will surely tip you generously.</text>
 		<choice hidden="true">
 			<text>Accept.</text>
 			<event>
-				<text>Great!  I uploaded their location to your star map.   I'm running out of options, so I have no choice but to trust you'll do what you have agreed to do.</text>
+				<text>Great!  I uploaded their location to your star map. I'm running out of options, so I have no choice but to trust you'll do what you have agreed to do.</text>
 				<item_modify>
 					<item type="drones" min="5" max="5"/>
 				</item_modify>
@@ -2088,7 +2088,7 @@ item - scrap + that thing  -->
 </event>
 <eventList name="MERCENARY_WORK_LIST">
 	<event>
-		<text>"A space dock is under assault from the United Empire.  Although the dock is... technically... illegal within their laws, it's very important for our trade.  We'll pay you in fuel and scrap if you promise to save them."</text>
+		<text>"A space dock is under assault from the United Empire.  Although the dock is... technically... illegal within their laws, it's very important for our trade.  We'll pay you in fuel and Dust if you promise to save them."</text>
 		<choice>
 			<text>Agree to rescue the store.</text>
 			<event>
@@ -2353,11 +2353,11 @@ item - scrap + that thing  -->
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 	<event>
-		<text>With the crew dead, you are able to take the fuel out of storage. You also take all the scrap you can manage.</text>
+		<text>With the crew dead, you are able to take the fuel out of storage. You also take all the Dust you can manage.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
-		<text>With the crew dead, you are able to take the fuel out of storage. You also take all the scrap you can manage.</text>
+		<text>With the crew dead, you are able to take the fuel out of storage. You also take all the Dust you can manage.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
@@ -2438,11 +2438,11 @@ item - scrap + that thing  -->
 
 <eventList name="DESTROYED_DEFAULT">
 	<event>
-		<text>The ship explodes, leaving behind a substantial collection of useful scrap material.</text>
+		<text>The ship explodes, leaving behind a substantial cloud of Dust.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
 	<event>
-		<text>The ship explodes, leaving behind a substantial collection of useful scrap material.</text>
+		<text>The ship explodes, leaving behind a substantial cloud of Dust.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
 </eventList>
@@ -2554,7 +2554,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 			<event>
 				<text>It looks like a massive asteroid is in a direct collision course with the derelict ship! You have to pull your crew out but they want to grab what they can first. What do they take?</text>
 				<choice hidden="true">
-					<text>Take the weapon and any spare scrap.</text>
+					<text>Take the weapon and any available Dust.</text>
 					<event>
 						<text>Your crew grabs what they can and returns to the ship before the asteroid hits. You take a look at what you've recovered once you move clear of the asteroid field.</text>
 						<autoReward level="LOW">weapon</autoReward>
@@ -2586,7 +2586,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 			<event>
 				<text>It looks like a massive asteroid is in a direct collision course with the derelict ship! You have to pull your crew out but they want to grab what they can first. What do they take?</text>
 				<choice hidden="true">
-					<text>Take the weapon and any spare scrap.</text>
+					<text>Take the weapon and any available Dust.</text>
 					<event>
 						<text>Your crew grabs what they can and returns to the ship before the asteroid hits. You take a look at what you've recovered once you move clear of the asteroid field.</text>
 						<autoReward level="LOW">weapon</autoReward>
@@ -2653,11 +2653,11 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 </event>
 <eventList name="ZOLTAN_CREW_STUDY_LIST">
 	<event>
-		<text>Your crew calmly lines up for the Sophons to take their readings. After a short time, the process is done. They contact you, "Thank you for your participation in our study. Please accept these small cakes made from stiff dough as well as some scrap."</text>
+		<text>Your crew calmly lines up for the Sophons to take their readings. After a short time, the process is done. They contact you, "Thank you for your participation in our study. Please accept these small cakes made from stiff dough as well as some Dust."</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Your crew calmly lines up for the Sophons to take their readings. After a short time, the process is done. They contact you, "Thank you for your participation in our study. Please accept these small cakes made from stiff dough as well as some scrap."</text>
+		<text>Your crew calmly lines up for the Sophons to take their readings. After a short time, the process is done. They contact you, "Thank you for your participation in our study. Please accept these small cakes made from stiff dough as well as some Dust."</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
@@ -2668,15 +2668,15 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 </eventList>
 	
 <event name="ROCK_CRYSTAL_BEACON">
-	<text>An ancient device is orbiting within the crystal rings of a nearby gas giant. You can't discern its nature or function, but it seems to have been deactivated for a very long time. Perhaps you can get some scrap from it.</text>
+	<text>An ancient device is orbiting within the crystal rings of a nearby gas giant. You can't discern its nature or function, but it seems to have been deactivated for a very long time. Perhaps you can get some Dust from it.</text>
 	<choice hidden="true">
-		<text>Scrap it.</text>
+		<text>Take it apart.</text>
 		<event load="ROCK_CRYSTAL_BEACON_LIST"/>
 	</choice>
 	<choice hidden="true">
 		<text>Leave it alone.</text>
 		<event>
-			<text>Better not risk it. The Sower people are unlikely to respond well to vandalism.</text>
+			<text>Better not risk it. The Sower are unlikely to respond well to vandalism.</text>
 		</event>
 	</choice>
 	<choice hidden="true" req="crystal">
@@ -2699,7 +2699,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 			
 <eventList name="ROCK_CRYSTAL_BEACON_LIST">
 	<event>
-		<text>You break it apart and take it for scrap. No one will miss it.</text>
+		<text>You break it apart and recover its Dust. No one will miss it.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
@@ -2722,9 +2722,9 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<event load="DONOR_PLAGUE_LIST"/>
 	</choice>
 	<choice hidden="true">
-		<text>Scrap some of the debris.</text>
+		<text>See if there's anything salvagable.</text>
 		<event>
-			<text>While waiting for the FTL drive to charge, you skirt around the edge of the station and collect some scrap.</text>
+			<text>While waiting for the FTL drive to charge, you skirt around the edge of the station and collect some Dust.</text>
 			<autoReward level="RANDOM">scrap_only</autoReward>
 		</event>
 	</choice>
@@ -2946,7 +2946,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<text>The Mantis captain's confidence must have been feigned; they appear to be trying to get away again. You doubt they'll forget to mask their jump signature this time.</text>
 	</escape>
 	<gotaway>
-		<text>Looks like they got away. At least you're able to scrap their abandoned fighter.</text>
+		<text>Looks like they got away. At least you're able to salvage the Dust from their abandoned fighter.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</gotaway>
 	<surrender  min="2" max="2">
@@ -2972,7 +2972,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>You find an intact weapon on their now empty ship. You take as much scrap from the ships as possible.</text>
+		<text>You find an intact weapon on their now empty ship. You take as much Dust from the ships as possible.</text>
 		<weapon name="RANDOM"/>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -3010,7 +3010,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 </eventList>
 <eventList name="ALISON_MANTIS_CREW_REJECT">
 	<event>
-		<text>The Engi captain hails you. "Thank you for respecting the Engi-Pilgrim extradition treaty; I hope our nations will maintain mutually beneficial relations for millenia to come." He transfers several tons of useful scrap, as well as a bottle of the very finest Transvine wine from Sophis.</text>
+		<text>The Engi captain hails you. "Thank you for respecting the Engi-Pilgrim extradition treaty; I hope our nations will maintain mutually beneficial relations for millenia to come." He transfers several ounces of precious Dust, as well as a bottle of the very finest Transvine wine from Sophis.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>

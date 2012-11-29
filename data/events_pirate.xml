@@ -508,7 +508,7 @@ Boarders:
 		<autoReward level="MED">standard</autoReward>
 	</event>
 	<event>
-		<text>The cargo was primarily consumer goods and clothing, nothing particularly useful. You manage to collect some scrap.</text>
+		<text>The cargo was primarily consumer goods and clothing, nothing particularly useful. You manage to collect some Dust.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
@@ -523,7 +523,7 @@ Boarders:
 </eventList>
 <eventList name="FLOATING_CARGO_SCAN_LIST">
 	<event>
-		<text>The cargo appears to contain nothing of much interest. You salvage some scrap from the destroyed ship.</text>
+		<text>The cargo appears to contain nothing of much interest. You salvage some Dust from the destroyed ship.</text>
 		<item_modify>
 			<item type="scrap" min="20" max="35"/>
 		</item_modify>

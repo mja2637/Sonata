@@ -255,7 +255,7 @@ shield research center - jams shields
 		</event>
 	</choice>
 	<choice hidden="true" req="energy">
-		<text>(Sophon) Have your crewmember present his official documentation and pay the entry fee [ Scrap: -10 ].</text>
+		<text>(Sophon) Have your crewmember present his official documentation and pay the entry fee [ Dust: -10 ].</text>
 		<event>
 			<text>They scan ID that declares your crewmember an official citizen, collect their fee, and let you pass.</text>
 			<item_modify>
@@ -289,7 +289,7 @@ shield research center - jams shields
 </eventList>
 <eventList name="ZOLTAN_TRADE_HUB_SUCCESS">
 	<event>
-		<text>You head into a ship supply store. It is a well-equipped, self-service affair. An order is dialled into a terminal, scrap is deposited, and the item is dispatched from a nearby chute.</text>
+		<text>You head into a ship supply store. It is a well-equipped, self-service affair. An order is dialled into a terminal, Dust is deposited, and the item is dispatched from a nearby chute.</text>
 		<store/>
 	</event>
 	<event>
@@ -393,7 +393,7 @@ shield research center - jams shields
 		<autoReward level="LOW">weapon</autoReward>	
 	</event>
 	<event>
-		<text>A deep scan of the surface reveals a cave system that runs for miles, and what looks like a scrap heap left over from some heavy-duty construction.</text>
+		<text>A deep scan of the surface reveals a cave system that runs for miles, and what looks like a Dust reservoir left over from some heavy-duty construction.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
@@ -585,7 +585,7 @@ shield research center - jams shields
 	</choice> --->
 </event>
 <event name="ZOLTAN_RIFT_SUCCESS">
-	<text>When he sees you have emerged victorious, the Sophon wise man enters a rage. Rifts threaten to tear space apart until, instead, the Sophon implodes, sending a blast wave of scrap and salvage dragged here from distant worlds in your direction.</text>
+	<text>When he sees you have emerged victorious, the Sophon wise man enters a rage. Rifts threaten to tear space apart until, instead, the Sophon implodes, sending a blast wave of Dust and debris dragged here from distant worlds in your direction.</text>
 	<autoReward level="HIGH">standard</autoReward>
 </event>
 
@@ -672,7 +672,7 @@ shield research center - jams shields
 		<ship load="ZOLTAN_SHIP" hostile="true"/>
 	</event>
 	<event>
-		<text>You approach the planet carefully, trying to keep your ship from breaking up in orbit. The monolith, whatever it is, must sense as much because the next thing you know you have enough scrap to patch up your damage and more besides!</text>
+		<text>You approach the planet carefully, trying to keep your ship from breaking up in orbit. The monolith, whatever it is, must sense as much because the next thing you know you have enough Dust to patch up your damage and more besides!</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>

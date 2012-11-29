@@ -253,9 +253,9 @@ Distress:
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Offer 35 scrap to leave you alone.</text>
+		<text>Offer 35 Dust to leave you alone.</text>
 		<event>
-			<text>"I really am feeling generousss..." They take the scrap and leave.</text>
+			<text>"I really am feeling generousss..." They take the Dust and leave.</text>
 			<item_modify>
 				<item type="scrap" min="-35" max="-35"/>
 			</item_modify>
@@ -328,9 +328,9 @@ Distress:
 	<event>
 		<text>"We're glad you have enjoyed our servicessss. Now for payment. To enssssure your cooperation we've taken the liberty of installing a limiter on your weapons system."</text>
 		<choice hidden="true">
-			<text>Give them the 50 scrap they demand.</text>
+			<text>Give them the 50 Dust they demand.</text>
 			<event>
-				<text>You transfer the scrap and they release your ship. "Tell your friendsss about us!" Their portable station slips into the clouds.</text>
+				<text>You transfer the Dust and they release your ship. "Tell your friendsss about us!" Their portable station slips into the clouds.</text>
 				<item_modify>
 					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
@@ -348,7 +348,7 @@ Distress:
 </eventList>
 <eventList name="NEBULA_SLUG_HULLFIX_REQUEST">
 	<event>
-		<text>"Ahhh. A fellow businessman. We offer to fix 10 damage for 50 ssscrap."</text>
+		<text>"Ahhh. A fellow businessman. We offer to fix 10 damage for 50 Dusssst."</text>
 		<choice hidden="true">
 			<text>Accept.</text>
 			<event>
@@ -696,7 +696,7 @@ Distress:
 		</choice>
 	</event>
 </eventList>
-<event name="SLUG_DISTRESS_QUESTION_FALSE">   <!-- JUSTING - TO DO - Add reduction of scrap   "Further, I have taken advantage of your lack of acuity to beam aboard your ship and steal your stuff!!"-->
+<event name="SLUG_DISTRESS_QUESTION_FALSE">   <!-- JUSTING - TO DO - Add reduction of Dust   "Further, I have taken advantage of your lack of acuity to beam aboard your ship and steal your stuff!!"-->
 	<text>"That issss... incorrect." Further, I have taken advantage of your lack of acuity to beam aboard your ship and steal your stuff!</text>
 	<item_modify steal="true">
 		<item type="scrap" min="-35" max="-35"/>
@@ -938,7 +938,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </event>
 <textList name="START_BEACON_SLUG">
 	<text>The only thing that can render a nebula more dangerous is if it's also home to the Slugs. This particular nebula is just that.</text>
-	<text>This nebula is home to the telepathic Slugs. They'd sell their own slime for a crate of scrap, but they much prefer to just take it.</text>
+	<text>This nebula is home to the telepathic Slugs. They'd sell their own slime for a gram of Dust, but they much prefer to just take it.</text>
 	<text>You're told the Slug home world is somewhere in this nebula. You can't see them, but you know they're watching.</text>
 	<text>The Slugs that live in this nebula field are a leisure-centered civilization. Everything in Slug life is done in the pursuit of more currency and more time in which to spend it on extravagant ventures. This, inevitably, leads to much treachery in open space.</text>
 	<text>The Slugs developed on an ocean planet where the ability to telepathically sense another organism was more important than sight. Today they use this ability to navigate unfettered the depths of the nebulas they inhabit.</text>
@@ -973,7 +973,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<store/>
 	</event>
 	<event>
-		<text>You take one gulp and wake up with the rest of the crew in the cargo hold... which contains noticeably less scrap than before.</text>
+		<text>You take one gulp and wake up with the rest of the crew in the cargo hold... which contains noticeably less Dust than before.</text>
 		<item_modify steal="true">
 			<item type="scrap" min="-25" max="-35"/>
 		</item_modify>
@@ -1044,7 +1044,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<choice>
 		<text>Hire Slocknog.</text>
 		<event>
-			<text>"I sssee you are a wise captain. I will enjoy this adventure." Slocknog buries the scrap somewhere deep within his folds of skin and joins your crew.</text>
+			<text>"I sssee you are a wise captain. I will enjoy this adventure." Slocknog buries the Dust somewhere deep within his folds of skin and joins your crew.</text>
 			<item_modify>
 				<item type="scrap" min="-55" max="-55"/>
 			</item_modify>
@@ -1110,7 +1110,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<crewMember amount="-1"/>
 	</event>
 	<event>
-		<text>You cautiously board their ship and immediately smell the stale air of a malfunctioning life support. In no time at all you're able to fix up the problem and head off again with some extra scrap in your hold.</text>
+		<text>You cautiously board their ship and immediately smell the stale air of a malfunctioning life support. In no time at all you're able to fix up the problem and head off again with some extra Dust in your hold.</text>
 		<autoReward level="HIGH">med</autoReward>
 	</event>
 </eventList>
@@ -1143,7 +1143,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <eventList name="SLUG_DISTRESS_PILOTING_SWEAR">
 	<event>
-		<text>"Wow, I didn't think you'd go through with it..." He turns to his second in command, "Looks like I owe you some scrap." Strangely enough, they simply let you pass.</text>
+		<text>"Wow, I didn't think you'd go through with it..." He turns to his second in command, "Looks like I owe you some Dust." Strangely enough, they simply let you pass.</text>
 		<status type="clear" target="player" system="engines" amount="100"/>
 	</event>
 	<event>

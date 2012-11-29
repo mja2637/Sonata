@@ -135,7 +135,7 @@ Beacon Off.....
 	<event>
 		<text>You find a small outpost for local travelers, but it seems few ships in this area employ FTL drives. Their stock of fuel cells is small and their price high, but beggars can't be choosers...</text>
 		<choice hidden="true">
-			<text>Trade 20 scrap for 5 fuel.</text>
+			<text>Trade 20 Dust for 5 fuel.</text>
 			<event>
 				<text>You gladly make the trade.</text>
 				<item_modify>
@@ -145,7 +145,7 @@ Beacon Off.....
 			</event>
 		</choice>
 		<choice hidden="true">
-			<text>Trade 10 scrap for 2 fuel.</text>
+			<text>Trade 10 Dust for 2 fuel.</text>
 			<event>
 				<text>This fuel won't last long, but you gladly make the trade.</text>
 				<item_modify>
@@ -155,7 +155,7 @@ Beacon Off.....
 			</event>
 		</choice>
 		<choice hidden="true">
-			<text>Trade 5 scrap for 1 fuel.</text>
+			<text>Trade 5 Dust for 1 fuel.</text>
 			<event>
 				<text>This fuel won't last long, but at least you can jump to another beacon.</text>
 				<item_modify>
@@ -344,7 +344,7 @@ Beacon On!!!!
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>5 Fuel for 20 Scrap.</text>
+		<text>5 Fuel for 20 Dust.</text>
 		<event>
 			<text>"Automated re-fueling complete."</text>
 			<item_modify>
@@ -354,7 +354,7 @@ Beacon On!!!!
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Buy 2 Fuel for 8 Scrap.</text>
+		<text>Buy 2 Fuel for 8 Dust.</text>
 		<event>
 			<text>"Automated re-fueling complete."</text>
 			<item_modify>
@@ -536,7 +536,7 @@ Beacon On!!!!
 		<ship hostile="true"/>
 	</event>
 	<event>
-		<text>The Engies respond to your signal. "Your need: fuel. This unit's need: scrap. Exchange beneficial. Exchange permitted?</text>
+		<text>The Engies respond to your signal. "Your need: fuel. This unit's need: Dust. Exchange beneficial. Exchange permitted?</text>
 		<choice>
 			<text>Make the trade.</text>
 			<event>	
@@ -613,7 +613,7 @@ Beacon On!!!!
 </event>			
 <eventList name="FUEL_OFF_ROCK_WRECK_LIST">
 	<event>
-		<text>A short time later the team returns with a stash of ammunition and scrap - but all the fuel on board is long gone.</text>
+		<text>A short time later the team returns with a stash of ammunition and Dust - but all the fuel on board is long gone.</text>
 		<autoReward level="MED">missiles</autoReward>
 	</event>
 	<event>
@@ -626,7 +626,7 @@ Beacon On!!!!
 		<autoReward level="MED">fuel_only</autoReward>
 	</event>
 	<event>
-		<text>The away team reports in, but then screams are heard and the comm goes dead! When it comes back online a Sower can be heard - it's the lone survivor from the frigate's crew, and completely defective. It demands you pay a scrap ransom in return for your crew-member's life!</text>
+		<text>The away team reports in, but then screams are heard and the comm goes dead! When it comes back online a Sower can be heard - it's the lone survivor from the frigate's crew, and completely defective. It demands you pay ransom in return for your crewmember's life!</text>
 		<choice>
 			<text>Pay.</text>
 			<event>
@@ -704,7 +704,7 @@ Beacon On!!!!
 	<text>A poorly armed Slug ship cruises by and offers assistance. Their captain seems to be chuckling to himself, perhaps at the prices he's charging.</text>
 	<ship load="JELLY" hostile="false"/>
 	<choice hidden="true">
-		<text>Pay 15 scrap for 5 fuel.</text>
+		<text>Pay 15 Dust for 5 fuel.</text>
 		<event load="FUEL_ON_SLUG_CHUCKLE_LIST"/>
 	</choice>
 	<choice hidden="true">
@@ -755,7 +755,7 @@ Beacon On!!!!
 	<text>A mobile Slugman fuel depot enters scanning range. "My prices are fair, but I ask one thing - do not insult me with negotiation!" You check out his price list.</text>
 	<ship load="JELLY_OVERPRICED" hostile="false"/>
 	<choice hidden="true">
-		<text>Buy 5 fuel for 50 scrap.</text>
+		<text>Buy 5 fuel for 50 Dust.</text>
 		<event>
 			<text>The trader looks shocked. You're struck by the sense that this is the first time anyone's ever paid him these prices.</text>
 			<item_modify>
@@ -765,7 +765,7 @@ Beacon On!!!!
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Buy 10 fuel for 95 scrap. (BEST DEAL!)</text>
+		<text>Buy 10 fuel for 95 Dust. (BEST DEAL!)</text>
 		<event>
 			<text>The trader looks shocked. You're struck by the sense that this is the first time anyone's ever paid him these prices.</text>
 			<item_modify>
