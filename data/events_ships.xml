@@ -73,6 +73,21 @@ Special:
 	GHOST_SHIP
 --->
 
+<!--------------------------------
+
+	PIRATE SHIPS
+	
+---------------------------------->
+<ship name="REBEL_VS_FEDERATION" auto_blueprint="REBEL_SKINNY">  <!-- fed base? -->
+	<destroyed>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
 
 
 

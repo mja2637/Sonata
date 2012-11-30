@@ -70,15 +70,15 @@ Contained Higgs Pulse Beam (Sophon): 4 bars, 2 shots, 3 damage, excellent chance
 Missile Weapons:
 MW map to the missiles of vanilla FTL, where missiles have been gernalized to mean any sort of special or expensive ammunition. All require 1 missile unless noted.
 
-Ion Torpedo: 1 bar, 1 damage, ignores 5 shields, very low chance of fire/breach, 9s cooldown.
-Liquid Propellant Cannon (Sower): 1 bar, 1 damage, ignores 2 shields, doesn't require missiles, 11s cooldown.
-Plasma Torpedo: 2 bars, 2 damage, ignores 5 shields, 9s cooldown.
-Fluidic Projectile Cannon (Sower): 1 bar, 2 damage, ignores 2 shields, very low chance to breach, 11s cooldown.
-Positron Torpedo: 3 bars, 3 damage, ignores 5 shields, very low chance to breach, 12s cooldown.
-Mag Cannon (Sower): 2 bars, 3 damage, ignores 3 shields, low chance to breach, 13s cooldown.
-Compensated Mag AutoCannon (Sower): 3 bars, 3 shots, 1 damage, low chance to breach, ignores 2 shields, 12s cooldown.
+Ion Torpedo: 1 bar, 1 damage, ignores 5 shields, very low chance of fire/breach, 11s cooldown.
+Liquid Propellant Cannon (Sower): 1 bar, 1 damage, ignores 2 shields, doesn't require missiles, 10s cooldown.
+Plasma Torpedo: 2 bars, 2 damage, ignores 5 shields, 11s cooldown.
+Fluidic Projectile Cannon (Sower): 2 bar, 2 damage, ignores 2 shields, very low chance to breach, doesn't require missiles. 10s cooldown.
+Positron Torpedo: 3 bars, 3 damage, ignores 5 shields, very low chance to breach, 13s cooldown.
+Mag Cannon (Sower): 3 bars, 3 damage, ignores 3 shields, low chance to breach, doesn't require missiles, 12s cooldown.
+Compensated Mag AutoCannon (Sower): 3 bars, 3 shots, 1 damage, low chance to breach, ignores 2 shields, doesn't require missiles, 11s cooldown.
 Non-Baryonic Torpedo: 4 bars, 4 damage, low chance of fire, very good chance to breach, ignores 5 shields, 15s cooldown.
-Baryon-Gravitophoric Cannon (Sower): 4 bars, 5 damage, ignores 4 shields, excellent chance to breach, requires 2 missiles, 20s cooldown.
+Baryon-Gravitophoric Cannon (Sower): 4 bars, 5 damage, ignores 4 shields, excellent chance to breach, requires 2 missiles, 15s cooldown.
 
 Laser Weapons:
 Beams. Good at setting fire.

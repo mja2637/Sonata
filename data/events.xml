@@ -82,14 +82,18 @@ Special:
 
 
 <!--	
-		New Ideas:
-		
-You're asked to scare someone off but not kill them
-A treasure that if you choose to open it the jump track advances   	
-- add a quest that is just a warning "don't go over here, there are pirates ambushing people"
-engi - asks for a weapon to use - can give you an upgrade?
+
+Test Event
 	
 -->
+
+<event name="TEST">
+	<text load="TEST_TEXT"/>
+	<store/>
+</event>
+<textList name="TEST_TEXT">
+	<text>This event tests combat with rebel_long.</text>
+</text>
 
 
 <!--<autoReward level=<LOW/MED/HIGH/RANDOM>> tag </autoreward>

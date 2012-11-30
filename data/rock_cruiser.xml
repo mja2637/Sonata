@@ -4,9 +4,9 @@
 <img x="-58" y="-143" w="623" h="461"/>
 
 <weaponMounts>
-	<mount x="590" y="210" rotate="true" mirror="true" gib="6" slide="down"/>
-	<mount x="590" y="250" rotate="true" mirror="false" gib="6" slide="up"/>
 	<mount x="427" y="243" rotate="true" mirror="true" gib="5" slide="right"/>
+	<mount x="590" y="212" rotate="true" mirror="true" gib="6" slide="down"/>
+	<mount x="590" y="248" rotate="true" mirror="false" gib="6" slide="up"/>	
 </weaponMounts>
 
 <!--  Bad combos

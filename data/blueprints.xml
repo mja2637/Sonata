@@ -687,7 +687,7 @@
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>11</cooldown>
+	<cooldown>10</cooldown>
 	<power>1</power>
 	<cost>25</cost>
 	<bp>2</bp>
@@ -723,8 +723,8 @@
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>11</cooldown>
-	<power>1</power>
+	<cooldown>10</cooldown>
+	<power>2</power>
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
@@ -754,13 +754,13 @@
 	<desc>Using a loophole in the ElectroWeak Theory, the Mag Cannon uses an extremely intense electromagnetic field inside an Argon-filled chamber to generate a forward neutron cascade and reduce a projectile's mass for a split second at the moment of firing. The mechanism is complicated and involves generating uncertainty on a Quantom level; ultimately, the projectile re-absorbs the borrowed mass as it exits the weapon's barrel. The shock of the resulting recoil killed 9 people during the testing phase.</desc>
 	<tooltip>3 damage, ignores 3 shields, small chance to breach.</tooltip>
 	<damage>3</damage>
-	<missiles>1</missiles>
+	<missiles>0</missiles>
 	<shots>1</shots>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>13</cooldown>
-	<power>2</power>
+	<cooldown>12</cooldown>
+	<power>3</power>
 	<cost>75</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
@@ -795,7 +795,7 @@
 	<sp>4</sp>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>15</cooldown>
 	<power>4</power>
 	<cost>100</cost>
 	<bp>2</bp>
@@ -901,12 +901,12 @@
 	<desc>Rather than allowing the ship to absorb the shock of mass re-absorbtion or directing the neutron cascade to a piece of "dead weight", the compensated Mag autocannon uses special conduits to route the cascade through the ship. The cascade is released at a point and vector directly opposite where the Mag cannon was fired; this essentially reduces recoil to zero. The Mag cannon can then be as large and rapid-firing as the ship will allow.</desc>
 	<tooltip>Fast-firing but weaker version of Mag Cannon.</tooltip>
 	<damage>1</damage>
-	<missiles>1</missiles>
+	<missiles>0</missiles>
 	<shots>3</shots>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>11</cooldown>
 	<power>3</power>
 	<cost>75</cost>
 	<bp>2</bp>
@@ -1462,7 +1462,7 @@
 	<sp>5</sp>
 	<fireChance>1</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>11</cooldown>
 	<power>1</power>
 	<cost>20</cost>
 	<bp>2</bp>
@@ -1498,7 +1498,7 @@
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>10</cooldown>
 	<power>2</power>
 	<cost>40</cost>
 	<bp>2</bp>
@@ -1534,7 +1534,7 @@
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>13</cooldown>
 	<power>3</power>
 	<cost>60</cost>
 	<bp>2</bp>
@@ -4931,19 +4931,6 @@
 </shipBlueprint>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--- **************
 TUTORIAL SHIPS
 *****************-->
@@ -5088,59 +5075,6 @@ REBEL SHIP - LONG - ELITE!!!
 	<crewCount amount = "5" class="human"/>
 </shipBlueprint>
 
-
-
-
-
-<!--- NEW! --->
-
-<!--
-<shipBlueprint name="GHOST_SHIP_MED" layout="jelly_truffle" img="jelly_truffle_pirate">
-	<class>Truffle Wreckage</class>
-	<systemList>
-		<pilot power="2" room="0"/>
-		<doors power="2" room="1"/>
-		<oxygen power="1" room="4"/>
-		<medbay power="2" room="3"/>
-		<shields power="6" room="6"/>
-		<engines power="4" room="2"/>
-		<weapons power="6" room="5"/>
-	</systemList>
-	<weaponList count="3">
-		<weapon name="LASER_BURST_2"/>
-		<weapon name="LASER_BURST_3"/>
-		<weapon name="BEAM_FIRE"/>
-	</weaponList>
-	<health amount="22"/>	
-	<maxPower amount ="19"/>
-	<crewCount amount = "0"/>
-</shipBlueprint>
-
-<shipBlueprint name="GHOST_SHIP_HARD" layout="jelly_truffle" img="jelly_truffle_pirate">
-	<class>Truffle Wreckage</class>
-	<systemList>
-		<pilot power="3" room="0"/>
-		<doors power="3" room="1"/>
-		<oxygen power="1" room="4"/>
-		<medbay power="2" room="3"/>
-		<shields power="6" room="6"/>
-		<engines power="4" room="2"/>
-		<weapons power="8" room="5"/>
-	</systemList>
-	<weaponList count="3">
-		<weapon name="LASER_BURST_2"/>
-		<weapon name="LASER_BURST_3"/>
-		<weapon name="LASER_BURST_3"/>
-		<weapon name="BEAM_3"/>
-	</weaponList>
-	<health amount="22"/>	
-	<maxPower amount ="21"/>
-	<crewCount amount = "0"/>
-</shipBlueprint>
--->
-
-		
-		
 
 <!--**********************
 Boss files

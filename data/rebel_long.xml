@@ -5,16 +5,16 @@
 
 
 <weaponMounts>
-	<mount x="138" y="120" rotate="false" mirror="true" gib="4" slide="left"/>
-	<mount x="207" y="120" rotate="false" mirror="false" gib="4" slide="right"/>
-	<mount x="65" y="192" rotate="false" mirror="true" gib="1" slide="left"/>
-	<mount x="280" y="192" rotate="false" mirror="false" gib="3" slide="right"/>
+	<mount x="114" y="96" rotate="false" mirror="true" gib="4" slide="left"/>
+	<mount x="232" y="96" rotate="false" mirror="false" gib="4" slide="right"/>
+	<mount x="84" y="207" rotate="false" mirror="true" gib="1" slide="up"/>
+	<mount x="260" y="207" rotate="false" mirror="false" gib="3" slide="up"/>
 	
 	<!-- artillery mount testing points-->
-	<mount x="134" y="132" rotate="false" mirror="true" gib="3"/>
-	<mount x="205" y="132" rotate="false" mirror="false" gib="2"/>
-	<mount x="58" y="168" rotate="false" mirror="true" gib="3"/>
-	<mount x="282" y="168" rotate="false" mirror="false" gib="1"/>
+	<mount x="114" y="96" rotate="false" mirror="true" gib="4"/>
+	<mount x="232" y="96" rotate="false" mirror="false" gib="4"/>
+	<mount x="84" y="207" rotate="false" mirror="true" gib="1"/>
+	<mount x="260" y="207" rotate="false" mirror="false" gib="3"/>
 </weaponMounts>
 
 
