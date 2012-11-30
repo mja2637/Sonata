@@ -59,7 +59,7 @@
 
 
 <crewBlueprint name="human">
-	<desc>Humans are fiercely proud and independent.Most spacefaring humans are United Empire citizens or IHTG traders - the rest are Pilgrims..</desc>
+	<desc>Humans are fiercely proud and independent. Most spacefaring humans are United Empire citizens, IHTG traders - or Pilgrims.</desc>
 	<cost>40</cost>
 	<bp>2</bp>
 	<title>Human</title>
