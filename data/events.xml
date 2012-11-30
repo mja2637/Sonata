@@ -298,9 +298,9 @@ item - Dust + that thing  -->
 -->
 
 <event name="ASTEROID_EXPLORE" unique="true">
-	<text>Scans reveal a large gas cloud nearby. Short-range scanners may discover useful materials while we wait for the FTL to recharge.</text>
+	<text>Scans reveal a large asteroid field nearby. Short-range scanners may discover useful materials while we wait for the FTL to recharge.</text>
 	<choice hidden="true">
-		<text>Explore the gas cloud</text>
+		<text>Explore the asteroid field.</text>
 		<event load="ASTEROID_EXPLORE_RESULTS"/>
 	</choice>
 	<choice>	
@@ -308,9 +308,9 @@ item - Dust + that thing  -->
 		<event/>
 	</choice>
 	<choice req="SCRAP_COLLECTOR" hidden="true">
-		<text>(Bussard Ramscoop) Attempt to recover Dust from the cloud.</text> 
+		<text>(Bussard Ramscoop) Attempt to recover Dust from the asteroids.</text> 
 		<event>
-			<text>You carefully extract as much Dust as possible from the cloud while waiting for the FTL to charge.</text>
+			<text>You carefully extract as much Dust as possible from the asteroid field while waiting for the FTL to charge.</text>
 			<autoReward level="HIGH">scrap_only</autoReward>
 		</event>
 	</choice>
@@ -320,7 +320,7 @@ item - Dust + that thing  -->
 		<text>A brief exploration yields nothing of interest.</text>
 	</event>
 	<event>
-		<text>Scans reveal a number of gasses with useful compositions. You extract some fuel.</text>
+		<text>Scans reveal a number of asteroids with useful compositions. You extract some fuel.</text>
 		<autoReward level="HIGH">fuel_only</autoReward>
 	</event>
 	<event>
@@ -332,11 +332,11 @@ item - Dust + that thing  -->
 		<autoReward level="MED">droneparts</autoReward>
 	</event>
 	<event>
-		<text>The gas cloud proved more dangerous than expected - caustic chemicals have eaten away at your hull.</text>
+		<text>The asteroid field proved more dangerous than expected - several rocks have gotten through your kinetic defenses and struck your hull.</text>
 		<damage amount="5"/>
 	</event>
 	<event>
-		<text>A pirate ship hiding in a dense section of the gas cloud attacks you!</text>
+		<text>A pirate ship emerges from behind a large asteroid and attacks!</text>
 		<ship load="PIRATE" hostile="true"/>
 		<environment type="asteroid"/>
 	</event>
