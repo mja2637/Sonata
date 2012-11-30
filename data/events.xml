@@ -1027,7 +1027,7 @@ item - Dust + that thing  -->
 	<choice hidden="true" req="rock">
 		<text>(Sower Crew) Send your Sower crew-member in.</text>
 		<event>
-			<text>Your Sower soldier tears through the airlock directly into the fire. You've never seen someone that large move that fast. It disperses as much fire suppressant as possible into the heart of the blaze and eventually the fires start to die down.</text>
+			<text>Your Sower tears through the airlock directly into the fire. You've never seen something that large move that fast. It disperses as much fire suppressant as possible into the heart of the blaze and eventually the fires start to die down.</text>
 			<choice hidden="true">
 				<text>Contact the survivors.</text>
 				<event>

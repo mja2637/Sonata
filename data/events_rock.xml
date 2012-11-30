@@ -19,7 +19,6 @@ Environmnt:
 <eventList name="NEUTRAL_ROCK">
 	<!--<event load="ROCK_NURSERY"/>-->
 	<!--<event load="ROCK_ZOLTAN_HELP"/>-->
-<!--
 	<event load="ROCK_MANTIS_HUNTER"/>
 	<event load="ROCK_MANTIS_FREIGHTER"/>
 	<event load="ROCK_ATHIEST"/>
@@ -30,10 +29,8 @@ Environmnt:
 	<event load="MERCENARY"/>
 	<event load="FRIENDLY_SLAVER"/>	
 	<event load="ASTEROID_DERELICT_SHIP"/> 
-	-->
 </eventList>
 
-<!--
 <eventList name="BOARDERS_ROCK">
 	<event load="ROCK_BOARDERS_SHIP"/>
 	<event load="ROCK_BOARDERS_ASTEROID"/>
@@ -74,7 +71,8 @@ Environmnt:
 	<event load="MERCENARY_WORK_START"/>
 	<event load="QUEST_CREWDEAD_START"/>
 </eventList>
--->
+
+
 <!-----------
 		STRUCTURE!!!
 	Requred structural 

@@ -1,13 +1,10 @@
-<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
-
-
+﻿<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
 <sectorType name="CIVILIAN">
-	<sector>CIVILIAN_SECTOR</sector>
-	<sector>ENGI_SECTOR</sector>
-	<sector>ENGI_HOME</sector>
+	<sector>CIVILIAN_SECTOR</sector>	
 	<sector>ZOLTAN_SECTOR</sector>
 	<sector>ZOLTAN_HOME</sector>
+	<sector>ROCK_SECTOR</sector>	
 </sectorType>
 
 
@@ -16,8 +13,9 @@
 	<sector>PIRATE_SECTOR</sector>
 	<sector>MANTIS_SECTOR</sector>
 	<sector>MANTIS_HOME</sector>
-	<sector>ROCK_SECTOR</sector>
-	<sector>ROCK_HOME</sector>
+	<sector>ENGI_SECTOR</sector>
+	<sector>ENGI_HOME</sector>
+	<sector>ROCK_HOME</sector>	
 </sectorType>
 
 <sectorType name="NEBULA">
@@ -35,13 +33,6 @@
 	<sector>ROCK_HOME</sector>
 	-->
 </sectorType>
-
-
-
-
-
-
-
 
 <!-- --------------------
 STRUCTURE SECTORS
@@ -113,69 +104,99 @@ CIVILIAN SECTORS
 	<!-- JUSTIN CHANGE THESE -->
 </sectorDescrption>
 
-
-
-<sectorDescription name="ENGI_SECTOR" minSector="0" unique="false">  
+<sectorDescription name="ZOLTAN_SECTOR" minSector="1" unique="false">   
 	<nameList>
-		<name>Engi Controlled Sector</name>
+		<name>Sophon Controlled Sector</name>
 	</nameList>
 	<trackList>
-		<track>engi</track>
+		<track>zoltan</track>
 		<track>cosmos</track>
-		<track>milkyway</track>
 	</trackList>
 	<rarityList>
-		<blueprint name="engi" rarity="1"/>
-		<blueprint name="mantis" rarity="0"/>
-		<blueprint name="energy" rarity="4"/>
-		<blueprint name="slug" rarity="0"/>
-		<blueprint name="rock" rarity="0"/>
-		<blueprint name="human" rarity="3"/>
+		<blueprint name="engi" rarity="3"/>
+		<blueprint name="mantis" rarity="3"/>
+		<blueprint name="energy" rarity="1"/>
+		<blueprint name="slug" rarity="3"/>
+		<blueprint name="rock" rarity="3"/>
+		<blueprint name="human" rarity="2"/>
 	</rarityList>
-	<startEvent>START_BEACON_ENGI</startEvent>
-	<event name="STORE_ENGI" min="2" max="3"/>
-	<event name="ITEMS" min="2" max="2"/>
-	<event name="NOTHING_ENGI" min="1" max="2"/>
-	<event name="ITEMS_ENGI" min="3" max="3"/>
-	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
-	<event name="QUESTS_ENGI" min="1" max="1"/>
-	<event name="NEUTRAL_ENGI" min="5" max="7"/>
-	<event name="HOSTILE_ENGI" min="5" max="7"/>
-</sectorDescrption>
-
-<sectorDescription name="ENGI_HOME" minSector="2" unique="true"> 
-	<nameList>
-		<name>Engi Homeworlds</name>
-	</nameList>
-	<trackList>
-		<track>engi</track>
-		<track>cosmos</track>
-		<track>milkyway</track>
-	</trackList>
-	<rarityList>
-		<blueprint name="engi" rarity="1"/>
-		<blueprint name="mantis" rarity="0"/>
-		<blueprint name="energy" rarity="4"/>
-		<blueprint name="slug" rarity="0"/>
-		<blueprint name="rock" rarity="0"/>
-		<blueprint name="human" rarity="3"/>
-	</rarityList>
-	<startEvent>START_BEACON_ENGI</startEvent>
-	<event name="ENGI_UNLOCK_1" min="1" max="1"/>
-	<event name="STORE_ENGI" min="2" max="3"/>
-	<event name="ITEMS" min="2" max="2"/>
-	<event name="NOTHING_ENGI" min="1" max="2"/>
-	<event name="ITEMS_ENGI" min="3" max="3"/>
-	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
-	<event name="QUESTS_ENGI" min="1" max="1"/>
-	<event name="NEUTRAL_ENGI" min="5" max="7"/>
-	<event name="HOSTILE_ENGI" min="5" max="7"/>
+	<startEvent>START_BEACON_ZOLTAN</startEvent>
+	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
+	<event name="STORE_ZOLTAN" min="2" max="2"/>
+	<event name="NOTHING_ZOLTAN" min="1" max="2"/>
+	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
+	<event name="NEBULA_ZOLTAN" min="2" max="6"/>
+	<event name="HOSTILE_ZOLTAN" min="6" max="8"/>
+	<event name="BOARDERS_ZOLTAN" min="1" max="2"/>
+	<event name="ITEM_ZOLTAN" min="1" max="2"/>
+	<event name="QUESTS_ZOLTAN" min="0" max="1"/>
+	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
 </sectorDescrption>
 
 
+<sectorDescription name="ZOLTAN_HOME" minSector="2" unique="true">   
+	<nameList>
+		<name>Sophon Homeworlds</name>
+	</nameList>
+	<trackList>
+		<track>zoltan</track>
+		<track>cosmos</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="3"/>
+		<blueprint name="mantis" rarity="3"/>
+		<blueprint name="energy" rarity="1"/>
+		<blueprint name="slug" rarity="3"/>
+		<blueprint name="rock" rarity="3"/>
+		<blueprint name="human" rarity="2"/>
+	</rarityList>
+	<startEvent>START_BEACON_ZOLTAN</startEvent>
+	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
+	<event name="ZOLTAN_PEACE_QUEST" min="1" max="1"/>
+	<event name="STORE_ZOLTAN" min="2" max="2"/>
+	<event name="NOTHING_ZOLTAN" min="1" max="2"/>
+	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
+	<event name="NEBULA_ZOLTAN" min="2" max="6"/>
+	<event name="HOSTILE_ZOLTAN" min="6" max="8"/>
+	<event name="BOARDERS_ZOLTAN" min="1" max="2"/>
+	<event name="ITEM_ZOLTAN" min="1" max="2"/>
+	<event name="QUESTS_ZOLTAN" min="0" max="1"/>
+	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
+	
+	
+</sectorDescrption>
 
 
 
+<sectorDescription name="ROCK_SECTOR" minSector="1" unique="false">   
+	<nameList>
+		<name>Sower Controlled Sector</name>
+	</nameList>
+	<trackList>
+		<track>rock</track>
+		<track>wasteland</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="3"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="1"/>
+		<blueprint name="human" rarity="2"/>
+	</rarityList>
+	<!--<event name="STORE" min="2" max="4"/>-->
+	
+	<startEvent>START_BEACON_ROCK</startEvent>
+	<event name="STORE_ROCK" min="2" max="2"/>
+	<event name="NOTHING_ROCK" min="2" max="3"/>
+	<event name="DISTRESS_BEACON_ROCK" min="1" max="2"/>
+	<event name="HOSTILE_ROCK" min="6" max="8"/>
+	<event name="BOARDERS_ROCK" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="QUESTS_ROCK" min="0" max="1"/>
+	<event name="NEUTRAL_ROCK" min="7" max="8"/>
+	
+</sectorDescrption>
 
 
 <!-- --------------------
@@ -279,12 +300,93 @@ HOSTILE SECTORS
 	<event name="NEUTRAL_MANTIS" min="6" max="7"/>
 </sectorDescrption>
 
+<sectorDescription name="ENGI_SECTOR" minSector="0" unique="false">  
+	<nameList>
+		<name>Engi Controlled Sector</name>
+	</nameList>
+	<trackList>
+		<track>engi</track>
+		<track>cosmos</track>
+		<track>milkyway</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="3"/>
+	</rarityList>
+	<startEvent>START_BEACON_ENGI</startEvent>
+	<event name="STORE_ENGI" min="2" max="3"/>
+	<event name="ITEMS" min="2" max="2"/>
+	<event name="NOTHING_ENGI" min="1" max="2"/>
+	<event name="ITEMS_ENGI" min="3" max="3"/>
+	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
+	<event name="QUESTS_ENGI" min="1" max="1"/>
+	<event name="NEUTRAL_ENGI" min="5" max="7"/>
+	<event name="HOSTILE_ENGI" min="5" max="7"/>
+</sectorDescrption>
 
+<sectorDescription name="ENGI_HOME" minSector="2" unique="true"> 
+	<nameList>
+		<name>Engi Homeworlds</name>
+	</nameList>
+	<trackList>
+		<track>engi</track>
+		<track>cosmos</track>
+		<track>milkyway</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="3"/>
+	</rarityList>
+	<startEvent>START_BEACON_ENGI</startEvent>
+	<event name="ENGI_UNLOCK_1" min="1" max="1"/>
+	<event name="STORE_ENGI" min="2" max="3"/>
+	<event name="ITEMS" min="2" max="2"/>
+	<event name="NOTHING_ENGI" min="1" max="2"/>
+	<event name="ITEMS_ENGI" min="3" max="3"/>
+	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
+	<event name="QUESTS_ENGI" min="1" max="1"/>
+	<event name="NEUTRAL_ENGI" min="5" max="7"/>
+	<event name="HOSTILE_ENGI" min="5" max="7"/>
+</sectorDescrption>
 
-
-
-
-
+<sectorDescription name="ROCK_HOME" minSector="4" unique="true">   
+	<nameList>
+		<name>Sower Homeworlds</name>
+	</nameList>
+	<trackList>
+		<track>rock</track>
+		<track>wasteland</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="3"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="1"/>
+		<blueprint name="human" rarity="2"/>
+	</rarityList>
+	<!--<event name="STORE" min="2" max="4"/>-->
+	
+	<startEvent>START_BEACON_ROCK</startEvent>
+	<event name="ROCK_CRYSTAL_BEACON" min="1" max="1"/> <!-- CRYSTAL UNLOCK-->
+	<event name="ROCK_UNLOCK1" min="1" max="1"/>
+	<event name="STORE_ROCK" min="2" max="2"/>
+	<event name="NOTHING_ROCK" min="2" max="3"/>
+	<event name="DISTRESS_BEACON_ROCK" min="1" max="2"/>
+	<event name="HOSTILE_ROCK" min="6" max="8"/>
+	<event name="BOARDERS_ROCK" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="QUESTS_ROCK" min="0" max="1"/>
+	<event name="NEUTRAL_ROCK" min="7" max="8"/>	
+</sectorDescrption>
 
 <!-- --------------------
 NEBULA SECTORS
@@ -383,12 +485,6 @@ NEBULA SECTORS
 	
 </sectorDescrption>
 
-
-
-
-
-
-
 <!-- --------------------
 UNKNOWN SECTORS
 
@@ -411,135 +507,6 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 	
 	
 </sectorDescrption>
-
-
-<sectorDescription name="ZOLTAN_SECTOR" minSector="1" unique="false">   
-	<nameList>
-		<name>Sophon Controlled Sector</name>
-	</nameList>
-	<trackList>
-		<track>zoltan</track>
-		<track>cosmos</track>
-	</trackList>
-	<rarityList>
-		<blueprint name="engi" rarity="3"/>
-		<blueprint name="mantis" rarity="3"/>
-		<blueprint name="energy" rarity="1"/>
-		<blueprint name="slug" rarity="3"/>
-		<blueprint name="rock" rarity="3"/>
-		<blueprint name="human" rarity="2"/>
-	</rarityList>
-	<startEvent>START_BEACON_ZOLTAN</startEvent>
-	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
-	<event name="STORE_ZOLTAN" min="2" max="2"/>
-	<event name="NOTHING_ZOLTAN" min="1" max="2"/>
-	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
-	<event name="NEBULA_ZOLTAN" min="2" max="6"/>
-	<event name="HOSTILE_ZOLTAN" min="6" max="8"/>
-	<event name="BOARDERS_ZOLTAN" min="1" max="2"/>
-	<event name="ITEM_ZOLTAN" min="1" max="2"/>
-	<event name="QUESTS_ZOLTAN" min="0" max="1"/>
-	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
-</sectorDescrption>
-
-
-<sectorDescription name="ZOLTAN_HOME" minSector="2" unique="true">   
-	<nameList>
-		<name>Sophon Homeworlds</name>
-	</nameList>
-	<trackList>
-		<track>zoltan</track>
-		<track>cosmos</track>
-	</trackList>
-	<rarityList>
-		<blueprint name="engi" rarity="3"/>
-		<blueprint name="mantis" rarity="3"/>
-		<blueprint name="energy" rarity="1"/>
-		<blueprint name="slug" rarity="3"/>
-		<blueprint name="rock" rarity="3"/>
-		<blueprint name="human" rarity="2"/>
-	</rarityList>
-	<startEvent>START_BEACON_ZOLTAN</startEvent>
-	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
-	<event name="ZOLTAN_PEACE_QUEST" min="1" max="1"/>
-	<event name="STORE_ZOLTAN" min="2" max="2"/>
-	<event name="NOTHING_ZOLTAN" min="1" max="2"/>
-	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
-	<event name="NEBULA_ZOLTAN" min="2" max="6"/>
-	<event name="HOSTILE_ZOLTAN" min="6" max="8"/>
-	<event name="BOARDERS_ZOLTAN" min="1" max="2"/>
-	<event name="ITEM_ZOLTAN" min="1" max="2"/>
-	<event name="QUESTS_ZOLTAN" min="0" max="1"/>
-	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
-	
-	
-</sectorDescrption>
-
-
-
-<sectorDescription name="ROCK_SECTOR" minSector="1" unique="false">   
-	<nameList>
-		<name>Sower Controlled Sector</name>
-	</nameList>
-	<trackList>
-		<track>rock</track>
-		<track>wasteland</track>
-	</trackList>
-	<rarityList>
-		<blueprint name="engi" rarity="0"/>
-		<blueprint name="mantis" rarity="0"/>
-		<blueprint name="energy" rarity="3"/>
-		<blueprint name="slug" rarity="0"/>
-		<blueprint name="rock" rarity="1"/>
-		<blueprint name="human" rarity="2"/>
-	</rarityList>
-	<!--<event name="STORE" min="2" max="4"/>-->
-	
-	<startEvent>START_BEACON_ROCK</startEvent>
-	<event name="STORE_ROCK" min="2" max="2"/>
-	<event name="NOTHING_ROCK" min="2" max="3"/>
-	<event name="DISTRESS_BEACON_ROCK" min="1" max="2"/>
-	<event name="HOSTILE_ROCK" min="6" max="8"/>
-	<event name="BOARDERS_ROCK" min="1" max="2"/>
-	<event name="ITEMS" min="1" max="2"/>
-	<event name="QUESTS_ROCK" min="0" max="1"/>
-	<event name="NEUTRAL_ROCK" min="7" max="8"/>
-	
-</sectorDescrption>
-
-<sectorDescription name="ROCK_HOME" minSector="4" unique="true">   
-	<nameList>
-		<name>Sower Homeworlds</name>
-	</nameList>
-	<trackList>
-		<track>rock</track>
-		<track>wasteland</track>
-	</trackList>
-	<rarityList>
-		<blueprint name="engi" rarity="0"/>
-		<blueprint name="mantis" rarity="0"/>
-		<blueprint name="energy" rarity="3"/>
-		<blueprint name="slug" rarity="0"/>
-		<blueprint name="rock" rarity="1"/>
-		<blueprint name="human" rarity="2"/>
-	</rarityList>
-	<!--<event name="STORE" min="2" max="4"/>-->
-	
-	<startEvent>START_BEACON_ROCK</startEvent>
-	<event name="ROCK_CRYSTAL_BEACON" min="1" max="1"/> <!-- CRYSTAL UNLOCK-->
-	<event name="ROCK_UNLOCK1" min="1" max="1"/>
-	<event name="STORE_ROCK" min="2" max="2"/>
-	<event name="NOTHING_ROCK" min="2" max="3"/>
-	<event name="DISTRESS_BEACON_ROCK" min="1" max="2"/>
-	<event name="HOSTILE_ROCK" min="6" max="8"/>
-	<event name="BOARDERS_ROCK" min="1" max="2"/>
-	<event name="ITEMS" min="1" max="2"/>
-	<event name="QUESTS_ROCK" min="0" max="1"/>
-	<event name="NEUTRAL_ROCK" min="7" max="8"/>
-	
-</sectorDescrption>
-
-
 
 <!-- --------------------
 HIDDEN SECTORS

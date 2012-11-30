@@ -1,6 +1,5 @@
 ﻿<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
-
 <eventCounts sector="0">
 	<event name="STORE" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
@@ -24,7 +23,7 @@
 	<!-- <event name="NEBULA" min="2" max="6"/> ADDED FOR DEMO -->
 	<event name="HOSTILE_BOARDING" min="1" max="2"/><!-- REMOVED FOR DEMO -->
 	<event name="QUESTS" min="0" max="1"/>
-</eventCounts>
+</eventCounts>	
 <!--- Leftover events will be filled in with NEUTRAL -->
 
 <!-- PLANNING FOR the 3rd Sector-->
