@@ -75,10 +75,10 @@ Special:
 
 <!--------------------------------
 
-	PIRATE SHIPS
+	TEST SHIP
 	
 ---------------------------------->
-<ship name="REBEL_VS_FEDERATION" auto_blueprint="REBEL_SKINNY">  <!-- fed base? -->
+<ship name="TEST_SHIP_LOAD" auto_blueprint="REBEL_SKINNY">  <!-- fed base? -->
 	<destroyed>
 		<text>-</text>
 		<autoReward level="HIGH">standard</autoReward>

@@ -1,0 +1,7 @@
+<!-- Copyright (c) 2012 by Subset Games, mod by Matt Alioto. All rights reserved -->
+
+<!-- new weapons -->
+<beam volume="3">weapons/beam.wav</beam>
+<dualbeam volume="2">weapons/dualbeam.wav</dualbeam>
+<kinetic1 volume="2">weapons/kinetic_1.wav</kinetic1>
+<pulse1 volume="3">weapons/pulse.wav</kinetic1>

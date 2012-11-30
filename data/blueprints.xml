@@ -397,9 +397,7 @@
 	<rarity>1</rarity>
 	<image>UE_GAUSS_PROJ_1</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -434,9 +432,7 @@
 	<rarity>3</rarity>
 	<image>UE_GAUSS_PROJ_2</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -471,9 +467,7 @@
 	<rarity>4</rarity>
 	<image>UE_GAUSS_PROJ_3</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -508,9 +502,7 @@
 	<rarity>5</rarity>
 	<image>UE_GAUSS_PROJ_4</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -531,7 +523,7 @@
 	<type>LASER</type>
 	<title>Mk 1 Driver, supercooled, mono-rail</title>
 	<short>Rail Driver</short>
-	<desc>Rather than using dual rails, the Mk 2 Driver uses a central rail that is thick enough to contain supercooling fluid lines and electromagnetic bearings; the barrel itself is exposed to vacuum. The radical reduction in friction allows the power, and hence the muzzle velocity, to be increased considerably.</desc>
+	<desc>Rather than using dual rails, the Mk 2 Driver uses a central rail that is thick enough to contain supercooling fluid lines and electromagnetic bearings; the barrel itself is exposed to vacuum. The radical reduction in friction reduces heat build up to increase the firing rate.</desc>
 	<tooltip>One shot, one damage, quick firing.</tooltip>
 	<damage>1</damage>
 	<shots>1</shots>
@@ -545,9 +537,7 @@
 	<rarity>2</rarity>
 	<image>UE_DRIVER_PROJ_1</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -582,9 +572,9 @@
 	<rarity>3</rarity>
 	<image>UE_DRIVER_PROJ_2</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -619,9 +609,9 @@
 	<rarity>4</rarity>
 	<image>UE_DRIVER_PROJ_3</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -656,9 +646,9 @@
 	<rarity>4</rarity>
 	<image>UE_DRIVER_PROJ_4</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -694,8 +684,7 @@
 	<rarity>2</rarity>
 	<image>SOWER_CANNON_PROJ_1</image>
 	<launchSounds>
-		<sound>smallMissile1</sound>
-		<sound>smallMissile2</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>smallExplosion</sound>
@@ -730,8 +719,7 @@
 	<rarity>3</rarity>
 	<image>SOWER_CANNON_PROJ_2</image>
 	<launchSounds>
-		<sound>smallMissile1</sound>
-		<sound>smallMissile2</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>smallExplosion</sound>
@@ -838,9 +826,8 @@
 	<rarity>1</rarity>
 	<image>UE_DRIVER_PROJ_1</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -875,9 +862,8 @@
 	<rarity>2</rarity>
 	<image>UE_DRIVER_PROJ_2</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -948,9 +934,9 @@
 	<rarity>5</rarity>
 	<image>UE_DRIVER_PROJ_4</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
+		<sound>kinetic_1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1057,7 +1043,7 @@
 	<length>35</length>
 	<image>beam_contact</image>
 	<launchSounds>
-		<sound>beam2</sound>
+		<sound>beam</sound>
 	</launchSounds>
 	<weaponArt>laser_burst_5</weaponArt> 
 </weaponBlueprint>
@@ -1080,7 +1066,7 @@
 	<length>65</length>
 	<image>beam_contact</image>
 	<launchSounds>
-		<sound>beam2</sound>
+		<sound>beam</sound>
 	</launchSounds>
 	<weaponArt>laser_hull</weaponArt>
 </weaponBlueprint>
@@ -1103,9 +1089,9 @@
 	<rarity>2</rarity>
 	<image>laser_light1</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>pulse1</sound>
+		<sound>pulse1</sound>
+		<sound>pulse1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1140,9 +1126,9 @@
 	<rarity>3</rarity>
 	<image>laser_light2</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>pulse1</sound>
+		<sound>pulse1</sound>
+		<sound>pulse1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1177,9 +1163,7 @@
 	<rarity>4</rarity>
 	<image>ion_2_shot</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>dualbeam</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1290,7 +1274,7 @@
 	<image>beam_contact</image>
 	<length>45</length>
 	<launchSounds>
-		<sound>beam1</sound>
+		<sound>beam</sound>
 	</launchSounds>
 	<weaponArt>laser_burst_5</weaponArt> 
 </weaponBlueprint>
@@ -4674,8 +4658,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="3" missiles="15">
-		<weapon name="BEAM_BIO"/>
-		<weapon name="BOMB_BREACH_1"/>
+		<weapon name="BASIC_LASER_2"/>
 		<weapon name="BASIC_KINETIC_1"/>
 	</weaponList>
 	<aug name="SLUG_GEL"/>
@@ -4821,10 +4804,11 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="3" missiles="0">
-		<weapon name="ION_1"/>
-		<weapon name="ION_1"/>
-		<weapon name="SOPHON_LASER_2"/>
+	<weaponList count="4" missiles="0">
+		<weapon name="SOPHON_PULSE_3"/>
+		<weapon name="SOPHON_PULSE_2"/>
+		<weapon name="SOPHON_LASER_4"/>
+		<weapon name="SOWER_AUTOCANNON_2"/>
 	</weaponList>
 	<droneList drones="2"/>
 	<health amount="30"/>

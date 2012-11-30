@@ -89,7 +89,7 @@ Test Event
 
 <event name="TEST">
 	<text load="TEST_TEXT"/>
-	<store/>
+	<ship load = "TEST_SHIP_LOAD" hostile ="true"/>
 </event>
 <textList name="TEST_TEXT">
 	<text>This event tests combat with rebel_long.</text>
@@ -110,11 +110,6 @@ weapon
 augment 
 drone 
 item - Dust + that thing  -->
-
-<event name="TEST_EVENT">
-	<text>TESTING!</text>
-	<damage amount="29"/>
-</event>
 
 <event name="FREE_NANO">
 	<text>FREE NANO!</text>

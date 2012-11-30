@@ -49,6 +49,8 @@ STRUCTURE SECTORS
 		<track>milkyway</track>
 	</trackList>
 	<startEvent>START_BEACON</startEvent>
+	<event name="TEST" min="12" max="14"/>
+	<!--
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
@@ -59,6 +61,7 @@ STRUCTURE SECTORS
 	<event name="QUESTS" min="1" max="1"/>
 	<event name="HOSTILE1" min="2" max="2"/>
 	<event name="HOSTILE_BOARDING" min="0" max="0"/>
+	-->
 </sectorDescription>
 
 
@@ -89,19 +92,16 @@ CIVILIAN SECTORS
 		<track>cosmos</track>
 		<track>milkyway</track>
 	</trackList>
-<!--	<startEvent>START_BEACON_CIVILIAN</startEvent>   JUSTIN TO DO-->
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
 	<event name="NOTHING" min="1" max="2"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
-	<event name="NEBULA" min="0" max="8"/>
-<!--	<event name="HOSTILE_BOARDING" min="0" max="1"/>-->
+	<event name="NEBULA" min="0" max="8"/> 
+	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
-	
-	<!-- JUSTIN CHANGE THESE -->
 </sectorDescrption>
 
 <sectorDescription name="ZOLTAN_SECTOR" minSector="1" unique="false">   
