@@ -473,7 +473,7 @@ shield research center - jams shields
 </textList>
 
 <event name="ZOLTAN_MANTIS" unique="true">
-	<text>You pick up the last broadcast from a rupturing Sophon freighter. A calm voice states: "Mantis attack highly effective; 87% chance of terminal reactor-" You're interrupted by fire off the port bow!</text>
+	<text>You pick up the last broadcast from a rupturing Sophon freighter. A calm voice states: "Mantis attack highly effective; 87 percent chance of terminal reactor-" You're interrupted by fire off the port bow!</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 </event>
 
