@@ -4,4 +4,7 @@
 <beam volume="3">weapons/beam.wav</beam>
 <dualbeam volume="3">weapons/dualbeam.wav</dualbeam>
 <kinetic1 volume="3">weapons/kinetic_1.wav</kinetic1>
+<kinetic2 volume="3">weapons/kinetic_2.mp3</kinetic2>
+<kinetic3 volume="3">weapons/kinetic_3.mp3</kinetic3>
+<kinetic4 volume="3">weapons/kinetic_4.mp3</kinetic4>
 <pulse1 volume="3">weapons/pulse.wav</kinetic1>

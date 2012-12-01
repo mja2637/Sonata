@@ -397,7 +397,7 @@
 	<rarity>1</rarity>
 	<image>UE_GAUSS_PROJ_1</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -432,7 +432,7 @@
 	<rarity>3</rarity>
 	<image>UE_GAUSS_PROJ_2</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -467,7 +467,7 @@
 	<rarity>4</rarity>
 	<image>UE_GAUSS_PROJ_3</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -502,7 +502,7 @@
 	<rarity>5</rarity>
 	<image>UE_GAUSS_PROJ_4</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -537,7 +537,7 @@
 	<rarity>2</rarity>
 	<image>UE_DRIVER_PROJ_1</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -572,9 +572,9 @@
 	<rarity>3</rarity>
 	<image>UE_DRIVER_PROJ_2</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
-		<sound>kinetic1</sound>
-		<sound>kinetic1</sound>
+		<sound>kinetic2</sound>
+		<sound>kinetic2</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -609,9 +609,9 @@
 	<rarity>4</rarity>
 	<image>UE_DRIVER_PROJ_3</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
-		<sound>kinetic1</sound>
-		<sound>kinetic1</sound>
+		<sound>kinetic2</sound>
+		<sound>kinetic2</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -646,9 +646,9 @@
 	<rarity>4</rarity>
 	<image>UE_DRIVER_PROJ_4</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
-		<sound>kinetic1</sound>
-		<sound>kinetic1</sound>
+		<sound>kinetic2</sound>
+		<sound>kinetic2</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -826,8 +826,8 @@
 	<rarity>1</rarity>
 	<image>UE_DRIVER_PROJ_1</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
-		<sound>kinetic1</sound>
+		<sound>kinetic3</sound>
+		<sound>kinetic3</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -862,8 +862,8 @@
 	<rarity>2</rarity>
 	<image>UE_DRIVER_PROJ_2</image>
 	<launchSounds>
-		<sound>kinetic1</sound>
-		<sound>kinetic1</sound>
+		<sound>kinetic3</sound>
+		<sound>kinetic3</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1282,7 +1282,7 @@
 <!-------------------------
 	SIMPLE KINETIC
  ------------------------->
-<weaponBlueprint name="BASIC_kinetic1">
+<weaponBlueprint name="BASIC_KINETIC_1">
 	<type>LASER</type>
 	<title>High Isotope Slug Thrower</title>
 	<short>Slugger I</short>
@@ -1300,9 +1300,9 @@
 	<rarity>1</rarity>
 	<image>UE_GAUSS_PROJ_1</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1337,9 +1337,9 @@
 	<rarity>2</rarity>
 	<image>UE_GAUSS_PROJ_2</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1374,9 +1374,9 @@
 	<rarity>3</rarity>
 	<image>UE_GAUSS_PROJ_3</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1411,9 +1411,9 @@
 	<rarity>4</rarity>
 	<image>UE_GAUSS_PROJ_4</image>
 	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
