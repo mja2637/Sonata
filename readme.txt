@@ -101,8 +101,25 @@ Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
+
+6a
+          - Removed "%" symbol causing defect in Sophon event text
+          - Filled inner transparencies in /map button .pngs preventing them from showing up as black boxes
+          - Fix UE Frigate engine room (planned)
+          - Correct graphical glitch in UE Destroyer weapons room (planned)
+          - Correct global weapon title positioning (hopeful)
 6
-	Complete UI overhaul
+	UI overhaul:
+		- /combatUI
+		- /customizeUI
+		- /generalUI (exit button)
+		- /map (buttons, boxes, overlay, destination icons)
+		- /numbers
+		- /optionsUI
+		- /statusUI (buttons)
+		- /tutorial/button_continue
+		- /upgradeUI (buttons, half of the overlays, half of /equipment, all of /equipment/tabButtons)
+		- graphics in /img
 	Weapon balancing (Sower)
 	New weapon sounds (public domain/royalty free)
 	Converted "Scrap" to "Dust" as far as possible
