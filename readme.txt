@@ -3,7 +3,7 @@ SONATA
 An FTL mod.
 
 
-You are a United Empire pilot who steals a ship and joins the Pilgrims as they attempt to secede from the United Empire. You must travel from sector to sector ahead of the loyalists searching for you, and make your last stand with the resistance fleet.
+You are a pilot who steals a ship and joins the Pilgrims as they attempt to secede from the United Empire. You must travel from sector to sector ahead of the loyalists searching for you, and make your last stand with the resistance fleet.
 
 This mod is based on the storyline of Endless Space by Amplitude Studios, with modifications.
 
