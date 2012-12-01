@@ -49,8 +49,7 @@ STRUCTURE SECTORS
 		<track>milkyway</track>
 	</trackList>
 	<startEvent>START_BEACON</startEvent>
-	<event name="TEST" min="12" max="14"/>
-	<!--
+	<!-- <event name="TEST" min="12" max="14"/> -->
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
@@ -61,7 +60,6 @@ STRUCTURE SECTORS
 	<event name="QUESTS" min="1" max="1"/>
 	<event name="HOSTILE1" min="2" max="2"/>
 	<event name="HOSTILE_BOARDING" min="0" max="0"/>
-	-->
 </sectorDescription>
 
 

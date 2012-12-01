@@ -101,6 +101,14 @@ Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
+6
+	Complete UI overhaul
+	Weapon balancing (Sower)
+	New weapon sounds (public domain/royalty free)
+	Converted "Scrap" to "Dust" as far as possible
+	Fixed rebel_long weapon mounts
+	Re-added Sower sector events (crash fixed)
+	Reshuffled sector mix
 5b
 	Re-added transparency to hangar graphic
 5a
