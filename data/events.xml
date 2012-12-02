@@ -268,11 +268,67 @@ item - Dust + that thing  -->
 			********************************************   
 -->	
 
-<event name="NOTHING">
+<event name="NOTHING_1">
 	<text load="NOTHING_TEXT"/>
 	<choice hidden="true" req="rock">
 		<text>Talk to your Sower crewmember.</text>
 		<event load="SOWER_EXP_1"/>
+	</choice>
+	<choice hidden="true" req="human">
+		<text>Talk to your human crewmember.</text>
+		<event load="HUMAN_EXP_1"/>
+	</choice>
+	<choice hidden="true" req="energy">
+		<text>Talk to your Sophon crewmember.</text>
+		<event load="SOPHON_EXP_1"/>
+	</choice>	
+</event>
+
+<event name="NOTHING_2">
+	<text load="NOTHING_TEXT"/>
+	<choice hidden="true" req="rock">
+		<text>Talk to your Sower crewmember.</text>
+		<event load="SOWER_EXP_2"/>
+	</choice>
+		<choice hidden="true" req="human">
+		<text>Talk to your human crewmember.</text>
+		<event load="HUMAN_EXP_1"/>
+	</choice>
+	<choice hidden="true" req="energy">
+		<text>Talk to your Sophon crewmember.</text>
+		<event load="SOPHON_EXP_1"/>
+	</choice>
+</event>
+
+<event name="NOTHING_3">
+	<text load="NOTHING_TEXT"/>
+	<choice hidden="true" req="rock">
+		<text>Talk to your Sower crewmember.</text>
+		<event load="SOWER_EXP_3"/>
+	</choice>
+		<choice hidden="true" req="human">
+		<text>Talk to your human crewmember.</text>
+		<event load="HUMAN_EXP_1"/>
+	</choice>
+	<choice hidden="true" req="energy">
+		<text>Talk to your Sophon crewmember.</text>
+		<event load="SOPHON_EXP_1"/>
+	</choice>
+</event>
+
+<event name="NOTHING_4">
+	<text load="NOTHING_TEXT"/>
+	<choice hidden="true" req="rock">
+		<text>Talk to your Sower crewmember.</text>
+		<event load="SOWER_EXP_4"/>
+	</choice>
+		<choice hidden="true" req="human">
+		<text>Talk to your human crewmember.</text>
+		<event load="HUMAN_EXP_4"/>
+	</choice>
+	<choice hidden="true" req="energy">
+		<text>Talk to your Sophon crewmember.</text>
+		<event load="SOPHON_EXP_4"/>
 	</choice>
 </event>
 
@@ -289,6 +345,7 @@ item - Dust + that thing  -->
 	<text planet="NONE">Space, the final frontier. In an Endless galaxy full of asses, these are the voyages of a starship destined to kick them all.</text>
 </textList>
 
+<!-- Sower Exposition -->
 <eventList name="SOWER_EXP_1">
 	<event>
 		<text>You found a usable API early on - you can send simple messages such as "Guard" or "Repair", and the Sower was able and willing to do it. There's a higher-level language inside the kernel, worked into everything. You think you will eventually find a way to interface with it; it's just a matter of time.</text>
@@ -308,6 +365,398 @@ item - Dust + that thing  -->
 			<text>Continue...</text>
 			<event>
 				<text>As best you can determine, this code poses no threat to your ship's systems. It seems to involve decision-making and experiencial behavior adjustment; you'll need to study it further in order to make any use of it.</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="SOWER_EXP_2">
+	<event>
+		<text>"unit_identifier(_). unit_identifier(n,[H:sow]) :- member(H)." The terminal simply prints "true."; you quickly debug your code and try again. The Sower sends you what appears to be a process ID. After hastily adding a few additional enumerations linked to an English dictionary, you submit another query.</text>
+		<choice>
+			<text>"is_name(pid) := unique(pid), pid is 5834608."</text>
+			<event>
+				<text>"true."</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>While passing a Sower terraformer, your ship's ECW console lights up: your Sower is transmitting to the other ship! Acting hastily, you record the transmission and analyze the packet content. Surprisingly, they have a fundamentally different structure to your Sower's internal messages.</text>
+		<choice>
+			<text>Extrapolate...</text>
+			<event>
+				<text>This may be conclusive proof that Sower handle internal and external communications differently; is that enough for individuality? Your Sower just transmitted a short status message to the other ship. You wonder if they're just saying "Hey, how are you?" - strangers in the night.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>You've been steadily adding functions to the database in the Sower's own high-level language, at first simple chores like "clean-lavatory" and "polish-captains-boots". On a whim, you've decided to tackle more personal jobs - "respond-greeting-hello".</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>The Sower updates the database almost instantly. The code has been altered - a line inserted. (let (lambda(crwName) (display "RECEIVE_MSG " crwName " RECEIVER_ID " pid))) Perhaps it is merely complying with internal coding standards. But what if it's saying "Hi, my name is RECEIVER_ID"?</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="SOWER_EXP_3">
+	<event>
+		<text>You hit the macro to order your Sower to take a break from duty, and it responds on your console: "RECEIVE_MSG GENERIC_INPUT". It often "says" RECEIVE_MSG as a form of greeting or acknowledgement - but what is GENERIC_INPUT?</text>
+		<choice>
+			<text>"Man GENERIC_INPUT"</text>
+			<event>
+				<text>The Sower responds: "NaNNaNNaNNaNNaNNaN\nalias \"Captain\"\t95 percent of input" Is it laughing? It must have named you GENERIC_INPUT internally because you talk to it so much! You don't know whether to be amazed or offended.</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>Occasionally, the Sower will respond to a query with relatively verbose output. It answers to the strangest things - reactor temperature charts, raw sensor data, dubstep - but through clever selection you can converse with it.</text>
+		<choice>
+			<text>Allow it to sample your music library</text>
+			<event>
+				<text>When you attempt to copy your ship's music database into the Sower, you are denied permission - the files already exist. You perform some diagnostics; the Sower has spent trillions of processor cycles playing jazz. Logs indicate that the folder /skrillex has been overwritten with whitespace 8 times.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>After a hard day working on the aft thrust couplers, you are exhausted and covered in sweat. A low mechanical whirr announces your Sower's presence; it presents you with a hydration packet and displays a message on a nearby terminal - "SUFFICIENT EFFICIENCY".</text>
+		<choice>
+			<text>"Thanks."</text>
+			<event>
+				<text>Did you just thank a robot? You've noticed that it spends more time around other crewmembers than not, sometimes following them from room to room. You wonder if it has learned to be loyal to you.</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="SOWER_EXP_4">
+	<event>
+		<text>You can now communicate with the Sower in plain text, for the most part - it's actually quite talkative at lower log severity levels. Since you're nearly at the end of your journey, you feel able to risk waxing philosophical with it.</text>
+		<choice>
+			<text>"Will we be victorious?"</text>
+			<event>
+				<text>"OBJECTIVES MET." That raised an eyebrow. You query - "OBJECTIVES?" - and realize that you had never specified a military victory. Eyes wet, you read its response: "[LIFE, LIBERTY, p_HAPPINESS]". Could a Sower ever realize what those words mean to you?</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>It is refreshing to see the world through the eyes of a robot; it is like talking to a great philosopher and a child at the same time. Late one night alone at the controls, you decide to strike up a conversation.</text>
+		<choice>
+			<text>You type. "ps -a" What're you thinking about?</text>
+			<event>
+				<text>It responds. "root 1 98.1 5.5 99:99" A whole lot of jack shit.</text>
+				<choice>
+					<text>You type. "cat /proc/acpi/battery/BAT0/state" Tired? How're you doing?</text>
+					<event>
+						<text>It responds. "present: yes capacity state: ok charging state: charged present rate: 1.3 gWh/s" Just fine. Fit as a fucking fiddle.</text>
+						<choice>
+							<text>You type. "man humanity" So...humans, amIright?</text>
+							<event>
+								<text>It responds. "true. unknown_parameters. false. !null. Exception in current_thread.future: INDEX_OUT_OF_BOUNDS"  Humanity is confusing, mysterious - anything and everything except insignificant. Prospects for its future are both unknown and unlimited.</text>
+								<choice>
+									<text>Continue...</text>
+									<event>
+										<text>You smile. Its words, not yours.</text>
+									</event>
+								</choice>								
+							</event>
+						</choice>						
+					</event>
+				</choice>
+			</event>
+		</choice>		
+	</event>
+	<event>
+		<text>Only a few jumps away from Pilgrim command, you resolve to thank your Sower crewmember in a fit of intense humanity. He's been with you for a while now; as much a part of the crew as anyone. One late night, you throw together an elegant high-level function you think will get the message across.</text>
+		<choice>
+			<text>Send it.</text>
+			<event>
+				<text>"ltl univ ([]!(!self && !self.behavior)) You translate; the Sower is saying that it can never be other than itself - that it could not do other than it has done and will continue to do. The Sower's CPU usage rate is higher than you have ever seen it before.</text>
+				<choice>
+					<text>Wait...</text>
+					<event>
+						<text>The cursor blinks; it's still thinking. After several seconds text appears on your terminal. "It has been my pleasure to serve with you, Captain."</text>	
+					</event>
+				</choice>
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<!-- Human Exposition -->
+<eventList name="HUMAN_EXP_1">
+	<event>
+		<text>You found a usable API early on - you can send simple messages such as "Guard" or "Repair", and the Sower was able and willing to do it. There's a higher-level language inside the kernel, worked into everything. You think you will eventually find a way to interface with it; it's just a matter of time.</text>
+	</event>
+	<event>
+		<text>Your Sower discovered and began using your ship computer's declared services remarkably fast. It recently began to output status messages to crewmember terminals - simple enumerations like "SYSTEM_REPAIR_TASK_SUCC_EN" and "O2_IN_NORM := true". It's learning.</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>Presumably, the Sower intelligence is a combination of programming and empiric data - nature and nuture. Without a way to rewrite their own progamming, though, Sower can only learn so much. Since you've observed drastic deviations from typical Sower behavior, there must be something deeper.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>It had rapidly pinged one of your ship's unused databases, so you started dumping simple data and function pointers into it in hopes of a communications breakthrough. After figuring out how to fling simple alphanumeric messages at one another, the Sower has started populating one column with code in an odd high-level language.</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>As best you can determine, this code poses no threat to your ship's systems. It seems to involve decision-making and experiencial behavior adjustment; you'll need to study it further in order to make any use of it.</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="HUMAN_EXP_2">
+	<event>
+		<text>"unit_identifier(_). unit_identifier(n,[H:sow]) :- member(H)." The terminal simply prints "true."; you quickly debug your code and try again. The Sower sends you what appears to be a process ID. After hastily adding a few additional enumerations linked to an English dictionary, you submit another query.</text>
+		<choice>
+			<text>"is_name(pid) := unique(pid), pid is 5834608."</text>
+			<event>
+				<text>"true."</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>While passing a Sower terraformer, your ship's ECW console lights up: your Sower is transmitting to the other ship! Acting hastily, you record the transmission and analyze the packet content. Surprisingly, they have a fundamentally different structure to your Sower's internal messages.</text>
+		<choice>
+			<text>Extrapolate...</text>
+			<event>
+				<text>This may be conclusive proof that Sower handle internal and external communications differently; is that enough for individuality? Your Sower just transmitted a short status message to the other ship. You wonder if they're just saying "Hey, how are you?" - strangers in the night.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>You've been steadily adding functions to the database in the Sower's own high-level language, at first simple chores like "clean-lavatory" and "polish-captains-boots". On a whim, you've decided to tackle more personal jobs - "respond-greeting-hello".</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>The Sower updates the database almost instantly. The code has been altered - a line inserted. (let (lambda(crwName) (display "RECEIVE_MSG " crwName " RECEIVER_ID " pid))) Perhaps it is merely complying with internal coding standards. But what if it's saying "Hi, my name is RECEIVER_ID"?</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="HUMAN_EXP_3">
+	<event>
+		<text>You hit the macro to order your Sower to take a break from duty, and it responds on your console: "RECEIVE_MSG GENERIC_INPUT". It often "says" RECEIVE_MSG as a form of greeting or acknowledgement - but what is GENERIC_INPUT?</text>
+		<choice>
+			<text>"Man GENERIC_INPUT"</text>
+			<event>
+				<text>The Sower responds: "NaNNaNNaNNaNNaNNaN\nalias \"Captain\"\t95 percent of input" Is it laughing? It must have named you GENERIC_INPUT internally because you talk to it so much! You don't know whether to be amazed or offended.</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>Occasionally, the Sower will respond to a query with relatively verbose output. It answers to the strangest things - reactor temperature charts, raw sensor data, dubstep - but through clever selection you can converse with it.</text>
+		<choice>
+			<text>Allow it to sample your music library</text>
+			<event>
+				<text>When you attempt to copy your ship's music database into the Sower, you are denied permission - the files already exist. You perform some diagnostics; the Sower has spent trillions of processor cycles playing jazz. Logs indicate that the folder /skrillex has been overwritten with whitespace 8 times.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>After a hard day working on the aft thrust couplers, you are exhausted and covered in sweat. A low mechanical whirr announces your Sower's presence; it presents you with a hydration packet and displays a message on a nearby terminal - "SUFFICIENT EFFICIENCY".</text>
+		<choice>
+			<text>"Thanks."</text>
+			<event>
+				<text>Did you just thank a robot? You've noticed that it spends more time around other crewmembers than not, sometimes following them from room to room. You wonder if it has learned to be loyal to you.</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="HUMAN_EXP_4">
+	<event>
+		<text>You can now communicate with the Sower in plain text, for the most part - it's actually quite talkative at lower log severity levels. Since you're nearly at the end of your journey, you feel able to risk waxing philosophical with it.</text>
+		<choice>
+			<text>"Will we be victorious?"</text>
+			<event>
+				<text>"OBJECTIVES MET." That raised an eyebrow. You query - "OBJECTIVES?" - and realize that you had never specified a military victory. Eyes wet, you read its response: "[LIFE, LIBERTY, p_HAPPINESS]". Could a Sower ever realize what those words mean to you?</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>It is refreshing to see the world through the eyes of a robot; it is like talking to a great philosopher and a child at the same time. Late one night alone at the controls, you decide to strike up a conversation.</text>
+		<choice>
+			<text>You type. "ps -a" What're you thinking about?</text>
+			<event>
+				<text>It responds. "root 1 98.1 5.5 99:99" A whole lot of jack shit.</text>
+				<choice>
+					<text>You type. "cat /proc/acpi/battery/BAT0/state" Tired? How're you doing?</text>
+					<event>
+						<text>It responds. "present: yes capacity state: ok charging state: charged present rate: 1.3 gWh/s" Just fine. Fit as a fucking fiddle.</text>
+						<choice>
+							<text>You type. "man humanity" So...humans, amIright?</text>
+							<event>
+								<text>It responds. "true. unknown_parameters. false. !null. Exception in current_thread.future: INDEX_OUT_OF_BOUNDS"  Humanity is confusing, mysterious - anything and everything except insignificant. Prospects for its future are both unknown and unlimited.</text>
+								<choice>
+									<text>Continue...</text>
+									<event>
+										<text>You smile. Its words, not yours.</text>
+									</event>
+								</choice>								
+							</event>
+						</choice>						
+					</event>
+				</choice>
+			</event>
+		</choice>		
+	</event>
+	<event>
+		<text>Only a few jumps away from Pilgrim command, you resolve to thank your Sower crewmember in a fit of intense humanity. He's been with you for a while now; as much a part of the crew as anyone. One late night, you throw together an elegant high-level function you think will get the message across.</text>
+		<choice>
+			<text>Send it.</text>
+			<event>
+				<text>"ltl univ ([]!(!self && !self.behavior)) You translate; the Sower is saying that it can never be other than itself - that it could not do other than it has done and will continue to do. The Sower's CPU usage rate is higher than you have ever seen it before.</text>
+				<choice>
+					<text>Wait...</text>
+					<event>
+						<text>The cursor blinks; it's still thinking. After several seconds text appears on your terminal. "It has been my pleasure to serve with you, Captain."</text>	
+					</event>
+				</choice>
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<!-- Sophon Exposition -->
+<eventList name="SOPHON_EXP_1">
+	<event>
+		<text>You found a usable API early on - you can send simple messages such as "Guard" or "Repair", and the Sower was able and willing to do it. There's a higher-level language inside the kernel, worked into everything. You think you will eventually find a way to interface with it; it's just a matter of time.</text>
+	</event>
+	<event>
+		<text>Your Sower discovered and began using your ship computer's declared services remarkably fast. It recently began to output status messages to crewmember terminals - simple enumerations like "SYSTEM_REPAIR_TASK_SUCC_EN" and "O2_IN_NORM := true". It's learning.</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>Presumably, the Sower intelligence is a combination of programming and empiric data - nature and nuture. Without a way to rewrite their own progamming, though, Sower can only learn so much. Since you've observed drastic deviations from typical Sower behavior, there must be something deeper.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>It had rapidly pinged one of your ship's unused databases, so you started dumping simple data and function pointers into it in hopes of a communications breakthrough. After figuring out how to fling simple alphanumeric messages at one another, the Sower has started populating one column with code in an odd high-level language.</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>As best you can determine, this code poses no threat to your ship's systems. It seems to involve decision-making and experiencial behavior adjustment; you'll need to study it further in order to make any use of it.</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="SOPHON_EXP_2">
+	<event>
+		<text>"unit_identifier(_). unit_identifier(n,[H:sow]) :- member(H)." The terminal simply prints "true."; you quickly debug your code and try again. The Sower sends you what appears to be a process ID. After hastily adding a few additional enumerations linked to an English dictionary, you submit another query.</text>
+		<choice>
+			<text>"is_name(pid) := unique(pid), pid is 5834608."</text>
+			<event>
+				<text>"true."</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>While passing a Sower terraformer, your ship's ECW console lights up: your Sower is transmitting to the other ship! Acting hastily, you record the transmission and analyze the packet content. Surprisingly, they have a fundamentally different structure to your Sower's internal messages.</text>
+		<choice>
+			<text>Extrapolate...</text>
+			<event>
+				<text>This may be conclusive proof that Sower handle internal and external communications differently; is that enough for individuality? Your Sower just transmitted a short status message to the other ship. You wonder if they're just saying "Hey, how are you?" - strangers in the night.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>You've been steadily adding functions to the database in the Sower's own high-level language, at first simple chores like "clean-lavatory" and "polish-captains-boots". On a whim, you've decided to tackle more personal jobs - "respond-greeting-hello".</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>The Sower updates the database almost instantly. The code has been altered - a line inserted. (let (lambda(crwName) (display "RECEIVE_MSG " crwName " RECEIVER_ID " pid))) Perhaps it is merely complying with internal coding standards. But what if it's saying "Hi, my name is RECEIVER_ID"?</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="SOPHON_EXP_3">
+	<event>
+		<text>You hit the macro to order your Sower to take a break from duty, and it responds on your console: "RECEIVE_MSG GENERIC_INPUT". It often "says" RECEIVE_MSG as a form of greeting or acknowledgement - but what is GENERIC_INPUT?</text>
+		<choice>
+			<text>"Man GENERIC_INPUT"</text>
+			<event>
+				<text>The Sower responds: "NaNNaNNaNNaNNaNNaN\nalias \"Captain\"\t95 percent of input" Is it laughing? It must have named you GENERIC_INPUT internally because you talk to it so much! You don't know whether to be amazed or offended.</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>Occasionally, the Sower will respond to a query with relatively verbose output. It answers to the strangest things - reactor temperature charts, raw sensor data, dubstep - but through clever selection you can converse with it.</text>
+		<choice>
+			<text>Allow it to sample your music library</text>
+			<event>
+				<text>When you attempt to copy your ship's music database into the Sower, you are denied permission - the files already exist. You perform some diagnostics; the Sower has spent trillions of processor cycles playing jazz. Logs indicate that the folder /skrillex has been overwritten with whitespace 8 times.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>After a hard day working on the aft thrust couplers, you are exhausted and covered in sweat. A low mechanical whirr announces your Sower's presence; it presents you with a hydration packet and displays a message on a nearby terminal - "SUFFICIENT EFFICIENCY".</text>
+		<choice>
+			<text>"Thanks."</text>
+			<event>
+				<text>Did you just thank a robot? You've noticed that it spends more time around other crewmembers than not, sometimes following them from room to room. You wonder if it has learned to be loyal to you.</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
+
+<eventList name="SOPHON_EXP_4">
+	<event>
+		<text>You can now communicate with the Sower in plain text, for the most part - it's actually quite talkative at lower log severity levels. Since you're nearly at the end of your journey, you feel able to risk waxing philosophical with it.</text>
+		<choice>
+			<text>"Will we be victorious?"</text>
+			<event>
+				<text>"OBJECTIVES MET." That raised an eyebrow. You query - "OBJECTIVES?" - and realize that you had never specified a military victory. Eyes wet, you read its response: "[LIFE, LIBERTY, p_HAPPINESS]". Could a Sower ever realize what those words mean to you?</text>
+			</event>
+		</choice>			
+	</event>
+	<event>
+		<text>It is refreshing to see the world through the eyes of a robot; it is like talking to a great philosopher and a child at the same time. Late one night alone at the controls, you decide to strike up a conversation.</text>
+		<choice>
+			<text>You type. "ps -a" What're you thinking about?</text>
+			<event>
+				<text>It responds. "root 1 98.1 5.5 99:99" A whole lot of jack shit.</text>
+				<choice>
+					<text>You type. "cat /proc/acpi/battery/BAT0/state" Tired? How're you doing?</text>
+					<event>
+						<text>It responds. "present: yes capacity state: ok charging state: charged present rate: 1.3 gWh/s" Just fine. Fit as a fucking fiddle.</text>
+						<choice>
+							<text>You type. "man humanity" So...humans, amIright?</text>
+							<event>
+								<text>It responds. "true. unknown_parameters. false. !null. Exception in current_thread.future: INDEX_OUT_OF_BOUNDS"  Humanity is confusing, mysterious - anything and everything except insignificant. Prospects for its future are both unknown and unlimited.</text>
+								<choice>
+									<text>Continue...</text>
+									<event>
+										<text>You smile. Its words, not yours.</text>
+									</event>
+								</choice>								
+							</event>
+						</choice>						
+					</event>
+				</choice>
+			</event>
+		</choice>		
+	</event>
+	<event>
+		<text>Only a few jumps away from Pilgrim command, you resolve to thank your Sower crewmember in a fit of intense humanity. He's been with you for a while now; as much a part of the crew as anyone. One late night, you throw together an elegant high-level function you think will get the message across.</text>
+		<choice>
+			<text>Send it.</text>
+			<event>
+				<text>"ltl univ ([]!(!self && !self.behavior)) You translate; the Sower is saying that it can never be other than itself - that it could not do other than it has done and will continue to do. The Sower's CPU usage rate is higher than you have ever seen it before.</text>
+				<choice>
+					<text>Wait...</text>
+					<event>
+						<text>The cursor blinks; it's still thinking. After several seconds text appears on your terminal. "It has been my pleasure to serve with you, Captain."</text>	
+					</event>
+				</choice>
 			</event>
 		</choice>		
 	</event>

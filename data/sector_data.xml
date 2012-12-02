@@ -1,7 +1,16 @@
 ﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 <sectorType name="CIVILIAN">
-	<sector>CIVILIAN_SECTOR</sector>	
+	<sector>CIVILIAN_SECTOR_1</sector>
+	<sector>CIVILIAN_SECTOR_2</sector>	
+	<sector>CIVILIAN_SECTOR_3</sector>	
+	<sector>CIVILIAN_SECTOR_4</sector>
+	<sector>ZOLTAN_SECTOR</sector>
+	<sector>ZOLTAN_HOME</sector>
+	<sector>ROCK_SECTOR</sector>	
+	<sector>ZOLTAN_SECTOR</sector>
+	<sector>ZOLTAN_HOME</sector>
+	<sector>ROCK_SECTOR</sector>	
 	<sector>ZOLTAN_SECTOR</sector>
 	<sector>ZOLTAN_HOME</sector>
 	<sector>ROCK_SECTOR</sector>	
@@ -49,14 +58,15 @@ STRUCTURE SECTORS
 		<track>milkyway</track>
 	</trackList>
 	<startEvent>START_BEACON</startEvent>
-	<!-- <event name="TEST" min="8" max="12"/>
-	<event name="STORE" min="8" max="12"/> -->
-	<event name="NOTHING" min="20" max="30"/>
+	<!-- <event name="TEST" min="8" max="12"/>	
+	<event name="STORE" min="8" max="12"/>
+	 -->
+	 <event name="NOTHING_1" min="20" max="20"/>
 <!--
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
-	<event name="NOTHING" min="1" max="2"/>
+	<event name="NOTHING_1" min="2" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="4"/>
@@ -85,7 +95,7 @@ STRUCTURE SECTORS
 <!-- --------------------
 CIVILIAN SECTORS
  ----------------------->
-<sectorDescription name="CIVILIAN_SECTOR" minSector="0" unique="false"> 
+<sectorDescription name="CIVILIAN_SECTOR_1" minSector="0" unique="false"> 
 	<nameList>
 		<name>Civilian Sector</name>
 	</nameList>
@@ -97,7 +107,70 @@ CIVILIAN SECTORS
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
-	<event name="NOTHING" min="1" max="2"/>
+	<event name="NOTHING_1" min="2" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="NEBULA" min="0" max="8"/> 
+	<event name="HOSTILE_BOARDING" min="0" max="1"/>
+	<event name="QUESTS" min="0" max="2"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+</sectorDescrption>
+
+<sectorDescription name="CIVILIAN_SECTOR_2" minSector="2" unique="false"> 
+	<nameList>
+		<name>Civilian Sector</name>
+	</nameList>
+	<trackList>
+		<track>civilian</track>
+		<track>cosmos</track>
+		<track>milkyway</track>
+	</trackList>
+	<event name="STORE" min="2" max="3"/>
+	<event name="ITEMS" min="2" max="3"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING_2" min="2" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="NEBULA" min="0" max="8"/> 
+	<event name="HOSTILE_BOARDING" min="0" max="1"/>
+	<event name="QUESTS" min="0" max="2"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+</sectorDescrption>
+
+<sectorDescription name="CIVILIAN_SECTOR_3" minSector="4" unique="false"> 
+	<nameList>
+		<name>Civilian Sector</name>
+	</nameList>
+	<trackList>
+		<track>civilian</track>
+		<track>cosmos</track>
+		<track>milkyway</track>
+	</trackList>
+	<event name="STORE" min="2" max="3"/>
+	<event name="ITEMS" min="2" max="3"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING_3" min="2" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="NEBULA" min="0" max="8"/> 
+	<event name="HOSTILE_BOARDING" min="0" max="1"/>
+	<event name="QUESTS" min="0" max="2"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+</sectorDescrption>
+
+<sectorDescription name="CIVILIAN_SECTOR_4" minSector="6" unique="false"> 
+	<nameList>
+		<name>Civilian Sector</name>
+	</nameList>
+	<trackList>
+		<track>civilian</track>
+		<track>cosmos</track>
+		<track>milkyway</track>
+	</trackList>
+	<event name="STORE" min="2" max="3"/>
+	<event name="ITEMS" min="2" max="3"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING_4" min="2" max="2"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/> 
