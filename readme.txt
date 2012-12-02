@@ -105,6 +105,7 @@ https://github.com/mja2637/Sonata/archive/master.zip
 6a
           - Removed "%" symbol causing defect in Sophon event text
           - Filled inner transparencies in /map button .pngs preventing them from showing up as black boxes
+		  - Converted /storeUI
           - Fix UE Frigate engine room (planned)
           - Correct graphical glitch in UE Destroyer weapons room (planned)
           - Correct global weapon title positioning (hopeful)
