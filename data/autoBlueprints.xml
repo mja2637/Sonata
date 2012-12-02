@@ -5,6 +5,9 @@
 	<name>COMBAT_1</name>
 	<name>COMBAT_2</name>
 	<name>COMBAT_BEAM</name>	
+	<name>COMBAT_MISSILE</name>
+	<name>COMBAT_ION</name>
+	<name>COMBAT_ION_2</name>
 	<name>DEFENSE_1</name>
 	<name>DEFENSE_2</name>
 	<name>REPAIR</name>
@@ -16,6 +19,25 @@
 	<name>COMBAT_1</name>
 	<name>COMBAT_2</name>
 	<name>COMBAT_BEAM</name>
+	<name>COMBAT_MISSILE</name>
+	<name>COMBAT_ION</name>
+	<name>COMBAT_ION_2</name>
+</blueprintList>
+
+<blueprintList name="DRONES_UE">
+	<name>COMBAT_MISSILE</name>	
+	<name>COMBAT_BEAM</name>
+	<name>SHIP_REPAIR</name>
+	<name>DEFENSE_1</name>
+	<name>BATTLE</name>
+	<name>BOARDER</name>
+</blueprintList>
+
+<blueprintList name="DRONES_UE_COMBAT">
+	<name>COMBAT_MISSILE</name>	
+	<name>COMBAT_BEAM</name>
+	<name>SHIP_REPAIR</name>
+	<name>DEFENSE_1</name>
 </blueprintList>
 
 <blueprintList name="DRONES_INTERNAL">
@@ -70,33 +92,18 @@
 	<name>LASER_BURST_3</name>
 	<name>LASER_HEAVY_1</name>
 	<name>LASER_HEAVY_2</name>
-	<name>MISSILES_1</name>
-	<name>MISSILES_2</name>
-	<name>MISSILES_3</name>
-	<name>MISSILES_BURST</name>
-	<name>MISSILES_BREACH</name>
-	<name>BEAM_1</name>
-	<name>BEAM_2</name>
-	<name>BEAM_3</name>
-	<name>BEAM_LONG</name>
-	<name>BEAM_FIRE</name>
 	<name>ION_1</name>
 	<name>ION_2</name>
-	<name>ION_4</name>
 	<name>BOMB_1</name>
 	<name>BOMB_FIRE</name>
 	<name>BOMB_ION</name>
-	<name>LASER_HULL_1</name>
-	<name>LASER_HULL_2</name>
-	<name>BEAM_HULL</name>
-	<name>MISSILES_HULL</name>
 </blueprintList>
 
 
 <blueprintList name="WEAPONS_FREE">
-	<name>LASER_BURST_1</name>
-	<name>BEAM_1</name>
-	<name>MISSILES_1</name>
+	<name>BASIC_KINETIC_1</name>
+	<name>BASIC_LASER_1</name>
+	<name>BASIC_MISSILE_1</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_REBEL">
@@ -146,19 +153,16 @@
 	<name>ION_2</name>
 </blueprintList>
 
-<blueprintList name="WEAPONS_JELLY"> <!-- not sure who uses the blue ships.. this will probably change later.  Just for testing now --> 
-	<name>LASER_BURST_1</name>
-	<name>LASER_BURST_2_A</name>
-	<name>LASER_BURST_3</name>
-	<name>LASER_HEAVY_1</name>
-	<name>LASER_HEAVY_2</name>
-	<name>MISSILES_2</name>
-	<name>MISSILES_BREACH</name>
-	<name>BEAM_1</name>
-	<name>BEAM_2</name>
-	<name>BEAM_3</name>
-	<name>BEAM_LONG</name>
-	<name>BEAM_FIRE</name>
+<blueprintList name="WEAPONS_JELLY">
+	<name>BASIC_LASER_1</name>
+	<name>BASIC_LASER_2</name>
+	<name>BASIC_LASER_3</name>
+	<name>BASIC_MISSILE_1</name>
+	<name>BASIC_MISSILE_2</name>
+	<name>BASIC_MISSILE_3</name>
+	<name>BASIC_KINETIC_1</name>
+	<name>BASIC_KINETIC_2</name>
+	<name>BASIC_KINETIC_3</name>
 	<name>BOMB_FIRE</name>
 	<name>BOMB_BREACH</name>
 	<name>ION_1</name>
@@ -449,7 +453,7 @@
 		<medbay power="1" max="3" room="3" start="false"/>
 		<doors power="1" max="3" room="5" start="false"/>
 	</systemList>
-	<droneList drones="4" load="DRONES_STANDARD"/>
+	<droneList drones="4" load="DRONES_UE"/>
 	<!--<droneList drones="4" count="1">
 		<drone name="BOARDER"/>
 	</droneList>-->
@@ -508,7 +512,7 @@
 		<medbay power="1" max="3" room="3" start="false"/>
 		<doors power="1" max="3" room="5" start="false"/>
 	</systemList>
-	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<droneList drones="4" load="DRONES_UE"/>
 	<weaponList missiles="10" load="WEAPONS_REBEL"/>
 	<health amount="9"/>	
 	<maxPower amount ="7"/>
@@ -549,7 +553,7 @@
 		<drones power="2" room="0" max="6" start="false"/>
 	</systemList>
 	<weaponList missiles="10" load="WEAPONS_AUTO"/>
-	<droneList drones="2" load="DRONES_COMBAT"/>
+	<droneList drones="2" load="DRONES_COMBAT_UE"/>
 	<health amount="8"/>	
 	<maxPower amount ="7"/>
 	<crewCount amount = "0" max="0" class="human"/>

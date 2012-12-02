@@ -108,9 +108,9 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Add EFP projectile (planned)
 		  - Clean up Sower Terraformer ship image (planned)
 		  - Add Sower Terraformer B (planned)
-		  - Convert drones to Sonata/Minuet canon statistics (planned)
-		  - Assign drone graphics, projectiles, and sounds (planned)
-		  - Distribute drones in autoblueprints (planned)
+		  - Convert drones to Sonata/Minuet canon statistics
+		  - Assign drone graphics, projectiles, and sounds
+		  - Distribute drones in autoblueprints
 		  - Add diverse Sophon sector events (planned)
 		  - Add diverse civilian events (planned)
 		  - Add idle "talk with crew" feature (planned)

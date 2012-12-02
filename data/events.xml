@@ -220,9 +220,6 @@ item - Dust + that thing  -->
 	</choice>
 </event>
 
-
-
-
 <!--   		***************************************  
 					STRUCTURE EVENTS 
 			********************************************   
@@ -266,11 +263,20 @@ item - Dust + that thing  -->
 	<ship load = "LONG_FLEET" hostile ="true"/>
 </event>
 
+<!--   		***************************************  
+					EXPOSITION EVENTS 
+			********************************************   
+-->	
 
 <event name="NOTHING">
-	<text load="NOTHING"/>
+	<text load="NOTHING_TEXT"/>
+	<choice hidden="true" req="rock">
+		<text>Talk to your Sower crewmember.</text>
+		<event load="SOWER_EXP_1"/>
+	</choice>
 </event>
-<textList name="NOTHING">
+
+<textList name="NOTHING_TEXT">
 	<text planet="NONE" back="BG_DARK">Your jump leads you to nothing but empty space. This Jump Beacon serves no purpose other than as a connection.</text>
 	<text planet="NONE">You jump into an unremarkable system. No life signs detected within scanning range.</text>
 	<text>Your scans reveal a mining base on a nearby planet long since abandoned. No life signs detected.</text>
@@ -283,7 +289,29 @@ item - Dust + that thing  -->
 	<text planet="NONE">Space, the final frontier. In an Endless galaxy full of asses, these are the voyages of a starship destined to kick them all.</text>
 </textList>
 
-
+<eventList name="SOWER_EXP_1">
+	<event>
+		<text>You found a usable API early on - you can send simple messages such as "Guard" or "Repair", and the Sower was able and willing to do it. There's a higher-level language inside the kernel, worked into everything. You think you will eventually find a way to interface with it; it's just a matter of time.</text>
+	</event>
+	<event>
+		<text>Your Sower discovered and began using your ship computer's declared services remarkably fast. It recently began to output status messages to crewmember terminals - simple enumerations like "SYSTEM_REPAIR_TASK_SUCC_EN" and "O2_IN_NORM := true". It's learning.</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>Presumably, the Sower intelligence is a combination of programming and empiric data - nature and nuture. Without a way to rewrite their own progamming, though, Sower can only learn so much. Since you've observed drastic deviations from typical Sower behavior, there must be something deeper.</text>
+			</event>
+		</choice>		
+	</event>	
+	<event>
+		<text>It had rapidly pinged one of your ship's unused databases, so you started dumping simple data and function pointers into it in hopes of a communications breakthrough. After figuring out how to fling simple alphanumeric messages at one another, the Sower has started populating one column with code in an odd high-level language.</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>As best you can determine, this code poses no threat to your ship's systems. It seems to involve decision-making and experiencial behavior adjustment; you'll need to study it further in order to make any use of it.</text>	
+			</event>
+		</choice>		
+	</event>
+</eventList>
 
 <!-- 	*********************************************
 					HOSTILE EVENTS

@@ -89,7 +89,7 @@
 	<firePoint  x="8" y="3"/>
 	<mountPoint x="-5" y="25"/>
 </weaponAnim>
-<animSheet name="UE_DRIVER_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
+<animSheet name="UE_DRIVER_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_2.png</animSheet>
 <anim name="UE_DRIVER_PROJ_2">
 	<sheet>UE_DRIVER_PROJ_2</sheet>
 	<desc length="4" x="0" y="0"/>

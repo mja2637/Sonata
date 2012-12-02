@@ -3247,6 +3247,63 @@
 	<weaponArt>laser_burst_1</weaponArt> 
 </weaponBlueprint>
 
+<weaponBlueprint name="DRONE_SLUGGER"> 
+	<type>LASER</type>
+	<title>Drone Slugger</title>
+	<damage>1</damage>
+	<shots>1</shots>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<rarity>0</rarity>
+	<image>UE_GAUSS_PROJ_1</image>
+	<launchSounds>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
+		<sound>kinetic4</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="DRONE_SLUGGER"> 
+	<type>LASER</type>
+	<title>Drone Autocannon</title>
+	<damage>1</damage>
+	<shots>2</shots>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<rarity>0</rarity>
+	<image>UE_DRIVER_PROJ_1</image>
+	<launchSounds>
+		<sound>kinetic3</sound>
+		<sound>kinetic3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt> 
+</weaponBlueprint>
+
 <weaponBlueprint name="DRONE_LASER_2"> 
 	<type>LASER</type>
 	<title>Drone Laser 2</title>
@@ -3261,6 +3318,36 @@
 		<sound>lightLaser1</sound>
 		<sound>lightLaser2</sound>
 		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="DRONE_GAUSS"> 
+	<type>LASER</type>
+	<title>Drone Gauss Driver</title>
+	<damage>1</damage>
+	<shots>1</shots>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<rarity>0</rarity>
+	<speed>120</speed>
+	<image>UE_DRIVER_PROJ_3</image>
+	<launchSounds>
+		<sound>kinetic2</sound>
+		<sound>kinetic2</sound>
+		<sound>kinetic2</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -3331,12 +3418,45 @@
 	<weaponArt>ion_1</weaponArt> 
 </weaponBlueprint>
 
+<weaponBlueprint name="DRONE_ION_2">
+	<type>LASER</type>
+	<title>Heavy Ion</title>
+	<short>Heavy Ion</short>
+	<damage>0</damage>
+	<ion>2</ion>
+	<speed>40</speed>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<rarity>0</rarity>
+	<image>ion_4_shot</image>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ion_2</weaponArt> 
+</weaponBlueprint>
+
 <weaponBlueprint name="DRONE_MISSILE">
 	<type>MISSILES</type>
-	<title>Missiles_1</title>
-	<short>M. 0</short>
-	<short>STUPID MISSILES</short>
-	<desc>This should never appear in the store: BUG</desc>
+	<title>Drone Missiles</title>
+	<short>Drone Missiles</short>
+	<desc>Miniature rockets fitted with conventional explosives and minimal guidance.</desc>
 	<damage>1</damage>
 	<shots>1</shots>
 	<sp>5</sp>
@@ -3362,16 +3482,15 @@
 	<weaponArt>missiles_1</weaponArt> 
 </weaponBlueprint>
 
-<!-- NOT USED -->
 <droneBlueprint name="COMBAT_ION">
 	<type>COMBAT</type>
-	<title>Anti-Ship Ion Drone I</title>
-	<short>Ion Drone</short>
-	<desc>Slow moving drone that repeatedly attacks the enemy ship with ion blasts</desc>
+	<title>Boeing "Manta" USV</title>
+	<short>Anti-System USV</short>
+	<desc>Powered with an electrostatic laser, which uses ionized plasma to direct a powerful electric current at an enemy's systems. Slow but tactically decisive.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>7</dodge>
-	<speed>5</speed> <!--- Change this to increase/decrease firing speed -->
+	<speed>7</speed> <!--- Change this to increase/decrease firing speed -->
 	<cost>50</cost>
 	<bp>3</bp>
 	<droneImage>drone_combat</droneImage>
@@ -3379,12 +3498,28 @@
 	<rarity>0</rarity>
 </droneBlueprint>
 
+<droneBlueprint name="COMBAT_ION_2">
+	<type>COMBAT</type>
+	<title>Bofors-Hitachi "Invader" USV</title>
+	<short>Hvy Anti-Sys USV</short>
+	<desc>Uses an extremely powerful tuned maser to destroy electromagnetic equipment while leaving the structure and occupants of a ship unharmed.</desc>
+	<power>4</power>
+	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
+	<dodge>7</dodge>
+	<speed>16</speed> <!--- Change this to increase/decrease firing speed -->
+	<cost>100</cost>
+	<bp>3</bp>
+	<droneImage>drone_combat</droneImage>
+	<weaponBlueprint>DRONE_ION_2</weaponBlueprint>
+	<rarity>0</rarity>
+</droneBlueprint>
+
 <!-- NOT USED -->
 <droneBlueprint name="COMBAT_MISSILE">
 	<type>COMBAT</type>
-	<title>Anti-Ship Missile Drone I</title>
-	<short>Missile Drone</short>
-	<desc>Slow moving drone that repeatedly attacks the enemy ship with mini missiles</desc>
+	<title>Almaz-Raytheon "Arsenic" USV</title>
+	<short>Missile USV</short>
+	<desc>This missile drone is simple but reliable; it is part of a standardized line with parts and upgrades available in systems across the galaxy.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>7</dodge>
@@ -3400,29 +3535,45 @@
 
 <droneBlueprint name="COMBAT_1">
 	<type>COMBAT</type>
-	<title>Anti-Ship Drone Mark I</title>
-	<short>Anti-Ship I</short>
-	<desc>Powerful drone that continually attacks the enemy ship.</desc>
+	<title>Maersk "Kinetic" USV</title>
+	<short>Gun USV</short>
+	<desc>A small unmanned space vehicle without the fuel for independent operations. Armed with a small slugger; often used by IHTG trade ships.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>7</dodge>
-	<speed>15</speed> <!--- Change this to increase/decrease firing speed -->  <!-- was 20-->
+	<speed>16</speed> <!--- Change this to increase/decrease firing speed -->  <!-- was 20-->
 	<cost>50</cost>
 	<bp>3</bp>
 	<droneImage>drone_combat</droneImage>
-	<weaponBlueprint>DRONE_LASER</weaponBlueprint>
+	<weaponBlueprint>DRONE_SLUGGER</weaponBlueprint>
+	<rarity>2</rarity>
+</droneBlueprint>
+
+<droneBlueprint name="COMBAT_1_SOWER">
+	<type>COMBAT</type>
+	<title>Sower Gun Drone</title>
+	<short>Sower USV</short>
+	<desc>It is unknown whether this drone is itself a Sower, or just a USV. Armed with an autocannon.</desc>
+	<power>2</power>
+	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
+	<dodge>7</dodge>
+	<speed>14</speed> <!--- Change this to increase/decrease firing speed -->  <!-- was 20-->
+	<cost>50</cost>
+	<bp>3</bp>
+	<droneImage>drone_combat</droneImage>
+	<weaponBlueprint>DRONE_AUTOCANNON</weaponBlueprint>
 	<rarity>2</rarity>
 </droneBlueprint>
 
 <droneBlueprint name="COMBAT_BEAM">
 	<type>COMBAT</type>
-	<title>Anti-Ship Beam Drone I</title>
-	<short>Beam I</short>
-	<desc>Combat drone that repeatedly attacks with a small beam weapon</desc>
+	<title>Raytheon-Denel "Moray" USV</title>
+	<short>Laser USV</short>
+	<desc>Small drone armed with a cheap COTS laser.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>7</dodge>
-	<speed>15</speed> <!--- Change this to increase/decrease firing speed -->
+	<speed>16</speed> <!--- Change this to increase/decrease firing speed -->
 	<cost>50</cost>
 	<bp>3</bp>
 	<droneImage>drone_beam</droneImage>
@@ -3432,9 +3583,9 @@
 
 <droneBlueprint name="COMBAT_2">
 	<type>COMBAT</type>
-	<title>Anti-Ship Drone Mark II</title>
-	<short>Anti-Ship II</short>
-	<desc>Powerful drone that continually attacks the enemy ship. Moves and shoots faster than Mark I.</desc>
+	<title>Izhmash "Bison" USV</title>
+	<short>Gauss USV</short>
+	<desc>A large, military-grade USV armed with a powerful, fast-firing Gauss weapon.</desc>
 	<power>4</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>8</dodge>
@@ -3444,16 +3595,16 @@
 	<droneImage>drone_combat2</droneImage>
 	<!---- WEAPON INFO --->
 	<image>weapons/laser_light2_strip4.png</image>
-	<weaponBlueprint>DRONE_LASER</weaponBlueprint>
+	<weaponBlueprint>DRONE_GAUSS</weaponBlueprint>
 	<rarity>5</rarity>
 </droneBlueprint>
 
 <!--- This guy, for now, flies like the combat drone but heals the ship  -->
 <droneBlueprint name="SHIP_REPAIR">
 	<type>SHIP_REPAIR</type>
-	<title>Hull Repair</title>
-	<short>Hull Repair</short>
-	<desc>Automatically repairs 3-5 damage to your hull.  Drone part is consumed once it finishes.</desc>
+	<title>Dyson-Honda "Ant" USV</title>
+	<short>HullRep USV</short>
+	<desc>Disposable USV which uses its own construction materials to repair and strengthen a ship's hull.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect repair drone -->
 	<dodge>8</dodge>
@@ -3469,9 +3620,9 @@
 <droneBlueprint name="DEFENSE_1">
 	<type>DEFENSE</type>
 	<level>1</level>
-	<title>Defense Drone Mark I</title>
-	<short>Defense I</short>
-	<desc>Shoots down incoming missiles and asteroids.</desc>
+	<title>SpaceX "Sulu" USV</title>
+	<short>Point Def.</short>
+	<desc>Open-source navigational USV built using COTS components; uses a navigational laser to protect the ship.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Shooting cooldown for shooting at asteroids/missiles, in ms -->
 	<dodge>7</dodge>
@@ -3487,14 +3638,13 @@
 
 <droneBlueprint name="DEFENSE_2">
 	<type>DEFENSE</type>
-	<level>2</level>
-	<title>Defense Drone Mark II</title>
-	<short>Defense II</short>
-	<desc>It fires faster than Mark I and can also shoot down incoming lasers.</desc>
+	<title>Almaz-Rafael "Prizmat" USV</title>
+	<short>Point Def.</short>
+	<desc>Constructed by industry experts, this is widely regarded as one of the best point defense systems available.</desc>
 	<power>4</power>
-	<cooldown>750</cooldown> <!--- Shooting cooldown for shooting at asteroids/missiles, in ms -->
-	<dodge>8</dodge>
-	<speed>7</speed> <!--- Superficial change.. just makes it fly faster -->
+	<cooldown>900</cooldown> <!--- Shooting cooldown for shooting at asteroids/missiles, in ms -->
+	<dodge>10</dodge>
+	<speed>8</speed> <!--- Superficial change.. just makes it fly faster -->
 	<cost>75</cost>
 	<bp>6</bp>
 	<droneImage>drone_defense2</droneImage>
@@ -3507,27 +3657,27 @@
 <droneBlueprint name="BOSS_DEFENSE_2">
 	<type>DEFENSE</type>
 	<level>2</level>
-	<title>Defense Drone Mark II</title>
-	<short>Defense II</short>
-	<desc>Shoots faster than Mark I and can also shoots down incoming lasers.</desc>
+	<title>"MAKE INDIGO" USV</title>
+	<short>Skunkworks PD USV</short>
+	<desc>Advanced product of a United Empire black project.</desc>
 	<power>2</power>
 	<cooldown>750</cooldown> <!--- Shooting cooldown for shooting at asteroids/missiles, in ms -->
-	<dodge>8</dodge>
-	<speed>7</speed> <!--- Superficial change.. just makes it fly faster -->
+	<dodge>12</dodge>
+	<speed>10</speed> <!--- Superficial change.. just makes it fly faster -->
 	<cost>75</cost>
 	<bp>6</bp>
 	<droneImage>drone_defense2</droneImage>
 	<!---- WEAPON INFO --->
-	<weaponBlueprint>DRONE_LASER</weaponBlueprint>
+	<weaponBlueprint>DRONE_LASER_2</weaponBlueprint>
 	<!----- -->
 	<rarity>0</rarity>
 </droneBlueprint>
 
 <droneBlueprint name="REPAIR">
 	<type>REPAIR</type>
-	<title>System Repair Drone</title>
-	<short>Sys Repair</short>
-	<desc>Will seek out damaged systems and repair them automatically.</desc>
+	<title>Yamaha-Indra "John Henry" Droid</title>
+	<short>System Repair</short>
+	<desc>Humanoid shipboard robot equipped with wrenches, shears, magnetic clamps, and a powerful welding torch.</desc>
 	<power>2</power>
 	<cost>30</cost>
 	<bp>2</bp>
@@ -3538,7 +3688,7 @@
 <droneBlueprint name="BATTLE">
 	<type>BATTLE</type>
 	<locked>1</locked>
-	<title>Anti-Personnel Drone</title>
+	<title>Rheinmetall-Apple "Chesty" Droid</title>
 	<short>Anti-Pers.</short>
 	<desc>Will seek out and attempt to destroy any intruders on-board your ship.</desc>
 	<power>2</power>
@@ -3550,9 +3700,9 @@
 <droneBlueprint name="BOARDER">
 	<type>BOARDER</type>
 	<locked>1</locked>
-	<title>Boarding Drone</title>
+	<title>GDN Dynamic Entry System</title>
 	<short>Boarding</short>
-	<desc>Breaches through the enemy hull and wreaks havoc. Awesome.</desc>
+	<desc>General Dynamics did true to their name with the DES, which fires an angry droid through a massive hole in the enemy ship's hull.</desc>
 	<power>3</power>
 	<speed>18</speed>
 	<cost>70</cost>
@@ -3563,9 +3713,9 @@
 <droneBlueprint name="BOARDER_BOSS">
 	<type>BOARDER</type>
 	<locked>1</locked>
-	<title>Boarding Drone</title>
+	<title>Hissho Tech D.E.S.</title>
 	<short>Boarding</short>
-	<desc>Breaches through the enemy hull and wreaks havoc. Awesome.</desc>
+	<desc>General Dynamics has upgraded the Dynamic Entry System using technology obtained from the Hissho.</desc>
 	<power>2</power>
 	<speed>18</speed>
 	<cost>70</cost>
@@ -4363,19 +4513,22 @@
 		<oxygen power="1" room="4" start="true" img="room_oxygen" />
 		<shields power="2" room="0" start="true" img="room_shields_4" />
 		<engines power="1" room="2" start="true" img="room_engines_2" />		
-		<weapons power="3" room="5" start="true" img="room_weapons_7" />
-		<drones power="2" room="9" start="false" img="room_drones" />
+		<weapons power="1" room="5" start="true" img="room_weapons_7" />
+		<drones power="4" room="9" start="true" img="room_drones" />
 		<teleporter power="1" room="8" start="false" img="room_teleporter" />
 		<cloaking power="1" room="6" start="false" img="room_cloaking" />
 	</systemList>
 	<weaponSlots>3</weaponSlots>
-	<droneSlots>3</droneSlots>
-	<weaponList count="1" missiles="15">
-		<weapon name="SOWER_AUTOCANNON_3"/>
+	<droneSlots>4</droneSlots>
+	<weaponList count="1" missiles="0">
+		<weapon name="SOWER_AUTOCANNON_2"/>
 	</weaponList>
-	<droneList drones="0"/>
+	<droneList count="2" drones="15">
+		<drone name="COMBAT_1"/>
+		<drone name="COMBAT_MISSILE"/>
+	</droneList>
 	<health amount="40"/>
-	<maxPower amount ="7"/> 
+	<maxPower amount ="9"/> 
 	<crewCount amount = "3" class="rock"/>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
@@ -4383,43 +4536,41 @@
 <!-- ROCK SHIP -->
 <!-- LAYOUT = ALTERNATE -->    <!-- name it after FP2 Shivans? - Rakshasa - Moloch - Ravana - Sathanas-->
 <!-- SHIP ID = 6 -->   
-<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser_2" img="rock_cruiser_2">
-	<class>Rock Cruiser</class>
-	<name>Shivan</name> 
-	<unlock>Locked -- Not in Game Yet</unlock>
-	<desc>Similar to its designers, this super dense behemoth uses brute force to overwhelm its foes.</desc>
+<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser" img="rock_cruiser">
+	<class>Pirate Sower</class>
+	<name>Kilimanjaro</name>
+	<unlock>Prove yourself to the Sower to earn this powerful cruiser.</unlock>
+	<desc>Hissho pirates have managed to convert this old Sower ship into an assault vessel.</desc>
 	<systemList>
-		<pilot power="1" room="8" start="true"img="room_pilot_2">
+		<pilot power="1" room="1" start="true" img="room_pilot_2" >
 			<slot>
 				<direction>right</direction>
 				<number>1</number> 
 			</slot>
-		</pilot>       
-		<doors power="1" room="15" start="false" img="room_doors_5"/>     
-		<sensors power="1" room="3" start="true" img="room_sensors_4"/>  
-		<oxygen power="2" room="4" start="true" img="room_oxygen_6"/>    
-		<engines power="2" room="0" start="true"img="room_engines_2"/>    
-		<shields power="2" room="2" start="true" img="room_shields_4"/>     
-		<weapons power="3" room="12" start="true"/>  
-		<drones power="2" room="14" start="false" img="room_drones_9"/>     
-		<medbay power="1" room="1" start="true"/>     
-		<teleporter power="1" room="10" start="false"/>  
-		<cloaking power="1" room="13" start="false"img="room_cloaking_2"/>      
+		</pilot>		
+		<doors power="2" room="3" start="true" img="room_doors" />
+		<sensors power="2" room="7" start="true" img="room_sensors" />
+		<medbay power="1" room="10" start="true" img="room_medbay" />
+		<oxygen power="1" room="4" start="true" img="room_oxygen" />
+		<shields power="2" room="0" start="true" img="room_shields_4" />
+		<engines power="3" room="2" start="true" img="room_engines_2" />		
+		<weapons power="3" room="5" start="true" img="room_weapons_7" />
+		<drones power="2" room="9" start="false" img="room_drones" />
+		<teleporter power="1" room="8" start="true" img="room_teleporter" />
+		<cloaking power="1" room="6" start="false" img="room_cloaking" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="2" missiles="18">
-		<weapon name="SOWER_AUTOCANNON_2"/>
-		<weapon name="BOMB_FIRE"/>
-		<weapon name="BOMB_1"/>
+	<weaponList count="2" missiles="15">
+		<weapon name="BASIC_KINETIC_1"/>
+		<weapon name="SOWER_CANNON_2"/>
 	</weaponList>
 	<droneList drones="0"/>
-	<health amount="30"/>
-	<maxPower amount="8"/> 
-	<crewCount amount="4" class="rock"/>
+	<health amount="40"/>
+	<maxPower amount ="9"/> 
+	<crewCount amount = "2" class="mantis"/>
+	<crewCount amount = "1" class="engi"/>
 	<aug name="ROCK_ARMOR"/>
-	<shieldImage>rock_cruiser</shieldImage>
-	<cloakImage>rock_cruiser</cloakImage>
 </shipBlueprint>
 
 <!--  
@@ -4768,7 +4919,7 @@
 <!-- ENERGY SHIP -->
 <!-- LAYOUT = Alternate --> 
 <!-- SHIP ID = 7 -->  
-
+<!-- testship -->
 <shipBlueprint name="PLAYER_SHIP_ENERGY_2" layout="energy_cruiser_2" img="energy_cruiser_2">
 
 	<class>Zoltan Cruiser</class>
@@ -4807,7 +4958,7 @@
 	<weaponList count="4" missiles="0">
 		<weapon name="SOPHON_PULSE_3"/>
 		<weapon name="SOPHON_PULSE_2"/>
-		<weapon name="SOPHON_LASER_4"/>
+		<weapon name="BASIC_KINETIC_1"/>
 		<weapon name="SOWER_AUTOCANNON_2"/>
 	</weaponList>
 	<droneList drones="2"/>
