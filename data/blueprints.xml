@@ -3276,7 +3276,7 @@
 	<weaponArt>laser_burst_1</weaponArt> 
 </weaponBlueprint>
 
-<weaponBlueprint name="DRONE_SLUGGER"> 
+<weaponBlueprint name="DRONE_SOWER"> 
 	<type>LASER</type>
 	<title>Drone Autocannon</title>
 	<damage>1</damage>
@@ -3561,7 +3561,7 @@
 	<cost>50</cost>
 	<bp>3</bp>
 	<droneImage>drone_combat</droneImage>
-	<weaponBlueprint>DRONE_AUTOCANNON</weaponBlueprint>
+	<weaponBlueprint>DRONE_SOWER</weaponBlueprint>
 	<rarity>2</rarity>
 </droneBlueprint>
 

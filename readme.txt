@@ -105,7 +105,7 @@ https://github.com/mja2637/Sonata/archive/master.zip
 7 (planned)
 		  - Edit "Last Stand" (planned)
 		  - Convert scoreUI (planned)
-		  - Add EFP projectile (planned)
+		  - Add EFP projectile
 		  - Clean up Sower Terraformer ship image (planned)
 		  - Add Sower Terraformer B (planned)
 		  - Convert drones to Sonata/Minuet canon statistics
