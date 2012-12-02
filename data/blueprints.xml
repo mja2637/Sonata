@@ -4043,8 +4043,8 @@
 	</shields>
     <engines power="2" room="6" start="true" img="room_engines" >
 		<slot>
-			<direction>right</direction>
-			<number>3</number> 
+			<direction>down</direction>
+			<number>0</number> 
 		</slot>
 	</engines>
     <weapons power="3" room="1" start="true" img="room_weapons_3" >
@@ -4114,10 +4114,10 @@
 				<number>2</number>
 			</slot>
 		</engines>			
-		<weapons power="4" room="1" start="true" img="room_sensors_4" >
+		<weapons power="4" room="1" start="true" img="room_weapons_7" >
 			<slot>
-				<direction>left</direction>
-				<number>1</number>
+				<direction>up</direction>
+				<number>0</number>
 			</slot>
 		</weapons>	
 		<teleporter power="1" room="9" start="false" img="room_teleporter" />
@@ -4320,7 +4320,7 @@
 		<cloaking power="2" room="11" start="true" img="room_cloaking"/>
 	</systemList>
 	<weaponList count="1" missiles="0">
-		<weapon name="BASIC_kinetic1"/>
+		<weapon name="BASIC_KINETIC_1"/>
 		<weapon name="SOPHON_LASER_4"/>
 	</weaponList>
 	<weaponSlots>3</weaponSlots>
@@ -4659,7 +4659,7 @@
 	<droneSlots>2</droneSlots>
 	<weaponList count="3" missiles="15">
 		<weapon name="BASIC_LASER_2"/>
-		<weapon name="BASIC_kinetic1"/>
+		<weapon name="BASIC_KINETIC_1"/>
 	</weaponList>
 	<aug name="SLUG_GEL"/>
 	<health amount="30"/>
@@ -4929,7 +4929,7 @@ TUTORIAL SHIPS
 		<weapons power="3" room="2"/>
 	</systemList>
 	<weaponList count="1" missiles="0">
-		<weapon name="BASIC_kinetic1"/>
+		<weapon name="BASIC_KINETIC_1"/>
 	</weaponList>
 	<health amount="5"/>	
 	<maxPower amount ="11"/>

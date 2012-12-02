@@ -102,13 +102,30 @@ Ships based on concept art by Amplitude Studios
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
 
+7 (planned)
+		  - Edit "Last Stand" (planned)
+		  - Convert scoreUI (planned)
+		  - Add EFP projectile (planned)
+		  - Clean up Sower Terraformer ship image (planned)
+		  - Add Sower Terraformer B (planned)
+		  - Convert drones to Sonata/Minuet canon statistics (planned)
+		  - Assign drone graphics, projectiles, and sounds (planned)
+		  - Distribute drones in autoblueprints (planned)
+		  - Add diverse Sophon sector events (planned)
+		  - Add diverse civilian events (planned)
+		  - Add idle "talk with crew" feature (planned)
+		  - Add diverse nebula events (planned)
+		  - Add diverse Sower events (planned)
+		  - Add diverse Loyalist events (planned)
+		  - Balancing pass (planned)
 6a
           - Removed "%" symbol causing defect in Sophon event text
           - Filled inner transparencies in /map button .pngs preventing them from showing up as black boxes
 		  - Converted /storeUI
-          - Fix UE Frigate engine room (planned)
-          - Correct graphical glitch in UE Destroyer weapons room (planned)
-          - Correct global weapon title positioning (hopeful)
+		  - Converted /upgradeUI
+          - Fixed manning defect in UE Frigate engine room
+          - Correct graphical glitch in UE Destroyer weapons room
+          - Correct global weapon title positioning (planned)
 6
 	UI overhaul:
 		- /combatUI
