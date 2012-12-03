@@ -287,13 +287,13 @@ item - Dust + that thing  -->
 		<text>Talk to your Sower crewmember.</text>
 		<event load="SOWER_EXP_2"/>
 	</choice>
-		<choice hidden="true" req="human">
+	<choice hidden="true" req="human">
 		<text>Talk to your Human crewmember.</text>
-		<event load="HUMAN_EXP_1"/>
+		<event load="HUMAN_EXP_2"/>
 	</choice>
 	<choice hidden="true" req="energy">
 		<text>Talk to your Sophon crewmember.</text>
-		<event load="SOPHON_EXP_1"/>
+		<event load="SOPHON_EXP_2"/>
 	</choice>
 </event>
 
@@ -303,13 +303,13 @@ item - Dust + that thing  -->
 		<text>Talk to your Sower crewmember.</text>
 		<event load="SOWER_EXP_3"/>
 	</choice>
-		<choice hidden="true" req="human">
+	<choice hidden="true" req="human">
 		<text>Talk to your Human crewmember.</text>
-		<event load="HUMAN_EXP_1"/>
+		<event load="HUMAN_EXP_3"/>
 	</choice>
 	<choice hidden="true" req="energy">
 		<text>Talk to your Sophon crewmember.</text>
-		<event load="SOPHON_EXP_1"/>
+		<event load="SOPHON_EXP_3"/>
 	</choice>
 </event>
 
@@ -319,7 +319,7 @@ item - Dust + that thing  -->
 		<text>Talk to your Sower crewmember.</text>
 		<event load="SOWER_EXP_4"/>
 	</choice>
-		<choice hidden="true" req="human">
+	<choice hidden="true" req="human">
 		<text>Talk to your Human crewmember.</text>
 		<event load="HUMAN_EXP_4"/>
 	</choice>
@@ -498,7 +498,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>				
 	</event>
-	
 	<event>
 		<text>She came on board and immediately became one of the guys - her philosophy seems to be “work hard, play hard”. She’s already proved to be the best programmer on the ship. While refueling for the next jump, she walks up beside you and strikes a conversation. “Think we’ll see any Sower out here?”</text>
 		<choice>
@@ -514,7 +513,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>“Look at that mofucker! Captain ain’t even bothered to repaint the load lines!” He’s loudly gesturing at a freighter out the window of the crew mess.</text>
 		<choice>
@@ -549,7 +547,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>			
 	</event>
-	
 	<event>
 		<text>“Look at this - the Federalists are filibustering.” She’s watching a news feed; although they have already voted for military action, the Empire legislature is still in deadlock over the secession issue.</text>
 		<choice>
@@ -565,7 +562,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>“Fucking loyalists,” He’s not even drunk this time. “Sex everywhere! Sophon drugs! Inter-species miscegenation! Free food replicators for fuckin’ refugees and they expected US to pay for it? Fucking settlers scraping out a life on the edge of fuck-damn space?”</text>
 		<choice>
@@ -587,7 +583,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>			
 	</event>
-	
 	<event>
 		<text>She’s always reading newsfeeds on the web - keeping up with politics and cute kittens. You figure she might be able to shed some insights on the current situations vis a vis the civil war.</text>
 		<choice>
@@ -648,7 +643,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>This is a quiet sector - a good enough time for a birthday party, even if it’s not for a month. She doesn’t know if she’ll even be alive in a month. After cutting the cake and cracking the beers open, the crew thumps their bottles on the table.</text>
 		<choice>
@@ -664,7 +658,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>You’ve almost gotten used to your nightly booze sessions with him; I guess even bigotry grows on you after a while. Still, as you get to know him, you have to give him some grudging respect - he’s been through shit that would have unmade. He’s a tough, old, wise guy - and right now, he’s handing you a shot.</text>
 		<choice>
@@ -699,7 +692,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>She walks into your quarters wearing typical Sophon clothing - simple, brightly colored, form fitting. Like most female Sophon, she somehow simultaneously appears exotic, sensual, and completely alien. She looks you right in the eye. “A pleasure to “, and glances lower, “see you, Captain.”</text>
 		<choice>
@@ -727,7 +719,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>The Sophon is at her station, some sort of electronic cigarette clenched between her teeth. As you approach, she speaks without looking up. “This ship is ingenious.”</text>
 		<choice>
@@ -749,7 +740,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>			
 	</event>
-	
 	<event>
 		<text>Your Sophon crewmember has completed reams of calculations based on local gravimetric readings. You pause him to ask a question which has been troubling you.</text>
 		<choice>
@@ -759,7 +749,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-
 	<event>
 		<text>Your Sophon crewmember has showed some interest in your ship’s weaponry. Running your hand proudly along one of the immense power cables running from your shield capacitor bank directly to the reactor, you ask a question.</text>
 		<choice>
@@ -823,7 +812,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>It’s been all over the news - pirates attacked and destroyed a ship bearing a Sophon representative to the Pilgrim council. Many commentators believe that the pirates were in fact privateers hired by the United Earth or one of its intermediaries; you ask your Sophon crewman to comment.</text>
 		<choice>
@@ -839,7 +827,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>You’ve never been very religious, but like most Pilgrims you extend the Endless a particular reverence. Throughout humanity’s history, there have always been hints of the Endless - mysterious, miraculous galactic predecessors. Over dinner, you ask your Sophon crewmember about them.</text>
 		<choice>
@@ -857,7 +844,6 @@ item - Dust + that thing  -->
 	</event>
 </eventList>
 
-
 <eventList name="SOPHON_EXP_4">
 	<event>
 		<text>“There are significant factions on Sophis that propose aid to the Pilgrims beyond all reason.” A little blunt, sure, but that’s just how the Sophon are.</text>
@@ -874,7 +860,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>			
 	</event>
-	
 	<event>
 		<text>After a hair-raising experience with normally friendly Sophon border guards, you realize that you don’t know much about your crewmember’s status in their society - so you ask.</text>
 		<choice>
@@ -884,7 +869,6 @@ item - Dust + that thing  -->
 			</event>
 		</choice>		
 	</event>
-	
 	<event>
 		<text>It’s been obvious on both sides for months now. Winks, furtive glances exchanged in empty hallways - that sort of thing. But you had an agreement, which is why you’re surprised when she shows up at the door to your quarters unannounced.</text>
 		<choice>
