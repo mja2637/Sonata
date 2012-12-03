@@ -113,7 +113,7 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Distribute drones in autoblueprints
 		  - Add diverse Sophon sector events (planned)
 		  - Add diverse civilian events (planned)
-		  - Add idle "talk with crew" feature (planned)
+		  - Add idle "talk with crew" feature
 		  - Add diverse nebula events (planned)
 		  - Add diverse Sower events (planned)
 		  - Add diverse Loyalist events (planned)
@@ -124,6 +124,7 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Converted /storeUI
 		  - Converted /upgradeUI
           - Fixed manning defect in UE Frigate engine room
+		  - Fixed size/locked tile in Sower medbay
           - Correct graphical glitch in UE Destroyer weapons room
           - Correct global weapon title positioning (planned)
 6
