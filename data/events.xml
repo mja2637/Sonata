@@ -484,7 +484,7 @@ item - Dust + that thing  -->
 <!-- Human Exposition -->
 <eventList name="HUMAN_EXP_1">
 	<event>
-		<text>He's a little more formal than the others, very disciplined and practiced in his words and actions. You find him in the cargo hold smoking a cigarette. "Smoke, sir?” He turns to face you and offers a pack.</text>
+		<text>He's a little more formal than the others, very disciplined and practiced in his words and actions. You find him in the cargo hold smoking a cigarette. "Smoke, sir?" He turns to face you and offers a pack.</text>
 		<choice>
 			<text>"No thanks."</text>
 			<event>
@@ -499,34 +499,34 @@ item - Dust + that thing  -->
 		</choice>				
 	</event>
 	<event>
-		<text>She came on board and immediately became one of the guys - her philosophy seems to be "work hard, play hard”. She's already proved to be the best programmer on the ship. While refueling for the next jump, she walks up beside you and strikes a conversation. "Think we'll see any Sower out here?”</text>
+		<text>She came on board and immediately became one of the guys - her philosophy seems to be "work hard, play hard". She's already proved to be the best programmer on the ship. While refueling for the next jump, she walks up beside you and strikes a conversation. "Think we'll see any Sower out here?"</text>
 		<choice>
-			<text>"Sure, they're just about everywhere. Why do you ask?”</text>
+			<text>"Sure, they're just about everywhere. Why do you ask?"</text>
 			<event>
-				<text>"I've always wanted to take a look at their source code - think of it. A truly alien language! I've heard they're close to sentient.”</text>
+				<text>"I've always wanted to take a look at their source code - think of it. A truly alien language! I've heard they're close to sentient."</text>
 				<choice>
-					<text>"What about the Sophon?”</text>
+					<text>"What about the Sophon?"</text>
 					<event>
-						<text>She makes a sour face. "Too many parenthesis!” You make a mental note to call her to the bridge the next time you see a Sower vessel.</text>
+						<text>She makes a sour face. "Too many parenthesis!" You make a mental note to call her to the bridge the next time you see a Sower vessel.</text>
 					</event>
 				</choice>
 			</event>
 		</choice>		
 	</event>
 	<event>
-		<text>"Look at that mofucker! Captain ain't even bothered to repaint the load lines!” He's loudly gesturing at a freighter out the window of the crew mess.</text>
+		<text>"Look at that mofucker! Captain ain't even bothered to repaint the load lines!" He's loudly gesturing at a freighter out the window of the crew mess.</text>
 		<choice>
-			<text>"Repaint...?”</text>
+			<text>"Repaint...?"</text>
 			<event>
-				<text>"Yeah, see that's an IHTG tradeship out of New Mumbai - but they're disguising themselves as locals. Probably spend less on bribes that way. But they're done a SHIT JOB OF IT!” Although he's loud enough ordinarily, that last bit was shouted.</text>
+				<text>"Yeah, see that's an IHTG tradeship out of New Mumbai - but they're disguising themselves as locals. Probably spend less on bribes that way. But they're done a SHIT JOB OF IT!" Although he's loud enough ordinarily, that last bit was shouted.</text>
 				<choice>
 					<text>"IHTG...?"</text>
 					<event>
-						<text>"Interstellar Holdings Trading Group. Biggest Human corporation - thousands of freighters bigger'n the largest Sower!” Still loud. You suspect he was exaggerating the last part, but not as much as you suspect that he's drunk.</text>
+						<text>"Interstellar Holdings Trading Group. Biggest Human corporation - thousands of freighters bigger'n the largest Sower!" Still loud. You suspect he was exaggerating the last part, but not as much as you suspect that he's drunk.</text>
 						<choice>
 							<text>"You some kind of expert?</text>
 							<event>
-								<text>"Yessir! Before the mast in the IHTG my whole life! Until the secession, anyway...” You quickly leave before he starts talking again.</text>
+								<text>"Yessir! Before the mast in the IHTG my whole life! Until the secession, anyway..." You quickly leave before he starts talking again.</text>
 							</event>
 						</choice>
 					</event>
@@ -540,34 +540,34 @@ item - Dust + that thing  -->
 	<event>
 		<text>It came out of FTL an hour after you did, emerging into a sector bustling with activity. It's on the edge of your sensor range: a Rebel corvette. Sector control hails you, and you shoot him a look as if to say</text>
 		<choice>
-			<text>"You gonna be ok?” He's ex-UE military.</text>
+			<text>"You gonna be ok?" He's ex-UE military.</text>
 			<event>
-				<text>"Sir, I'm a career soldier. The side I'm on and the reasons they're fighting don't make one whit of difference to me. I will follow your orders, sir.” That's the most he's said since he joined your crew. Time to see about that UE ship.</text>
+				<text>"Sir, I'm a career soldier. The side I'm on and the reasons they're fighting don't make one whit of difference to me. I will follow your orders, sir." That's the most he's said since he joined your crew. Time to see about that UE ship.</text>
 				<ship load="REBEL" hostile="true"/>
 			</event>
 		</choice>			
 	</event>
 	<event>
-		<text>"Look at this - the Federalists are filibustering.” She's watching a news feed; although they have already voted for military action, the Empire legislature is still in deadlock over the secession issue.</text>
+		<text>"Look at this - the Federalists are filibustering." She's watching a news feed; although they have already voted for military action, the Empire legislature is still in deadlock over the secession issue.</text>
 		<choice>
-			<text>"Are you a Federalist?”</text>
+			<text>"Are you a Federalist?"</text>
 			<event>
-				<text>"No, Libertarian. I'm no Pilgrim, but I'm fucking pissed that we won't let you peacefully secede.”</text>
+				<text>"No, Libertarian. I'm no Pilgrim, but I'm fucking pissed that we won't let you peacefully secede."</text>
 				<choice>
 					<text>"'We'?"</text>
 					<event>
-						<text>"Yup, I'm a proud United Empire citizen! But Pilgrim secession rights is a cause I believe in, so I've been fighting for it since I graduated from Musk Academy.” She sounds a bit naive; you shudder at the cognitive dissonance it must take for her to reconcile that.</text>
+						<text>"Yup, I'm a proud United Empire citizen! But Pilgrim secession rights is a cause I believe in, so I've been fighting for it since I graduated from Musk Academy." She sounds a bit naive; you shudder at the cognitive dissonance it must take for her to reconcile that.</text>
 					</event>
 				</choice>
 			</event>
 		</choice>		
 	</event>
 	<event>
-		<text>"Fucking loyalists,” He's not even drunk this time. "Sex everywhere! Sophon drugs! Inter-species miscegenation! Free food replicators for fuckin' refugees and they expected US to pay for it? Fucking settlers scraping out a life on the edge of fuck-damn space?”</text>
+		<text>"Fucking loyalists," He's not even drunk this time. "Sex everywhere! Sophon drugs! Inter-species miscegenation! Free food replicators for fuckin' refugees and they expected US to pay for it? Fucking settlers scraping out a life on the edge of fuck-damn space?"</text>
 		<choice>
-			<text>"I guess we all had our reasons for joining the Pilgrims.”</text>
+			<text>"I guess we all had our reasons for joining the Pilgrims."</text>
 			<event>
-				<text>"Don't get ME started on ‘reason' with all of this damn Sophon culture around our kids. We have one fucking chance - win the war, restore our sovereignty, close our borders, bring the humanity back to humanity.” You're a Pilgrim, sure, but his views make you a bit uncomfortable.</text>	
+				<text>"Don't get ME started on ‘reason' with all of this damn Sophon culture around our kids. We have one fucking chance - win the war, restore our sovereignty, close our borders, bring the humanity back to humanity." You're a Pilgrim, sure, but his views make you a bit uncomfortable.</text>	
 			</event>
 		</choice>		
 	</event>
@@ -577,27 +577,27 @@ item - Dust + that thing  -->
 	<event>
 		<text>These last few battles have taken a toll on the ship - zipties and jury rigs are holding her together. You find him in the armory, cleaning his rifle.</text>
 		<choice>
-			<text>"Think we have a chance at winning this war?”</text>
+			<text>"Think we have a chance at winning this war?"</text>
 			<event>
-				<text>He puts down his rifle. "A lot of the veteran UE pilots joined us, and we're a long way from Earth. It's hard for them to direct all of their force at us.” He pulls out a cigarette. "It can be done, but you'll have to fight dirty. Mercenaries, terrorist attacks, assassinations, that sort of thing. Do you have the stomach for it?”</text>
+				<text>He puts down his rifle. "A lot of the veteran UE pilots joined us, and we're a long way from Earth. It's hard for them to direct all of their force at us." He pulls out a cigarette. "It can be done, but you'll have to fight dirty. Mercenaries, terrorist attacks, assassinations, that sort of thing. Do you have the stomach for it?"</text>
 			</event>
 		</choice>			
 	</event>
 	<event>
 		<text>She's always reading newsfeeds on the web - keeping up with politics and cute kittens. You figure she might be able to shed some insights on the current situations vis a vis the civil war.</text>
 		<choice>
-			<text>"Think we have a chance at winning this war?”</text>
+			<text>"Think we have a chance at winning this war?"</text>
 			<event>
-				<text>She shakes her head. "Hell no. Not in the numbers game. But,” she twirls a pencil in her right hand, "the United Empire isn't so united. The hawks in the legislature are keeping the war on by the skin of their teeth - if the balance of power in the legislature changes, the UE might pull out. That's the only chance you guys have - we have to convince them to let you go.”</text>
+				<text>She shakes her head. "Hell no. Not in the numbers game. But," she twirls a pencil in her right hand, "the United Empire isn't so united. The hawks in the legislature are keeping the war on by the skin of their teeth - if the balance of power in the legislature changes, the UE might pull out. That's the only chance you guys have - we have to convince them to let you go."</text>
 			</event>
 		</choice>		
 	</event>	
 	<event>
-		<text>Their men aren't brutes enough: that's the trouble,” you hear him roar, answering your question before you have a chance to finish. "They're a crowd of devitalized townsmen, and that's the truth of the matter. They can't produce better men for war than-” Then Pilgrims. Settlers, explorers, military veterans - the toughest of humans.</text>
+		<text>Their men aren't brutes enough: that's the trouble," you hear him roar, answering your question before you have a chance to finish. "They're a crowd of devitalized townsmen, and that's the truth of the matter. They can't produce better men for war than-" Then Pilgrims. Settlers, explorers, military veterans - the toughest of humans.</text>
 		<choice>
-			<text>"The United Empire has science, you know. It designed and it produces the ships and guns and equipment we use .”</text>
+			<text>"The United Empire has science, you know. It designed and it produces the ships and guns and equipment we use ."</text>
 			<event>
-				<text>"Which our nice healthy spacers and terraformers and so on, rowdy-dowdy shitkickers and alien-whackers, can use ten times better than-” You don't feel like continuing this line of conversation; you retire to your quarters to read from your well-thumbed collection of H.G. Wells short stories.</text>	
+				<text>"Which our nice healthy spacers and terraformers and so on, rowdy-dowdy shitkickers and alien-whackers, can use ten times better than-" You don't feel like continuing this line of conversation; you retire to your quarters to read from your well-thumbed collection of H.G. Wells short stories.</text>	
 			</event>
 		</choice>		
 	</event>
@@ -605,19 +605,19 @@ item - Dust + that thing  -->
 
 <eventList name="HUMAN_EXP_4">
 	<event>
-		<text>"Ok, you know what to do. Four shifts, Bravo on preventative maintenance; 5, get us ready to jump in 8 hours.” Your crew has been together for months now, and your crew goes about their duties with rehearsed precision. You begin to walk from the bridge to the armory when he falls in beside you. "Fancy a smoke?” He raises an eyebrow.</text>
+		<text>"Ok, you know what to do. Four shifts, Bravo on preventative maintenance; 5, get us ready to jump in 8 hours." Your crew has been together for months now, and your crew goes about their duties with rehearsed precision. You begin to walk from the bridge to the armory when he falls in beside you. "Fancy a smoke?" He raises an eyebrow.</text>
 		<choice>
-			<text>"Sure.”</text>
+			<text>"Sure."</text>
 			<event>
 				<text>You follow him to your ship's cargo hold. He's not the talkative type, but you've shared hundreds of cigarettes down here in the hold together. As one, you light your Baishas and inhale.</text>
 				<choice>
-					<text>"What's on your mind, soldier?”</text>
+					<text>"What's on your mind, soldier?"</text>
 					<event>
-						<text>"It's coming close to the end, now. You're gonna win this thing or you aren't.” He pauses, takes a drag of his cigarette. "Don't know how much Human skill matters when you're playing against fate.”</text>
+						<text>"It's coming close to the end, now. You're gonna win this thing or you aren't." He pauses, takes a drag of his cigarette. "Don't know how much Human skill matters when you're playing against fate."</text>
 						<choice>
-							<text>"Or playing for it.”</text>
+							<text>"Or playing for it."</text>
 							<event>
-								<text>He politely spits on the floor. "Luck means everything. I'm lucky I found this ship.” He inhales again; deep this time. "Figure as far as luck goes, I couldn't have ended up serving a better Captain.” He drops his cigarette, grinds it out with his boot, marches away. He's not much for sentiment.</text>
+								<text>He politely spits on the floor. "Luck means everything. I'm lucky I found this ship." He inhales again; deep this time. "Figure as far as luck goes, I couldn't have ended up serving a better Captain." He drops his cigarette, grinds it out with his boot, marches away. He's not much for sentiment.</text>
 							</event>
 						</choice>						
 					</event>
@@ -625,17 +625,17 @@ item - Dust + that thing  -->
 			</event>
 		</choice>
 		<choice>
-			<text>"You know I don't smoke.”</text>
+			<text>"You know I don't smoke."</text>
 			<event>
 				<text>He knows this; you follow him anyway, down to the ship's hold where the air is musty. He lights a cigarette and inhales.</text>
 				<choice>
-					<text>"What's on your mind, soldier?”</text>
+					<text>"What's on your mind, soldier?"</text>
 					<event>
-						<text>"It's coming close to the end, now. You're gonna win this thing or you aren't.” He pauses, takes a drag of his cigarette. "Don't know how much Human skill matters when you're playing against fate.”</text>
+						<text>"It's coming close to the end, now. You're gonna win this thing or you aren't." He pauses, takes a drag of his cigarette. "Don't know how much Human skill matters when you're playing against fate."</text>
 						<choice>
-							<text>"Or playing for it.”</text>
+							<text>"Or playing for it."</text>
 							<event>
-								<text>He politely spits on the floor. "Luck means everything. I'm lucky I found this ship.” He inhales again; deep this time. "Figure as far as luck goes, I couldn't have ended up serving a better Captain.” He drops his cigarette, grinds it out with his boot, marches away. He's not much for sentiment.</text>
+								<text>He politely spits on the floor. "Luck means everything. I'm lucky I found this ship." He inhales again; deep this time. "Figure as far as luck goes, I couldn't have ended up serving a better Captain." He drops his cigarette, grinds it out with his boot, marches away. He's not much for sentiment.</text>
 							</event>
 						</choice>						
 					</event>
@@ -646,13 +646,13 @@ item - Dust + that thing  -->
 	<event>
 		<text>This is a quiet sector - a good enough time for a birthday party, even if it's not for a month. She doesn't know if she'll even be alive in a month. After cutting the cake and cracking the beers open, the crew thumps their bottles on the table.</text>
 		<choice>
-			<text>"Speech! Speech!”</text>
+			<text>"Speech! Speech!"</text>
 			<event>
 				<text>You wondered what this wet-behind-the-ears college girl would have in common with a crew full of hardened spacers, but you shouldn't have worried. She near burns your ears off - she can cuss better than them! The entire speech is full of references and private jokes; it's a tight-knit crew. Her speech draws to a close, when she announces that it is time for a toast.</text>
 				<choice>
 					<text>Raise your glass.</text>
 					<event>
-						<text>"A toast to the one main who's kept us together, who's kept us alive. To the one man who represents the best of ALL humanity - and to the one man who might be able to bring peace to it. A toast to our Captain!” The applause of your small crew sounds louder to your ears than an entire stadium of fans. You blush.</text>					
+						<text>"A toast to the one main who's kept us together, who's kept us alive. To the one man who represents the best of ALL humanity - and to the one man who might be able to bring peace to it. A toast to our Captain!" The applause of your small crew sounds louder to your ears than an entire stadium of fans. You blush.</text>					
 					</event>
 				</choice>
 			</event>
@@ -661,13 +661,13 @@ item - Dust + that thing  -->
 	<event>
 		<text>You've almost gotten used to your nightly booze sessions with him; I guess even bigotry grows on you after a while. Still, as you get to know him, you have to give him some grudging respect - he's been through shit that would have unmade. He's a tough, old, wise guy - and right now, he's handing you a shot.</text>
 		<choice>
-			<text>"Salut!”</text>
+			<text>"Salut!"</text>
 			<event>
-				<text>You down the shot, and he erupts in song. "That was a crazy game of poker! I lost it all...but someday I'll be back again and I, never to fall. Never to fall!” You wonder if there's any meaning to the song - he has the damndest habit of mixing politics and pop culture.</text>
+				<text>You down the shot, and he erupts in song. "That was a crazy game of poker! I lost it all...but someday I'll be back again and I, never to fall. Never to fall!" You wonder if there's any meaning to the song - he has the damndest habit of mixing politics and pop culture.</text>
 				<choice>
-					<text>"You're damn right! Pilgrims never to fall!”</text>
+					<text>"You're damn right! Pilgrims never to fall!"</text>
 					<event>
-						<text>You notice that he's not his normal cheery, patriotic self - he looks downright sad. "Humanity, son. We wanted to make things better - we didn't want to leave.” You furrow your brow as he continues. "Even if we win the civil war, we still lose. We still haven't saved humanity. We've divided ourselves.” Regaining his composure, he breaks back into song. "I say revolution, and you say jah! I say revolution, and you say jah jah jah!”</text>	
+						<text>You notice that he's not his normal cheery, patriotic self - he looks downright sad. "Humanity, son. We wanted to make things better - we didn't want to leave." You furrow your brow as he continues. "Even if we win the civil war, we still lose. We still haven't saved humanity. We've divided ourselves." Regaining his composure, he breaks back into song. "I say revolution, and you say jah! I say revolution, and you say jah jah jah!"</text>	
 					</event>
 				</choice>
 			</event>
@@ -680,28 +680,28 @@ item - Dust + that thing  -->
 	<event>
 		<text>You find your Sophon crewman in his quarters, door wide open. He is lounging back in his chair, arms akimbo, studying what appears to be the output from an oscilloscope.</text>
 		<choice>
-			<text>"What are you looking at?”</text>
+			<text>"What are you looking at?"</text>
 			<event>
-				<text>"This is one of your Human musical compositions. I have rendered it inaudible from 0.02 to 40 kilohertz, in your units; the visual is computed based on the instantaneous integral of the amplitude of various frequency bands.”</text>
+				<text>"This is one of your Human musical compositions. I have rendered it inaudible from 0.02 to 40 kilohertz, in your units; the visual is computed based on the instantaneous integral of the amplitude of various frequency bands."</text>
 				<choice>
-					<text>"You're watching a sound visualizer with the sound off?”</text>
+					<text>"You're watching a sound visualizer with the sound off?"</text>
 					<event>
-						<text>"Yes,” the Sophon smiles, "can't you see that the sum of the math of its parts is what makes this song beautiful?”</text>
+						<text>"Yes," the Sophon smiles, "can't you see that the sum of the math of its parts is what makes this song beautiful?"</text>
 					</event>
 				</choice>
 			</event>
 		</choice>		
 	</event>
 	<event>
-		<text>She walks into your quarters wearing typical Sophon clothing - simple, brightly colored, form fitting. Like most female Sophon, she somehow simultaneously appears exotic, sensual, and completely alien. She looks you right in the eye. "A pleasure to ", and glances lower, "see you, Captain.”</text>
+		<text>She walks into your quarters wearing typical Sophon clothing - simple, brightly colored, form fitting. Like most female Sophon, she somehow simultaneously appears exotic, sensual, and completely alien. She looks you right in the eye. "A pleasure to ", and glances lower, "see you, Captain."</text>
 		<choice>
 			<text>Ask if all Sophon are this...forward.</text>
 			<event>
-				<text>"Humans are interesting. Humans are aesthetically pleasing. And you, Captain, have shown great leadership in coming this far. The Sophon in me wishes to join you in study.” Although the Human in you would not mind putting some Human in her, that would be highly unprofessional. </text>
+				<text>"Humans are interesting. Humans are aesthetically pleasing. And you, Captain, have shown great leadership in coming this far. The Sophon in me wishes to join you in study." Although the Human in you would not mind putting some Human in her, that would be highly unprofessional. </text>
 				<choice>
-					<text>"Humans think Sophon are mysterious and beautiful in the same way. Do you think there's some kind of reason for that?”</text>
+					<text>"Humans think Sophon are mysterious and beautiful in the same way. Do you think there's some kind of reason for that?"</text>
 					<event>
-						<text>She slaps you. "Inappropriate! Secrets such as this are not kept with strangers.” They wear their libido on their sleeve and guard their knowledge carefully; the Sophon are a strange race.</text>
+						<text>She slaps you. "Inappropriate! Secrets such as this are not kept with strangers." They wear their libido on their sleeve and guard their knowledge carefully; the Sophon are a strange race.</text>
 					</event>
 				</choice>	
 			</event>
@@ -709,22 +709,22 @@ item - Dust + that thing  -->
 		<choice>
 			<text>Discuss the nature of Human professional relationships.</text>
 			<event>
-				<text>"We don't compartmentalize "work” and "play” as you do; to join and to study are merely different contexts for action.” </text>
+				<text>"We don't compartmentalize "work" and "play" as you do; to join and to study are merely different contexts for action." </text>
 				<choice>
-					<text>"We can do the same thing intellectually, but Human emotions can make it difficult.”</text>
+					<text>"We can do the same thing intellectually, but Human emotions can make it difficult."</text>
 					<event>
-						<text>"How can joy, passion, and curiosity impair one of your "professional relationships?” You know the Sophon to be emotional creatures, but perhaps their emotional makeup is different than yours. Do they know love? Empathy? Sorrow? Questions for a different time; it is enough that she agree to abide with Human social conventions for the time being.</text>
+						<text>"How can joy, passion, and curiosity impair one of your "professional relationships?" You know the Sophon to be emotional creatures, but perhaps their emotional makeup is different than yours. Do they know love? Empathy? Sorrow? Questions for a different time; it is enough that she agree to abide with Human social conventions for the time being.</text>
 					</event>
 				</choice>				
 			</event>
 		</choice>		
 	</event>
 	<event>
-		<text>The Sophon is at her station, some sort of electronic cigarette clenched between her teeth. As you approach, she speaks without looking up. "This ship is ingenious.”</text>
+		<text>The Sophon is at her station, some sort of electronic cigarette clenched between her teeth. As you approach, she speaks without looking up. "This ship is ingenious."</text>
 		<choice>
-			<text>"How's that?”</text>
+			<text>"How's that?"</text>
 			<event>
-				<text>"Features no Sophon would have thought of, facilities we would have considered unnecessary. A complex juxtaposition of art and science.” Looking around the purely functional interior of your ship, you find it hard to agree. Perhaps this Sophon, appalled at the lack of theoretical purity on a military vessel, equates its technology with art.</text>	
+				<text>"Features no Sophon would have thought of, facilities we would have considered unnecessary. A complex juxtaposition of art and science." Looking around the purely functional interior of your ship, you find it hard to agree. Perhaps this Sophon, appalled at the lack of theoretical purity on a military vessel, equates its technology with art.</text>	
 			</event>
 		</choice>		
 	</event>
@@ -732,37 +732,37 @@ item - Dust + that thing  -->
 
 <eventList name="SOPHON_EXP_2">
 	<event>
-		<text>You ask her about the difference between the Sophon and Human approaches to science. "Sophon science is without goal, without purpose. We do it for fun. Take Newton's Principia Mathematica - oh, Sophon children can perform those proofs for hours!” </text>
+		<text>You ask her about the difference between the Sophon and Human approaches to science. "Sophon science is without goal, without purpose. We do it for fun. Take Newton's Principia Mathematica - oh, Sophon children can perform those proofs for hours!" </text>
 		<choice>
-			<text>"Similar to a Human child playing a video game?”</text>
+			<text>"Similar to a Human child playing a video game?"</text>
 			<event>
-				<text>"Quite. Humanity is quite different; your government sponsors directed research, and your students are content to re-use theories without enjoying their discovery themselves. The Sophon research purely for pleasure - and some of the oldest theories are the most fun. The derivation of the quadratic formula is one of my favorites.”</text>			
+				<text>"Quite. Humanity is quite different; your government sponsors directed research, and your students are content to re-use theories without enjoying their discovery themselves. The Sophon research purely for pleasure - and some of the oldest theories are the most fun. The derivation of the quadratic formula is one of my favorites."</text>			
 			</event>
 		</choice>			
 	</event>
 	<event>
 		<text>Your Sophon crewmember has completed reams of calculations based on local gravimetric readings. You pause him to ask a question which has been troubling you.</text>
 		<choice>
-			<text>"The Sophon are a much older race than humanity; shouldn't your science be much farther ahead of ours than it is?”</text>
+			<text>"The Sophon are a much older race than humanity; shouldn't your science be much farther ahead of ours than it is?"</text>
 			<event>
-				<text>"We know more, certainly. Perhaps it is because to be a scientist is to be a Sophon, inseparably. We don't have the same insatiable drive for advancement, for power, as Humanity - we seek understanding, elucidation, joy.”</text>
+				<text>"We know more, certainly. Perhaps it is because to be a scientist is to be a Sophon, inseparably. We don't have the same insatiable drive for advancement, for power, as Humanity - we seek understanding, elucidation, joy."</text>
 			</event>
 		</choice>		
 	</event>
 	<event>
 		<text>Your Sophon crewmember has showed some interest in your ship's weaponry. Running your hand proudly along one of the immense power cables running from your shield capacitor bank directly to the reactor, you ask a question.</text>
 		<choice>
-			<text>"She's a good ship. How do you think she'd stack up against a Sophon frigate?”</text>
+			<text>"She's a good ship. How do you think she'd stack up against a Sophon frigate?"</text>
 			<event>
-				<text>"By scale or by purpose? We would classify vessels this size, in Human, with the prefix ‘Kilo-'. The suffix indicates the ship's role - discovery, exploration, conflict. There's no direct translation.”</text>
+				<text>"By scale or by purpose? We would classify vessels this size, in Human, with the prefix ‘Kilo-'. The suffix indicates the ship's role - discovery, exploration, conflict. There's no direct translation."</text>
 				<choice>
-					<text>"One of your...'Kiloconflict' ships, then. How do they compare?”</text>
+					<text>"One of your...'Kiloconflict' ships, then. How do they compare?"</text>
 					<event>
-						<text>"Your ship is...childish. Inefficient, incoherent, and irrational. In terms of certain metrics, though, your ship is equal or superior to the equivalent Sophon vessel.”</text>
+						<text>"Your ship is...childish. Inefficient, incoherent, and irrational. In terms of certain metrics, though, your ship is equal or superior to the equivalent Sophon vessel."</text>
 						<choice>
-							<text>"Certain metrics?”</text>
+							<text>"Certain metrics?"</text>
 							<event>
-								<text>"Certain derived qualities. Maximum delta-v, system reliability, weapons and reactor output.” You smile at the compliment, even if the Sophon doesn't realize that's what it was.</text>	
+								<text>"Certain derived qualities. Maximum delta-v, system reliability, weapons and reactor output." You smile at the compliment, even if the Sophon doesn't realize that's what it was.</text>	
 							</event>
 						</choice>						
 					</event>
@@ -776,17 +776,17 @@ item - Dust + that thing  -->
 	<event>
 		<text>You've easily formed a good, working relationship with your Sophon crewmember; that species is not known for causing much drama. You decided to ask him his personal thoughts on the civil war, not knowing whether you risk your relationship.</text>
 		<choice>
-			<text>"Honestly...do you think the Pilgrims are right?”</text>
+			<text>"Honestly...do you think the Pilgrims are right?"</text>
 			<event>
-				<text>"‘Honestly'? Redundant. Your question is ambiguous, but I believe you are asking whether the actions of the seceding planets are morally justifiable - is that correct?”</text>
+				<text>"‘Honestly'? Redundant. Your question is ambiguous, but I believe you are asking whether the actions of the seceding planets are morally justifiable - is that correct?"</text>
 				<choice>
 					<text>Nod.</text>
 					<event>
-						<text>"Rational or not, by Sophon morality or by Human, all beings should have the right to choose their own company - ‘freedom of association', I believe, is the Human term. All beings should have the right to believe what they wish.”</text>
+						<text>"Rational or not, by Sophon morality or by Human, all beings should have the right to choose their own company - ‘freedom of association', I believe, is the Human term. All beings should have the right to believe what they wish."</text>
 						<choice>
-							<text>"That answer was less than satisfying.”</text>
+							<text>"That answer was less than satisfying."</text>
 							<event>
-								<text>The Sophon looks puzzled, so you continue, attempting to phrase your question in a way he would understand. "I want a personal value judgement - an opinion - not scientific objectivity.” He responds: "Justice is a kind of compact not to harm or be harmed. The Pilgrims are just.”</text>
+								<text>The Sophon looks puzzled, so you continue, attempting to phrase your question in a way he would understand. "I want a personal value judgement - an opinion - not scientific objectivity." He responds: "Justice is a kind of compact not to harm or be harmed. The Pilgrims are just."</text>
 							</event>
 						</choice>						
 					</event>
@@ -794,17 +794,17 @@ item - Dust + that thing  -->
 			</event>
 		</choice>
 		<choice>
-			<text>"Honestly...do you think we can win this war?”</text>
+			<text>"Honestly...do you think we can win this war?"</text>
 			<event>
-				<text>"This is a poor question. Do you realize that the Pilgrim military cannot defeat the United Empire's military conventionally?”</text>
+				<text>"This is a poor question. Do you realize that the Pilgrim military cannot defeat the United Empire's military conventionally?"</text>
 				<choice>
-					<text>"Just what are you saying?” (...you bastard)</text>
+					<text>"Just what are you saying?" (...you bastard)</text>
 					<event>
-						<text>"It is so improbable as to be impossible. In order to remain a free nation, the Pilgrims will have to change the way they fight, or change the way they live.”</text>
+						<text>"It is so improbable as to be impossible. In order to remain a free nation, the Pilgrims will have to change the way they fight, or change the way they live."</text>
 						<choice>
-							<text>"Change the way we fight? You mean guerilla warfare.”</text>
+							<text>"Change the way we fight? You mean guerilla warfare."</text>
 							<event>
-								<text>"If you must fight. There are other ways to save the Pilgrims.” You sense that the conversation is over.</text>
+								<text>"If you must fight. There are other ways to save the Pilgrims." You sense that the conversation is over.</text>
 							</event>
 						</choice>						
 					</event>
@@ -815,13 +815,13 @@ item - Dust + that thing  -->
 	<event>
 		<text>It's been all over the news - pirates attacked and destroyed a ship bearing a Sophon representative to the Pilgrim council. Many commentators believe that the pirates were in fact privateers hired by the United Earth or one of its intermediaries; you ask your Sophon crewman to comment.</text>
 		<choice>
-			<text>"Do you think the rumors are true?”</text>
+			<text>"Do you think the rumors are true?"</text>
 			<event>
-				<text>"I hope they are not. It is...disturbing...to think that part of your species would seek to stop us from befriending all of your species. My friends have had much fun with Pilgrims on archeological expeditions near Sophis.”</text>
+				<text>"I hope they are not. It is...disturbing...to think that part of your species would seek to stop us from befriending all of your species. My friends have had much fun with Pilgrims on archeological expeditions near Sophis."</text>
 				<choice>
-					<text>"If it came down to it - do you think the Sophon will pick sides?”</text>
+					<text>"If it came down to it - do you think the Sophon will pick sides?"</text>
 					<event>
-						<text>"We would rather stop this conflict than anything else. We will maintain relations with all humanity, regardless of the outcome - but it may be from a greater distance.”</text>
+						<text>"We would rather stop this conflict than anything else. We will maintain relations with all humanity, regardless of the outcome - but it may be from a greater distance."</text>
 					</event>
 				</choice>
 			</event>
@@ -830,13 +830,13 @@ item - Dust + that thing  -->
 	<event>
 		<text>You've never been very religious, but like most Pilgrims you extend the Endless a particular reverence. Throughout humanity's history, there have always been hints of the Endless - mysterious, miraculous galactic predecessors. Over dinner, you ask your Sophon crewmember about them.</text>
 		<choice>
-			<text>"Are the Sophon religious?”</text>
+			<text>"Are the Sophon religious?"</text>
 			<event>
-				<text>"It's a puzzling question!” she laughs. "After living with you for several weeks now - I don't think we have anything like it.” You laugh too; it's hard to imagine the flighty and curious Sophon revering a mere god.</text>
+				<text>"It's a puzzling question!" she laughs. "After living with you for several weeks now - I don't think we have anything like it." You laugh too; it's hard to imagine the flighty and curious Sophon revering a mere god.</text>
 				<choice>
-					<text>"Well, the Endless then.”</text>
+					<text>"Well, the Endless then."</text>
 					<event>
-						<text>Enough said; the Sophon are familiar enough with the religion of the Pilgrims. "We see them much the same as most Humans do”, she says, pausing to savor a bit of bok choy, "Interesting. Advanced. Ancient. Beings just like us.” This is of course heresy - but you're not one of THOSE Pilgrims.</text>	
+						<text>Enough said; the Sophon are familiar enough with the religion of the Pilgrims. "We see them much the same as most Humans do", she says, pausing to savor a bit of bok choy, "Interesting. Advanced. Ancient. Beings just like us." This is of course heresy - but you're not one of THOSE Pilgrims.</text>	
 					</event>
 				</choice>				
 			</event>
@@ -846,15 +846,15 @@ item - Dust + that thing  -->
 
 <eventList name="SOPHON_EXP_4">
 	<event>
-		<text>"There are significant factions on Sophis that propose aid to the Pilgrims beyond all reason.” A little blunt, sure, but that's just how the Sophon are.</text>
+		<text>"There are significant factions on Sophis that propose aid to the Pilgrims beyond all reason." A little blunt, sure, but that's just how the Sophon are.</text>
 		<choice>
-			<text>"Do you have a hypothesis?”</text>
+			<text>"Do you have a hypothesis?"</text>
 			<event>
-				<text>"Certain schools of Human thought are becoming popular among Humans - among them, realpolitik. Humans are an...imposing...race, and therefore a divided humanity is beneficial for the Sophon.”</text>
+				<text>"Certain schools of Human thought are becoming popular among Humans - among them, realpolitik. Humans are an...imposing...race, and therefore a divided humanity is beneficial for the Sophon."</text>
 				<choice>
-					<text>"Do you agree with them?”</text>
+					<text>"Do you agree with them?"</text>
 					<event>
-						<text>"Humanity is certainly powerful. But realpolitik is based on circumstance, not pure theory; it is not quite a ‘Sophon' way of thinking. I do not know that the Sophon should become too fond of thinking in this barbaric fashion.”</text>
+						<text>"Humanity is certainly powerful. But realpolitik is based on circumstance, not pure theory; it is not quite a ‘Sophon' way of thinking. I do not know that the Sophon should become too fond of thinking in this barbaric fashion."</text>
 					</event>
 				</choice>				
 			</event>
@@ -863,30 +863,30 @@ item - Dust + that thing  -->
 	<event>
 		<text>After a hair-raising experience with normally friendly Sophon border guards, you realize that you don't know much about your crewmember's status in their society - so you ask.</text>
 		<choice>
-			<text>"Does the Sophon government know you're here?”</text>
+			<text>"Does the Sophon government know you're here?"</text>
 			<event>
-				<text>"My presence on your ship is not inconvenient for them. Sophon tend to be more agreeable than humans - we don't need much in the way of laws or citizenship. If consensus decides that my actions are incorrect, I will leave.”</text>
+				<text>"My presence on your ship is not inconvenient for them. Sophon tend to be more agreeable than humans - we don't need much in the way of laws or citizenship. If consensus decides that my actions are incorrect, I will leave."</text>
 			</event>
 		</choice>		
 	</event>
 	<event>
 		<text>It's been obvious on both sides for months now. Winks, furtive glances exchanged in empty hallways - that sort of thing. But you had an agreement, which is why you're surprised when she shows up at the door to your quarters unannounced.</text>
 		<choice>
-			<text>"To what do I owe the pleasure?”</text>
+			<text>"To what do I owe the pleasure?"</text>
 			<event>
-				<text>"For good or for ill, this war will be over soon. May I come in?”</text>
+				<text>"For good or for ill, this war will be over soon. May I come in?"</text>
 				<choice>
-					<text>"Of course. And of course.”</text>
+					<text>"Of course. And of course."</text>
 					<event>
-						<text>She smiles at your childish wit and enters, although she remains at a respectful distance. "Captain, I believed we agreed to abide by Human professional standards of conduct until our mission is complete; that time is nearly at hand.” It's a leading question.</text>
+						<text>She smiles at your childish wit and enters, although she remains at a respectful distance. "Captain, I believed we agreed to abide by Human professional standards of conduct until our mission is complete; that time is nearly at hand." It's a leading question.</text>
 						<choice>
-							<text>"When this is all over, what are you going to do?” Assuming we're all still alive.</text>
+							<text>"When this is all over, what are you going to do?" Assuming we're all still alive.</text>
 							<event>
-								<text>"My time with you has been...interesting. There is much I don't yet understand...about you.” She's flirting with you - but you can tell she's struggling to do it in a Human way. You're confused - Sophon don't feel love or attraction in the same way as Humans, do they?</text>	
+								<text>"My time with you has been...interesting. There is much I don't yet understand...about you." She's flirting with you - but you can tell she's struggling to do it in a Human way. You're confused - Sophon don't feel love or attraction in the same way as Humans, do they?</text>	
 								<choice>
-									<text>"It would be a shame for it to end.”</text>
+									<text>"It would be a shame for it to end."</text>
 									<event>
-										<text>You're attracted to her, sure, but you don't know that you could ever have a relationship with...one of THEM. It would be frowned upon by the Council. But the words slipped out before you thought about them, and she responds quickly. "Until duty's end.” She leaves. You have some hard thinking to do.</text>	
+										<text>You're attracted to her, sure, but you don't know that you could ever have a relationship with...one of THEM. It would be frowned upon by the Council. But the words slipped out before you thought about them, and she responds quickly. "Until duty's end." She leaves. You have some hard thinking to do.</text>	
 									</event>
 								</choice>
 							</event>

@@ -1,6 +1,6 @@
 <!-- Copyright (c) 2012 by Subset Games, mod by Matt Alioto. All rights reserved -->
 
-<!-- new weapons -->
+<!-- New Weapons -->
 <beam volume="3">weapons/beam.wav</beam>
 <dualbeam volume="3">weapons/dualbeam.wav</dualbeam>
 <kinetic1 volume="3">weapons/kinetic_1.wav</kinetic1>
@@ -8,3 +8,68 @@
 <kinetic3 volume="3">weapons/kinetic_3.wav</kinetic3>
 <kinetic4 volume="3">weapons/kinetic_4.wav</kinetic4>
 <pulse1 volume="5">weapons/pulse.wav</kinetic1>
+
+<!-- Soundtrack files -->
+<music>
+	<track>
+		<name>title</name>
+		<explore>proteus_fading.ogg</explore>
+	</track>
+	<track>
+		<name>bump</name>
+		<explore>andrealoko_fourth.ogg</explore>
+		<combat>dhruva_bruce.ogg</combat>
+	</track>
+	<track>
+		<name>hectic</name>
+		<explore>feorm_cyclick.ogg</explore>
+		<combat>grieco_empire.ogg</combat>
+	</track>
+	<track>
+		<name>rough</name>
+		<explore>chiwawa_smoke.ogg</explore>
+		<combat>chiwawa_afghanistan.ogg</combat>
+	</track>	
+	<track>
+		<name>voidEmpire</name>
+		<explore>bp_MUS_WastelandEXPLORE.ogg</explore>
+		<combat>hw_imperial.mp3</combat>
+	</track>
+	<track>
+		<name>voidPirate</name>
+		<explore>bp_MUS_VoidEXPLORE.ogg</explore>
+		<combat>hw_raiders.mp3</combat>
+	</track>	
+	<track>
+		<name>garden</name>
+		<explore>hw_garden.mp3</explore>
+		<combat>hw_garden2.mp3</combat>
+	</track>		
+	<track>
+		<name>home</name>
+		<explore>hw_kharak.mp3</explore>
+		<combat>hw_raiders.mp3</combat>
+	</track>	
+	<track>
+		<name>laststand1</name>
+		<explore>mmpr_theme.mp3</explore>
+	</track>	
+	<track>
+		<name>laststand1</name>
+		<explore>mmpr_theme.mp3</explore>
+	</track>
+	<track>
+		<name>laststand2</name>
+		<explore>dbz_ssj3.mp3</explore>
+	</track>
+	<track>
+		<name>laststand3</name>
+		<explore>barkley_jam.mp3</explore>
+	</track>
+<!--
+	<track>
+		<name>combat3</name>
+		<combat>hw_imperial.ogg</combat>
+	</track>
+	-->	
+</music>

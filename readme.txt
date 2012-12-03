@@ -103,17 +103,16 @@ The latest version/build of the mod can always be grabbed from github at this UR
 https://github.com/mja2637/Sonata/archive/master.zip
 
 7 (planned)
+		  - Added Sonata drones
+		  - Added idle "talk with crew" feature		  
+		  - Added EFP projectile
+		  - Added custom soundtrack
 		  - Edit "Last Stand" (planned)
 		  - Convert scoreUI (planned)
-		  - Add EFP projectile
 		  - Clean up Sower Terraformer ship image (planned)
 		  - Add Sower Terraformer B (planned)
-		  - Convert drones to Sonata/Minuet canon statistics
-		  - Assign drone graphics, projectiles, and sounds
-		  - Distribute drones in autoblueprints
 		  - Add diverse Sophon sector events (planned)
-		  - Add diverse civilian events (planned)
-		  - Add idle "talk with crew" feature
+		  - Add diverse civilian events (planned)		  
 		  - Add diverse nebula events (planned)
 		  - Add diverse Sower events (planned)
 		  - Add diverse Loyalist events (planned)
