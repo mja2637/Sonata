@@ -4,6 +4,10 @@
 	<sector>CIVILIAN_SECTOR_1</sector>
 	<sector>CIVILIAN_SECTOR_2</sector>	
 	<sector>CIVILIAN_SECTOR_3</sector>	
+	<sector>CIVILIAN_SECTOR_3</sector>
+	<sector>CIVILIAN_SECTOR_4</sector>
+	<sector>CIVILIAN_SECTOR_4</sector>
+	<sector>CIVILIAN_SECTOR_4</sector>
 	<sector>CIVILIAN_SECTOR_4</sector>
 	<sector>ZOLTAN_SECTOR</sector>
 	<sector>ZOLTAN_HOME</sector>
@@ -60,16 +64,15 @@ STRUCTURE SECTORS
 	<startEvent>START_BEACON</startEvent>
 	<!-- <event name="TEST" min="8" max="12"/>	
 	<event name="STORE" min="8" max="12"/>
-	 -->
 	 <event name="TEST" min="8" max="12"/>
 	 <event name="NOTHING_2" min="5" max="7"/>
 	 <event name="NOTHING_3" min="5" max="7"/>
 	 <event name="NOTHING_4" min="5" max="7"/>
-	 
+	 -->
 	<!-- <event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
-	<event name="NOTHING_1" min="2" max="3"/>
+	<event name="NOTHING_1" min="3" max="4"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="4"/>
@@ -111,7 +114,7 @@ CIVILIAN SECTORS
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
-	<event name="NOTHING_1" min="2" max="2"/>
+	<event name="NOTHING_1" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/> 
@@ -132,7 +135,7 @@ CIVILIAN SECTORS
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
-	<event name="NOTHING_2" min="2" max="2"/>
+	<event name="NOTHING_2" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/> 
@@ -153,7 +156,7 @@ CIVILIAN SECTORS
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
-	<event name="NOTHING_3" min="2" max="2"/>
+	<event name="NOTHING_3" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/> 
@@ -174,7 +177,7 @@ CIVILIAN SECTORS
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
-	<event name="NOTHING_4" min="2" max="2"/>
+	<event name="NOTHING_4" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/> 
@@ -301,8 +304,8 @@ HOSTILE SECTORS
 	<event name="BOARDERS_PIRATE" min="1" max="1"/>
 	<event name="DISTRESS_BEACON_PIRATE" min="1" max="2"/>
 	<event name="NEBULA_PIRATE" min="0" max="5"/>
-	<event name="NOTHING_PIRATE" min="1" max="2"/> <!-- need more -->
-	<event name="QUESTS_PIRATE" min="0" max="1"/> <!-- need more -->
+	<event name="NOTHING_PIRATE" min="1" max="2"/>
+	<event name="QUESTS_PIRATE" min="0" max="1"/>
 	<event name="NEUTRAL_PIRATE" min="5" max="6"/>
 </sectorDescrption>
 
@@ -323,8 +326,8 @@ HOSTILE SECTORS
 	<event name="BOARDERS_REBEL" min="1" max="1"/>
 	<event name="DISTRESS_BEACON_REBEL" min="1" max="2"/>
 	<event name="NEBULA_REBEL" min="0" max="5"/>
-	<event name="NOTHING_REBEL" min="1" max="2"/> <!-- need more -->
-	<event name="QUESTS_REBEL" min="0" max="2"/> <!-- need more -->
+	<event name="NOTHING_REBEL" min="1" max="2"/>
+	<event name="QUESTS_REBEL" min="0" max="2"/>
 	<event name="NEUTRAL_REBEL" min="5" max="6"/>
 </sectorDescrption>
 
@@ -465,7 +468,7 @@ HOSTILE SECTORS
 	<!--<event name="STORE" min="2" max="4"/>-->
 	
 	<startEvent>START_BEACON_ROCK</startEvent>
-	<event name="ROCK_CRYSTAL_BEACON" min="1" max="1"/> <!-- CRYSTAL UNLOCK-->
+	<event name="ROCK_CRYSTAL_BEACON" min="1" max="1"/>
 	<event name="ROCK_UNLOCK1" min="1" max="1"/>
 	<event name="STORE_ROCK" min="2" max="2"/>
 	<event name="NOTHING_ROCK" min="2" max="3"/>

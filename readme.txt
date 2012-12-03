@@ -102,13 +102,15 @@ Ships based on concept art by Amplitude Studios
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
 
-7 (planned)
+7
 		  - Added Sonata drones
 		  - Added idle "talk with crew" feature		  
 		  - Added EFP projectile
 		  - Added custom soundtrack
+		  - Convert scoreUI
+
+		  - Add song license info, credits (planned)
 		  - Edit "Last Stand" (planned)
-		  - Convert scoreUI (planned)
 		  - Clean up Sower Terraformer ship image (planned)
 		  - Add Sower Terraformer B (planned)
 		  - Add diverse Sophon sector events (planned)
