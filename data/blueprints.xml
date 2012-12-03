@@ -980,8 +980,8 @@
 
  <weaponBlueprint name="SOPHON_LASER_2">
 	<type>BEAM</type>
-	<title>Sapphire Laser</title>
-	<short>Sapphire L.</short>
+	<title>Ti-Sapphire Laser</title>
+	<short>Sapphire Laser</short>
 	<desc>Advancements in active cooling allow ordinary Titanium-doped Sapphire lasers to be scaled up to a military useful power level.</desc>
 	<tooltip>1 damage per room, fast firing, good beam size.</tooltip>
 	<damage>1</damage>
@@ -1210,7 +1210,7 @@
 <weaponBlueprint name="BASIC_LASER_2">
 	<type>BEAM</type>
 	<title>Synchrotron Laser</title>
-	<short>Synchro Laser</short>
+	<short>Synch Laser</short>
 	<desc>A higher-energy form of the standard laser weapon, Synchrotron Lasers are widely available thanks to the creation of cheap and portable particle accelerators.</desc>
 	<tooltip>One damage per room, small chance of fire.</tooltip>
 	<damage>1</damage>
@@ -1285,7 +1285,7 @@
 <weaponBlueprint name="BASIC_KINETIC_1">
 	<type>LASER</type>
 	<title>High Isotope Slug Thrower</title>
-	<short>Slugger I</short>
+	<short>Slug Thrower</short>
 	<desc>By using advanced fabrication systems, projectiles of high-isotope materials can be casted and contained effectively.</desc>
 	<tooltip>One shot, one damage per shot.</tooltip>
 	<damage>1</damage>
