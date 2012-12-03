@@ -567,7 +567,7 @@ item - Dust + that thing  -->
 		<choice>
 			<text>"I guess we all had our reasons for joining the Pilgrims."</text>
 			<event>
-				<text>"Don't get ME started on ‘reason' with all of this damn Sophon culture around our kids. We have one fucking chance - win the war, restore our sovereignty, close our borders, bring the humanity back to humanity." You're a Pilgrim, sure, but his views make you a bit uncomfortable.</text>	
+				<text>"Don't get ME started on 'reason' with all of this damn Sophon culture around our kids. We have one fucking chance - win the war, restore our sovereignty, close our borders, bring the humanity back to humanity." You're a Pilgrim, sure, but his views make you a bit uncomfortable.</text>	
 			</event>
 		</choice>		
 	</event>
@@ -754,7 +754,7 @@ item - Dust + that thing  -->
 		<choice>
 			<text>"She's a good ship. How do you think she'd stack up against a Sophon frigate?"</text>
 			<event>
-				<text>"By scale or by purpose? We would classify vessels this size, in Human, with the prefix ‘Kilo-'. The suffix indicates the ship's role - discovery, exploration, conflict. There's no direct translation."</text>
+				<text>"By scale or by purpose? We would classify vessels this size, in Human, with the prefix 'Kilo-'. The suffix indicates the ship's role - discovery, exploration, conflict. There's no direct translation."</text>
 				<choice>
 					<text>"One of your...'Kiloconflict' ships, then. How do they compare?"</text>
 					<event>
@@ -778,11 +778,11 @@ item - Dust + that thing  -->
 		<choice>
 			<text>"Honestly...do you think the Pilgrims are right?"</text>
 			<event>
-				<text>"‘Honestly'? Redundant. Your question is ambiguous, but I believe you are asking whether the actions of the seceding planets are morally justifiable - is that correct?"</text>
+				<text>"'Honestly'? Redundant. Your question is ambiguous, but I believe you are asking whether the actions of the seceding planets are morally justifiable - is that correct?"</text>
 				<choice>
 					<text>Nod.</text>
 					<event>
-						<text>"Rational or not, by Sophon morality or by Human, all beings should have the right to choose their own company - ‘freedom of association', I believe, is the Human term. All beings should have the right to believe what they wish."</text>
+						<text>"Rational or not, by Sophon morality or by Human, all beings should have the right to choose their own company - 'freedom of association', I believe, is the Human term. All beings should have the right to believe what they wish."</text>
 						<choice>
 							<text>"That answer was less than satisfying."</text>
 							<event>
@@ -854,7 +854,7 @@ item - Dust + that thing  -->
 				<choice>
 					<text>"Do you agree with them?"</text>
 					<event>
-						<text>"Humanity is certainly powerful. But realpolitik is based on circumstance, not pure theory; it is not quite a ‘Sophon' way of thinking. I do not know that the Sophon should become too fond of thinking in this barbaric fashion."</text>
+						<text>"Humanity is certainly powerful. But realpolitik is based on circumstance, not pure theory; it is not quite a 'Sophon' way of thinking. I do not know that the Sophon should become too fond of thinking in this barbaric fashion."</text>
 					</event>
 				</choice>				
 			</event>
