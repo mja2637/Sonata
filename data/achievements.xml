@@ -165,7 +165,7 @@
 </achievement>
 
 <achievement id="ACH_TOUGH_SHIP">
-	<name>1% Of Nothing</name>
+	<name>Skin of your Teeth</name>
 	<desc>As the Kestrel Cruiser, repair back to full health when it only has 1 HP remaining.</desc>
 	<img>achievements/kestral_3.png</img>
 	<multiDifficulty>1</multiDifficulty>
@@ -243,7 +243,7 @@
 </achievement>
 
 <achievement id="ACH_IONED">
-	<name>The guns... They've stopped</name>
+	<name>The guns...They've stopped</name>
 	<desc>Have 4 enemy systems or subsystems ioned at the same time while using the Engi Cruiser.</desc>
 	<img>achievements/circle_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_CIRCLE</ship>
@@ -279,7 +279,7 @@
 <!-- MANTIS ACHIEVEMENTS -->
 
 <achievement id="ACH_MANTIS_CREW_DEAD">
-	<name>Take no prisoners!</name>
+	<name>WAAAARGH!</name>
 	<desc>Kill the crew of 20 ships by sector 6 in the Mantis Cruiser.</desc>
 	<img>achievements/mantis_cruiser_1.png</img>
 	<ship>PLAYER_SHIP_MANTIS</ship>

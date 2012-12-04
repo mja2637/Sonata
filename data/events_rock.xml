@@ -175,6 +175,7 @@ Environmnt:
 	<text>Shields failing and hull integrity on the ropes, the Sower vessel transmits an intergalactic standard distress signal, as well as their cargo manifest.</text>
 </textList>
 
+<!-- Sophon save ship male->female to agree w/....whatever -->
 
 <event name="ROCK_PIRATE">
 	<text load="ROCK_PIRATE"/>

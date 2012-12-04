@@ -593,7 +593,7 @@ item - Dust + that thing  -->
 		</choice>		
 	</event>	
 	<event>
-		<text>Their men aren't brutes enough: that's the trouble," you hear him roar, answering your question before you have a chance to finish. "They're a crowd of devitalized townsmen, and that's the truth of the matter. They can't produce better men for war than-" Then Pilgrims. Settlers, explorers, military veterans - the toughest of humans.</text>
+		<text>Their men aren't brutes enough: that's the trouble," you hear him roar, answering your question before you have a chance to finish. "They're a crowd of devitalized townsmen, and that's the truth of the matter. They can't produce better men for war than-" Than Pilgrims. Settlers, explorers, military veterans - the toughest of humans.</text>
 		<choice>
 			<text>"The United Empire has science, you know. It designed and it produces the ships and guns and equipment we use ."</text>
 			<event>

@@ -64,11 +64,11 @@ STRUCTURE SECTORS
 	<startEvent>START_BEACON</startEvent>
 	<!-- <event name="TEST" min="8" max="12"/>	
 	<event name="STORE" min="8" max="12"/>
+	-->
 	 <event name="TEST" min="8" max="12"/>
 	 <event name="NOTHING_2" min="5" max="7"/>
 	 <event name="NOTHING_3" min="5" max="7"/>
 	 <event name="NOTHING_4" min="5" max="7"/>
-	 -->
 	<!-- <event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
