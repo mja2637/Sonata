@@ -9,6 +9,14 @@
 <kinetic4 volume="3">weapons/kinetic_4.wav</kinetic4>
 <pulse1 volume="5">weapons/pulse.wav</kinetic1>
 
+<!-- Crew sounds -->
+<crewLaser1 volume="2">weapons/kinetic_2.mp3</crewLaser1>
+<crewLaser2 volume="2">weapons/kinetic_2.mp3</crewLaser2>
+<crewLaser3 volume="2">weapons/kinetic_2.mp3</crewLaser3>
+<rockThrow1 volume="2">weapons/pulse.wav</rockThrow1>
+<rockThrow2 volume="2">weapons/pulse.wav</rockThrow2>
+<rockThrow3 volume="2">weapons/pulse.wav</rockThrow3>
+
 <!-- Soundtrack files -->
 <music>
 	<track>
