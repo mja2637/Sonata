@@ -3484,7 +3484,7 @@
 
 <droneBlueprint name="COMBAT_ION">
 	<type>COMBAT</type>
-	<title>Boeing "Manta" USV</title>
+	<title>Boeing "Moray" USV</title>
 	<short>Anti-System USV</short>
 	<desc>Powered with an electrostatic laser, which uses ionized plasma to direct a powerful electric current at an enemy's systems. Slow but tactically decisive.</desc>
 	<power>2</power>
@@ -3551,7 +3551,7 @@
 
 <droneBlueprint name="COMBAT_1_SOWER">
 	<type>COMBAT</type>
-	<title>Sower Gun Drone</title>
+	<title>"Roc" Sower Gun Drone</title>
 	<short>Sower USV</short>
 	<desc>It is unknown whether this drone is itself a Sower, or just a USV. Armed with an autocannon.</desc>
 	<power>2</power>
@@ -3567,7 +3567,7 @@
 
 <droneBlueprint name="COMBAT_BEAM">
 	<type>COMBAT</type>
-	<title>Raytheon-Denel "Moray" USV</title>
+	<title>Raytheon-Denel "Manta" USV</title>
 	<short>Laser USV</short>
 	<desc>Small drone armed with a cheap COTS laser.</desc>
 	<power>2</power>

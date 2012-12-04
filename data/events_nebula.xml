@@ -1,15 +1,9 @@
 ﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--     ' " "
-			SUMMARY  - 
-A list of all main events to be called by lists
-	(does not include sub-events)
-	
-	
-	
-	NOTE: we need to make all lists with "NEBULA_" in it trigger the creation of a nebula
+<!--	
 
-	
+MATT: Need to update Nebula_Empty to standard. 
+
 Structure:
 	FLEET_EASY_NEBULA
 	NEBULA_EMPTY
@@ -45,7 +39,6 @@ Storm Environment:
 
 --->
 
-
 <eventList name="NEBULA_HOSTILE">
 	<event load="NEBULA_REBEL"/>
 	<event load="NEBULA_AUTO"/>
@@ -55,7 +48,8 @@ Storm Environment:
 	<event load="STORM_AUTO"/>
 	<event load="STORM_REBEL"/>
 	<event load="NEBULA_BOARDING"/>
-	<!--<event load="STORM_BOARDING"/>-->
+	<event load="STORM_BOARDING"/>
+	<event load="STORM_BOARDING_MANTIS"/>
 </eventList>
 
 <eventList name="NEBULA_NEUTRAL">
@@ -68,9 +62,6 @@ Storm Environment:
 	<event load="NEBULA_MANTIS_CHOICE"/>
 	<event load="NEBULA_REBEL_CHASE"/>
 </eventList>
-
-
-
 
 <!-----------
 		STRUCTURE!!!
@@ -124,8 +115,6 @@ Storm Environment:
 	<text>With the sensors down, you spend a good deal of time staring out the window. It is, you must admit, rather beautiful here.</text>
 	<text>There's nothing here, save for vast swirls of gas reflecting rays from a distant sun.</text>
 </textList>
-	
-
 
 <!-----------
 		HOSTILE!!!
@@ -147,7 +136,6 @@ Storm Environment:
 	<text>A UE ship hails, but you don't take chances in conditions like this.  You block the frequency and prepare to engage.</text>
 </textList>
 
-
 <event name="NEBULA_AUTO">
 	<text load="NEBULA_AUTO_LIST"/>
 	<ship load="REBEL_AUTO" hostile="true"/>
@@ -160,7 +148,6 @@ Storm Environment:
 	<text>This drone isn't looking for you. Perhaps it's scouting ahead for the United Empire's expansion or maybe they're seeking to use this nebula for cover. Regardless, it identifies you as hostile.</text>
 	<text>It's worrying that the Empire has expanded so deep into uncharted space, even if it is only an unmanned craft.  It arms its weapons; you should do the same.</text>
 </textList>
-
 
 <event name="NEBULA_AUTO_WARNING" unique = "true">
 	<text>It appears that an automated United Empire scout was positioned within the nebula to warn of your passing.</text>
@@ -193,15 +180,6 @@ Storm Environment:
 	<text>You notice a Mantis attack ship ducking between the clouds of swirling space stuff; it's hunting you. You try to get the jump and move in to attack.</text>
 
 </textList>
-
-
-
-
-
-
-
-
-
 
 <!-----------
 		NEUTRAL!!!
@@ -290,7 +268,6 @@ Storm Environment:
 		</event>
 	</choice>
 </event>
-
 
 <event name="NEBULA_AUTO_DEFENSE_ITEM" unique="true">
 	<text>An advance Empire automated ship remains stationed near a small space-station. However, without functioning sensors it is impossible to tell what is inside.</text>
@@ -430,11 +407,11 @@ Storm Environment:
 </event>
 
 <event name="NEBULA_MANTIS_CHOICE" unique="true">
-	<text>Navigating the fog blind, you practically bump hulls with a Mantis ship. They hail you: "Pah! This transgression will be overlooked. Nebula, very dangerous. Next time, humans all die."</text>
+	<text>Navigating the fog blind, you practically bump hulls with a Mantis ship. They hail you: "Pah! This transgression will be overlooked. Nebula, very dangerous. Next time, Hu-mans all die."</text>
 	<ship load="MANTIS_FIGHT" hostile="false"/>
 	<environment type="nebula"/>
 	<choice>
-		<text>There won't be a next time. Open fire!</text>
+		<text>Really? Discression, from a Mantis? Fuck that. Open fire!</text>
 		<event>
 			<ship hostile="true"/>
 		</event>
@@ -476,7 +453,7 @@ Storm Environment:
 </event>
 <eventList name="NEBULA_REBEL_CHASE_LIST">
 	<event>
-		<text>You follow their vapour trails and surf onto their six o' clock, weapons hot.</text>
+		<text>You follow their vapour trails and surf onto their six o'clock, weapons hot.</text>
 		<ship hostile="true"/>
 	</event>
 	<event>
@@ -496,7 +473,7 @@ Storm Environment:
 ------------>
 
 <event name="NEBULA_TRADER" unique="true">
-	<text>It's hard to see why, but this beacon is apparently a tourist destination. One of the ships at the small station is offering a deal.</text>
+	<text>Inside a more open region of the nebula, a small Sophon science vessel hails you with a trade offer.</text>
 	<environment type="nebula"/>
 	<choice>
 		<text>Trade</text>
@@ -507,12 +484,6 @@ Storm Environment:
 		<event/>
 	</choice>
 </event>
-
-
-
-
-
-
 
 <!-----------
 		BOARDERS!!!
@@ -526,21 +497,14 @@ Storm Environment:
 </event>
 <textList name="NEBULA_BOARDING_TEXT">
 	<text>You see a small station nearby and feel the shudder of shots ringing through the ship. You can't be sure without sensors, but it seems there may be intruders on the ship!</text> 
-	<text>You arrive in the nebula and immediately receive a message from an unknown source, "Prepare to be boarded!"  With the static from the nebula, there's no way to tell where they came from, but you hear shots fired on board the ship.</text>
+	<text>You arrive in the nebula and immediately receive a message from an unknown source, "Prepare to be boarded!"  With the static from the nebula, there's no way to tell who it came from, but you hear shots fired on board the ship.</text>
 	<text>You see a number of derelict ships near this beacon. After a short time you hear the tell-tale sounds of a teleporter and shouts coming from within the ship. You've been boarded!</text>
 </textList>
-
-
-
-
-
 
 <!-----------
 		STORM!!!
 	Events with storm
 ------------>
-
-
 <event name="STORM_AUTO" unique = "true">
 	<text>You jump into a sector of the nebula beset by a plasma storm. An automated loyalist scout stationed at the beacon moves in to attack.</text>
 	<environment type="storm"/>
@@ -557,7 +521,7 @@ Storm Environment:
 	<choice req="cloaking" hidden="true">
 		<text>(Cloaking) Use your cloaking to escape.</text>
 		<event>
-			<text>By using your advanced cloaking system you easily lose your pursuer in the storm.</text>
+			<text>You rig for silent running and evade the USV.</text>
 		</event>
 	</choice>
 </event>
@@ -566,7 +530,7 @@ Storm Environment:
 		<text>You successfully lose the ship in the storm.</text>
 	</event>
 	<event>
-		<text>Despite your advanced engines you are unable to shake them; you turn and prepare for a fight.</text>
+		<text>They were able to follow the plasma trail left by your oversized engines; you turn and prepare for a fight.</text>
 		<ship load = "REBEL_AUTO" hostile="true"/>
 	</event>
 </eventList>
@@ -577,13 +541,17 @@ Storm Environment:
 	<environment type="storm"/>
 </event>
 
-<!--
 <event name="STORM_BOARDING" unique="true">
 	<text>You find two heavily damaged ships floating nearby, the remains of a battle. However, a teleporter nearby must be working, as you hear the sounds of someone beaming aboard followed by the shouts of a boarding party.</text> 
 	<environment type="storm"/>
 	<boarders min="3" max="5" class="human"/>
 </event>
--->
+<event name="STORM_BOARDING_MANTIS" unique="true">
+	<text>A Mantis ship is sitting in the middle of the storm, with only essential systems powered up. Unsurprisingly, they beam nearly their entire crew aboard your ship. This is the kind of shit that the Mantis live for; they must be having the time of their lives.</text> 
+	<environment type="storm"/>
+	<boarders min="2" max="4" class="mantis"/>
+</event>
+
 <event name="STORM_ITEMS" unique = "true">
 	<text>You jump into the middle of a plasma storm. Multiple recently incapacitated ships loom in the shadows, briefly illuminated by the lightning.</text>
 	<choice hidden="true">
@@ -625,6 +593,7 @@ Storm Environment:
 		<autoReward level="MED">weapon</autoReward>
 	</event>
 </eventList>
+
 <eventList name="STORM_ITEMS_PILOTING">
 	<event>
 		<text>Within the ship graveyard you find one ship that seems relatively untouched. On board you find an unconscious passenger and take him back to the ship. Once awake he offers to join your crew in thanks.</text>	
@@ -643,7 +612,3 @@ Storm Environment:
 		<text>Your pilot carefully explores the wrecks, but the storm has taken its toll. Any crew are long-since dead and the floating debris has been scorched beyond repair.</text>
 	</event>
 </eventList>
-
-
-
-

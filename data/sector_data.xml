@@ -205,7 +205,8 @@ CIVILIAN SECTORS
 	</rarityList>
 	<startEvent>START_BEACON_ZOLTAN</startEvent>
 	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
-	<event name="STORE_ZOLTAN" min="2" max="2"/>
+	<event name="STORE_ZOLTAN" min="1" max="2"/>
+	<event name="STORE" min="0" max="1"/>
 	<event name="NOTHING_ZOLTAN" min="1" max="2"/>
 	<event name="NOTHING_2" min="0" max="2"/>
 	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
@@ -216,7 +217,6 @@ CIVILIAN SECTORS
 	<event name="QUESTS_ZOLTAN" min="0" max="1"/>
 	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
 </sectorDescrption>
-
 
 <sectorDescription name="ZOLTAN_HOME" minSector="2" unique="true">   
 	<nameList>
@@ -238,7 +238,8 @@ CIVILIAN SECTORS
 	<startEvent>START_BEACON_ZOLTAN</startEvent>
 	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
 	<event name="ZOLTAN_PEACE_QUEST" min="1" max="1"/>
-	<event name="STORE_ZOLTAN" min="2" max="2"/>
+	<event name="STORE_ZOLTAN" min="1" max="2"/>
+	<event name="STORE" min="0" max="1"/>
 	<event name="NOTHING_ZOLTAN" min="1" max="2"/>
 	<event name="NOTHING_3" min="0" max="2"/>
 	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
@@ -266,17 +267,17 @@ CIVILIAN SECTORS
 		<blueprint name="slug" rarity="0"/>
 		<blueprint name="rock" rarity="1"/>
 		<blueprint name="human" rarity="2"/>
-	</rarityList>
-	<!--<event name="STORE" min="2" max="4"/>-->
-	
+	</rarityList>		
 	<startEvent>START_BEACON_ROCK</startEvent>
 	<event name="STORE_ROCK" min="2" max="2"/>
+	<event name="STORE" min="0" max="1"/>
 	<event name="NOTHING_ROCK" min="2" max="3"/>
 	<event name="DISTRESS_BEACON_ROCK" min="1" max="2"/>
-	<event name="HOSTILE_ROCK" min="6" max="8"/>
+	<event name="HOSTILE_ROCK" min="4" max="5"/>
+	<event name="HOSTILE_ROCK_PIRATE" min="2" max="3"/>
 	<event name="BOARDERS_ROCK" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
-	<event name="QUESTS_ROCK" min="0" max="1"/>
+	<event name="QUESTS_ROCK" min="1" max="2"/>
 	<event name="NEUTRAL_ROCK" min="7" max="8"/>
 	
 </sectorDescrption>
@@ -297,6 +298,7 @@ HOSTILE SECTORS
 	</trackList>
 	<startEvent>START_BEACON_PIRATE</startEvent>
 	<event name="STORE_PIRATE" min="1" max="2"/>
+	<event name="STORE" min="0" max="1"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="HOSTILE_PIRATE" min="6" max="8"/>
 	<event name="BOARDERS_PIRATE" min="1" max="1"/>
@@ -319,6 +321,7 @@ HOSTILE SECTORS
 	</trackList>
 	<startEvent>START_BEACON_REBEL</startEvent>
 	<event name="STORE_REBEL" min="1" max="2"/>
+	<event name="STORE" min="0" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="HOSTILE_REBEL" min="6" max="8"/>
 	<event name="BOARDERS_REBEL" min="1" max="1"/>
@@ -471,10 +474,11 @@ HOSTILE SECTORS
 	<event name="STORE_ROCK" min="2" max="2"/>
 	<event name="NOTHING_ROCK" min="2" max="3"/>
 	<event name="DISTRESS_BEACON_ROCK" min="1" max="2"/>
-	<event name="HOSTILE_ROCK" min="6" max="8"/>
+	<event name="HOSTILE_ROCK" min="5" max="6"/>
+	<event name="HOSTILE_ROCK_PIRATE" min="1" max="2"/>
 	<event name="BOARDERS_ROCK" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
-	<event name="QUESTS_ROCK" min="0" max="1"/>
+	<event name="QUESTS_ROCK" min="2" max="3"/>
 	<event name="NEUTRAL_ROCK" min="7" max="8"/>	
 </sectorDescrption>
 

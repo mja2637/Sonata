@@ -113,10 +113,8 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Edit "Last Stand" (planned)
 		  - Clean up Sower Terraformer ship image (planned)
 		  - Add Sower Terraformer B (planned)
-		  - Add diverse Sophon sector events (planned)
 		  - Add diverse civilian events (planned)		  
 		  - Add diverse nebula events (planned)
-		  - Add diverse Sower events (planned)
 		  - Add diverse Loyalist events (planned)
 		  - Balancing pass (planned)
 6a
