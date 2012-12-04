@@ -29,12 +29,10 @@ Environmnt:
 --->
 
 <!-- Event ideas --
-Condescending scientist who asks to join your ship for a fee because he wants to study your barbarian culture.
-
-shield research center - jams shields
-
--asteroids, sun
-
+Boarder "wink and nod"
+Sophon diplomat
+Pilgrim diplomat
+Science - investigate Sower
 -->
 
 
@@ -45,42 +43,24 @@ shield research center - jams shields
 	<event load="ZOLTAN_MANTIS"/>
 	<event load="ZOLTAN_ENGI"/>
 	<event load="ZOLTAN_ASTEROID"/>
-	
-
 	<event load="REBEL"/>
 	<event load="REBEL_AUTO"/>
 </eventList>
-
-	
-	
-	
-	
 
 <eventList name="NEUTRAL_ZOLTAN">
 	<event load="ZOLTAN_LIFERAFT"/>
 	<event load="ZOLTAN_SCIENCE_DOCK"/>
 	<event load="ZOLTAN_RIFT_FIGHT"/>
 	<event load="ZOLTAN_CREW_SCAN"/>
-
 	<event load="FRIENDLY_SLAVER"/>
 	<event load="PIRATE_BRIBER"/>
 	<event load="ASTEROID_EXPLORE"/>	
-	
-	<!--
-	<event load="BROKEN_REBEL_DRONE"/>
-	<event load="AUTO_DEFENSE_ITEM"/> -->
 </eventList>
-
-
-
-
-
 
 <eventList name="ITEM_ZOLTAN">
 	<event load="ZOLTAN_FREE_AUGMENT"/>
 	<event load="ZOLTAN_FREE_MAP"/>
 	<event load="ZOLTAN_ODD_MOON"/>
-	
 	<event load="FIND_DRONE"/>
 	<event load="FREE_ITEMS"/>
 	<event load="FUEL_FOR_DRONE"/>
@@ -89,24 +69,15 @@ shield research center - jams shields
 	<event load="TRADER_CIV"/>
 </eventList>
 
-
-
-
 <eventList name="BOARDERS_ZOLTAN">
 	<event load="ZOLTAN_BOARDERS"/>
 	<event load="ZOLTAN_BOARDERS_MANTIS"/>
-
-
 	<event load="BOARDERS_HACKING"/>
-
 </eventList>
-
 
 <eventList name="DISTRESS_BEACON_ZOLTAN">
 	<event load="ZOLTAN_DISTRESS_MANTIS"/>
 	<event load="ZOLTAN_DISTRESS_SHELL"/>
-	
-	
 	<event load="DISTRESS_SATELLITE_DEFENSE"/>
 	<event load="DISTRESS_STATION_FIRE"/>
 	<event load="FRIENDLY_BEACON"/>
@@ -114,34 +85,23 @@ shield research center - jams shields
 	<event load="STRANDED_BEACON"/>
 </eventList>
 
-
-
 <eventList name="QUESTS_ZOLTAN">
 	<event load="ZOLTAN_TRADE_HUB"/>
 	<event load="ZOLTAN_QUEST_PRIMITIVES"/>
-	
-	
 	<event load="FEDERATION_PLANET_SIGNAL"/>
 	<event load="QUEST_MANTIS_INVASION_START"/>
 	<event load="QUEST_CREWDEAD_START"/>
 </eventList>
 
-
 <eventList name="NEBULA_ZOLTAN">
 	<event load="NEBULA_ZOLTAN_ROCK"/>
 	<event load="NEBULA_ZOLTAN_EYE"/>
 	<event load="STORM_ZOLTAN_SUPPLY_CHOICE"/>
-	
-	
 	<event load="NEBULA_EMPTY"/>
 	<event load="NEBULA_EMPTY"/>
 	<event load="NEBULA_REBEL"/>  
 	<event load="NEBULA_AUTO"/>
 </eventList>
-	
-		
-
-
 
 
 <!-----------
@@ -164,30 +124,77 @@ shield research center - jams shields
 	<store/>
 </event>
 <textList name="STORE_ZOLTAN">
-	<text>The Sophon are fascinated by other species, and have set up something of an alien knick-knack shop here. Why not take a look?</text>
-	<text>An IHTG trade ship hails: "My friends! Please, there is nothing I don't have, and there is nothing worth wanting that I can't get. Why not take a look around my shop?"</text>
-	<text>A Mantis crew here has hunkered down in the abdomen of a long-dead space-whale - the only way, presumably, for them to operate their black-market trade without detection. Worth a look?</text>
-	
-	
+	<text>The IHTG has set up a joint shop with a group of Sophon machinists. Although it is difficult to tie most Sophon down to a single trade, these are mere engineers and applied scientists, and likely have little opportunity elsewhere in Sophon society.</text>
+	<text>This planet, a backwater otherwise, is known as one of the more capitalist areas in Sophon territory. Here, you can find Sophon who condenscend to haggle, trade, and build equipment for profit rather than fun.</text>
+	<text>A faint IFF signature - a private encryption scheme. A small team of Mantises (Mantii?) has hunkered down on a small moon. They're selling goods, which were obtained illegally as a matter of course. This being bat country, you don't want to stop here; if they've just come off a fresh kill, though, you may get an honest trade.</text>
 </textList>
 
 <event name="NOTHING_ZOLTAN">
-	<text load="NOTHING_ZOLTAN"/>
+	<event load="NOTHING_ZOLTAN_EVENTS"/>
 </event>
-<textList name="NOTHING_ZOLTAN">
-	<text>There are some mineral-rich asteroids here that the Sophon have left idle, but you've none of the necessary equipment to mine them.</text>
-	<text>You have to admit - Sophon space is a beautiful and peaceful place indeed. However, re-engaging the FTL and finishing your mission is your priority, not sight-seeing.</text>
-	<text>A light asteroid field is entering the atmosphere of a nearby planet - a fireworks show on a galactic scale. There's little for it but to take in the ambiance and program the next jump.</text>
-	<!-- TO DO - need more -->
-	<text>You stumble upon some Sophon military vessels engaging in combat training. Their Energy Shields are impressive, but you note how quickly beam and ion weaponry take them down.</text>
-	<text>You don't have time to hail the Sophon ship that was waiting at this beacon before it jumps away. They are an aloof race.</text>
-	<text>A Sophon orbital research park is stationed at this beacon. You admire the beautiful architecture of the station, but its massive power signature makes you nervous. Time to move on.</text>
-	<text>A message broadcast from a nearby planet announces the presence of an ancient Sophon university available for visiting. Likely just a tourist trap, but still too bad you don't have the time to visit.</text>
-</textList>
 
-
-
-
+<eventList name="NOTHING_ZOLTAN_EVENTS">
+	<event>
+		<text>This sector is crowded with Sophon vessels. A light asteroid field is entering the atmosphere of a nearby planet - a fireworks show on a galactic scale. Beautiful.</text>
+		<choice hidden="true" req="energy">
+			<text>Talk to your Sophon crewmember</text>
+			<event>
+				<text>"This is a typical Sophon vacation spot - some of them are admiring this event, while others are relaxing by performing scientific measurements on it."</text>				
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>The Sophon military is holding an exercise near this beacon: symmetrical adversary tactics. Weapons crackle and spit across the impressive Sophon shield systems. They use their advanced beam lasers to cut through the outer shielding shell, then demolish the remaining layers with fearsome pulse lasers. Impressive tactics, to be sure - but would they work in a real war?</text>
+		<choice hidden="true" req="energy">
+			<text>Talk to your Sophon crewmember</text>
+			<event>
+				<text>"I've read about this ancient Human game - 'pule'? All the predictive trigonometry and physics in the galaxy won't help you predict the ball's path after a few bounces. War is the same way; it cannot be reduced to calculated maneuvers and risk management. You Humans have always been better at that sort of fuzzy thinking."</text>				
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>There's a Sophon ship waiting near this beacon; you hail them, but it ignores your hails and jumps away shortly afterwards. They can be an aloof race.</text>
+		<choice hidden="true" req="energy">
+			<text>Talk to your Sophon crewmember</text>
+			<event>
+				<text>"No reason to be offended, they just didn't feel compelled to answer."</text>				
+			</event>
+		</choice>
+		<choice hidden="true" req="human">
+			<text>Talk to your Human crewmember</text>
+			<event>
+				<text>"Eh, they get like this. Took a few years to get used to it after we made first contact. It's hard to be mad at them; when they DO talk to you, they're nice enough."</text>				
+			</event>
+		</choice>		
+	</event>
+	<event>
+		<text>A Sophon orbital research park is stationed at this beacon. You admire the beautiful architecture of the station, but its massive power signature makes you nervous. Time to move on.</text>
+		<choice hidden="true" req="energy">
+			<text>Talk to your Sophon crewmember</text>
+			<event>
+				<text>"Sophon have lost interest in boring old Electro-Weak theory research. This power signature indicates that the station is examining the nature of sub-Quantum phenomena; much juicier stuff." He pauses for a moment before remarking, "Yes. 'Juicy'. Such a delightful word! Human language is nearly as colorful as ours."</text>
+			</event>
+		</choice>
+	</event>	
+	<event>
+		<text>A message broadcast from a nearby planet announces the presence of an ancient Sophon university available for visiting. Likely just a tourist trap, but still too bad you don't have the time to visit.</text>
+		<choice hidden="true" req="energy">
+			<text>Talk to your Sophon crewmember</text>
+			<event>
+				<text>She turns up her nose. "This old place? They haven't published any fun research for decades."</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>You have to admit - Sophon space is a beautiful and peaceful place indeed. However, re-engaging the FTL and finishing your mission is your priority, not sight-seeing. You wonder if Sophon are ever nostalgic for their homeworld.</text>
+		<choice hidden="true" req="energy">
+			<text>Talk to your Sophon crewmember</text>
+			<event>
+				<text>"Nostalgia? I've lived with you Humans for a while now, but I still haven't figured that out. Intriguing. I have to agree, this sector is particularly aesthetically pleasing."</text>
+			</event>
+		</choice>
+	</event>	
+</eventList>
 
 <!-----------
 		DISTRESS!!!
@@ -195,20 +202,20 @@ shield research center - jams shields
 ------------>
 
 <event name="ZOLTAN_DISTRESS_MANTIS" unique="true">
-	<text>Your jump interrupts a Sophon security ship as it follows a Mantis pirate into an asteroid field. They message you, "Your presence here will continue to be tolerated - but please, do not interfere."</text>
+	<text>Your jump interrupts a Sophon security ship as it follows a Mantis pirate into an asteroid field. They message you, "This is a delicate matter - please, don't feel the need to assist."</text>
 	<environment type="asteroid"/>
 	<distressBeacon/>
 	<choice hidden="true">
 		<text>Interfere and save the Mantis ship.</text>
 		<event>
-			<text>Sometimes you have to bet on the underdog - even on the rare occasions that the underdog is a Mantis warship. You set off for the heart of the asteroid field and engage the Sophon there.</text>
+			<text>A 'delicate matter?' Something's up. You set off for the heart of the asteroid field and engage the Sophon there.</text>
 			<ship load="ZOLTAN_SHIP_SAVE_MANTIS1" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Interfere and help the Sophon ship.</text>
 		<event>
-			<text>You overtake the Sophon and catch up with the Mantis ship in the asteroid belt. Time to make some friends.</text>
+			<text>You overtake the Sophon and catch up with the Mantis ship in the asteroid belt. Humans and Mantis have been killing each other for decades, which makes it a tradition. You'll be damned if you'll buck position.</text>
 			<environment type="asteroid"/>
 			<ship load="ZOLTAN_SHIP_SAVE_MANTIS2" hostile="true"/>
 		</event>
@@ -221,16 +228,12 @@ shield research center - jams shields
 	</choice>
 </event>
 
-
 <event name="ZOLTAN_DISTRESS_SHELL" unique="true">
-	<text>You arrive to find a massive Sophon freighter with no one at the helm. It's a mystery what happened to the crew, but it'd be a shame to let the opportunity go to waste.</text>
+	<text>You arrive to find an elegant Sophon yacht, all curves and flying buttresses, laying silent in space. You hail; no answer. The ship is abandoned. It's a mystery what happened to the crew, but it'd be a shame to let the opportunity go to waste.</text>
 	<distressBeacon/>
 	<autoReward level="RANDOM">standard</autoReward>
 	
 </event>
-	
-
-	
 	
 <!-----------
 		QUEST!!!
@@ -317,6 +320,13 @@ shield research center - jams shields
 					<ship load="ZOLTAN_PRIMITIVES_ZOLTAN" hostile="true"/>
 				</event>
 			</choice>
+			<choice hidden="true" req="energy">
+				<text>Ask your Sophon crewmember to defuse the situation</text>
+				<event>
+					<text>"I am conducting a research study on the differential between United Empire and Pilgrim Human conduct," your crewmember says to the Sophon captain, "Although it is lamentable to disturb the development of this race, we must prioritize research of the behavior of sentient races." It seems to have worked, and the Sophon move off. Naturally, the Empire warship attacks you immediately. What did you expect?</text>
+					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
+				</event>
+			</choice>			
 			<choice hidden="true">
 				<text>Protect the aliens' way of life - Attack the United Empire ship.</text>
 				<event>
@@ -324,6 +334,13 @@ shield research center - jams shields
 					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
 				</event>
 			</choice>
+			<choice hidden="true" req="human">
+				<text>Attack the United Empire ship, but insult them first.</text>
+				<event>
+					<text>"Tumhara matta chode hain! I am of you motherfucking loyalists in this motherfucking game! Yob tvoyu maht, nekulturniy suka! Go suck up a Mantis, you socialist panty-wasted scruffy-looking nerf herders!" You may not have accomplished much with your words, but damn if that didn't feel good.</text>
+					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
+				</event>
+			</choice>			
 			<choice hidden="true">
 				<text>Leave.</text>
 				<event>
@@ -445,7 +462,7 @@ shield research center - jams shields
 	<text>A Sophon ship makes contact. "The nature of the day is rotational. The fever is emaciated. The reason is-" They've caught some nasty deep space dementia. Before you can consider finding help for them, they open fire.</text>
 	<text>You're surprised when a stationary Sophon ship opens fire. It appears there are aggressive pugilists even among the 'enlightened'.</text>
 	<text>You receive a message, "This area is off limits. Submit your ship to processing." It's only one guard ship in a lonely beacon. You decide to fight your way out.</text>
-	<text>You discover a number of Sophon civilian ships fighting off pirates. Unfortunately one ship mistakes your purpose and moves in to attack! They are refusing all communication; you have no choice but to fight.</text>
+	<text>You discover a number of Sophon civilian ships fighting off pirates. Unfortunately one ship mistakes your purpose and moves in to attack! Their communications have been shot out; you have no choice but to fight.</text>
 	<text>Like many areas in Sophon space, the residents of this sector prepared well for Galactic war. The military here seem to have given up reasoning with foreigners, preferring instead to attack on sight!</text>
 	<text>A Sophon ship is waiting at this beacon. They request your identification, but radiation from the sun in this system is disrupting your communications. They take your silence for aggression and move in to attack.</text>
 	<text>The Sophon ship patrolling this area hails you: "This area is off limits. Secrecy is vital." They power their weapons.</text>
@@ -478,13 +495,13 @@ shield research center - jams shields
 </event>
 
 <event name="ZOLTAN_ENGI" unique="true">
-	<text>You jump into a debris field that used to be a Sophon cruiser. Unfortunately, its Engi escort takes you for the attacker and retaliates! They refuse all hails.</text>
+	<text>You jump into a debris field that used to be a small Sophon vessel. Sensors warn that its putative attacker - an Engi combat craft - has locked weapons on you. You suspect one of the false-flag attacks which Mantis are notorious for, but the details are unimportant with the ship fast bearing down on you.</text>
 	<ship load="ENGI_SHIP" hostile="true"/>
 </event>
 
 
 <event name="ZOLTAN_ASTEROID" unique="true">
-	<text>You arrive in an asteroid field and are greeted by a Sophon guard, "By attempting to access these closed mining fields, you are in violation of the Natural Mineral Protection Act. Your weaponry will be confiscated for processing." You don't have time for this.</text>
+	<text>You arrive in an asteroid field and are greeted by a Sophon guard. "This is a highly strategic area," he hisses, "The Empire has spies everywhere. Do you have any idea what could happen if they catch us allowing a Pilgrim warship to transit here? We're going to have to detain you." You don't have time for this.</text>
 	<environment type="asteroid"/>
 	<ship load="ZOLTAN_SHIP" hostile="true"/>
 </event>
@@ -496,7 +513,7 @@ shield research center - jams shields
 ------------>
 
 <event name="ZOLTAN_LIFERAFT" unique="true">  <!-- ALSO A QUEST!!-->
-	<text>You pick up a Sophon life raft floating in space. Its inhabitant asks you to retake his ship from the pirates who recently commandeered it. "It is, of course, critical," she concludes, "that you not destroy my vessel in the process."</text>
+	<text>You pick up a Sophon life raft floating in space. Its inhabitant asks you to retake her ship from the pirates who recently commandeered it. "It is, of course, critical," she concludes, "that you not destroy my vessel in the process."</text>
 	<ship load="ZOLTAN_LIFERAFT" hostile="false"/>
 	<choice hidden="true">
 		<text>Engage the pirates.</text>
@@ -507,7 +524,7 @@ shield research center - jams shields
 	<choice>
 		<text>Leave.</text>
 		<event>
-			<text>You refuse to get his ship back, but still offer to drop her off at the next station. The Sophon is displeased, but directs you to a nearby starbase just the same.</text>
+			<text>You refuse to get her ship back, but still offer to drop her off at the next station. She is incensed, but directs you to a nearby starbase just the same.</text>
 		</event>
 	</choice>
 </event>
@@ -552,46 +569,36 @@ shield research center - jams shields
 
 
 <event name="ZOLTAN_RIFT_FIGHT" unique="true">
-	<text>You come to a quiet part of Sophon space and encounter an ancient Sophon wise man who has managed to harness the power of a spatial rift, but seems to have been driven completely mad by the power. "Choose your doom," he demands. This is all part of a day's work.</text>
+	<text>You come to a quiet part of Sophon space and encounter an ancient Sophon professor who has managed to do inspeakable things with every Sophon's favorite tool, the particle accelerator. He has opened a wormhole; he is, of course, quite mad. Batshit insane. Most likely tenured. And quite brilliant, actually; he hails you quoting Shakespeare and demanding a pound of flesh. As you are disinclined to comply with his request, he asks for something else: your beliefs regarding the Endless.</text>
 	<choice hidden="true">
-		<text>Mantis.</text>
+		<text>"They were wise."</text>
 		<event>
-			<text>"You like a challenge. So be it!" A wormhole forms and a confused, angry Mantis ship hurtles toward you!</text>
+			<text>"They lost sight of what they didn't know! Their arrogance grew with their power!" The wormhole pulses and a confused, angry Mantis ship hurtles toward you!</text>
 			<ship load="ZOLTAN_RIFT_MANTIS" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Slug.</text>
+		<text>"They were powerful."</text>
 		<event>
-			<text>"Do not be fooled, Pilgrim, by a soft underbelly." You detect a wormhole opening up, and seconds later a Slug ship is attacking from the other direction!</text>
+			<text>"Even unlimited power was not enough to save the Endless - nor will it save you, Pilgrim!" His crazed cackling rings in your ears. The wormhole opens up, and seconds later a Slug ship is attacking from the other direction!</text>
 			<ship load="ZOLTAN_RIFT_SLUG" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Sower.</text>
+		<text>"They were Gods."</text>
 		<event>
-			<text>"An ancient foe for a hardened veteran." You detect a wormhole opening up, and a Sower ship appears with guns blazing. It appears they were in combat when they were thrust across space-time.</text>
+			<text>"Aha, a Pilgrim!" he cackles, "Gods, you say. But in strange aeons, even gods may die!" The wormhole contracts, then expands - a Sower ship appears with guns blazing. It appears they were in combat when they were thrust across space-time.</text>
 			<ship load="ZOLTAN_RIFT_ROCK" hostile="true"/>
 		</event>
 	</choice>
-	<!--
-	<choice hidden="true">
-		<text>Crystalline Beings</text>
-		<event>
-			<text>The Sophon is quiet for a moment, and then whispers, "Are you sure? Well, so be it then." A huge wormhole opens, and from within it looms a Crystalline ship, prepared for war.</text>
-			<ship load= ?!?!
-					JUSTIN DO THIS STILL!!!!!!! JUSTIN - TO DO
-		</event>
-	</choice> --->
 </event>
 <event name="ZOLTAN_RIFT_SUCCESS">
-	<text>When he sees you have emerged victorious, the Sophon wise man enters a rage. Rifts threaten to tear space apart until, instead, the Sophon implodes, sending a blast wave of Dust and debris dragged here from distant worlds in your direction.</text>
+	<text>You emerge victorious, and once again a hologram of the Sophon appears on your bridge. He is smiling. "With wisdom, with power, with humility, you may avoid the mistakes of your ancestors. You may achieve what us, their children, may only dream of." The wormhole snaps shut, leaving a glittering halo of Dust. The Sophon gestures before cutting the transmission - as if to say "take what you will".</text>
 	<autoReward level="HIGH">standard</autoReward>
 </event>
 
-
 <event name="ZOLTAN_CREW_SCAN" unique="true">
-	<text>You arrive at a Sophon security checkpoint set up in a perimeter around the beacon. "Travelling vessel, you will submit to crew profiling to identify fugitives of the empire."</text>
+	<text>You arrive at a Sophon security checkpoint set up in a perimeter around the beacon. "As per recent agreement with the United Empire, we need to screen your ship for Pilgrim fugitives."</text>
 	<choice hidden="true">
 		<text>You don't have time for this nonsense. Attack!</text>
 		<event>
@@ -613,14 +620,14 @@ shield research center - jams shields
 </event>
 <eventList name="ZOLTAN_CREW_SCAN_LIST">
 	<event>
-		<text>The Sophon security staff board your ship and scan the crew's faces into a computer. After a few tense moments of uncertainty they allow your ship to pass.</text>
+		<text>The Sophon security staff board your ship and scan the crew's faces into a computer. You can't help but feel nervous as they come towards you. To your surprise, the security officer winks at you and scans a nearby bulkhead instead. "No fugitives here! You may go, Captain."</text>
 	</event>
 	<event>
-		<text>The Sophon security staff board your ship and begin scanning the crew's faces into a computer. Suddenly alarms go off and the Sophon leap on one of your crew! "This person is wanted on five charges of Utter Villainy! Surrender them to us!"</text>
+		<text>The Sophon security staff board your ship and begin scanning the crew's faces into a computer. Suddenly alarms go off and the Sophon leap on one of your crew! "This person is wanted for parking like an asshole and mounting a rear spoiler on a front-engined ship! Surrender them to us!"</text>
 		<choice hidden="true">
 			<text>Give up your crew member.</text>
 			<event>
-				<text>It's a tough call, but Sophon law holds sway here. Besides, that one always seemed a bit shifty.</text>
+				<text>It's a tough call, but Sophon law holds sway here. Besides, that one always seemed a bit...shifty.</text>
 				<crewMember amount="-1"/>
 			</event>
 		</choice>
@@ -636,8 +643,6 @@ shield research center - jams shields
 	</event>
 </eventList>
 			
-		
-
 <!-----------
 		NEBULA!!!
 	Events with unique environments
@@ -649,7 +654,7 @@ shield research center - jams shields
 </event>
 
 <event name="NEBULA_ZOLTAN_EYE" unique="true">
-	<text>Inside this nebula you detect a rogue planet drifting through space, on its surface a huge monolith visible at this distance even to the naked eye. A Sophon elder hails you from the planet. "Through luck or intent, you have discovered the Great Eye. Look into its depths and receive your just desert."</text>
+	<text>Inside this nebula you detect a rogue planet drifting through space, on its surface a huge monolith visible at this distance even to the naked eye. A Sophon professor hails you from the planet. "Ah, I'm glad you're here! I am curious how this monolith will respond to Human stimulus."</text>
 	<environment type="nebula"/>
 	<choice hidden="true">
 		<text>Pull the ship in closer.</text>
@@ -668,7 +673,7 @@ shield research center - jams shields
 		<weapon name="BOMB_HEAL"/>
 	</event>
 	<event>
-		<text>You approach the planet and wait, but nothing happens. The Sophon hail: "And in the coming times, when the monolith speaks not with a man he has no future and must be left wanting."</text>
+		<text>You approach the planet and wait, but nothing happens. The Sophon hails: "Disappointing. The builders of this artifact must not recognize that which was in them, in you. You must accept their judgement."</text>
 		<ship load="ZOLTAN_SHIP" hostile="true"/>
 	</event>
 	<event>
@@ -677,7 +682,7 @@ shield research center - jams shields
 	</event>
 	<event>
 		<text>As you approach, a kaleidoscope of colours fills the view-screen and one of your crew begins to age rapidly in reverse, eventually disappearing into nothingness. Let's hope they've transcended physical existence, and not just been forced out of it.</text>
-		<crewMember amount="-1"/>  <!-- JUSTIN TO DO - Ask matt if this is too... obvious of a reference -->
+		<crewMember amount="-1"/>
 	</event>
 </eventList>
 
@@ -713,20 +718,16 @@ shield research center - jams shields
 ------------>
 
 <event name="ZOLTAN_BOARDERS" unique="true">
-	<text>There are few more zealous in their customs checks than the Sophon. A team of border police beam on board. There's just a little confusion over your weapons licences, but things escalate rapidly from heated discussion to gunfire!</text>
+	<text>"You never should have come here - your presence endangers the entire Sophon race! Some Sophon's tolerance of you Pilgrims risks ending years of friendship between us and the United Empire. Your secession, your life, are not worth our peace. Prepare to defend yourselves!"</text>
 	<ship load="ZOLTAN_SHIP" hostile="true"/>
 	<boarders min="3" max="4" class="energy"/>
 </event>
 
 <event name="ZOLTAN_BOARDERS_MANTIS" unique="true">
-	<text>The Mantis outcasts sometimes make the mistake of taking the Sophon for easy game. A scout moves in to attack while a boarding party beams aboard from a nearby transport!</text>
+	<text>The Mantis outcasts sometimes make the mistake of taking the Sophon for easy game, which may explain their presence in this normally peaceful sector. A Pilgrim ship is a much more attractive target, however. A scout moves in to attack while a boarding party beams aboard from a nearby transport!</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<boarders min="2" max="3" class="mantis"/>
 </event>
-
-
-
-
 
 <!-----------
 		SPECIAL!!!
@@ -849,15 +850,13 @@ shield research center - jams shields
 
 <textList name="ZOLTAN_SURRENDER">
 	<text>"Yes, yes, you've demonstrated your species' capacity for violence quite extensively, well done. If we reward your efforts will you bother someone else?"</text>
-	<text>The enemy ship hails; the vidscreen shows their bridge showered in sparks from malfunctioning equipment - it's safe to assume they're trying to surrender. Accept their offer?</text>
+	<text>The enemy ship hails; the vidscreen shows their bridge showered in sparks from malfunctioning equipment. Iit's safe to assume they're trying to surrender. Accept their offer?</text>
 	<text>Communications report that the Sophon are broadcasting on all frequencies. The captain appears on screen and says, "Yes, I am not surprised, your species hardly looks enlightened. Fine. Take what you wish."</text>
 	<text>The Sophon captain hails and mutters something about the border patrol force catching up with you someday; you're more interested in his offer of surrender.</text>
 	<text>"We assumed that your species intelligence was directly proportional to your brute strength. We yield."</text>
 	<text>"You have bested us. If only your species' efforts were put to use improving the galaxy rather than your military might."</text>
 	
-	<!-- duplicate for now -- add more?-->
-	
-	
+	<!-- duplicate for now -- add more?-->	
 	<text>"Yes, yes, you've demonstrated your species' capacity for violence quite extensively, well done. If we reward your efforts will you bother someone else?"</text>
 	<text>The enemy's power signature suddenly ceases, save for a weak, repeating signal - it's safe to assume they're trying to surrender. Accept their offer?</text>
 	<text>Communications report that the Sophon are broadcasting on all frequencies. The captain appears on screen and says, "In the face of superior force, acquiescence is only...logical. Take what you require."</text>
@@ -865,7 +864,3 @@ shield research center - jams shields
 	<text>"We assumed that your species intelligence was directly proportional to your brute strength. We yield."</text>
 	<text>"You have bested us. If only your species' efforts were put to use improving the galaxy rather than your military might."</text>
 </textList>
-	
-
-
-

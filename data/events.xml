@@ -1929,11 +1929,14 @@ item - Dust + that thing  -->
 	<store/>
 </event>
 <textList name="STORE_TEXT">
-	<text>A ship engineer has set up a small shop here.</text>
-	<text planet="NONE">You find yourself surrounded by a group of mysterious alien vessels. They hail you and apparently have some valuable technology for sale.</text>
-	<text planet="PLANET_POPULATED">A transmission from the nearby planet indicates an outpost below which offers supplies to travelers. You send down an away party to check it out.</text>
-	<text planet="PLANET_POPULATED">The space station here has a traveling merchant who shows you his wares.</text>
-	<text planet="NONE">There is only one other ship at this beacon, and it is showing heavy damage. You receive a message on your console: "Greetings traveler. We were crippled by a band of pirates and are now forced to sell our remaining valuable equipment to acquire the necessary supplies to get home."</text>
+	<text>A few small ships are visible on the vidscreen, and you almost activate weapons targeting. However, IFF indicates that they are IHTG traders: civilians. The pirates must be making you jumpy. You message them asking about their wares.</text>
+	<text planet="PLANET_POPULATED">You are hailed at the beacon by the calm voice of a Interstellar Holdings Trading Group customer service representative. The store is spotless and well-stocked and the staff radiates competence; it is likely the best store in the quadrant. It's basically a fucking professional operation.</text>
+	<text>You receive a wide-band automated message, "Welcome to our humble trade depot and shipyard! All are welcome!" The IHGT is a civilian organization, but well-maintained gunships are on station. They maintain the peace at a trade depot which likely serves both sides in this war.</text>
+	<text>A well armed independent transport ship and a squadron of fighters are in orbit nearby. You are wary of their trustworthiness but beggars can't be choosers.</text>	
+	<text>A spacecraft engineer has set up a bespoke shop in a small, but immaculate, space station. You board and speak with him about his services.</text>
+	<text planet="NONE">You'd think that aspiring merchants would avoid lonely beacons away from populated systems, but you'd be thinking incorrectly. A Sophon science vessel on a 5-year mission to explore strange new worlds and seek out life and new civilizations is hungry for news of the war; they seem willing to trade.</text>	
+	<text planet="PLANET_POPULATED">It's a frontier planet, but apparently the United Empire had used it as a staging area some weeks ago. The place was a mess after they left, but sympathetic locals are more than willing to sell you some of the supplies they left behind.</text>
+	<text planet="PLANET_POPULATED">The station cantina's menu advertises chicken sandwiches, but the meat smells suspiciously like space rat. Perhaps you'll have better luck with their equipment shop.</text>
 </text>
 
 <event name="FIND_DRONE">
