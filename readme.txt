@@ -2,7 +2,6 @@ SONATA
 
 An FTL mod.
 
-
 You are a pilot who steals a ship and joins the Pilgrims as they attempt to secede from the United Empire. You must travel from sector to sector ahead of the loyalists searching for you, and make your last stand with the resistance fleet.
 
 This mod is based on the storyline of Endless Space by Amplitude Studios, with modifications.
@@ -95,8 +94,18 @@ Condensed Anti-Neutrino Beam (Sophon): 4 bars, 3 damage, 65 length, ignores 1 sh
 
 
 3 VERSION INFO
-Created by Matt Alioto
-Some art by Jeremy McKellips
+Matt Alioto, mod concept & development
+"Dream Team", lore development
+Jeremy McCellips, main menu art
+Bren Tenkage, testing
+
+AndreaLoko (Beatpick), soundtrack
+Chiwawa (Beatpick), soundtrack
+Dhruva Aliman (Beatpick), soundtrack
+Feorm (Beatpick), soundtrack
+Proteus Noir (Beatpick), soundtrack
+Paul Ruskay (Relic), soundtrack
+
 Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
@@ -108,8 +117,9 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Added EFP projectile
 		  - Added custom soundtrack
 		  - Convert scoreUI
+		  - Sower/Sophon sprite recolor; custom Human/Sophon/Sower crew weapons
+		  - Updated in-game and readme credits
 
-		  - Add song license info, credits (planned)
 		  - Edit "Last Stand" (planned)
 		  - Clean up Sower Terraformer ship image (planned)
 		  - Add Sower Terraformer B (planned)
