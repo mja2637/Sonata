@@ -114,8 +114,9 @@ https://github.com/mja2637/Sonata/archive/master.zip
 7
 		  - Added Sonata drones
 		  - Added idle "talk with crew" feature		  
-		  - Added EFP projectile
-		  - Added custom soundtrack
+		  - Added EFP projectile		  
+		  - Added custom backgrounds
+		  - Added custom musics
 		  - Convert scoreUI
 		  - Sower/Sophon sprite recolor; custom Human/Sophon/Sower crew weapons
 		  - Updated in-game and readme credits

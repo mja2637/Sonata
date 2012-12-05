@@ -124,15 +124,14 @@ Environmnt:
 </textList>
 
 <event name="NOTHING_REBEL">
-	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_REBEL"/>
 </event>
 <textList name="NOTHING_REBEL">
-	<text>You enter a system bustling with loyalist activity.  Supply freighters and re-supply stations are dwarfed by a few heavy warships.  Luckily, no one seems to be paying attention to small cruisers.  No ships are scanning or messaging you.</text>
-	<text>You arrive near a small United Empire refueling depot.  Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity.  The only message you receive is a denial to your request to dock at the depot.</text> 
-	<text>There is not much of interest nearby.   A small sun in the distance with a few orbiting planets in nearby space provide little of interest.</text>
-	<text planet="NONE">There are no other ships near this beacon, however you detect a small communication relay.  You tap into it without a problem; there are no encryptions.  Most of the chatter revolves around troop and fleet movements, not particularly interesting.</text>
-	<text planet="PLANET_POPULATED_SMALL">There is a small planet nearby with scattered settlements.  A small loyalist fleet is in orbit with many ships ferrying back and forth.  It must be a more recently 'recovered' planet.</text>
+	<text back="BG_BORING">You enter a system bustling with loyalist activity.  Supply freighters and re-supply stations are dwarfed by a few heavy warships. Luckily, no one seems to be paying attention to small cruisers.  No ships are scanning or messaging you.</text>
+	<text back="BG_BORING">You arrive near a small United Empire refueling depot. Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity.  The only message you receive is a denial to your request to dock at the depot.</text> 
+	<text back="BG_BORING">There is not much of interest nearby. A small sun in the distance with a few orbiting planets in nearby space provide little of interest.</text>
+	<text back="BG_BORING" planet="NONE">There are no other ships near this beacon, however you detect a small communication relay. You tap into it without a problem; there are no encryptions. Most of the chatter revolves around troop and fleet movements, not particularly interesting.</text>
+	<text back="BG_BORING" planet="PLANET_POPULATED_SMALL">There is a small planet nearby with scattered settlements. A small loyalist fleet is in orbit with many ships ferrying back and forth. It must be a more recently 'recovered' planet.</text>
 </textList>
 
 
