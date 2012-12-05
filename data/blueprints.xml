@@ -1212,7 +1212,7 @@
 	<title>Synchrotron Laser</title>
 	<short>Synch Laser</short>
 	<desc>A higher-energy form of the standard laser weapon, Synchrotron Lasers are widely available thanks to the creation of cheap and portable particle accelerators.</desc>
-	<tooltip>One damage per room, small chance of fire.</tooltip>
+	<tooltip>Long beam, one damage per room, small chance of fire.</tooltip>
 	<damage>1</damage>
 	<sp>0</sp>
 	<fireChance>2</fireChance>
