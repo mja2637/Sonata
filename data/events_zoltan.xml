@@ -357,7 +357,7 @@ Science - investigate Sower
 		ITEM!!!
 	Events that can give something ususally no fight
 ------------>
-<event name="ZOLTAN_FREE_AUGMENT" unique="true">  <!-- this is pretty sweet :/  -->
+<event name="ZOLTAN_FREE_AUGMENT" unique="true">
 	<text>A Sophon academy sits docked just outside the beacon perimeter. They're happy to show you the fruits of their labor, and offer something to take home with you.</text>
 	<autoReward level="LOW">augment</autoReward>
 </event>
@@ -380,7 +380,7 @@ Science - investigate Sower
 			<text>You try not to fixate on the moon in the aft scanner and you set the coordinates for the next jump.</text>
 		</event>
 	</choice>
-	<choice hidden="true" req="BOARDER">  <!-- TODO make sure this works!!! -->
+	<choice hidden="true" req="BOARDER">
 		<text>(Boarding Drone) Send a drone to probe the surface.</text>
 		<event>
 			<text>Initial scans indicate a network of caves not far underground. You launch a boarding drone and it breaks through the surface into the cavern below.</text>
@@ -390,8 +390,8 @@ Science - investigate Sower
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>Your drone discovers a vast cave network and evidence of excavation. Buried deep below you find a Sophon scientist, still hard at work. He tells you that all his colleagues are long dead. You decide not to ask questions and offer to let him join your crew.</text>
-					<crewMember amount="1" class="energy"/>
+					<text>Your drone discovers a vast cave network and evidence of excavation. Buried deep below you find a Sophon scientist, still hard at work. She tells you that all her colleagues are long dead. You decide not to ask questions and offer to let her join your crew.</text>
+					<crewMember amount="1" class="energy">Itania</crewMember>
 				</event>
 			</choice>
 		</event>
@@ -538,7 +538,7 @@ Science - investigate Sower
 		<item_modify>
 			<item type="scrap" min="-40" max="-40"/>
 		</item_modify>
-		<crewMember amount="1" class="energy"/>
+		<crewMember amount="1" class="energy">Yesmin</crewMember>
 	</event>
 </event>
 
@@ -726,13 +726,31 @@ Science - investigate Sower
 <event name="ZOLTAN_BOARDERS" unique="true">
 	<text>"You never should have come here - your presence endangers the entire Sophon race! Some Sophon's tolerance of you Pilgrims risks ending years of friendship between us and the United Empire. Your secession, your life, are not worth our peace. Prepare to defend yourselves!"</text>
 	<ship load="ZOLTAN_SHIP" hostile="true"/>
-	<boarders min="3" max="4" class="energy"/>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<boarders min="3" max="4" class="energy"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) "Prepare to suck vacuum!" Beam the boarders off your ship.</text>
+		<event/>
+	</choice>	
 </event>
 
 <event name="ZOLTAN_BOARDERS_MANTIS" unique="true">
 	<text>The Mantis outcasts sometimes make the mistake of taking the Sophon for easy game, which may explain their presence in this normally peaceful sector. A Pilgrim ship is a much more attractive target, however. A scout moves in to attack while a boarding party beams aboard from a nearby transport!</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
-	<boarders min="2" max="3" class="mantis"/>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<boarders min="2" max="3" class="mantis"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam 'em into space. Pop goes the Mantis.</text>
+		<event/>
+	</choice>	
 </event>
 
 <!-----------

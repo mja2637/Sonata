@@ -353,7 +353,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	</event>
 	<event>
 		<text>They thank you for the assistance and when you tell them of your mission, one of the Engies ask if he can assist your crew.  You welcome him aboard.</text>
-		<crewMember amount="1" class="engi"/>
+		<crewMember amount="1" class="engi">Kangee</crewMember>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 </eventList>
@@ -474,14 +474,14 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 			<text>Continue...</text>
 			<event>
 				<text>The Engi who was saved offers to join your crew.</text>
-				<crewMember amount="1" class="engi"/>  
+				<crewMember amount="1" class="engi">Keezheekoni</crewMember>
 				<autoReward level="LOW">scrap_only</autoReward>
 			</event>
 		</choice>
 	</event>
 	<event>
 		<text>Your crew return safely to the airlock with the injured Engi and you put some distance on the station before it blows. The Engi, impressed by your crew, volunteers to join you.</text>
-		<crewMember amount="1" class="engi"/>  
+		<crewMember amount="1" class="engi">Takoda</crewMember>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
@@ -502,7 +502,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 		<text>Save the Engi!</text>
 		<event>
 			<text>Your away team heads straight for the Engi and returns with time to spare. You put some distance on the station before it blows and the Engi is so impressed by your crew that they volunteer to join you!</text>
-			<crewMember amount="1" class="engi"/>  
+			<crewMember amount="1" class="engi">Hastiin</crewMember>
 			<autoReward level="LOW">scrap_only</autoReward>
 		</event>
 	</choice>

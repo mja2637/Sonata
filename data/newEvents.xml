@@ -53,9 +53,6 @@
 	<event name="HOSTILE1" min="2" max="2"/>
 </eventCounts>
 
-
-
-
 <eventList name="NON_HOSTILE">
 	<event load="NEUTRAL"/>
 	<event load="ITEMS"/>
@@ -74,7 +71,6 @@
 	<event load="REBEL"/>
 	<event load="MANTIS_HOSTILE"/>
 </eventList>
-
 
 <eventList name="HOSTILE2">
 <!--
@@ -127,11 +123,6 @@
 	<!-- <event load="TAVERN_HIRE"/> -->
 </eventList>
 
-
-
-
-
-
 <eventList name="NEBULA">
 	<event load="NEBULA_EMPTY"/>
 	<event load="NEBULA_REBEL"/>  
@@ -147,11 +138,8 @@
 	<event load="NEBULA_BOARDING"/><!-- REMOVED FOR DEMO -->
 	<!-- <event load="STORM_BOARDING"/>  REMOVED FOR DEMO -->
 	<event load="NEBULA_MANTIS_FIGHT"/> 
-	<event load="NEBULA_WEAPONS_TRADER"/>
-
-		
+	<event load="NEBULA_WEAPONS_TRADER"/>		
 </eventList>
-
 
 <eventList name="ITEMS">
 	<event load="FIND_DRONE"/>
@@ -205,12 +193,6 @@
 	<event load="MANTIS_FIGHT"/>
 	<event load="MANTIS_FIGHT"/>
 </eventList>
-
-
-
-
-
-
 
 <!--    
 	  ***********
@@ -273,10 +255,6 @@
 	<text>TIP: Door Subsystem - Upgrading your doors will greatly reduce the chance fire will spread between rooms and slow boarder movement.</text>
 </textList>
 
-
-
-
-	
    <!--  not good quest event?
  <event name="TAVERN_HIRE" unique="true">
 	<text load="TAVERN_HIRE_TEXT"/>
@@ -318,59 +296,11 @@
 	<text>This beacon seems to serve as a meeting place for local traffic.  It seems like you can find crew willing to fight on your ship here... for a price.</text>
 </textList>
 -->
-
-
-
-
-
-
-
-
-
-
 <!-------------------------------
 
 	OUTDATED or TESTING events
 	
 ------------------------------->
-
-
-<event name="NEW" unique="true">
-	<ship load="NEW_TESTS" hostile="true"/>
-</event>
-<ship name="NEW_TESTS" auto_blueprint="REBEL_FAT"> 
-	<destroyed>
-		<text>You are able to collect Dust from the ship's debris.</text>
-	</destroyed>
-	<deadCrew load="DEAD_CREW_DEFAULT"/>
-</ship>
-
-
-
-
-
-
-<event name="DEATH_TEST">
-	<text>Death Test</text>
-	<crewMember amount="-1"/>
-</event>
-
-<event name="CREW_TEST">
-	<text>Crew Test</text>
-	<crewMember amount="2"/>
-</event>
-
-<ship name="TEST" blueprint="CRYSTAL_BOMBER">
-	<deadCrew/>
-	<destroyed/>
-</ship>
-
-
-
-
-
-
-
 
 <!--*******Cloaking-->
 <event name="STEALTH_1">
@@ -408,9 +338,6 @@
 	<text>The engineer who designed this ship clearly loved missiles.  Few opponents will be able to withstand this ship's missile barrage, but be sure to watch your ammo reserves.</text>
 </event>
 
-
-
-
 <event name="DEMO_END">
 	<text>Congratulations, that's the end of the training simulation! As a final lesson, you'll experience what it's like to be destroyed by a more powerful enemy. This pirate is equipped with our most advanced weapons and systems, including a prototype cloaking device. It's manned by aliens known to be the best engineers in the galaxy. And we've shutdown your engines as well, so there's no use trying to run away.</text>
 	<status type="limit" target="player" system="engines" amount="0"/>
@@ -426,14 +353,11 @@
 	</destroyed>
 </ship>
 
-
 <event name="ASTEROID_TEST">
 	<img back="BG_DARK" planet="NONE"/>
 	<text>We've come out in an asteroid field! We'll have to wait for the FTL to charge before we can get out of here, let's hope the ship holds up.</text>
 	<environment type="asteroid"/>
 </event>
-
-
 
 <event name="CASH_IN_DRONE">
 	<text>Your ship is currently not equipped with a drone system. You reduce the drone schematic to Dust.</text>
@@ -446,35 +370,3 @@
 <event name="UNLOCK_STEALTH">
 	<text>You stumble across a hidden Federation research laboratory!  They have been experimenting with some unique ship designs.  You download their blueprints for future use.</text>
 </event>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

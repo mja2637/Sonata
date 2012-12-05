@@ -173,7 +173,7 @@ Special
 	</event>
 	<event>
 		<text>After a short time alone with the commando, you are told he wishes to join the crew. Although you are surprised at the commandos willingness to swap allegiances, you trust your crew members' judgement about him.</text>
-		<crewMember amount="1" class="mantis"/>  
+		<crewMember amount="1" class="mantis">Coatl</crewMember>
 		<autoReward level="MED">stuff</autoReward>
 	</event>
 </eventList>
@@ -421,7 +421,7 @@ Special
 	</event>
 	<event>
 		<text>The Mantis inside considers you a messenger from the god of mercy and demands to join your crew.</text>
-		<crewMember amount="1" class="mantis"/>   <!-- NOTE - Doesnt work yet -gives human-->
+		<crewMember amount="1" class="mantis">Itzli</crewMember>
 	</event>
 	<event>
 		<text>A man bursts out of the life-pod screaming and claws his way into a corner. A rare survivor of Mantis captivity.  Once calm, the survivor offers to join your crew for a time.</text>
@@ -452,12 +452,21 @@ Special
 
 <event name="MANTIS_BOARDERS" unique="true">
 	<text load="MANTIS_BOARDERS"/>
-	<boarders min="2" max="4" class="mantis"/>
+	<choice>
+		<text>Shit.</text>
+		<event>
+			<boarders min="2" max="4" class="mantis"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam 'em into space.</text>
+		<event/>
+	</choice>	
 </event>
 <textList name="MANTIS_BOARDERS">
-	<text>A derelict and still smoking Mantis vessel floats by. The battle must have been recent; its surviving crew beam aboard.  Prepare for a fight!</text>
+	<text>A derelict and still smoking Mantis vessel floats by. The battle must have been recent; its surviving crew beam aboard.</text>
 	<text>Your world, all of a sudden, changes. The Mantis are on board your ship.</text>
-	<text>You hear a grating rattle and a soft clicking. You reach for your pistol.</text>
+	<text>You hear a grating rattle and a soft clicking. Mantis warriors must have beamed aboard your ship.</text>
 </textList>
 
 

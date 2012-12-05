@@ -2,9 +2,11 @@ SONATA
 
 An FTL mod.
 
-You are a pilot who steals a ship and joins the Pilgrims as they attempt to secede from the United Empire. You must travel from sector to sector ahead of the loyalists searching for you, and make your last stand with the resistance fleet.
+With cries of "Sic Semper Tyrannis", nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the "Pilgrims". The Empire's legislature interpreted this secession as treason, and the overwhelming might of the loyalist fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, your family and friends have all joined the resistance - and so you shall.
 
 This mod is based on the storyline of Endless Space by Amplitude Studios, with modifications.
+
+NOTE: It is highly recommended to use Splette's Higher-Res Backgrounds mod in conjunction with Sonata. Make sure that Higher-Res Backgrounds is loaded BEFORE Sonata in GMM.
 
 1 RACES
 2 WEAPONS
@@ -110,7 +112,7 @@ Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
-
+		  
 7
 		  - Added Sonata drones
 		  - Added idle "talk with crew" feature		  

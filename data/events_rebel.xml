@@ -566,7 +566,16 @@ Environmnt:
 <event name="NEBULA_REBEL_BOARDING" unique="true">
 	<environment type="nebula"/>
 	<text>There appears to be a number of small stations nearby.  Before you have time to scan them, warnings go off.  Some loyalist soldiers teleport aboard your ship!</text>
-	<boarders min="3" max="4" class="human"/>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<boarders min="e" max="4" class="human"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam them the fuck back OFF your ship!</text>
+		<event/>
+	</choice>	
 </event>
 
 
@@ -577,22 +586,23 @@ Environmnt:
 		BOARDERS!!!
 	Events with boarder calls
 ------------>
-
-
-
-
 <event name="BOARDERS_REBEL_SHIP">
 	<text load="BOARDERS_REBEL_SHIP"/>
-	<boarders min="2" max="3" class="human"/>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<boarders min="2" max="3" class="human"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam the boarders into space.</text>
+		<event/>
+	</choice>	
 	<ship load="REBEL" hostile="true"/>
 </event>
 <textList name="BOARDERS_REBEL_SHIP" unique="false">
 	<text>You receive a message from a nearby loyalist station, "You have a lot of guts passing through our space, I'll give you that."  He turns giving an order, "Kill the turncoats, I want that ship intact."</text>
-	<text>Your sensors warn of an incoming loyalist ship at the same time as you hear the telltale signs of a teleporter.   You hear someone taunt from within the ship, "Ready to join the Endless?  I sure am ready to get a promotion!"</text>
-	<text>Incoming video communitation: "Rebel scum," sneers an Empire officer, "How very generous of you to turn yourself in.  Prepare to be boarded."</text>
-	<text>You receive a message on a low-band channel.  "You're surrounded, just like the last of your Pilgrim friends.  Just give up already."  The enemy has teleported onto our ship!</text>
+	<text>Your sensors warn of an incoming loyalist ship at the same time as you hear the telltale signs of a teleporter. You hear someone taunt from within the ship, "Ready to join the Endless?  I sure am ready to get a promotion!"</text>
+	<text>Incoming video communitation: "Rebel scum," sneers an Empire officer, "How very generous of you to turn yourself in. Prepare to be boarded."</text>
+	<text>You receive a message on a low-band channel. "You're surrounded, just like the last of your Pilgrim friends.  Just give up already." The enemy has teleported onto our ship!</text>
 </textList>
-
-
-
-

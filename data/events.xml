@@ -92,6 +92,22 @@ Test Event
 	<text>This event tests combat with rebel_long.</text>
 </text>
 
+<event name="TEST_BOARDERS">
+ 	<text load="BOARD_TEST"/>
+	<choice>
+		<text>Shit.</text>
+		<event>
+			<boarders min="2" max="4" class="energy"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam 'em into space.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="BOARD_TEST">
+	<text>This event tests special anti-boarding measures.</text>
+</text>
 
 <!--<autoReward level=<LOW/MED/HIGH/RANDOM>> tag </autoreward>
 where tag is
@@ -1187,12 +1203,12 @@ item - Dust + that thing  -->
 </event>
 <eventList name="STRANDED">
 	<event>
-		<text>You find a colony that seems to have been recently attacked. Exploring the devastation, you find a lone survivor.</text>
+		<text>You find a Human colony that seems to have been recently attacked. Exploring the devastation, you find a lone survivor.</text>
 		<choice>
 			<text>Invite him to join your crew.</text>
 			<event>
 				<text>He happily offers his services for a time in exchange for "getting off that rock".</text>
-				<crewMember amount="1">Charlie</crewMember>
+				<crewMember amount="1" class="human">Chuck</crewMember>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -1214,7 +1230,7 @@ item - Dust + that thing  -->
 			<text>(Medbay) Bring him to your medbay.</text>
 			<event>
 				<text>Once inside your advanced medbay, the system is able to identify and minimize the trauma associated with being alone for so long. Once awake he states, "I don't know how to repay you, I feel 10 years younger... Let me serve on your ship."</text>
-				<crewMember amount="1">Charlie</crewMember>
+				<crewMember amount="1">Ajax</crewMember>
 			</event>
 		</choice>
 		<choice req="slug" hidden="true">
@@ -1244,7 +1260,7 @@ item - Dust + that thing  -->
 	</event>
 	<event>
 		<text>He seems to improve immensely upon getting back to the ship. It might take a while for him to truly be well again, but until them he seems happy to serve as a member of your crew.</text>
-		<crewMember amount="1">Charlie</crewMember>
+		<crewMember amount="1">Calypso</crewMember>
 	</event>
 	<event>
 		<text>Being back in space terrifies him. He goes mad and nearly blows a hole in the side of your ship with a makeshift explosive in an attempt to "escape this metal prison." He dies in the explosion.</text>
@@ -1260,7 +1276,7 @@ item - Dust + that thing  -->
 			<text>(Adv. Medbay) Quickly bring him to the medbay.</text>
 			<event>
 				<text>Your improved medbay was able to resuscitate him. After a short time he recovers greatly saying, "I really thought I was a goner... I haven't eaten for days. Would you mind if I stayed on your ship?"</text>
-				<crewMember amount="1">Charlie</crewMember>
+				<crewMember amount="1">Glenn</crewMember>
 			</event>
 		</choice>
 	</event>
@@ -1271,7 +1287,7 @@ item - Dust + that thing  -->
 	</event>
 	<event>
 		<text>You bring the ship closer and the Slug, after a pause, says that the person is stable and with good intentions. You offer a position in your crew and it is graciously accepted.</text>
-		<crewMember amount="1" class="human"/>	
+		<crewMember amount="1" class="human">Anaximander</crewMember>
 	</event>
 </eventList>
 
@@ -1436,7 +1452,7 @@ item - Dust + that thing  -->
 		<choice hidden="true">
 			<text>Quickly try to rescue the crew.</text>
 			<event>
-				<text>Despite your efforts the majority do not survive.  The sole survivor offers to join your crew and helps you strip the now derelict ship of useful components.</text>
+				<text>Despite your efforts, the majority do not survive.  The sole survivor offers to join your crew and helps you strip the now derelict ship of useful components.</text>
 				<crewMember amount="1"/>
 				<autoReward level="LOW">standard</autoReward>
 			</event>
@@ -1444,8 +1460,8 @@ item - Dust + that thing  -->
 		<choice req="NANO_MEDBAY" hidden="true"> 
 			<text>(Nano Med-bot Dispersal) Pump their ship with nano med-bots to aid in the rescue.</text>
 			<event>
-				<text>You drag the injured and dying crew on to your ship.  The med-bots help stabilize their condition, but most perish.  The survivor offers to join your crew and helps you collect the Dust from their shattered ship.</text>
-				<crewMember amount="1"/> <!---->
+				<text>You drag the injured and dying crew on to your ship.  The med-bots help stabilize their condition, but most perish.  The survivor offers to join your crew and helps you collect the Dust from his shattered ship.</text>
+				<crewMember amount="1"/>
 				<autoReward level="HIGH">fuel</autoReward>
 			</event>
 		</choice>
@@ -1687,7 +1703,7 @@ item - Dust + that thing  -->
 	<event>
 		<text>You pull up alongside the station and cut through their hull. You are able to rescue a few survivors but many more are lost. One of the survivors offers to join your crew and you offload the rest on a nearby station.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
-		<crewMember amount="1">Dr. Jones</crewMember> 
+		<crewMember amount="1" class="human">Alioto</crewMember> 
 	</event>
 </eventList>
 
@@ -1761,7 +1777,16 @@ item - Dust + that thing  -->
 
 <event name="BOARDERS" unique="true">
 	<text load="BOARDERS_TEXT"/>
-	<boarders min="3" max="5" class="human"/>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<boarders min="3" max="5" class="human"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam them the hell back.</text>
+		<event/>
+	</choice>
 </event>
 <textList name="BOARDERS_TEXT" unique="false">
 	<text>What appears to be a civilian ship sends a friendly hail. As you approach the vessel, you detect a teleporter signal but it's too late... intruders have beamed aboard!"</text>
@@ -1799,8 +1824,8 @@ item - Dust + that thing  -->
 		<autoReward level="MED">droneparts</autoReward>
 	</event>
 	<event>
-		<text>You dock with the station and see a frantic person banging on the airlock door.  Once inside your ship, he drops to the floor saying, "My... friends... They've gone insane...  They're coming!"  You hand him a blaster and turn to see a number of people charging toward the ship.</text>
-		<crewMember amount="1"/>
+		<text>You dock with the station and see a frantic person banging on the airlock door. Once inside your ship, she drops to the floor saying, "My...friends...They've gone insane...They're coming!" You hand her a blaster and turn to see a number of people charging toward the ship.</text>
+		<crewMember amount="1">Sam</crewMember>
 		<choice>
 			<text>Prepare for a fight!</text>
 			<event>
@@ -1810,8 +1835,8 @@ item - Dust + that thing  -->
 		<choice hidden="true" req="medbay" lvl="3">
 			<text>(Medbay) Have the advanced medbay analyze their condition.</text>
 			<event>
-				<text>You hold them off while retreating into the med-bay.  Its advanced systems determine that an alien neurotoxin is the cause of their frenzy.  It synthesizes an antidote and releases it into the room.  After a time, the scientists recover.  One offers their services as thanks for saving them.</text>
-				<crewMember amount="1"/>
+				<text>You hold them off while retreating into the med-bay. Its advanced systems determine that an alien neurotoxin is the cause of their frenzy.  It synthesizes an antidote and releases it into the room.  After a time, the scientists recover.  One offers her services as thanks for saving them.</text>
+				<crewMember amount="1" class="energy">Kelly</crewMember>
 				<autoReward level="MED">scrap_only</autoReward>
 			</event>
 		</choice>  
@@ -2571,7 +2596,7 @@ item - Dust + that thing  -->
 	<event>
 		<text>By following the directions given to you, you find a well-disguised outpost.  You are welcomed by a friendly face who offers to assist you in your quest by joining your crew.</text>
 		<autoReward level="LOW">standard</autoReward>	
-		<crewMember amount="1"/> <!---->
+		<crewMember amount="1"/>
 	</event>
 	<event>
 		<text>After a quick search you discover the hidden Pilgrim space-dock.  They offer you some supplies in addition to fully repairing your ship.</text>
@@ -2796,7 +2821,7 @@ item - Dust + that thing  -->
 				<event>
 					<text>With most of their ships and forces focused on the chaos, you slip undetected to a nearby depot. You find some useful resources and an Engi slave who gladly accepts your liberation.</text>
 					<autoReward level="HIGH">stuff</autoReward>
-					<crewMember amount="1" class="engi"/>
+					<crewMember amount="1" class="engi">Pakwa</crewMember>
 				</event>
 			</choice>
 		</event>
@@ -2997,15 +3022,15 @@ item - Dust + that thing  -->
 			<text>Demand the Mantis joins your crew but release the rest.</text>
 			<event>
 				<text>The Mantis seems fine with the orders, saying "I'm on board if it means we kill some loyalists!" You drop the rest off at a nearby station.</text>
-				<crewMember amount="1" class="mantis"/>  
+				<crewMember amount="1" class="mantis">Kriss</crewMember>
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Demand the Sower joins your crew but release the rest.</text>
 			<event>
-				<text>It remains silent and you worry there might be trouble. However when you ask it to perform a task it acts without complaint. Perhaps there won't be a problem.</text>
-				<crewMember amount="1" class="rock"/>  
+				<text>It remains silent and you worry there might be trouble. However when you ask it to perform a task it acts without complaint. Perhaps there won't be a problem.</text>				
+				<crewMember amount="1" class="rock">Knuth</crewMember>
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
@@ -3017,10 +3042,18 @@ item - Dust + that thing  -->
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
+		<choice hidden="true">
+			<text>Demand the Sophon joins your crew but release the rest.</text>
+			<event>
+				<text>"Excellent! I've been meaning to prepare a paper on Human intra-species conflict." The Sophon seems decidedly cheerful for having been enslaved; come to think of it, you've never actually met a sad Sophon. Beaming, it steps on board your ship.</text>
+				<crewMember amount="1" class="sophon">Quinn</crewMember>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>		
 	</event>
 	<event>
-		<text>It appears the slaves did not survive the fighting, you find their burnt bodies in the hold, but before you strip the ship you hear faint noises in the walls.  You break off a latch and a slave falls out of a hidden compartment, coughing. Once recomposed the slave offers to join your crew.</text>
-		<crewMember amount="1"/>  
+		<text>It appears the slaves did not survive the fighting. You find their burnt bodies in the hold, but before you strip the ship you hear faint noises in the walls. You break off a latch and a slave falls out of a hidden compartment, coughing. Once recomposed, the slave offers to join your crew.</text>
+		<crewMember amount="1" class="human">Pliskin</crewMember>  
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 	<!--  TO DO - This causes a crash if you hit ACCEPT when there are too many crew members.
@@ -3356,7 +3389,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 	<event>
 		<text>Human corpses are scattered across the station. You find the source of the signal, a lone survivor that locked themselves in a storage closet. You quickly retreat with them in tow back to the ship, and hope they can recover enough to be of some use.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
-		<crewMember amount="1" class="human"/>
+		<crewMember amount="1" class="human">Jack</crewMember>
 	</event>
 	<event>	
 		<text>All around you is the stench of death and decay. Suddenly, one of your crew bends over and starts retching violently. Some sort of disease must have wiped out this station. You pull back to the ship, but it looks like your crew member is not going to make it.</text>
@@ -3405,7 +3438,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 						<text>Continue...</text>
 						<event>
 							<text>You follow their directions and discover an ancient Engi ship. You find a deactivated Engi inside and reroute power from your shuttle to resuscitate it. After a while it reboots, rebuilds itself, and offers to join your crew.</text>
-							<crewMember amount="1" class="engi"/>
+							<crewMember amount="1" class="engi">Nektosha</crewMember>
 						</event>
 					</choice>
 				</event>
@@ -3422,7 +3455,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 <eventList name="DONOR_PONY_PEACE">
 	<event>
 		<text>None of your attempts to communicate seem to work: they just stare at you silently. As you prepare to leave, one of the creatures canters forward and forcefully nudges you away from the ship. He seems to want you to follow him. Eventually, the creatures guide you to an old Engi ship's crash site. Inside you are able to find and reactivate an Engi!</text>
-		<crewMember amount="1" class="engi"/>
+		<crewMember amount="1" class="engi">Pamuy</crewMember>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
@@ -3624,7 +3657,7 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 	<event>
 		<text>You have underestimated the power of the Engi ship's sensors; your new Mantis crewmember rushes to his station as alarms warn you that the Engi have powered their weapons.</text>
 		<ship load="ENGI_SHIP" hostile="true"/>
-		<crewMember amount="1" class="mantis"/>	
+		<crewMember amount="1" class="mantis">Krow</crewMember>
 	</event>
 </eventList>
 <eventList name="ALISON_MANTIS_CREW_REJECT">
@@ -3702,15 +3735,15 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 	</event>
 	<event>
 		<text>Your new crew member's relief is palpable; he gets right to work as the loyalist ship attacks.</text>
-		<crewMember amount="1" class="human"/>	
+		<crewMember amount="1" class="human">Kylin</crewMember>
 	</event>
 	<event>
 		<text>You can tell his has mixed feelings; he has betrayed his comrades to be loyal to his beliefs. You find his humanity reassuring; you feel that you can trust him.</text>
-		<crewMember amount="1" class="human"/>	
+		<crewMember amount="1" class="human">Marcus</crewMember>
 	</event>
 	<event>
 		<text>"I'm from one of the moons orbiting Ceti VI - my family's Pilgrim through and through. I was deployed at the time; you have no IDEA how they treat people with connections to the resistance. Do you think they're still alive?"</text>
-		<crewMember amount="1" class="human"/>	
+		<crewMember amount="1" class="human">Jed</crewMember>
 	</event>
 	<event>
 		<text>The loyalist makes to take his assigned station, then puts a small pistol to the head of the nearest crew member and fires!</text>

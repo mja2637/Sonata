@@ -1223,7 +1223,7 @@ Special:
 	<surrender  chance="0.5" min="3" max="4">
 		<text>The Sophon captain sends an urgent hail: "Wait, this was all a test! A test that you passed! A diverse crew, working together, surely a sight to warm the heart of any dispassionate observer. Come, I shall join your crew!"</text>
 		<ship hostile="false"/>
-		<crewMember amount="1" class="energy"/>  
+		<crewMember amount="1" class="energy">Aliann</crewMember>
 		<autoReward level="LOW">standard</autoReward>
 	</surrender>
 	<destroyed>
@@ -1596,7 +1596,7 @@ Special:
 			<text>Accept their surrender.</text>
 			<event>
 				<text>They send one of their prisoners over to your ship. They're a bit shaken up and you suspect that they were once a loyalist, but they seem to be very glad to free.</text>
-				<crewMember amount="1" class="human"/>
+				<crewMember amount="1" class="human">Aldrich</crewMember>
 			</event>
 		</choice>
 		<choice hidden="true">

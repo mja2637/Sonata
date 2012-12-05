@@ -315,7 +315,7 @@
 			<text>Continue...</text>
 			<event>
 				<text>The Sower subdue the last of the renegades; orbital materials processing facilities burn hot in anticipation of the influx.</text>
-				<crewMember amount="1" class="rock"/>
+				<crewMember amount="1" class="rock">LWall</crewMember>
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event load="ROCK_NURSERY_LOSE"/>
@@ -375,7 +375,7 @@
 			<text>Continue...</text>
 			<event>
 				<text>The factory-fresh Sower secure the remaining enemy units and prepare to leave the solar system with no further communication - internal strife cannot mask the fact that Sower are Sower.</text>
-				<crewMember amount="1" class="rock"/>
+				<crewMember amount="1" class="rock">Hopper</crewMember>
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event load="ROCK_NURSERY_LOSE"/>
@@ -593,7 +593,7 @@
 		<text>(Improved Sensors) Grant READ access to your ship's data suite.</text>
 		<event>
 			<text>Within nanoseconds the Sower mainframe has accessed every scrap of information in your ship's database. After a short pause, your personal terminal goes black and displays "ISPILGRIMTRUE;ISBESTOUTCOME;PILGRIM.MISSION=SELF.PRIORITY;" You have been judged, and found worthy; this machine has decided that your cause is just. You hold back tears of pride as a Sower unit joins your crew.</text>
-			<crewMember amount="1" class="rock"/>
+			<crewMember amount="1" class="rock">Stroustrup</crewMember>
 		</event>
 	</choice>
 </event>
@@ -605,7 +605,7 @@
 <eventList name="ROCK_ATHIEST_GOOD">
 	<event>
 		<text>The Sower silently turn to jump for another system, but not before the ship ejects a mostly-functional Sower unit. You think you can fix it.</text>
-		<crewMember amount="1" class="rock"/>
+		<crewMember amount="1" class="rock">Turing</crewMember>
 	</event>
 	<event>
 		<text>The massive, ancient Sower vessel turns and jumps for a planet in some far-away system. Majestic.</text>
@@ -696,7 +696,7 @@
 </event>
 <textList name="ROCK_BOARDERS_SHIP">
 	<text>You passively scan a small Sower station that is next to the beacon. However they must not have appreciated your curiosity. Your transporter's safety locks are disabled - a Sower combat unit beams on board!</text>
-	<text>You find a Sower ship docked with a damaged Mantis fighter. They hail you: "We will add your technological and ethnological distinctiveness to our own. Resistance is futile." Before you have a chance re-check which game you're playing, the ship moves in to attack you and you register teleporter symbols from the disabled ship. They're using Mantis tech to board you!</text>
+	<text>You find a Sower ship docked with a damaged Mantis fighter. They hail you: "We will add your technological and ethnological distinctiveness to our own. Resistance is futile." Before you have a chance re-check which game you're playing, the ship moves in to attack you and you register teleporter signals from the disabled ship. They're using Mantis tech to board you!</text>
 </textList>
 
 

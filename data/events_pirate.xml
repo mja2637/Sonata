@@ -89,7 +89,7 @@ Boarders:
 	<event load="NEBULA_LOST_SHIP"/> 
 	<event load="NEBULA_REBEL_BOARDING"/>
 	<event load="STORM_ITEMS"/>
-	<!--<event load="STORM_BOARDING"/> -->
+	<event load="STORM_BOARDING"/>
 	<event load="STORM_ITEMS"/>
 </eventList>
 
@@ -462,7 +462,16 @@ Boarders:
 
 <event name="BOARDERS_PIRATE">
 	<text load="BOARDERS_PIRATE"/>
-	<boarders min="2" max="4" class="random"/>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<boarders min="2" max="4" class="random"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam them the hell off your ship.</text>
+		<event/>
+	</choice>	
 </event>
 <textList name="BOARDERS_PIRATE" unique="false">
 	<text>SSSSSSSSSSSSSSSSS</text>
@@ -471,15 +480,33 @@ Boarders:
 
 <event name="BOARDERS_SUN" unique="true">
 	<text>You arrive to find yourself extremely close to a star. You receive a message from a pirate ship, "I'm glad you arrived; our ship is damaged and we were getting desperate... I hope you don't mind if we take yours." Hostiles detected on board our ship!</text>
-	<boarders min="2" max="4" class="human"/>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<boarders min="2" max="4" class="human"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam them into the sun.</text>
+		<event/>
+	</choice>
 	<environment type="sun"/>
 </event>
 
 <event name="BOARDERS_ASTEROID" unique="true">
 	<img back="BG_DARK" planet="NONE"/>
 	<text>You jump into a perilous asteroid field. Worse, sensors show a pirate stronghold has locked onto our ship and is activating a teleporter. Prepare for a fight!</text>
-	<boarders min="2" max="4" class="human"/>
 	<environment type="asteroid"/>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<boarders min="2" max="4" class="human"/>
+		</event>
+	</choice>	
+	<choice hidden="true" req="teleporter">
+		<text>(Teleporter) Beam them into an asteroid.</text>
+		<event/>
+	</choice>	
 </event>
 
 <event name="FLOATING_CARGO" unique="true">
