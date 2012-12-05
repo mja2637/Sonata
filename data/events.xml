@@ -92,23 +92,6 @@ Test Event
 	<text>This event tests combat with rebel_long.</text>
 </text>
 
-<event name="TEST_BOARDERS">
- 	<text load="BOARD_TEST"/>
-	<choice>
-		<text>Shit.</text>
-		<event>
-			<boarders min="2" max="4" class="energy"/>
-		</event>
-	</choice>	
-	<choice hidden="true" req="teleporter">
-		<text>(Teleporter) Beam 'em into space.</text>
-		<event/>
-	</choice>
-</event>
-<textList name="BOARD_TEST">
-	<text>This event tests special anti-boarding measures.</text>
-</text>
-
 <!--<autoReward level=<LOW/MED/HIGH/RANDOM>> tag </autoreward>
 where tag is
 standard  - which is Dust + 2 resources (possible a weapon)
@@ -1775,7 +1758,7 @@ item - Dust + that thing  -->
 	Events with boarders
 ------------>
 
-<event name="BOARDERS" unique="true">
+<event name="BOARDERS">
 	<text load="BOARDERS_TEXT"/>
 	<choice>
 		<text>Continue...</text>

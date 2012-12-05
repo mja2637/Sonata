@@ -450,7 +450,7 @@ Special
 	Events with boarders
 ------------>
 
-<event name="MANTIS_BOARDERS" unique="true">
+<event name="MANTIS_BOARDERS">
 	<text load="MANTIS_BOARDERS"/>
 	<choice>
 		<text>Shit.</text>

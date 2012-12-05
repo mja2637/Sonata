@@ -107,8 +107,6 @@
 	<event load="TAVERN_HIRE"/> -->
 </eventList>
 
-
-
 <eventList name="NEUTRAL2">
 	<event load="PIRATE_CIVILIAN"/>
 	<event load="PIRATE_STATION_CROPS"/>
@@ -187,7 +185,6 @@
 	<event load="FLOATING_CARGO"/>
 	<event load="BOARDERS_HACKING"/>
 </eventList>
-
 
 <eventList name="MANTIS_HOSTILE">
 	<event load="MANTIS_FIGHT"/>

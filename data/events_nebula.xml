@@ -490,7 +490,7 @@ Storm Environment:
 	Events with boarder calls
 ------------>
 
-<event name="NEBULA_BOARDING" unique="true">
+<event name="NEBULA_BOARDING">
 	<text load="NEBULA_BOARDING_TEXT"/>
 	<environment type="nebula"/>
 	<boarders min="2" max="4" class="human"/>
@@ -541,12 +541,12 @@ Storm Environment:
 	<environment type="storm"/>
 </event>
 
-<event name="STORM_BOARDING" unique="true">
+<event name="STORM_BOARDING">
 	<text>You find two heavily damaged ships floating nearby, the remains of a battle. However, a teleporter nearby must be working, as you hear the sounds of someone beaming aboard followed by the shouts of a boarding party.</text> 
 	<environment type="storm"/>
 	<boarders min="3" max="5" class="human"/>
 </event>
-<event name="STORM_BOARDING_MANTIS" unique="true">
+<event name="STORM_BOARDING_MANTIS">
 	<text>A Mantis ship is sitting in the middle of the storm, with only essential systems powered up. Unsurprisingly, they beam nearly their entire crew aboard your ship. This is the kind of shit that the Mantis live for; they must be having the time of their lives.</text> 
 	<environment type="storm"/>
 	<boarders min="2" max="4" class="mantis"/>

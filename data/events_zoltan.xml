@@ -723,7 +723,7 @@ Science - investigate Sower
 	Events with boarder calls
 ------------>
 
-<event name="ZOLTAN_BOARDERS" unique="true">
+<event name="ZOLTAN_BOARDERS">
 	<text>"You never should have come here - your presence endangers the entire Sophon race! Some Sophon's tolerance of you Pilgrims risks ending years of friendship between us and the United Empire. Your secession, your life, are not worth our peace. Prepare to defend yourselves!"</text>
 	<ship load="ZOLTAN_SHIP" hostile="true"/>
 	<choice>
@@ -738,7 +738,7 @@ Science - investigate Sower
 	</choice>	
 </event>
 
-<event name="ZOLTAN_BOARDERS_MANTIS" unique="true">
+<event name="ZOLTAN_BOARDERS_MANTIS">
 	<text>The Mantis outcasts sometimes make the mistake of taking the Sophon for easy game, which may explain their presence in this normally peaceful sector. A Pilgrim ship is a much more attractive target, however. A scout moves in to attack while a boarding party beams aboard from a nearby transport!</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<choice>

@@ -689,7 +689,7 @@
 	Events with boarder calls
 ------------>
 
-<event name="ROCK_BOARDERS_SHIP" unique="true">
+<event name="ROCK_BOARDERS_SHIP">
 	<text load="ROCK_BOARDERS_SHIP"/>	
 	<boarders min="1" max="3" class="rock"/>
 	<ship load="ROCK_SHIP" hostile="true"/>
@@ -700,7 +700,7 @@
 </textList>
 
 
-<event name="ROCK_BOARDERS_ASTEROID" unique="true">
+<event name="ROCK_BOARDERS_ASTEROID">
 	<text load="ROCK_BOARDERS_ASTEROID"/>	
 	<boarders min="1" max="2" class="rock"/>
 	<environment type="asteroid"/>
@@ -711,7 +711,7 @@
 	<text>Your shields are being taxed as the they deflect the debris from an asteroid field. As you weave your way between the rocks you happen upon a Sower stronghold. You register teleport signatures and hear clanks aboard the ship.</text>
 </textList>
 
-<event name="ROCK_BOARDERS_SUN" unique="true">
+<event name="ROCK_BOARDERS_SUN">
 	<text load="ROCK_BOARDERS_SUN"/>	
 	<environment type="sun"/>
 	<boarders min="2" max="3" class="rock"/>

@@ -297,9 +297,6 @@ Boarders:
 	<text>A missile shoots across your bow when the jump completes. Your scans quickly reveal a ship with pirate markings pursuing an unknown vessel. The pirate hails you: "Damn it, we weren't expecting company. Stay out of this and you could profit."</text>
 </textList>
 
-
-
-		
 <event name="PIRATE_CHOICE" unique="false">
 	<img planet="NONE"/>
 	<text>Upon completing your jump, you receive a message from a nearby ship. "Greetings and welcome to our beacon! For a small fee, we'll let you continue on your way."</text>
@@ -321,9 +318,6 @@ Boarders:
 		</event>
 	</choice>
 </event>
-
-
-
 
 <event name="PIRATE_SLAVER" unique="false">
 	<text>An especially well-armed pirate ship approaches you. "Hand over one of your crew-members and the rest of you can go free unharmed"</text>
@@ -478,7 +472,7 @@ Boarders:
 </textList>
 
 
-<event name="BOARDERS_SUN" unique="true">
+<event name="BOARDERS_SUN">
 	<text>You arrive to find yourself extremely close to a star. You receive a message from a pirate ship, "I'm glad you arrived; our ship is damaged and we were getting desperate... I hope you don't mind if we take yours." Hostiles detected on board our ship!</text>
 	<choice>
 		<text>Continue...</text>
@@ -493,16 +487,16 @@ Boarders:
 	<environment type="sun"/>
 </event>
 
-<event name="BOARDERS_ASTEROID" unique="true">
+<event name="BOARDERS_ASTEROID">
 	<img back="BG_DARK" planet="NONE"/>
-	<text>You jump into a perilous asteroid field. Worse, sensors show a pirate stronghold has locked onto our ship and is activating a teleporter. Prepare for a fight!</text>
 	<environment type="asteroid"/>
+	<text>You jump into a perilous asteroid field. Worse, sensors show a pirate stronghold has locked onto our ship and is activating a teleporter. Prepare for a fight!</text>	
 	<choice>
 		<text>Continue...</text>
 		<event>
 			<boarders min="2" max="4" class="human"/>
 		</event>
-	</choice>	
+	</choice>
 	<choice hidden="true" req="teleporter">
 		<text>(Teleporter) Beam them into an asteroid.</text>
 		<event/>
@@ -575,9 +569,3 @@ Boarders:
 		</choice>
 	</event>
 </eventList>
-
-
-
-
-
-

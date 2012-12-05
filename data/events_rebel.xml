@@ -563,7 +563,7 @@ Environmnt:
 ------------>
 
 
-<event name="NEBULA_REBEL_BOARDING" unique="true">
+<event name="NEBULA_REBEL_BOARDING">
 	<environment type="nebula"/>
 	<text>There appears to be a number of small stations nearby.  Before you have time to scan them, warnings go off.  Some loyalist soldiers teleport aboard your ship!</text>
 	<choice>
