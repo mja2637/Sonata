@@ -124,6 +124,7 @@ Environmnt:
 </textList>
 
 <event name="NOTHING_REBEL">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_REBEL"/>
 </event>
 <textList name="NOTHING_REBEL">

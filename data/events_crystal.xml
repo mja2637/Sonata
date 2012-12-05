@@ -121,6 +121,7 @@ Matt:
 </textList>
 
 <event name="NOTHING_CRYSTAL">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_CRYSTAL"/>
 </event>
 <textList name="NOTHING_CRYSTAL">

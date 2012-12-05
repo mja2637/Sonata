@@ -129,6 +129,7 @@ Boarders:
 
 
 <event name="NOTHING_PIRATE">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_PIRATE"/>
 </event>
 <textList name="NOTHING_PIRATE">

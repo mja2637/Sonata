@@ -72,6 +72,7 @@ Beacon Off.....
 </textList>
 
 <event name="FUEL_NOTHING">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="FUEL_NOTHING_LIST"/>
 </event>
 <textList name="FUEL_NOTHING_LIST">
@@ -320,11 +321,12 @@ Beacon On!!!!
 </textList>
 
 <event name="FUEL_NOTHING_DISTRESS">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="FUEL_NOTHING_DISTRESS_LIST"/>
 </event>
 <textList name="FUEL_NOTHING_DISTRESS_LIST">
 	<text>You contemplate that it is fortunate the ship's life support system does not rely on FTL fuel cells.</text>
-	<text>Nothing happens.  Your calls go unanswered.</text>
+	<text>Nothing happens. Your calls go unanswered.</text>
 	<text>An utterly massive Sower is travelling nearby; it takes over 5 minutes to pass. Of course, it ignores all of your attempts at communication.</text>
 	<text>The distress beacon's light is the only movement visible outside the ship.</text>
 	<text>No ships jump into the sector...</text>

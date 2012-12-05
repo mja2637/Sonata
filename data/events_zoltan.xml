@@ -130,6 +130,7 @@ Science - investigate Sower
 </textList>
 
 <event name="NOTHING_ZOLTAN">
+	<img back="BG_BORING" planet="NONE"/>
 	<event load="NOTHING_ZOLTAN_EVENTS"/>
 </event>
 
@@ -241,7 +242,8 @@ Science - investigate Sower
 ------------>
 	
 
-<event name="ZOLTAN_TRADE_HUB" unique="true">   <!-- This is a 50/50 chance of quest start-->
+<event name="ZOLTAN_TRADE_HUB" unique="true">
+	<img back="PLANET_CLOSE" planet="NONE"/>
 	<text>You come to a Sophon trade and supply hub - everything the weary traveller needs, provided they have the right documentation.</text>
 	<choice hidden="true">
 		<text>Try to talk your way in.</text>
@@ -351,11 +353,6 @@ Science - investigate Sower
 	</choice>
 </event>
 
-
-
-
-
-
 <!-----------
 		ITEM!!!
 	Events that can give something ususally no fight
@@ -455,6 +452,7 @@ Science - investigate Sower
 	Events that call up a fight for sure
 ------------>
 <event name="ZOLTAN_FIGHT">
+	<img back="BACKGROUND" planet="NONE"/>
 	<text load="ZOLTAN_FIGHT"/>
 	<ship load="ZOLTAN_SHIP" hostile="true"/>
 </event>
@@ -471,6 +469,7 @@ Science - investigate Sower
 </textList>
 
 <event name="ZOLTAN_PIRATE">
+	<img back="BACKGROUND" planet="NONE"/>
 	<text load="ZOLTAN_PIRATE"/>
 	<ship load="PIRATE" hostile="true"/>
 </event>
@@ -513,7 +512,8 @@ Science - investigate Sower
 ------------>
 
 <event name="ZOLTAN_LIFERAFT" unique="true">  <!-- ALSO A QUEST!!-->
-	<text>You pick up a Sophon life raft floating in space. Its inhabitant asks you to retake her ship from the pirates who recently commandeered it. "It is, of course, critical," she concludes, "that you not destroy my vessel in the process."</text>
+	<img back="DEEP_SPACE" planet="NONE"/>
+	<text>You pick up a Sophon life raft floating in deep space. Its inhabitant asks you to retake her ship from the pirates who recently commandeered it. "It is, of course, critical," she concludes, "that you not destroy my vessel in the process."</text>
 	<ship load="ZOLTAN_LIFERAFT" hostile="false"/>
 	<choice hidden="true">
 		<text>Engage the pirates.</text>
@@ -544,7 +544,8 @@ Science - investigate Sower
 
 	
 <event name="ZOLTAN_SCIENCE_DOCK" unique="true">
-	<text>What appears to be a Sophon science ship requests permission to dock.</text>
+	<img back="DEEP_SPACE" planet="NONE"/>
+	<text>In a sector of deep space, what appears to be a Sophon science ship requests permission to dock.</text>
 	<choice hidden="true">
 		<text>Dock with them.</text>
 		<event load="ZOLTAN_SCIENCE_DOCK_LIST"/>
@@ -569,6 +570,7 @@ Science - investigate Sower
 
 
 <event name="ZOLTAN_RIFT_FIGHT" unique="true">
+	<img back="WORMHOLE" planet="NONE"/>
 	<text>You come to a quiet part of Sophon space and encounter an ancient Sophon professor who has managed to do inspeakable things with every Sophon's favorite tool, the particle accelerator. He has opened a wormhole; he is, of course, quite mad. Batshit insane. Most likely tenured. And quite brilliant, actually; he hails you quoting Shakespeare and demanding a pound of flesh. As you are disinclined to comply with his request, he asks for something else: your beliefs regarding the Endless.</text>
 	<choice hidden="true">
 		<text>"They were wise."</text>
@@ -598,6 +600,7 @@ Science - investigate Sower
 </event>
 
 <event name="ZOLTAN_CREW_SCAN" unique="true">
+	<img back="BACKGROUND" planet="NONE"/>
 	<text>You arrive at a Sophon security checkpoint set up in a perimeter around the beacon. "As per recent agreement with the United Empire, we need to screen your ship for Pilgrim fugitives."</text>
 	<choice hidden="true">
 		<text>You don't have time for this nonsense. Attack!</text>
@@ -648,12 +651,14 @@ Science - investigate Sower
 	Events with unique environments
 ------------>
 <event name="NEBULA_ZOLTAN_ROCK" unique="true">
+	<img back="BG_NEBULA" planet="NONE"/>
 	<text>At the center of this nebula, a small Sower vessel is mining materials from a metallic asteroid. It seems to identify you as hostile, and opens fire!</text>
 	<environment type="nebula"/>
 	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
 
 <event name="NEBULA_ZOLTAN_EYE" unique="true">
+	<img back="NEBULA" planet="PLANET_UNPOPULATED_SMALL"/>
 	<text>Inside this nebula you detect a rogue planet drifting through space, on its surface a huge monolith visible at this distance even to the naked eye. A Sophon professor hails you from the planet. "Ah, I'm glad you're here! I am curious how this monolith will respond to Human stimulus."</text>
 	<environment type="nebula"/>
 	<choice hidden="true">
@@ -687,6 +692,7 @@ Science - investigate Sower
 </eventList>
 
 <event name="STORM_ZOLTAN_SUPPLY_CHOICE" unique="true">  <!-- can also use this with other sectors?-->
+	<img back="NEBULA" planet="NONE"/>
 	<text>You spy two pirate ships lurking in the nebula here. They remain unaware of your presence; you're able get your scanners to at least identify their cargo: One is carrying the fuel supplies, the other the ammunition. They begin to drift away from each other in the storm.</text>
 	<environment type="storm"/>
 	<choice hidden="true">
@@ -774,6 +780,7 @@ Science - investigate Sower
 </eventList>
 
 <event name="ZOLTAN_PEACE_QUEST2">
+	<img back="EXCITING" planet="NONE"/>
 	<text>You arrive at the location specified by the peace-loving Sophon, but the only thing nearby is a United Empire ship, closing in fast! "We've found you! You're not getting away this time!"</text>
 	<ship load="REBEL" hostile="false"/>
 	<choice hidden="true">
@@ -792,14 +799,14 @@ Science - investigate Sower
 				<event>
 					<text>"Secession is treason. You think this could end any way but war?"</text>
 					<choice hidden="true">
-						<text>The galaxy is huge, you can build your Empire elsewhere and leave us to ourselves.</text>
+						<text>"The galaxy is huge, you can build your Empire elsewhere and leave us to ourselves."</text>
 						<event>
 							<text>"No! We will not allow you to shatter the United Empire just for the sake of your little cult!" They charge.</text>
 							<ship hostile="true"/>
 						</event>
 					</choice>
 					<choice hidden="true">
-						<text>True progress can only be achieved when we are willing to accept that which is not ourselves.</text>
+						<text>"True progress can only be achieved when we are willing to accept that which is not ourselves."</text>
 						<event>
 							<text>Suddenly all indications of the loyalist ship fade away and a Sophon fleet appears around your ship. The captain of the ship you met previously materializes on your bridge.</text>
 							<choice hidden="true">

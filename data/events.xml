@@ -266,6 +266,7 @@ item - Dust + that thing  -->
 -->	
 
 <event name="NOTHING_1">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_TEXT"/>
 	<choice hidden="true" req="rock">
 		<text>Talk to your Sower crewmember.</text>
@@ -282,6 +283,7 @@ item - Dust + that thing  -->
 </event>
 
 <event name="NOTHING_2">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_TEXT"/>
 	<choice hidden="true" req="rock">
 		<text>Talk to your Sower crewmember.</text>
@@ -298,6 +300,7 @@ item - Dust + that thing  -->
 </event>
 
 <event name="NOTHING_3">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_TEXT"/>
 	<choice hidden="true" req="rock">
 		<text>Talk to your Sower crewmember.</text>
@@ -314,6 +317,7 @@ item - Dust + that thing  -->
 </event>
 
 <event name="NOTHING_4">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_TEXT"/>
 	<choice hidden="true" req="rock">
 		<text>Talk to your Sower crewmember.</text>
@@ -337,8 +341,8 @@ item - Dust + that thing  -->
 	<text planet="PLANET_POPULATED_SMALL">You discover a nearby planet speckled with settlements, although none respond to your hails.</text>
 	<text>This beacon has been built for a nearby civilian space-station. No one hails your ship.</text>
 	<text planet="PLANET_POPULATED_SMALL">The nearby planet shows sign of habitation and great beauty. A rudimentary automated planetary defense system is looping its message into space: "Warning! Quarantine Level 5 in effect under FHA Act 22, article 11.2. Warning! Quarantine Level 5 ..."</text>
-	<text planet="NONE">Your jump leads to a completely unremarkable binary star system. There is nothing else around.</text>
-	<text planet="NONE">Your jump leads to a remarkable binary star system. The view is beautiful, but there is nothing else around.</text>
+	<text back="BINARY" planet="NONE">Your jump leads to a completely unremarkable binary star system. There is nothing else around.</text>
+	<text back="BINARY" planet="NONE">Your jump leads to a remarkable binary star system. The view is beautiful, but there is nothing else around.</text>
 	<text planet="NONE">Space, the final frontier. In an Endless galaxy full of asses, these are the voyages of a starship destined to kick them all.</text>
 </textList>
 

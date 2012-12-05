@@ -139,6 +139,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 </textList>
 
 <event name="NOTHING_ENGI">
+	<img back="BG_BORING" planet="NONE"/>
 	<text load="NOTHING_ENGI"/>
 </event>
 <textList name="NOTHING_ENGI">

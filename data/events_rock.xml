@@ -86,6 +86,7 @@
 
 <!-- Matt - update to Sonata 7 standards -->
 <event name="NOTHING_ROCK">
+	<img back="DEEP_SPACE" planet="NONE"/>
 	<text load="NOTHING_ROCK"/>
 </event>
 <textList name="NOTHING_ROCK">
@@ -761,6 +762,7 @@
 ------------>
 
 <event name="ROCK_QUEST_MARRIAGE_START" unique="true">
+	<img back="EXCITING" planet="NONE"/>
 	<text>To your surprise, a damaged Sower ship hails you. Your surprise deepens to amazement as a human wearing a fedora appears on screen. "I'm on a critical mission from the Academy - I need to get to Lexius IV, NOW! The future of Humanity depends on it! This ship's bought it; mind if I catch a ride?"</text>
 	<choice hidden="true">
 		<text>Accept the passenger.</text>

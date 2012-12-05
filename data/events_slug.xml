@@ -136,7 +136,8 @@ Distress:
 
 
 
-<event name="NOTHING_SLUG">  <!-- No nebula -->
+<event name="NOTHING_SLUG">
+	<img back="DEEP_SPACE" planet="NONE"/>
 	<text load="NOTHING_SLUG"/>
 </event>
 <textList name="NOTHING_SLUG">
