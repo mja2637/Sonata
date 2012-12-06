@@ -6,8 +6,8 @@
 	<desc length="12" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>10</fireFrame>
-	<firePoint  x="8" y="5"/>
-	<mountPoint x="2" y="30"/>
+	<firePoint x="14" y="11"/>
+	<mountPoint x="8" y="62"/>
 </weaponAnim>
 <animSheet name="UE_GAUSS_PROJ_1" w="200" h="20" fw="50" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
 <anim name="UE_GAUSS_PROJ_1">
@@ -22,8 +22,8 @@
 	<desc length="12" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>10</fireFrame>
-	<firePoint  x="8" y="5"/>
-	<mountPoint x="2" y="30"/>
+	<firePoint x="14" y="11"/>
+	<mountPoint x="8" y="62"/>
 </weaponAnim>
 <animSheet name="UE_GAUSS_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
 <anim name="UE_GAUSS_PROJ_2">
@@ -38,8 +38,8 @@
 	<desc length="12" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>10</fireFrame>
-	<firePoint  x="8" y="5"/>
-	<mountPoint x="2" y="30"/>>
+	<firePoint x="14" y="11"/>
+	<mountPoint x="8" y="62"/>
 </weaponAnim>
 <animSheet name="UE_GAUSS_PROJ_3" w="200" h="20" fw="50" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
 <anim name="UE_GAUSS_PROJ_3">
@@ -54,8 +54,8 @@
 	<desc length="12" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>10</fireFrame>
-	<firePoint  x="8" y="5"/>
-	<mountPoint x="2" y="30"/>
+	<firePoint x="14" y="11"/>
+	<mountPoint x="8" y="62"/>
 </weaponAnim>
 <animSheet name="UE_GAUSS_PROJ_4" w="200" h="20" fw="50" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
 <anim name="UE_GAUSS_PROJ_4">
@@ -70,8 +70,8 @@
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
-	<firePoint  x="8" y="3"/>
-	<mountPoint x="-5" y="25"/>
+	<firePoint  x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
 </weaponAnim>
 <animSheet name="UE_DRIVER_PROJ_1" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
 <anim name="UE_DRIVER_PROJ_1">
@@ -86,8 +86,8 @@
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
-	<firePoint  x="8" y="3"/>
-	<mountPoint x="-5" y="25"/>
+	<firePoint  x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
 </weaponAnim>
 <animSheet name="UE_DRIVER_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_2.png</animSheet>
 <anim name="UE_DRIVER_PROJ_2">
@@ -102,8 +102,8 @@
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
-	<firePoint  x="8" y="3"/>
-	<mountPoint x="-5" y="25"/>
+	<firePoint  x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
 </weaponAnim>
 <animSheet name="UE_DRIVER_PROJ_3" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
 <anim name="UE_DRIVER_PROJ_3">
@@ -118,8 +118,8 @@
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
-	<firePoint  x="8" y="3"/>
-	<mountPoint x="-5" y="25"/>
+	<firePoint  x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
 </weaponAnim>
 <animSheet name="UE_DRIVER_PROJ_4" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
 <anim name="UE_DRIVER_PROJ_4">
@@ -134,8 +134,8 @@
 	<desc length="16" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="8" y="3"/>
-	<mountPoint x="-5" y="25"/>
+	<firePoint  x="5" y="10"/>
+	<mountPoint x="5" y="55"/>
 </weaponAnim>
 <animSheet name="SOWER_CANNON_PROJ_1" w="120" h="24" fw="20" fh="24">weapons/SOWER_CANNON_PROJ_1.png</animSheet>
 <anim name="SOWER_CANNON_PROJ_1">
@@ -150,8 +150,8 @@
 	<desc length="16" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="8" y="3"/>
-	<mountPoint x="-5" y="25"/>
+	<firePoint  x="5" y="10"/>
+	<mountPoint x="5" y="55"/>
 </weaponAnim>
 <animSheet name="SOWER_CANNON_PROJ_2" w="120" h="24" fw="20" fh="24">weapons/SOWER_CANNON_PROJ_1.png</animSheet>
 <anim name="SOWER_CANNON_PROJ_2">
@@ -166,8 +166,8 @@
 	<desc length="16" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="8" y="3"/>
-	<mountPoint x="-5" y="25"/>
+	<firePoint  x="5" y="10"/>
+	<mountPoint x="5" y="55"/>
 </weaponAnim>
 <animSheet name="SOWER_CANNON_PROJ_3" w="120" h="24" fw="20" fh="24">weapons/SOWER_CANNON_PROJ_1.png</animSheet>
 <anim name="SOWER_CANNON_PROJ_3">
@@ -182,8 +182,8 @@
 	<desc length="16" x="0" y="0"/>
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="8" y="3"/>
-	<mountPoint x="-5" y="25"/>
+	<firePoint  x="5" y="10"/>
+	<mountPoint x="5" y="55"/>
 </weaponAnim>
 <animSheet name="SOWER_CANNON_PROJ_4" w="120" h="24" fw="20" fh="24">weapons/SOWER_CANNON_PROJ_1.png</animSheet>
 <anim name="SOWER_CANNON_PROJ_4">

@@ -4209,7 +4209,7 @@
   </systemList>
   <weaponSlots>4</weaponSlots>
   <droneSlots>2</droneSlots>
-  <weaponList count="3" missiles="8">
+  <weaponList count="3" missiles="9">
     <weapon name="UE_GAUSS_1" />
     <weapon name="UE_GAUSS_1" />
     <weapon name="BASIC_MISSILE_1" />
@@ -4623,11 +4623,6 @@
 	<crewCount amount = "1" class="human"/>
 </shipBlueprint>
 
-
-
-
-
-
 <!-- ENGI SHIP -->
 <!-- LAYOUT = ALT --> 
 <!-- SHIP ID = ???? -->
@@ -4767,7 +4762,7 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="4" missiles="9">
+	<weaponList count="2" missiles="9">
 		<weapon name="SOPHON_PULSE_1"/>
 		<weapon name="UE_DRIVER_1"/>
 	</weaponList>
@@ -4780,12 +4775,6 @@
 	<shieldImage>fed_cruiser</shieldImage>
 	<cloakImage>fed_cruiser</cloakImage>
 </shipBlueprint>
-
-
-
-
-
-
 
 <!--  
    ***********************
@@ -4963,11 +4952,10 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="4" missiles="0">
-		<weapon name="SOPHON_PULSE_3"/>
-		<weapon name="SOPHON_PULSE_2"/>
-		<weapon name="BASIC_KINETIC_1"/>
-		<weapon name="SOWER_AUTOCANNON_2"/>
+	<weaponList count="3" missiles="0">
+		<weapon name="SOPHON_PULSE_1"/>
+		<weapon name="SOPHON_PULSE_1"/>
+		<weapon name="SOPHON_LASER_2"/>
 	</weaponList>
 	<droneList drones="2"/>
 	<health amount="30"/>

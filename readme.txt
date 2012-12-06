@@ -123,6 +123,8 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Sower/Sophon sprite recolor
 		  - Custom Human/Sophon/Sower crew weapons
 		  - Updated in-game and readme credits
+		  - Polished weapon/projectile placement
+
 
 		  - Edit "Last Stand" (planned)
 		  - Recolor UES Ranger (planned)
