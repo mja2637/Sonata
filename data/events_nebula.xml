@@ -2,8 +2,6 @@
 
 <!--	
 
-MATT: Need to update Nebula_Empty to standard. 
-
 Structure:
 	FLEET_EASY_NEBULA
 	NEBULA_EMPTY
@@ -77,7 +75,7 @@ Storm Environment:
 	<text>You've entered a sector thick with nebulas. You'll have to navigate on instinct.</text>
 	<text>You've entered a nebula-rich sector. You may put a few light years on the fleet, but that's only useful if you make it out the other side.</text>
 	<text>Thanks to the high nebula density of this sector very little of it has been charted, and rumours of what lurks in the depths abound.</text>
-	<text>The gases that make up the nebulas in this sector threaten to impair your systems; but you have to press on.</text>
+	<text>The gases that make up the nebulas in this sector threaten to impair your systems, but you have to press on.</text>
 </textList>
 
 <!-- for when the fleet takes over a nebula beacon -->
@@ -95,11 +93,12 @@ Storm Environment:
 <textList name="NEBULA_STORE">
 	<text>Some brave entrepreneurs set up a station here to extract elements from the nebula. There seems to be a public shipyard and rest stop here as well.</text>
 	<text>Seeing a trade depot set up near the beacon implies there is an alien settlement on some nearby rock. You decide to check out their wares.</text>
-	<text>The centre of a hydrogen cloud doesn't seem like a very usual place for a store, but the Engi aren't a usual species. Wouldn't hurt to take a look.</text>
+	<text>The centre of a hydrogen cloud doesn't seem like a usual place for a store, but the Engi aren't a usual species. Wouldn't hurt to take a look.</text>
 	<text>An Engi cargo vessel hails: "Propose mutually beneficial exchange of properties." That smells like a bargain.</text>
 	<text>You discover a cluster of Pilgrim refugee ships taking shelter in the folds of the nebula. "I'm sorry we've got nothing to give you, but we need Dust to keep the engines running." You sense they'll strike a trade.</text>
 </textList>
 
+<!-- MATT: Need to update Nebula_Empty to standard.  -->
 <event name="NEBULA_EMPTY">
 	<text load = "NEBULA_EMPTY_LIST"/>
 	<environment type="nebula"/>
@@ -132,8 +131,8 @@ Storm Environment:
 	<text>The UE must have anticipated you would try to lose them within the nebula. A scout was waiting for you at the beacon.</text>
 	<text>It looks like you will be unable to avoid the Empire by traveling through the nebula. A warship is waiting for you near the beacon.</text>
 	<text>Shortly after you arrive, a United Empire corvette jumps nearby. There looks to be no escape. Prepare for a fight!</text>
-	<text>Newton-knows what brings this loyalist ship so far out; its captain hails, but does a double take when he identifies your ship. They open fire.</text>
-	<text>A UE ship hails, but you don't take chances in conditions like this.  You block the frequency and prepare to engage.</text>
+	<text>The Endless know what brings this loyalist ship so far out; its captain hails, but does a double take when he identifies your ship. They open fire.</text>
+	<text>A UE ship hails, but you don't take chances in conditions like this. You block the frequency and prepare to engage.</text>
 </textList>
 
 <event name="NEBULA_AUTO">
@@ -142,15 +141,15 @@ Storm Environment:
 	<environment type="nebula"/>
 </event>
 <textList name="NEBULA_AUTO_LIST">
-	<text>You cross paths with an advance scout of the United Empire fleet searching this section of the nebula for your ship.</text>
-	<text>You jump into a calmer part of the nebula. However, your relief fades as a UE frigate jumps to the beacon and moves in to attack.</text>
-	<text>The tangled wrecks of many ships wait in dormancy here. You see lights flicker on what looks like debris. An Empire scout bursts out of the wreckage!</text>
+	<text>You cross paths with a USV painted in Empire colors searching this section of the nebula for your ship.</text>
+	<text>You jump into a calmer part of the nebula. However, your relief fades as a loyalist USV jumps to the beacon and moves in to attack.</text>
+	<text>The tangled wrecks of many ships wait in dormancy here. You see lights flicker on what looks like debris. An Empire unmanned scout bursts out of the wreckage!</text>
 	<text>This drone isn't looking for you. Perhaps it's scouting ahead for the United Empire's expansion or maybe they're seeking to use this nebula for cover. Regardless, it identifies you as hostile.</text>
-	<text>It's worrying that the Empire has expanded so deep into uncharted space, even if it is only an unmanned craft.  It arms its weapons; you should do the same.</text>
+	<text>It's worrying that the Empire has expanded so deep into uncharted space, even if it is only an unmanned craft. It arms its weapons; you should do the same.</text>
 </textList>
 
 <event name="NEBULA_AUTO_WARNING" unique = "true">
-	<text>It appears that an automated United Empire scout was positioned within the nebula to warn of your passing.</text>
+	<text>It appears that an United Empire unmanned space vessel was positioned within the nebula to warn of your passing.</text>
 	<ship load="REBEL_AUTO_WARNING" hostile="true"/>
 	<environment type="nebula"/>
 </event>
@@ -173,7 +172,7 @@ Storm Environment:
 	<environment type="nebula"/>
 </event>
 <textList name="NEBULA_MANTIS_FIGHT">
-	<text>Nebulas are known to be popular Mantis hunting grounds. Information you would have done well to heed here.</text>
+	<text>Nebulas are known to be popular Mantis hunting grounds - information you would have done well to heed here.</text>
 	<text>You detect a Mantis expedition vessel returning home with its haul. So determined are they, in fact, that they don't wait to see if you're hostile before firing.</text>
 	<text>A Mantis ship, lost in the storm, hails you. "Sensors are out. We have no local telemetry. We will take yours." You detect a power increase in their weapons systems.</text>
 	<text>A Mantis ship hails you through the storm: "These are sacred Urggghtnag clan hunting grounds. You are prey." Shields up!</text>
@@ -187,7 +186,7 @@ Storm Environment:
 ------------>
 
 <event name="NEBULA_REBEL_UNDETECTED" unique="true">  <!-- give player option to hide, -->
-	<text>Your ship emerges quite far away from the beacon. You see an Empire ship waiting nearby; undoubtedly stationed to look for you.</text>
+	<text>Your ship emerges quite far away from the beacon. You see an Empire ship waiting nearby, undoubtedly stationed to look for you.</text>
 	<ship load="REBEL" hostile="false"/>
 	<environment type="nebula"/>
 	<choice>
@@ -219,7 +218,7 @@ Storm Environment:
 		<choice req="engines" lvl="4" hidden="true">
 			<text>(Engines) Fully power the engines to out-run them.</text>
 			<event>
-				<text>Your powerful engines allow you to out-distance the ship and eventually lose it within the nebula.</text>
+				<text>Your vessel shudders as you bring your outsized engines to 110% military rating - you hope the thrust blocks can take it. You easily out-distance the loyalists.</text>
 			</event>
 		</choice>
 	</event>
@@ -234,10 +233,10 @@ Storm Environment:
 
 
 <event name="NEBULA_PIRATE_SMUGGLE">   <!-- TO DO -- NEED TO MAKE A NEW PIRATE SHIP THAT ATTEMPTS TO BRIBE YOU WHEN SURRENDERING-->
-	<text>A pirate ship arrives shortly after you. Judging from the fact that it is attempting to avoid your ship, you assume that it's a smuggler trying to stay away from beacons.</text>
+	<text>A small ship arrives shortly after you and is acting suspiciously nonchalant - keeping their distance, but trying to make it look like they aren't. They have an IFF code clearance - an older code, but it checks out. Likely a smuggler.</text>
 	<environment type="nebula"/>
 	<choice>
-		<text>Attack the pirate.</text>
+		<text>Attack the smuggler.</text>
 		<event>
 			<text>You power up your weapons and move in to engage</text>
 			<ship load="PIRATE_SMUGGLE" hostile ="true"/>
@@ -270,7 +269,7 @@ Storm Environment:
 </event>
 
 <event name="NEBULA_AUTO_DEFENSE_ITEM" unique="true">
-	<text>An advance Empire automated ship remains stationed near a small space-station. However, without functioning sensors it is impossible to tell what is inside.</text>
+	<text>An advance Empire USV remains stationed near a small space-station. However, without functioning sensors it is impossible to tell what is inside.</text>
 	<ship load="REBEL_AUTO_ITEM" hostile="false"/>  <!-- ship is in other xmls -->
 	<choice>
 		<text>Attack the automated ship to get to the station.</text>
@@ -506,7 +505,7 @@ Storm Environment:
 	Events with storm
 ------------>
 <event name="STORM_AUTO" unique = "true">
-	<text>You jump into a sector of the nebula beset by a plasma storm. An automated loyalist scout stationed at the beacon moves in to attack.</text>
+	<text>You jump into a sector of the nebula beset by a plasma storm. A loyalist USV stationed at the beacon moves in to attack.</text>
 	<environment type="storm"/>
 	<choice>
 		<text>Prepare to fight.</text>
@@ -519,7 +518,7 @@ Storm Environment:
 		<event load="STORM_AUTO_ESCAPE"/>
 	</choice>
 	<choice req="cloaking" hidden="true">
-		<text>(Cloaking) Use your cloaking to escape.</text>
+		<text>(Cloaking) Use your cloak to escape.</text>
 		<event>
 			<text>You rig for silent running and evade the USV.</text>
 		</event>
@@ -530,7 +529,7 @@ Storm Environment:
 		<text>You successfully lose the ship in the storm.</text>
 	</event>
 	<event>
-		<text>They were able to follow the plasma trail left by your oversized engines; you turn and prepare for a fight.</text>
+		<text>They were able to follow the plasma trail left by your engines; you turn and prepare for a fight.</text>
 		<ship load = "REBEL_AUTO" hostile="true"/>
 	</event>
 </eventList>

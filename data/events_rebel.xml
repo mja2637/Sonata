@@ -93,10 +93,6 @@ Environmnt:
 	<event load="FEDERATION_PLANET_SIGNAL"/>
 </eventList>
 
-
-
-
-
 <!-----------
 		STRUCTURE!!!
 	Requred structural 
@@ -171,7 +167,7 @@ Environmnt:
 	<text>Your arrival is greeted by numerous computer alerts. The nearby automated United Empire scout has deployed a virus and disrupted your shield system. Hopefully it won't cause further problems before you can destroy it.</text>
 	<ship load="REBEL_AUTO_HACKSHIELDS" hostile="true"/>
 	<status type="divide" target="player" system="shields" amount="2"/>
-</event>	
+</event>
 
 <event name="REBEL">
 	<text load="REBEL"/>
@@ -196,11 +192,6 @@ Environmnt:
 	<text>You stumble across a forward scout of the loyalist fleet.</text>
 	<ship load="SQUAT_WARNING" hostile="true"/>
 </event>
-
-
-
-
-
 
 
 <!-----------
@@ -241,19 +232,19 @@ Environmnt:
 	<choice>
 		<text>Avoid the conflict.</text>
 		<event>
-			<text>The United Empire ship fires some warning shots but eventually powers down their weapons. The outpost seems to have given them what they demanded.</text> 
+			<text>The UE ship fires some warning shots but eventually powers down their weapons. The outpost seems to have given them what they demanded.</text> 
 		</event>
 	</choice>
 </event>
 
 <event name="AUTO_REFUEL_STATION" unique="true">  
 	<img planet="PLANET_POPULATED_SMALL"/>
-	<text>You detect an automated loyalist scout attacking a small re-fueling outpost. </text>
+	<text>You detect a loyalist unmanned space vehicle attacking a small re-fueling outpost. </text>
 	<ship load="REBEL_AUTO_REFUEL" hostile="false"/>
 	<choice>
 		<text>Intervene to defend the outpost.</text>
 		<event>
-			<text>Detecting the higher threat, the automated ship moves in to engage your ship.</text> 
+			<text>Detecting the higher threat, the USV moves in to engage your ship.</text> 
 			<ship hostile="true"/>
 		</event>
 	</choice>
@@ -267,7 +258,7 @@ Environmnt:
 
 <event name="AUTO_DEFENSE_MAP" unique="true">
 	<img planet="PLANET_POPULATED"/>
-	<text>You detect a United Empire automated ship nearby. It does not engage and seems to be patrolling around a long-range sensor station.</text>
+	<text>You detect a patrol USV. It does not engage and seems to be patrolling around an Empire long-range sensor station.</text>
 	<ship load="REBEL_AUTO_MAP" hostile="false"/>
 	<choice>
 		<text>Attack the automated ship to get to the sensor station.</text>
@@ -303,7 +294,7 @@ Environmnt:
 </eventList>
 
 <event name="AUTO_DEFENSE_ITEM" unique="true">
-	<text>An advanced United Empire automated ship remains stationed near a small loyalist space-station. Sensors indicate it's a storage vessel for military goods.</text>
+	<text>A large loyalist USV remains stationed near a small loyalist space-station. Sensors indicate it's a storage vessel for military goods.</text>
 	<ship load="REBEL_AUTO_ITEM" hostile="false"/>
 	<choice>
 		<text>Attack the automated ship to get to the storage cache.</text>
@@ -366,7 +357,7 @@ Environmnt:
 		<event/>
 	</choice>
 	<choice req="COMBAT" hidden="true">
-		<text>(Anti-Ship Drone) Send a drone to distract the automated ship.</text>
+		<text>(Anti-Ship USV) Send a drone to distract the automated ship.</text>
 		<event load="AUTO_DEFENSE_RADAR_COMBAT"/>
 	</choice>
 </event>
@@ -419,7 +410,7 @@ Environmnt:
 
 <event name="REBEL_TRANSPORT" unique = "true">
 	<img planet="NONE"/>
-	<text>You spot a small loyalist ship nearby. It seems to have been re-fitted for transport rather than combat. It does not seem to want to engage you and your ship.</text>
+	<text>You spot a loyalist logistics ship nearby - they must have assumed this sector was safe enough to travel without an escort. If you wish, you may relieve them of this assumption.</text>
 	<choice>
 		<text>Demand the surrender of their goods.</text>
 		<event>
@@ -434,6 +425,7 @@ Environmnt:
 		</event>
 	</choice>
 </event>
+
 <eventList name="REBEL_TRANSPORT_DESTROYED">
 	<event>
 		<text>You search the ship and discover that its cargo was new military-grade weaponry!  It was somehow undamaged in the fight and can easily be mounted on the ship.</text>
@@ -469,7 +461,7 @@ Environmnt:
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>You detect faint life signatures from an intact piece of the hull. They were transporting prisoners, and the sole survivor offers to join your crew, as a first step on his path to get revenge.</text>
+		<text>You detect faint life signatures from an intact piece of the hull. They were transporting prisoners, and the sole survivor offers to join your crew, as a first step on the path to revenge.</text>
 		<crewMember amount="1"/>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
@@ -482,13 +474,14 @@ Environmnt:
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 </eventList>
+
 <eventList name="REBEL_TRANSPORT_CAPTURED">
 	<event>
 		<text>With the crew dead, you search the ship. You find military-grade weaponry and take what looks most useful.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
 	<event>
-		<text>The ship refuses to fight, but you still detect life signatures. Apparently this was a prisoner transport. The single survivor offers to join your crew in exchange for their freedom.</text>
+		<text>The ship refuses to fight, but you still detect life signatures. Apparently this was a prisoner transport. The single survivor offers to join your crew in exchange for his freedom.</text>
 		<crewMember amount="1"/>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
@@ -506,7 +499,7 @@ Environmnt:
 
 
 <event name="BROKEN_REBEL_DRONE" unique="true">
-	<text>You find a United Empire automated scout floating near this beacon. Despite its pristine condition, it appears to be de-activated.</text>
+	<text>You find a large USV floating near this beacon. Despite its pristine condition, it appears to be de-activated.</text>
 	<ship load="REBEL_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>Attempt to download the ship's data stores.</text>
@@ -530,7 +523,7 @@ Environmnt:
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
-		<text>You accidentally reactivate the ships AI. Its weapons and shields immediately go online; prepare for a fight!</text>
+		<text>You accidentally reactivate the ship's AI. Its weapons and shields immediately go online; prepare for a fight!</text>
 		<ship load="REBEL_AUTO" hostile="true"/>
 	</event>
 </eventList>
@@ -565,22 +558,18 @@ Environmnt:
 
 <event name="NEBULA_REBEL_BOARDING">
 	<environment type="nebula"/>
-	<text>There appears to be a number of small stations nearby.  Before you have time to scan them, warnings go off.  Some loyalist soldiers teleport aboard your ship!</text>
+	<text>It's a trap. Before you have time to recalibrate your sensors after the jump, proximity warning klaxons start blaring. A souped-up civilian runabout screams past, beaming crack United Earth commandos onto your ship before jumping away.</text>
 	<choice>
 		<text>Continue...</text>
 		<event>
 			<boarders min="e" max="4" class="human"/>
 		</event>
-	</choice>	
+	</choice>
 	<choice hidden="true" req="teleporter">
 		<text>(Teleporter) Beam them the fuck back OFF your ship!</text>
 		<event/>
 	</choice>	
 </event>
-
-
-
-
 
 <!-----------
 		BOARDERS!!!
@@ -601,8 +590,8 @@ Environmnt:
 	<ship load="REBEL" hostile="true"/>
 </event>
 <textList name="BOARDERS_REBEL_SHIP" unique="false">
-	<text>You receive a message from a nearby loyalist station, "You have a lot of guts passing through our space, I'll give you that."  He turns giving an order, "Kill the turncoats, I want that ship intact."</text>
-	<text>Your sensors warn of an incoming loyalist ship at the same time as you hear the telltale signs of a teleporter. You hear someone taunt from within the ship, "Ready to join the Endless?  I sure am ready to get a promotion!"</text>
+	<text>You receive a message from a nearby loyalist station, "You have a lot of guts passing through our space, I'll give you that."  He turns, giving an order: "Shoot the bastards, I want that ship intact."</text>
+	<text>Your sensors warn of an incoming loyalist ship at the same time as you hear the telltale signs of a teleporter. You hear someone taunt from within the ship, "Say hi to the Endless for me, you'll be seeing them real soon!"</text>
 	<text>Incoming video communitation: "Rebel scum," sneers an Empire officer, "How very generous of you to turn yourself in. Prepare to be boarded."</text>
 	<text>You receive a message on a low-band channel. "You're surrounded, just like the last of your Pilgrim friends.  Just give up already." The enemy has teleported onto our ship!</text>
 </textList>

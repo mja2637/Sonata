@@ -1906,10 +1906,6 @@ item - Dust + that thing  -->
 	</choice>  
 </event>
 
-
-
-
-
 <!-----------
 		ENVIRONMENT!!!
 	Events with unique environments
@@ -1927,9 +1923,6 @@ item - Dust + that thing  -->
 	<ship load="REBEL_AUTO" hostile="true"/>
 	<environment type="sun"/>
 </event>
-
-
-
 
 <!-----------
 		ITEMS!!!
@@ -2208,14 +2201,6 @@ item - Dust + that thing  -->
 		</item_modify>
 	</event>
 </eventList>
-
-
-
-		
-
-
-
-
 
 <!-----------
 		SPECIAL!!!

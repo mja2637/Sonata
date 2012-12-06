@@ -115,23 +115,23 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  
 7
 		  - Added Sonata drones
-		  - Added idle "talk with crew" feature		  
-		  - Added EFP projectile		  
+		  - Added EFP projectile
 		  - Added custom backgrounds
 		  - Added custom musics
-		  - Convert scoreUI
-		  - Sower/Sophon sprite recolor; custom Human/Sophon/Sower crew weapons
+		  - Added new events
+		  - Finishing touches on UI
+		  - Sower/Sophon sprite recolor
+		  - Custom Human/Sophon/Sower crew weapons
 		  - Updated in-game and readme credits
 
 		  - Edit "Last Stand" (planned)
-		  - Clean up Sower Terraformer ship image (planned)
-		  - Add Sower Terraformer B (planned)
-		  - Add diverse civilian events (planned)		  
-		  - Add diverse nebula events (planned)
-		  - Add diverse Loyalist events (planned)
+		  - Recolor UES Ranger (planned)
+		  - Recolor UES Long Island (planned)
+		  - Clean up Sower Terraformer (planned)
+		  - Recolor Kilimanjaro (planned)
 		  - Balancing pass (planned)
 6a
-          - Removed "%" symbol causing defect in Sophon event text
+          - Fixed text encoding issues
           - Filled inner transparencies in /map button .pngs preventing them from showing up as black boxes
 		  - Converted /storeUI
 		  - Converted /upgradeUI

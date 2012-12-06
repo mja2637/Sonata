@@ -1,4 +1,4 @@
-<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved. -->
 
 <sectorType name="CIVILIAN">
 	<sector>CIVILIAN_SECTOR_1</sector>
@@ -19,7 +19,6 @@
 	<sector>ZOLTAN_HOME</sector>
 	<sector>ROCK_SECTOR</sector>	
 </sectorType>
-
 
 <sectorType name="HOSTILE">
 	<sector>REBEL_SECTOR</sector>
