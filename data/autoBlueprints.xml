@@ -637,18 +637,20 @@
   <shipBlueprint name="ROCK_SCOUT" layout="rock_scout" img="rock_scout">
 	<class>Sower Surveyor</class>
 	<systemList>
-		<pilot power="1"max="3" room="3"/>
-		<doors power="1" max="3" room="5" start="false"/>
-		<oxygen power="1" max="3" room="0"/>
-		<medbay power="0" max="1" room="2" start="false"/>
-		<shields power="2" max="6" room="4"/>
-		<engines power="1" max="6" room="6"/>
-		<weapons power="2" max="6" room="1"/>
+		<pilot power="1" max="3" room="1" img="room_pilot" />
+		<sensors power="1" max="3" room="5" img="room_sensors" />
+		<oxygen power="1" max="3" room="7" img="room_oxygen" />
+		<shields power="2" max="6" room="2" img="room_pilot" />
+		<engines power="1" max="6" room="4" img="room_engines" />
+		<weapons power="2" max="6" room="0" img="room_weapons" />
+		<drones power="0" max="4" room="6" start="false" img="room_drones" />
+		<teleporter power="0" max="2" room="3" start="false" img="room_teleporter" />
+		<cloaking power="0" max="2" room="8" start="false" img="room_cloaking" />
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ROCK"/>
 	<health amount="8"/>	
 	<maxPower amount ="7"/>
-	<crewCount amount = "2" max="4" class="rock"/>
+	<crewCount amount = "2" max="3" class="rock"/>
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
@@ -657,13 +659,16 @@
 	<class>Sower Builder</class>
 	<minSector>2</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="3"/>
-		<doors power="1" max="3" room="6" start="false"/>
-		<oxygen power="1" max="3" room="7"/>
-		<medbay power="0" max="2" room="4" start="false"/>
-		<shields power="2" max="8" room="5"/>
-		<engines power="2" max="5" room="8"/>
-		<weapons power="2" max="8" room="0"/>
+		<pilot power="1" max="3" room="2" img="room_pilot" />
+		<doors power="1" max="3" room="8" img="room_doors" />
+		<sensors power="0" max="3" room="0" img="room_sensors" />
+		<oxygen power="1" max="3" room="1" img="room_oxygen" />
+		<shields power="2" max="8" room="7" img="room_pilot" />
+		<engines power="2" max="5" room="9" img="room_engines" />
+		<weapons power="2" max="8" room="3" img="room_weapons" />
+		<drones power="0" max="4" room="4" start="false" img="room_drones" />
+		<teleporter power="0" max="3" room="6" start="false" img="room_teleporter" />
+		<cloaking power="0" max="3" room="5" start="false" img="room_cloaking" />
 	</systemList>
 	<weaponList missiles="10" load="WEAPONS_ROCK"/>
 	<health amount="10"/>	
