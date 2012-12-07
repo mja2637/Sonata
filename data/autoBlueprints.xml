@@ -641,7 +641,7 @@
 		<sensors power="1" max="3" room="5" img="room_sensors" />
 		<oxygen power="1" max="3" room="7" img="room_oxygen" />
 		<shields power="2" max="6" room="2" img="room_pilot" />
-		<engines power="1" max="6" room="4" img="room_engines" />
+		<engines power="2" max="6" room="4" img="room_engines" />
 		<weapons power="2" max="6" room="0" img="room_weapons" />
 		<drones power="0" max="4" room="6" start="false" img="room_drones" />
 		<teleporter power="0" max="2" room="3" start="false" img="room_teleporter" />
@@ -649,31 +649,31 @@
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ROCK"/>
 	<health amount="8"/>	
-	<maxPower amount ="7"/>
-	<crewCount amount = "2" max="3" class="rock"/>
+	<maxPower amount="7"/>
+	<crewCount amount="2" max="3" class="rock"/>
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
 
   <shipBlueprint name="ROCK_FIGHT" layout="rock_fight" img="rock_fight">
 	<class>Sower Builder</class>
-	<minSector>2</minSector>
+	<!-- <minSector>2</minSector> -->
 	<systemList>
-		<pilot power="1" max="3" room="2" img="room_pilot" />
-		<doors power="1" max="3" room="8" img="room_doors" />
-		<sensors power="0" max="3" room="0" img="room_sensors" />
-		<oxygen power="1" max="3" room="1" img="room_oxygen" />
-		<shields power="2" max="8" room="7" img="room_pilot" />
-		<engines power="2" max="5" room="9" img="room_engines" />
-		<weapons power="2" max="8" room="3" img="room_weapons" />
-		<drones power="0" max="4" room="4" start="false" img="room_drones" />
-		<teleporter power="0" max="3" room="6" start="false" img="room_teleporter" />
-		<cloaking power="0" max="3" room="5" start="false" img="room_cloaking" />
+		<pilot power="1" max="3" room="9" img="room_pilot" />
+		<doors power="1" max="3" room="7" img="room_doors" />
+		<sensors power="0" max="3" room="1" img="room_sensors" />
+		<oxygen power="1" max="3" room="0" img="room_oxygen" />
+		<shields power="2" max="8" room="6" img="room_pilot" />
+		<engines power="1" max="5" room="2" img="room_engines" />
+		<weapons power="2" max="8" room="8" img="room_weapons" />
+		<drones power="0" max="4" room="3" start="false" img="room_drones" />
+		<teleporter power="0" max="3" room="5" start="false" img="room_teleporter" />
+		<cloaking power="0" max="3" room="4" start="false" img="room_cloaking" />
 	</systemList>
 	<weaponList missiles="10" load="WEAPONS_ROCK"/>
 	<health amount="10"/>	
-	<maxPower amount ="10"/>
-	<crewCount amount = "2" max="5" class="rock"/>
+	<maxPower amount="10"/>
+	<crewCount amount="2" max="5" class="rock"/>
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
