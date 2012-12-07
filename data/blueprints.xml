@@ -1091,7 +1091,6 @@
 	<launchSounds>
 		<sound>pulse1</sound>
 		<sound>pulse1</sound>
-		<sound>pulse1</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -4538,9 +4537,9 @@
 </shipBlueprint>
 
 <!-- ROCK SHIP -->
-<!-- LAYOUT = ALTERNATE -->    <!-- name it after FP2 Shivans? - Rakshasa - Moloch - Ravana - Sathanas-->
+<!-- LAYOUT = ALTERNATE -->
 <!-- SHIP ID = 6 -->   
-<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser" img="rock_cruiser">
+<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser" img="rock_cruiser_2">
 	<class>Pirate Sower</class>
 	<name>Kilimanjaro</name>
 	<unlock>Prove yourself to the Sower to earn this powerful cruiser.</unlock>
@@ -4578,6 +4577,7 @@
 	<maxPower amount ="9"/> 
 	<crewCount amount = "2" class="mantis"/>
 	<crewCount amount = "1" class="engi"/>
+	<shieldImage>rock_cruiser</shieldImage>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
 

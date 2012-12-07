@@ -92,6 +92,26 @@ Test Event
 	<text>This event tests combat with rebel_long.</text>
 </text>
 
+<event name="TEST_SOWER_SCOUT">
+	<text>TEST_SOWER_SCOUT</text>
+	<ship load = "TEST_SOWER_SCOUT_LOAD" hostile ="true"/>
+</event>
+
+<event name="TEST_SOWER_SCOUT_PIRATE">
+	<text>TEST_SOWER_SCOUT_PIRATE</text>
+	<ship load = "TEST_SOWER_SCOUT_PIRATE_LOAD" hostile ="true"/>
+</event>
+
+<event name="TEST_SOWER_FIGHTER">
+	<text>TEST_SOWER_FIGHTER</text>
+	<ship load = "TEST_SOWER_FIGHTER_LOAD" hostile ="true"/>
+</event>
+
+<event name="TEST_SOWER_FIGHTER_PIRATE">
+	<text>TEST_SOWER_FIGHTER_PIRATE</text>
+	<ship load = "TEST_SOWER_FIGHTER_PIRATE_LOAD" hostile ="true"/>
+</event>
+
 <!--<autoReward level=<LOW/MED/HIGH/RANDOM>> tag </autoreward>
 where tag is
 standard  - which is Dust + 2 resources (possible a weapon)

@@ -124,6 +124,7 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Custom Human/Sophon/Sower crew weapons
 		  - Updated in-game and readme credits
 		  - Polished weapon/projectile placement
+		  - Added Sower Surveyor, Sower Builder, pirate versions
 
 
 		  - Edit "Last Stand" (planned)

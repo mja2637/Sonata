@@ -89,6 +89,50 @@ Special:
 	</deadCrew>
 </ship>
 
+<ship name="TEST_SOWER_SCOUT_LOAD" auto_blueprint="ROCK_SCOUT">  <!-- fed base? -->
+	<destroyed>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="TEST_SOWER_SCOUT_PIRATE_LOAD" auto_blueprint="SHIPS_ROCK_PIRATE">  <!-- fed base? -->
+	<destroyed>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="TEST_SOWER_FIGHTER_LOAD" auto_blueprint="ROCK_FIGHT">  <!-- fed base? -->
+	<destroyed>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="TEST_SOWER_FIGHTER_PIRATE_LOAD" auto_blueprint="SHIPS_ROCK_PIRATE">  <!-- fed base? -->
+	<destroyed>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
 
 
 <!--------------------------------
