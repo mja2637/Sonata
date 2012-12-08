@@ -50,10 +50,7 @@ STRUCTURE SECTORS
 	 <event name="NOTHING_2" min="5" max="7"/>
 	 <event name="NOTHING_3" min="5" max="7"/>
 	 <event name="NOTHING_4" min="5" max="7"/>
-	 <event name="TEST_SOWER_SCOUT_PIRATE" min="8" max="12"/> -->
-
-	
-	<!--
+	  -->
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
 	<event name="NOTHING_1" min="3" max="3"/>
@@ -63,7 +60,6 @@ STRUCTURE SECTORS
 	<event name="QUESTS" min="1" max="1"/>
 	<event name="HOSTILE1" min="2" max="2"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
-	-->
 </sectorDescription>
 
 
@@ -89,7 +85,7 @@ CIVILIAN SECTORS
  ----------------------->
 <sectorDescription name="CIVILIAN_SECTOR_1" minSector="1" unique="true"> 
 	<nameList>
-		<name>Civilian Sector</name>
+		<name>Civilian Sector 1</name>
 	</nameList>
 	<trackList>
 		<track>home</track>
@@ -110,7 +106,7 @@ CIVILIAN SECTORS
 
 <sectorDescription name="CIVILIAN_SECTOR_2" minSector="2" unique="true"> 
 	<nameList>
-		<name>Civilian Sector</name>
+		<name>Civilian Sector 2</name>
 	</nameList>
 	<trackList>
 		<track>home</track>
@@ -131,7 +127,7 @@ CIVILIAN SECTORS
 
 <sectorDescription name="CIVILIAN_SECTOR_3" minSector="4" unique="true"> 
 	<nameList>
-		<name>Civilian Sector</name>
+		<name>Civilian Sector 3</name>
 	</nameList>
 	<trackList>
 		<track>home</track>
@@ -152,7 +148,7 @@ CIVILIAN SECTORS
 
 <sectorDescription name="CIVILIAN_SECTOR_4" minSector="6" unique="true"> 
 	<nameList>
-		<name>Civilian Sector</name>
+		<name>Civilian Sector 4</name>
 	</nameList>
 	<trackList>
 		<track>home</track>

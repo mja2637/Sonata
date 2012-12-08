@@ -243,7 +243,7 @@ Environmnt:
 
 <event name="AUTO_REFUEL_STATION" unique="true">  
 	<img planet="PLANET_POPULATED_SMALL"/>
-	<text>You detect a loyalist unmanned space vehicle attacking a small re-fueling outpost. </text>
+	<text>You detect a loyalist unmanned space vehicle attacking a small re-fueling outpost.</text>
 	<ship load="REBEL_AUTO_REFUEL" hostile="false"/>
 	<choice>
 		<text>Intervene to defend the outpost.</text>

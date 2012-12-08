@@ -86,10 +86,10 @@ Test Event
 
 <event name="TEST">
 	<text load="TEST_TEXT"/>
-	<event load="BOARDERS_ASTEROID_GHOST"/>
+	<ship load = "TEST_SOWER_SCOUT_PIRATE_LOAD" hostile ="true"/>
 </event>
 <textList name="TEST_TEXT">
-	<text>Do ghosts cause ctd?</text>
+	<text>Sower scout</text>
 </text>
 
 <event name="TEST_SOWER_SCOUT">
@@ -1978,7 +1978,7 @@ item - Dust + that thing  -->
 	<text>An abandoned space station circles a lonely planet. A quick check yields schematics for a drone. You bring it aboard the ship.</text>
 	<text>Pilgrim sympathizers contact you as you arrive. "We know your mission should be secret, so don't ask how we know about it. Take this schematic, it's all we can do to help."</text>
 	<text>A small Engi research vessel is trying to fend off a Mantis ship. You move in to engage but after a quick scan of your ship the Mantis ship retreats. The Engi offer you a drone schematic as thanks for your timely arrival.</text>
-	<text>You find an abandoned mining station on a nearby moon. A quick scan shows no life forms however you discover a usable drone schematic!</text>
+	<text>You find an abandoned mining station on a nearby moon. A quick scan shows no life forms, however you discover a usable drone schematic!</text>
 </textList>
 
 <event name="FIND_WEAPON">
@@ -2001,7 +2001,7 @@ item - Dust + that thing  -->
 <textList name="FREE_ITEMS">
 	<text>You arrive in a system and immediately discover a pirate ship nearby. Strangely, scans indicate there are no lifeforms aboard. You salvage anything useful, but find no clue as to the whereabouts of the former crew.</text>
 	<text>Not much remains in this abandoned system; however, scans reveal a nearby mining platform with some salvageable Dust stores.</text>
-	<text planet="PLANET_POPULATED">As you arrive in the system you are hailed by a loyalist settlement. Upon learning of your quest, they offer you supplies.</text>
+	<text planet="PLANET_POPULATED">As you arrive in the system you are hailed by a Pilgrim settlement. Upon learning of your mission, they offer you supplies.</text>
 	<text planet="PLANET_GAS">Debris from a forgotten battle still orbits the gas giant in this system. Some of it still might be usable.</text>
 </textList>
 
@@ -2027,7 +2027,7 @@ item - Dust + that thing  -->
 	<text>You arrive in the sector and are greeted by a science vessel waiting by the beacon. They hail you, "We find ourselves low on fuel and have a proposition."</text>
 </textList>
 
-<event name="REFUEL_STATION" unique="true">   <!-- NEED - checks to see if you have enough Dust!-->
+<event name="REFUEL_STATION" unique="true">
 	<text>A ship re-fueling station is stationed at this beacon. We can purchase fuel here.</text>
 	<choice hidden="true">
 		<text>6 Fuel for 12 Dust</text>
@@ -2065,7 +2065,7 @@ item - Dust + that thing  -->
 	</choice>
 </event>
 
-<event name="REPAIR_STATION" unique="true">   <!-- NEED - checks to see if you have enough scrap!-->
+<event name="REPAIR_STATION" unique="true">
 	<text>You see a small station fitted with hundreds of repair drones.  You receive an automated message, "We don't know who you are and we don't care, but this is the right place for some ship repair!"</text>
 	<choice hidden="true">
 		<text>Repair 20 damage for 40 Dust.</text>
@@ -2104,7 +2104,7 @@ item - Dust + that thing  -->
 </event>
 
 <event name="SELL_MISSILES_STATION" unique="true">  
-	<text>There is a black market hub here.  You receive a message, "These are dangerous times.  If you have extra military-grade explosives, we'll gladly pay you for them."</text>
+	<text>There is a black market hub here. You receive a message, "These are dangerous times. If you have extra military-grade explosives, we'll gladly pay you for them."</text>
 	<choice hidden="true">
 		<text>Sell 5 missiles for 15 Dust.</text>
 		<event>
@@ -2125,7 +2125,7 @@ item - Dust + that thing  -->
 			</item_modify>
 		</event>
 	</choice>
-		<choice hidden="true">
+	<choice hidden="true">
 		<text>Sell 15 missiles for 45 Dust.</text>
 		<event>
 			<text>"Thank you, this will help greatly."</text>
@@ -2163,7 +2163,7 @@ item - Dust + that thing  -->
 			</item_modify>
 		</event>
 	</choice>
-		<choice hidden="true">
+	<choice hidden="true">
 		<text>Sell 12 drone parts for 48 Dust.</text>
 		<event>
 			<text>"Thank you for your business"</text>
@@ -2179,7 +2179,6 @@ item - Dust + that thing  -->
 	</choice>
 </event>
 
-<!--needs civilized background-->
 <event name="TRADER_CIV">
 	<text load="TRADER_CIV"/>
 	<choice>
@@ -2191,7 +2190,6 @@ item - Dust + that thing  -->
 		<event/>
 	</choice>
 </event>
-
 <textList name="TRADER_CIV">
 	<text planet="PLANET_POPULATED">You arrive at a quiet spaceport and are immediately hailed by another ship at port with a "once in a lifetime deal!"</text>
 	<text planet="PLANET_POPULATED">You jump into a sector filled with civilian activity. Your scan the various advertisement channels while waiting for your FTL to charge, and are intrigued by a grey-market shipwright.</text>
