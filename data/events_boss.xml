@@ -116,13 +116,13 @@ Items:
 </event>
 
 <event name="BOSS_ESCAPED">
-	<text>After one last devastating barrage from your ship, the destroyer is torn apart by multiple internal explosions. As you veer away to avoid them, the Mahan manages to jump away. Without one of its escorts, it will have to get closer to the base to be a threat. You've bought some time, but you've got to keep up the assault!</text>
+	<text>After one last devastating barrage from your ship, one of Mahan's escorts are torn apart by multiple internal explosions. As you veer away to avoid them, the Mahan manages to jump away. Without one of its escorts, it will have to get closer to the base to be a threat. You've bought some time, but you've got to keep up the assault!</text>
 	<autoReward level="HIGH">standard</autoReward>
 </event>
 
 
 <event name="BOSS_TEXT_1">
-	<text>There she is, the UES Mahan - all 350,000 tons of her. It's the Admiral's flagship, and if he goes down you might have a chance. Two UE destroyers are guarding the Mahan, and it's just been re-armed with an experimental tachyon accelerator. This won't be easy. "Hell," you gulp and think to yourself, "this won't be anything except suicidal."</text>
+	<text>There she is, the UES Mahan - all 350,000 tons of her. It's the Admiral's flagship, and if he goes down you might have a chance. A destroyer and a frigate are guarding the Mahan, and it's just been re-armed with an experimental tachyon accelerator. This won't be easy. "Hell," you gulp and think to yourself, "this won't be anything except suicidal."</text>
 </event>
 
 <event name="BOSS_TEXT_2">
