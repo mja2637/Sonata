@@ -112,6 +112,11 @@ Test Event
 	<ship load = "TEST_SOWER_FIGHTER_PIRATE_LOAD" hostile ="true"/>
 </event>
 
+<event name="TEST_UE_GUNSHIP">
+	<text>TEST_UE_GUNSHIP</text>
+	<ship load="TEST_UE_GUNSHIP_LOAD" hostile="true" />
+</event>
+
 <!--<autoReward level=<LOW/MED/HIGH/RANDOM>> tag </autoreward>
 where tag is
 standard  - which is Dust + 2 resources (possible a weapon)
@@ -168,7 +173,7 @@ item - Dust + that thing  -->
 </event>
 
 <event name="START_GAME">
-	<text>With cries of "Sic Semper Tyrannis", nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the "Pilgrims". The Empire's legislature interpreted this secession as treason, and the overwhelming might of the loyalist fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, you have a secret communique from the Sophon that could end the war. Get to the Pilgrim Council.</text>
+	<text>With cries of "Sic Semper Tyrannis", nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the Pilgrims. The Empire interpreted this secession as treason, and the overwhelming might of the loyalist fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, you have a secret communique from the Sophon that could end the war. Get to the Pilgrim Council.</text>
 </event>
 
 <!-- demo gameover text-->

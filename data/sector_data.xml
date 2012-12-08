@@ -68,8 +68,6 @@ STRUCTURE SECTORS
 	 <event name="NOTHING_3" min="5" max="7"/>
 	 <event name="NOTHING_4" min="5" max="7"/>
 	 <event name="TEST_SOWER_SCOUT_PIRATE" min="8" max="12"/> -->
-	 <event name="TEST_SOWER_FIGHTER" min="8" max="12"/>
-<!--	 
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>

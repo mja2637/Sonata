@@ -133,6 +133,16 @@ Special:
 	</deadCrew>
 </ship>
 
+<ship name="TEST_UE_GUNSHIP_LOAD" auto_blueprint="REBEL_FAT">
+	<destroyed>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>-</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
 
 
 <!--------------------------------

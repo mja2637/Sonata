@@ -124,14 +124,14 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Custom Human/Sophon/Sower crew weapons
 		  - Updated in-game and readme credits
 		  - Polished weapon/projectile placement
-		  - Added Sower Surveyor, Sower Builder, pirate versions
+		  - Added Sower Surveyor & pirate skin
+		  - Added Sower Builder & pirate skin
+		  - Added UE Gunship & pirate skin
+		  - Customized "Last Stand"
 
-
-		  - Edit "Last Stand" (planned)
-		  - Recolor UES Ranger (planned)
-		  - Recolor UES Long Island (planned)
-		  - Clean up Sower Terraformer (planned)
-		  - Recolor Kilimanjaro (planned)
+		  - Gibs for all added vessels (planned)
+		  - Custom boss vessel(planned)
+		  - Testing (planned)
 		  - Balancing pass (planned)
 6a
           - Fixed text encoding issues
