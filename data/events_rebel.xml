@@ -35,6 +35,10 @@ Environmnt:
 
 --->
 
+<eventList name="NOTHING_REBEL_SECTOR">
+	<event load="NOTHING_REBEL"/>
+	<event load="NOTHING_2"/>
+</eventList>
 
 <eventList name="HOSTILE_REBEL">
 	<event load="REBEL"/>

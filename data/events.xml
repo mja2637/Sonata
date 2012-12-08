@@ -86,10 +86,10 @@ Test Event
 
 <event name="TEST">
 	<text load="TEST_TEXT"/>
-	<ship load = "TEST_SHIP_LOAD" hostile ="true"/>
+	<event load="BOARDERS_ASTEROID_GHOST"/>
 </event>
 <textList name="TEST_TEXT">
-	<text>This event tests combat with rebel_long.</text>
+	<text>Do ghosts cause ctd?</text>
 </text>
 
 <event name="TEST_SOWER_SCOUT">
@@ -1905,7 +1905,7 @@ item - Dust + that thing  -->
 	</event>
 </eventList>
 
-<event name="BOARDERS_ASTEROID_GHOST" unique="true">   <!-- JUSTIN - maybe add some sort of ship graveyard background? -->
+<event name="BOARDERS_ASTEROID_GHOST" unique="true"> <!-- true -->
 	<img back="BG_DARK" planet="NONE"/>
 	<text>You jump into the middle of an asteroid field.  Looking around, you find you are surrounded by dozens of wrecks of other ships.  Faint wisps of light can be seen moving between wrecks.  As you watch, they seem to be changing path and floating toward your ship!</text>
 	<choice>
@@ -1964,7 +1964,7 @@ item - Dust + that thing  -->
 	<text>You receive a wide-band automated message, "Welcome to our humble trade depot and shipyard! All are welcome!" The IHGT is a civilian organization, but well-maintained gunships are on station. They maintain the peace at a trade depot which likely serves both sides in this war.</text>
 	<text>A well armed independent transport ship and a squadron of fighters are in orbit nearby. You are wary of their trustworthiness but beggars can't be choosers.</text>	
 	<text>A spacecraft engineer has set up a bespoke shop in a small, but immaculate, space station. You board and speak with him about his services.</text>
-	<text planet="NONE">You'd think that aspiring merchants would avoid lonely beacons away from populated systems, but you'd be thinking incorrectly. A Sophon science vessel on a 5-year mission to explore strange new worlds and seek out life and new civilizations is hungry for news of the war; they seem willing to trade.</text>	
+	<text planet="NONE">You encounter a Sophon long-range science vessel. Its 5-year mission is to explore strange new worlds and seek out life and new civilizations. They are hungry for news of the war and seem willing to trade.</text>	
 	<text planet="PLANET_POPULATED">It's a frontier planet, but apparently the United Empire had used it as a staging area some weeks ago. The place was a mess after they left, but sympathetic locals are more than willing to sell you some of the supplies they left behind.</text>
 	<text planet="PLANET_POPULATED">The station cantina's menu advertises chicken sandwiches, but the meat smells suspiciously like space rat. Perhaps you'll have better luck with their equipment shop.</text>
 </text>

@@ -1,5 +1,15 @@
 ﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
+<eventList name="NOTHING_ROCK_SECTOR">
+	<event load="NOTHING_ROCK"/>
+	<event load="NOTHING_2"/>
+</eventList>
+
+<eventList name="NOTHING_ROCK_HOME">
+	<event load="NOTHING_ROCK"/>
+	<event load="NOTHING_3"/>
+</eventList>
+
 <eventList name="NEUTRAL_ROCK">
 	<event load="ROCK_NURSERY"/>
 	<event load="ROCK_ZOLTAN_HELP"/>

@@ -35,7 +35,15 @@ Pilgrim diplomat
 Science - investigate Sower
 -->
 
+<eventList name="NOTHING_ZOLTAN_SECTOR">
+	<event load="NOTHING_ZOLTAN"/>
+	<event load="NOTHING_2"/>
+</eventList>
 
+<eventList name="NOTHING_ZOLTAN_HOME">
+	<event load="NOTHING_ZOLTAN"/>
+	<event load="NOTHING_3"/>
+</eventList>
 
 <eventList name="HOSTILE_ZOLTAN">
 	<event load="ZOLTAN_FIGHT"/>

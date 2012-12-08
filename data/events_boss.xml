@@ -53,6 +53,7 @@ Items:
 	<event load="BOSS_FLEETS_FED"/>
 	<event load="SQUAT_REFUEL_STATION"/>
 	<event load="REBEL"/>
+	<event load="NOTHING_4"/>
 </eventList>
 
 

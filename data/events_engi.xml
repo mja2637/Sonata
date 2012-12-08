@@ -45,7 +45,15 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	ENGI EVENTLIST     ''   " " "
 ---------------------------------->
 
+<eventList name="NOTHING_ENGI_SECTOR">
+	<event load="NOTHING_ENGI"/>
+	<event load="NOTHING_2"/>
+</eventList>
 
+<eventList name="NOTHING_ENGI_HOME">
+	<event load="NOTHING_ENGI"/>
+	<event load="NOTHING_3"/>
+</eventList>
 
 <eventList name="ITEMS_ENGI">
 	<event load="ENGI_GIFT"/>

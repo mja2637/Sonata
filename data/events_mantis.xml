@@ -33,11 +33,15 @@ Special
 	MANTIS_NAMED_THIEF
 --->
 
+<eventList name="NOTHING_MANTIS_SECTOR">
+	<event load="NOTHING_MANTIS"/>
+	<event load="NOTHING_3"/>
+</eventList>
 
-
-
-
-
+<eventList name="NOTHING_MANTIS_HOME">
+	<event load="NOTHING_MANTIS"/>
+	<event load="NOTHING_4"/>
+</eventList>
 
 
 <!--------------------------------

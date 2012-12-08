@@ -31,7 +31,10 @@ Boarders:
 	FLOATING_CARGO
 --->
 
-
+<eventList name="NOTHING_PIRATE_SECTOR">
+	<event load="NOTHING_PIRATE"/>
+	<event load="NOTHING_1"/>
+</eventList>
 
 <eventList name="HOSTILE_PIRATE">
 	<event load="PIRATE"/>
