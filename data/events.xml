@@ -1733,7 +1733,7 @@ item - Dust + that thing  -->
 	<choice hidden="true" req="rock">
 		<text>(Sower Crew) Send your Sower crew-member to prevent a riot.</text>
 		<event>
-			<text>It's unlikely the Sower's impressive immune system is susceptible to a human virus so you send it in. It is able to intimidate the workers long enough for the colony forces to set up a quarantine. Their leaders offer a reward and assure you they will try to find a cure as soon as possible.</text>
+			<text>A human virus shouldn't affect the robot, so you send it in. It is able to intimidate the workers long enough for the colony forces to set up a quarantine. Their leaders offer a reward and assure you they will try to find a cure as soon as possible.</text>
 			<autoReward level="MED">stuff</autoReward>
 		</event>
 	</choice>

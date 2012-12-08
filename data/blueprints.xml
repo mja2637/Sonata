@@ -4566,8 +4566,8 @@
 		<teleporter power="1" room="8" start="true" img="room_teleporter" />
 		<cloaking power="1" room="6" start="false" img="room_cloaking" />
 	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>3</droneSlots>
 	<weaponList count="2" missiles="15">
 		<weapon name="BASIC_KINETIC_1"/>
 		<weapon name="SOWER_CANNON_2"/>
@@ -4577,6 +4577,7 @@
 	<maxPower amount ="9"/> 
 	<crewCount amount = "2" class="mantis"/>
 	<crewCount amount = "1" class="engi"/>
+	<crewCount amount = "1" class="human"/>
 	<shieldImage>rock_cruiser</shieldImage>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>

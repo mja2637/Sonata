@@ -228,10 +228,10 @@ CIVILIAN SECTORS
 		<track>hectic</track>
 	</trackList>
 	<rarityList>
-		<blueprint name="engi" rarity="3"/>
-		<blueprint name="mantis" rarity="3"/>
+		<blueprint name="engi" rarity="4"/>
+		<blueprint name="mantis" rarity="4"/>
 		<blueprint name="energy" rarity="1"/>
-		<blueprint name="slug" rarity="3"/>
+		<blueprint name="slug" rarity="4"/>
 		<blueprint name="rock" rarity="3"/>
 		<blueprint name="human" rarity="2"/>
 	</rarityList>
@@ -278,7 +278,13 @@ CIVILIAN SECTORS
 	<event name="BOARDERS_ROCK" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="QUESTS_ROCK" min="1" max="2"/>
-	<event name="NEUTRAL_ROCK" min="7" max="8"/>	
+	<event name="NEUTRAL_ROCK" min="7" max="8"/>
+	
+	<!-- Judged Safe
+	<event name="HOSTILE_ROCK" min="6" max="8"/>
+	<event name="HOSTILE_ROCK_PIRATE" min="6" max="8"/>
+	<event name="BOARDERS_ROCK" min="6" max="8"/>
+	<event name="NOTHING_ROCK" min="6" max="8"/> -->
 </sectorDescrption>
 
 
