@@ -82,7 +82,6 @@ Items:
 						<text>Continue.</text>
 						<event>
 							<text>A great load suddenly lifts from your shoulders. You figure you can take your time to refuel and repair the ship, get some R and R, maybe follow up on that one Sophon captain - but before you can finish the thought, warning klaxons sound.</text>
-						</event>
 							<choice  hidden="true">
 								<text>An attack!? That's not very sporting.</text>
 								<event>
@@ -90,9 +89,10 @@ Items:
 									<item_modify>
 										<item type="fuel" min="10" max="10"/>
 									</item_modify>
-									<damage amount="-10"/>
+									<damage amount="-15"/>
 								</event>
-							</choice>	
+							</choice>								
+						</event>
 					</choice>					
 				</event>
 			</choice>
