@@ -168,7 +168,7 @@ item - Dust + that thing  -->
 </event>
 
 <event name="START_GAME">
-	<text>With cries of "Sic Semper Tyrannis", nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the "Pilgrims". The Empire's legislature interpreted this secession as treason, and the overwhelming might of the loyalist fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, your family and friends have all joined the resistance - and so you shall.</text>
+	<text>With cries of "Sic Semper Tyrannis", nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the "Pilgrims". The Empire's legislature interpreted this secession as treason, and the overwhelming might of the loyalist fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, you have a secret communique from the Sophon that could end the war. Get to the Pilgrim Council.</text>
 </event>
 
 <!-- demo gameover text-->

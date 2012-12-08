@@ -423,10 +423,10 @@
 	<name>JELLY_BUTTON</name>
 	<name>JELLY_CROISSANT</name>
 	<name>JELLY_TRUFFLE</name> 
-	<name>REBEL_FAT</name>
-	<name>REBEL_SKINNY</name>  
-	<name>ROCK_SCOUT</name>
-	<name>ROCK_FIGHT</name>
+	<name>REBEL_FAT_PIRATE</name>
+	<name>REBEL_SKINNY_PIRATE</name>  
+	<name>ROCK_SCOUT_PIRATE</name>
+	<name>ROCK_FIGHT_PIRATE</name>
 	<name>MANTIS_SCOUT</name>
 	<name>MANTIS_FIGHTER</name>
 	<name>MANTIS_BOMBER</name>
@@ -442,7 +442,7 @@
   --------------------->
 
 <shipBlueprint name="REBEL_FAT" layout="rebel_squat" img="rebel_squat">
-	<class>Gunship</class>
+	<class>UE Gunship</class>
 	<systemList>
 		<pilot power="1" max="2" room="0"/>
 		<oxygen power="1" max="2" room="2"/>
@@ -465,7 +465,48 @@
 </shipBlueprint>
 
 <shipBlueprint name="REBEL_SKINNY" layout="rebel_long" img="rebel_long">
-	<class>Corvette</class>
+	<class>UE Corvette</class>
+	<systemList>
+		<oxygen power="1" max="2" room="2"/>
+		<pilot power="1" max="3" room="0"/>
+		<shields power="2" max="8" room="6"/>
+		<engines power="2" max="5" room="5"/>
+		<weapons power="2" max="8" room="4"/>  
+		<medbay power="1" max="3" room="3" start="false"/> 
+		<teleporter power="1" max="1" room="1" start="false"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_REBEL"/>
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_FAT_PIRATE" layout="rebel_squat" img="rebel_squat">
+	<class>Pirate Gunship</class>
+	<systemList>
+		<pilot power="1" max="2" room="0"/>
+		<oxygen power="1" max="2" room="2"/>
+		<shields power="2" max="8" room="4"/>
+		<engines power="2" max="4" room="7"/>
+		<weapons power="1" max="6" room="6"/>
+		<drones power="2" max="8" room="1"/>
+		<medbay power="1" max="3" room="3" start="false"/>
+		<doors power="1" max="3" room="5" start="false"/>
+	</systemList>
+	<droneList drones="4" load="DRONES_UE"/>
+	<!--<droneList drones="4" count="1">
+		<drone name="BOARDER"/>
+	</droneList>-->
+	<weaponList missiles="10" load="WEAPONS_REBEL"/> 
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="6" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_SKINNY_PIRATE" layout="rebel_long" img="rebel_long">
+	<class>Pirate Corvette</class>
 	<systemList>
 		<oxygen power="1" max="2" room="2"/>
 		<pilot power="1" max="3" room="0"/>
@@ -657,6 +698,50 @@
 
   <shipBlueprint name="ROCK_FIGHT" layout="rock_fight" img="rock_fight">
 	<class>Sower Builder</class>
+	<!-- <minSector>2</minSector> -->
+	<systemList>
+		<pilot power="1" max="3" room="9" img="room_pilot" />
+		<doors power="1" max="3" room="7" img="room_doors" />
+		<sensors power="0" max="3" room="1" img="room_sensors" />
+		<oxygen power="1" max="3" room="0" img="room_oxygen" />
+		<shields power="2" max="8" room="6" img="room_pilot" />
+		<engines power="1" max="5" room="2" img="room_engines" />
+		<weapons power="2" max="8" room="8" img="room_weapons" />
+		<drones power="0" max="4" room="3" start="false" img="room_drones" />
+		<teleporter power="0" max="3" room="5" start="false" img="room_teleporter" />
+		<cloaking power="0" max="3" room="4" start="false" img="room_cloaking" />
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_ROCK"/>
+	<health amount="10"/>	
+	<maxPower amount="10"/>
+	<crewCount amount="2" max="5" class="rock"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+  <shipBlueprint name="ROCK_SCOUT_PIRATE" layout="rock_scout" img="rock_scout">
+	<class>Pirate Gunship</class>
+	<systemList>
+		<pilot power="1" max="3" room="1" img="room_pilot" />
+		<sensors power="1" max="3" room="5" img="room_sensors" />
+		<oxygen power="1" max="3" room="7" img="room_oxygen" />
+		<shields power="2" max="6" room="2" img="room_pilot" />
+		<engines power="2" max="6" room="4" img="room_engines" />
+		<weapons power="2" max="6" room="0" img="room_weapons" />
+		<drones power="0" max="4" room="6" start="false" img="room_drones" />
+		<teleporter power="0" max="2" room="3" start="false" img="room_teleporter" />
+		<cloaking power="0" max="2" room="8" start="false" img="room_cloaking" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ROCK"/>
+	<health amount="8"/>	
+	<maxPower amount="7"/>
+	<crewCount amount="2" max="3" class="rock"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+  <shipBlueprint name="ROCK_FIGHT_PIRATE" layout="rock_fight" img="rock_fight">
+	<class>Pirate Corvette</class>
 	<!-- <minSector>2</minSector> -->
 	<systemList>
 		<pilot power="1" max="3" room="9" img="room_pilot" />
