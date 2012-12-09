@@ -1315,7 +1315,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>UE_DRIVER_1</weaponArt> 
+	<weaponArt>SLUGGER_1</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_KINETIC_2">
@@ -1352,7 +1352,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>UE_DRIVER_1</weaponArt> 
+	<weaponArt>SLUGGER_2</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_KINETIC_3">
@@ -1389,7 +1389,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>UE_DRIVER_1</weaponArt> 
+	<weaponArt>SLUGGER_3</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BASIC_KINETIC_4">
@@ -1426,7 +1426,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>UE_DRIVER_1</weaponArt> 
+	<weaponArt>SLUGGER_4</weaponArt> 
 </weaponBlueprint>
 
 <!--------------

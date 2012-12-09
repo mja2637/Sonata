@@ -208,3 +208,43 @@
 	<mountPoint x="5" y="24"/>
 	<chargeImage>weapons/beam_1_glow.png</chargeImage>
 </weaponAnim>
+
+<animSheet name="SLUGGER_1" w="270" h="80" fw="30" fh="80">weapons/SLUGGER_1.png</animSheet>
+<weaponAnim name="SLUGGER_1">
+	<sheet>SLUGGER_1</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
+</weaponAnim>
+
+<animSheet name="SLUGGER_2" w="270" h="80" fw="30" fh="80">weapons/SLUGGER_1.png</animSheet>
+<weaponAnim name="SLUGGER_2">
+	<sheet>SLUGGER_2</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
+</weaponAnim>
+
+<animSheet name="SLUGGER_3" w="270" h="80" fw="30" fh="80">weapons/SLUGGER_1.png</animSheet>
+<weaponAnim name="SLUGGER_3">
+	<sheet>SLUGGER_3</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
+</weaponAnim>
+
+<animSheet name="SLUGGER_4" w="270" h="80" fw="30" fh="80">weapons/SLUGGER_1.png</animSheet>
+<weaponAnim name="SLUGGER_4">
+	<sheet>SLUGGER_4</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
+</weaponAnim>
