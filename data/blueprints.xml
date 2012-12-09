@@ -4750,7 +4750,8 @@
 				<number>1</number>
 			</slot>
 		</shields>
-		<weapons power="2" room="4" start="true" img="room_weapons_2"/>
+		<!-- <weapons power="2" room="4" start="true" img="room_weapons_2"/> -->
+		<weapons power="8" room="4" start="true" img="room_weapons_2"/>
 		<drones power="2" room="2" start="false" img="room_drones_11"/>
 		<medbay power="1" room="10" start="true" img="room_medbay_5">
 			<slot>
@@ -4763,13 +4764,18 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="2" missiles="9">
-		<weapon name="SOPHON_PULSE_1"/>
-		<weapon name="UE_DRIVER_1"/>
+	<weaponList count="4" missiles="9">
+		<!-- <weapon name="SOPHON_PULSE_1"/>
+		<weapon name="UE_DRIVER_1"/> -->
+		<weapon name="BASIC_KINETIC_1"/>
+		<weapon name="BASIC_KINETIC_2"/>
+		<weapon name="BASIC_KINETIC_3"/>
+		<weapon name="BASIC_KINETIC_4"/>
 	</weaponList>
 	<droneList drones="0"/>
 	<health amount="30"/>
-	<maxPower amount ="9"/> 
+	<!-- <maxPower amount ="9"/>  -->
+	<maxPower amount ="15"/> 
 	<crewCount amount = "1" class="human"/>
 	<crewCount amount = "1" class="energy"/>
 	<crewCount amount = "1" class="slug"/>
