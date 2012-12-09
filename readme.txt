@@ -127,7 +127,8 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Added Sower Surveyor & pirate skin
 		  - Added Sower Builder & pirate skin
 		  - Added UE Gunship & pirate skin
-		  - Added Slugger 1/2/3/4 custom weapon image		  
+		  - Added Slugger 1/2/3/4 custom weapon image
+		  - Added Missile 1/2/3/4 custom projectiles
 		  - Customized "Last Stand"
 
 		  - Gibs for all added vessels (planned)

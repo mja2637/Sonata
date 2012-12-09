@@ -85,7 +85,7 @@ CIVILIAN SECTORS
  ----------------------->
 <sectorDescription name="CIVILIAN_SECTOR_1" minSector="1" unique="true"> 
 	<nameList>
-		<name>Civilian Sector 1</name>
+		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
 		<track>home</track>
@@ -106,7 +106,7 @@ CIVILIAN SECTORS
 
 <sectorDescription name="CIVILIAN_SECTOR_2" minSector="2" unique="true"> 
 	<nameList>
-		<name>Civilian Sector 2</name>
+		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
 		<track>home</track>
@@ -127,7 +127,7 @@ CIVILIAN SECTORS
 
 <sectorDescription name="CIVILIAN_SECTOR_3" minSector="4" unique="true"> 
 	<nameList>
-		<name>Civilian Sector 3</name>
+		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
 		<track>home</track>
@@ -148,7 +148,7 @@ CIVILIAN SECTORS
 
 <sectorDescription name="CIVILIAN_SECTOR_4" minSector="6" unique="true"> 
 	<nameList>
-		<name>Civilian Sector 4</name>
+		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
 		<track>home</track>
