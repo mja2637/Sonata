@@ -78,7 +78,7 @@ Special:
 	TEST SHIP
 	
 ---------------------------------->
-<ship name="TEST_SHIP_LOAD" auto_blueprint="SHIPS_PIRATE">  <!-- fed base? -->
+<ship name="TEST_SHIP_LOAD" auto_blueprint="SHIPS_PIRATE">
 	<destroyed>
 		<text>-</text>
 		<autoReward level="HIGH">standard</autoReward>
