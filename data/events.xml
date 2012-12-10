@@ -710,7 +710,7 @@ item - Dust + that thing  -->
 		<choice>
 			<text>"What are you looking at?"</text>
 			<event>
-				<text>"This is one of your Human musical compositions. I have rendered it inaudible from 0.02 to 40 kilohertz, in your units; the visual is computed based on the instantaneous integral of the amplitude of various frequency bands."</text>
+				<text>"This is one of your Human musical compositions. I have rendered it from 0.02 to 40 kilohertz, in your units; the visual is computed based on the instantaneous integral of the amplitude of various frequency bands."</text>
 				<choice>
 					<text>"You're watching a sound visualizer with the sound off?"</text>
 					<event>
@@ -1711,7 +1711,7 @@ item - Dust + that thing  -->
 	<event>
 		<text>You pull up alongside the station and cut through their hull. You are able to rescue a few survivors but many more are lost. One of the survivors offers to join your crew and you offload the rest on a nearby station.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
-		<crewMember amount="1" class="human">Alioto</crewMember> 
+		<crewMember amount="1" class="human" />
 	</event>
 </eventList>
 

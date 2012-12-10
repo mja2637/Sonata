@@ -176,7 +176,6 @@
 </eventList>
 
 <eventList name="HOSTILE_BOARDING">
-	<event load="BOARDERS_ASTEROID_GHOST"/>
 	<event load="STATION_SICK"/>
 	<event load="BOARDERS_SUN"/>
 	<event load="BOARDERS_ASTEROID"/>
