@@ -314,12 +314,10 @@
 </blueprintList>
 
 <blueprintList name="WEAPONS_MISSILES">
-	<name>MISSILES_1</name>
-	<name>MISSILES_2</name>
-	<name>MISSILES_2_PLAYER</name>
-	<name>MISSILES_3</name>
-	<name>MISSILES_BURST</name>
-	<name>MISSILES_BREACH</name>
+	<name>BASIC_MISSILE_1</name>
+	<name>BASIC_MISSILE_2</name>
+	<name>BASIC_MISSILE_3</name>
+	<name>BASIC_MISSILE_4</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_BEAM_DAMAGE">
@@ -418,6 +416,7 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_PIRATE">
+<!--
 	<name>JELLY_BUTTON</name>
 	<name>JELLY_CROISSANT</name>
 	<name>JELLY_TRUFFLE</name> 
@@ -431,7 +430,9 @@
 	<name>FED_SCOUT</name>
 	<name>FED_BOMBER</name>
 	<name>ZOLTAN_FIGHTER</name>
-	<name>ZOLTAN_BOMBER</name>
+	<name>ZOLTAN_BOMBER</name> -->
+	
+	<name>REBEL_SKINNY_PIRATE</name>  
 </blueprintList>
 
 
