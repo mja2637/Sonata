@@ -4953,7 +4953,6 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="4" missiles="50">
 	<weaponList count="3" missiles="0">
 		<weapon name="SOPHON_PULSE_1"/>
 		<weapon name="SOPHON_PULSE_1"/>
