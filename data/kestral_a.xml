@@ -4,7 +4,7 @@
 <img x="-55" y="-185" w="623" h="461"/>
 
 <weaponMounts>
-	<mount x="580" y="200" rotate="true" mirror="true" gib="6" slide="up"/>
+	<mount x="580" y="200" rotate="true" mirror="true" gib="2" slide="up"/>
 	<mount x="580" y="265" rotate="true" mirror="false" gib="6" slide="down"/>
 	<mount x="390" y="180" rotate="true" mirror="true" gib="5" slide="up"/>
 	<mount x="390" y="285" rotate="true" mirror="false" gib="5" slide="down"/>
@@ -19,42 +19,42 @@
 		<velocity min="0.6" max="1"/>
 		<direction min="60" max="120"/>
 		<angular min="-0.4" max="-0.1"/>
-		<x>8</x>
+		<x>125</x>
 		<y>127</y>
 	</gib2>
 	<gib2>
 		<velocity min="0" max="0.4"/>
 		<direction min="0" max="90"/>
 		<angular min="-0.4" max="0"/>
-		<x>38</x>
-		<y>36</y>
+		<x>345</x>
+		<y>68</y>
 	</gib2>
 	<gib3>
 		<velocity min="0.5" max="1"/>
 		<direction min="-40" max="90"/>
 		<angular min="-0.5" max="1"/>
-		<x>48</x>
-		<y>6</y>
+		<x>-25</x>
+		<y>150</y>
 	</gib3>
 	<gib4>
 		<velocity min="0.4" max="1"/>
 		<direction min="120" max="200"/>
 		<angular min= "-0.2" max="1"/> 
-		<x>51</x>
-		<y>206</y>
+		<x>20</x>
+		<y>150</y>
 	</gib4>
 	<gib5>
 		<velocity min="0" max="0.5"/>
 		<direction min="230" max="310"/>
 		<angular min= "-0.2" max="0.2"/>
 		<x>187</x>
-		<y>57</y>		
+		<y>75</y>		
 	</gib5>
 	<gib6>
 		<velocity min="0.6" max="1"/>
 		<direction min="240" max="300"/>
 		<angular min= "-1" max="1"/>
-		<x>388</x>
-		<y>120</y>
+		<x>412</x>
+		<y>130</y>
 	</gib6>
 </explosion>
