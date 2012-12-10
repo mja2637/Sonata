@@ -86,7 +86,7 @@ Test Event
 
 <event name="TEST">
 	<text load="TEST_TEXT"/>
-	<ship load = "TEST_SOWER_SCOUT_PIRATE_LOAD" hostile ="true"/>
+	<ship load = "TEST_SHIP_LOAD" hostile ="true"/>
 </event>
 <textList name="TEST_TEXT">
 	<text>Sower scout</text>
