@@ -51,7 +51,7 @@ STRUCTURE SECTORS
 	 <event name="NOTHING_3" min="5" max="7"/>
 	 <event name="NOTHING_4" min="5" max="7"/>
 	  -->
-	   
+
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
 	<event name="NOTHING_1" min="3" max="3"/>

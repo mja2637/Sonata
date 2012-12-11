@@ -89,18 +89,18 @@
 	<event load="PIRATE_NO_ESCAPE"/>
 </eventList>
 
-<eventList name="NEUTRAL">
-	<event load="PIRATE_CIVILIAN"/>
-	<event load="REBEL_TRANSPORT"/>
-	<event load="AUTO_REFUEL_STATION"/>
-	<event load="ASTEROID_EXPLORE"/>
-	<event load="BROKEN_REBEL_DRONE"/>
-	<event load="MERCENARY"/>
-	<event load="FRIENDLY_SLAVER"/>
-	<event load="PIRATE_BRIBER"/>
+<eventList name="NEUTRAL">	
+	<event load="AUTO_REFUEL_STATION"/>	
+	<event load="FRIENDLY_SLAVER"/>	
 	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="PIRATE_BRIBER"/>	
 	<event load="DONOR_PONY"/>
 	<event load="DONOR_PLAGUE"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="MERCENARY"/>
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="ASTEROID_EXPLORE"/>
 	<!-- 
 	<event load="AUTO_DEFENSE_MAP"/> 
 	<event load="AUTO_DEFENSE_RADAR"/> 

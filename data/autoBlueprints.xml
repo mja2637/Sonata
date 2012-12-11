@@ -416,7 +416,7 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_PIRATE">
-	<!-- <name>JELLY_BUTTON</name>
+	<name>JELLY_BUTTON</name>
 	<name>JELLY_CROISSANT</name>
 	<name>JELLY_TRUFFLE</name> 
 	<name>REBEL_FAT_PIRATE</name>
@@ -429,8 +429,7 @@
 	<name>FED_SCOUT</name>
 	<name>FED_BOMBER</name>
 	<name>ZOLTAN_FIGHTER</name>
-	<name>ZOLTAN_BOMBER</name> -->
-	
+	<name>ZOLTAN_BOMBER</name>	
 	<name>REBEL_SKINNY_PIRATE</name>
 </blueprintList>
 

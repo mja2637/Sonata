@@ -1025,6 +1025,13 @@ item - Dust + that thing  -->
 	<text>The captain of this ship claims he can provide "services" as long as you've got the Dust. You're not sure whether "services" means drugs, sex, or violence - but you ARE sure that you don't care.</text>
 	<text>Mercenaries are swarming the galaxy now, knowing that their less-than-legal services can command a premium during a civil war. One is waiting at this beacon and hails you.</text>
 	<text>A ship with colonial markings hails you: "Hello, sahib! It seems you're having some troubles with the loyalists. I'd like nothing better than to help a man of means such as yourself... maybe we can come to an arrangement?"</text>
+	
+	<text>You find a mercenary for hire at this Beacon. Their unique skills can sometimes prove to be useful.</text>
+	<text>A mercenary hails you: "We're no friends of the United Empire. I think we could help each other."</text>
+	<text planet="PLANET_POPULATED">There's a ship with pirate markings orbiting the nearby planet. You receive his hail: "It looks like the Empire is hunting us both. Got some spare Dust? I'm sure we can help each other out."</text>
+	<text>The captain of this ship claims he can provide "services" as long as you've got the Dust. You're not sure whether "services" means drugs, sex, or violence - but you ARE sure that you don't care.</text>
+	<text>Mercenaries are swarming the galaxy now, knowing that their less-than-legal services can command a premium during a civil war. One is waiting at this beacon and hails you.</text>
+	<text>A ship with colonial markings hails you: "Hello, sahib! It seems you're having some troubles with the loyalists. I'd like nothing better than to help a man of means such as yourself... maybe we can come to an arrangement?"</text>
 </textList>
 
 

@@ -32,8 +32,8 @@
 		<velocity min="0.5" max="1"/>
 		<direction min="-40" max="90"/>
 		<angular min="-0.5" max="1"/>
-		<x>48</x>
-		<y>6</y>
+		<x>30</x>
+		<y>50</y>
 	</gib3>
 	<gib4>
 		<velocity min="0.4" max="1"/>
