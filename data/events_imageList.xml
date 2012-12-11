@@ -154,7 +154,6 @@
 	<img w="512" h="512">stars/planet_populated_brown.png</img>
 	<img w="512" h="512">stars/planet_populated_dark.png</img>
 	<img w="512" h="512">stars/planet_populated_orange.png</img>
-	<img w="1280" h="720">stars/planet_close.png</img>
 </imageList>	
 
 <imageList name="PLANET_POPULATED_SMALL">
