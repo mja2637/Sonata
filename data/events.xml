@@ -1804,7 +1804,7 @@ item - Dust + that thing  -->
 	</choice>
 </event>
 <textList name="BOARDERS_TEXT" unique="false">
-	<text>What appears to be a civilian ship sends a friendly hail. As you approach the vessel, you detect a teleporter signal but it's too late... intruders have beamed aboard!"</text>
+	<text>What appears to be a civilian ship sends a friendly hail. As you approach the vessel, you detect a teleporter signal but it's too late... intruders have beamed aboard!</text>
 	<text>A heavily damaged ship is drifting near this beacon. You receive a communication: "Hello! Nice of you to drop by. As you can see, our ship has seen better days. Yours is looking quite nice, I think we might be taking it from you now." Intruders beam aboard.</text>
 	<text>You detect life-signs actually on the beacon itself! A teleporter signal warns you but it's too late, they've beamed from the beacon onto your ship and seem intent on taking it over.</text>
 	<text>Your ship detects a faint distress signal on a nearby moon.  As you approach the rock, warning lights flash as hostiles beam aboard the ship from some hidden location.</text>
