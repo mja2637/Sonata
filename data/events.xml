@@ -802,7 +802,7 @@ item - Dust + that thing  -->
 
 <eventList name="SOPHON_EXP_3">
 	<event>
-		<text>You've easily formed a good, working relationship with your Sophon crewmember; that species is not known for causing much drama. You decided to ask him his personal thoughts on the civil war, not knowing whether you risk your relationship.</text>
+		<text>You've easily formed a solid working relationship with your Sophon crewmember; that species is not known for causing much drama. You decided to ask him his personal thoughts on the civil war, not knowing whether you risk your relationship.</text>
 		<choice>
 			<text>"Honestly...do you think the Pilgrims are right?"</text>
 			<event>

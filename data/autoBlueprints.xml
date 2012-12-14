@@ -379,8 +379,8 @@
 	<name>ROCK_ASSAULT</name>
 </blueprintList>
 <blueprintList name="SHIPS_ROCK_PIRATE">
-	<name>ROCK_SCOUT</name>
-	<name>ROCK_FIGHT</name>
+	<name>ROCK_SCOUT_PIRATE</name>
+	<name>ROCK_FIGHT_PIRATE</name>
 </blueprintList>
 
 <blueprintList name="SHIPS_CIRCLE">
@@ -405,8 +405,6 @@
 
 <blueprintList name="SHIPS_CIVILIAN">
 	<name>JELLY_BUTTON</name>
-<!--	<name>JELLY_CROISSANT</name>
-	<name>JELLY_TRUFFLE</name> -->
 	<name>ROCK_SCOUT</name>
 	<name>ROCK_FIGHT</name>
 	<name>FED_SCOUT</name>
@@ -419,18 +417,18 @@
 	<name>JELLY_BUTTON</name>
 	<name>JELLY_CROISSANT</name>
 	<name>JELLY_TRUFFLE</name> 
+	<name>MANTIS_SCOUT</name>
+	<name>MANTIS_FIGHTER</name>
+	<name>MANTIS_BOMBER</name>	
+	<name>ZOLTAN_FIGHTER</name>
+	<name>ZOLTAN_BOMBER</name>
+
+	<name>FED_SCOUT_PIRATE</name>
+	<name>FED_BOMBER_PIRATE</name>
 	<name>REBEL_FAT_PIRATE</name>
 	<name>REBEL_SKINNY_PIRATE</name>  
 	<name>ROCK_SCOUT_PIRATE</name>
-	<name>ROCK_FIGHT_PIRATE</name>
-	<name>MANTIS_SCOUT</name>
-	<name>MANTIS_FIGHTER</name>
-	<name>MANTIS_BOMBER</name>
-	<name>FED_SCOUT</name>
-	<name>FED_BOMBER</name>
-	<name>ZOLTAN_FIGHTER</name>
-	<name>ZOLTAN_BOMBER</name>	
-	<name>REBEL_SKINNY_PIRATE</name>
+	<name>ROCK_FIGHT_PIRATE</name>	
 </blueprintList>
 
 
@@ -736,7 +734,8 @@
 	<weaponList missiles="6" load="WEAPONS_ROCK"/>
 	<health amount="8"/>	
 	<maxPower amount="7"/>
-	<crewCount amount="2" max="3" class="rock"/>
+	<crewCount amount="1" max="2" class="mantis"/>
+	<crewCount amount="0" max="1" class="human"/>
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
@@ -759,7 +758,8 @@
 	<weaponList missiles="10" load="WEAPONS_ROCK"/>
 	<health amount="10"/>	
 	<maxPower amount="10"/>
-	<crewCount amount="2" max="5" class="rock"/>
+	<crewCount amount="1" max="3" class="mantis"/>
+	<crewCount amount="1" max="2" class="human"/>
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
@@ -881,15 +881,33 @@
   --------------------->
 
   <shipBlueprint name="FED_SCOUT" layout="fed_scout" img="fed_scout">
-	<class>Resistance Scout</class>
+	<class>Civilian Runabout</class>
 	<maxSector>6</maxSector>
 	<systemList>
 		<pilot power="1"max="3" room="0"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<oxygen power="1" max="3" room="5"/>
-		<shields power="2" max="8" room="1"/>
+		<shields power="2" max="6" room="1"/>
 		<engines power="1" max="5" room="4"/>
-		<weapons power="2" max="8" room="3"/>
+		<weapons power="2" max="6" room="3"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_FED"/>
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "2" max="3" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+  <shipBlueprint name="FED_SCOUT_PIRATE" layout="fed_scout" img="fed_scout">
+	<class>Pirate Runabout</class>
+	<maxSector>6</maxSector>
+	<systemList>
+		<pilot power="1"max="3" room="0"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<oxygen power="1" max="3" room="5"/>
+		<shields power="2" max="6" room="1"/>
+		<engines power="1" max="5" room="4"/>
+		<weapons power="2" max="6" room="3"/>
 	</systemList>
 	<weaponList missiles="10" load="WEAPONS_FED"/>
 	<health amount="7"/>	
@@ -899,7 +917,25 @@
 </shipBlueprint>
   
   <shipBlueprint name="FED_BOMBER" layout="fed_bomber" img="fed_bomber">
-	<class>Resistance Bomber</class>
+	<class>Merchant Vessel</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1"max="3" room="0"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<medbay power="1" max="3" room="8" start="false"/>
+		<oxygen power="1" max="3" room="5"/>
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="5" room="9"/> 
+		<weapons power="2" max="8" room="6"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_FED"/>
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="4" class="human"/>
+</shipBlueprint>
+
+  <shipBlueprint name="FED_BOMBER_PIRATE" layout="fed_bomber" img="fed_bomber">
+	<class>Pirate Barque</class>
 	<minSector>1</minSector>
 	<systemList>
 		<pilot power="1"max="3" room="0"/>
