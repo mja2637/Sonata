@@ -90,7 +90,7 @@
 </achievement>
 
 <achievement id="ACH_NO_DEATH">
-	<name>Fathers, Brothers, Husbands  Sons</name>
+	<name>Fathers, Brothers, Husbands, Sons</name>
 	<desc>Get to sector 8 without losing a crewmember.</desc>
 	<img>achievements/13.png</img>
 	<multiDifficulty>1</multiDifficulty>

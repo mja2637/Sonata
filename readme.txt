@@ -14,19 +14,19 @@ NOTE: It is highly recommended to use Splette's Higher-Res Backgrounds mod in co
 
 1 RACES
 UNITED EMPIRE
-The United Empire is a liberal democracy, the capital being Earth; the vast majority of humans are citizens, as well as many aliens. The Empire, in fact, is quite liberal - and there is widespread sexual liberalism, drug use, and body modification. Its Democratic government presides over a population which is fiercely proud and expansion-hungry to the point of jingoism.
+The United Empire is a liberal democracy, the capital being Earth; the vast majority of humans are citizens, as well as many aliens. The Empire, in fact, is quite liberal - and there is widespread sexual liberalism, drug use, and body modification. Its government presides over a population which is fiercely proud and expansion-hungry to the point of jingoism. 
  
 The United Empire uses kinetic weaponry: rail guns, gauss guns, and drivers. Drivers tend to fire more quickly than the other types.
 
 PILGRIMS
 What does it take to drive an entire planet to secede from the United Empire, to seemingly turn their back on their race? In the case of the Pilgrims, it was shame. Shame at being part of an Empire that laughed at the gods, the Endless. Shame at being part of an Empire that allowed hedonism, all sorts of absolute moral depravity, within its borders. Shame, truth be told, at an Empire that would manipulate and conquer other children of the Endless to accomplish its goals.
 
-In any case, almost 40% of the worlds of the United Empire seceded in the space of one year. This 40%, however, only included around 15% of the Empire's population, and an even smaller fraction of its industrial capability. The Pilgrim situation is militarily hopeless.
+In any case, almost 40% of the worlds of the United Empire seceded in the space of one year. This 40%, however, only included around 15% of the Empire's population, and an even smaller fraction of its industrial capability. The Pilgrim situation is militarily hopeless, although the Sophon (and a sizeable portion of the UE legislature) are seeking a ceasefire.
 
 The Pilgrims use the same weapons that the United Earth and most other humans do.
  
 SOPHON
-The Sophon are a race of highly intelligent scientists with little actual government that seem to do just fine, nevertheless. Relations between the Sophon and humans have always been at least cordial, and usually are quite friendly; the Sophon government has elected not to recognize the Pilgrims diplomatically in interests of there relationship with the United Empire, but are certainly not on bad terms with the Pilgrims. Most Sophon are concerned with nothing but researching the hell out of whatever pleases them.
+The Sophon are a race of highly intelligent, highly cultured scientists with little actual government that seem to do just fine, nevertheless. Relations between the Sophon and humans have always been at least cordial, and usually are quite friendly; the Sophon government has elected not to recognize the Pilgrims diplomatically in interests of their relationship with the United Empire, but are certainly not on bad terms with the Pilgrims. Most Sophon are concerned with nothing but researching the hell out of whatever pleases them.
 
 The Sophons use beam and pulse lasers.
 
@@ -36,9 +36,9 @@ The Sower were created by an ancient race of beings called the Endless as advanc
 The Sower use massive cannon and autocannon.
 
 ENDLESS
-An ancient race of beings with godlike technological prowess, long extinct. Many religions believe that they created the races that now populate the galaxy, or at least some of them: the Sower and Sophon. Humans are sharpely divided: some, including the Pilgrims, believe that the Endless created humans. Some humans don't believe that. 
+An ancient race of beings with godlike technological prowess, long extinct. Many religions believe that they created the races that now populate the galaxy, or at least some of them: the Sower and Sophon. It is accepted as fact that the Endless created Dust, the miraculous material used for currency and technology across the galaxy. Humans are sharpely divided: some, including the Pilgrims, believe that the Endless created humans and worship them as gods. Some humans don't believe that. 
 
-A sizeable fraction of humanity believes that they were created by the Endless, and think "give us a thousand years, and we'll do better than that." Do I detect a whiff of manifest destiny? This goes a long way to explain the United Empire's foreign policies.
+A sizeable fraction of humanity looks at the Endless, and think "give us a thousand years, and we'll do better than that." Do I detect a whiff of manifest destiny? This goes a long way to explain the United Empire's foreign policies.
 
 2 WEAPONS
 Weapons in Sonata are divided into 3 categories (Kinetic, Laser, Missile) and 2 classes (Racial, Generic). Within each category and class, there are 4 power levels (with some exceptions).
@@ -127,14 +127,13 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Added Sower Surveyor & pirate skin
 		  - Added Sower Builder & pirate skin
 		  - Added UE Gunship & pirate skin
+		  - Gibs for everything
 		  - Added Slugger 1/2/3/4 custom weapon image
 		  - Added Missile 1/2/3/4 custom projectiles
 		  - Customized "Last Stand"
+		  - Test/balance
 
-		  - Gibs for all added vessels (planned)
-		  - Custom boss vessel(planned)
-		  - Testing (planned)
-		  - Balancing pass (planned)
+		  - Custom boss vessel(planned)		  
 6a
           - Fixed text encoding issues
           - Filled inner transparencies in /map button .pngs preventing them from showing up as black boxes

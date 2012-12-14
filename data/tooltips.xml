@@ -19,7 +19,7 @@
 <hull>Current hull integrity. If it drops to zero, the ship is destroyed.</hull>
 <droneCount>Number of Drone Parts.  Using a Drone consumes one Drone Part.</droneCount>
 <fuelCount>Amount of fuel. Each jump consumes one fuel.</fuelCount>
-<missileCount>Number of missiles.  Some weapons consume one Missile when fired.</missileCount>
+<missileCount>Ammunition reserves. Some weapons consume special ammunition when fired.</missileCount>
 <scrapCount>Current Dust reserves.</scrapCount>
 <FTLButton>Opens star map to choose jump location.</FTLButton>
 <shieldDisplay>Current shield status.</shieldDisplay>

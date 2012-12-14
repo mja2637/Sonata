@@ -70,10 +70,4 @@
 		<name>laststand3</name>
 		<explore>barkley_jam.mp3</explore>
 	</track>
-<!--
-	<track>
-		<name>combat3</name>
-		<combat>hw_imperial.ogg</combat>
-	</track>
-	-->	
 </music>

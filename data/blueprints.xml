@@ -4214,7 +4214,7 @@
     <weapon name="BASIC_MISSILE_1" />
   </weaponList>
   <droneList count="0" drones="0" />
-  <health amount="28" />
+  <health amount="30" />
   <maxPower amount="8" />
   <crewCount amount="3" class="human" />
   <shieldImage>kestral</shieldImage>
