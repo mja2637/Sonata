@@ -562,7 +562,7 @@ Environmnt:
 
 <event name="NEBULA_REBEL_BOARDING">
 	<environment type="nebula"/>
-	<text>It's a trap. Before you have time to recalibrate your sensors after the jump, proximity warning klaxons start blaring. A souped-up civilian runabout screams past, beaming crack United Earth commandos onto your ship before jumping away.</text>
+	<text>It's a trap. Before you have time to recalibrate your sensors after the jump, proximity warning klaxons start blaring. A souped-up civilian runabout screams past, beaming crack United Empire commandos onto your ship before jumping away.</text>
 	<choice>
 		<text>Continue...</text>
 		<event>

@@ -132,8 +132,6 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Added Missile 1/2/3/4 custom projectiles
 		  - Customized "Last Stand"
 		  - Test/balance
-
-		  - Custom boss vessel(planned)		  
 6a
           - Fixed text encoding issues
           - Filled inner transparencies in /map button .pngs preventing them from showing up as black boxes

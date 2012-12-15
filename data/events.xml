@@ -841,7 +841,7 @@ item - Dust + that thing  -->
 		</choice>		
 	</event>
 	<event>
-		<text>It's been all over the news - pirates attacked and destroyed a ship bearing a Sophon representative to the Pilgrim council. Many commentators believe that the pirates were in fact privateers hired by the United Earth or one of its intermediaries; you ask your Sophon crewman to comment.</text>
+		<text>It's been all over the news - pirates attacked and destroyed a ship bearing a Sophon representative to the Pilgrim council. Many commentators believe that the pirates were in fact privateers hired by the United Empire or one of its intermediaries; you ask your Sophon crewman to comment.</text>
 		<choice>
 			<text>"Do you think the rumors are true?"</text>
 			<event>
