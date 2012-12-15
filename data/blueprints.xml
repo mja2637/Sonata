@@ -4324,10 +4324,8 @@
 	<maxPower amount ="7"/> 
 	<crewCount amount = "3" class="mantis"/>
 	<crewCount amount = "1" class="engi"/>
-	<!-- can use these to override images for reuse -->
 	<shieldImage>kestral</shieldImage>
-</shipBlueprint> 
-
+</shipBlueprint>
 
 <!-- MANTIS SHIP -->
 <!-- LAYOUT = ALTERNATE --> 
@@ -5214,7 +5212,7 @@ Boss files
 
 
 <shipBlueprint name="BOSS_1" layout="boss_1" img="boss_1">
-	<class>UES Saratoga</class>
+	<class>UES Mahan</class>
 	<systemList>
 		<pilot power="3" room="0"/> 
 		<shields power="8" room="1"/> 
@@ -5239,7 +5237,7 @@ Boss files
 
 		
 <shipBlueprint name="BOSS_2" layout="boss_2" img="boss_2">
-	<class>UES Saratoga</class>
+	<class>UES Mahan</class>
 	<systemList>
 		<pilot power="3" room="0"/> 
 		<shields power="8" room="1"/>  
@@ -5250,6 +5248,7 @@ Boss files
 		<oxygen power="2" room="7"/>
 		<sensors power="2" room="13"/>
 		<drones power="8" room="12"/>
+		
 		<artillery power="4" room="9"/>
 		<artillery power="4" room="10"/>
 		<artillery power="3" room="14"/>
@@ -5267,7 +5266,7 @@ Boss files
 
 
 <shipBlueprint name="BOSS_3" layout="boss_3" img="boss_3">
-	<class>UES Saratoga</class>
+	<class>UES Mahan</class>
 	<systemList>
 		<pilot power="3" room="0"/>  
 		<shields power="8" room="1"/>  
@@ -5276,13 +5275,11 @@ Boss files
 		<medbay power="3" room="5"/>   
 		<engines power="6" room="8"/>
 		<oxygen power="2" room="7"/>
+
 		<artillery power="4" room="9"/>
 		<artillery power="4" room="10"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-		<!--<weapon name="ION_2"/>
-		<weapon name="BEAM_FIRE"/>
-	</weaponList>-->
 	<health amount="20"/>	
 	<maxPower amount ="31"/>
 	<boardingAI>invasion</boardingAI>

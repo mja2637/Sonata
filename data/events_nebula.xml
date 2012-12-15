@@ -218,7 +218,7 @@ Storm Environment:
 		<choice req="engines" lvl="4" hidden="true">
 			<text>(Engines) Fully power the engines to out-run them.</text>
 			<event>
-				<text>Your vessel shudders as you bring your outsized engines to 110% military rating - you hope the thrust blocks can take it. You easily out-distance the loyalists.</text>
+				<text>Your vessel shudders as you bring your outsized engines to 110 percent military rating - you hope the thrust blocks can take it. You easily out-distance the loyalists.</text>
 			</event>
 		</choice>
 	</event>

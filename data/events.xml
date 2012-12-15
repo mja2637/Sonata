@@ -522,7 +522,7 @@ item - Dust + that thing  -->
 		<choice>
 			<text>"Sure."</text>
 			<event>
-				<text>You recognize the cigarette - it's a Baisha. They're popular in the Empire military; he lights it, and you take a drag. Tastes like proletariat. You talk shop about the past few ship engagement; nothing too heavy. There's no point in raising the issue of his past. He'll talk about it when he wants to.</text>
+				<text>You recognize the cigarette - it's a Baisha. They're popular in the Empire military; he lights it, and you take a drag. Tastes like proletariat. You talk shop about the past few ship engagements; nothing too heavy. There's no point in raising the issue of his past. He'll talk about it when he wants to.</text>
 			</event>
 		</choice>				
 	</event>

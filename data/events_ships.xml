@@ -5,22 +5,7 @@
 A list of all main events to be called by lists
 	does not include sub-events)
 	
-	Matt: It seems like other events call ship encounters from this file.
-	
-	Enemy encounters:
-		UE (loyalist) ships
-		UE USVs (Unmanned Space Vehicles)
-		Sophon ships
-		Sower ships
-		Hissho ships
-		Craver/Amoeba ships (VERY rare!)
-		Pirates:
-			Shitty Pirate hull (common) (X-Tie anyone)
-			Hissho hull (common)
-			UE hull (common)
-			Sophon hull
-			Sower hull (uncommon)
-			Special Pirate hull (uncommon)		
+	Matt: It seems like other events call ship encounters from this file.	
 	
 Pirates
 	PIRATE
@@ -78,7 +63,7 @@ Special:
 	TEST SHIP
 	
 ---------------------------------->
-<ship name="TEST_SHIP_LOAD" auto_blueprint="SHIPS_PIRATE">
+<ship name="TEST_SHIP_LOAD" auto_blueprint="BOSS_1">
 	<destroyed>
 		<text>-</text>
 		<autoReward level="HIGH">standard</autoReward>

@@ -51,6 +51,7 @@ STRUCTURE SECTORS
 	 <event name="NOTHING_3" min="5" max="7"/>
 	 <event name="NOTHING_4" min="5" max="7"/>
 	  -->
+	  
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
@@ -70,8 +71,8 @@ STRUCTURE SECTORS
 		<name>The Last Stand</name>
 	</nameList>
 	<trackList>
-		<track>laststand1</track>
 		<track>laststand2</track>
+		<track>laststand1</track>		
 		<track>laststand3</track>
 	</trackList>
 	<startEvent>BOSS_NEUTRAL</startEvent>

@@ -38,9 +38,6 @@ Items:
 <fleet>battle</feet>
 --->
 
-
-
-
 <eventList name="BOSS_HOSTILE">
 	<event load="BOSS_SCOUT"/>
 	<event load="BOSS_SCOUT"/>
@@ -64,7 +61,7 @@ Items:
 
 
 <event name="START_BEACON_BOSS">
-	<text>The Pilgrim home fleet is just a few jumps away from here, and the massive ship that carries the Pilgrim Counsil. Get there quickly.</text>
+	<text>The Pilgrim home fleet is just a few jumps away from here, and the massive ship that carries the Pilgrim Council. Get there quickly.</text>
 </event>
 
 <!-- the first time you arrive at the base, before the rebel fleet arrives -->
