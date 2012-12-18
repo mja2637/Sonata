@@ -5214,21 +5214,27 @@ Boss files
 <shipBlueprint name="BOSS_1" layout="boss_1" img="boss_1">
 	<class>UES Mahan</class>
 	<systemList>
-		<pilot power="3" room="0"/> 
-		<shields power="8" room="1"/> 
-		<doors power="3" room="17"/> 
-		<teleporter power="2" room="3"/> 
-		<cloaking power="2" room="15"/> 
-		<!--<weapons power="1" room="6"/> -->
-		<sensors power="2" room="13"/>
-		<medbay power="3" room="5"/> 
-		<engines power="2" room="8"/> 
-		<oxygen power="2" room="7"/>
-		<drones power="1" room="12"/>
-		<artillery power="4" room="9"/>
-		<artillery power="4" room="10"/>
-		<artillery power="3" room="14"/>
-		<artillery power="3" room="18"/>
+		<pilot power="3" room="9"/>
+		<doors power="2" room="8"/>
+		<sensors power="2" room="0"/>
+		<medbay power="3" room="11"/>
+		<oxygen power="2" room="10"/>
+		
+		<!--
+		<shields power="8" room="4"/> 
+		-->
+		<shields power="0" room="4"/> 
+		
+		<engines power="2" room="14"/>
+		<drones power="1" room="7"/>
+		<teleporter power="2" room="12"/> 
+		<cloaking power="2" room="6"/> 
+
+		<artillery power="4" room="1"/>
+		<artillery power="3" room="3"/>
+		<artillery power="4" room="2"/>
+		<artillery power="3" room="5"/>
+		
 	</systemList>
 	<weaponList count="0" missiles="10"/>
 	<health amount="20"/>	
@@ -5239,15 +5245,19 @@ Boss files
 <shipBlueprint name="BOSS_2" layout="boss_2" img="boss_2">
 	<class>UES Mahan</class>
 	<systemList>
-		<pilot power="3" room="0"/> 
-		<shields power="8" room="1"/>  
-		<teleporter power="2" room="3"/>  
-		<!--<weapons power="1" room="6"/>  -->
-		<medbay power="3" room="5"/>  
+		<pilot power="3" room="1"/> 
+		<sensors power="2" room="0"/>
+		<medbay power="3" room="3"/>  
+		<oxygen power="2" room="2"/>
+		
+		<!--
+		<shields power="8" room="7"/>
+		-->
+		<shields power="0" room="7"/> 
+		
 		<engines power="3" room="8"/> 
-		<oxygen power="2" room="7"/>
-		<sensors power="2" room="13"/>
-		<drones power="8" room="12"/>
+		<drones power="8" room="5"/>
+		<teleporter power="2" room="4"/>  
 		
 		<artillery power="4" room="9"/>
 		<artillery power="4" room="10"/>
@@ -5268,13 +5278,17 @@ Boss files
 <shipBlueprint name="BOSS_3" layout="boss_3" img="boss_3">
 	<class>UES Mahan</class>
 	<systemList>
-		<pilot power="3" room="0"/>  
-		<shields power="8" room="1"/>  
-		<teleporter power="2" room="3"/> 
-		<!--<weapons power="4" room="6"/>  -->
-		<medbay power="3" room="5"/>   
-		<engines power="6" room="8"/>
-		<oxygen power="2" room="7"/>
+		<pilot power="3" room="1"/>
+		<medbay power="3" room="3"/>
+		<oxygen power="2" room="2"/>
+		
+		<!--
+		<shields power="8" room="6"/>
+		-->
+		<shields power="0" room="6"/> 
+		
+		<engines power="6" room="7"/>
+		<teleporter power="2" room="4"/> 
 
 		<artillery power="4" room="9"/>
 		<artillery power="4" room="10"/>

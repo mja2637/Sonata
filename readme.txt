@@ -112,7 +112,10 @@ Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
-		  
+7a
+		  - Restored boss dev work
+		  - Fixed several references to "United Earth" instead of "United Empire"
+		  - 
 7
 		  - Added Sonata drones
 		  - Added EFP projectile

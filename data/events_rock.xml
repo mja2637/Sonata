@@ -800,7 +800,7 @@
 			<choice hidden="true">
 				<text>Hand it over.</text>
 				<event>
-					<text>Your passenger shakes his head. "I never would have thought a Pilgrim would betray the Endless." Before you can power up your engines, loyalist assault ships beam aboard, grab the passenger, and beam back to the carrier. They left some Dust. Best to leave before the Empire rethinks its generosity.</text>
+					<text>Your passenger shakes his head. "I never would have thought a Pilgrim would betray the Endless." Before you can power up your engines, loyalist assault troops beam aboard, grab the passenger, and beam back to the carrier. They left some Dust. Best to leave before the Empire rethinks its generosity.</text>
 					<augment name="RANDOM"/>
 					<autoReward level="LOW">scrap_only</autoReward>
 				</event>					
