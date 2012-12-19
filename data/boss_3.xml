@@ -1,7 +1,7 @@
 
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
-<img x="-73" y="50" w="566" h="511"/>
+<img x="-140" y="-175" w="566" h="511"/>
 
 
 <weaponMounts>
@@ -9,8 +9,8 @@
 	<mount x="264" y="50" rotate="false" mirror="false" gib="2" slide="up"/>
 	<mount x="89" y="65" rotate="false" mirror="true" gib="1" slide="no"/>
 	<mount x="324" y="65" rotate="false" mirror="false" gib="2" slide="no"/>
-	<mount x="176" y="52" rotate="false" mirror="false" gib="1" slide="no"/>
-	<mount x="357" y="52" rotate="false" mirror="false" gib="2" slide="no"/>
+	<mount x="135" y="52" rotate="false" mirror="false" gib="1" slide="no"/>
+	<mount x="290" y="52" rotate="false" mirror="false" gib="2" slide="no"/>
 </weaponMounts>
 
 

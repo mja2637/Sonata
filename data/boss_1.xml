@@ -10,8 +10,8 @@
 	<mount x="324" y="65" rotate="false" mirror="false" gib="4" slide="up"/>
 	<mount x="60" y="-10" rotate="false" mirror="false" gib="1" slide="up"/>
 	<mount x="100" y="-10" rotate="false" mirror="false" gib="1" slide="up"/>
-	<mount x="45" y="90" rotate="false" mirror="false" gib="1" slide="up"/>
-	<mount x="350" y="85" rotate="false" mirror="false" gib="4" slide="up"/>
+	<mount x="480" y="145" rotate="false" mirror="false" gib="4" slide="up"/>
+	<mount x="145" y="100" rotate="false" mirror="false" gib="1" slide="right"/>	
 </weaponMounts>
 
 
