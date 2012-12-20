@@ -4209,9 +4209,10 @@
   <weaponSlots>4</weaponSlots>
   <droneSlots>2</droneSlots>
   <weaponList count="3" missiles="9">
+    <!-- <weapon name="UE_GAUSS_1" />
     <weapon name="UE_GAUSS_1" />
-    <weapon name="UE_GAUSS_1" />
-    <weapon name="BASIC_MISSILE_1" />
+    <weapon name="BASIC_MISSILE_1" /> -->
+	<weapon name="UE_DRIVER_2" />
   </weaponList>
   <droneList count="0" drones="0" />
   <health amount="30" />
