@@ -115,7 +115,7 @@ https://github.com/mja2637/Sonata/archive/master.zip
 7a
 		  - Restored boss dev work
 		  - Fixed several references to "United Earth" instead of "United Empire"
-		  - 
+		  - Added UE Frigate enemy
 7
 		  - Added Sonata drones
 		  - Added EFP projectile

@@ -520,18 +520,23 @@
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
 		
-<shipBlueprint name="REBEL_SKINNY_ELITE" layout="rebel_long" img="rebel_long_elite">
-	<class>Corvette Leader</class>
+<shipBlueprint name="REBEL_SKINNY_ELITE" layout="rebel_long_elite" img="rebel_long_elite">
+	<class>UE Frigate</class>
 	<minSector>5</minSector>
-	<systemList>
-		<oxygen power="1" max="2" room="2"/>
-		<pilot power="1" max="3" room="0"/>
-		<shields power="4" max="8" room="6"/>
-		<engines power="3" max="5" room="5"/>
-		<weapons power="4" max="10" room="4"/>  
-		<medbay power="1" max="3" room="3"/> 
-		<teleporter power="1" max="3" room="1" start="false"/>
+	<systemList>		
+		<pilot power="1" max="3" room="0"/>		
+		<doors power="1" max="3" room="8"/>
+		<sensors power="1" max="3" room="7"/>
+		<medbay power="1" max="3" room="2"/>
+		<oxygen power="1" max="2" room="3"/>
+		<shields power="4" max="8" room="4"/>
+		<engines power="3" max="7" room="5"/>
+		<weapons power="4" max="8" room="1"/>
+		<drones power="1" max="8" room="11" start="false"/>
+		<teleporter power="1" max="3" room="9" start="false"/>
+		<cloaking power="1" max="3" room="10" start="false"/>		
 	</systemList>
+	<droneList drones="4" load="DRONES_UE"/>
 	<weaponList missiles="10" load="WEAPONS_REBEL"/>
 	<health amount="14"/>	
 	<maxPower amount ="13"/>
