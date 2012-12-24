@@ -116,6 +116,8 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Restored boss dev work
 		  - Fixed several references to "United Earth" instead of "United Empire"
 		  - Added UE Frigate enemy
+		  - Added Helical Driver graphic
+		  - Updated Linear Accelerator & Driver 1 graphic
 7
 		  - Added Sonata drones
 		  - Added EFP projectile

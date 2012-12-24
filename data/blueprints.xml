@@ -3847,7 +3847,6 @@
 
 <augBlueprint name="SYSTEM_CASING">
 	<title>Reinforced System Casing</title>
-	<title>Titanium System Casing</title>
 	<desc>All ship systems have additional plating that provides a 15 percent chance to negate damage when hit (hull will still be damaged)</desc>
 	<cost>100</cost>
 	<bp>15</bp>
@@ -4209,10 +4208,9 @@
   <weaponSlots>4</weaponSlots>
   <droneSlots>2</droneSlots>
   <weaponList count="3" missiles="9">
-    <!-- <weapon name="UE_GAUSS_1" />
     <weapon name="UE_GAUSS_1" />
-    <weapon name="BASIC_MISSILE_1" /> -->
-	<weapon name="UE_DRIVER_2" />
+    <weapon name="UE_GAUSS_1" />
+    <weapon name="BASIC_MISSILE_1" />
   </weaponList>
   <droneList count="0" drones="0" />
   <health amount="30" />
