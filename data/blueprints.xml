@@ -366,7 +366,7 @@
 		Slug - Amoeba
 		Rock - Sower
 		Zoltan - Sophon
-		Chrystal - Endless
+		Chrystal - Craver
 -->
 
 <!-- For weapon art, all weapons will default to 'default' unless you give it something else... 
@@ -418,7 +418,7 @@
 	<type>LASER</type>
 	<title>Mk 1 Gauss Gun, relativistic</title>
 	<short>Gauss Gun</short>
-	<desc>Mounting helical driver units in series has only become possible with the advent of computers that can send and receive signals at relativistic speeds. In testing, 4 Mk 2 Drivers drove a projectile at 0.0003c; it generated enough electromagnetic feedback in the propulsion loops that nearby monitors had to be degaussed, hence the name.</desc>
+	<desc>Mounting helical driver units in series has only become possible with the advent of computers that can send and receive signals at relativistic speeds. In testing, 4 Mk 2 Drivers drove a projectile at 0.0005c; it generated enough electromagnetic feedback in the propulsion loops that nearby systems had to be degaussed, hence the name.</desc>
 	<tooltip>Two damage with a slight chance to breach.</tooltip>
 	<damage>2</damage>
 	<shots>1</shots>
@@ -564,7 +564,7 @@
 	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
-	<breachChance>0</breachChance>
+	<breachChance>1</breachChance>
 	<cooldown>10</cooldown>
 	<power>3</power>
 	<cost>50</cost>
