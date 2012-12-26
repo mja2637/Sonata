@@ -453,7 +453,7 @@
 	<type>LASER</type>
 	<title>Mk 2 Gauss Gun, boson</title>
 	<short>Boson Gauss Gun</short>
-	<desc>Filling the barrel of a Gauss Gun with a special parity-symmetric gas allows us to slightly weaken the electroweak force on the projectile's surface. When an electromagnetic motive force is supplied, a rapid boson exchange takes place which accelerates the projectile - added to, of course, the propulsion of the Gauss Gun itself. Residual parity-symmetric gas creates a similar effect on impact; this tends to have adverse effects on enemy armor.</desc>
+	<desc>Filling the barrel of a Gauss Gun with a special parity-symmetri 	c gas allows us to slightly weaken the electroweak force on the projectile's surface. When an electromagnetic motive force is supplied, a rapid boson exchange takes place which accelerates the projectile - added to, of course, the propulsion of the Gauss Gun itself. Residual parity-symmetric gas creates a similar effect on impact; this tends to have adverse effects on enemy armor.</desc>
 	<tooltip>3 damage, chance to breach.</tooltip>
 	<damage>3</damage>
 	<shots>1</shots>

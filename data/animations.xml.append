@@ -96,7 +96,7 @@
 	<time>0.08</time>
 </anim>
 
-<animSheet name="UE_DRIVER_3" w="270" h="80" fw="30" fh="80">weapons/UE_DRIVER_1.png</animSheet>
+<animSheet name="UE_DRIVER_3" w="234" h="66" fw="26" fh="66">weapons/UE_DRIVER_3.png</animSheet>
 <weaponAnim name="UE_DRIVER_3">
 	<sheet>UE_DRIVER_3</sheet>
 	<desc length="9" x="0" y="0"/>
