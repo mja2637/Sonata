@@ -452,15 +452,15 @@
  <weaponBlueprint name="UE_GAUSS_3">
 	<type>LASER</type>
 	<title>Mk 2 Gauss Gun, boson</title>
-	<short>Boson Gauss Gun</short>
-	<desc>Filling the barrel of a Gauss Gun with a special parity-symmetri 	c gas allows us to slightly weaken the electroweak force on the projectile's surface. When an electromagnetic motive force is supplied, a rapid boson exchange takes place which accelerates the projectile - added to, of course, the propulsion of the Gauss Gun itself. Residual parity-symmetric gas creates a similar effect on impact; this tends to have adverse effects on enemy armor.</desc>
+	<short>Boson Gauss</short>
+	<desc>Filling the barrel of a Gauss Gun with a special parity-symmetric gas allows us to slightly weaken the electroweak force on the projectile's surface. When an electromagnetic motive force is supplied, a rapid boson exchange takes place which accelerates the projectile - added to, of course, the propulsion of the Gauss Gun itself. Residual parity-symmetric gas creates a similar effect on impact; this tends to have adverse effects on enemy armor.</desc>
 	<tooltip>3 damage, chance to breach.</tooltip>
 	<damage>3</damage>
 	<shots>1</shots>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>12</cooldown>
 	<power>3</power>
 	<cost>75</cost>
 	<bp>2</bp>
@@ -4208,8 +4208,8 @@
   <weaponSlots>4</weaponSlots>
   <droneSlots>2</droneSlots>
   <weaponList count="3" missiles="9">
-    <weapon name="UE_GAUSS_1" />
-    <weapon name="UE_GAUSS_1" />
+    <weapon name="UE_GAUSS_3" />
+    <weapon name="UE_GAUSS_3" />
     <weapon name="BASIC_MISSILE_1" />
   </weaponList>
   <droneList count="0" drones="0" />

@@ -32,14 +32,14 @@
 	<time>0.08</time>
 </anim>
 
-<animSheet name="UE_GAUSS_3" w="264" h="83" fw="22" fh="83">weapons/UE_GAUSS_1_strip7.png</animSheet>
+<animSheet name="UE_GAUSS_3" w="216" h="87" fw="24" fh="87">weapons/UE_GAUSS_3.png</animSheet>
 <weaponAnim name="UE_GAUSS_3">
 	<sheet>UE_GAUSS_3</sheet>
-	<desc length="12" x="0" y="0"/>
-	<chargedFrame>7</chargedFrame>
-	<fireFrame>10</fireFrame>
-	<firePoint x="14" y="11"/>
-	<mountPoint x="8" y="62"/>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint x="14" y="4"/>
+	<mountPoint x="8" y="52"/>
 </weaponAnim>
 <animSheet name="UE_GAUSS_PROJ_3" w="200" h="20" fw="50" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
 <anim name="UE_GAUSS_PROJ_3">
