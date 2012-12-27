@@ -630,7 +630,7 @@
 
  <weaponBlueprint name="UE_DRIVER_4">
 	<type>LASER</type>
-	<title>Mk 2 Gauss Driver, proton exchange</title>
+	<title>Mk 2 Gauss Driver, proton</title>
 	<short>Proton Driver</short>
 	<desc>With careful control and advanced understanding of quantum interactions and the Strong force, we can casually bind and unbind nuclear particles. Sensors on the projectile's warhead analyze the molecular composition of enemy armor and initiate a proton cascade, converting all nearby matter into hydrogen in a harmless burst of alpha radiation. The warhead then, naturally, ignites the hydrogen.</desc>
 	<tooltip>A suppository best taken up the exhaust port.(3 shots, 2 damage, ignores 1 shield, causes status effects)</tooltip>
@@ -4208,8 +4208,8 @@
   <weaponSlots>4</weaponSlots>
   <droneSlots>2</droneSlots>
   <weaponList count="3" missiles="9">
-    <weapon name="UE_GAUSS_3" />
-    <weapon name="UE_GAUSS_3" />
+    <weapon name="UE_GAUSS_1" />
+    <weapon name="UE_GAUSS_1" />
     <weapon name="BASIC_MISSILE_1" />
   </weaponList>
   <droneList count="0" drones="0" />
@@ -4229,7 +4229,6 @@
 	<class>United Empire Destroyer</class>
 	<name>UES Long Island</name>
 	<desc>Empire destroyers embody the age-old virtues of front line warriors: speed, surprise, violence of action.</desc>
-
 	<systemList>
 		<pilot power="1" room="5" start="true" img="room_pilot_2" >
 			<slot>
@@ -4275,7 +4274,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList count="2" missiles="5">
 		<weapon name="UE_GAUSS_2"/>
-		<weapon name="UE_GAUSS_2"/>
+		<weapon name="UE_GAUSS_2"/>		
 	</weaponList>
 	<health amount="34"/>
 	<maxPower amount ="10"/> 

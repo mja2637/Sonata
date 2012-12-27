@@ -1,6 +1,6 @@
 <!-- WEAPONS -->
 
-<animSheet name="UE_GAUSS_1" w="264" h="83" fw="22" fh="83">weapons/UE_GAUSS_1_strip7.png</animSheet>
+<animSheet name="UE_GAUSS_1" w="264" h="83" fw="22" fh="83">weapons/UE_GAUSS_1.png</animSheet>
 <weaponAnim name="UE_GAUSS_1">
 	<sheet>UE_GAUSS_1</sheet>
 	<desc length="12" x="0" y="0"/>
@@ -48,7 +48,7 @@
 	<time>0.08</time>
 </anim>
 
-<animSheet name="UE_GAUSS_4" w="264" h="83" fw="22" fh="83">weapons/UE_GAUSS_1_strip7.png</animSheet>
+<animSheet name="UE_GAUSS_4" w="264" h="83" fw="22" fh="83">weapons/UE_GAUSS_1.png</animSheet>
 <weaponAnim name="UE_GAUSS_4">
 	<sheet>UE_GAUSS_4</sheet>
 	<desc length="12" x="0" y="0"/>
@@ -112,7 +112,7 @@
 	<time>0.08</time>
 </anim>
 
-<animSheet name="UE_DRIVER_4" w="270" h="80" fw="30" fh="80">weapons/UE_DRIVER_1.png</animSheet>
+<animSheet name="UE_DRIVER_4" w="234" h="82" fw="26" fh="82">weapons/UE_DRIVER_4.png</animSheet>
 <weaponAnim name="UE_DRIVER_4">
 	<sheet>UE_DRIVER_4</sheet>
 	<desc length="9" x="0" y="0"/>
