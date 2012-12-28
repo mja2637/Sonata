@@ -89,7 +89,7 @@
 	<firePoint  x="14" y="4"/>
 	<mountPoint x="8" y="56"/>
 </weaponAnim>
-<animSheet name="UE_DRIVER_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_2.png</animSheet>
+<animSheet name="UE_DRIVER_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
 <anim name="UE_DRIVER_PROJ_2">
 	<sheet>UE_DRIVER_PROJ_2</sheet>
 	<desc length="4" x="0" y="0"/>
@@ -196,6 +196,13 @@
 	<sheet>explosion_sower_cannon_4</sheet>
 	<desc length="12" x="0" y="0"/>
 	<time>0.75</time>
+</anim>
+
+<animSheet name="SOWER_AC_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/SOWER_AC_PROJ_2.png</animSheet>
+<anim name="SOWER_AC_PROJ_2">
+	<sheet>SOWER_AC_PROJ_2</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.08</time>
 </anim>
 
 <animSheet name="SOPHON_LASER_1" w="192" h="33" fw="24" fh="33">weapons/beam_1_strip8.png</animSheet>
