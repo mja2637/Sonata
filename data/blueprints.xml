@@ -640,7 +640,7 @@
 	<fireChance>3</fireChance>
 	<breachChance>3</breachChance>
 	<cooldown>18</cooldown>
-	<power>5</power>
+	<power>4</power>
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
@@ -776,7 +776,7 @@
 	<title>Baryon-Gravitophoric Cannon</title>
 	<short>BG Cannon</short>
 	<desc>This cannon fires massive shells fitted with baryon/antibaryon annihilation reactors. On impact, the reactors shred the theory of electroweak baryongenesis and funnel millions of tons of baryons into a 1 millimeter cube. Some shots impact with the density of a neutron star; most collapse into miniature black holes. When the leftover antibaryons needed to maintain symmetry are released, they mutually annihilate whatever is left.</desc>
-	<tooltip>Turn out the sun. Boss killer.</tooltip>
+	<tooltip>Turn out the sun. Boss killer. (5 damage, pierces 4 shields, breaches)</tooltip>
 	<damage>5</damage>
 	<missiles>2</missiles>
 	<shots>1</shots>
@@ -1149,7 +1149,7 @@
 	<title>Contained Higgs Pulse Beam</title>
 	<short>Higgs Pulse</short>
 	<desc>Our command of particle physics and thermodynamics on the quantum level allows us to create, contain, and fire stable packets of Higgs bosons at near-light speed. These packets cause intense gravitational shear on impact, followed by spontaneous explosive fusion.</desc>
-	<tooltip>God does not play dice. (2 shots, 4 damage, breaches.)</tooltip>
+	<tooltip>God does not play dice. (2 shots, 3 damage, breaches.)</tooltip>
 	<damage>3</damage>
 	<shots>2</shots>
 	<sp>0</sp>
@@ -4870,10 +4870,10 @@
 <!-- LAYOUT = DEFAULT --> 
 <!-- SHIP ID = 7 -->  
 <shipBlueprint name="PLAYER_SHIP_ENERGY" layout="energy_cruiser" img="energy_cruiser">
-	<class>Zoltan Cruiser</class>
-	<name>The Adjudicator</name>
-	<unlock>Learn from the Zoltan, sometimes diplomacy works.</unlock>
-	<desc>The Zoltan's advanced shields technology gives this ship an edge during each battle.</desc>
+	<class>Sophon Kilo</class>
+	<name>Verne</name>
+	<unlock>Learn from the Sophon, sometimes diplomacy works.</unlock>
+	<desc>Although designed as a multi-purpose scientific vessel, advanced Sophon shielding and weapons technology make the Kilo a force to be reckoned with.</desc>
 	<systemList>
 		<pilot power="1" room="11" start="true"/>  
 		<doors power="2" room="10" start="true" img="room_doors_6"/>     
@@ -4898,41 +4898,38 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="4" missiles="12"> 
-		<weapon name="SOPHON_LASER_2"/>
-		<weapon name="BASIC_MISSILE_1"/>
+	<weaponList count="1" missiles="10"> 
+		<weapon name="SOPHON_LASER_3"/>
 	</weaponList>
 	<droneList drones="2"/>
 	<health amount="30"/>
-	<maxPower amount ="5"/> 
+	<maxPower amount ="5"/>
 	<crewCount amount = "3" class="energy"/>
 	<aug name="ENERGY_SHIELD"/>
 </shipBlueprint>
-
  
 <!-- ENERGY SHIP -->
 <!-- LAYOUT = Alternate --> 
 <!-- SHIP ID = 7 -->  
 <!-- testship -->
 <shipBlueprint name="PLAYER_SHIP_ENERGY_2" layout="energy_cruiser_2" img="energy_cruiser_2">
-
-	<class>Zoltan Cruiser</class>
-	<name>Noether</name>
-	<unlock>Learn from the Zoltan, sometimes diplomacy works.</unlock>
-	<desc>The Zoltan's advanced shields technology gives this ship an edge during each battle.</desc>
+	<class>Sophon Deca</class>
+	<name>Alamos</name>
+	<unlock>Learn from the Sophon, sometimes diplomacy works.</unlock>
+	<desc>One of the few dedicated warships produced by the Sophon, the tiny Deca is as deadly as it is precise.</desc>
 	<systemList>
 		<pilot power="1" room="14" start="true"/>  
 		<doors power="1" room="8" start="true" img="room_doors_6"/>     
 		<sensors power="1" room="13" start="true" img="room_sensors_4"/>  
 		<oxygen power="1" room="12" start="true" img="room_oxygen_7"/>    
-		<engines power="2" room="3" start="true" img="room_engines_5">  
+		<engines power="3" room="3" start="true" img="room_engines_5">  
 			<slot>
 				<direction>up</direction>
 				<number>0</number> 
 			</slot>
 		</engines>     
 		<shields power="1" room="5" start="true" img="room_shields_8"/>
-		<weapons power="4" room="7" start="true" img="room_weapons_4">
+		<weapons power="2" room="7" start="true" img="room_weapons_4">
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -4947,18 +4944,19 @@
 		<teleporter power="1" room="4" start="false"/>  
 		<cloaking power="1" room="6" start="false"/> 
 	</systemList>
-	<weaponSlots>4</weaponSlots>
+	<weaponSlots>2</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="3" missiles="0">
+	<weaponList count="2" missiles="0">
 		<weapon name="SOPHON_PULSE_1"/>
 		<weapon name="SOPHON_PULSE_1"/>
-		<weapon name="SOPHON_LASER_2"/>
 	</weaponList>
 	<droneList drones="2"/>
 	<health amount="30"/>
 	<maxPower amount ="5"/>
-	<crewCount amount="3" class="energy"/>
+	<crewCount amount="2" class="energy"/>
 	<aug name="ENERGY_SHIELD"/>
+	<aug name="AUTO_COOLDOWN"/>
+	<aug name="AUTO_COOLDOWN"/>
 	<shieldImage>energy_cruiser</shieldImage>
 	<cloakImage>energy_cruiser</cloakImage>
 </shipBlueprint>

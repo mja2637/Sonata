@@ -4,7 +4,7 @@ An FTL mod.
 
 With cries of "Sic Semper Tyrannis", nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the "Pilgrims". The Empire's legislature interpreted this secession as treason, and the overwhelming might of the loyalist fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, your family and friends have all joined the resistance - and so you shall.
 
-This mod is based on the storyline of Endless Space by Amplitude Studios, with modifications.
+This mod is based on the lore of Endless Space by Amplitude Studios, although much of it has been altered.
 
 NOTE: It is highly recommended to use Splette's Higher-Res Backgrounds mod in conjunction with Sonata. Make sure that Higher-Res Backgrounds is loaded BEFORE Sonata in GMM.
 
@@ -14,7 +14,7 @@ NOTE: It is highly recommended to use Splette's Higher-Res Backgrounds mod in co
 
 1 RACES
 UNITED EMPIRE
-The United Empire is a liberal democracy, the capital being Earth; the vast majority of humans are citizens, as well as many aliens. The Empire, in fact, is quite liberal - and there is widespread sexual liberalism, drug use, and body modification. Its government presides over a population which is fiercely proud and expansion-hungry to the point of jingoism. 
+The United Empire is a democracy, the capital being Earth; the vast majority of humans are citizens, as well as many aliens. The Empire, in fact, is quite liberal - and there is widespread sexual liberalism, drug use, and body modification. Its government presides over a population which is fiercely proud and expansion-hungry to the point of jingoism. 
  
 The United Empire uses kinetic weaponry: rail guns, gauss guns, and drivers. Drivers tend to fire more quickly than the other types.
 
@@ -59,8 +59,8 @@ Mk 1 Gauss Gun, software-defined (UE): 2 bars, 3 shots, 1 damage, low breach cha
 Mk 2 Gauss Gun, boson (UE): 3 bars, 3 damage, low breach chance, 13 second cooldown.
 Unstable Slugger: 4 bars, 5 damage, very low breach chance, 14 second cooldown.
 Anti-Baryon Mag AutoCannon (Sower): 4 bars, 3 shots, 1 damage, excellent chance to breach, ignores 3 shields, 8s cooldown.
-Mk 2 Accelerator, tachyon (UE): 4 bars, 5 damage, 2 shield piercing, 15 second cooldown.
 Mk 2 Gauss Driver, proton exchange (UE): 4 bars, 3 shots, 2 damage, 1 shield piercing, good fire/breach chance, 18s cooldown.
+Mk 2 Accelerator, tachyon (UE): 4 bars, 5 damage, 2 shield piercing, 15 second cooldown.
 
 Some lasers also act like kinetic weapons:
 Radiothermal Burst Maser (Sophon): 1 bar, 2 shots, 1 damage, very low chance of fire, 11s cooldown.
@@ -90,8 +90,8 @@ Synchrotron Laser: 1 bar, 1 damage, 70 length, low chance of fire, 13s cooldown.
 Supercooled Titanium-Sapphire Laser (Sophon): 2 bars, 1 damage, 55 length, low chance of fire, 7s cooldown.
 Phased Plasmic Laser: 2 bars, 2 damage, 50 length, very low chance of fire, 12s cooldown.
 Thermophotonic Xaser (Sophon): 3 bars, 1 damage, 95 length, pierces 1 shield, excellent chance of fire, 16s cooldown.
-Disruptor Beam: 3 bars, 2 damage, 45 length, ignores 1 shield, very good chance to breach, 12s cooldown.
-Bose-Einstein Particle Beam (Sophon): 3 bars, 2 damage, 35 length, insance breach chance, 15s cooldown.
+Disruptor Beam: 3 bars, 2 damage, 45 length, pierces 1 shield, very good chance to breach, 12s cooldown.
+Bose-Einstein Particle Beam (Sophon): 3 bars, 2 damage, 35 length, insane breach chance, 15s cooldown.
 Condensed Anti-Neutrino Beam (Sophon): 4 bars, 3 damage, 65 length, ignores 1 shield, 20s cooldown.
 
 
@@ -116,8 +116,7 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Restored boss dev work
 		  - Fixed several references to "United Earth" instead of "United Empire"
 		  - Added UE Frigate enemy
-		  - Added Helical Driver graphic
-		  - Updated Linear Accelerator & Driver 1 graphic
+		  - Added custom human weapon sprites (all)
 7
 		  - Added Sonata drones
 		  - Added EFP projectile
