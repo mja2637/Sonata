@@ -487,7 +487,7 @@
  <weaponBlueprint name="UE_GAUSS_4">
 	<type>LASER</type>
 	<title>Mk 2 Accelerator, tachyon</title>
-	<short>Tachyon Accelerator</short>
+	<short>Tachyon Accel.</short>
 	<desc>The device's simplicity belies the incredible sophistication of the rail propulsion network and the millions of man-years of software development which made this weapon possible. It contains a top-secret gas; the rail network applies unbelievably tiny and rapid charges to precisely computed locations. Once every few seconds, in complete silence, the tube emits a massive tachyon burst which travels at 1.3c and dissolves whatever it hits into its component quarks.</desc>
 	<tooltip>The tachyon particle's mass is imaginary, and so are most targets shortly after being hit by this weapon. (5 damage, ignores 2 shields).</tooltip>
 	<damage>5</damage>
@@ -502,7 +502,7 @@
 	<rarity>5</rarity>
 	<image>UE_GAUSS_PROJ_4</image>
 	<launchSounds>
-		<sound>kinetic2</sound>
+		<sound>aintnosound</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -4274,7 +4274,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList count="2" missiles="5">
 		<weapon name="UE_GAUSS_2"/>
-		<weapon name="UE_GAUSS_2"/>		
+		<weapon name="UE_GAUSS_2"/>
 	</weaponList>
 	<health amount="34"/>
 	<maxPower amount ="10"/> 

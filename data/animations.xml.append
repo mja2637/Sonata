@@ -23,7 +23,7 @@
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
 	<firePoint x="14" y="3"/>
-	<mountPoint x="8" y="52"/>
+	<mountPoint x="8" y="67"/>
 </weaponAnim>
 <animSheet name="UE_GAUSS_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
 <anim name="UE_GAUSS_PROJ_2">
@@ -39,7 +39,7 @@
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
 	<firePoint x="14" y="4"/>
-	<mountPoint x="8" y="52"/>
+	<mountPoint x="8" y="66"/>
 </weaponAnim>
 <animSheet name="UE_GAUSS_PROJ_3" w="200" h="20" fw="50" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
 <anim name="UE_GAUSS_PROJ_3">
@@ -48,14 +48,14 @@
 	<time>0.08</time>
 </anim>
 
-<animSheet name="UE_GAUSS_4" w="264" h="83" fw="22" fh="83">weapons/UE_GAUSS_1.png</animSheet>
+<animSheet name="UE_GAUSS_4" w="207" h="67" fw="23" fh="67">weapons/UE_GAUSS_4.png</animSheet>
 <weaponAnim name="UE_GAUSS_4">
 	<sheet>UE_GAUSS_4</sheet>
-	<desc length="12" x="0" y="0"/>
-	<chargedFrame>7</chargedFrame>
-	<fireFrame>10</fireFrame>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>7</fireFrame>
 	<firePoint x="14" y="11"/>
-	<mountPoint x="8" y="62"/>
+	<mountPoint x="8" y="46"/>
 </weaponAnim>
 <animSheet name="UE_GAUSS_PROJ_4" w="200" h="20" fw="50" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
 <anim name="UE_GAUSS_PROJ_4">
@@ -71,7 +71,7 @@
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
 	<firePoint  x="14" y="4"/>
-	<mountPoint x="8" y="52"/>
+	<mountPoint x="8" y="56"/>
 </weaponAnim>
 <animSheet name="UE_DRIVER_PROJ_1" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
 <anim name="UE_DRIVER_PROJ_1">
@@ -87,7 +87,7 @@
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
 	<firePoint  x="14" y="4"/>
-	<mountPoint x="8" y="52"/>
+	<mountPoint x="8" y="56"/>
 </weaponAnim>
 <animSheet name="UE_DRIVER_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_2.png</animSheet>
 <anim name="UE_DRIVER_PROJ_2">
@@ -103,7 +103,7 @@
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
 	<firePoint  x="14" y="4"/>
-	<mountPoint x="8" y="52"/>
+	<mountPoint x="8" y="45"/>
 </weaponAnim>
 <animSheet name="UE_DRIVER_PROJ_3" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
 <anim name="UE_DRIVER_PROJ_3">
@@ -119,7 +119,7 @@
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>6</fireFrame>
 	<firePoint  x="14" y="4"/>
-	<mountPoint x="8" y="52"/>
+	<mountPoint x="8" y="61"/>
 </weaponAnim>
 <animSheet name="UE_DRIVER_PROJ_4" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
 <anim name="UE_DRIVER_PROJ_4">
