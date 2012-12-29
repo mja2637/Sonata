@@ -566,7 +566,7 @@ item - Dust + that thing  -->
 
 <eventList name="HUMAN_EXP_2">
 	<event>
-		<text>It came out of FTL an hour after you did, emerging into a sector bustling with activity. It's on the edge of your sensor range: a Rebel corvette. Sector control hails you, and you shoot him a look as if to say</text>
+		<text>It came out of FTL an hour after you did - a loyalist warship. It's on the edge of your sensor range and will probably detect you soon. You shoot your crewmember a look as if to say</text>
 		<choice>
 			<text>"You gonna be ok?" He's ex-UE military.</text>
 			<event>

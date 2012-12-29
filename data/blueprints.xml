@@ -383,7 +383,7 @@
 	<type>LASER</type>
 	<title>Mk 1 mod 3 Accelerator, linear</title>
 	<short>Linear Accel.</short>
-	<desc>A standard twin-rail 15MW accelerator which fires 200 5kg tungsten projectiles at 5,000 meters per second from a sled floating on air bearings. Known to glow red hot during heavy combat use; sustained fire may degrade accuracy.</desc>
+	<desc>A standard twin-rail 15MW accelerator which fires 200 0.5kg tungsten projectiles at 5,000 meters per second from a sled floating on air bearings. Known to glow red hot during heavy combat use; sustained fire may degrade accuracy.</desc>
 	<tooltip>One shot, low chance to breach.</tooltip>
 	<damage>1</damage>
 	<shots>1</shots>
@@ -558,15 +558,15 @@
 	<type>LASER</type>
 	<title>Mk 2 Driver, helical configuration</title>
 	<short>Helical Driver</short>
-	<desc>This driver does not use a rail-mounted sled; the projectile is suspended in the center of the barrel by electromagnets, and the rails spiral around the outside of the barrel in a helix configuration. Since there is no longer a sled which has to be retracted or replaced, the rate of fire can be increased. Rails can be mounted as densely as needed by increasing the frequency of the helix. The utter lack of friction, and massive increase in available power, come at a cost in size.</desc>
-	<tooltip>Inefficient; fires bursts.</tooltip>
+	<desc>This coil driver does not use a rail-mounted sled; the projectile is suspended in the center of the barrel by electromagnets, and the coils spiral around the outside of the barrel in a helix configuration. Since there is no longer a sled which has to be retracted or replaced, the rate of fire can be increased. Rails can be mounted as densely as needed by increasing the frequency of the helix. The lack of friction, and massive increase in available power, come at a cost in size.</desc>
+	<tooltip>Fires bursts.</tooltip>
 	<damage>1</damage>
 	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>10</cooldown>
-	<power>3</power>
+	<cooldown>13</cooldown>
+	<power>2</power>
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
@@ -1187,7 +1187,7 @@
 	<title>Chemical Laser</title>
 	<short>Chem Laser</short>
 	<desc>An inevitable first step in developing functional space-borne beam weapons, the good old laser is well-known, reliable, and great in a vacuum.</desc>
-	<tooltip>One damage per room beam weapon</tooltip>
+	<tooltip>One damage per room beam weapon.</tooltip>
 	<damage>1</damage>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -1395,10 +1395,10 @@
 <weaponBlueprint name="BASIC_KINETIC_4">
 	<type>LASER</type>
 	<title>Unstable Slugger</title>
-	<short>Unstable Slugger</short>
+	<short>Unstable Slug.</short>
 	<desc>These slugs are created from relatively unstable nonbaryonic matter farmed from the depths of space. Held in form by charged shields, they decompose explosively upon impact.</desc>
-	<tooltip>Five damage per shot.</tooltip>
-	<damage>5</damage>
+	<tooltip>Four damage per shot.</tooltip>
+	<damage>4</damage>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
