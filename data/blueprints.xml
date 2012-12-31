@@ -1574,7 +1574,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>missiles_2</weaponArt> 
+	<weaponArt>BASIC_MISSILE_4</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="ARTILLERY_WEAPON">
@@ -4272,10 +4272,9 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
-	<weaponList count="3" missiles="5">
+	<weaponList count="2" missiles="5">
 		<weapon name="UE_GAUSS_2"/>
 		<weapon name="UE_GAUSS_2"/>
-		<weapon name="SOPHON_LASER_4"/>
 	</weaponList>
 	<health amount="34"/>
 	<maxPower amount ="10"/> 
@@ -4881,7 +4880,7 @@
 		<sensors power="2" room="0" start="true"/>  
 		<oxygen power="1" room="9" start="true" img="room_oxygen_2"/>    
 		<engines power="1" room="6" start="true" img="room_engines_2"/>    
-		<shields power="2" room="7" start="true" img="room_shields_7">
+		<shields power="2" room="12" start="true" img="room_shields_7">
 			<slot>
 				<direction>up</direction>
 				<number>1</number> 
@@ -4899,8 +4898,10 @@
 	</systemList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="1" missiles="10"> 
+	<weaponList count="3" missiles="10"> 
 		<weapon name="SOPHON_LASER_3"/>
+		<weapon name="SOPHON_LASER_1"/>
+		<weapon name="SOPHON_LASER_1"/>
 	</weaponList>
 	<droneList drones="2"/>
 	<health amount="30"/>

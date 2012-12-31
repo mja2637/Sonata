@@ -117,7 +117,9 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Restored boss dev workx
 		  - Fixed several references to "United Earth" instead of "United Empire"
 		  - Added UE Frigate enemy
+		  - Added SOPHON_A: "Verne" (by DCChuckles)
 		  - Added custom UE weapon sprites (all)
+		  - Added custom projectiles
 		  - Tweaked Ranger mount points
 		  - Event and weapon test tweaks
 7

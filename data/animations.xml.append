@@ -171,6 +171,16 @@
 	<mountPoint x="8" y="52"/>
 </weaponAnim>
 
+<animSheet name="BASIC_MISSILE_4" w="216" h="54" fw="27" fh="54">weapons/BASIC_MISSILE_4.png</animSheet>
+<weaponAnim name="BASIC_MISSILE_4">
+	<sheet>BASIC_MISSILE_4</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>6</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="17" y="18"/>
+	<mountPoint x="4" y="38"/>
+</weaponAnim>
+
 <!-- PROJECTILES -->
 <!--
 SIMPLE_GUN: SOWER_AC_1, SLUGGER_1
