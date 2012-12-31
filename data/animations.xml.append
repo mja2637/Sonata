@@ -183,17 +183,17 @@
 
 <!-- PROJECTILES -->
 <!--
-SIMPLE_GUN: SOWER_AC_1, SLUGGER_1
-EFP: SOWER_AC_2
-SMALL_RAIL: SLUGGER_2, UE_GAUSS_1, UE_DRIVER_1
-MEDIUM_RAIL: UE_GAUSS_2, UE_DRIVER_2, UE_DRIVER_3
-PLASMA_GUN: SLUGGER_3
-UNSTABLE_GUN: SLUGGER_4
-BOSON_GAUSS: UE_GAUSS_3
-PROTON_GAUSS: UE_DRIVER_4
-TACHYON_GAUSS: UE_GAUSS_4
+SIMPLE_GUN_PROJ: SOWER_AC_1, SLUGGER_1
+EFP_PROJ: SOWER_AC_2
+SMALL_RAIL_PROJ: SLUGGER_2, UE_GAUSS_1, UE_DRIVER_1
+MEDIUM_RAIL_PROJ: UE_GAUSS_2, UE_DRIVER_2, UE_DRIVER_3
+PLASMA_GUN_PROJ: SLUGGER_3
+UNSTABLE_GUN_PROJ: SLUGGER_4
+BOSON_GAUSS_PROJ: UE_GAUSS_3
+PROTON_GAUSS_PROJ: UE_DRIVER_4
+TACHYON_GAUSS_PROJ: UE_GAUSS_4
 
-SOPHON_PULSE_1: SOPHON_PULSE_1
+MASER_PROJ: SOPHON_PULSE_1
 SOPHON_PULSE_2: SOPHON_PULSE_2
 SOPHON_PULSE_3: SOPHON_PULSE_3
 
@@ -214,83 +214,51 @@ MISSILE_4: BASIC_MISSILE_4
 <anim name="SIMPLE_GUN_PROJ">
 	<sheet>SIMPLE_GUN_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
+	<time>0.15</time>
 </anim>
 
-<animSheet name="UE_GAUSS_PROJ_1" w="160" h="20" fw="40" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
-<anim name="UE_GAUSS_PROJ_1">
-	<sheet>UE_GAUSS_PROJ_1</sheet>
+<animSheet name="SMALL_RAIL_PROJ" w="160" h="20" fw="40" fh="20">weapons/SMALL_RAIL_PROJ.png</animSheet>
+<anim name="SMALL_RAIL_PROJ">
+	<sheet>SMALL_RAIL_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
-</anim>
-<animSheet name="UE_GAUSS_PROJ_2" w="160" h="20" fw="40" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
-<anim name="UE_GAUSS_PROJ_2">
-	<sheet>UE_GAUSS_PROJ_2</sheet>
-	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
-</anim>
-<animSheet name="UE_GAUSS_PROJ_3" w="160" h="20" fw="40" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
-<anim name="UE_GAUSS_PROJ_3">
-	<sheet>UE_GAUSS_PROJ_3</sheet>
-	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
-</anim>
-<animSheet name="UE_GAUSS_PROJ_4" w="160" h="20" fw="40" fh="20">weapons/UE_GAUSS_PROJ_1.png</animSheet>
-<anim name="UE_GAUSS_PROJ_4">
-	<sheet>UE_GAUSS_PROJ_4</sheet>
-	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
+	<time>0.07</time>
 </anim>
 
-<animSheet name="UE_DRIVER_PROJ_1" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
-<anim name="UE_DRIVER_PROJ_1">
-	<sheet>UE_DRIVER_PROJ_1</sheet>
+<animSheet name="MASER_PROJ" w="160" h="20" fw="40" fh="20">weapons/MASER_PROJ.png</animSheet>
+<anim name="MASER_PROJ">
+	<sheet>MASER_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
-</anim>
-<animSheet name="UE_DRIVER_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
-<anim name="UE_DRIVER_PROJ_2">
-	<sheet>UE_DRIVER_PROJ_2</sheet>
-	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
-</anim>
-<animSheet name="UE_DRIVER_PROJ_3" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
-<anim name="UE_DRIVER_PROJ_3">
-	<sheet>UE_DRIVER_PROJ_3</sheet>
-	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
-</anim>
-<animSheet name="UE_DRIVER_PROJ_4" w="200" h="20" fw="50" fh="20">weapons/UE_DRIVER_PROJ_1.png</animSheet>
-<anim name="UE_DRIVER_PROJ_4">
-	<sheet>UE_DRIVER_PROJ_4</sheet>
-	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
+	<time>0.06</time>
 </anim>
 
-<animSheet name="SOWER_CANNON_PROJ_1" w="120" h="24" fw="20" fh="24">weapons/SOWER_CANNON_PROJ_1.png</animSheet>
-<anim name="SOWER_CANNON_PROJ_1">
-	<sheet>SOWER_CANNON_PROJ_1</sheet>
-	<desc length="6" x="0" y="0"/>
-	<time>0.05</time>
+<animSheet name="MEDIUM_RAIL_PROJ" w="200" h="20" fw="50" fh="20">weapons/MEDIUM_RAIL_PROJ.png</animSheet>
+<anim name="MEDIUM_RAIL_PROJ">
+	<sheet>MEDIUM_RAIL_PROJ</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.1</time>
 </anim>
-<animSheet name="SOWER_CANNON_PROJ_2" w="120" h="24" fw="20" fh="24">weapons/SOWER_CANNON_PROJ_1.png</animSheet>
-<anim name="SOWER_CANNON_PROJ_2">
-	<sheet>SOWER_CANNON_PROJ_2</sheet>
-	<desc length="6" x="0" y="0"/>
-	<time>0.05</time>
+
+<animSheet name="PROTON_GAUSS_PROJ" w="200" h="20" fw="50" fh="20">weapons/PROTON_GAUSS_PROJ.png</animSheet>
+<anim name="PROTON_GAUSS_PROJ">
+	<sheet>PROTON_GAUSS_PROJ</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.1</time>
 </anim>
-<animSheet name="SOWER_CANNON_PROJ_3" w="120" h="24" fw="20" fh="24">weapons/SOWER_CANNON_PROJ_1.png</animSheet>
-<anim name="SOWER_CANNON_PROJ_3">
-	<sheet>SOWER_CANNON_PROJ_3</sheet>
-	<desc length="6" x="0" y="0"/>
-	<time>0.05</time>
+
+<animSheet name="UNSTABLE_GUN_PROJ" w="200" h="20" fw="50" fh="20">weapons/UNSTABLE_GUN_PROJ.png</animSheet>
+<anim name="UNSTABLE_GUN_PROJ">
+	<sheet>UNSTABLE_GUN_PROJ</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.15</time>
 </anim>
-<animSheet name="SOWER_CANNON_PROJ_4" w="120" h="24" fw="20" fh="24">weapons/SOWER_CANNON_PROJ_1.png</animSheet>
-<anim name="SOWER_CANNON_PROJ_4">
-	<sheet>SOWER_CANNON_PROJ_4</sheet>
+
+<animSheet name="SIMPLE_CANNON_PROJ" w="120" h="24" fw="20" fh="24">weapons/SIMPLE_CANNON_PROJ.png</animSheet>
+<anim name="SIMPLE_CANNON_PROJ">
+	<sheet>SIMPLE_CANNON_PROJ</sheet>
 	<desc length="6" x="0" y="0"/>
-	<time>0.05</time>
+	<time>0.35</time>
 </anim>
+
 <animSheet name="explosion_sower_cannon_4" w="384" h="32" fw="32" fh="32">effects/explosion_sower_cannon_4.png</animSheet>
 <anim name="explosion_sower_cannon_4">
 	<sheet>explosion_sower_cannon_4</sheet>
@@ -298,11 +266,11 @@ MISSILE_4: BASIC_MISSILE_4
 	<time>0.75</time>
 </anim>
 
-<animSheet name="SOWER_AC_PROJ_2" w="200" h="20" fw="50" fh="20">weapons/SOWER_AC_PROJ_2.png</animSheet>
-<anim name="SOWER_AC_PROJ_2">
-	<sheet>SOWER_AC_PROJ_2</sheet>
+<animSheet name="EFP_PROJ" w="200" h="20" fw="50" fh="20">weapons/EFP_PROJ.png</animSheet>
+<anim name="EFP_PROJ">
+	<sheet>EFP_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.08</time>
+	<time>0.15</time>
 </anim>
 
 <animSheet name="missile_1" w="32" h="80" fw="32" fh="80">weapons/missile_1.png</animSheet>
@@ -330,5 +298,5 @@ MISSILE_4: BASIC_MISSILE_4
 <anim name="missile_4">
 	<sheet>missile_4</sheet>
 	<desc length="1" x="0" y="0"/>
-	<time>1</time>
+	<time>0.8</time>
 </anim>

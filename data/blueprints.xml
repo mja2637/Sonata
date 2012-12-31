@@ -395,7 +395,7 @@
 	<cost>25</cost>
 	<bp>2</bp>
 	<rarity>1</rarity>
-	<image>UE_GAUSS_PROJ_1</image>
+	<image>SMALL_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -430,7 +430,7 @@
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
-	<image>UE_GAUSS_PROJ_2</image>
+	<image>MEDIUM_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -465,7 +465,7 @@
 	<cost>75</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>UE_GAUSS_PROJ_3</image>
+	<image>SMALL_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -500,7 +500,7 @@
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
-	<image>UE_GAUSS_PROJ_4</image>
+	<image>SMALL_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>aintnosound</sound>
 	</launchSounds>
@@ -535,7 +535,7 @@
 	<cost>25</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
-	<image>UE_DRIVER_PROJ_1</image>
+	<image>SMALL_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -570,7 +570,7 @@
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
-	<image>UE_DRIVER_PROJ_2</image>
+	<image>MEDIUM_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 		<sound>kinetic2</sound>
@@ -607,7 +607,7 @@
 	<cost>75</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>UE_DRIVER_PROJ_3</image>
+	<image>MEDIUM_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 		<sound>kinetic2</sound>
@@ -644,7 +644,7 @@
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>UE_DRIVER_PROJ_4</image>
+	<image>PROTON_GAUSS_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 		<sound>kinetic2</sound>
@@ -682,7 +682,7 @@
 	<cost>25</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
-	<image>SOWER_CANNON_PROJ_1</image>
+	<image>SIMPLE_CANNON_PROJ</image>
 	<launchSounds>
 		<sound>kinetic1</sound>
 	</launchSounds>
@@ -717,7 +717,7 @@
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
-	<image>SOWER_CANNON_PROJ_2</image>
+	<image>SIMPLE_CANNON_PROJ</image>
 	<launchSounds>
 		<sound>kinetic1</sound>
 	</launchSounds>
@@ -752,7 +752,7 @@
 	<cost>75</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>SOWER_CANNON_PROJ_3</image>
+	<image>SIMPLE_CANNON_PROJ</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -788,7 +788,7 @@
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
-	<image>SOWER_CANNON_PROJ_4</image>
+	<image>SIMPLE_CANNON_PROJ</image>
 	<explosion>explosion_sower_cannon_4</explosion>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -860,7 +860,7 @@
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
-	<image>SOWER_AC_PROJ_2</image>
+	<image>EFP_PROJ</image>
 	<launchSounds>
 		<sound>kinetic3</sound>
 		<sound>kinetic3</sound>
@@ -897,7 +897,7 @@
 	<cost>75</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>SOWER_CANNON_PROJ_1</image>
+	<image>SIMPLE_CANNON_PROJ</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -932,7 +932,7 @@
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
-	<image>UE_DRIVER_PROJ_4</image>
+	<image>SIMPLE_CANNON_PROJ</image>
 	<launchSounds>
 		<sound>kinetic1</sound>
 		<sound>kinetic1</sound>
@@ -1087,7 +1087,7 @@
 	<cost>30</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
-	<image>laser_light1</image>
+	<image>MASER_PROJ</image>
 	<launchSounds>
 		<sound>pulse1</sound>
 		<sound>pulse1</sound>
@@ -1334,7 +1334,7 @@
 	<cost>40</cost>
 	<bp>2</bp>
 	<rarity>2</rarity>
-	<image>UE_GAUSS_PROJ_2</image>
+	<image>SMALL_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -1371,7 +1371,7 @@
 	<cost>60</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
-	<image>UE_GAUSS_PROJ_3</image>
+	<image>SMALL_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -1408,7 +1408,7 @@
 	<cost>80</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>UE_GAUSS_PROJ_4</image>
+	<image>UNSTABLE_GUN_PROJ</image>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -4272,9 +4272,10 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
-	<weaponList count="2" missiles="5">
+	<weaponList count="3" missiles="5">
 		<weapon name="UE_GAUSS_2"/>
-		<weapon name="UE_GAUSS_2"/>
+		<weapon name="UE_DRIVER_4"/>
+		<weapon name="BASIC_KINETIC_4"/>
 	</weaponList>
 	<health amount="34"/>
 	<maxPower amount ="10"/> 
