@@ -244,7 +244,7 @@ item - Dust + that thing  -->
 <!--   		***************************************  
 					STRUCTURE EVENTS 
 			********************************************   
--->		
+-->
 <event name="START_BEACON">
 	<text>Welcome to a new sector! Get to the exit beacon and jump to the next sector before the pursuing fleet catches you!</text>
 </event>

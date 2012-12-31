@@ -824,7 +824,7 @@
 	<cost>25</cost>
 	<bp>2</bp>
 	<rarity>1</rarity>
-	<image>UE_DRIVER_PROJ_1</image>
+	<image>SIMPLE_GUN_PROJ</image>
 	<launchSounds>
 		<sound>kinetic3</sound>
 		<sound>kinetic3</sound>
@@ -1297,7 +1297,7 @@
 	<cost>20</cost>
 	<bp>2</bp>
 	<rarity>1</rarity>
-	<image>UE_GAUSS_PROJ_1</image>
+	<image>SIMPLE_GUN_PROJ</image>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -4261,7 +4261,7 @@
 				<number>2</number>
 			</slot>
 		</engines>			
-		<weapons power="4" room="1" start="true" img="room_weapons_7" >
+		<weapons power="7" room="1" start="true" img="room_weapons_7" >
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -4272,9 +4272,10 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
-	<weaponList count="2" missiles="5">
+	<weaponList count="3" missiles="5">
 		<weapon name="UE_GAUSS_2"/>
 		<weapon name="UE_GAUSS_2"/>
+		<weapon name="SOPHON_LASER_4"/>
 	</weaponList>
 	<health amount="34"/>
 	<maxPower amount ="10"/> 
@@ -4875,35 +4876,35 @@
 	<unlock>Learn from the Sophon, sometimes diplomacy works.</unlock>
 	<desc>Although designed as a multi-purpose scientific vessel, advanced Sophon shielding and weapons technology make the Kilo a force to be reckoned with.</desc>
 	<systemList>
-		<pilot power="1" room="11" start="true"/>  
-		<doors power="2" room="10" start="true" img="room_doors_6"/>     
-		<sensors power="1" room="0" start="true"/>  
-		<oxygen power="1" room="4" start="true" img="room_oxygen_2"/>    
-		<engines power="1" room="13" start="true" img="room_engines_2"/>    
-		<shields power="2" room="15" start="true" img="room_shields_7">
+		<pilot power="1" room="5" start="true"/>  
+		<doors power="1" room="2" start="true" img="room_doors_6"/>     
+		<sensors power="2" room="0" start="true"/>  
+		<oxygen power="1" room="9" start="true" img="room_oxygen_2"/>    
+		<engines power="1" room="6" start="true" img="room_engines_2"/>    
+		<shields power="2" room="7" start="true" img="room_shields_7">
 			<slot>
 				<direction>up</direction>
 				<number>1</number> 
 			</slot>
 		</shields>     
-		<weapons power="3" room="14" start="true" img="room_weapons_7"/>  
-		<drones power="2" room="16" start="false" img="room_drones_8"/>     
-		<medbay power="1" room="8" start="true" img="room_medbay_4"> 
+		<weapons power="3" room="11" start="true" img="room_weapons_7"/>  
+		<drones power="2" room="8" start="false" img="room_drones_8"/>     
+		<medbay power="1" room="4" start="true" img="room_medbay_4"> 
 			<slot>
 				<number>0</number> 
 			</slot>
 		</medbay>    
-		<teleporter power="1" room="2" start="false"/>  
-		<cloaking power="1" room="6" start="false" img="room_cloaking_3"/> 
+		<teleporter power="1" room="1" start="false"/>  
+		<cloaking power="1" room="3" start="false" img="room_cloaking_3"/> 
 	</systemList>
-	<weaponSlots>4</weaponSlots>
+	<weaponSlots>3</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="1" missiles="10"> 
 		<weapon name="SOPHON_LASER_3"/>
 	</weaponList>
 	<droneList drones="2"/>
 	<health amount="30"/>
-	<maxPower amount ="5"/>
+	<maxPower amount ="6"/>
 	<crewCount amount = "3" class="energy"/>
 	<aug name="ENERGY_SHIELD"/>
 </shipBlueprint>

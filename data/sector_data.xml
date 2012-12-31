@@ -33,7 +33,7 @@
 STRUCTURE SECTORS
  ----------------------->
 
-<!--default to prevent crashes if bad sector names are loaded-->
+<!-- Start sector; also default to prevent crashes if bad sector names are loaded-->
 <sectorDescription name="STANDARD_SPACE" minSector="0" unique="false">
 	<nameList>
 		<name>Pilgrim Space</name>
@@ -43,7 +43,7 @@ STRUCTURE SECTORS
 		<track>bump</track>
 		<track>hectic</track>
 	</trackList>
-	<startEvent>START_BEACON</startEvent>
+	<startEvent>START_BEACON</startEvent>	
 	<!--
 	<event name="TEST" min="8" max="12"/>
 	<event name="STORE" min="8" max="12"/>
