@@ -465,7 +465,7 @@
 	<cost>75</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>SMALL_RAIL_PROJ</image>
+	<image>BOSON_GAUSS_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -500,7 +500,7 @@
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
-	<image>SMALL_RAIL_PROJ</image>
+	<image>TACHYON_GAUSS_PROJ</image>
 	<launchSounds>
 		<sound>aintnosound</sound>
 	</launchSounds>
@@ -1123,7 +1123,7 @@
 	<cost>60</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
-	<image>laser_light2</image>
+	<image>PHOTON_PROJ</image>
 	<launchSounds>
 		<sound>pulse1</sound>
 		<sound>pulse1</sound>
@@ -1160,8 +1160,9 @@
 	<cost>90</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
-	<image>ion_2_shot</image>
+	<image>HIGGS_PROJ</image>
 	<launchSounds>
+		<sound>beam</sound>
 		<sound>beam</sound>
 	</launchSounds>
 	<hitShipSounds>
@@ -1371,7 +1372,7 @@
 	<cost>60</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
-	<image>SMALL_RAIL_PROJ</image>
+	<image>PLASMA_GUN_PROJ</image>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
