@@ -204,10 +204,10 @@ HIGGS_PROJ: SOPHON_PULSE_3
 
 SIMPLE_CANNON: SOWER_CANNON_1
 FPC: SOWER_CANNON_2
-SOWER_MAG: SOWER_CANNON_3
-SOWER_MAG_SMALL: SOWER_AC_3
-SOWER_BARYON_MAG: SOWER_AC_4
-SOWER_BG: SOWER_CANNON_4
+NEEDED - SOWER_MAG: SOWER_CANNON_3
+NEEDED - SOWER_MAG_SMALL: SOWER_AC_3
+NEEDED - SOWER_BARYON_MAG: SOWER_AC_4
+NEEDED - SOWER_BG: SOWER_CANNON_4
 
 MISSILE_1: BASIC_MISSILE_1
 MISSILE_2: BASIC_MISSILE_2
@@ -220,19 +220,19 @@ MISSILE_4: BASIC_MISSILE_4
 <anim name="SIMPLE_GUN_PROJ">
 	<sheet>SIMPLE_GUN_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.15</time>
+	<time>0.08</time>
 </anim>
 <animSheet name="PLASMA_GUN_PROJ" w="160" h="20" fw="40" fh="20">weapons/PLASMA_GUN_PROJ.png</animSheet>
 <anim name="PLASMA_GUN_PROJ">
 	<sheet>PLASMA_GUN_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.15</time>
+	<time>0.08</time>
 </anim>
 <animSheet name="UNSTABLE_GUN_PROJ" w="200" h="20" fw="50" fh="20">weapons/UNSTABLE_GUN_PROJ.png</animSheet>
 <anim name="UNSTABLE_GUN_PROJ">
 	<sheet>UNSTABLE_GUN_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.15</time>
+	<time>0.08</time>
 </anim>
 
 <!-- Rail/Gauss projectiles -->
@@ -240,31 +240,31 @@ MISSILE_4: BASIC_MISSILE_4
 <anim name="SMALL_RAIL_PROJ">
 	<sheet>SMALL_RAIL_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.1</time>
+	<time>0.08</time>
 </anim>
 <animSheet name="MEDIUM_RAIL_PROJ" w="200" h="20" fw="50" fh="20">weapons/MEDIUM_RAIL_PROJ.png</animSheet>
 <anim name="MEDIUM_RAIL_PROJ">
 	<sheet>MEDIUM_RAIL_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.1</time>
+	<time>0.08</time>
 </anim>
 <animSheet name="BOSON_GAUSS_PROJ" w="200" h="20" fw="50" fh="20">weapons/BOSON_GAUSS_PROJ.png</animSheet>
 <anim name="BOSON_GAUSS_PROJ">
 	<sheet>BOSON_GAUSS_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.1</time>
+	<time>0.08</time>
 </anim>
 <animSheet name="PROTON_GAUSS_PROJ" w="200" h="20" fw="50" fh="20">weapons/PROTON_GAUSS_PROJ.png</animSheet>
 <anim name="PROTON_GAUSS_PROJ">
 	<sheet>PROTON_GAUSS_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.1</time>
+	<time>0.08</time>
 </anim>
 <animSheet name="TACHYON_GAUSS_PROJ" w="200" h="20" fw="50" fh="20">weapons/TACHYON_GAUSS_PROJ.png</animSheet>
 <anim name="TACHYON_GAUSS_PROJ">
 	<sheet>TACHYON_GAUSS_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.1</time>
+	<time>0.08</time>
 </anim>
 
 <!-- Pulse laser projectiles -->
@@ -272,19 +272,19 @@ MISSILE_4: BASIC_MISSILE_4
 <anim name="MASER_PROJ">
 	<sheet>MASER_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.07</time>
+	<time>0.08</time>
 </anim>
 <animSheet name="PHOTON_PROJ" w="200" h="20" fw="50" fh="20">weapons/PHOTON_PROJ.png</animSheet>
 <anim name="PHOTON_PROJ">
 	<sheet>PHOTON_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.07</time>
+	<time>0.08</time>
 </anim>
 <animSheet name="HIGGS_PROJ" w="280" h="48" fw="70" fh="48">weapons/HIGGS_PROJ.png</animSheet>
 <anim name="HIGGS_PROJ">
 	<sheet>HIGGS_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.1</time>
+	<time>0.08</time>
 </anim>
 
 <!-- Cannon projectiles -->
@@ -306,7 +306,13 @@ MISSILE_4: BASIC_MISSILE_4
 <anim name="EFP_PROJ">
 	<sheet>EFP_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>0.3</time>
+	<time>0.08</time>
+</anim>
+<animSheet name="FPC_PROJ" w="200" h="50" fw="50" fh="50">weapons/FPC_PROJ.png</animSheet>
+<anim name="FPC_PROJ">
+	<sheet>FPC_PROJ</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.08</time>
 </anim>
 
 <!-- Generic missile projectiles -->

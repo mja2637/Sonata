@@ -373,6 +373,7 @@
 		this prevents invisible weapons -->
 		
 <!-- Default Speeds: Laser = 60, Beams = 5, Missiles = 35.. sorry the numbers have no meaning -->
+<!-- Cannon 40, Sluggers 50, Rail 60, Pulse 70
 
 <!-- PDS BLUEPRINT useful only for sound effects, projectile art, and potentially damage?  -->
 
@@ -396,6 +397,7 @@
 	<bp>2</bp>
 	<rarity>1</rarity>
 	<image>SMALL_RAIL_PROJ</image>
+	<speed>60</speed>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -431,6 +433,7 @@
 	<bp>2</bp>
 	<rarity>3</rarity>
 	<image>MEDIUM_RAIL_PROJ</image>
+	<speed>60</speed>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -466,6 +469,7 @@
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>BOSON_GAUSS_PROJ</image>
+	<speed>60</speed>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -501,6 +505,7 @@
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>TACHYON_GAUSS_PROJ</image>
+	<speed>75</speed>
 	<launchSounds>
 		<sound>aintnosound</sound>
 	</launchSounds>
@@ -536,6 +541,7 @@
 	<bp>2</bp>
 	<rarity>2</rarity>
 	<image>SMALL_RAIL_PROJ</image>
+	<speed>60</speed>
 	<launchSounds>
 		<sound>kinetic2</sound>
 	</launchSounds>
@@ -571,6 +577,7 @@
 	<bp>2</bp>
 	<rarity>3</rarity>
 	<image>MEDIUM_RAIL_PROJ</image>
+	<speed>60</speed>
 	<launchSounds>
 		<sound>kinetic2</sound>
 		<sound>kinetic2</sound>
@@ -608,6 +615,7 @@
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>MEDIUM_RAIL_PROJ</image>
+	<speed>60</speed>
 	<launchSounds>
 		<sound>kinetic2</sound>
 		<sound>kinetic2</sound>
@@ -645,6 +653,7 @@
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>PROTON_GAUSS_PROJ</image>
+	<speed>60</speed>
 	<launchSounds>
 		<sound>kinetic2</sound>
 		<sound>kinetic2</sound>
@@ -683,6 +692,7 @@
 	<bp>2</bp>
 	<rarity>2</rarity>
 	<image>SIMPLE_CANNON_PROJ</image>
+	<speed>45</speed>
 	<launchSounds>
 		<sound>kinetic1</sound>
 	</launchSounds>
@@ -717,7 +727,8 @@
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>3</rarity>
-	<image>SIMPLE_CANNON_PROJ</image>
+	<image>FPC_PROJ</image>
+	<speed>45</speed>
 	<launchSounds>
 		<sound>kinetic1</sound>
 	</launchSounds>
@@ -753,6 +764,7 @@
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>SIMPLE_CANNON_PROJ</image>
+	<speed>45</speed>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -789,6 +801,7 @@
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>SIMPLE_CANNON_PROJ</image>
+	<speed>45</speed>
 	<explosion>explosion_sower_cannon_4</explosion>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -825,6 +838,7 @@
 	<bp>2</bp>
 	<rarity>1</rarity>
 	<image>SIMPLE_GUN_PROJ</image>
+	<speed>50</speed>
 	<launchSounds>
 		<sound>kinetic3</sound>
 		<sound>kinetic3</sound>
@@ -861,6 +875,7 @@
 	<bp>2</bp>
 	<rarity>2</rarity>
 	<image>EFP_PROJ</image>
+	<speed>50</speed>
 	<launchSounds>
 		<sound>kinetic3</sound>
 		<sound>kinetic3</sound>
@@ -898,6 +913,7 @@
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>SIMPLE_CANNON_PROJ</image>
+	<speed>45</speed>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -933,6 +949,7 @@
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>SIMPLE_CANNON_PROJ</image>
+	<speed>50</speed>
 	<launchSounds>
 		<sound>kinetic1</sound>
 		<sound>kinetic1</sound>
@@ -1088,6 +1105,7 @@
 	<bp>2</bp>
 	<rarity>2</rarity>
 	<image>MASER_PROJ</image>
+	<speed>70</speed>
 	<launchSounds>
 		<sound>pulse1</sound>
 		<sound>pulse1</sound>
@@ -1124,6 +1142,7 @@
 	<bp>2</bp>
 	<rarity>3</rarity>
 	<image>PHOTON_PROJ</image>
+	<speed>70</speed>
 	<launchSounds>
 		<sound>pulse1</sound>
 		<sound>pulse1</sound>
@@ -1161,6 +1180,7 @@
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>HIGGS_PROJ</image>
+	<speed>70</speed>
 	<launchSounds>
 		<sound>beam</sound>
 		<sound>beam</sound>
@@ -1299,6 +1319,7 @@
 	<bp>2</bp>
 	<rarity>1</rarity>
 	<image>SIMPLE_GUN_PROJ</image>
+	<speed>50</speed>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -1336,6 +1357,7 @@
 	<bp>2</bp>
 	<rarity>2</rarity>
 	<image>SMALL_RAIL_PROJ</image>
+	<speed>50</speed>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -1373,6 +1395,7 @@
 	<bp>2</bp>
 	<rarity>3</rarity>
 	<image>PLASMA_GUN_PROJ</image>
+	<speed>50</speed>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -1410,6 +1433,7 @@
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>UNSTABLE_GUN_PROJ</image>
+	<speed>50</speed>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -4262,7 +4286,7 @@
 				<number>2</number>
 			</slot>
 		</engines>			
-		<weapons power="7" room="1" start="true" img="room_weapons_7" >
+		<weapons power="4" room="1" start="true" img="room_weapons_7" >
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -4273,10 +4297,9 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
-	<weaponList count="3" missiles="5">
+	<weaponList count="4" missiles="5">
 		<weapon name="UE_GAUSS_2"/>
-		<weapon name="UE_DRIVER_4"/>
-		<weapon name="BASIC_KINETIC_4"/>
+		<weapon name="UE_GAUSS_2"/>
 	</weaponList>
 	<health amount="34"/>
 	<maxPower amount ="10"/> 
@@ -4610,7 +4633,7 @@
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
 	<weaponList count="1" missiles="10">
-		<weapon name="SOWER_CANNON_4"/>
+		<weapon name="UE_DRIVER_3"/>
 	</weaponList>
 	<droneList count="1" drones="15">
 		<drone name="COMBAT_1"/>
