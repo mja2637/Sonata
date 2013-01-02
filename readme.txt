@@ -122,6 +122,7 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Added custom projectiles
 		  - Tweaked Ranger mount points
 		  - Event and weapon test tweaks
+		  - Shrank mini ship icons to avoid overlapping border
 7
 		  - Added Sonata drones
 		  - Added EFP projectile

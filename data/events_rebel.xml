@@ -131,7 +131,7 @@ Environmnt:
 	<text back="BG_BORING">You arrive near a small United Empire refueling depot. Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity.  The only message you receive is a denial to your request to dock at the depot.</text> 
 	<text back="BG_BORING">There is not much of interest nearby. A small sun in the distance with a few orbiting planets in nearby space provide little of interest.</text>
 	<text back="BG_BORING" planet="NONE">There are no other ships near this beacon, however you detect a small communication relay. You tap into it without a problem; there are no encryptions. Most of the chatter revolves around troop and fleet movements, not particularly interesting.</text>
-	<text back="BG_BORING" planet="PLANET_POPULATED_SMALL">There is a small planet nearby with scattered settlements. A small loyalist fleet is in orbit with many ships ferrying back and forth. It must be a more recently 'recovered' planet.</text>
+	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">There is a small planet nearby with scattered settlements. A small loyalist fleet is in orbit with many ships ferrying back and forth. It must be a more recently 'recovered' planet.</text>
 </textList>
 
 
@@ -223,7 +223,7 @@ Environmnt:
 </event>
 
 <event name="SQUAT_REFUEL_STATION" unique="true">  
-	<img planet="PLANET_POPULATED_SMALL"/>
+	<img back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL"/>
 	<text>You detect a United Empire scout on an attack approach to a small refueling outpost. Their weapons are charged, but they're not firing yet.</text>
 	<ship load="SQUAT_REFUEL_STATION" hostile="false"/>
 	<choice>
@@ -242,7 +242,7 @@ Environmnt:
 </event>
 
 <event name="AUTO_REFUEL_STATION" unique="true">  
-	<img planet="PLANET_POPULATED_SMALL"/>
+	<img back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL"/>
 	<text>You detect a loyalist unmanned space vehicle attacking a small re-fueling outpost.</text>
 	<ship load="REBEL_AUTO_REFUEL" hostile="false"/>
 	<choice>
@@ -261,7 +261,7 @@ Environmnt:
 </event>
 
 <event name="AUTO_DEFENSE_MAP" unique="true">
-	<img planet="PLANET_POPULATED"/>
+	<img back="BACKGROUND_PLANET" planet="PLANET_POPULATED"/>
 	<text>You detect a patrol USV. It does not engage and seems to be patrolling around an Empire long-range sensor station.</text>
 	<ship load="REBEL_AUTO_MAP" hostile="false"/>
 	<choice>
