@@ -186,6 +186,17 @@
 	<mountPoint x="4" y="38"/>
 </weaponAnim>
 
+<animSheet name="SOPHON_LASER_3" w="182" h="57" fw="26" fh="57">weapons/SOPHON_LASER_3.png</animSheet>
+<weaponAnim name="SOPHON_LASER_3">
+	<sheet>SOPHON_LASER_3</sheet>
+	<desc length="7" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="16" y="9"/>
+	<mountPoint x="8" y="46"/>
+	<chargeImage>weapons/SOPHON_LASER_3_GLOW.png</chargeImage>
+</weaponAnim>
+
 <!-- PROJECTILES -->
 <!--
 SIMPLE_GUN_PROJ: SOWER_AC_1, SLUGGER_1
@@ -204,8 +215,8 @@ HIGGS_PROJ: SOPHON_PULSE_3
 
 SIMPLE_CANNON: SOWER_CANNON_1
 FPC: SOWER_CANNON_2
-NEEDED - SOWER_MAG: SOWER_CANNON_3
-NEEDED - SOWER_MAG_SMALL: SOWER_AC_3
+SOWER_MAG_PROJ: SOWER_CANNON_3
+SOWER_MAG_SMALL: SOWER_AC_3
 NEEDED - SOWER_BARYON_MAG: SOWER_AC_4
 NEEDED - SOWER_BG: SOWER_CANNON_4
 
@@ -312,6 +323,18 @@ MISSILE_4: BASIC_MISSILE_4
 <anim name="FPC_PROJ">
 	<sheet>FPC_PROJ</sheet>
 	<desc length="4" x="0" y="0"/>
+	<time>0.08</time>
+</anim>
+<animSheet name="SOWER_MAG_PROJ" w="120" h="36" fw="20" fh="36">weapons/SOWER_MAG_PROJ.png</animSheet>
+<anim name="SOWER_MAG_PROJ">
+	<sheet>SOWER_MAG_PROJ</sheet>
+	<desc length="6" x="0" y="0"/>
+	<time>0.08</time>
+</anim>
+<animSheet name="SOWER_MAG_SMALL_PROJ" w="90" h="27" fw="15" fh="27">weapons/SOWER_MAG_SMALL_PROJ.png</animSheet>
+<anim name="SOWER_MAG_SMALL_PROJ">
+	<sheet>SOWER_MAG_SMALL_PROJ</sheet>
+	<desc length="6" x="0" y="0"/>
 	<time>0.08</time>
 </anim>
 

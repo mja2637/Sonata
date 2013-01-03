@@ -999,7 +999,7 @@
 	<type>BEAM</type>
 	<title>Ti-Sapphire Laser</title>
 	<short>Sapphire Laser</short>
-	<desc>Advancements in active cooling allow ordinary Titanium-doped Sapphire lasers to be scaled up to a military useful power level.</desc>
+	<desc>Advancements in active cooling allow ordinary Titanium-doped Sapphire lasers to be scaled up to a militarily useful power level.</desc>
 	<tooltip>1 damage per room, fast firing, good beam size.</tooltip>
 	<damage>1</damage>
 	<sp>0</sp>
@@ -1039,7 +1039,7 @@
 	<launchSounds>
 		<sound>beam2</sound>
 	</launchSounds>
-	<weaponArt>laser_burst_3</weaponArt> 
+	<weaponArt>SOPHON_LASER_3</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOPHON_LASER_4">
@@ -4923,10 +4923,8 @@
 	</systemList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="3" missiles="10"> 
+	<weaponList count="1" missiles="10"> 
 		<weapon name="SOPHON_LASER_3"/>
-		<weapon name="SOPHON_LASER_1"/>
-		<weapon name="SOPHON_LASER_1"/>
 	</weaponList>
 	<droneList drones="2"/>
 	<health amount="30"/>
