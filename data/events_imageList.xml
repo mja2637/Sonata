@@ -18,7 +18,7 @@
 
 <imageList name="BINARY">
 	<img w="1280" h="720">stars/binary.png</img>
-	<img w="1280" h="720">stars/bright4.jpg</img>
+	<img w="1280" h="720">stars/bright4.png</img>
 	<img w="1280" h="720">stars/binaryblackhole.png</img>
 </imageList>
 
@@ -28,21 +28,21 @@
 	<img w="1280" h="720">stars/bloom2.png</img>
 	<img w="1280" h="720">stars/bright.png</img>
 	<img w="1280" h="720">stars/bright2.png</img>
-	<img w="1280" h="720">stars/bright3.jpg</img>
-	<img w="1280" h="720">stars/bright4.jpg</img>
-	<img w="1280" h="720">stars/bright5.jpg</img>
+	<img w="1280" h="720">stars/bright3.png</img>
+	<img w="1280" h="720">stars/bright4.png</img>
+	<img w="1280" h="720">stars/bright5.png</img>
 	<img w="1280" h="720">stars/carina.png</img>
 	<img w="1280" h="720">stars/chase.png</img>
-	<img w="1280" h="720">stars/cloud.jpg</img>
-	<img w="1280" h="720">stars/deepfield.jpg</img>
-	<img w="1280" h="720">stars/deepfield2.jpg</img>
+	<img w="1280" h="720">stars/cloud.png</img>
+	<img w="1280" h="720">stars/deepfield.png</img>
+	<img w="1280" h="720">stars/deepfield2.png</img>
 	<img w="1280" h="720">stars/deepspace2.png</img>
 	<img w="1280" h="720">stars/deepspace3.png</img>
 	<img w="1280" h="720">stars/deepspace4.png</img>	
 	<img w="1280" h="720">stars/denseStars.png</img>
 	<img w="1280" h="720">stars/eagle2.png</img>
 	<img w="1280" h="720">stars/fractal.png</img>
-	<img w="1280" h="720">stars/gamma.jpg</img>
+	<img w="1280" h="720">stars/gamma.png</img>
 	<img w="1280" h="720">stars/infrared.png</img>
 	<img w="1280" h="720">stars/m16.png</img>
 	<img w="1280" h="720">stars/m17.png</img>
@@ -50,7 +50,7 @@
 	<img w="1280" h="720">stars/nothing.png</img>
 	<img w="1280" h="720">stars/nothing2.png</img>
 	<img w="1280" h="720">stars/pillar.png</img>
-	<img w="1280" h="720">stars/round.jpg</img>
+	<img w="1280" h="720">stars/round.png</img>
 	<img w="1280" h="720">stars/stars2.png</img>
 	
 	<img w="1280" h="720">stars/bg_darknebula.png</img>
@@ -73,10 +73,10 @@
 	<img w="1280" h="720">stars/nothing.png</img>
 	<img w="1280" h="720">stars/nothing2.png</img>
 	
-	<img w="1280" h="720">stars/cloud.jpg</img>
-	<img w="1280" h="720">stars/deepfield.jpg</img>
-	<img w="1280" h="720">stars/deepfield2.jpg</img>
-	<img w="1280" h="720">stars/gamma.jpg</img>
+	<img w="1280" h="720">stars/cloud.png</img>
+	<img w="1280" h="720">stars/deepfield.png</img>
+	<img w="1280" h="720">stars/deepfield2.png</img>
+	<img w="1280" h="720">stars/gamma.png</img>
 	
 	<img w="1280" h="720">stars/bg_darknebula.png</img>
 	<img w="1280" h="720">stars/bg_dullstars2.png</img>
@@ -88,19 +88,19 @@
 	<img w="1280" h="720">stars/binaryblackhole.png</img>
 	<img w="1280" h="720">stars/hole1.png</img>
 	<img w="1280" h="720">stars/hole2.png</img>
-	<img w="1280" h="720">stars/gamma.jpg</img>
+	<img w="1280" h="720">stars/gamma.png</img>
 </imageList>
 
 <imageList name="EXCITING">
 	<img w="1280" h="720">stars/binaryblackhole.png</img>
 	<img w="1280" h="720">stars/bloom.png</img>
 	<img w="1280" h="720">stars/bright2.png</img>
-	<img w="1280" h="720">stars/bright3.jpg</img>
+	<img w="1280" h="720">stars/bright3.png</img>
 	<img w="1280" h="720">stars/chase.png</img>
 	<img w="1280" h="720">stars/hole1.png</img>
 	<img w="1280" h="720">stars/hole2.png</img>
 	<img w="1280" h="720">stars/pillar.png</img>
-	<img w="1280" h="720">stars/gamma.jpg</img>
+	<img w="1280" h="720">stars/gamma.png</img>
 </imageList>
 
 <imageList name="BG_NEBULA">
@@ -111,7 +111,7 @@
 	<img w="1280" h="720">stars/butterfly.png</img>
 	<img w="1280" h="720">stars/deepspace.png</img>
 	<img w="1280" h="720">stars/colors.png</img>
-	<img w="1280" h="720">stars/cloud.jpg</img>
+	<img w="1280" h="720">stars/cloud.png</img>
 	<img w="1280" h="720">stars/eagle2.png</img>
 	<img w="1280" h="720">stars/gas.png</img>
 	<img w="1280" h="720">stars/m16.png</img>
@@ -123,11 +123,11 @@
 	<img w="1280" h="720">stars/binary.png</img>
 	<img w="1280" h="720">stars/bloom.png</img>
 	<img w="1280" h="720">stars/bright.png</img>
-	<img w="1280" h="720">stars/bright3.jpg</img>
+	<img w="1280" h="720">stars/bright3.png</img>
 	<img w="1280" h="720">stars/butterfly.png</img>
 	<img w="1280" h="720">stars/colors.png</img>
-	<img w="1280" h="720">stars/deepfield.jpg</img>
-	<img w="1280" h="720">stars/deepfield2.jpg</img>
+	<img w="1280" h="720">stars/deepfield.png</img>
+	<img w="1280" h="720">stars/deepfield2.png</img>
 	<img w="1280" h="720">stars/deepspace.png</img>
 	<img w="1280" h="720">stars/deepspace2.png</img>
 	<img w="1280" h="720">stars/deepspace3.png</img>
@@ -147,8 +147,8 @@
 	<img w="1280" h="720">stars/binary.png</img>
 	<img w="1280" h="720">stars/carina.png</img>
 	<img w="1280" h="720">stars/colors.png</img>
-	<img w="1280" h="720">stars/deepfield.jpg</img>
-	<img w="1280" h="720">stars/deepfield2.jpg</img>
+	<img w="1280" h="720">stars/deepfield.png</img>
+	<img w="1280" h="720">stars/deepfield2.png</img>
 	<img w="1280" h="720">stars/deepspace2.png</img>
 	<img w="1280" h="720">stars/deepspace3.png</img>
 	<img w="1280" h="720">stars/deepspace4.png</img>

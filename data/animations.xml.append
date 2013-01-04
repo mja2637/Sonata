@@ -82,44 +82,44 @@
 </weaponAnim>
 
 <!-- Sower -->
-<animSheet name="SOWER_CANNON_1" w="255" h="65" fw="16" fh="65">weapons/SOWER_CANNON_1_strip7.png</animSheet>
+<animSheet name="SOWER_CANNON_1" w="352" h="84" fw="22" fh="84">weapons/SOWER_CANNON_1.png</animSheet>
 <weaponAnim name="SOWER_CANNON_1">
 	<sheet>SOWER_CANNON_1</sheet>
 	<desc length="16" x="0" y="0"/>
-	<chargedFrame>7</chargedFrame>
+	<chargedFrame>8</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="5" y="10"/>
-	<mountPoint x="5" y="55"/>
+	<firePoint  x="11" y="10"/>
+	<mountPoint x="5" y="60"/>
 </weaponAnim>
 
-<animSheet name="SOWER_CANNON_2" w="255" h="65" fw="16" fh="65">weapons/SOWER_CANNON_1_strip7.png</animSheet>
+<animSheet name="SOWER_CANNON_2" w="352" h="84" fw="22" fh="84">weapons/SOWER_CANNON_1.png</animSheet>
 <weaponAnim name="SOWER_CANNON_2">
 	<sheet>SOWER_CANNON_2</sheet>
 	<desc length="16" x="0" y="0"/>
-	<chargedFrame>7</chargedFrame>
+	<chargedFrame>8</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="5" y="10"/>
-	<mountPoint x="5" y="55"/>
+	<firePoint  x="11" y="10"/>
+	<mountPoint x="5" y="60"/>
 </weaponAnim>
 
-<animSheet name="SOWER_CANNON_3" w="255" h="65" fw="16" fh="65">weapons/SOWER_CANNON_1_strip7.png</animSheet>
+<animSheet name="SOWER_CANNON_3" w="352" h="84" fw="22" fh="84">weapons/SOWER_CANNON_1.png</animSheet>
 <weaponAnim name="SOWER_CANNON_3">
 	<sheet>SOWER_CANNON_3</sheet>
 	<desc length="16" x="0" y="0"/>
-	<chargedFrame>7</chargedFrame>
+	<chargedFrame>8</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="5" y="10"/>
-	<mountPoint x="5" y="55"/>
+	<firePoint  x="11" y="10"/>
+	<mountPoint x="5" y="60"/>
 </weaponAnim>
 
-<animSheet name="SOWER_CANNON_4" w="255" h="65" fw="16" fh="65">weapons/SOWER_CANNON_1_strip7.png</animSheet>
+<animSheet name="SOWER_CANNON_4" w="352" h="84" fw="22" fh="84">weapons/SOWER_CANNON_1.png</animSheet>
 <weaponAnim name="SOWER_CANNON_4">
 	<sheet>SOWER_CANNON_4</sheet>
 	<desc length="16" x="0" y="0"/>
-	<chargedFrame>7</chargedFrame>
+	<chargedFrame>8</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="5" y="10"/>
-	<mountPoint x="5" y="55"/>
+	<firePoint  x="11" y="10"/>
+	<mountPoint x="5" y="60"/>
 </weaponAnim>
 
 <!-- Sophon -->
