@@ -4591,7 +4591,7 @@
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
 	<weaponList count="3" missiles="15">
-		<weapon name="SOWER_CANNON_1"/>
+		<weapon name="SOWER_CANNON_2"/>
 		<weapon name="BASIC_KINETIC_1"/>
 		<weapon name="BASIC_KINETIC_1"/>		
 	</weaponList>

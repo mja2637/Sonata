@@ -92,14 +92,14 @@
 	<mountPoint x="5" y="60"/>
 </weaponAnim>
 
-<animSheet name="SOWER_CANNON_2" w="352" h="84" fw="22" fh="84">weapons/SOWER_CANNON_1.png</animSheet>
+<animSheet name="SOWER_CANNON_2" w="432" h="84" fw="27" fh="84">weapons/SOWER_CANNON_2.png</animSheet>
 <weaponAnim name="SOWER_CANNON_2">
 	<sheet>SOWER_CANNON_2</sheet>
 	<desc length="16" x="0" y="0"/>
 	<chargedFrame>8</chargedFrame>
 	<fireFrame>15</fireFrame>
-	<firePoint  x="11" y="10"/>
-	<mountPoint x="5" y="60"/>
+	<firePoint  x="19" y="10"/>
+	<mountPoint x="8" y="60"/>
 </weaponAnim>
 
 <animSheet name="SOWER_CANNON_3" w="352" h="84" fw="22" fh="84">weapons/SOWER_CANNON_1.png</animSheet>
