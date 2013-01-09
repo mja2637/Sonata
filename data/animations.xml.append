@@ -227,8 +227,8 @@ SIMPLE_CANNON: SOWER_CANNON_1
 FPC: SOWER_CANNON_2
 SOWER_MAG_PROJ: SOWER_CANNON_3
 SOWER_MAG_SMALL: SOWER_AC_3
-NEEDED - SOWER_BARYON_MAG: SOWER_AC_4
-NEEDED - SOWER_BG: SOWER_CANNON_4
+SOWER_BARYON_MAG_PROJ: SOWER_AC_4
+SOWER_BG_PROJ: SOWER_CANNON_4
 
 MISSILE_1: BASIC_MISSILE_1
 MISSILE_2: BASIC_MISSILE_2
@@ -345,6 +345,18 @@ MISSILE_4: BASIC_MISSILE_4
 <anim name="SOWER_MAG_SMALL_PROJ">
 	<sheet>SOWER_MAG_SMALL_PROJ</sheet>
 	<desc length="6" x="0" y="0"/>
+	<time>0.08</time>
+</anim>
+<animSheet name="SOWER_BARYON_MAG_PROJ" w="88" h="44" fw="44" fh="44">weapons/SOWER_BARYON_MAG_PROJ.png</animSheet>
+<anim name="SOWER_BARYON_MAG_PROJ">
+	<sheet>SOWER_BARYON_MAG_PROJ</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>0.05</time>
+</anim>
+<animSheet name="SOWER_BG_PROJ" w="42" h="32" fw="21" fh="32">weapons/SOWER_BG_PROJ.png</animSheet>
+<anim name="SOWER_BG_PROJ">
+	<sheet>SOWER_BG_PROJ</sheet>
+	<desc length="2" x="0" y="0"/>
 	<time>0.08</time>
 </anim>
 

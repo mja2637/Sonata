@@ -800,8 +800,8 @@
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
-	<image>SIMPLE_CANNON_PROJ</image>
-	<speed>45</speed>
+	<image>SOWER_BG_PROJ</image>
+	<speed>30</speed>
 	<explosion>explosion_sower_cannon_4</explosion>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -867,7 +867,7 @@
 	<damage>0</damage>
 	<shots>2</shots>
 	<sp>0</sp>
-	<fireChance>5</fireChance>
+	<fireChance>6</fireChance>
 	<breachChance>2</breachChance>
 	<cooldown>6</cooldown>
 	<power>1</power>
@@ -948,7 +948,7 @@
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
-	<image>SIMPLE_CANNON_PROJ</image>
+	<image>SOWER_BARYON_MAG_PROJ</image>
 	<speed>50</speed>
 	<launchSounds>
 		<sound>kinetic1</sound>
@@ -4288,6 +4288,7 @@
 		</engines>			
 		<weapons power="4" room="1" start="true" img="room_weapons_7" >
 			<slot>
+				<direction>up</direction>
 				<direction>up</direction>
 				<number>0</number>
 			</slot>

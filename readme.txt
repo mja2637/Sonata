@@ -114,12 +114,12 @@ Ships based on concept art by Amplitude Studios
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
 7a
-		  - Restored boss dev workx
+		  - Restored boss dev work
 		  - Fixed several references to "United Earth" instead of "United Empire"
 		  - Added UE Frigate enemy
 		  - Added SOPHON_A: "Verne" (by DCChuckles)
 		  - Added custom UE weapon sprites (all)
-		  - Added custom projectiles
+		  - Added custom projectiles for all current weapons
 		  - Tweaked Ranger mount points
 		  - Event and weapon test tweaks
 		  - Shrank mini ship icons to avoid overlapping border
