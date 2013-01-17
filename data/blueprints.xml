@@ -3328,6 +3328,34 @@
 	<weaponArt>laser_burst_1</weaponArt> 
 </weaponBlueprint>
 
+<weaponBlueprint name="DRONE_SOWER_EFP"> 
+	<type>LASER</type>
+	<title>Drone EFP Autocannon</title>
+	<damage>0</damage>
+	<shots>2</shots>
+	<fireChance>6</fireChance>
+	<breachChance>2</breachChance>
+	<rarity>0</rarity>
+	<image>EFP_PROJ</image>
+	<launchSounds>
+		<sound>kinetic3</sound>
+		<sound>kinetic3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt> 
+</weaponBlueprint>
+
 <weaponBlueprint name="DRONE_LASER_2"> 
 	<type>LASER</type>
 	<title>Drone Laser 2</title>
@@ -3586,6 +3614,22 @@
 	<bp>3</bp>
 	<droneImage>drone_combat</droneImage>
 	<weaponBlueprint>DRONE_SOWER</weaponBlueprint>
+	<rarity>2</rarity>
+</droneBlueprint>
+
+<droneBlueprint name="COMBAT_EFP_SOWER">
+	<type>COMBAT</type>
+	<title>"Robin" Sower EFP Drone</title>
+	<short>Sower EFP USV</short>
+	<desc>It is unknown whether this drone is itself a Sower, or just a USV. Armed with an EFP autocannon.</desc>
+	<power>2</power>
+	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
+	<dodge>7</dodge>
+	<speed>13</speed> <!--- Change this to increase/decrease firing speed -->  <!-- was 20-->
+	<cost>45</cost>
+	<bp>3</bp>
+	<droneImage>drone_combat</droneImage>
+	<weaponBlueprint>DRONE_SOWER_EFP</weaponBlueprint>
 	<rarity>2</rarity>
 </droneBlueprint>
 

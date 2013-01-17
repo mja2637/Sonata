@@ -27,6 +27,7 @@
 <blueprintList name="DRONES_UE">
 	<name>COMBAT_MISSILE</name>	
 	<name>COMBAT_BEAM</name>
+	<name>COMBAT_2</name>
 	<name>SHIP_REPAIR</name>
 	<name>DEFENSE_1</name>
 	<name>BATTLE</name>
@@ -38,6 +39,13 @@
 	<name>COMBAT_BEAM</name>
 	<name>SHIP_REPAIR</name>
 	<name>DEFENSE_1</name>
+</blueprintList>
+
+<blueprintList name="DRONES_SOWER">
+	<name>COMBAT_1_SOWER</name>
+	<name>COMBAT_EFP_SOWER</name>
+	<name>REPAIR</name>
+	<name>BATTLE</name>
 </blueprintList>
 
 <blueprintList name="DRONES_INTERNAL">
@@ -448,7 +456,7 @@
 		<medbay power="1" max="3" room="3" start="false"/>
 		<doors power="1" max="3" room="5" start="false"/>
 	</systemList>
-	<droneList drones="4" load="DRONES_UE"/>
+	<droneList drones="1" load="DRONES_UE"/>
 	<!--<droneList drones="4" count="1">
 		<drone name="BOARDER"/>
 	</droneList>-->
@@ -536,7 +544,7 @@
 		<teleporter power="1" max="3" room="9" start="false"/>
 		<cloaking power="1" max="3" room="10" start="false"/>		
 	</systemList>
-	<droneList drones="4" load="DRONES_UE"/>
+	<droneList drones="2" load="DRONES_UE"/>
 	<weaponList missiles="10" load="WEAPONS_REBEL"/>
 	<health amount="14"/>	
 	<maxPower amount ="13"/>
@@ -692,6 +700,7 @@
 		<teleporter power="0" max="2" room="3" start="false" img="room_teleporter" />
 		<cloaking power="0" max="2" room="8" start="false" img="room_cloaking" />
 	</systemList>
+	<droneList drones="1" load="DRONES_SOWER"/>
 	<weaponList missiles="6" load="WEAPONS_ROCK"/>
 	<health amount="8"/>	
 	<maxPower amount="7"/>
@@ -715,6 +724,7 @@
 		<teleporter power="0" max="3" room="5" start="false" img="room_teleporter" />
 		<cloaking power="0" max="3" room="4" start="false" img="room_cloaking" />
 	</systemList>
+	<droneList drones="2" load="DRONES_SOWER"/>
 	<weaponList missiles="10" load="WEAPONS_ROCK"/>
 	<health amount="10"/>	
 	<maxPower amount="10"/>
@@ -769,8 +779,6 @@
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
 
-
-
   <shipBlueprint name="ROCK_ASSAULT" layout="rock_assault" img="rock_assault">
 	<class>Sower Terraformer</class>
 	<minSector>5</minSector>
@@ -792,8 +800,6 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
-
-
 
   <shipBlueprint name="ROCK_ASSAULT_ELITE" layout="rock_assault" img="rock_assault">
 	<class>Sower Architect</class>
