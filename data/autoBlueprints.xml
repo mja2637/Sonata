@@ -102,6 +102,8 @@
 	<name>LASER_HEAVY_2</name>
 	<name>ION_1</name>
 	<name>ION_2</name>
+	<name>ION_MISSILE</name>
+	<name>ION_MISSILE_UE</name>
 	<name>BOMB_1</name>
 	<name>BOMB_FIRE</name>
 	<name>BOMB_ION</name>
@@ -112,6 +114,7 @@
 	<name>BASIC_KINETIC_1</name>
 	<name>BASIC_LASER_1</name>
 	<name>BASIC_MISSILE_1</name>
+	<name>ION_MISSILE</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_REBEL">
@@ -137,6 +140,8 @@
 	<name>BASIC_KINETIC_4</name>
 	<name>ION_1</name>
 	<name>ION_2</name>
+	<name>ION_MISSILE</name>
+	<name>ION_MISSILE_UE</name>
 	<name>BOMB_1</name>
 </blueprintList>
 
@@ -156,9 +161,8 @@
 	<name>BASIC_KINETIC_3</name>
 	<name>BOMB_1</name>
 	<name>BOMB_FIRE</name>
-	<name>BOMB_ION</name>
+	<name>ION_MISSILE</name>
 	<name>ION_1</name>
-	<name>ION_2</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_JELLY">
@@ -174,7 +178,7 @@
 	<name>BOMB_FIRE</name>
 	<name>BOMB_BREACH</name>
 	<name>ION_1</name>
-	<name>ION_4</name>
+	<name>ION_MISSILE</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_ROCK">
@@ -198,7 +202,7 @@
 	<name>BASIC_KINETIC_2</name>
 	<name>BASIC_KINETIC_3</name>
 	<name>BASIC_KINETIC_4</name>
-	<name>BOMB_1</name>
+	<name>ION_MISSILE</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_MANTIS">
@@ -244,7 +248,7 @@
 	<name>BASIC_KINETIC_3</name>
 	<name>BASIC_KINETIC_4</name>
 	<name>ION_1</name>
-	<name>ION_2</name>
+	<name>ION_MISSILE</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_CIRCLE">
@@ -255,8 +259,7 @@
 	<name>BASIC_LASER_3</name>
 	<name>BASIC_LASER_4</name>
 	<name>ION_1</name>
-	<name>ION_2</name>
-	<name>ION_4</name>
+	<name>ION_MISSILE</name>
 </blueprintList>
 
 <blueprintList name="DRONES_CIRCLE"> 
@@ -290,9 +293,8 @@
 	<name>BASIC_KINETIC_2</name>
 	<name>BASIC_KINETIC_3</name>
 	<name>BASIC_KINETIC_4</name>
-	<name>ION_1</name>
+	<name>ION_MISSILE</name>
 	<name>ION_2</name>
-	<name>BOMB_1</name>
 	<name>BOMB_ION</name>
 </blueprintList>
 
@@ -317,8 +319,7 @@
 <blueprintList name="WEAPONS_ION">
 	<name>ION_1</name>
 	<name>ION_2</name>
-	<name>ION_4</name>
-	<name>BOMB_ION</name>
+	<name>ION_MISSILE</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_MISSILES">

@@ -10,8 +10,6 @@
 	<name>MISSILES_2_PLAYER</name>
 	<name>BEAM_LONG</name>
 	<name>ION_1</name>
-	<name>ION_2</name>
-	<name>ION_4</name>
 	<name>BOMB_1</name>
 	<name>LASER_BURST_3</name>
 	<name>LASER_HEAVY_1</name>
@@ -22,8 +20,6 @@
 	<name>BOMB_FIRE</name>
 	<name>BOMB_ION</name>
 	<name>BOMB_HEAL</name>
-	<!-- <name>SOPHON_PULSE_3</name>
-	<name>BEAM_LASER_3</name> -->
 </blueprintList>
 
 <blueprintList name="STARTING_DRONES">
@@ -2718,10 +2714,10 @@
 
 <weaponBlueprint name="ION_1">
 	<type>LASER</type>
-	<title>Ion Blast</title>
-	<short>Ion Blast</short>
+	<title>High Energy Low Frequency Electrojet</title>
+	<short>HELF Electrojet</short>
 	<locked>1</locked>
-	<desc>Ion weapons can disable systems without causing hull damage.</desc>
+	<desc>An incredibly simple "weapon" that uses principles that have been understood for hundreds of years. Powerful, low-frequency (~2 Hertz) electromagnetic waves are directed at the target, causing minor disruption to electronics in the target.</desc>
 	<tooltip>Fires a single blast that does 1 ion damage. Can hit and disable shields as well as systems.</tooltip>
 	<damage>0</damage>
 	<ion>1</ion>
@@ -2732,9 +2728,9 @@
 	<breachChance>0</breachChance>
 	<cooldown>8</cooldown>
 	<power>1</power>
-	<cost>30</cost>
+	<cost>50</cost>
 	<bp>3</bp>
-	<rarity>5</rarity>
+	<rarity>2</rarity>
 	<image>ion_1_shot</image>
 	<explosion>explosion_small_ion</explosion>
 	<launchSounds>
@@ -2758,92 +2754,105 @@
 	<weaponArt>ion_1</weaponArt> 
 </weaponBlueprint>
 
+<!-- TODO beamify -->
 <weaponBlueprint name="ION_2">
-	<type>LASER</type>
-	<title>Heavy Ion</title>
-	<short>Heavy Ion</short>
+	<type>BEAM</type>
+	<title>Prototype Lepton Beam</title>
+	<short>Lepton Beam</short>
 	<locked>1</locked>
-	<desc>Ion weapons can disable systems without causing hull damage.</desc>
+	<desc>The IHTG often attempts to reverse-engineer Sophon weaponry, which amuses the Sophon to no end. This particular prototype retains none of the power of the original, but has interesting effects on enemy shielding.</desc>
 	<tooltip>Fires a single blast that does 2 ion damage. Can hit and disable shields as well as systems.</tooltip>
 	<damage>0</damage>
-	<ion>2</ion>
-	<speed>40</speed>
-	<shots>1</shots>
-	<sp>0</sp>
+	<ion>1</ion>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>11</cooldown>
+	<speed>3</speed>
 	<power>2</power>
-	<cost>45</cost>
-	<bp>4</bp>
-	<rarity>5</rarity>
-	<image>ion_4_shot</image>
-	<explosion>explosion_small_ion</explosion>
+	<cost>50</cost>
+	<bp>2</bp>
+	<rarity>4</rarity>
+	<image>beam_contact</image>
+	<length>45</length>
 	<launchSounds>
-		<sound>ionShoot1</sound>
-		<sound>ionShoot2</sound>
-		<sound>ionShoot3</sound>
+		<sound>beam1</sound>
 	</launchSounds>
-	<hitShipSounds>
-		<sound>ionHit1</sound>
-		<sound>ionHit2</sound>
-		<sound>ionHit3</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>ionShields1</sound>
-		<sound>ionShields2</sound>
-		<sound>ionShields3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
 	<weaponArt>ion_2</weaponArt> 
 </weaponBlueprint>
 
-<weaponBlueprint name="ION_4">
-	<type>LASER</type>
-	<title>Ion Blast Mark II</title>
-	<short>Ion Blast II</short>
-	<locked>1</locked>
-	<desc>Ion weapons can disable systems without causing hull damage.</desc>
-	<tooltip>Fires a single blast that does 1 ion damage and recharges very quickly. Can hit and disable shields as well as systems.</tooltip>
+<weaponBlueprint name="ION_MISSILE">
+	<type>MISSILES</type>
+	<title>Kinetic Chaff</title>
+	<short>Kinetic Chaff</short>
+	<desc>Modern chaff is a small cloud of highly conductive, electrophoric flechettes that disrupt the enemy's targeting and electronics. The "kinetic" part means that the chaff is swiftly delivered via missile.</desc>
+	<tooltip>Fires 1 missile; 2 ion damage.</tooltip>
 	<damage>0</damage>
-	<ion>1</ion>
-	<speed>30</speed>
+	<ion>2</ion>
+	<missiles>1</missiles>
 	<shots>1</shots>
 	<sp>0</sp>
-	<fireChance>0</fireChance>
+	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>4</cooldown>
-	<power>3</power>
-	<cost>80</cost>
+	<cooldown>12</cooldown>
+	<power>2</power>
+	<cost>50</cost>
 	<bp>6</bp>
-	<rarity>5</rarity>
-	<image>ion_1_shot</image>
-	<explosion>explosion_small_ion</explosion>
+	<rarity>2</rarity>
+	<image>missile_hull</image>
 	<launchSounds>
-		<sound>ionShoot1</sound>
-		<sound>ionShoot2</sound>
-		<sound>ionShoot3</sound>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
 	</launchSounds>
 	<hitShipSounds>
-		<sound>ionHit1</sound>
-		<sound>ionHit2</sound>
-		<sound>ionHit3</sound>
+		<sound>smallExplosion</sound>
 	</hitShipSounds>
 	<hitShieldSounds>
-		<sound>ionShields1</sound>
-		<sound>ionShields2</sound>
-		<sound>ionShields3</sound>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
 	</hitShieldSounds>
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>ion_4</weaponArt> 
+	<weaponArt>missiles_2</weaponArt> 
 </weaponBlueprint>
 
-
-
+<weaponBlueprint name="ION_MISSILE_UE">
+	<type>MISSILES</type>
+	<title>COLD BASIN</title>
+	<short>COLD BASIN</short>
+	<desc>A product of one of the United Empire's famous skunk works programs. This weapon is so secret that no one knows if "COLD BASIN" is a code name...or an acronym. Fires bosoms or lepto-bismol or something.</desc>
+	<tooltip>"The guns...they've stopped." Causes massive ion damage.</tooltip>
+	<damage>0</damage>
+	<ion>2</ion>
+	<missiles>2</missiles>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<power>4</power>
+	<cost>140</cost>
+	<bp>6</bp>
+	<rarity>5</rarity>
+	<image>missile_hull</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_2</weaponArt> 
+</weaponBlueprint>
 
 <!--------------
 	BOMB WEAPONS
@@ -3070,11 +3079,6 @@
 	</hitShipSounds>
 	<weaponArt>bomb_lockdown</weaponArt> 
 </weaponBlueprint>
-
-
-
-
-
 
 
 <!--    *********************
@@ -4065,101 +4069,6 @@
 	<value>0.15</value>
 </augBlueprint>
 
-
-<!--OTHER IDEAS -- 
-<augBlueprint name="PERSONAL_TELEPORTER">
-	<title>Personal Teleporters</title>
-	<desc>Crew on an enemy ship that is jumping or being destroyed will be automatically recalled.</desc>
-	<cost>150</cost>
-	<rarity>4</rarity>
-	<stackable>false</stackable>
-</augBlueprint> 
-
-<augBlueprint name="FLIGHT_SUITS">  
-	<title>Integrated Flight Suits</title>
-	<desc>Crews take half damage when in rooms without oxygen</desc>
-	<cost>80</cost>
-	<rarity>2</rarity>
-	<value>0.5</value>
-	<stackable>false</stackable>
-</augBlueprint>
-
-<augBlueprint name="SHIP_SEALING">
-	<title>Improved Ship Sealing</title>
-	<desc>O2 will deplete at 50% speed when the Oxygen system is unpowered.</desc>
-	<cost>100</cost>
-	<rarity>2</rarity>
-	<value>0.5</value>
-	<stackable>false</stackable>
-</augBlueprint>
-
-<augBlueprint name="MISSILE_REPLICATOR">
-	<title>Missile Replication System</title>
-	<desc>The first missile/bomb weapon fired after a jump will consume no explosive</desc>
-	<cost>100</cost>
-	<rarity>3</rarity>
-	<stackable>false</stackable>
-</augBlueprint>
-	
-<augBlueprint name="INTERNAL_AI">
-	<title>Improved Internal AI</title>
-	<desc>Your interior drones (repair and battle) are 20 percent more effective.</desc>
-	<cost>100</cost>
-	<rarity>3</rarity>
-	<value>0.2</value>
-	<stackable>true</stackable>
-</augBlueprint>
-
-<augBlueprint name="EXTERNAL_AI">
-	<title>Improved Internal AI</title>
-	<desc>Your exterior drones (defense and combat) are 20 percent more effective.</desc>
-	<cost>100</cost>
-	<rarity>3</rarity>
-	<value>0.2</value>
-	<stackable>true</stackable>
-</augBlueprint>
-
-
-
-
-<!----PROBABLY NOT:---
-
-<augBlueprint name="ENCODED_DISTRESS">
-	<title>Encrypted Distress Signal</title>
-	<desc>Your distress signal will be more likely to be picked up by friendly ships.</desc>
-	<cost>100</cost>
-	<rarity>3</rarity>
-	<stackable>false</stackable>
-</augBlueprint>
-<augBluepring name="TELEPORTER_PREIGNITE">
-	<title>Teleporter Pre-igniter</title>
-	<desc>The teleporter is made immediately available after an FTL jump.</desc>
-	<cost>130</cost>
-	<rarity>3</rarity>
-	<stackable>false</stackable>
-</augBlueprint>
-<augBlueprint name="HEAT_RESIST"> 
-	<title>Heat Resistant Suits</title>
-	<desc>Reduces damage crew takes from fire by 50%</desc>
-	<cost>70</cost>
-	<rarity>2</rarity>
-	<value>0.5</value>
-	<stackable>false</stackable>
-</augBlueprint>
-<augBlueprint name="BEAM_PIERCE">  
-	<title></title>
-	<desc>Gives all beam weapons 1 shield piercing</desc>
-	<cost>80</cost>
-	<rarity>2</rarity>
-	<value>1</value>
-	<stackable>false</stackable>
-</augBlueprint>
-
- -->
-
-
- 
- 
 <!--    
 
 					---------------------------------------
