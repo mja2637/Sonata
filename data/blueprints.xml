@@ -2825,7 +2825,7 @@
 	<tooltip>"The guns...they've stopped." Causes massive ion damage.</tooltip>
 	<damage>0</damage>
 	<ion>2</ion>
-	<missiles>2</missiles>
+	<missiles>1</missiles>
 	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>3</fireChance>
@@ -3573,7 +3573,7 @@
 <!-- NOT USED -->
 <droneBlueprint name="COMBAT_MISSILE">
 	<type>COMBAT</type>
-	<title>Almaz-Raytheon "Arsenic" USV</title>
+	<title>Almaz-Rafael "Arsenic" USV</title>
 	<short>Missile USV</short>
 	<desc>This missile drone is simple but reliable; it is part of a standardized line with parts and upgrades available in systems across the galaxy.</desc>
 	<power>2</power>
@@ -3586,8 +3586,6 @@
 	<weaponBlueprint>DRONE_MISSILE</weaponBlueprint>
 	<rarity>0</rarity>
 </droneBlueprint>
-
-
 
 <droneBlueprint name="COMBAT_1">
 	<type>COMBAT</type>
@@ -3607,8 +3605,8 @@
 
 <droneBlueprint name="COMBAT_1_SOWER">
 	<type>COMBAT</type>
-	<title>"Roc" Sower Gun Drone</title>
-	<short>Sower USV</short>
+	<title>Sower "Roc" Drone</title>
+	<short>Gun USV</short>
 	<desc>It is unknown whether this drone is itself a Sower, or just a USV. Armed with an autocannon.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
@@ -3623,8 +3621,8 @@
 
 <droneBlueprint name="COMBAT_EFP_SOWER">
 	<type>COMBAT</type>
-	<title>"Robin" Sower EFP Drone</title>
-	<short>Sower EFP USV</short>
+	<title>Sower "Robin" Drone</title>
+	<short>EFP USV</short>
 	<desc>It is unknown whether this drone is itself a Sower, or just a USV. Armed with an EFP autocannon.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
@@ -3729,8 +3727,8 @@
 <droneBlueprint name="BOSS_DEFENSE_2">
 	<type>DEFENSE</type>
 	<level>2</level>
-	<title>"MAKE INDIGO" USV</title>
-	<short>Skunkworks PD USV</short>
+	<title>Skunkworks MAKE INDIGO USV</title>
+	<short>Point Def.</short>
 	<desc>Advanced product of a United Empire black project.</desc>
 	<power>2</power>
 	<cooldown>750</cooldown> <!--- Shooting cooldown for shooting at asteroids/missiles, in ms -->
