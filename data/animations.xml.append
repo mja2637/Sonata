@@ -315,14 +315,6 @@ MISSILE_4: BASIC_MISSILE_4
 	<desc length="6" x="0" y="0"/>
 	<time>0.3</time>
 </anim>
-
-<animSheet name="explosion_sower_cannon_4" w="384" h="32" fw="32" fh="32">effects/explosion_sower_cannon_4.png</animSheet>
-<anim name="explosion_sower_cannon_4">
-	<sheet>explosion_sower_cannon_4</sheet>
-	<desc length="12" x="0" y="0"/>
-	<time>0.75</time>
-</anim>
-
 <animSheet name="EFP_PROJ" w="200" h="20" fw="50" fh="20">weapons/EFP_PROJ.png</animSheet>
 <anim name="EFP_PROJ">
 	<sheet>EFP_PROJ</sheet>
@@ -384,4 +376,49 @@ MISSILE_4: BASIC_MISSILE_4
 	<sheet>missile_4</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
+</anim>
+
+<!-- EXPLOSIONS -->
+<!--
+"Standard" explosions:
+EXP_KINETIC
+EXP_EXPLOSIVE
+
+"Flavor" explosions:
+EXP_PLASMA
+EXP_UNSTABLE
+EXP_BOSON
+
+"Special" explosions:
+EXP_PROTON
+EXP_TACHYON
+EXP_BARYON
+EXP_BG
+EXP_HIGGS
+
+
+Lasers:
+
+EXP_LASER: Chemical Laser, COIL laser, Synchrotron Laser
+EXP_LASER_RAPID: Titanium-Sapphire Laser
+Plased Plasmic Laser: Strong + EM field pulse
+Disruptor Beam: baryonic/non-baryonic, fundamental nanofissures in reality
+*Lepton Beam: ion
+Xaser/Photon: Pinkish, fiery
+Bose-Einstein: "Photon-boson", evolved/more intense than Xaser. Pink/green?
+Anti-Neutrino beam: Crazy sexy beautiful. Light pink with moving rainbow noise?
+-->
+
+<animSheet name="beam_contact" w="240" h="48" fw="48" fh="48">weapons/laser_contact.png</animSheet>
+<anim name="beam_contact">
+	<sheet>beam_contact</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="explosion_sower_cannon_4" w="384" h="32" fw="32" fh="32">effects/explosion_sower_cannon_4.png</animSheet>
+<anim name="explosion_sower_cannon_4">
+	<sheet>explosion_sower_cannon_4</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>0.75</time>
 </anim>

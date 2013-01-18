@@ -1251,7 +1251,7 @@
 	<type>BEAM</type>
 	<title>Phased Plasmic Laser</title>
 	<short>Plasmic Laser</short>
-	<desc>This laser-induced plasma channel weapon has the additional advantage of hitting the target with a strong electromagnetic field pulse.</desc>
+	<desc>This advanced light gas gun is propelled by a Synchrotron Laser; the laser is also used to energize the gas projectiles into plasma, making a sort of laser-induced plasma channel in vacuum. The weapon has the additional advantage of hitting the target with a strong electromagnetic field pulse.</desc>
 	<tooltip>2 damage per room.</tooltip>
 	<damage>2</damage>
 	<sp>0</sp>
@@ -1597,6 +1597,154 @@
 	</missSounds>
 	<weaponArt>BASIC_MISSILE_4</weaponArt> 
 </weaponBlueprint>
+
+<!--------------
+	ION WEAPONS
+ -------------->
+
+<weaponBlueprint name="ION_1">
+	<type>LASER</type>
+	<title>High Energy Low Frequency Electrojet</title>
+	<short>HELF Electrojet</short>
+	<locked>1</locked>
+	<desc>An incredibly simple "weapon" that uses principles that have been understood for hundreds of years. Powerful, low-frequency (~2 Hertz) electromagnetic waves are directed at the target, causing minor disruption to electronics in the target.</desc>
+	<tooltip>Fires a single blast that does 1 ion damage. Can hit and disable shields as well as systems.</tooltip>
+	<damage>0</damage>
+	<ion>1</ion>
+	<speed>30</speed>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>8</cooldown>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>3</bp>
+	<rarity>2</rarity>
+	<image>ion_1_shot</image>
+	<explosion>explosion_small_ion</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ion_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="ION_2">
+	<type>BEAM</type>
+	<title>Prototype Lepton Beam</title>
+	<short>Lepton Beam</short>
+	<locked>1</locked>
+	<desc>The IHTG often attempts to reverse-engineer Sophon weaponry, which amuses the Sophon to no end. This particular prototype retains none of the power of the original, but has interesting effects on enemy shielding.</desc>
+	<tooltip>Fires a beam that does two ion damage to one room and one ion damage to others.</tooltip>
+	<damage>0</damage>
+	<ion>1</ion>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>11</cooldown>
+	<speed>3</speed>
+	<power>2</power>
+	<cost>65</cost>
+	<bp>2</bp>
+	<rarity>4</rarity>
+	<image>beam_contact</image>
+	<length>45</length>
+	<launchSounds>
+		<sound>beam1</sound>
+	</launchSounds>
+	<weaponArt>ion_2</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="ION_MISSILE">
+	<type>MISSILES</type>
+	<title>Kinetic Chaff</title>
+	<short>Kinetic Chaff</short>
+	<desc>Modern chaff is a small cloud of highly conductive, electrophoric flechettes that disrupt the enemy's targeting and electronics. The "kinetic" part means that the chaff is swiftly delivered via missile.</desc>
+	<tooltip>Fires 1 missile; 2 ion damage.</tooltip>
+	<damage>0</damage>
+	<ion>2</ion>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>12</cooldown>
+	<power>2</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>2</rarity>
+	<image>missile_hull</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_2</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="ION_MISSILE_UE">
+	<type>MISSILES</type>
+	<title>COLD BASIN</title>
+	<short>COLD BASIN</short>
+	<desc>A product of one of the United Empire's famous skunk works programs. This weapon is so secret that no one knows if "COLD BASIN" is a code name...or an acronym. Fires bosoms or lepto-bismol or something.</desc>
+	<tooltip>"The guns...they've stopped." Causes massive ion damage.</tooltip>
+	<damage>0</damage>
+	<ion>2</ion>
+	<missiles>1</missiles>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<power>4</power>
+	<cost>140</cost>
+	<bp>6</bp>
+	<rarity>5</rarity>
+	<image>missile_hull</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_2</weaponArt> 
+</weaponBlueprint>
+
+
+<!-- VANILLA WEAPONS -->
 
 <weaponBlueprint name="ARTILLERY_WEAPON">
 	<type>LASER</type>
@@ -2686,155 +2834,6 @@
 	<cost>75</cost>
 	<bp>6</bp>
 	<rarity>0</rarity>
-	<image>missile_hull</image>
-	<launchSounds>
-		<sound>smallMissile1</sound>
-		<sound>smallMissile2</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>smallExplosion</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>missiles_2</weaponArt> 
-</weaponBlueprint>
-
-
-
-
-<!--------------
-	ION WEAPONS
- -------------->
-
-<weaponBlueprint name="ION_1">
-	<type>LASER</type>
-	<title>High Energy Low Frequency Electrojet</title>
-	<short>HELF Electrojet</short>
-	<locked>1</locked>
-	<desc>An incredibly simple "weapon" that uses principles that have been understood for hundreds of years. Powerful, low-frequency (~2 Hertz) electromagnetic waves are directed at the target, causing minor disruption to electronics in the target.</desc>
-	<tooltip>Fires a single blast that does 1 ion damage. Can hit and disable shields as well as systems.</tooltip>
-	<damage>0</damage>
-	<ion>1</ion>
-	<speed>30</speed>
-	<shots>1</shots>
-	<sp>0</sp>
-	<fireChance>0</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>8</cooldown>
-	<power>1</power>
-	<cost>50</cost>
-	<bp>3</bp>
-	<rarity>2</rarity>
-	<image>ion_1_shot</image>
-	<explosion>explosion_small_ion</explosion>
-	<launchSounds>
-		<sound>ionShoot1</sound>
-		<sound>ionShoot2</sound>
-		<sound>ionShoot3</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>ionHit1</sound>
-		<sound>ionHit2</sound>
-		<sound>ionHit3</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>ionShields1</sound>
-		<sound>ionShields2</sound>
-		<sound>ionShields3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>ion_1</weaponArt> 
-</weaponBlueprint>
-
-<!-- TODO beamify -->
-<weaponBlueprint name="ION_2">
-	<type>BEAM</type>
-	<title>Prototype Lepton Beam</title>
-	<short>Lepton Beam</short>
-	<locked>1</locked>
-	<desc>The IHTG often attempts to reverse-engineer Sophon weaponry, which amuses the Sophon to no end. This particular prototype retains none of the power of the original, but has interesting effects on enemy shielding.</desc>
-	<tooltip>Fires a single blast that does 2 ion damage. Can hit and disable shields as well as systems.</tooltip>
-	<damage>0</damage>
-	<ion>1</ion>
-	<fireChance>0</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>11</cooldown>
-	<speed>3</speed>
-	<power>2</power>
-	<cost>50</cost>
-	<bp>2</bp>
-	<rarity>4</rarity>
-	<image>beam_contact</image>
-	<length>45</length>
-	<launchSounds>
-		<sound>beam1</sound>
-	</launchSounds>
-	<weaponArt>ion_2</weaponArt> 
-</weaponBlueprint>
-
-<weaponBlueprint name="ION_MISSILE">
-	<type>MISSILES</type>
-	<title>Kinetic Chaff</title>
-	<short>Kinetic Chaff</short>
-	<desc>Modern chaff is a small cloud of highly conductive, electrophoric flechettes that disrupt the enemy's targeting and electronics. The "kinetic" part means that the chaff is swiftly delivered via missile.</desc>
-	<tooltip>Fires 1 missile; 2 ion damage.</tooltip>
-	<damage>0</damage>
-	<ion>2</ion>
-	<missiles>1</missiles>
-	<shots>1</shots>
-	<sp>0</sp>
-	<fireChance>1</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>12</cooldown>
-	<power>2</power>
-	<cost>50</cost>
-	<bp>6</bp>
-	<rarity>2</rarity>
-	<image>missile_hull</image>
-	<launchSounds>
-		<sound>smallMissile1</sound>
-		<sound>smallMissile2</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>smallExplosion</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>missiles_2</weaponArt> 
-</weaponBlueprint>
-
-<weaponBlueprint name="ION_MISSILE_UE">
-	<type>MISSILES</type>
-	<title>COLD BASIN</title>
-	<short>COLD BASIN</short>
-	<desc>A product of one of the United Empire's famous skunk works programs. This weapon is so secret that no one knows if "COLD BASIN" is a code name...or an acronym. Fires bosoms or lepto-bismol or something.</desc>
-	<tooltip>"The guns...they've stopped." Causes massive ion damage.</tooltip>
-	<damage>0</damage>
-	<ion>2</ion>
-	<missiles>1</missiles>
-	<shots>3</shots>
-	<sp>0</sp>
-	<fireChance>3</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>20</cooldown>
-	<power>4</power>
-	<cost>140</cost>
-	<bp>6</bp>
-	<rarity>5</rarity>
 	<image>missile_hull</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>

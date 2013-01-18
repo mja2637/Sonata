@@ -129,7 +129,7 @@ General Dynamics DES (Dynamic Entry System) Boarding Droid
 4 VERSION INFO
 Matt Alioto, mod concept & development
 "Dream Team", lore development
-Sam Pottle, Sophon A & Caseless Autocannon sprites
+Sam Pottle, Sophon A, Caseless Autocannon, & Thermophotonic Xaser sprites
 Spiteful_Crow, UE Frigate rewrk
 Jeremy McCellips, main menu art
 Bren Tenkage, testing
