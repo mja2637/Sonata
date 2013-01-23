@@ -1,7 +1,7 @@
 ﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--   
-			SUMMARY  - 
+<!--  
+			SUMMARY - 
 A list of all main events to be called by lists
 	does not include sub-events)
 	
@@ -9,14 +9,14 @@ A list of all main events to be called by lists
 Structure:
 	NO_FUEL_FLEET
 	
-No Beacon:    	NO_FUEL (this is a list)
+No Beacon:  	NO_FUEL (this is a list)
 	FUEL_FLEET_DELAY
 	FUEL_NOTHING
 	FUEL_TRADER
 	FUEL_EXPLORE
 	FUEL_APPROACH
 	
-Beacon:    NO_FUEL_DISTRESS (this is a list)
+Beacon:  NO_FUEL_DISTRESS (this is a list)
 	FUEL_FLEET_DISTRESS
 	FUEL_NOTHING_DISTRESS
 	FUEL_SELLER_DISTRESS
@@ -29,7 +29,7 @@ Sector Specific:
 <!-- NO FUEL stuff -->
 
 <event name="NO_FUEL_FLEET">
-	<text>The loyalist fleet has caught up to you. You detect significant fuel reserves in one of their closer fighters and move in to attack.  Maybe you can still pull this off.</text>
+	<text>The loyalist fleet has caught up to you. You detect significant fuel reserves in one of their closer fighters and move in to attack. Maybe you can still pull this off.</text>
 	<ship load = "REBEL_FLEET_FUEL" hostile ="true"/>
 	<fleet>rebel</fleet>
 </event>
@@ -63,12 +63,12 @@ Beacon Off.....
 </event>
 <textList name="FUEL_FLEET_DELAY_LIST">
 	<text>As you are keeping a low profile, you're certain that the United Empire is having a hard time tracking your ship.</text>
-	<text>Since your distress beacon has not been activated, you feel confident that the United Empire is having difficulty tracking you.  It should buy you a little time.</text>
+	<text>Since your distress beacon has not been activated, you feel confident that the United Empire is having difficulty tracking you. It should buy you a little time.</text>
 	<text>Long range scanners indicate the loyalist fleet has temporarily paused its advance on your position. Your decision to leave the distress beacon deactivated was farsighted.</text>
 	<text>Scanners show that the loyalist fleet has ceased its pursuit for a short time.</text>
 	<text>Your intuition as captain is telling you that the Empire is having a hard time trying to find your ship.</text>
-	<text>Without a distress beacon or any FTL signatures to trace, you're sure that the loyalists are struggling to find you.  You can only hope their confusion lasts until more fuel can be found.</text>
-	<text>The United Empire seems to be unable to locate your ship's signature.  If only you could get some fuel, you might still have a chance to place some distance between you and them...</text>
+	<text>Without a distress beacon or any FTL signatures to trace, you're sure that the loyalists are struggling to find you. You can only hope their confusion lasts until more fuel can be found.</text>
+	<text>The United Empire seems to be unable to locate your ship's signature. If only you could get some fuel, you might still have a chance to place some distance between you and them...</text>
 </textList>
 
 <event name="FUEL_NOTHING">
@@ -82,7 +82,7 @@ Beacon Off.....
 	<text>Small traffic passes within a short distance of you, but no one responds to your hails.</text>
 	<text>The only ship within hailing range appears to be a civilian vessel. However, it quickly leaves once it picks up your signal.</text>
 	<text>As you wait, a small asteroid storm pelts softly against your shields and hull.</text>
-	<text>You begin to wonder if turning on the beacon would be worth the risk of detection.  The fleet slowly approaches.</text>
+	<text>You begin to wonder if turning on the beacon would be worth the risk of detection. The fleet slowly approaches.</text>
 	<text>You contemplate the vastness of space.</text>
 	<text>You have achieved the all-time high score in Space Minesweeper.</text>
 	<text>The prolonged wait in empty space is causing tension among the crew. Still no contact.</text>
@@ -90,7 +90,7 @@ Beacon Off.....
 	<text>Long range scanners detect a small settlement, but they refuse all contact.</text>
 </textList>
 
-<event name="FUEL_TRADER">   <!-- this continues in the DISTRESS section -->
+<event name="FUEL_TRADER">  <!-- this continues in the DISTRESS section -->
 	<text load="FUEL_TRADER_TEXT_LIST"/>
 	<ship load="CIVILIAN_SHIP" hostile="false"/>
 	<choice>
@@ -103,18 +103,18 @@ Beacon Off.....
 	</choice>
 </event>
 <textList name="FUEL_TRADER_TEXT_LIST">
-	<text>A merchant ship jumps into the sector and you quickly hail them asking for help.  They respond, "Perhaps we could work out an exchange..."</text>
-	<text>A number of ships pass through the sector.  You relay your message to each, and one finally responds.  "I can't help much right now but perhaps we can trade."</text>
-	<text>A nearby settlement sends a small ship in your direction.  It keeps its distance and hails you, "We can give you fuel for a price.  Just don't even think of doing anything rash.  We've got a teleporter at our base and a squad ready to defend us.</text>
-	<text>A large caravan of merchant ships jumps to a location near your position.  Sensing an opportunity, one ship breaks off from the fleet to offer you an exchange.</text>
-	<text>A modified YT-1300 freighter jumps to an area near your sector.  Your gut tells you these people are smugglers, but they seem to be feeling altruistic and present an offer of assistance.</text>
+	<text>A merchant ship jumps into the sector and you quickly hail them asking for help. They respond, "Perhaps we can work out an exchange..."</text>
+	<text>A number of ships pass through the sector. You relay your message to each, and one finally responds. "I can't afford to be charitable, but perhaps we can trade."</text>
+	<text>A nearby settlement sends a small ship in your direction. It keeps its distance and hails you, "We can give you fuel for a price. Just make sure you keep your weapons stowed. We've got a teleporter at our base and a squad ready to defend us.</text>
+	<text>A large caravan of merchant ships jumps to a location near your position. Sensing an opportunity, one ship breaks off from the fleet to offer you an exchange.</text>
+	<text>A modified Firefly-class freighter jumps to an area near your sector. Your gut tells you these people are smugglers, but they seem to be feeling altruistic and present an offer of assistance.</text>
 </textList>
 	
 <event name="FUEL_EXPLORE">
-	<text>Although your lack of fuel cells prevents your ship from jumping, you can still use your impulse engines.  Will you spend some time exploring the nearby system?</text>
+	<text>Although your lack of fuel cells prevents your ship from jumping, you can still use your impulse engines. Will you spend some time exploring the nearby system?</text>
 	<choice hidden="true">
 		<text>Explore the nearby area.</text>
-		<event load="FUEL_EXPLORE_LIST"/>  
+		<event load="FUEL_EXPLORE_LIST"/> 
 	</choice>
 	<choice>
 		<text>Stay near the beacon.</text>
@@ -180,7 +180,7 @@ Beacon Off.....
 </eventList>
 	
 <event name="FUEL_APPROACH">
-	<text>A ship approaches.  They hail you saying, "You need some fuel?  We'll prepare to dock to help."</text>
+	<text>A ship approaches. They hail you saying, "You need some fuel? We'll prepare to dock to help."</text>
 	<choice hidden="true">
 		<text>Graciously accept their offer.</text>
 		<event load="FUEL_APPROACH_ACCEPT_LIST"/>
@@ -188,26 +188,26 @@ Beacon Off.....
 	<choice hidden="true">
 		<text>Request that they keep their distance</text>
 		<event load="FUEL_APPROACH_DECLINE_LIST"/>
-	</choice>  
+	</choice> 
 	<choice hidden="true" req="sensors" lvl="3">
 		<text>(Advanced Sensors) Run a detailed scan with your sensors before responding.</text>
 		<event load="FUEL_APPROACH_SCAN_LIST"/>
-	</choice>    
+	</choice>  
 	<choice hidden="true" req="ADV_SCANNERS">
 		<text>(Long-Ranged Scanners) Run a detailed scan before responding.</text>
 		<event load="FUEL_APPROACH_SCAN_LIST"/>
-	</choice>    
+	</choice>  
 </event>
 <eventList name="FUEL_APPROACH_ACCEPT_LIST">
 	<event>
-		<text>They pull close to your ship and unload some fuel saying, "Try not to run out of fuel again.  These are dangerous times; who knows who could have showed up."</text>
+		<text>They pull close to your ship and unload some fuel saying, "Try not to run out of fuel again. These are dangerous times; who knows who could have showed up."</text>
 		<ship load="CIVILIAN_SHIP" hostile="false"/>
 		<item_modify>
 			<item type="fuel" min="2" max="6"/>
 		</item_modify>
 	</event>
-	<event>   <!-- this continues in the DISTRESS section -->
-		<text>They approach and dock with your ship.  On board they present an offer.</text>
+	<event>  <!-- this continues in the DISTRESS section -->
+		<text>They approach and dock with your ship. On board they present an offer.</text>
 		<ship load="CIVILIAN_SHIP" hostile="false"/>
 		<choice>
 			<text>Gladly trade.</text>
@@ -219,40 +219,40 @@ Beacon Off.....
 		</choice>
 	</event>
 	<event>
-		<text>As their ship pulls up next to yours, their captain continues, "Yes, we'll certainly help...  Help to relieve you of that nice ship!"  Sensors detect a hidden teleporter has been activated.  We've been boarded!</text>
+		<text>As their ship pulls up next to yours, their captain continues, "Yes, we'll certainly help... Help to relieve you of that nice ship!" Sensors detect a hidden teleporter has been activated. We've been boarded!</text>
 		<ship load="PIRATE_FUEL" hostile="true"/>
 		<boarders min="2" max="3" class="human"/>
 	</event>
 	<event>
-		<text>As they approach, you detect their weapons powering up.  It seems their intentions are hostile!</text>
+		<text>As they approach, you detect their weapons powering up. It seems their intentions are hostile!</text>
 		<ship load="PIRATE" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="FUEL_APPROACH_DECLINE_LIST">
 	<event>
-		<text>"I assure you that we mean no harm.  See, we'll send some fuel over on a transport."  A small ship docks and offloads some fuel just as they said.  They leave, saying, "Stay cautious, friend."</text>
+		<text>"I assure you that we mean no harm. See, we'll send some fuel over on a transport." A small ship docks and offloads some fuel just as they said. They leave, saying, "Stay cautious, friend."</text>
 		<ship load="CIVILIAN_SHIP" hostile="false"/>
 		<item_modify>
 			<item type="fuel" min="1" max="4"/>
 		</item_modify>
 	</event>
 	<event>
-		<text>"No one trusts anyone these days..."  The ship jumps away.</text>
+		<text>"No one trusts anyone these days..." The ship jumps away.</text>
 	</event>
 	<event>
-		<text>They reply,"Keep our distance?  Let's see if you can stop us!"  They power up their weapons and advance.</text>
+		<text>They reply,"Keep our distance? Let's see if you can stop us!" They power up their weapons and advance.</text>
 		<ship load="PIRATE_FUEL" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="FUEL_APPROACH_SCAN_LIST">
 	<event>
-		<text>Sensors indicate their ship is without military-grade weaponry, even small arms.  You allow them to dock and they give you some fuel saying, "I remember a time when we didn't have to be so paranoid about each other's intentions... Stay safe."</text>
+		<text>Sensors indicate their ship is without military-grade weaponry, even small arms. You allow them to dock and they give you some fuel saying, "I remember a time when we didn't have to be so paranoid about each others' intentions... Stay safe."</text>
 		<item_modify>
 			<item type="fuel" min="3" max="7"/>
 		</item_modify>
 	</event>
 	<event>
-		<text>Sensors are picking up armed crew and considerably more weaponry than is legal for a craft of this size.  This is surely a trap.</text>
+		<text>Sensors are picking up armed crew and considerably more weaponry than is legal for a craft of this size. This is surely a trap.</text>
 		<choice>
 			<text>Power up weapons and prepare for a fight.</text>
 			<event>
@@ -262,18 +262,11 @@ Beacon Off.....
 		<choice req="cloaking" hidden="true"> 
 			<text>(Cloaking) Cloak and get out of scanning range before they have a chance to lock on.</text>
 			<event>
-				<text>Your highly advanced cloaking system allows you to get out of range easily since they were still out of firing range.  Eventually the ship jumps away.</text>
+				<text>Your highly advanced cloaking system allows you to get out of range easily since they were still out of firing range. Eventually the ship jumps away.</text>
 			</event>
 		</choice>
 	</event>		
-</eventList>
-
-	
-	
-
-	
-	
-	
+</eventList>	
 	
 	
 <!-------------------
@@ -297,11 +290,6 @@ Beacon On!!!!
 	<event load="FUEL_ON_REBEL_ATTACK"/>
 </eventList>
 
-
-
-
-
-
 <event name="FUEL_FLEET_DISTRESS">
 	<text load="FUEL_FLEET_DISTRESS_LIST"/>		
 	<modifyPursuit amount="1"/>
@@ -312,12 +300,12 @@ Beacon On!!!!
 </event>
 <textList name="FUEL_FLEET_DISTRESS_LIST">
 	<text>As you are keeping a low profile, you're certain that the loyalist fleet is having a hard time tracking your ship.</text>
-	<text>Since your distress beacon has not been activated, you feel confident that the United Empire is having difficulty tracking you.  It should buy you a little time.</text>
+	<text>Since your distress beacon has not been activated, you feel confident that the United Empire is having difficulty tracking you. It should buy you a little time.</text>
 	<text>Long range scanners indicate the loyalist fleet has temporarily paused its advance on your position. Your decision to leave the distress beacon deactivated was farsighted.</text>
 	<text>Scanners show that the United Empire has ceased its pursuit for a short time.</text>
 	<text>Your intuition as captain is telling you that the loyalists are having a hard time trying to find your ship.</text>
-	<text>Without a distress beacon or any FTL signatures to trace, you're sure that the Empire is struggling to find you.  You can only hope their confusion lasts until more fuel can be found.</text>
-	<text>The United Empire seems to be unable to locate your ship's signature.  If only you could get some fuel, you might still have a chance to place some distance between you and the loyalists...</text>
+	<text>Without a distress beacon or any FTL signatures to trace, you're sure that the Empire is struggling to find you. You can only hope their confusion lasts until more fuel can be found.</text>
+	<text>The United Empire seems to be unable to locate your ship's signature. If only you could get some fuel, you might still have a chance to place some distance between you and the loyalists...</text>
 </textList>
 
 <event name="FUEL_NOTHING_DISTRESS">
@@ -336,8 +324,8 @@ Beacon On!!!!
 </textList>
 	
 <event name="FUEL_SELLER_DISTRESS">
-	<ship load="AUTO_FUEL_SELLER" hostile="false"/>  
-	<text>A small ship arrives with a message, "This automated ship will provide re-fueling services once a monetary exchange is complete.  Complimentary amounts of fuel are available in emergencies only."</text>
+	<ship load="AUTO_FUEL_SELLER" hostile="false"/> 
+	<text>A small ship arrives with a message, "This automated ship will provide re-fueling services once a monetary exchange is complete. Complimentary amounts of fuel are available in emergencies only."</text>
 	<choice hidden="true">
 		<text>Request emergency fuel reserves.</text>
 		<event>
@@ -373,9 +361,6 @@ Beacon On!!!!
 	</choice>
 </event>
 
-
-
-
 <!-- This number of events offers the players a bad trade, then if they say no, a chance for a better trade, and if no again, a chance for just some charity. -->
 <event name="FUEL_TRADER_DISTRESS">
 	<text load="FUEL_TRADER_DISTRESS_TEXT_LIST"/>
@@ -390,10 +375,10 @@ Beacon On!!!!
 	</choice>
 </event>
 <textList name="FUEL_TRADER_DISTRESS_TEXT_LIST">
-	<text>A merchant ship jumps into the sector, obviously responding to your ship's distress beacon.  They hail you offering a trade for fuel.</text>
-	<text>A ship arrives at the beacon.  "We noticed your distress signal.  I assume you're out of fuel?  We're a bit low ourselves but perhaps we can make a trade."</text>
-	<text>A ship traveling near the beacon approaches your ship and hails you.  "Out of fuel?  This is a good opportunity for both of us...  Care to trade?"</text>
-	<text>A mercenary ship arrives at the beacon.  "We have a bit of extra fuel we can give you... for a price."</text>
+	<text>A merchant ship jumps into the sector, obviously responding to your ship's distress beacon. They hail you offering a trade for fuel.</text>
+	<text>A ship arrives at the beacon. "We noticed your distress signal. I assume you're out of fuel? We're a bit low ourselves but perhaps we can make a trade."</text>
+	<text>A ship traveling near the beacon approaches your ship and hails you. "Out of fuel? This is a good opportunity for both of us... Care to trade?"</text>
+	<text>A mercenary ship arrives at the beacon. "We have a bit of extra fuel we can give you... for a price."</text>
 </textList>
 <eventList name="FUEL_TRADER_HIGH_LIST">
 	<event>
@@ -415,7 +400,7 @@ Beacon On!!!!
 		</item_modify>
 	</event>
 </eventList>
-<eventList name="FUEL_TRADER_PT2"> <!-- this list is if the player cant afford the initial trade, he'll either give up and leave or give a second cheaper offer.-->  
+<eventList name="FUEL_TRADER_PT2"> <!-- this list is if the player cant afford the initial trade, he'll either give up and leave or give a second cheaper offer.--> 
 	<event>
 		<text>They respond: "Seeing how you're in need, is this trade acceptable?"</text>
 		<choice>
@@ -428,7 +413,7 @@ Beacon On!!!!
 		</choice>
 	</event>
 	<event>
-		<text>"I'm not doing this for charity, you know," says their captain.  "This is the only other way I'll part with my fuel."</text>
+		<text>"I'm not doing this for charity, you know," says their captain. "This is the only other way I'll part with my fuel."</text>
 		<choice>
 			<text>Accept the offer.</text>
 			<event load="FUEL_TRADER_HIGH_LIST"/>
@@ -578,12 +563,12 @@ Beacon On!!!!
 	<ship load="MANTIS_FUEL" hostile="true"/>
 </event>
 <textList name="FUEL_ON_MANTIS_ATTACK">
-	<text>A Mantis ship hails you, "Looks like we found the poor fools that need some help. Come brothers, let's 'help them!" They move in to attack.</text>
+	<text>A Mantis ship hails you, "Looks like we found the poor fools that need some help. Come brothers, let's 'help' them!" They move in to attack.</text>
 	<text>Before long a ship jumps nearby, no doubt responding to your beacon. However any relief you felt disappears as soon as you recognize the ship is of Mantis design. Prepare for a fight.</text>
 	<text>You detect a Mantis ship approaching and hack into their comm channel and hear, "...hope they put up more of a fight than the last Pilgrim ship. This has been a disappointing day so far." Looks like they're not here to help.</text>
 	<text>A Mantis ship jump nearby. Sensors detect weapon locks and all hope of avoiding a fight fades away.</text>
 	
-	<text>A Mantis ship hails you, "Looks like we found the poor fools that need some help. Come brothers, let's 'help them!" They move in to attack.</text>
+	<text>A Mantis ship hails you, "Looks like we found the poor fools that need some help. Come brothers, let's 'help' them!" They move in to attack.</text>
 	<text>Before long a ship jumps nearby, no doubt responding to your beacon. However any relief you felt disappears as soon as you recognize the ship is of Mantis design. Prepare for a fight.</text>
 	<text>You detect a Mantis ship approaching and hack into their comm channel and hear, "...hope they put up more of a fight than the last Pilgrim ship. This has been a disappointing day so far." Looks like they're not here to help.</text>
 	<text>A Mantis ship jump nearby. Sensors detect weapon locks and all hope of avoiding a fight fades away.</text>
@@ -624,7 +609,7 @@ Beacon On!!!!
 		<autoReward level="MED">fuel_only</autoReward>
 	</event>
 	<event>
-		<text>The team returns home rather sooner than expected. Turns out just as they were making entry to the frigate, the ship's emergency fuel cell just happened to drift by!</text>
+		<text>The team returns home rather sooner than expected. Turns out just as they were making entry to the frigate, the ship's emergency fuel cell happened to drift by!</text>
 		<autoReward level="MED">fuel_only</autoReward>
 	</event>
 	<event>
@@ -632,7 +617,7 @@ Beacon On!!!!
 		<choice>
 			<text>Pay.</text>
 			<event>
-				<text>Despite its fragile condition, the Sower is good to his word and returns your crew-member, who is suitably grateful. Sadly, gratitude doesn't power the FTL drive.</text>  <!-- JUSTIN - TO DO - I don't like this one since you don't know who's being ransomed -->
+				<text>Despite its fragile condition, the Sower is good to his word and returns your crew-member, who is suitably grateful. Sadly, gratitude doesn't power the FTL drive.</text> <!-- JUSTIN - TO DO - I don't like this one since you don't know who's being ransomed -->
 				<item_modify >
 					<item type="scrap" min="-25" max="-40"/>
 				</item_modify>
@@ -691,10 +676,6 @@ Beacon On!!!!
 		<status type="clear" target="player" system="engines" amount="100"/>
 	</deadCrew>
 </ship>
-
-
-
-
 
 
 <!-----------
@@ -784,4 +765,3 @@ Beacon On!!!!
 		</event>
 	</choice>
 </event>
-
