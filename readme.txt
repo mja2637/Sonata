@@ -44,8 +44,6 @@ A sizeable fraction of humanity looks at the Endless, and think "give us a thous
 2 WEAPONS
 Weapons in Sonata are divided into 3 categories (Kinetic, Laser, Missile) and 2 classes (Racial, Generic). Within each category and class, there are 4 power levels (with some exceptions).
 
-A star (*) indicates a prototype weapon not normally available in stores.
-
 Kinetic Weapons:
 KW map to the "shot" type weapons/non-beam lasers of vanilla FTL. Good at breaching.
 
@@ -59,17 +57,17 @@ Mk 2 Driver, helical configuration (UE): 3 bars, 3 shots, 1 damage, 10 second co
 Mk 1 Gauss Gun, relativistic (UE): 2 bars, 2 damage, pierces 1 shield, low breach chance, 11 second cooldown.
 Plasma Slugger: 3 bars, 3 damage, very low fire chance, 12 second cooldown.
 Mk 1 Gauss Gun, software-defined (UE): 2 bars, 3 shots, 1 damage, low breach chance, 11 second cooldown.
-*Mk 2 Gauss Gun, boson (UE): 3 bars, 3 damage, low breach chance, 13 second cooldown.
+Mk 2 Gauss Gun, boson (UE): 3 bars, 3 damage, low breach chance, 13 second cooldown.
 Unstable Slugger: 4 bars, 5 damage, very low breach chance, 14 second cooldown.
-*Anti-Baryon Mag AutoCannon (Sower): 4 bars, 3 shots, 1 damage, excellent chance to breach, ignores 3 shields, 8s cooldown.
+Anti-Baryon Mag AutoCannon (Sower): 4 bars, 3 shots, 1 damage, excellent chance to breach, ignores 3 shields, 8s cooldown.
 Mk 2 Gauss Driver, proton exchange (UE): 4 bars, 3 shots, 2 damage, 1 shield piercing, good fire/breach chance, 18s cooldown.
-*Mk 2 Accelerator, tachyon (UE): 4 bars, 5 damage, 2 shield piercing, 15 second cooldown.
+Mk 2 Accelerator, tachyon (UE): 4 bars, 5 damage, 2 shield piercing, 15 second cooldown.
 
 Some lasers also act like kinetic weapons:
 High Energy Low Frequency Electrojet: 1 bar, 1 shot, 1 ion damage, 8s cooldown.
 Radiothermal Burst Maser (Sophon): 1 bar, 2 shots, 1 damage, very low chance of fire, 11s cooldown.
 Quantized Photonic Burst Xaser (Sophon): 2 bars, 2 shots, 1 damage, good chance of fire, 8s cooldown.
-*Contained Higgs Pulse Beam (Sophon): 4 bars, 2 shots, 3 damage, excellent chance to breach, 15s cooldown.
+Contained Higgs Pulse Beam (Sophon): 4 bars, 2 shots, 3 damage, excellent chance to breach, 15s cooldown.
 
 Missile Weapons:
 MW map to the missiles of vanilla FTL, where missiles have been gernalized to mean any sort of special or expensive ammunition. All require 1 missile unless noted.
@@ -78,12 +76,12 @@ Ion Torpedo: 1 bar, 1 damage, ignores 5 shields, very low chance of fire/breach,
 Liquid Propellant Cannon (Sower): 1 bar, 1 damage, ignores 2 shields, doesn't require missiles, 10s cooldown.
 Plasma Torpedo: 2 bars, 2 damage, ignores 5 shields, 11s cooldown.
 Kinetic Chaff: 2 bars, 2 ion damage, very low chance of fire, 12s cooldown.
-*Fluidic Projectile Cannon (Sower): 2 bar, 2 damage, ignores 2 shields, very low chance to breach, doesn't require missiles. 10s cooldown.
+Fluidic Projectile Cannon (Sower): 2 bar, 2 damage, ignores 2 shields, very low chance to breach, doesn't require missiles. 10s cooldown.
 Positron Torpedo: 3 bars, 3 damage, ignores 5 shields, very low chance to breach, 13s cooldown.
 Mag Cannon (Sower): 3 bars, 3 damage, ignores 3 shields, low chance to breach, doesn't require missiles, 12s cooldown.
 Compensated Mag AutoCannon (Sower): 3 bars, 3 shots, 1 damage, low chance to breach, ignores 2 shields, doesn't require missiles, 11s cooldown.
 Non-Baryonic Torpedo: 4 bars, 4 damage, low chance of fire, very good chance to breach, ignores 5 shields, 15s cooldown.
-*COLD BASIN (UE): 4 bars, 2 ion damage, 3 shots, fair chance of fire, 20s cooldown.
+COLD BASIN (UE): 4 bars, 2 ion damage, 3 shots, fair chance of fire, 20s cooldown.
 Baryon-Gravitophoric Cannon (Sower): 4 bars, 5 damage, ignores 4 shields, excellent chance to breach, requires 2 missiles, 15s cooldown.
 
 Laser Weapons:
@@ -92,13 +90,13 @@ Beams. Good at setting fire.
 Chemical Laser: 1 bar, 1 damage, 45 length, very low chance of fire, 12s cooldown.
 Gas-Dynamic COIL Laser (Sophon): 1 bar, 1 damage, 45 length, good chance of fire, 11s cooldown.
 Synchrotron Laser: 1 bar, 1 damage, 70 length, low chance of fire, 13s cooldown.
-*Supercooled Titanium-Sapphire Laser (Sophon): 2 bars, 1 damage, 55 length, low chance of fire, 7s cooldown.
+Supercooled Titanium-Sapphire Laser (Sophon): 2 bars, 1 damage, 55 length, low chance of fire, 7s cooldown.
 Phased Plasmic Laser: 2 bars, 2 damage, 50 length, very low chance of fire, 12s cooldown.
-*Prototype Lepton Beam: 2 bars, 1 ion damage, 45 length, 11s cooldown.
+Prototype Lepton Beam: 2 bars, 1 ion damage, 45 length, 11s cooldown.
 Thermophotonic Xaser (Sophon): 3 bars, 1 damage, 95 length, pierces 1 shield, excellent chance of fire, 16s cooldown.
 Disruptor Beam: 3 bars, 2 damage, 45 length, pierces 1 shield, very good chance to breach, 12s cooldown.
 Bose-Einstein Particle Beam (Sophon): 3 bars, 2 damage, 35 length, insane breach chance, 15s cooldown.
-*Condensed Anti-Neutrino Beam (Sophon): 4 bars, 3 damage, 65 length, ignores 1 shield, 20s cooldown.
+Condensed Anti-Neutrino Beam (Sophon): 4 bars, 3 damage, 65 length, ignores 1 shield, 20s cooldown.
 
 3 DRONES
 

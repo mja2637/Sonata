@@ -778,13 +778,43 @@ item - Dust + that thing  -->
 		</choice>		
 	</event>
 	<event>
-		<text>Your Sophon crewmember has showed some interest in your ship's weaponry. Running your hand proudly along one of the immense power cables running from your shield capacitor bank directly to the reactor, you ask a question.</text>
-		<choice>
+		<text>Your Sophon crewmember has showed some interest in your ship's internals. Running your hand proudly along one of the immense power cables running from the capacitor bank directly to the reactor, you ask a question.</text>
+		<choice hidden="true" req="ENERGY_SHIELD">
+			<text>"That energy shield has saved our collective asses more than a few times. How does it work?</text>
+			<event>
+				<text>"Halibut."</text>
+				<choice>
+					<text>"Uh...just what the icy fuck are you talking about?"</text>
+					<event>
+						<text>He winks at you. "That's exactly what you'd say if I told you."</text>				
+					</event>
+				</choice>				
+			</event>
+		</choice>
+		<choice hidden="true" req="ROCK_ARMOR">
+			<text>"Do you think the ship's hull is really made from Endless technology?</text>
+			<event>
+				<text>"I'm sure it is, since the Sower themselves were created by the Endless." She bites her lower lip and shakes her head slightly. "Wasteful stuff, really. I'm surprised the Endless sullied their hands with something so...unsophisticated."</text>
+				<choice>
+					<text>"Do you have any idea how they did it?"</text>
+					<event>
+						<text>"Created this hull material? Yes of course, it's quite easy. Boring, actually." Your eyes widen. Perhaps this could be the key to a Pilgrim victory?</text>
+						<choice>
+							<text>"That's amazing! Open a channel to the nearest Pilgrim outpost, we need to share this informati-"</text>
+								<text>You stop talking when your Sophon crewmember starts to chuckle. You ask her what's so funny. "It's a piece of cake - all you need are a baryon-antibaryon annihilation reactor, 50 trillion gigajoules of energy, and several hundred kilograms of Dust..."</text>	
+								<event>
+							</event>
+						</choice>						
+					</event>
+				</choice>				
+			</event>
+		</choice>		
+		<choice hidden="true">
 			<text>"She's a good ship. How do you think she'd stack up against a Sophon frigate?"</text>
 			<event>
-				<text>"By scale or by purpose? We would classify vessels this size, in Human, with the prefix 'Kilo-'. The suffix indicates the ship's role - discovery, exploration, conflict. There's no direct translation."</text>
+				<text>"By scale or by purpose? We would classify vessels this size, in Human, with the prefix 'Kilo'. The suffix indicates the ship's role - discovery, exploration, conflict. There's no direct translation."</text>
 				<choice>
-					<text>"One of your...'Kiloconflict' ships, then. How do they compare?"</text>
+					<text>"One of your...'Kilo' ships, then. How do they compare?"</text>
 					<event>
 						<text>"Your ship is...childish. Inefficient, incoherent, and irrational. In terms of certain metrics, though, your ship is equal or superior to the equivalent Sophon vessel."</text>
 						<choice>
