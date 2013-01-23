@@ -1123,8 +1123,8 @@
 
  <weaponBlueprint name="SOPHON_PULSE_2">
 	<type>LASER</type>
-	<title>Quantized Photonic Burst Laser</title>
-	<short>Photon Burst L.</short>
+	<title>Quantized Photonic Burst Xaser</title>
+	<short>Burst Xaser</short>
 	<desc>A confined plasma construct spun at a high rate, similar to a pulsar, generates a rapidly rotating focused source of high-intensity electromagnetic waves. When used to pump a Xaser, the result is a rapid-fire high-energy photon laser.</desc>
 	<tooltip>2 shots, 1 damage and chance for fire. Fast reload rate.</tooltip>
 	<damage>1</damage>
@@ -1140,9 +1140,9 @@
 	<image>PHOTON_PROJ</image>
 	<speed>70</speed>
 	<launchSounds>
-		<sound>pulse1</sound>
-		<sound>pulse1</sound>
-		<sound>pulse1</sound>
+		<sound>burst_xaser</sound>
+		<sound>burst_xaser</sound>
+		<sound>burst_xaser</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>hitHull2</sound>
@@ -1606,7 +1606,6 @@
 	<type>LASER</type>
 	<title>High Energy Low Frequency Electrojet</title>
 	<short>HELF Electrojet</short>
-	<locked>1</locked>
 	<desc>An incredibly simple "weapon" that uses principles that have been understood for hundreds of years. Powerful, low-frequency (~2 Hertz) electromagnetic waves are directed at the target, causing minor disruption to electronics in the target.</desc>
 	<tooltip>Fires a single blast that does 1 ion damage. Can hit and disable shields as well as systems.</tooltip>
 	<damage>0</damage>
@@ -1624,9 +1623,7 @@
 	<image>ion_1_shot</image>
 	<explosion>explosion_small_ion</explosion>
 	<launchSounds>
-		<sound>ionShoot1</sound>
-		<sound>ionShoot2</sound>
-		<sound>ionShoot3</sound>
+		<sound>helf</sound>
 	</launchSounds>
 	<hitShipSounds>
 		<sound>ionHit1</sound>
@@ -1641,14 +1638,13 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>ion_1</weaponArt> 
+	<weaponArt>HELF</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="ION_2">
 	<type>BEAM</type>
 	<title>Prototype Lepton Beam</title>
 	<short>Lepton Beam</short>
-	<locked>1</locked>
 	<desc>The IHTG often attempts to reverse-engineer Sophon weaponry, which amuses the Sophon to no end. This particular prototype retains none of the power of the original, but has interesting effects on enemy shielding.</desc>
 	<tooltip>Fires a beam that does two ion damage to one room and one ion damage to others.</tooltip>
 	<damage>0</damage>
@@ -1664,7 +1660,7 @@
 	<image>beam_contact</image>
 	<length>45</length>
 	<launchSounds>
-		<sound>beam1</sound>
+		<sound>lepton</sound>
 	</launchSounds>
 	<weaponArt>ion_2</weaponArt> 
 </weaponBlueprint>
@@ -1687,7 +1683,7 @@
 	<cost>50</cost>
 	<bp>6</bp>
 	<rarity>2</rarity>
-	<image>missile_hull</image>
+	<image>missile2</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -1703,14 +1699,14 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>missiles_2</weaponArt> 
+	<weaponArt>missiles_1</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="ION_MISSILE_UE">
 	<type>MISSILES</type>
 	<title>COLD BASIN</title>
 	<short>COLD BASIN</short>
-	<desc>A product of one of the United Empire's famous skunk works programs. This weapon is so secret that no one knows if "COLD BASIN" is a code name...or an acronym. Fires bosoms or lepto-bismol or something.</desc>
+	<desc>A product of one of the United Empire's famous skunk works programs. This weapon is so secret that no one knows if "COLD BASIN" is a code name...or an acronym. Fires bosoms or lepto-bismol or...something.</desc>
 	<tooltip>"The guns...they've stopped." Causes massive ion damage.</tooltip>
 	<damage>0</damage>
 	<ion>2</ion>
@@ -1724,7 +1720,7 @@
 	<cost>140</cost>
 	<bp>6</bp>
 	<rarity>5</rarity>
-	<image>missile_hull</image>
+	<image>missile_breach</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -1740,7 +1736,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>missiles_2</weaponArt> 
+	<weaponArt>boss_4</weaponArt> 
 </weaponBlueprint>
 
 

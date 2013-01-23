@@ -68,7 +68,7 @@ Mk 2 Gauss Driver, proton exchange (UE): 4 bars, 3 shots, 2 damage, 1 shield pie
 Some lasers also act like kinetic weapons:
 High Energy Low Frequency Electrojet: 1 bar, 1 shot, 1 ion damage, 8s cooldown.
 Radiothermal Burst Maser (Sophon): 1 bar, 2 shots, 1 damage, very low chance of fire, 11s cooldown.
-Quantized Photonic Burst Laser (Sophon): 2 bars, 2 shots, 1 damage, good chance of fire, 8s cooldown.
+Quantized Photonic Burst Xaser (Sophon): 2 bars, 2 shots, 1 damage, good chance of fire, 8s cooldown.
 *Contained Higgs Pulse Beam (Sophon): 4 bars, 2 shots, 3 damage, excellent chance to breach, 15s cooldown.
 
 Missile Weapons:

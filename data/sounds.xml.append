@@ -2,12 +2,17 @@
 
 <!-- New Weapons -->
 <beam volume="5">weapons/beam.wav</beam>
-<dualbeam volume="5">weapons/dualbeam.wav</dualbeam>
+<dualbeam volume="4">weapons/dualbeam.wav</dualbeam>
 <kinetic1 volume="3">weapons/kinetic_1.wav</kinetic1>
 <kinetic2 volume="3">weapons/kinetic_2.mp3</kinetic2>
 <kinetic3 volume="3">weapons/kinetic_3.wav</kinetic3>
 <kinetic4 volume="3">weapons/kinetic_4.wav</kinetic4>
 <pulse1 volume="20">weapons/pulse.wav</kinetic1>
+
+<helf volume="3">weapons/helf.ogg</helf>
+<lepton volume="3">weapons/lepton.ogg</lepton>
+
+<burst_xaser volume="4">weapons/burst_xaser.wav</burst_xaser>
 
 <!-- Crew sounds -->
 <crewLaser1 volume="2">weapons/crew_burst_1.mp3</crewLaser1>

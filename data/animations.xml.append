@@ -207,6 +207,18 @@
 	<chargeImage>weapons/SOPHON_LASER_3_GLOW.png</chargeImage>
 </weaponAnim>
 
+<!-- "Ion" -->
+<animSheet name="HELF" w="90" h="56" fw="18" fh="56">weapons/SLUGGER_4.png</animSheet>
+<weaponAnim name="HELF">
+	<sheet>HELF</sheet>
+	<desc length="5" x="0" y="0"/>
+	<chargedFrame>2</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="9" y="4"/>
+	<mountPoint x="6" y="46"/>
+</weaponAnim>
+
+
 <!-- PROJECTILES -->
 <!--
 SIMPLE_GUN_PROJ: SOWER_AC_1, SLUGGER_1
