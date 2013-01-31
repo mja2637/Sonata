@@ -132,6 +132,16 @@
 	<mountPoint x="9" y="52"/>
 </weaponAnim>
 
+<animSheet name="SOWER_AUTOCANNON_2" w="275" h="67" fw="25" fh="67">weapons/SOWER_AUTOCANNON_2.png</animSheet>
+<weaponAnim name="SOWER_AUTOCANNON_2">
+	<sheet>SOWER_AUTOCANNON_2</sheet>
+	<desc length="11" x="0" y="0"/>
+	<chargedFrame>2</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint x="14" y="2"/>
+	<mountPoint x="9" y="52"/>
+</weaponAnim>
+
 <!-- Sophon -->
 <animSheet name="SOPHON_LASER_1" w="192" h="33" fw="24" fh="33">weapons/beam_1_strip8.png</animSheet>
 <weaponAnim name="SOPHON_LASER_1">
@@ -208,7 +218,7 @@
 </weaponAnim>
 
 <!-- "Ion" -->
-<animSheet name="HELF" w="90" h="56" fw="18" fh="56">weapons/SLUGGER_4.png</animSheet>
+<animSheet name="HELF" w="90" h="56" fw="18" fh="56">weapons/HELF.png</animSheet>
 <weaponAnim name="HELF">
 	<sheet>HELF</sheet>
 	<desc length="5" x="0" y="0"/>

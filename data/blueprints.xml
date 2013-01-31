@@ -888,7 +888,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>UE_DRIVER_2</weaponArt> 
+	<weaponArt>SOWER_AUTOCANNON_2</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOWER_AUTOCANNON_3">
@@ -1662,7 +1662,7 @@
 	<launchSounds>
 		<sound>lepton</sound>
 	</launchSounds>
-	<weaponArt>ion_2</weaponArt> 
+	<weaponArt>SOPHON_LASER_3</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="ION_MISSILE">
