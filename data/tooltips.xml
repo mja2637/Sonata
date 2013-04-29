@@ -25,10 +25,10 @@
 <shieldDisplay>Current shield status.</shieldDisplay>
 <evadeDisplay>Percent chance to dodge incoming fire.</evadeDisplay>
 <oxygenDisplay>Ship's current oxygen.</oxygenDisplay>
-<energyShieldDisplay>Zoltan Energy Shield: Will completely block incoming damage of any weapon type.</energyShieldDIsplay>
+<energyShieldDisplay>Zoltan Energy Shield: Will completely block incoming damage of any weapon type.</energyShieldDisplay>
 
 <!-- Other -->
-<autofire>Toggle to active/deactive weapons automatically firing.</autoFire>
+<autofire>Toggle to active/deactive weapons automatically firing.</autofire>
 
 <asteroids>You're in an asteroid field. Periodically asteroids will strike your ship.</asteroids>
 <sun>You're too close to a star. Solar flares will light the ship on fire.  Shields will reduce the effect.</sun>

@@ -1,7 +1,5 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<?xml version="1.0" encoding="utf-8"?>
-
 <!-- Customization possibilities -->
 
 <blueprintList name="STARTING_WEAPONS">
@@ -158,7 +156,7 @@
 
 <systemBlueprint name="oxygen">
 	<type>oxygen</type>
-	<title>Oxygen</type>
+	<title>Oxygen</title>
 	<desc>Refills the oxygen in the ship. Upgrading increases the rate of refill.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
@@ -173,7 +171,7 @@
 
 <systemBlueprint name="teleporter">
 	<type>teleporter</type>
-	<title>Crew Teleporter</type>
+	<title>Crew Teleporter</title>
 	<desc>Allows you to send your crew-members to board enemy vessels.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
@@ -188,7 +186,7 @@
 
 <systemBlueprint name="cloaking">
 	<type>cloaking</type>
-	<title>Cloaking</type>
+	<title>Cloaking</title>
 	<desc>Cloaks the ship, adding 60 to your evasion and preventing the enemy ship from locking on with their weapons.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
@@ -203,7 +201,7 @@
 
 <systemBlueprint name="pilot">
 	<type>pilot</type>
-	<title>Piloting</type>
+	<title>Piloting</title>
 	<desc>Allows the ship to make FTL jumps and dodge when piloted. Upgrading adds auto-pilot that allows some evasion even without a pilot.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
@@ -217,7 +215,7 @@
 
 <systemBlueprint name="medbay">
 	<type>medbay</type>
-	<title>Medbay</type>
+	<title>Medbay</title>
 	<desc>Heals all crew-members within the Medbay room. Upgrading increases healing speed.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
@@ -231,7 +229,7 @@
 
 <systemBlueprint name="shields">
 	<type>shields</type>
-	<title>Shields</type>
+	<title>Shields</title>
 	<desc>Powers your shields. Every shield bar can block one incoming shot. Upgrading increases bar count.</desc>
 	<startPower>2</startPower>
 	<maxPower>8</maxPower>
@@ -266,7 +264,7 @@
 
 <systemBlueprint name="engines">
 	<type>engines</type>
-	<title>Engines</type>
+	<title>Engines</title>
 	<desc>Powers the FTL drive and allows the ship to dodge. Upgrading improves dodge chance and the rate that your FTL drive charges.</desc>
 	<startPower>2</startPower>
 	<maxPower>8</maxPower>
@@ -286,7 +284,7 @@
 
 <systemBlueprint name="weapons">
 	<type>weapons</type>
-	<title>Weapon Control</type>
+	<title>Weapon Control</title>
 	<desc>Powers all of the ship's weapons. Upgrading lets you power more weapons.</desc>
 	<startPower>4</startPower>
 	<rarity>1</rarity>
@@ -306,7 +304,7 @@
 
 <systemBlueprint name="drones">
 	<type>drones</type>
-	<title>Drone Control</type>
+	<title>Drone Control</title>
 	<desc>Powers all of the ship's drones. Drones are automated robots that perform tasks like attacking enemy ships or repairing systems.</desc>
 	<startPower>2</startPower>
 	<maxPower>8</maxPower>
@@ -326,7 +324,7 @@
 
 <systemBlueprint name="sensors">
 	<type>sensors</type>
-	<title>Sensors</type>
+	<title>Sensors</title>
 	<desc>Reveals the interior of your ship and gives information about enemy ships.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
@@ -340,7 +338,7 @@
 
 <systemBlueprint name="doors">
 	<type>doors</type>
-	<title>Door System</type>
+	<title>Door System</title>
 	<desc>Allows remote opening and closing of doors. Upgrades to Blast Doors that impede fire spread and intruder movement.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
@@ -2136,7 +2134,7 @@
 	<title>Burst Laser Mark III</title>
 	<short>Burst L. III</short>
 	<desc>Powerful burst laser that fires off an impressive barrage.</desc>
-	<tooltip>Fires 5 lasers, 1 damage per shot.</desc>-->
+	<tooltip>Fires 5 lasers, 1 damage per shot.</tooltip>
 	<damage>1</damage>
 	<shots>5</shots>
 	<sp>0</sp>
@@ -2725,7 +2723,7 @@
 	<power>2</power>
 	<cost>65</cost>
 	<rarity>0</rarity>
-	<speed>75</image>
+	<speed>75</speed>
 	<image>laser_heavy1</image>
 	<launchSounds>
 		<sound>heavyLaser1</sound>
@@ -2766,7 +2764,7 @@
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>laser_heavy1</image>
-	<speed>90</image>
+	<speed>90</speed>
 	<launchSounds>
 		<sound>heavyLaser1</sound>
 		<sound>heavyLaser2</sound>
@@ -3796,7 +3794,7 @@
 
 <itemBlueprint name="fuel">
 	<type>ITEM_FUEL</type>
-	<title>FTL Fuel</ship>
+	<title>FTL Fuel</title>
 	<desc>Powers your FTL drive. One jump per fuel.</desc>
 	<cost>3</cost>
 	<rarity>1</rarity>
@@ -3804,7 +3802,7 @@
 
 <itemBlueprint name="drones">
 	<type>ITEM_DRONE</type>
-	<title>Drone Part</ship>
+	<title>Drone Part</title>
 	<desc>Allows you to deploy drone schematics you've found. Each deployment costs one drone part.</desc>
 	<cost>8</cost>
 	<rarity>3</rarity>
@@ -3812,7 +3810,7 @@
 
 <itemBlueprint name="missiles">
 	<type>ITEM_MISSILE</type>
-	<title>Missile</ship>
+	<title>Missile</title>
 	<desc>Specialized ammunition for on-board projectile weapons.</desc>
 	<cost>6</cost>
 	<rarity>3</rarity>
@@ -4367,7 +4365,7 @@
 		<sensors power="2" room="13" start="true" img="room_sensors_2"/>
 		<oxygen power="1" room="1" start="true" img="room_oxygen_2"/>
 		<engines power="4" room="12" start="true" img="room_engines_2"/>
-		<shields power="2" room="10" start="false"img="room_shields_2"/>
+		<shields power="2" room="10" start="false" img="room_shields_2"/>
 		<weapons power="2" room="3" start="true" img="room_weapons_2"/> 
 		<drones power="2" room="11" start="false" img="room_drones_2"/>
 		<medbay power="1" room="7" start="true"/> 
@@ -5130,7 +5128,7 @@ TUTORIAL SHIPS
 	<health amount="10"/>	
 	<maxPower amount ="15"/>
 	<crewCount amount = "3" class="human"/>
-</ship>
+</shipBlueprint>
 		
 <!--**********************
 REBEL SHIP - LONG - ELITE!!!

@@ -1,4 +1,4 @@
-﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 <!--   
 			SUMMARY  - 
@@ -473,7 +473,7 @@ Special:
 		<text>The ship explodes, leaving behind a cloud of Dust.</text>
 		<autoReward level="MED">standard</autoReward>
 		<status type="clear" target="player" system="shields" amount="100"/>
-	</destroyed>
+	</deadCrew>
 </ship>
 
 <ship name="REBEL_AND_AUTO" auto_blueprint="SHPS_REBEL_AND_AUTO">

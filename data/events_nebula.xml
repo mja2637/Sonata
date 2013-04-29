@@ -1,4 +1,4 @@
-﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 <!--	
 
@@ -199,7 +199,7 @@ Storm Environment:
 		<text>Attempt to remain concealed.</text>
 		<event load="NEBULA_REBEL_UNDETECTED_LIST"/>
 	</choice>
-	<choice req="cloaking" hidden="true" hidden="true"> 
+	<choice req="cloaking" hidden="true" > 
 		<text>(Cloaking) Cloak to stay hidden.</text>
 		<event>
 			<text>You use your cloaking system to slip further into the nebula undetected.</text>

@@ -1,4 +1,4 @@
-﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 <!--   
 			SUMMARY  - 
@@ -450,13 +450,13 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 		<text>(Long Ranged Scanners) Run another scan.</text>
 		<event load="DISTRESS_ENGI_REACTOR_SCAN"/>
 	</choice>
-</choice>
+</event>
 <eventList name="DISTRESS_ENGI_REACTOR_LIST1">
 	<event>
 		<text>You send an away team to investigate, but there's nothing save for the acidic stench of burnt Engi parts. This place is dead.</text>
 	</event>
 	<event>
-		<text>Your away team reports a wounded Engi and a functioning drone schematic. Then someone yells. The station reactor is overloading and they're running out of time!</event>
+		<text>Your away team reports a wounded Engi and a functioning drone schematic. Then someone yells. The station reactor is overloading and they're running out of time!</text>
 		<choice hidden="true">
 			<text>Save the Engi!</text>
 			<event load="DISTRESS_ENGI_REACTOR_ENGI"/>

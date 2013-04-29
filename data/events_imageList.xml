@@ -1,4 +1,4 @@
-﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 
 <!--
@@ -12,6 +12,7 @@
 	
 <!-- The following lists are your DEFAULT lists, if the event or text isn't tagged 
 		with anything, then it will randomly choose from here. -->
+		
 <imageList name="PLANET_CLOSE">
 	<img w="1280" h="720">stars/planet_close.png</img>
 </imageList>
@@ -146,18 +147,18 @@
 <imageList name="BG_BORING">
 	<img w="1280" h="720">stars/binary.png</img>
 	<img w="1280" h="720">stars/carina.png</img>
-	<img w="1280" h="720">stars/colors.png</img>
+
 	<img w="1280" h="720">stars/deepfield.png</img>
 	<img w="1280" h="720">stars/deepfield2.png</img>
 	<img w="1280" h="720">stars/deepspace2.png</img>
 	<img w="1280" h="720">stars/deepspace3.png</img>
-	<img w="1280" h="720">stars/deepspace4.png</img>
-	<img w="1280" h="720">stars/m16.png</img>
-	<img w="1280" h="720">stars/m17.png</img>
+
+
+
 	<img w="1280" h="720">stars/milkyway.png</img>
 	<img w="1280" h="720">stars/nothing.png</img>
 	<img w="1280" h="720">stars/nothing2.png</img>
-	<img w="1280" h="720">stars/stars2.png</img>
+
 	
 	<img w="1280" h="720">stars/bg_dullstars.png</img>
 	<img w="1280" h="720">stars/bg_dullstars2.png</img>

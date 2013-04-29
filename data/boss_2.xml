@@ -20,7 +20,7 @@
 		<velocity min="0.1" max="1"/>
 		<direction min="20" max="160"/>
 		<angular min="-1" max="1"/>
-	</gib2>
+	</gib1>
 	<gib2>
 		<velocity min="0.1" max="0.3"/>
 		<direction min="280" max="350"/>

@@ -1,4 +1,4 @@
-﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 <!--   
 			SUMMARY  - 
@@ -268,8 +268,7 @@ Fleets - some with minor fights
 	<text>A battle rages on in the distance. As much as you would like to help in the fight, you know the importance of your mission.</text>
 	<text>You don't need advanced sensors to tell there is a battle going on. You look out of the window quietly, waiting to jump. There's no way you can help in this fight.</text>
 	<text>Two fleets are volleying shots at each other. Luckily no one seems interested in your ship. You prepare to make another jump.</text>
-	
-		<text>Sensors indicate evidence of a huge battle nearby, but the immediate vicinity seems quiet. You try to lay low and keep out of the fighting.</text>
+	<text>Sensors indicate evidence of a huge battle nearby, but the immediate vicinity seems quiet. You try to lay low and keep out of the fighting.</text>
 	<text>You arrive to find two fleets crashing against each other.  Sensors are tracking the extent of the carnage. You quietly wait for the FTL drive to charge, knowing that the only way you can help is by completing your mission.</text>
 	<text>A battle rages in the distance. Sensors suggest the presence of many vulnerable escape pods, but you know you cannot stop to help. The mission is paramount.</text>
 	<text>A battle rages on in the distance. As much as you would like to help in the fight, you know the importance of your mission.</text>

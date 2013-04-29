@@ -597,7 +597,7 @@
 	<health amount="6"/>	
 	<maxPower amount ="6"/>
 	<crewCount amount = "0" max="0" class="human"/>
-</ship>	
+</shipBlueprint>	
 
 <shipBlueprint name="AUTO_ASSAULT" layout="auto_assault" img="auto_assault">
 	<class>Shark USV</class>
@@ -614,7 +614,7 @@
 	<health amount="8"/>	
 	<maxPower amount ="7"/>
 	<crewCount amount = "0" max="0" class="human"/>
-</ship>	
+</shipBlueprint>	
 
 
 		
@@ -647,7 +647,7 @@
 	<minSector>1</minSector>
 	<systemList>
 		<pilot power="1" max="3" room="0"/>
-		<doors power="1" max="3"room="5" start="false"/>
+		<doors power="1" max="3" room="5" start="false"/>
 		<oxygen power="1" max="3" room="4"/>
 		<medbay power="1" max="3" room="6" start="false"/>
 		<shields power="2" max="10" room="3"/>
@@ -667,7 +667,7 @@
 	<class>Slug Assault</class>
 	<minSector>4</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="0"/>
+		<pilot power="1" max="3" room="0"/>
 		<doors power="1" max="3" room="1" start="false"/>
 		<oxygen power="1" max="3" room="4"/>
 		<medbay power="1" max="3" room="3" start="false"/>
@@ -787,7 +787,7 @@
 	<class>Sower Terraformer</class>
 	<minSector>5</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="0"/>
+		<pilot power="1" max="3" room="0"/>
 		<doors power="1" max="3" room="3" start="false"/>
 		<oxygen power="1" max="3" room="9"/>
 		<medbay power="1" max="2" room="1" start="false"/>
@@ -809,7 +809,7 @@
 	<class>Sower Architect</class>
 	<minSector>5</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="0"/>
+		<pilot power="1" max="3" room="0"/>
 		<doors power="1" max="3" room="3" start="false"/>
 		<oxygen power="1" max="3" room="9"/>
 		<medbay power="1" max="2" room="1" start="false"/>
@@ -835,7 +835,7 @@
 	<class>Peregrine</class>
 	<maxSector>5</maxSector>
 	<systemList>
-		<pilot power="1"max="3" room="1"/>
+		<pilot power="1" max="3" room="1"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<oxygen power="1" max="3" room="5"/>
 		<medbay power="1" max="3" room="6" start="false"/>
@@ -855,7 +855,7 @@
 	<class>Falcon</class>
 	<minSector>1</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="9"/>
+		<pilot power="1" max="3" room="9"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<oxygen power="1" max="3" room="5"/>
 		<medbay power="1" max="3" room="8" start="false"/>
@@ -875,7 +875,7 @@
 	<class>Pterix</class>
 	<minSector>4</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="3"/>
+		<pilot power="1" max="3" room="3"/>
 		<doors power="1" max="3" room="9" start="false"/>
 		<oxygen power="1" max="3" room="11"/> 
 		<medbay power="1" max="3" room="8" start="false"/>
@@ -899,7 +899,7 @@
 	<class>Civilian Runabout</class>
 	<maxSector>6</maxSector>
 	<systemList>
-		<pilot power="1"max="3" room="0"/>
+		<pilot power="1" max="3" room="0"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<oxygen power="1" max="3" room="5"/>
 		<shields power="2" max="6" room="1"/>
@@ -917,7 +917,7 @@
 	<class>Pirate Runabout</class>
 	<maxSector>6</maxSector>
 	<systemList>
-		<pilot power="1"max="3" room="0"/>
+		<pilot power="1" max="3" room="0"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<oxygen power="1" max="3" room="5"/>
 		<shields power="2" max="6" room="1"/>
@@ -935,7 +935,7 @@
 	<class>Merchant Vessel</class>
 	<minSector>1</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="0"/>
+		<pilot power="1" max="3" room="0"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<medbay power="1" max="3" room="8" start="false"/>
 		<oxygen power="1" max="3" room="5"/>
@@ -953,7 +953,7 @@
 	<class>Pirate Barque</class>
 	<minSector>1</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="0"/>
+		<pilot power="1" max="3" room="0"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<medbay power="1" max="3" room="8" start="false"/>
 		<oxygen power="1" max="3" room="5"/>
@@ -975,7 +975,7 @@
 	<class>Engi Scout</class>
 	<maxSector>7</maxSector>
 	<systemList>
-		<pilot power="1"max="3" room="5"/>
+		<pilot power="1" max="3" room="5"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<medbay power="1" max="3" room="6" start="false"/>
 		<oxygen power="1" max="3" room="3"/> 
@@ -997,7 +997,7 @@
 	<class>Engi Bomber</class>
 	<minSector>1</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="1"/> 
+		<pilot power="1" max="3" room="1"/> 
 		<doors power="1" max="3" room="2" start="false"/>
 		<medbay power="1" max="3" room="4" start="false"/> 
 		<oxygen power="1" max="3" room="3"/>
@@ -1025,7 +1025,7 @@
   <shipBlueprint name="ZOLTAN_FIGHTER" layout="energy_fighter" img="energy_fighter">
 	<class>Sophon Investigator</class>
 	<systemList>
-		<pilot power="1"max="3" room="5"/>
+		<pilot power="1" max="3" room="5"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<medbay power="1" max="3" room="6" start="false"/>
 		<oxygen power="1" max="3" room="3"/> 
@@ -1045,7 +1045,7 @@
   <shipBlueprint name="ZOLTAN_BOMBER" layout="energy_bomber" img="energy_bomber">
 	<class>Sophon Inquisitor</class>
 	<systemList>
-		<pilot power="1"max="3" room="1"/> 
+		<pilot power="1" max="3" room="1"/> 
 		<doors power="1" max="3" room="2" start="false"/>
 		<medbay power="1" max="3" room="6" start="false"/>
 		<oxygen power="1" max="3" room="5"/> 
@@ -1068,7 +1068,7 @@
   <shipBlueprint name="ZOLTAN_PEACE" layout="energy_fighter" img="energy_fighter">
 	<class>Sophon Protector</class>
 	<systemList>
-		<pilot power="1"max="3" room="5"/>
+		<pilot power="1" max="3" room="5"/>
 		<doors power="1" max="3" room="2" start="false"/>
 		<medbay power="1" max="3" room="6" start="false"/>
 		<oxygen power="1" max="3" room="3"/> 
@@ -1088,7 +1088,7 @@
   <shipBlueprint name="CRYSTAL_SCOUT" layout="crystal_scout" img="crystal_scout">
 	<class>Crystal Scout</class>
 	<systemList>
-		<pilot power="1"max="3" room="3"/>
+		<pilot power="1" max="3" room="3"/>
 		<medbay power="1" max="3" room="5" start="false"/>
 		<oxygen power="1" max="3" room="0"/>
 		<shields power="2" max="8" room="1"/>
@@ -1105,7 +1105,7 @@
   <shipBlueprint name="CRYSTAL_BOMBER" layout="crystal_bomber" img="crystal_bomber">
 	<class>Crystal Bomber</class>
 	<systemList>
-		<pilot power="1"max="3" room="2"/> 
+		<pilot power="1" max="3" room="2"/> 
 		<doors power="1" max="3" room="8" start="false"/>
 		<medbay power="1" max="3" room="0" start="false"/> 
 		<oxygen power="1" max="3" room="6"/> 

@@ -1,4 +1,4 @@
-﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 <!--   
 			SUMMARY  - 
@@ -244,7 +244,7 @@ Distress:
 			<ship load="JELLY_STATUS_OXYGEN" hostile="true"/>
 			<status type="divide" target="player" system="oxygen" amount="2"/>
 		</event>
-	</event>
+	</choice>
 	<choice hidden="true">
 		<text>Weapons.</text>
 		<event>

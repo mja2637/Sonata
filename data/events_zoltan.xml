@@ -28,13 +28,6 @@ Neutral:
 Environmnt:
 --->
 
-<!-- Event ideas --
-Boarder "wink and nod"
-Sophon diplomat
-Pilgrim diplomat
-Science - investigate Sower
--->
-
 <eventList name="NOTHING_ZOLTAN_SECTOR">
 	<event load="NOTHING_ZOLTAN"/>
 	<event load="NOTHING_2"/>
@@ -552,7 +545,7 @@ Science - investigate Sower
 		</item_modify>
 		<crewMember amount="1" class="energy">Yesmin</crewMember>
 	</event>
-</event>
+</eventList>
 
 	
 <event name="ZOLTAN_SCIENCE_DOCK" unique="true">

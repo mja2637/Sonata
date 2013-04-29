@@ -7,7 +7,7 @@
 <kinetic2 volume="3">weapons/kinetic_2.mp3</kinetic2>
 <kinetic3 volume="3">weapons/kinetic_3.wav</kinetic3>
 <kinetic4 volume="3">weapons/kinetic_4.wav</kinetic4>
-<pulse1 volume="20">weapons/pulse.wav</kinetic1>
+<pulse1 volume="20">weapons/pulse.wav</pulse1>
 
 <helf volume="3">weapons/helf.ogg</helf>
 <lepton volume="3">weapons/lepton.ogg</lepton>

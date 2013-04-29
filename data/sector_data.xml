@@ -104,7 +104,7 @@ CIVILIAN SECTORS
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="CIVILIAN_SECTOR_2" minSector="2" unique="true"> 
 	<nameList>
@@ -125,7 +125,7 @@ CIVILIAN SECTORS
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="CIVILIAN_SECTOR_3" minSector="4" unique="true"> 
 	<nameList>
@@ -146,7 +146,7 @@ CIVILIAN SECTORS
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="CIVILIAN_SECTOR_4" minSector="6" unique="true"> 
 	<nameList>
@@ -167,7 +167,7 @@ CIVILIAN SECTORS
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="ZOLTAN_SECTOR" minSector="1" unique="false">   
 	<nameList>
@@ -198,7 +198,7 @@ CIVILIAN SECTORS
 	<event name="ITEM_ZOLTAN" min="1" max="2"/>
 	<event name="QUESTS_ZOLTAN" min="0" max="1"/>
 	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="ZOLTAN_HOME" minSector="4" unique="true">   
 	<nameList>
@@ -230,7 +230,7 @@ CIVILIAN SECTORS
 	<event name="ITEM_ZOLTAN" min="1" max="2"/>
 	<event name="QUESTS_ZOLTAN" min="1" max="2"/>
 	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="ROCK_SECTOR" minSector="2" unique="false">   
 	<nameList>
@@ -266,7 +266,7 @@ CIVILIAN SECTORS
 	<event name="HOSTILE_ROCK_PIRATE" min="6" max="8"/>
 	<event name="BOARDERS_ROCK" min="6" max="8"/>
 	<event name="NOTHING_ROCK" min="6" max="8"/> -->
-</sectorDescrption>
+</sectorDescription>
 
 
 <!-- --------------------
@@ -293,7 +293,7 @@ HOSTILE SECTORS
 	<event name="NOTHING_PIRATE_SECTOR" min="1" max="3"/>
 	<event name="QUESTS_PIRATE" min="0" max="1"/>
 	<event name="NEUTRAL_PIRATE" min="5" max="6"/>
-</sectorDescrption>
+</sectorDescription>
 
 
 <sectorDescription name="REBEL_SECTOR" minSector="0" unique="false">  
@@ -316,12 +316,12 @@ HOSTILE SECTORS
 	<event name="NOTHING_REBEL_SECTOR" min="1" max="4"/>
 	<event name="QUESTS_REBEL" min="0" max="2"/>
 	<event name="NEUTRAL_REBEL" min="5" max="6"/>
-</sectorDescrption>
+</sectorDescription>
 
 
 <sectorDescription name="MANTIS_SECTOR" minSector="4" unique="false"> 
 	<nameList>
-		<name>Mantis Controlled Sector</text>
+		<name>Mantis Controlled Sector</name>
 	</nameList>
 	<trackList>
 		<track>hectic</track>
@@ -345,11 +345,11 @@ HOSTILE SECTORS
 	<event name="BOARDERS_MANTIS" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL_MANTIS" min="6" max="7"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="MANTIS_HOME" minSector="6" unique="true">  
 	<nameList>
-		<name>Mantis Homeworlds</text>
+		<name>Mantis Homeworlds</name>
 	</nameList>
 	<trackList>
 		<track>hectic</track>
@@ -374,7 +374,7 @@ HOSTILE SECTORS
 	<event name="BOARDERS_MANTIS" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL_MANTIS" min="6" max="7"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="ENGI_SECTOR" minSector="2" unique="false">  
 	<nameList>
@@ -402,7 +402,7 @@ HOSTILE SECTORS
 	<event name="QUESTS_ENGI" min="1" max="1"/>
 	<event name="NEUTRAL_ENGI" min="5" max="7"/>
 	<event name="HOSTILE_ENGI" min="5" max="7"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="ENGI_HOME" minSector="4" unique="true"> 
 	<nameList>
@@ -432,7 +432,7 @@ HOSTILE SECTORS
 	<event name="QUESTS_ENGI" min="1" max="1"/>
 	<event name="NEUTRAL_ENGI" min="5" max="7"/>
 	<event name="HOSTILE_ENGI" min="5" max="7"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="ROCK_HOME" minSector="4" unique="true">   
 	<nameList>
@@ -464,7 +464,7 @@ HOSTILE SECTORS
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="QUESTS_ROCK" min="2" max="3"/>
 	<event name="NEUTRAL_ROCK" min="7" max="8"/>	
-</sectorDescrption>
+</sectorDescription>
 
 <!-- --------------------
 NEBULA SECTORS
@@ -494,7 +494,7 @@ NEBULA SECTORS
 	<event name="NEBULA_HOSTILE" min="5" max="6"/>
 	<event name="NEBULA_NEUTRAL" min="7" max="8"/>
 	<event name="DISTRESS_BEACON" min="1" max="3"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="SLUG_SECTOR" minSector="4" unique="false">    
 	<nameList>
@@ -526,7 +526,7 @@ NEBULA SECTORS
 	<event name="STORM_SLUG" min="1" max="3"/>
 	<event name="NEBULA_NEUTRAL_SLUG" min="3" max="5"/>
 	<event name="NEUTRAL" min="1" max="2"/>
-</sectorDescrption>
+</sectorDescription>
 
 <sectorDescription name="SLUG_HOME" minSector="6" unique="true">    
 	<nameList>
@@ -559,4 +559,4 @@ NEBULA SECTORS
 	<event name="STORM_SLUG" min="1" max="3"/>
 	<event name="NEBULA_NEUTRAL_SLUG" min="3" max="5"/>
 	<event name="NEUTRAL" min="1" max="2"/>
-</sectorDescrption>
+</sectorDescription>

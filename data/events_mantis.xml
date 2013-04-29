@@ -1,4 +1,4 @@
-﻿<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 <!--     ' ,  " " "
 			SUMMARY  - 
@@ -498,7 +498,7 @@ Special
 			<ship hostile="true"/>
 		</event>
 	</choice>
-</text>
+</event>
 <event name="MANTIS_NAMED_THIEF_DEFEAT">
 	<text>No more life signs are detected aboard their ship.  You appear to have won.</text>
 	<choice hidden="true">
@@ -532,7 +532,7 @@ Special
 				<event>
 					<text>Your haste has paid off and you are able to bring him back from the brink of death.  When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
 					<choice hidden="true">  <!-- NOTE - Add other options?-->
-						<text>Accept.</event>
+						<text>Accept.</text>
 						<event>
 							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on.  You forward it to the Pilgrim council, sure they can make good use of it.</text>
 							<augment name="RANDOM"/>

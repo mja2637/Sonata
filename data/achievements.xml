@@ -4,14 +4,14 @@
 <!------- IMPLEMENTED ----------->
 <achievement id="ACH_SECTOR_5">
 	<name>Just Getting Started</name>
-	<desc>Get to sector 5.</name>
+	<desc>Get to sector 5.</desc>
 	<img>achievements/0.png</img>
 	<multiDifficulty>1</multiDifficulty>
 </achievement>
 
 <achievement id="ACH_SECTOR_8">
 	<name>Pilgrim Base in Range</name>
-	<desc>Get to sector 8.</name>
+	<desc>Get to sector 8.</desc>
 	<img>achievements/1.png</img>
 	<multiDifficulty>1</multiDifficulty>
 </achievement>
