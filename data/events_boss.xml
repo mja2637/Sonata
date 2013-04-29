@@ -61,13 +61,13 @@ Items:
 
 
 <event name="START_BEACON_BOSS">
-	<text>The Pilgrim home fleet is just a few jumps away from here, and the massive ship that carries the Pilgrim Council. Get there quickly.</text>
+	<text>The Pilgrim home fleet and the massive ship that carries the Pilgrim Council are just a few jumps away from here. Get there quickly.</text>
 </event>
 
 <!-- the first time you arrive at the base, before the rebel fleet arrives -->
 <event name="FEDERATION_BASE">
 	<fleet>fed</fleet>
-	<text>You arrive at the heart of the last Pilgrim fleet - all the others have long since been crushed. After confirming your identity and mission, you are immediately conveyed to the Council, to whom you present the sealed envelope. </text>
+	<text>You arrive at the heart of the last Pilgrim fleet - all the other fleets have long since been crushed. After confirming your identity and mission, you are immediately conveyed to the Council, to whom you present the sealed envelope. </text>
 	<choice>
 		<text>Read it.</text>
 		<event>
@@ -161,12 +161,12 @@ Neutral
 	<ship load="REBEL_AND_AUTO" hostile="true"/>
 </event>
 <textList name="BOSS_SCOUT">
-	<text>Although this sector is still under Pilgrim control, a small scout has slipped by the fleet. You move in to engage.</text>  <!--image- Fleet background-->
-	<text>Long range scanners show this system is empty of any capital ships. Clearly it is not of strategic value. Wait... FTL signatures show a loyalist scout just jumped nearby!</text> <!--image-no fleets-->
+	<text>This sector is controlled by the Pilgrims, but an enemy scout has somehow slipped behind the lines. It is happily blowing the crap out of undefended supply dumps and repair stations; you should stop it before it causes any more havoc.</text>  <!--image- Fleet background-->
+	<text>Long range scanners show this system is devoid of capital ships; clearly it is not of strategic value. Wait...you detect an EM burst. A loyalist ship has jumped into the system!</text> <!--image-no fleets-->
 	<text>Sensors indicate that the Empire is setting up a forward Jump Beacon behind the nearby planet's moon. More importantly, a number of ships are passing by; prepare for a fight!</text> <!-- image- no fleet, empty planet-->
-	<text>Pilgrim ships are scarce in this region of space despite a number of civilian space stations. You see a small bomber squadron engaged with some Pilgrim scouts and quickly move in to assist.</text>
+	<text>Pilgrim ships are scarce in this region of space despite a number of civilian space stations. You see a small bomber squadron desperately fighting off a swarm of loyalist attackers and move in to assist.</text>
 	<text>As soon as you arrive at the beacon, a loyalist scout turns to engage. Power up the weapons!</text>
-	<text>You scan the area, finding signatures for only a small trade vessel. However, as it approaches you see the silhouette of an Empire scout!  You run the scanners again and discover their registration is fake. You move in to attack.</text>
+	<text>Your scans reveal only a small trade ship. As it draws closer, it turns out to be an Empire scout broadcasting a false signature! Bastards...you move in to attack</text>
 </textList>
 
 <event name="BOSS_SCOUT_RESCUE">  <!-- player rescues weakened fed/civilian ship from a rebel scout - fight with rescue-->

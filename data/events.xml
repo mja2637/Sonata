@@ -633,7 +633,7 @@ item - Dust + that thing  -->
 
 <eventList name="HUMAN_EXP_4">
 	<event>
-		<text>"Ok, you know what to do. Four shifts, Bravo on preventative maintenance; 5, get us ready to jump in 8 hours." Your crew has been together for months now, and your crew goes about their duties with rehearsed precision. You begin to walk from the bridge to the armory when he falls in beside you. "Fancy a smoke?" He raises an eyebrow.</text>
+		<text>"Ok, you know what to do. Four shifts, Bravo on preventative maintenance; get us ready to jump in 8 hours." Your crew has been together for months now, and works with rehearsed precision. You're walking from the bridge to the armory when he falls in beside you. "Fancy a smoke?" He raises an eyebrow.</text>
 		<choice>
 			<text>"Sure."</text>
 			<event>
@@ -680,22 +680,22 @@ item - Dust + that thing  -->
 				<choice>
 					<text>Raise your glass.</text>
 					<event>
-						<text>"A toast to the one main who's kept us together, who's kept us alive. To the one man who represents the best of ALL humanity - and to the one man who might be able to bring peace to it. A toast to our Captain!" The applause of your small crew sounds louder to your ears than an entire stadium of fans. You blush.</text>					
+						<text>"A toast to the one who's kept us together, who's kept us alive. To the one who represents the best of ALL humanity - and to the one person who might be able to bring peace to it. A toast to our Captain!" The applause of your small crew sounds louder to your ears than an entire stadium of fans. You blush.</text>					
 					</event>
 				</choice>
 			</event>
 		</choice>		
 	</event>
 	<event>
-		<text>You've almost gotten used to your nightly booze sessions with him; I guess even bigotry grows on you after a while. Still, as you get to know him, you have to give him some grudging respect - he's been through shit that would have unmade. He's a tough, old, wise guy - and right now, he's handing you a shot.</text>
+		<text>You've almost gotten used to your nightly booze sessions with him; I guess even bigotry grows on you after a while. You have to give him some grudging respect - he's been some through shit that would have unmade a lesser man. He's a tough, old, wise asshole - and right now, he's offering you a shot.</text>
 		<choice>
-			<text>"Salut!"</text>
+			<text>"Jai ho!"</text>
 			<event>
 				<text>You down the shot, and he erupts in song. "That was a crazy game of poker! I lost it all...but someday I'll be back again and I, never to fall. Never to fall!" You wonder if there's any meaning to the song - he has the damndest habit of mixing politics and pop culture.</text>
 				<choice>
 					<text>"You're damn right! Pilgrims never to fall!"</text>
 					<event>
-						<text>You notice that he's not his normal cheery, patriotic self - he looks downright sad. "Humanity, son. We wanted to make things better - we didn't want to leave." You furrow your brow as he continues. "Even if we win the civil war, we still lose. We still haven't saved humanity. We've divided ourselves." Regaining his composure, he breaks back into song. "I say revolution, and you say jah! I say revolution, and you say jah jah jah!"</text>	
+						<text>You notice that he's not his normal cheery, patriotic self - he looks downright sad. "Humanity, son. We wanted to make things better - we didn't want to secede." You furrow your brow as he continues. "Even if we win this civil war, we still lose. We still haven't saved humanity. We've divided ourselves." Regaining his composure, he breaks back into song. "I say revolution, and you say jah! I say revolution, and you say jah jah jah!"</text>	
 					</event>
 				</choice>
 			</event>

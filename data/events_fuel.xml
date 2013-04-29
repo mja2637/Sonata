@@ -29,7 +29,7 @@ Sector Specific:
 <!-- NO FUEL stuff -->
 
 <event name="NO_FUEL_FLEET">
-	<text>The loyalist fleet has caught up to you. You detect significant fuel reserves in one of their closer fighters and move in to attack. Maybe you can still pull this off.</text>
+	<text>The loyalist fleet has caught up to you. You detect significant fuel reserves in one of their fleet escorts and move in to attack. Maybe you can still pull this off.</text>
 	<ship load = "REBEL_FLEET_FUEL" hostile ="true"/>
 	<fleet>rebel</fleet>
 </event>
