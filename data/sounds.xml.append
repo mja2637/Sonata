@@ -24,6 +24,7 @@
 
 <!-- Soundtrack files -->
 <music>
+<!--perfect_tomorrow.mp3-->
 	<track>
 		<name>title</name>
 		<explore>proteus_fading.ogg</explore>
@@ -62,7 +63,28 @@
 		<name>home</name>
 		<explore>hw_kharak.mp3</explore>
 		<combat>hw_raiders.mp3</combat>
+	</track>
+	<track>
+		<name>home2</name>
+		<explore>perfect_tomorrow.mp3</explore>
+		<combat>target_practice.mp3</combat>
 	</track>	
+	<track>
+		<name>rough2</name>
+		<explore>meltdown.mp3</explore>
+		<combat>filtered_water.mp3</combat>
+	</track>
+	<track>
+		<name>explore</name>
+		<explore>black_wind.mp3</explore>
+		<combat>the_ripper.mp3</combat>
+	</track>
+	<track>
+		<name>explore2</name>
+		<explore>smooth_sailing.mp3</explore>
+		<combat>cue_me.mp3</combat>
+	</track>
+	
 	<track>
 		<name>laststand1</name>
 		<explore>mmpr_theme.mp3</explore>

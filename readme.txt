@@ -29,12 +29,18 @@ The Pilgrims use the same weapons that the United Earth and most other humans do
 SOPHON
 The Sophon are a race of highly intelligent, highly cultured scientists with little actual government that seem to do just fine, nevertheless. Relations between the Sophon and humans have always been at least cordial, and usually are quite friendly; the Sophon government has elected not to recognize the Pilgrims diplomatically in interests of their relationship with the United Empire, but are certainly not on bad terms with the Pilgrims. Most Sophon are concerned with nothing but researching the hell out of whatever pleases them.
 
-The Sophons use beam and pulse lasers.
+The Sophon use beam and pulse lasers.
 
 SOWER
 The Sower were created by an ancient race of beings called the Endless as advanced robotic terraformers, preparing worlds for future colonization. The Endless have long since disappeared, but these immense robots still fulfill their programming. Whether individual Sower - or possibly the race as a whole - are merely intelligent or actually sentient is unknown.
 
 The Sower use massive cannon and autocannon.
+
+HISSHO
+A highly competitive race of tribal warriors, the Hissho resemble feathered pterodactyls. They are violent, but honorable, modern, and civilized.
+
+AUTOMATONS
+A race of organic robots, at one with nature. A minor galactic power with relatively primitive technology. Under conquest by the Hissho.
 
 ENDLESS
 An ancient race of beings with godlike technological prowess, long extinct. Many religions believe that they created the races that now populate the galaxy, or at least some of them: the Sower and Sophon. It is accepted as fact that the Endless created Dust, the miraculous material used for currency and technology across the galaxy. Humans are sharpely divided: some, including the Pilgrims, believe that the Endless created humans and worship them as gods. Some humans don't believe that. 
@@ -147,10 +153,12 @@ https://github.com/mja2637/Sonata/archive/master.zip
 7a
 		  - Restored boss dev work
 		  - Fixed several references to "United Earth" instead of "United Empire"
+		  - Changed Engi/Mantis references to Automaton/Hissho
 		  - Added UE Frigate enemy
 		  - Added SOPHON_A: "Verne" (by DCChuckles)
 		  - Added custom UE weapon sprites (all)
 		  - Added custom projectiles for all current weapons
+		  - Added 8 new music tracks
 		  - Tweaked Ranger mount points
 		  - Event edits
 		  - Shrank mini ship icons to avoid overlapping border

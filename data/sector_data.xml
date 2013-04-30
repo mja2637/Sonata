@@ -40,6 +40,7 @@ STRUCTURE SECTORS
 	</nameList>
 	<trackList>
 		<track>home</track>
+		<track>home2</track>
 		<track>bump</track>
 		<track>hectic</track>
 	</trackList>
@@ -90,9 +91,10 @@ CIVILIAN SECTORS
 		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
-		<track>home</track>
+		<track>home2</track>
 		<track>bump</track>
-		<track>hectic</track>
+		<track>explore</track>
+		<track>explore2</track>
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
@@ -111,9 +113,10 @@ CIVILIAN SECTORS
 		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
-		<track>home</track>
+		<track>home2</track>
 		<track>bump</track>
-		<track>hectic</track>
+		<track>explore</track>
+		<track>explore2</track>
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
@@ -132,9 +135,10 @@ CIVILIAN SECTORS
 		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
-		<track>home</track>
+		<track>home2</track>
 		<track>bump</track>
-		<track>hectic</track>
+		<track>explore</track>
+		<track>explore2</track>
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
@@ -153,9 +157,10 @@ CIVILIAN SECTORS
 		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
-		<track>home</track>
+		<track>home2</track>
 		<track>bump</track>
-		<track>hectic</track>
+		<track>explore</track>
+		<track>explore2</track>
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
@@ -177,6 +182,7 @@ CIVILIAN SECTORS
 		<track>garden</track>
 		<track>bump</track>
 		<track>cosmos</track>
+		<track>explore</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="3"/>
@@ -208,6 +214,7 @@ CIVILIAN SECTORS
 		<track>cosmos</track>
 		<track>garden</track>
 		<track>bump</track>
+		<track>explore</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="4"/>
@@ -236,10 +243,11 @@ CIVILIAN SECTORS
 	<nameList>
 		<name>Sower Controlled Sector</name>
 	</nameList>
-	<trackList>
-		<track>garden</track>
+	<trackList>		
 		<track>wasteland</track>
 		<track>voidPirate</track>
+		<track>rough2</track>
+		<track>explore</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="0"/>
@@ -279,8 +287,9 @@ HOSTILE SECTORS
 	</nameList>
 	<trackList>
 		<track>rough</track>
+		<track>rough2</track>
 		<track>voidPirate</track>
-		<track>bump</track>
+		<track>hectic</track>
 	</trackList>
 	<startEvent>START_BEACON_PIRATE</startEvent>
 	<event name="STORE_PIRATE" min="1" max="2"/>
@@ -302,6 +311,7 @@ HOSTILE SECTORS
 	</nameList>
 	<trackList>
 		<track>rough</track>
+		<track>rough2</track>
 		<track>voidEmpire</track>
 		<track>bump</track>
 	</trackList>	
@@ -324,9 +334,9 @@ HOSTILE SECTORS
 		<name>Hissho Controlled Sector</name>
 	</nameList>
 	<trackList>
-		<track>hectic</track>
-		<track>debris</track>
+		<track>hectic</track>		
 		<track>rough</track>
+		<track>rough2</track>
 		<track>voidPirate</track>
 	</trackList>
 	<rarityList>
@@ -355,6 +365,7 @@ HOSTILE SECTORS
 		<track>hectic</track>
 		<track>debris</track>
 		<track>rough</track>
+		<track>rough2</track>
 		<track>voidPirate</track>
 	</trackList>
 	<rarityList>
@@ -380,10 +391,10 @@ HOSTILE SECTORS
 	<nameList>
 		<name>Automaton Controlled Sector</name>
 	</nameList>
-	<trackList>
-		<track>engi</track>
-		<track>mantis</track>
+	<trackList>		
 		<track>garden</track>
+		<track>rough2</track>
+		<track>home2</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="1"/>
@@ -410,9 +421,9 @@ HOSTILE SECTORS
 	</nameList>
 	<trackList>
 		<track>engi</track>
-		<track>mantis</track>
 		<track>garden</track>
-		<track>milkyway</track>
+		<track>rough2</track>
+		<track>home2</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="1"/>
@@ -439,7 +450,7 @@ HOSTILE SECTORS
 		<name>Sower Forgeworlds</name>
 	</nameList>
 	<trackList>
-		<track>rock</track>
+		<track>rough2</track>
 		<track>garden</track>
 		<track>wasteland</track>
 		<track>voidPirate</track>		
