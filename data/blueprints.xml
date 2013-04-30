@@ -3,18 +3,14 @@
 <!-- Customization possibilities -->
 
 <blueprintList name="STARTING_WEAPONS">
-	<name>LASER_BURST_1</name>
-	<name>LASER_BURST_2</name>
-	<name>MISSILES_2_PLAYER</name>
-	<name>BEAM_LONG</name>
 	<name>ION_1</name>
 	<name>BOMB_1</name>
-	<name>LASER_BURST_3</name>
-	<name>LASER_HEAVY_1</name>
-	<name>MISSILES_3</name>
-	<name>BEAM_1</name>
-	<name>BEAM_FIRE</name>
-	<name>LASER_HULL_2</name>
+	<name>BASIC_MISSILE_1</name>
+	<name>BASIC_MISSILE_2</name>
+	<name>BASIC_LASER_1</name>
+	<name>BASIC_LASER_2</name>
+	<name>BASIC_KINETIC_1</name>
+	<name>BASIC_KINETIC_2</name>
 	<name>BOMB_FIRE</name>
 	<name>BOMB_ION</name>
 	<name>BOMB_HEAL</name>
@@ -3028,8 +3024,8 @@
 
 
 <augBlueprint name="NANO_MEDBAY">
-	<title>Engi Med-bot Dispersal</title>
-	<desc>Floods the ship with Engi nano med-bots, healing the crew even when they are outside of the med-bay (at a reduced speed).</desc>
+	<title>Automaton Med-bot Dispersal</title>
+	<desc>Floods the ship with Automaton nano med-bots, healing the crew even when they are outside of the med-bay (at a reduced speed).</desc>
 	<cost>60</cost>
 	<bp>12</bp>
 	<rarity>0</rarity>
@@ -3433,10 +3429,10 @@
 <!-- LAYOUT = DEFAULT --> 
 <!-- SHIP ID = 2 --> 
 <shipBlueprint name="PLAYER_SHIP_MANTIS" layout="mantis_cruiser" img="mantis_cruiser"> 
-	<class>Mantis Cruiser</class>
-	<name>The Gila Monster</name>
-	<unlock>The famous Mantis thief, KazaaakplethKilik, owns this ship.  You'll have to "convince" him to help you.</unlock>
-	<desc>This warship is designed to enhance it's crew for close combat missions.</desc>
+	<class>Hissho Cruiser</class>
+	<name>???</name>
+	<unlock>-</unlock>
+	<desc>This warship is not yet implemented.</desc>
 	<systemList>
 		<pilot power="1" room="7" start="true"/>
 		<doors power="1" room="14" start="true"/>
@@ -3468,10 +3464,10 @@
 <!-- LAYOUT = ALTERNATE --> 
 <!-- SHIP ID = 2 -->    
 <shipBlueprint name="PLAYER_SHIP_MANTIS_2" layout="mantis_cruiser_2" img="mantis_cruiser_2"> 
-	<class>Mantis Cruiser</class>
+	<class>Hissho Cruiser</class>
 	<name>The Basilisk</name>
-	<unlock>The famous Mantis thief, KazaaakplethKilik, owns this ship.  You'll have to "convince" him to help you.</unlock>
-	<desc>Ship description here</desc>
+	<unlock>-</unlock>
+	<desc>This warship is not yet implemented.</desc>
 	<systemList>
 		<pilot power="1" room="8" start="true"/>
 		<doors power="1" room="15" start="true"/>
@@ -3526,8 +3522,8 @@
 <shipBlueprint name="PLAYER_SHIP_STEALTH" layout="stealth" img="stealth">
 	<class>Stealth Cruiser</class>
 	<name>The Nesasio</name>
-	<unlock>This ship is being built near the Engi homeworlds.  To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
-	<desc>Constructed for the Federation by the Engi, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
+	<unlock>This ship is being built near the Automaton homeworlds.  To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
+	<desc>Constructed for the Pilgrims by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
 	<systemList>
 		<pilot power="1" room="0" start="true"/>
 		<doors power="1" room="14" start="true" img="room_doors_2"/>
@@ -3564,8 +3560,8 @@
 <shipBlueprint name="PLAYER_SHIP_STEALTH_2" layout="stealth_2" img="stealth_2">
 	<class>Stealth Cruiser</class>
 	<name>DA-SR 12</name>  <!-- direct action - stealth reconnaissance-->
-	<unlock>This ship is being built near the Engi homeworlds.  To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
-	<desc>Constructed for the Federation by the Engi, this ship is designed to uses cloaking technology and speed to get behind enemy lines.</desc>
+	<unlock>This ship is being built near the Automaton homeworlds.  To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
+	<desc>Constructed for the Pilgrims by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
 	<systemList>
 		<pilot power="1" room="9" start="true" img="room_pilot_2">
 			<slot>
@@ -3729,51 +3725,51 @@
 <!-- LAYOUT = DEFAULT --> 
 <!-- SHIP ID = 3 -->
 <shipBlueprint name="PLAYER_SHIP_CIRCLE" layout="circle_cruiser" img="circle_cruiser">
-	<class>Engi Cruiser</class>
-	<name>The Torus</name>
-	<unlock>To unlock this Engi ship you'll need to get to the 5th sector.</unlock>
-	<desc>Although it may look like a pile of junk loosly held together, this well designed ship relies on drones and ion weaponry.</desc>
-	<systemList>  
+	<class>Automaton Galley</class>
+	<name>Talavaara</name>
+	<unlock>To unlock this Automaton ship you'll need to get to the 5th sector.</unlock>
+	<desc>This relatively primitive ship is nonetheless cunningly designed by a promising species brought to the brink of extinction by war. The spirit of the ship helps its occupants cling fiercely to life.</desc>
+	<systemList>
 		<pilot power="1" room="8" start="true"/>    
 		<doors power="1" room="5" start="true" img="room_doors_4"/>  
 		<sensors power="1" room="4" start="true" img="room_sensors_4"/>   
-		<oxygen power="1" room="15" start="true" img="room_oxygen_4"/>
-		<engines power="2" room="2" start="true" img="room_engines_2"/> 
+		<oxygen power="2" room="15" start="true" img="room_oxygen_4"/>
+		<engines power="1" room="2" start="true" img="room_engines_2"/> 
 		<shields power="2" room="3" start="true" img="room_shields_4"/> 
-		<weapons power="4" room="11" start="true"/> 
-		<drones power="3" room="0" start="true"/> 
-		<medbay power="1" room="7" start="true"/>   
+		<weapons power="3" room="11" start="true"/> 
+		<drones power="2" room="0" start="true"/> 
+		<medbay power="2" room="7" start="true"/>   
 		<teleporter power="1" room="9" start="false"/>
 		<cloaking power="1" room="12" start="false" img="room_cloaking_4"/> 
 	</systemList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
-	<weaponList count="1" missiles="10">
-		<weapon name="UE_DRIVER_3"/>
+	<weaponList count="2" missiles="0">
+		<weapon name="ION_2"/>
+		<weapon name="BASIC_LASER_1"/>
 	</weaponList>
 	<droneList count="1" drones="15">
 		<drone name="COMBAT_1"/>
 	</droneList>
 	<aug name="NANO_MEDBAY"/>
-	<health amount="30"/>
-	<maxPower amount ="14"/> 
-	<crewCount amount = "2" class="engi"/>
-	<crewCount amount = "1" class="human"/>
+	<health amount="28"/>
+	<maxPower amount ="10"/> 
+	<crewCount amount = "2" class="engi"/>	
 </shipBlueprint>
 
 <!-- ENGI SHIP -->
 <!-- LAYOUT = ALT --> 
 <!-- SHIP ID = ???? -->
 <shipBlueprint name="PLAYER_SHIP_CIRCLE_2" layout="circle_cruiser_2" img="circle_cruiser_2">
-	<class>Engi Cruiser</class>
-	<name>The Vortex</name>
-	<unlock>To unlock this Engi ship you'll need to get to the 5th sector.</unlock>
-	<desc>Although it may look like a pile of junk loosly held together, this well designed ship relies on drones and ion weaponry.</desc>
+	<class>Automaton Galley</class>
+	<name>Svihkaara</name>
+	<unlock>To unlock this Automaton ship you'll need to get to the 5th sector.</unlock>
+	<desc>The Automatons have upgraded this ship with black market Sophon weaponry and drones provided secretly by the United Empire, scavenging power and cannibalizing systems wherever they can.</desc>
 	<systemList>  
 		<pilot power="1" room="12" start="true"/>  
 		<doors power="1" room="8" start="true"/>  
 		<sensors power="1" room="2" start="false"/>  
-		<oxygen power="1" room="5" start="true" img="room_oxygen_6"/>  
+		<oxygen power="2" room="5" start="true" img="room_oxygen_6"/>  
 		<engines power="1" room="0" start="true" img="room_engines_2"/>  
 		<shields power="2" room="10" start="true" img="room_shields_7">
 			<slot>
@@ -3781,14 +3777,14 @@
 				<number>1</number> 
 			</slot>
 		</shields>  
-		<weapons power="3" room="1" start="true" img="room_weapons_8">  
+		<weapons power="2" room="1" start="true" img="room_weapons_8">  
 			<slot>
 				<direction>up</direction>
 				<number>1</number> 
 			</slot>
 		</weapons>
 		<drones power="4" room="7" start="true" img="room_drones_6"/>  
-		<medbay power="1" room="6" start="true" img="room_medbay_6">
+		<medbay power="2" room="6" start="true" img="room_medbay_6">
 			<slot>
 				<number>-2</number>
 			</slot>
@@ -3798,19 +3794,18 @@
 	</systemList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
-	<weaponList count="2" missiles="0">
-		<weapon name="ION_2"/>
-		<weapon name="UE_GAUSS_2"/>
+	<weaponList count="1" missiles="0">
+		<weapon name="SOPHON_LASER_2"/>
 	</weaponList>
-	<droneList count="3" drones="6">
-		<drone name="BATTLE"/>
-		<drone name="REPAIR"/>
-		<drone name="REPAIR"/>
+	<droneList count="2" drones="14">
+		<drone name="COMBAT_ION"/>
+		<drone name="COMBAT_ION"/>
 	</droneList>
-	<aug name="DRONE_SPEED"/>
-	<health amount="30"/>
-	<maxPower amount ="9"/> 
+	<health amount="25"/>
+	<maxPower amount ="11"/> 
 	<crewCount amount = "1" class="engi"/>
+	<crewCount amount = "1" class="human"/>
+	<crewCount amount = "1" class="mantis"/>
 	<shieldImage>circle_cruiser</shieldImage>
 	<cloakImage>circle_cruiser</cloakImage>
 </shipBlueprint>
@@ -3829,18 +3824,18 @@
 <!-- LAYOUT = DEFAULT --> 
 <!-- SHIP ID = 4 -->    
 <shipBlueprint name="PLAYER_SHIP_FED" layout="fed_cruiser" img="fed_cruiser">
-	<class>Federation Cruiser</class>
-	<name>The Osprey</name>
-	<unlock>Beat the boss to unlock this advanced Federation cruiser.</unlock>
-	<desc>This ship features the latest in Federation technology: an advanced beam weapon that pierces through shields!</desc>
+	<class>Pilgrim Destroyer</class>
+	<name>John Paul Jones</name>
+	<unlock>Beat the boss to unlock this advanced Pilgrim destroyer.</unlock>
+	<desc>One of very few new-build Pilgrim ships, this modern destroyer was designed with help from Sophon sympathizers.</desc>
 	<systemList>
-		<pilot power="1" room="4" start="true"/>  
+		<pilot power="2" room="4" start="true"/>  
 		<doors power="1" room="8" start="true" img="room_doors_5"/>  
 		<sensors power="1" room="13" start="true"/>  
 		<oxygen power="1" room="9" start="true" img="room_oxygen_4"/>
 		<engines power="2" room="3" start="true"/>
 		<shields power="2" room="11" start="true"/>
-		<weapons power="2" room="15" start="true"/>
+		<weapons power="4" room="15" start="true"/>
 		<drones power="2" room="16" start="false" img="room_drones_5"/>
 		<medbay power="1" room="10" start="true"/>  
 		<teleporter power="1" room="1" start="false"/>  
@@ -3849,27 +3844,26 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="1" missiles="5">
-		<weapon name="BASIC_LASER_3"/>
+	<weaponList count="2" missiles="10">
+		<weapon name="BASIC_KINETIC_3"/>
+		<weapon name="ION_MISSILE"/>
 	</weaponList>
 	<droneList drones="2"/>
 	<droneList count="0" drones="0"/>
 	<health amount="30"/>
-	<maxPower amount ="8"/> 
-	<crewCount amount = "1" class="human"/>
-	<crewCount amount = "1" class="mantis"/>
-	<crewCount amount = "1" class="rock"/>
-	<crewCount amount = "1" class="engi"/>
+	<maxPower amount ="10"/> 
+	<crewCount amount = "2" class="human"/>
+	<crewCount amount = "1" class="energy"/>
 </shipBlueprint>
 
 <!-- FEDERATION SHIP -->
 <!-- LAYOUT = ALTERNATE --> 
 <!-- SHIP ID = 4 -->    
 <shipBlueprint name="PLAYER_SHIP_FED_2" layout="fed_cruiser_2" img="fed_cruiser_2">
-	<class>Federation Cruiser</class>
-	<name>Nisos</name>
-	<unlock>Beat the boss to unlock this advanced Federation cruiser.</unlock>
-	<desc>This ship features the latest in Federation technology: an advanced beam weaponry that pierces through shields!</desc>
+	<class>Pilgrim Destroyer</class>
+	<name>Erasmus</name>
+	<unlock>Beat the boss to unlock this advanced Pilgrim destroyer.</unlock>
+	<desc>One of very few new-build Pilgrim ships, this modern destroyer was designed with help from Sophon sympathizers.</desc>
 	<systemList>
 		<pilot power="1" room="7" start="true" img="room_pilot_3">
 			<slot>
@@ -3887,7 +3881,7 @@
 				<number>1</number>
 			</slot>
 		</shields>
-		<weapons power="2" room="4" start="true" img="room_weapons_2"/>
+		<weapons power="3" room="4" start="true" img="room_weapons_2"/>
 		<drones power="2" room="2" start="false" img="room_drones_11"/>
 		<medbay power="1" room="10" start="true" img="room_medbay_5">
 			<slot>
@@ -3895,21 +3889,20 @@
 			</slot>
 		</medbay>
 		<teleporter power="1" room="5" start="false"/>  
-		<artillery power="2" room="12"/>
+		<artillery power="1" room="12"/>
 		<!--<cloaking power="1" room="12" start="true" img="room_cloaking_5"/>  -->
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="2" missiles="9">
+	<weaponList count="3" missiles="9">
 		<weapon name="SOPHON_PULSE_1"/>
 		<weapon name="UE_DRIVER_1"/>
+		<weapon name="ION_1"/>
 	</weaponList>
 	<droneList drones="0"/>
 	<health amount="30"/>
-	<maxPower amount ="9"/>
-	<crewCount amount = "1" class="human"/>
-	<crewCount amount = "1" class="energy"/>
-	<crewCount amount = "1" class="slug"/>
+	<maxPower amount ="10"/>
+	<crewCount amount = "4" class="human"/>
 	<shieldImage>fed_cruiser</shieldImage>
 	<cloakImage>fed_cruiser</cloakImage>
 </shipBlueprint>
@@ -4101,10 +4094,6 @@
 	<shieldImage>energy_cruiser</shieldImage>
 	<cloakImage>energy_cruiser</cloakImage>
 </shipBlueprint>
-
- 
- 
- 
 
 <!--  
    ***********************

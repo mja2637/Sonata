@@ -1,7 +1,7 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--   
-			SUMMARY  - 
+<!-- 
+			SUMMARY - 
 A list of all main events to be called by lists
 	does not include sub-events)
 	
@@ -13,7 +13,7 @@ Structure:
 Item:	
 	ZOLTAN_FREE_AUGMENT
 	ZOLTAN_FREE_MAP
-	ZOLTAN_ODD_MOON   (ZOLTAN_ODD_MOON_CHEK)
+	ZOLTAN_ODD_MOON (ZOLTAN_ODD_MOON_CHEK)
 	
 Hostile:
 	ZOLTAN_FIGHT
@@ -23,7 +23,7 @@ Hostile:
 
 	
 Neutral:
-	ZOLTAN_LIFERAFT  (ZOLTAN_LIFERAFT_HIRE)
+	ZOLTAN_LIFERAFT (ZOLTAN_LIFERAFT_HIRE)
 	
 Environmnt:
 --->
@@ -100,7 +100,7 @@ Environmnt:
 	<event load="STORM_ZOLTAN_SUPPLY_CHOICE"/>
 	<event load="NEBULA_EMPTY"/>
 	<event load="NEBULA_EMPTY"/>
-	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_REBEL"/> 
 	<event load="NEBULA_AUTO"/>
 </eventList>
 
@@ -127,11 +127,11 @@ Environmnt:
 <textList name="STORE_ZOLTAN">
 	<text>The IHTG has set up a joint shop with a group of Sophon machinists. Although it is difficult to tie most Sophon down to a single trade, these are mere engineers and applied scientists, and likely have little opportunity elsewhere in Sophon society.</text>
 	<text>This planet, a backwater otherwise, is known as one of the more capitalist areas in Sophon territory. Here, you can find Sophon who condenscend to haggle, trade, and build equipment for profit rather than fun.</text>
-	<text>A faint IFF signature - a private encryption scheme. A small team of Mantises (Mantii?) has hunkered down on a small moon. They're selling goods, which were obtained illegally as a matter of course. This being bat country, you don't want to stop here; if they've just come off a fresh kill, though, you may get an honest trade.</text>
+	<text>A faint IFF signature - a private encryption scheme. A small team of Hissho has hunkered down on a small moon. They're selling goods, which were obtained illegally as a matter of course. This being bat country, you don't want to stop here; if they've just come off a fresh kill, though, you may get an honest trade.</text>
 	
 	<text>The IHTG has set up a joint shop with a group of Sophon machinists. Although it is difficult to tie most Sophon down to a single trade, these are mere engineers and applied scientists, and likely have little opportunity elsewhere in Sophon society.</text>
 	<text>This planet, a backwater otherwise, is known as one of the more capitalist areas in Sophon territory. Here, you can find Sophon who condenscend to haggle, trade, and build equipment for profit rather than fun.</text>
-	<text>A faint IFF signature - a private encryption scheme. A small team of Mantises (Mantii?) has hunkered down on a small moon. They're selling goods, which were obtained illegally as a matter of course. This being bat country, you don't want to stop here; if they've just come off a fresh kill, though, you may get an honest trade.</text>
+	<text>A faint IFF signature - a private encryption scheme. A small team of Hissho has hunkered down on a small moon. They're selling goods, which were obtained illegally as a matter of course. This being bat country, you don't want to stop here; if they've just come off a fresh kill, though, you may get an honest trade.</text>
 </textList>
 
 <event name="NOTHING_ZOLTAN">
@@ -208,11 +208,11 @@ Environmnt:
 ------------>
 
 <event name="ZOLTAN_DISTRESS_MANTIS" unique="true">
-	<text>Your jump interrupts a Sophon security ship as it follows a Mantis pirate into an asteroid field. They message you, "This is a delicate matter - please, don't feel the need to assist."</text>
+	<text>Your jump interrupts a Sophon security ship as it follows a Hissho pirate into an asteroid field. They message you, "This is a delicate matter - please, don't feel the need to assist."</text>
 	<environment type="asteroid"/>
 	<distressBeacon/>
 	<choice hidden="true">
-		<text>Interfere and save the Mantis ship.</text>
+		<text>Interfere and save the Hissho ship.</text>
 		<event>
 			<text>A 'delicate matter?' Something's up. You set off for the heart of the asteroid field and engage the Sophon there.</text>
 			<ship load="ZOLTAN_SHIP_SAVE_MANTIS1" hostile="true"/>
@@ -221,7 +221,7 @@ Environmnt:
 	<choice hidden="true">
 		<text>Interfere and help the Sophon ship.</text>
 		<event>
-			<text>You overtake the Sophon and catch up with the Mantis ship in the asteroid belt. Humans and Mantis have been killing each other for decades, which makes it a tradition. You'll be damned if you'll buck position.</text>
+			<text>You overtake the Sophon and catch up with the Hissho ship in the asteroid belt. Humans and Hissho have been killing each other for decades, which makes it a tradition. You'll be damned if you'll buck position.</text>
 			<environment type="asteroid"/>
 			<ship load="ZOLTAN_SHIP_SAVE_MANTIS2" hostile="true"/>
 		</event>
@@ -344,7 +344,7 @@ Environmnt:
 			<choice hidden="true" req="human">
 				<text>Attack the United Empire ship, but insult them first.</text>
 				<event>
-					<text>"Tumhara matta chode hain! I am of you motherfucking loyalists in this motherfucking game! Yob tvoyu maht, nekulturniy suka! Go suck up a Mantis, you socialist panty-wasted scruffy-looking nerf herders!" You may not have accomplished much with your words, but damn if that didn't feel good.</text>
+					<text>"Tumhara matta chode hain! I am sick of you motherfucking loyalists in this motherfucking game! Yob tvoyu maht, nekulturniy suka! Go suck up a Hissho, you socialist panty-wasted scruffy-looking nerf herders!" You may not have accomplished much with your words, but damn if that didn't feel good.</text>
 					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
 				</event>
 			</choice>			
@@ -494,12 +494,12 @@ Environmnt:
 </textList>
 
 <event name="ZOLTAN_MANTIS" unique="true">
-	<text>You pick up the last broadcast from a rupturing Sophon freighter. A calm voice states: "Mantis attack highly effective; 87 percent chance of terminal reactor-" You're interrupted by fire off the port bow!</text>
+	<text>You pick up the last broadcast from a rupturing Sophon freighter. A calm voice states: "Hissho attack highly effective; 87 percent chance of terminal reactor-" You're interrupted by fire off the port bow!</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 </event>
 
 <event name="ZOLTAN_ENGI" unique="true">
-	<text>You jump into a debris field that used to be a small Sophon vessel. Sensors warn that its putative attacker - an Engi combat craft - has locked weapons on you. You suspect one of the false-flag attacks which Mantis are notorious for, but the details are unimportant with the ship fast bearing down on you.</text>
+	<text>You jump into a debris field that used to be a small Sophon vessel. Sensors warn that its putative attacker - an Automaton combat craft - has locked weapons on you. You suspect one of the false-flag attacks which Hissho are notorious for, but the details are unimportant with the ship fast bearing down on you.</text>
 	<ship load="ENGI_SHIP" hostile="true"/>
 </event>
 
@@ -516,7 +516,7 @@ Environmnt:
 	Events that could have a fight
 ------------>
 
-<event name="ZOLTAN_LIFERAFT" unique="true">  <!-- ALSO A QUEST!!-->
+<event name="ZOLTAN_LIFERAFT" unique="true"> <!-- ALSO A QUEST!!-->
 	<img back="DEEP_SPACE" planet="NONE"/>
 	<text>You pick up a Sophon life raft floating in deep space. Its inhabitant asks you to retake her ship from the pirates who recently commandeered it. "It is, of course, critical," she concludes, "that you not destroy my vessel in the process."</text>
 	<ship load="ZOLTAN_LIFERAFT" hostile="false"/>
@@ -580,7 +580,7 @@ Environmnt:
 	<choice hidden="true">
 		<text>"They were wise."</text>
 		<event>
-			<text>"They lost sight of what they didn't know! Their arrogance grew with their power!" The wormhole pulses and a confused, angry Mantis ship hurtles toward you!</text>
+			<text>"They lost sight of what they didn't know! Their arrogance grew with their power!" The wormhole pulses and a confused, angry Hissho ship hurtles toward you!</text>
 			<ship load="ZOLTAN_RIFT_MANTIS" hostile="true"/>
 		</event>
 	</choice>
@@ -696,7 +696,7 @@ Environmnt:
 	</event>
 </eventList>
 
-<event name="STORM_ZOLTAN_SUPPLY_CHOICE" unique="true">  <!-- can also use this with other sectors?-->
+<event name="STORM_ZOLTAN_SUPPLY_CHOICE" unique="true"> <!-- can also use this with other sectors?-->
 	<img back="NEBULA" planet="NONE"/>
 	<text>You spy two pirate ships lurking in the nebula here. They remain unaware of your presence; you're able get your scanners to at least identify their cargo: One is carrying the fuel supplies, the other the ammunition. They begin to drift away from each other in the storm.</text>
 	<environment type="storm"/>
@@ -744,7 +744,7 @@ Environmnt:
 </event>
 
 <event name="ZOLTAN_BOARDERS_MANTIS">
-	<text>The Mantis outcasts sometimes make the mistake of taking the Sophon for easy game, which may explain their presence in this normally peaceful sector. A Pilgrim ship is a much more attractive target, however. A scout moves in to attack while a boarding party beams aboard from a nearby transport!</text>
+	<text>The Hissho outcasts sometimes make the mistake of taking the Sophon for easy game, which may explain their presence in this normally peaceful sector. A Pilgrim ship is a much more attractive target, however. A scout moves in to attack while a boarding party beams aboard from a nearby transport!</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<choice>
 		<text>Continue...</text>
@@ -753,7 +753,7 @@ Environmnt:
 		</event>
 	</choice>	
 	<choice hidden="true" req="teleporter">
-		<text>(Teleporter) Beam 'em into space. Pop goes the Mantis.</text>
+		<text>(Teleporter) Beam 'em into space. Pop goes the Hissho.</text>
 		<event/>
 	</choice>	
 </event>

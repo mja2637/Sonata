@@ -1,6 +1,6 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--  
+<!-- 
 			SUMMARY - 
 A list of all main events to be called by lists
 	does not include sub-events)
@@ -139,7 +139,7 @@ Boarders:
 	<text>As soon as you arrive, a small ship de-cloaks behind yours. You immediately power up the shields and weapons, but they continue on their trajectory unimpressed. You try to calm your nerves.</text>
 	<text>A small pirate ship messages you, "That sure is a shiny ship you got there." You fire a warning shot across their bow and they respond, "Hey! No need for violence! It was just a comment..."</text>
 	<text>The only thing within scanning range is an old abandoned mining structure and a resupply station. They appear to have been picked clean by marauders.</text>
-	<text>You arrive to have a small fleet of Engi ships target you with a message, "Piracy results in negative societal impact. Not permitted." You assure them of your honest intentions and they allow you to pass.</text>
+	<text>You arrive to have a small fleet of Automaton ships target you with a message, "Piracy results in negative societal impact. Not permitted." You assure them of your honest intentions and they allow you to pass.</text>
 </textList>
 
 
@@ -207,7 +207,7 @@ Boarders:
 	<text>You arrive at the next beacon only to immediately be hailed by a small shuttle. "Help us! We are being attacked by pirates!"</text>
 	<text>You come out of the jump to see laser blasts coming from the other side of the beacon. It looks like someone is under attack from pirates.</text>
 </textList>
-<eventList name="SAVE_CIVILIAN_LIST">   
+<eventList name="SAVE_CIVILIAN_LIST">  
 	<event>
 		<text>The ship you saved was badly damaged in the battle. Most of the crew accepts your offer to be dropped off at a nearby station. One offers to join your crew.</text>
 		<choice>
@@ -451,7 +451,7 @@ Boarders:
 		<text>Despite some fancy flying, the pirate catches up to you before you can leave the asteroid field. You have no choice but to fight.</text>
 		<environment type="asteroid"/>
 	</event>
-</eventList>  -->
+</eventList> -->
 
 
 
@@ -544,7 +544,7 @@ Boarders:
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Once you bring the cargo onto your ship, a pirate bursts out of one of the crates saying, "Ugh... I was getting cramped in there.  Oh, yeah! Prepare to die!" Immediately after this battle-cry your ship is filled with the sound of crates breaking open...</text>
+		<text>Once you bring the cargo onto your ship, a pirate bursts out of one of the crates saying, "Ugh... I was getting cramped in there. Oh, yeah! Prepare to die!" Immediately after this battle-cry your ship is filled with the sound of crates breaking open...</text>
 		<boarders min="2" max="4" class="human"/>
 	</event>
 	<event>
@@ -565,7 +565,7 @@ Boarders:
 		<autoReward level="MED">standard</autoReward>
 	</event>
 	<event>
-		<text>Your advanced sensors pick up faint life signatures inside the cargo. The life forms appear to be armed.  This looks like a planned pirate ambush.</text>
+		<text>Your advanced sensors pick up faint life signatures inside the cargo. The life forms appear to be armed. This looks like a planned pirate ambush.</text>
 		<choice hidden="true">
 			<text>Destroy the crates to prevent another ship from falling victim.</text>
 			<event>

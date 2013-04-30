@@ -1,7 +1,7 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--   
-			SUMMARY  - 
+<!--  
+			SUMMARY - 
 A list of all main events to be called by lists
 	does not include sub-events)
 	
@@ -21,7 +21,7 @@ Hostile:
 	ENGI_PIRATE_FIGHT		NEW!!!
 	
 Neutral:
-	ENGI_STATION_DISTRESS    (could be quest or distress - uses SAVE_ENGI_STATION)
+	ENGI_STATION_DISTRESS  (could be quest or distress - uses SAVE_ENGI_STATION)
 	
 Environment:
 	
@@ -42,7 +42,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	
 
 <!--------------------------------
-	ENGI EVENTLIST     ''   " " "
+	ENGI EVENTLIST   ''  " " "
 ---------------------------------->
 
 <eventList name="NOTHING_ENGI_SECTOR">
@@ -103,7 +103,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<event load="DISTRESS_ENGI_REBEL"/>
 	<event load="DISTRESS_ENGI_REACTOR"/>
 	
-	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/> 
 	<event load="FRIENDLY_BEACON"/>
 	<event load="TRAP_BEACON"/>
 	<event load="DISTRESS_TRAPPED_MINER"/>
@@ -132,8 +132,8 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<text load="START_BEACON_ENGI"/>
 </event>
 <textList name="START_BEACON_ENGI">
-	<text>You have arrived in Engi space. The Mantis have been threatening the Engi core worlds, but you should be able to stock up for your journey.</text>
-	<text>You have arrived in Engi space. The secession war has brought tough times for these robotic lifeforms, but they're usually willing to help.</text>
+	<text>You have arrived in Automaton space. The Hissho invasion has been threatening the Automaton core worlds. The Automatons are friendly, but they can't guarantee your safety any more.</text>
+	<text>You have arrived in Automaton space. The secession war and the Hissho invasion has brought tough times for these robotic lifeforms, but they're usually willing to help.</text>
 </textList>
 
 <event name="STORE_ENGI">
@@ -141,9 +141,9 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<store/>
 </event>
 <textList name="STORE_ENGI">
-	<text>The Engi can do remarkable things with nothing but metal and Dust. The Engi hive at this beacon are selling equipment for just that.</text>
-	<text>A message arrives: "Your Dust, ours. Our weapons for you." You're about to raise the shields when you realise it's just an Engi trader looking for a trade.</text>
-	<text>An Engi ship hails: "Engine upgrade necessary for travel home. Sale of equipment necessary for engine upgrade."</text>
+	<text>The Automatons can do remarkable things with nothing but metal and Dust. The community at this beacon is selling equipment for just that.</text>
+	<text>A message arrives: "Your Dust, ours. Our weapons for you." You're about to raise the shields when you realise it's just an Automaton trader looking for a trade.</text>
+	<text>An Automaton ship hails: "Engine upgrade necessary for travel home. Sale of equipment necessary for engine upgrade."</text>
 </textList>
 
 <event name="NOTHING_ENGI">
@@ -151,16 +151,16 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<text load="NOTHING_ENGI"/>
 </event>
 <textList name="NOTHING_ENGI">
-	<text>The complex arrangements of ship hulls and FTL drive capacitors floating abandoned in space suggest the Engi were here not too long ago, but no longer.</text>
-	<text>You arrive at a green planet with great plains and rolling waterfalls. It would be of little interest to the Engi nearby.</text>  <!-- JUSTIN TO DO-  MAKE GREEN PLANET-->
-	<text>You have arrived near an Engi construction yard.  Most Engi's maintain their bi-pedal appearance out of habit but here you see a number of Engi hives working together to create massive organic machines adept at building ships.  Truly a sight to behold.</text>
-	<text>Even though each "individual" Engi is made up of trillions of nano-machines, their culture still revolves around traditional social interactions.  A nearby station seems to be constructed for entertainment of passing Engi travellers.</text>
-	<text>You see a number of Engi space stations and fleets nearby.  Despite looking like piles of junk loosely tied together they are actually a model of efficiency.  They just lack a certain aesthetic emphasis in their constructions.</text>
-	<text>This system appears quite peaceful.  You're not sure how long it'll last between the combined threats of the United Empire and Mantis.</text>
-	<text>There are a number of merchant ships passing through the area despite the threat of Mantis invasion.  No doubt interested in buying the efficient technology of the Engi.</text>
-	<text>You see a small UE carrier in the distance.  You lay low and try to blend in with the other traffic. It's surprising to see a human military ship alone deep in Engi space.</text>
-	<text>The Engi seem to have avoided this particular node, along with every other life-form. You keep your eyes peeled for reasons why, but spin up the FTL without event.</text>
-	<text>A cluster of Engi satellites in orbit of a nearby planet are the only clue the mechanical species was ever here.   You have other places to be.</text>
+	<text>The complex arrangements of ship hulls and FTL drive capacitors floating abandoned in space suggest the Automatons were here not too long ago, but no longer.</text>
+	<text>You arrive at a green planet with great plains and rolling waterfalls. During peacetime, the Automatons would have cherished this environment. Since the Hissho invasion, this planet must have been of too little strategic value to defend.</text> <!-- JUSTIN TO DO- MAKE GREEN PLANET-->
+	<text>You have arrived near an Automaton colony. They have been constructing a sort of living shipyard, but you can tell that the Hissho have attacked it again and again. It is barely maintaining structural integrity; you get the sense that the structure itself is in pain.</text>
+	<text>Even though each "individual" Automaton is made up of trillions of nano-machines, their culture still revolves around traditional social interactions. A nearby station seems to be constructed for entertainment of passing Automatons.</text>
+	<text>You see a number of Automaton space stations and fleets nearby. Despite looking like piles of junk loosely tied together they are actually a model of efficiency. They just lack a certain aesthetic emphasis in their constructions.</text>
+	<text>This system appears quite peaceful. You're not sure how long it'll last against the Hissho blitz.</text>
+	<text>There are a number of merchant ships passing through the area despite the threat of Hissho invasion. No doubt they are interested in buying the unique, strangely organic products made by the Automatons.</text>
+	<text>You see a small UE carrier in the distance. You lay low and try to blend in with the other traffic. It's surprising to see a human military ship alone deep in Automaton space.</text>
+	<text>The Automaton seem to have avoided this particular node, along with every other life-form. You keep your eyes peeled for reasons why, but spin up the FTL without event.</text>
+	<text>A cluster of Automaton satellites in orbit of a nearby planet are the only clue the Automatons were ever here. The planet is burning...</text>
 </textList>
 
 
@@ -180,18 +180,18 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<autoReward level="RANDOM">standard</autoReward>
 </event>
 <textList name="ENGI_GIFT">
-	<text>An Engi vessel hails you. "Identity: Pilgrim? Outlier probability. Implies... revival. Implies... hope.  Assistance suggested."  They offer some supplies.</text>
-	<text>You cross paths with an Engi cargo vessel hurrying home before the Mantis fleets attempt to take over this sector. They're happy to offload some of their cargo to get home faster.</text>
-	<text>You make contact with an isolated Engi science station who are staying put despite the likelihood of Mantis invasion. They suggest you trial some experimental technology.</text>
-	<text>This was the site of a recent battle. Either a show of Mantis force, or the Engi here weren't disposed to go peacefully. You pick through the pieces.</text>
+	<text>An Automaton vessel hails you. "Identity: Pilgrim? Outlier probability. Implies... revival. Implies... hope. Assistance suggested." They offer some supplies.</text>
+	<text>You cross paths with an Automaton cargo vessel hurrying home before the Hissho fleets attempt to take over this sector. They're happy to offload some of their cargo to get home faster.</text>
+	<text>You make contact with an isolated Automaton science station who are staying put despite the likelihood of Hissho invasion. They suggest you trial some experimental technology.</text>
+	<text>This was the site of a recent battle. Either a show of Hissho force, or the Automatons here weren't disposed to go peacefully. You pick through the pieces.</text>
 </textList>
 
 <event name="ENGI_FLEET_DELAY" unique="true">
-	<text>You notice an Engi colony hiding on the other side of a nearby moon. It turns out they're excavating an equipment cache from the Human-Mantis War, and they suggest it might be used to lure the pursuing fleet.</text>
+	<text>You notice an Automaton colony hiding on the other side of a nearby moon. It turns out they're excavating an equipment cache from the Human-Hissho War, and they suggest it might be used to lure the pursuing fleet.</text>
 	<choice>
 		<text>Booby trap the cache.</text>
 		<event>
-			<text>You transfer down some missile warheads and the Engi rig them to blow before setting a distress signal to attract the fleet's attention.</text>
+			<text>You transfer down some missile warheads and the Automatons rig them to blow before setting a distress signal to attract the fleet's attention.</text>
 			<item_modify>
 				<item type="missiles" min="-2" max="-2"/>
 			</item_modify>
@@ -201,15 +201,15 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<choice hidden="true">
 		<text>Secure the cache.</text>
 		<event>
-			<text>You have the Engi complete their excavations and bring the supplies on-board.</text>
+			<text>You have the Automatons complete their excavations and bring the supplies on-board.</text>
 			<autoReward level="MED">drone</autoReward>
 		</event>
 	</choice>
 </event>
 
-<event name="ENGI_MONSTER" unique="true">  <!-- TO DO - Need black image!!!!!! JUSTIN!!!! -->
+<event name="ENGI_MONSTER" unique="true"> <!-- TO DO - Need black image!!!!!! JUSTIN!!!! -->
 	<img back="BG_DARK" planet="NONE"/>
-	<text>As you jump in you're hailed urgently by an Engi science vessel in the distance. "We propose that you do not see the creature." There's nothing on the scanner, which is when you realise you can't see the creature because you're inside it!</text>
+	<text>As you jump in you're hailed urgently by an Automaton science vessel in the distance. "We propose that you do not see the creature." There's nothing on the scanner, which is when you realise you can't see the creature because you're inside it!</text>
 	<choice hidden="true">
 		<text>Jump away ASAP.</text>
 		<event/>
@@ -217,14 +217,14 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<choice hidden="true" req="sensors" lvl="3">
 		<text>(Improved Sensors) Scan the monstrosity.</text>
 		<event>
-			<text>You detect a faint, arrhythmic sub-wave pattern. Could the creature be communicating? You forward your observations to the Engi vessel and they thank you in turn.</text>
+			<text>You detect a faint, arrhythmic sub-wave pattern. Could the creature be communicating? You forward your observations to the Automaton vessel and they thank you in turn.</text>
 			<autoReward level="LOW">augment</autoReward>
 		</event>
 	</choice>
 	<choice hidden="true" req="ADV_SCANNERS">
 		<text>(Long-Ranged Scanners) Scan the monstrosity.</text>
 		<event>
-			<text>You detect a faint, arrhythmic sub-wave pattern. Could the creature be communicating? You forward your observations to the Engi vessel and they thank you in turn.</text>
+			<text>You detect a faint, arrhythmic sub-wave pattern. Could the creature be communicating? You forward your observations to the Automaton vessel and they thank you in turn.</text>
 			<autoReward level="LOW">augment</autoReward>
 		</event>
 	</choice>
@@ -234,7 +234,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 
 
 <event name="ENGI_SURRENDER" unique="true">
-	<text>An Engi ship in the vicinity, seeing you jump in armed to the teeth, immediately broadcasts its surrender: "Subject goal: wealth. Engi motivation: survival. Transfer of goods acceptable?"</text>
+	<text>An Automaton ship in the vicinity, seeing you jump in armed to the teeth, immediately broadcasts its surrender: "Subject goal: wealth. Automaton motivation: survival. Transfer of goods acceptable?"</text>
 	<choice hidden="true">
 		<text>Explain that you're friendly.</text>
 		<event load="ENGI_SURRENDER_LIST"/>
@@ -242,17 +242,17 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<choice hidden="true">
 		<text>Accept their offer of surrender.</text>
 		<event>
-			<text>The Engi obediently transfer over the goods and get on their way. Money for nothing.</text>
+			<text>The Automaton obediently transfer over the goods and get on their way. Money for nothing.</text>
 			<autoReward level="RANDOM">standard</autoReward>
 		</event>
 	</choice>
 </event>
 <eventList name="ENGI_SURRENDER_LIST">
 	<event>
-		<text>The Engi seem relieved, and eager to get underway. They set off without saying goodbye.</text>
+		<text>The Automaton seem relieved, and eager to get underway. They set off without saying goodbye.</text>
 	</event>
 	<event>
-		<text>The Engi are satisfied with your explanation. "Beneficial. Subject goal: long, long journey. Remains compatible with transfer of goods from Engi." They send over the gear willingly, and you feel better for it.</text>
+		<text>The Automaton are satisfied with your explanation. "Beneficial. Subject goal: long, long journey. Remains compatible with transfer of goods from Automaton." They send over the gear willingly, and you feel better for it.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</event>
 </eventList>
@@ -272,10 +272,10 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 </event>
 <textList name="ENGI_MANTIS_FIGHT">
-	<text>A mixed radar signal turns out to be a Mantis attack ship scavenging the remains of an Engi carrier. They turn and fight.</text>
-	<text>You come across a Mantis raider taking pot shots at a defenceless Engi supply station. Discovering its weapons aren't much of a match for the station's armour, it turns on your ship.   Battlestations!</text>
-	<text>The area looks clear, and you prepare to jump off, but a Mantis scout jumps in behind you! They're as surprised as you are, but their weapons are already online.</text>
-	<text>You find a Mantis ship harrying a small squad of Engi. They make it to the node and jump off, leaving you toe to toe with their pursuer!</text>
+	<text>A mixed radar signal turns out to be a Hissho attack ship scavenging the remains of an Automaton carrier. They turn and fight.</text>
+	<text>You come across a Hissho raider taking pot shots at a defenceless Automaton supply station. Discovering its weapons aren't much of a match for the station's armour, it turns on your ship.  Battlestations!</text>
+	<text>The area looks clear, and you prepare to jump off, but a Hissho scout jumps in behind you! They're as surprised as you are, but their weapons are already online.</text>
+	<text>You find a Hissho ship harrying a small squad of Automaton. They make it to the node and jump off, leaving you toe to toe with their pursuer!</text>
 </textList>
 
 <event name="ENGI_REBEL_FIGHT">
@@ -297,7 +297,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 ------------>
 
 <event name="ENGI_STATION_DISTRESS" unique="false">
-	<text>You receive a distress call from a nearby Engi ship.  "Assistance requested.  Danger present.  Imminent destruction."</text>
+	<text>You receive a distress call from a nearby Automaton ship. "Assistance requested. Danger present. Imminent destruction."</text>
 	<choice>
 		<text>Respond to the call and move in to assist.</text>
 		<event load="ENGI_STATION_DISTRESS_LIST"/>
@@ -309,50 +309,50 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 </event>
 <eventList name="ENGI_STATION_DISTRESS_LIST">
 	<event>
-		<text>You receive another message from the ship, this time with a Mantis at the com-log.  "Foolish meatsacks," he yells.  Sensors indicate the ship is moving in to attack and boarders teleport from the station.</text>
+		<text>You receive another message from the ship, this time with a Hissho at the com-log. "Foolish meatsacks," he yells. Sensors indicate the ship is moving in to attack and boarders teleport from the station.</text>
 		<ship load="ENGI_MANTIS_CONTROLLED" hostile="true"/>
 		<boarders min="1" max="2" class="mantis"/>
 	</event>
 	<event>
-		<text>You approach to find a Mantis ship assaulting a small Engi space station.  You prepare for a fight!</text>
+		<text>You approach to find a Hissho ship assaulting a small Automaton space station. You prepare for a fight!</text>
 		<ship load="MANTIS_ENGI_STATION" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="SAVE_ENGI_STATION">
 	<event>
-		<text>The Engi station is stripped bare and there are signs of a fierce battle.  The Mantis must have left the distress call active to lure other ships into a trap.</text>
+		<text>The Automaton station is stripped bare and there are signs of a fierce battle. The Hissho must have left the distress call active to lure other ships into a trap.</text>
 	</event>
 	<event>
-		<text>The station was in the process of being evacuated.  A number of civilian Engies offer their gratitude as they finalize their preparations to leave.  They offer some fuel as a reward.</text>
+		<text>The station was in the process of being evacuated. A number of civilian Automatons offer their gratitude as they finalize their preparations to leave. They offer some fuel as a reward.</text>
 		<autoReward level="MED">fuel_only</autoReward>
 	</event>
 	<event>
-		<text>The station hails you, "Gratitude.  Expected probability of defeat without assistance... 86.2 percent.  Request suitable reward."</text>
+		<text>The station hails you, "Gratitude. Expected probability of defeat without assistance... 86.2 percent. Request suitable reward."</text>
 		<choice hidden="true">
 			<text>Request fuel.</text>
 			<event>
-				<text>"Request granted.  Fuel transferring."</text>
+				<text>"Request granted. Fuel transferring."</text>
 				<autoReward level="HIGH">fuel</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Request weapon.</text>
 			<event>
-				<text>"Request granted.  Weapon transferring."</text>
+				<text>"Request granted. Weapon transferring."</text>
 				<autoReward level="LOW">weapon</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Request drone.</text>
 			<event>
-				<text>"Request granted.  Drone schematic transferring."</text>
+				<text>"Request granted. Drone schematic transferring."</text>
 				<autoReward level="LOW">drone</autoReward>
 			</event>
 		</choice>
 		<choice req="engi" hidden="true">
-			<text>(Engi Crew) Threat unresolved.  Current mission imperative: Protocol 52.34.</text>
+			<text>(Engi Crew) Threat unresolved. Current mission imperative: Protocol 52.34.</text>
 			<event>
-				<text>They respond, "Understood. Successful human division of highest import.  Transmitting hidden base coordinates.  Repairing hull and attaching ship to ship ordnance."</text>
+				<text>They respond, "Understood. Successful human division of highest import. Transmitting hidden base coordinates. Repairing hull and attaching ship to ship ordnance."</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<quest event="HIDDEN_FEDERATION_BASE_LIST"/>
 				<damage amount="-10"/>
@@ -360,7 +360,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 		</choice>
 	</event>
 	<event>
-		<text>They thank you for the assistance and when you tell them of your mission, one of the Engies ask if he can assist your crew.  You welcome him aboard.</text>
+		<text>They thank you for the assistance and when you tell them of your mission, one of the Automatons asks if he can assist your crew. You welcome him aboard.</text>
 		<crewMember amount="1" class="engi">Kangee</crewMember>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
@@ -370,16 +370,16 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 
 <!-----------
 		DISTRESS!!!
-	Events that havea distress beacon  
+	Events that havea distress beacon 
 ------------>
 
 <event name="DISTRESS_ENGI_REBEL" unique="true">
-	<text>The distress signal originates at a small Engi ship under attack by a loyalist fighter - but when they see Pilgrim markings they turn to attack!</text> 
+	<text>The distress signal originates at a small Automaton ship under attack by a Hissho fighter - but when they see Pilgrim markings they turn to attack!</text> 
 	<distressBeacon/>
 	<ship load="DISTRESS_ENGI_REBEL" hostile="true"/>
 </event>
 <event name="DISTRESS_ENGI_REBEL_RESULT">
-	<text>The Engi vessel turns out to be very poorly equipped - barely a runabout, really. They're trying to outrun the Empire, and need all the help they can get.</text>
+	<text>The Automaton vessel turns out to be very poorly equipped - barely a runabout, really. They're trying to outrun the Hissho, and need all the help they can get.</text>
 	<choice hidden="true">
 		<text>Give them 25 Dust.</text>
 		<event load="DISTRESS_ENGI_REBEL_LIST1"/>
@@ -391,7 +391,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<choice hidden="true">
 		<text>Give them nothing.</text>
 		<event>
-			<text>Engies can't feel fear, so they bear you no ill will when you explain you're unwilling to help. They set off on their journey and you do the same.</text>
+			<text>Automatons can't feel fear, so they bear you no ill will when you explain you're unwilling to help. They set off on their journey and you do the same.</text>
 		</event>
 	</choice>
 </event>
@@ -403,14 +403,14 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 		</item_modify>
 	</event>
 	<event>
-		<text>The Engies are grateful. They don't have any supplies or weapons to spare, but they do send over a self-teleporting med-bot disperser they hope they won't need.</text>
+		<text>The Automatons are grateful. They don't have any supplies or weapons to spare, but they do send over a self-teleporting med-bot disperser they hope they won't need.</text>
 		<weapon name="BOMB_HEAL"/>
 		<item_modify>
 			<item type="scrap" min="-25" max="-25"/>
 		</item_modify>
 	</event>
 	<event>
-		<text>The Engies are grateful. They don't have much by way of supplies but they do offer a drone schematic for your use.</text>
+		<text>The Automatons are grateful. They don't have much by way of supplies but they do offer a drone schematic for your use.</text>
 		<drone name="RANDOM"/>
 		<item_modify>
 			<item type="scrap" min="-25" max="-25"/>
@@ -430,7 +430,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 		
 		
 <event name="DISTRESS_ENGI_REACTOR" unique="true">
-	<text>You arrive at a smoldering Engi research station, its distress call unanswered - attacked by pirates or Mantis most likely. There may be someone left alive, or else something of value left on board.</text>
+	<text>You arrive at a smoldering Automaton research station, its distress call unanswered - attacked by pirates or Hissho most likely. There may be someone left alive, or else something of value left on board.</text>
 	<distressBeacon/>
 	<choice hidden="true">
 		<text>Board the station.</text>
@@ -453,12 +453,12 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 </event>
 <eventList name="DISTRESS_ENGI_REACTOR_LIST1">
 	<event>
-		<text>You send an away team to investigate, but there's nothing save for the acidic stench of burnt Engi parts. This place is dead.</text>
+		<text>You send an away team to investigate, but there's nothing save for the acidic stench of burnt Automaton parts. This place is dead.</text>
 	</event>
 	<event>
-		<text>Your away team reports a wounded Engi and a functioning drone schematic. Then someone yells. The station reactor is overloading and they're running out of time!</text>
+		<text>Your away team reports a wounded Automaton and a functioning drone schematic. Then someone yells. The station reactor is overloading and they're running out of time!</text>
 		<choice hidden="true">
-			<text>Save the Engi!</text>
+			<text>Save the Automaton!</text>
 			<event load="DISTRESS_ENGI_REACTOR_ENGI"/>
 		</choice>
 		<choice hidden="true">	
@@ -476,19 +476,19 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 </eventList>
 <eventList name="DISTRESS_ENGI_REACTOR_ENGI">
 	<event>
-		<text>One of your crew valiantly grabs the Engi and throws it into the airlock right before the reactor blows and the automatic blast doors slam shut. You have no choice but to mourn their sacrifice and move on.</text>
+		<text>One of your crew valiantly grabs the Automaton and throws it into the airlock right before the reactor blows and the automatic blast doors slam shut. You have no choice but to mourn their sacrifice and move on.</text>
 		<crewMember amount="-1"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>The Engi who was saved offers to join your crew.</text>
+				<text>The Automaton who was saved offers to join your crew.</text>
 				<crewMember amount="1" class="engi">Keezheekoni</crewMember>
 				<autoReward level="LOW">scrap_only</autoReward>
 			</event>
 		</choice>
 	</event>
 	<event>
-		<text>Your crew return safely to the airlock with the injured Engi and you put some distance on the station before it blows. The Engi, impressed by your crew, volunteers to join you.</text>
+		<text>Your crew return safely to the airlock with the injured Automaton and you put some distance on the station before it blows. The Automaton, impressed by your crew, volunteers to join you.</text>
 		<crewMember amount="1" class="engi">Takoda</crewMember>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
@@ -500,16 +500,16 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>The Engi don't feel things the same way other species do. They'd want the tech to be saved. Your crew return safely to the airlock with the drone control and you put some distance on the station before it blows.</text>
+		<text>The Automaton don't feel things the same way other species do. They'd want the tech to be saved. Your crew return safely to the airlock with the drone control and you put some distance on the station before it blows.</text>
 		<autoReward level="LOW">drone</autoReward>
 	</event>
 </eventList>
 <event name="DISTRESS_ENGI_REACTOR_SCAN">
-	<text>Scans reveal the station's reactor is overloading! Not only that, but an injured Engi and a functioning drone schematic are still on board! There's not time for both...</text>
+	<text>Scans reveal the station's reactor is overloading! Not only that, but an injured Automaton and a functioning drone schematic are still on board! There's not time for both...</text>
 	<choice hidden="true">
-		<text>Save the Engi!</text>
+		<text>Save the Automaton!</text>
 		<event>
-			<text>Your away team heads straight for the Engi and returns with time to spare. You put some distance on the station before it blows and the Engi is so impressed by your crew that they volunteer to join you!</text>
+			<text>Your away team heads straight for the Automaton and returns with time to spare. You put some distance on the station before it blows and the Automaton is so impressed by your crew that they volunteer to join you!</text>
 			<crewMember amount="1" class="engi">Hastiin</crewMember>
 			<autoReward level="LOW">scrap_only</autoReward>
 		</event>
@@ -517,7 +517,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<choice hidden="true">
 		<text>Save the Drone Schematic!</text>
 		<event>
-			<text>The Engi don't feel things the same way other species do. They'd want the tech to be saved. Your away team heads straight for the goods and returns with time to spare. You put some distance on the station before it blows.</text>
+			<text>The Automaton don't feel things the same way other species do. They'd want the tech to be saved. Your away team heads straight for the goods and returns with time to spare. You put some distance on the station before it blows.</text>
 			<autoReward level="LOW">drone</autoReward>
 		</event>
 	</choice>
@@ -532,11 +532,11 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 ------------>
 
 <event name="ENGI_UNLOCK_1" unique="true">
-	<text>You arrive near a small fleet of civilian Engi ships.  A simple decryption and translation of their comm frequency tells you that they are having a frantic discussion about something obviously troubling them.</text> 
+	<text>You arrive near a small fleet of civilian Automaton ships. A simple decryption and translation of their comm frequency tells you that they are having a frantic discussion about something obviously troubling them.</text> 
 	<choice>
 		<text>Message them and ask if you can help.</text>
 		<event>
-			<text>Slightly shocked at your question, their leader quickly responds, "Declined offer with apologetic gratitude.   Topic of discussion private matter, no concern of smaller human faction."</text>
+			<text>Slightly shocked at your question, their leader quickly responds, "Declined offer with apologetic gratitude. Topic of discussion private matter, no concern of smaller human faction."</text>
 		</event>
 	</choice>
 	<choice>
@@ -546,19 +546,19 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 		</event>
 	</choice>
 	<choice req="engi" hidden="true">
-		<text>(Engi Crew) Have your Engi crew member contact them.</text>
+		<text>(Automaton Crew) Have your Automaton crew member contact them.</text>
 		<event>
-			<text>Your crew member syncs with the comm unit to communicate with them directly.  You offer your help and a summary of the ship's mission.  They respond, "Our goals have analogous elements.  However, not all available for disclosure, discretion necessary."</text>
+			<text>Your crew member syncs with the comm unit to communicate with them directly. You offer your help and a summary of the ship's mission. They respond, "Our goals have analogous elements. However, not all available for disclosure, discretion necessary."</text>
 			<choice>
 				<text>Offer your help.</text>
 				<event>
-					<text>"Secret technologies stolen by Mantis.  Implicit connection to Empire.  Implicit.  Tracked Mantis to hidden Empire base, uploading coordinates."</text>
+					<text>"Secret technologies stolen by Hissho. Implicit connection to Empire. Implicit. Tracked Hissho to hidden Empire base, uploading coordinates."</text>
 					<quest event="ENGI_UNLOCK_2REAL"/>
 					<choice>
 						<text>Continue...</text>
 						<event>
 							<quest event="ENGI_UNLOCK_2FAKE"/>
-							<text>"However, tracked second ship to different base.  Would calculate probability but data insufficient.  Cannot risk obvious Human-Engi conflict.  Also, need time to acquire military ships.  Assist in finding technology?"</text>
+							<text>"However, tracked second ship to different base. Would calculate probability but data insufficient. Cannot risk obvious Human-Automaton conflict. Also, need time to acquire military ships. Assist in finding technology?"</text>
 							<choice>
 								<text>Agree.</text>
 								<event/>
@@ -571,15 +571,15 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	</choice>
 </event>
 <event name="ENGI_UNLOCK_2FAKE">
-	<text>You arrive at one of the loyalist bases that the Engies told you about.  It appears abandoned except for one scout ship.  Perhaps you could extract information from them.</text>
+	<text>You arrive at one of the loyalist bases that the Automatons told you about. It appears abandoned except for one scout ship. Perhaps you could extract information from them.</text>
 	<ship load="REBEL_ENGI_UNLOCK_2FAKE" hostile="true"/>
 </event>
 <event name="ENGI_UNLOCK_2FAKE_SURRENDER">
-	<text>"Stop!  I don't want to die here."</text>
+	<text>"Stop! I don't want to die here."</text>
 	<choice>
 		<text>Demand information on the stolen technology.</text>
 		<event>
-			<text>"Ah, so that's what you're after.  Too bad, you followed the wrong ship.  The envoy that passed through here was a fake, to trick fools like you.  Now let us go!"</text>
+			<text>"Ah, so that's what you're after. Too bad, you followed the wrong ship. The envoy that passed through here was a fake, to trick fools like you. Now let us go!"</text>
 			<choice>
 				<text>Let them go.</text>
 				<event>
@@ -589,56 +589,56 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 			<choice>
 				<text>Ignore him and attack.</text>
 				<event>
-					<text>"No, wait..."  You cut the transmission and continue the assault.</text>
+					<text>"No, wait..." You cut the transmission and continue the assault.</text>
 				</event>
 			</choice>
 		</event>
 	</choice>
 </event>
 <event name="ENGI_UNLOCK_2REAL">
-	<text>You arrive at one of the loyalist bases that the Engies told you about.  It appears abandoned except for one scout ship.  Perhaps you could extract information from them."</text>
+	<text>You arrive at one of the loyalist bases that the Automatons told you about. It appears abandoned except for one scout ship. Perhaps you could extract information from them."</text>
 	<ship load="REBEL_ENGI_UNLOCK_2REAL" hostile="true"/>
 </event>
 <event name="ENGI_UNLOCK_2REAL_SURRENDER">
-	<text>"Stop!  This isn't worth dying for..."</text>
+	<text>"Stop! This isn't worth dying for..."</text>
 	<choice>
 		<text>Demand information on the stolen technology.</text>
 		<event>
-			<text>"Of course, that's why you're here.  Yes, they passed by here but I had nothing to do with it, I don't know what they were carrying.  I'll transmit coordinates.  Now just let us go..."</text>
+			<text>"Of course, that's why you're here. Yes, they passed by here but I had nothing to do with it, I don't know what they were carrying. I'll transmit coordinates. Now just let us go..."</text>
 			<quest event="ENGI_UNLOCK_3"/>
 			<choice>
 				<text>Let them go.</text>
 				<event>
-					<text>You prepare an FTL message containing the coordinates to send to the Engies and get ready to jump.</text>
+					<text>You prepare an FTL message containing the coordinates to send to the Automatons and get ready to jump.</text>
 					<ship hostile="false"/>
 				</event>
-			</choice><!--   REMOVED THIS TO PREVENT DOUBLE QUESTS
+			</choice><!--  REMOVED THIS TO PREVENT DOUBLE QUESTS
 			<choice>
 				<text>Ignore him and attack.</text>
 				<event>
-					<text>"But we..."  You cut the transmission and prepare an FTL message containing the coordinates to send to the Engies.  You then focus on the battle.</text>
+					<text>"But we..." You cut the transmission and prepare an FTL message containing the coordinates to send to the Engies. You then focus on the battle.</text>
 				</event>
 			</choice>-->
 		</event>
 	</choice>
 </event>
 <event name="ENGI_UNLOCK_3">
-	<text>You have finally caught up with the ships you've been hunting.  A hangar-sized cargo ship is being escorted by a number of Mantis ships.  As you reconsider the assault, a squadron of Engi ships with pirate emblems jump in and assist you.  You prepare to fight the Mantis but scans indicate they are manned by humans!</text>
+	<text>You have finally caught up with the ships you've been hunting. A hangar-sized cargo ship is being escorted by a number of Hissho ships. As you reconsider the assault, a squadron of Automaton ships with pirate emblems jump in and assist you. You prepare to fight the Hissho but scans indicate they are manned by humans!</text>
 	<ship load="MANTIS_ENGI_UNLOCK_3" hostile="true"/>
 </event>
 <event name="ENGI_UNLOCK_4">
-	<text>The Engi emerge victorious from their battles with only minor losses.  They message you, "Project X-ME56 commissioned by Pilgrim military research division.  Advanced stealth cruiser.  Project finished post-bellum.  Unable to reconnect with Pilgrim military command."</text>
+	<text>The Automaton emerge victorious from their battles with only minor losses. They message you, "Project X-ME56 commissioned by Pilgrim military research division. Advanced stealth cruiser. Project finished post-bellum. Unable to reconnect with Pilgrim military command."</text>
 	<choice>
-		<text>Ask about the Mantis ships.</text>
+		<text>Ask about the Hissho ships.</text>
 		<event>
-			<text>"Likely ploy by Empire to avoid breaking non-aggression pact with Engi.  97.56 percent likely.  Your mission to assist last Pilgrim fleet, correct?  Coordinates?"</text>
+			<text>"Likely ploy by Empire to avoid breaking non-aggression pact with Automaton. 97.56 percent likely. Your mission to assist last Pilgrim fleet, correct? Coordinates?"</text>
 			<choice hidden="true">
 				<text>Transmit coordinates of resistance command.</text>
 				<event>
-					<text>"Satisfactory.  Delivery of tech will assist in Pilgrim cause.  Gratitude alone insufficient.  Commencing ship repair and compensation."  Their crews deliver a weapon for installation but you're more pleased to hear that the Pilgrims will have an improved arsenal.</text>
+					<text>"Satisfactory. Delivery of tech will assist in Pilgrim cause. Gratitude alone insufficient. Commencing ship repair and compensation." Their crews deliver a weapon for installation but you're more pleased to hear that the Pilgrims will have an improved arsenal.</text>
 					<damage amount="-20"/>
 					<autoReward level="HIGH">weapon</autoReward>
-					<unlockShip id="1">The Engi secret tech has been delivered to the hangar.  The stealth ship has been unlocked!</unlockShip>
+					<unlockShip id="1">The secret tech has been delivered to the hangar. The stealth ship has been unlocked!</unlockShip>
 				</event>
 			</choice>
 		</event>

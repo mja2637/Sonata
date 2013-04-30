@@ -1,7 +1,7 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--   
-			SUMMARY  - 
+<!--  
+			SUMMARY - 
 A list of all main events to be called by lists
 	does not include sub-events)
 	
@@ -74,7 +74,7 @@ Special:
 	</deadCrew>
 </ship>
 
-<ship name="TEST_SOWER_SCOUT_LOAD" auto_blueprint="ROCK_SCOUT">  <!-- fed base? -->
+<ship name="TEST_SOWER_SCOUT_LOAD" auto_blueprint="ROCK_SCOUT"> <!-- fed base? -->
 	<destroyed>
 		<text>-</text>
 		<autoReward level="HIGH">standard</autoReward>
@@ -85,7 +85,7 @@ Special:
 	</deadCrew>
 </ship>
 
-<ship name="TEST_SOWER_SCOUT_PIRATE_LOAD" auto_blueprint="SHIPS_ROCK_PIRATE">  <!-- fed base? -->
+<ship name="TEST_SOWER_SCOUT_PIRATE_LOAD" auto_blueprint="SHIPS_ROCK_PIRATE"> <!-- fed base? -->
 	<destroyed>
 		<text>-</text>
 		<autoReward level="HIGH">standard</autoReward>
@@ -96,7 +96,7 @@ Special:
 	</deadCrew>
 </ship>
 
-<ship name="TEST_SOWER_FIGHTER_LOAD" auto_blueprint="ROCK_FIGHT">  <!-- fed base? -->
+<ship name="TEST_SOWER_FIGHTER_LOAD" auto_blueprint="ROCK_FIGHT"> <!-- fed base? -->
 	<destroyed>
 		<text>-</text>
 		<autoReward level="HIGH">standard</autoReward>
@@ -107,7 +107,7 @@ Special:
 	</deadCrew>
 </ship>
 
-<ship name="TEST_SOWER_FIGHTER_PIRATE_LOAD" auto_blueprint="SHIPS_ROCK_PIRATE">  <!-- fed base? -->
+<ship name="TEST_SOWER_FIGHTER_PIRATE_LOAD" auto_blueprint="SHIPS_ROCK_PIRATE"> <!-- fed base? -->
 	<destroyed>
 		<text>-</text>
 		<autoReward level="HIGH">standard</autoReward>
@@ -137,8 +137,8 @@ Special:
 ---------------------------------->
 
 <ship name="PIRATE" auto_blueprint="SHIPS_PIRATE">
-	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
-	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<surrender chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<escape chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<gotaway>
 		<text>The pirate jumped away.</text>
@@ -153,7 +153,7 @@ Special:
 	<gotaway>
 		<text>The ship jumps away without a word. You hope they didn't leave to get reinforcements.</text>
 	</gotaway>
-	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<surrender chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
@@ -166,7 +166,7 @@ Special:
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>    
+			<event load="SAVE_CIVILIAN_LIST"/>  
 		</choice>
 	</destroyed>
 	<deadCrew>
@@ -174,13 +174,13 @@ Special:
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>    
+			<event load="SAVE_CIVILIAN_LIST"/>  
 		</choice>
 	</deadCrew>
 </ship>
 
-<ship name="PIRATE_SLAVER" auto_blueprint="SHIPS_PIRATE">  <!-- NEEDS ELITE TAG -->
-	<surrender  chance="0.2" min="2" max="4">
+<ship name="PIRATE_SLAVER" auto_blueprint="SHIPS_PIRATE"> <!-- NEEDS ELITE TAG -->
+	<surrender chance="0.2" min="2" max="4">
 		<text>We surrender! Take one of our slaves as tribute; if you destroy us they'll all die anyway!</text>
 		<choice>
 			<text>Accept their offer.</text>
@@ -194,7 +194,7 @@ Special:
 			<event/>
 		</choice>
 	</surrender>
-	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<escape chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed>
 		<text>The slave ship is destroyed. They won't continue their evil trade, but many lives were probably lost on that ship.</text>
 		<autoReward level="HIGH">standard</autoReward>
@@ -203,7 +203,7 @@ Special:
 </ship>
 
 <ship name="PIRATE_BRIBER" auto_blueprint="SHIPS_PIRATE"> <!-- NEEDS ELITE TAG -->
-	<surrender  chance="0.3" min="3" max="4">
+	<surrender chance="0.3" min="3" max="4">
 		<text>"Fine! Our previous offer was not generous enough, let's improve it."</text>
 		<choice>
 			<text>Accept the more generous bribe and leave.</text>
@@ -217,7 +217,7 @@ Special:
 			<event/>
 		</choice>
 	</surrender>
-	<escape  chance="0.4" min="3" max="4">
+	<escape chance="0.4" min="3" max="4">
 		<text>You've proved a sufficient match for the pirates; they are powering up their FTL and trying to get away.</text>
 	</escape>
 	<gotaway>
@@ -259,7 +259,7 @@ Special:
 </ship>
 
 <ship name="PIRATE_SMUGGLE" auto_blueprint="SHIPS_PIRATE"> <!-- NEEDS ELITE TAG -->
-	<surrender  chance="0.5" min="2" max="4" >
+	<surrender chance="0.5" min="2" max="4" >
 		<text>They hail you, "We realize our ship is no match for yours. If you let us go we can make it worth your while."</text>
 		<choice>
 			<text>Accept their offer.</text>
@@ -283,12 +283,12 @@ Special:
 
 <ship name="SQUAT_PIRATE_MERCENARY" auto_blueprint="SHIPS_PIRATE">
 	<surrender min="3" max="4">
-		<text>They hail your ship saying, "You win!  We're not cut out for this!"</text>
+		<text>They hail your ship saying, "You win! We're not cut out for this!"</text>
 		<choice hidden="true">
 			<text>Let them live and then return to the settlement.</text>
 			<event>
 				<ship hostile="false"/>
-				<text>With the pirates dissuaded from their career path, you return to the settlement.  "Thank you, they returned to us before you did.  I don't think we'll need this anymore."</text>
+				<text>With the pirates dissuaded from their career path, you return to the settlement. "Thank you, they returned to us before you did. I don't think we'll need this anymore."</text>
 				<autoReward level="MED">weapon</autoReward>
 			</event>
 		</choice>
@@ -298,7 +298,7 @@ Special:
 		</choice>
 	</surrender>
 	<destroyed>
-		<text>With all of the would-be pirates dead, you think it best not to return to the settlement...  You prepare to jump.</text>
+		<text>With all of the would-be pirates dead, you think it best not to return to the settlement... You prepare to jump.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
 	<deadCrew>
@@ -331,7 +331,7 @@ Special:
 
 
 <ship name="STORM_PIRATE_SUPPLY_FUEL" auto_blueprint="SHIPS_PIRATE">
-	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<escape chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed>
 		<text>The ship obliterated, only scant fuel canisters can be scavenged from the wreckage before the ion storm clears and you have to jump away.</text>
 		<autoReward level="LOW">fuel</autoReward>
@@ -345,7 +345,7 @@ Special:
 	</deadCrew>
 </ship>
 <ship name="STORM_PIRATE_SUPPLY_AMMO" auto_blueprint="SHIPS_PIRATE">
-	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<escape chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed>
 		<text>The ship obliterated, only scant ammunition crates can be scavenged from the wreckage before the ion storm clears and you have to jump away.</text>
 		<autoReward level="LOW">missiles</autoReward>
@@ -363,7 +363,7 @@ Special:
 
 
 <ship name="QUEST_SLUG_PIRATE_TRAP1" auto_blueprint="SHIPS_PIRATE">
-	<surrender  chance="0" min="3" max="4">
+	<surrender chance="0" min="3" max="4">
 		<text>When the pirate ship looks ready to break apart you notice the Slug ship has secured the loot and is preparing to jump away!</text>
 		<choice hidden="true">
 			<text>Continue fighting the pirate.</text>
@@ -409,8 +409,8 @@ Special:
 ---------------------------------->
 
 <ship name="REBEL" auto_blueprint="SHIPS_REBEL">
-	<surrender  chance="0.5" min="2" max="3" load="PIRATE_SURRENDER"/>
-	<escape  chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
+	<surrender chance="0.5" min="2" max="3" load="PIRATE_SURRENDER"/>
+	<escape chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
@@ -488,7 +488,7 @@ Special:
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
 			<text>Contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>    
+			<event load="SAVE_CIVILIAN_LIST"/>  
 		</choice>
 	</destroyed>
 	<deadCrew>
@@ -496,7 +496,7 @@ Special:
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Contact the civilian ship.</text>	
-			<event load="SAVE_CIVILIAN_LIST"/>    
+			<event load="SAVE_CIVILIAN_LIST"/>  
 		</choice>
 	</deadCrew>
 </ship>
@@ -655,7 +655,7 @@ Special:
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>With the threat gone, you contact the Pilgrim outpost. They respond, "Our location has been compromised! Take everything you can and please drop our survivors off at the next station."  One soldier offers to stay and fight.</text>
+				<text>With the threat gone, you contact the Pilgrim outpost. They respond, "Our location has been compromised! Take everything you can and please drop our survivors off at the next station." One soldier offers to stay and fight.</text>
 				<crewMember amount="1"/>
 				<autoReward level="LOW">weapon</autoReward>
 			</event>
@@ -669,7 +669,7 @@ Special:
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>You contact the station once the loyalist ship is destroyed.  The lone survivor responds, "This base is no longer safe. Let me join your crew and we'll have the station's drones patch up your ship."</text>
+				<text>You contact the station once the loyalist ship is destroyed. The lone survivor responds, "This base is no longer safe. Let me join your crew and we'll have the station's drones patch up your ship."</text>
 				<crewMember amount="1"/>
 				<autoReward level="HIGH">standard</autoReward>
 				<damage amount="-7"/>
@@ -678,7 +678,7 @@ Special:
 	</destroyed>
 </ship>
 
-<ship name="REBEL_VS_FEDERATION" auto_blueprint="SHIPS_REBEL">  <!-- fed base? -->
+<ship name="REBEL_VS_FEDERATION" auto_blueprint="SHIPS_REBEL"> <!-- fed base? -->
 	<destroyed>
 		<text>With the ship destroyed, you quickly collect useful resources.</text>
 		<autoReward level="MED">standard</autoReward>
@@ -744,13 +744,13 @@ Special:
 
 <ship name="REBEL_ENGI_UNLOCK_2FAKE" auto_blueprint="SHIPS_REBEL">
 	<escape timer="40" min="18" max="18" >
-		<text>As soon as they see you, they power up their engines to jump away.  Stop them!</text>
+		<text>As soon as they see you, they power up their engines to jump away. Stop them!</text>
 		<ship hostile="true"/>
 	</escape>
 	<gotaway>
 		<text>With the ship gone you search through the abandoned base for any signs of their destination but find none.</text>
 	</gotaway>
-	<surrender  min="4" max="4" load="ENGI_UNLOCK_2FAKE_SURRENDER"/>
+	<surrender min="4" max="4" load="ENGI_UNLOCK_2FAKE_SURRENDER"/>
 	<destroyed>
 		<text>You take what you can from the debris.</text>
 		<autoReward level="MED">standard</autoReward>
@@ -768,7 +768,7 @@ Special:
 	<gotaway>
 		<text>With the ship gone, you search through the abandoned base for any signs of their destination but find none.</text>
 	</gotaway>
-	<surrender  min="5" max="5" load="ENGI_UNLOCK_2REAL_SURRENDER"/>
+	<surrender min="5" max="5" load="ENGI_UNLOCK_2REAL_SURRENDER"/>
 	<destroyed>
 		<text>You take what you can from the debris.</text>
 		<autoReward level="MED">standard</autoReward>
@@ -784,7 +784,7 @@ Special:
 
 <ship name="DISTRESS_ENGI_REBEL" auto_blueprint="SHIPS_REBEL">
 	<destroyed>
-		<text>The loyalists destroyed, you pick the bones of their ship and wait for the small Engi ship to catch up.</text>
+		<text>The loyalists destroyed, you pick the bones of their ship and wait for the small Automaton ship to catch up.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -792,7 +792,7 @@ Special:
 		</choice>
 	</destroyed>
 	<deadCrew>
-		<text>The loyalists destroyed, you pick the bones of their ship and wait for the small Engi ship to catch up.</text>
+		<text>The loyalists destroyed, you pick the bones of their ship and wait for the small Automaton ship to catch up.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -819,25 +819,25 @@ Special:
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 	<crew>
-		   <crewMember type="mantis" prop="1"/>
+		  <crewMember type="mantis" prop="1"/>
 	</crew>
 </ship>
 
 <ship name="MANTIS_ENGI_STATION" auto_blueprint="SHIPS_MANTIS">
 	<destroyed>
-		<text>The Mantis ship breaks apart.</text>
+		<text>The Hissho ship breaks apart.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
-			<text>Attempt to contact the Engi.</text>
-			<event load="SAVE_ENGI_STATION"/>    
+			<text>Attempt to contact the Automatons.</text>
+			<event load="SAVE_ENGI_STATION"/>  
 		</choice>
 	</destroyed>
 	<deadCrew>
-		<text>No more life signs detected on the Mantis ship. You hasten to contact the Engi.</text>
+		<text>No more life signs detected on the Hissho ship. You hasten to contact the Automatons.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
-			<text>Attempt to contact the Engi.</text>
-			<event load="SAVE_ENGI_STATION"/>    
+			<text>Attempt to contact the Automatons.</text>
+			<event load="SAVE_ENGI_STATION"/>  
 		</choice>
 	</deadCrew>
 </ship>
@@ -848,16 +848,14 @@ Special:
 		<text>The ship jumps away without a word. You hope they didn't leave to get reinforcements.</text>
 	</gotaway>
 	<destroyed>
-		<text>With the hostile Engi ship destroyed you carefully extract as much fuel as possible from the wreckage.</text>
+		<text>With the hostile Automaton ship destroyed you carefully extract as much fuel as possible from the wreckage.</text>
 		<autoReward level="MED">fuel</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>With the hostile Engies subdued you carefully extract as much fuel as possible from the ship.</text>
+		<text>With the hostile Automatons subdued you carefully extract as much fuel as possible from the ship.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</deadCrew>
 </ship>
-
-
 
 <!--------------------------------
 
@@ -865,8 +863,8 @@ Special:
 	
 ---------------------------------->
 
-<ship name="ROCK_SHIP" auto_blueprint="SHIPS_ROCK">   <!-- JUSTIN - MAKE A SURRENDER!!-->
-	<surrender  chance="0.7" min="3" max="4" load="ROCK_SHIP_SURRENDER"/>
+<ship name="ROCK_SHIP" auto_blueprint="SHIPS_ROCK">  <!-- JUSTIN - MAKE A SURRENDER!!-->
+	<surrender chance="0.7" min="3" max="4" load="ROCK_SHIP_SURRENDER"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship> 
@@ -875,10 +873,9 @@ Special:
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 	<crew>
-		   <crewMember type="rock" prop="1"/>
+		  <crewMember type="rock" prop="1"/>
 	</crew>
 </ship>
-
 
 <ship name="ROCK_UNLOCK1" auto_blueprint="ROCK_ASSAULT_ELITE">
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -916,8 +913,8 @@ Special:
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 	<crew>
-		   <crewMember type="mantis" prop="0.80"/>
-		   <crewMember type="engi" prop="0.20"/>
+		  <crewMember type="mantis" prop="0.80"/>
+		  <crewMember type="engi" prop="0.20"/>
 	</crew>
 </ship>
 
@@ -925,11 +922,11 @@ Special:
 
 <ship name="MANTIS_CIVILIAN" auto_blueprint="SHIPS_MANTIS">
 	<destroyed>
-		<text>The Mantis ship breaks apart.</text>
+		<text>The Hissho ship breaks apart.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Attempt to contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>    
+			<event load="SAVE_CIVILIAN_LIST"/>  
 		</choice>
 	</destroyed>
 	<deadCrew>
@@ -937,16 +934,16 @@ Special:
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Attempt to contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>    
+			<event load="SAVE_CIVILIAN_LIST"/>  
 		</choice>
 	</deadCrew>
 	<crew>
-		   <crewMember type="mantis" prop="0.75"/>
-		   <crewMember type="engi" prop="0.25"/>
+		  <crewMember type="mantis" prop="0.75"/>
+		  <crewMember type="engi" prop="0.25"/>
 	</crew>
 </ship>
 
-<ship name="MANTIS_NAMED_THIEF" auto_blueprint="SHIPS_MANTIS">  <!--NEEDS ELITE TAG  - need an escape/surrender -->
+<ship name="MANTIS_NAMED_THIEF" auto_blueprint="SHIPS_MANTIS"> <!--NEEDS ELITE TAG - need an escape/surrender -->
 	<destroyed>
 		<text>KazaaakplethKilik fights to the last, and you suck the Dust from the corpse of his ship. You sense, though, that his death has left a great mystery unresolved.</text>
 		<autoReward level="MED">standard</autoReward>
@@ -959,7 +956,7 @@ Special:
 <ship name="MANTIS_ENGI_UNLOCK_3" auto_blueprint="SHIPS_MANTIS">
 	<destroyed load="ENGI_UNLOCK_4"/>
 	<deadCrew>
-		<text>You strip what you can and contact the Engi ships.</text>
+		<text>You strip what you can and contact the Automaton ships.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice>
 			<text>Continue...</text>
@@ -967,14 +964,14 @@ Special:
 		</choice>
 	</deadCrew>
 	<crew>
-		   <crewMember type="human" prop="1"/>
+		  <crewMember type="human" prop="1"/>
 	</crew>
 </ship>
 
 
 <ship name="SLUG_DISTRESS_MANTIS" auto_blueprint="SHIPS_MANTIS">
 	<destroyed>
-		<text>The Mantis defeated, you contact the weakened Slug vessel. "You ssseee," they begin, "we are most grateful, but, that is, we do not currently have the liquid asssets to reward you at this time."</text>
+		<text>The Hissho defeated, you contact the weakened Slug vessel. "You ssseee," they begin, "we are most grateful, but, that is, we do not currently have the liquid asssets to reward you at this time."</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Leave them be.</text>
@@ -988,7 +985,7 @@ Special:
 		</choice>
 	</destroyed>
 	<deadCrew>
-		<text>The Mantis defeated, you contact the weakened Slug vessel. "You sssee," they begin, "we are most grateful, but, that is, we do not currently have the liquid asssets to reward you at this time."</text>
+		<text>The Hissho defeated, you contact the weakened Slug vessel. "You sssee," they begin, "we are most grateful, but, that is, we do not currently have the liquid asssets to reward you at this time."</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Leave them be.</text>
@@ -1002,8 +999,8 @@ Special:
 		</choice>
 	</deadCrew>
 	<crew>
-		   <crewMember type="mantis" prop="0.75"/>
-		   <crewMember type="engi" prop="0.25"/>
+		  <crewMember type="mantis" prop="0.75"/>
+		  <crewMember type="engi" prop="0.25"/>
 	</crew>
 </ship>
 
@@ -1011,11 +1008,11 @@ Special:
 
 <ship name="ZOLTAN_SHIP_SAVE_MANTIS2" auto_blueprint="SHIPS_MANTIS">
 	<destroyed>
-		<text>As you're salvaging the Mantis wreck the Sophon security patrol returns with three other ships. You quickly salvage what you can and set off before they can stop you for questioning.</text>
+		<text>As you're salvaging the Hissho wreck the Sophon security patrol returns with three other ships. You quickly salvage what you can and set off before they can stop you for questioning.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>As you're salvaging the Mantis wreck the Sophon security patrol returns with three other ships. You quickly salvage what you can and set off before they can stop you for questioning.</text>
+		<text>As you're salvaging the Hissho wreck the Sophon security patrol returns with three other ships. You quickly salvage what you can and set off before they can stop you for questioning.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
@@ -1028,19 +1025,19 @@ Special:
 ---------------------------------->
 
 <ship name="JELLY" auto_blueprint="SHIPS_JELLY">
-	<surrender  chance="0.5" min="3" max="4" load="SLUG_SURRENDER"/>
-	<escape  chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
+	<surrender chance="0.5" min="3" max="4" load="SLUG_SURRENDER"/>
+	<escape chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
 
 <ship name="JELLY_UNLOCK1" auto_blueprint="SHIPS_JELLY">
-	<surrender  chance="0" min="3" max="4" load="SLUG_UNLOCK_SURRENDER"/>
-	<escape  chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
+	<surrender chance="0" min="3" max="4" load="SLUG_UNLOCK_SURRENDER"/>
+	<escape chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
-<ship name="JELLY_UNLOCK2" auto_blueprint="JELLY_TRUFFLE">  <!-- this is the hard ship defending the platform-->
+<ship name="JELLY_UNLOCK2" auto_blueprint="JELLY_TRUFFLE"> <!-- this is the hard ship defending the platform-->
 	<destroyed>
 		<text>With the assault ship taken care of, you turn your attention to the construction platform. However, you find that it has long since disappeared into the clouds. You collect what Dust you can and prepare to move on.</text>
 		<autoReward level="HIGH">standard</autoReward>
@@ -1050,7 +1047,7 @@ Special:
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
 </ship>
-<ship name="JELLY_UNLOCK3" auto_blueprint="JELLY_BUTTON">  <!-- this is the weak ship that gives you the unlock -->
+<ship name="JELLY_UNLOCK3" auto_blueprint="JELLY_BUTTON"> <!-- this is the weak ship that gives you the unlock -->
 	<escape timer="35" min="22" max="22" >
 		<text>The interceptor powers up its FTL drive in preparation to escape. At the same time, the cruiser's FTL drive does the same. They must be linked! Don't let them get away!</text>
 		<ship hostile="true"/>
@@ -1093,11 +1090,11 @@ Special:
 
 <ship name="SLUG_DISTRESS_MANTIS_SLUG" auto_blueprint="SHIPS_JELLY">
 	<destroyed>
-		<text>At last the Slugs' prized possessions are yours for the taking. After, that is, you split your takings with the Mantis.</text>
+		<text>At last the Slugs' prized possessions are yours for the taking. After, that is, you split your takings with the Hissho.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>At last the Slugs' prized possessions are yours for the taking. After, that is, you split your takings with the Mantis.</text>
+		<text>At last the Slugs' prized possessions are yours for the taking. After, that is, you split your takings with the Hissho.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
 </ship>
@@ -1241,15 +1238,15 @@ Special:
 	
 ---------------------------------->
 
-<ship name="ZOLTAN_SHIP" auto_blueprint="SHIPS_ZOLTAN">   <!-- JUSTIN - MAKE A SURRENDER!!-->
+<ship name="ZOLTAN_SHIP" auto_blueprint="SHIPS_ZOLTAN">  <!-- JUSTIN - MAKE A SURRENDER!!-->
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
 
 
 <ship name="ZOLTAN_PIRATE" auto_blueprint="SHIPS_ZOLTAN_PIRATE">
-	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
-	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<surrender chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<escape chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<gotaway>
 		<text>The pirate jumped away.</text>
@@ -1258,8 +1255,8 @@ Special:
 </ship>
 
 
-<ship name="ZOLTAN_SCIENCE_DOCK" auto_blueprint="SHIPS_ZOLTAN">   <!-- JUSTIN - MAKE A SURRENDER!!-->
-	<surrender  chance="0.5" min="3" max="4">
+<ship name="ZOLTAN_SCIENCE_DOCK" auto_blueprint="SHIPS_ZOLTAN">  <!-- JUSTIN - MAKE A SURRENDER!!-->
+	<surrender chance="0.5" min="3" max="4">
 		<text>The Sophon captain sends an urgent hail: "Wait, this was all a test! A test that you passed! A diverse crew, working together, surely a sight to warm the heart of any dispassionate observer. Come, I shall join your crew!"</text>
 		<ship hostile="false"/>
 		<crewMember amount="1" class="energy">Aliann</crewMember>
@@ -1277,8 +1274,8 @@ Special:
 
 
 
-<ship name="ZOLTAN_PEACE_QUEST_ATTACK1" auto_blueprint="ZOLTAN_PEACE">   <!-- JUSTIN - MAKE A SURRENDER!!-->
-	<surrender  chance="0.2" min="3" max="4">
+<ship name="ZOLTAN_PEACE_QUEST_ATTACK1" auto_blueprint="ZOLTAN_PEACE">  <!-- JUSTIN - MAKE A SURRENDER!!-->
+	<surrender chance="0.2" min="3" max="4">
 		<text>They are clearly not putting up a fight. Are you sure you want to destroy them?</text>
 		<choice hidden="true">
 			<text>Finish them off.</text>
@@ -1303,7 +1300,7 @@ Special:
 		<autoReward level="RANDOM">standard</autoReward>
 	</deadCrew>
 </ship>
-<ship name="ZOLTAN_PEACE_QUEST_ATTACK2" auto_blueprint="SHIPS_ZOLTAN">   <!-- JUSTIN - MAKE A SURRENDER!!-->
+<ship name="ZOLTAN_PEACE_QUEST_ATTACK2" auto_blueprint="SHIPS_ZOLTAN">  <!-- JUSTIN - MAKE A SURRENDER!!-->
 	<destroyed>
 		<text>You defeat your assailant, but the peace ship has jumped away in the commotion.</text>
 		<autoReward level="LOW">standard</autoReward>
@@ -1318,17 +1315,17 @@ Special:
 
 <ship name="ZOLTAN_SHIP_SAVE_MANTIS1" auto_blueprint="SHIPS_JELLY">
 	<destroyed>
-		<text>The Mantis are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
+		<text>The Hissho are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>The Mantis are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
+		<text>The Hissho are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
 
 
-<ship name="ZOLTAN_PRIMITIVES_ZOLTAN" auto_blueprint="SHIPS_ZOLTAN">   
+<ship name="ZOLTAN_PRIMITIVES_ZOLTAN" auto_blueprint="SHIPS_ZOLTAN">  
 	<destroyed>
 		<text>The loyalist contacts you. "Lovely, you've done our job for us! We'll let you live as thanks. However, I can't promise the fleet will show you the same courtesy." They jump off. You collect what you can from the remains of the Sophon ship.</text>
 		<modifyPursuit amount="1"/>
@@ -1378,7 +1375,7 @@ Special:
 		<autoReward level="HIGH">augment</autoReward>
 	</deadCrew>
 	<crew>
-	   <crewMember type="random" prop="1"/>
+	  <crewMember type="random" prop="1"/>
 	</crew>
 </ship>
 
@@ -1442,7 +1439,7 @@ Special:
 
 
 
-<ship name="ZOLTAN_CREW_SCAN" auto_blueprint="SHIPS_ZOLTAN">   <!-- JUSTIN - MAKE A SURRENDER!!-->
+<ship name="ZOLTAN_CREW_SCAN" auto_blueprint="SHIPS_ZOLTAN">  <!-- JUSTIN - MAKE A SURRENDER!!-->
 	<destroyed>
 		<text>You suck what Dust you can and prepare to jump before the other guards arrive.</text>
 		<autoReward level="LOW">standard</autoReward>
@@ -1520,7 +1517,7 @@ Special:
 
 
 
-<ship name="AUTO_FUEL_SELLER" auto_blueprint="SHIPS_AUTO">  <!-- needs "WEAK" tag-->
+<ship name="AUTO_FUEL_SELLER" auto_blueprint="SHIPS_AUTO"> <!-- needs "WEAK" tag-->
 	<escape timer="80" min="30" max="30"/>
 	<gotaway>
 		<text>The ship jumps away without a word. You hope they didn't leave to get reinforcements.</text>
@@ -1549,8 +1546,8 @@ Special:
 	
 ---------------------------------->
 
-<ship name="CRYSTAL_SHIP" auto_blueprint="SHIPS_CRYSTAL">   
-	<surrender  chance="0.6" min="3" max="4">
+<ship name="CRYSTAL_SHIP" auto_blueprint="SHIPS_CRYSTAL">  
+	<surrender chance="0.6" min="3" max="4">
 		<text load="CRYSTAL_SHIP_SURRENDER"/>
 		<choice hidden="true">
 			<text>Accept their surrender.</text>
@@ -1567,7 +1564,7 @@ Special:
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship> 
 
-<ship name="CRYSTAL_SHIP_NO_SURRENDER" auto_blueprint="SHIPS_CRYSTAL">   
+<ship name="CRYSTAL_SHIP_NO_SURRENDER" auto_blueprint="SHIPS_CRYSTAL">  
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship> 
@@ -1592,7 +1589,7 @@ Special:
 </ship>
 
 <ship name="CRYSTAL_CONVOY" auto_blueprint="SHIPS_CRYSTAL">
-	<surrender  chance="0" min="3" max="4">
+	<surrender chance="0" min="3" max="4">
 		<text>Their ship seems severely damaged and they look to be reconsidering the fight. Should you power down your weapons and explain that you mean no threat?</text>
 		<choice hidden="true">
 			<text>Stop the fight.</text>
@@ -1629,7 +1626,7 @@ Special:
 
 
 <ship name="CRYSTAL_HUNTER" auto_blueprint="SHIPS_CRYSTAL">
-	<surrender  chance="0.5" min="3" max="4">
+	<surrender chance="0.5" min="3" max="4">
 		<text>The hunters message you, "We surrender. Take one of these squishy meat sacks that we've captured." He must be referring to the human captives.</text>
 		<choice hidden="true">
 			<text>Accept their surrender.</text>
@@ -1730,7 +1727,7 @@ Special:
 		<autoReward level="HIGH">standard</autoReward>
 	</destroyed>
 	<crew>
-		   <crewMember class="ghost" prop="2"/>
+		  <crewMember class="ghost" prop="2"/>
 	</crew>
 </ship>
 

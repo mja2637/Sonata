@@ -115,7 +115,6 @@
 	<name>BOMB_ION</name>
 </blueprintList>
 
-
 <blueprintList name="WEAPONS_FREE">
 	<name>BASIC_KINETIC_1</name>
 	<name>BASIC_LASER_1</name>
@@ -212,8 +211,6 @@
 </blueprintList>
 
 <blueprintList name="WEAPONS_MANTIS">
-	<name>LASER_BURST_1</name>
-	<name>LASER_BURST_2</name>
 	<name>BASIC_LASER_1</name>
 	<name>BASIC_LASER_2</name>
 	<name>BASIC_LASER_3</name>
@@ -258,8 +255,6 @@
 </blueprintList>
 
 <blueprintList name="WEAPONS_CIRCLE">
-	<name>LASER_BURST_1</name>
-	<name>LASER_BURST_2</name>
 	<name>BASIC_LASER_1</name>
 	<name>BASIC_LASER_2</name>
 	<name>BASIC_LASER_3</name>

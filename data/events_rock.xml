@@ -46,7 +46,7 @@
 	<event load="TRAP_BEACON"/>
 	<event load="STRANDED_BEACON"/>
 	<event load="PIRATE_CIVILIAN_BEACON"/>
-	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/> 
 	<event load="REBEL_VS_FEDERATION"/> 
 	<event load="ESCORT_BEACON"/>
 	<event load="DISTRESS_TRAPPED_MINER"/>
@@ -89,7 +89,7 @@
 <textList name="STORE_ROCK">
 	<text>You cross paths with a Sower vessel returning from a rare diplomatic mission. Equally surprising, they are remotely pinging your ship's inventory system.</text>
 	<text>You come across a Sower colony on a world in the early stages of terraformation. They must need Dust and raw materials from offworld; they are contacting your ship using the standard galactic communications protocol.</text>	
-	<text>With the local Sower settlements unwilling to communicate with other life forms, an opportunistic Mantis crew has postponed its piratical activities and set up shop to catch any passing trade.</text>
+	<text>With the local Sower settlements unwilling to communicate with other life forms, an opportunistic Hissho crew has postponed its piratical activities and set up shop to catch any passing trade.</text>
 	<text>A fabrication system in the lifeless husk of a massive Sower capital ship is still functioning after hundreds of thousands of years. A lively interspecies market has formed around this nucleus.</text>
 	<text>You receive a hail on Pilgrim frequencies; a large Sower colony running metastrategic subroutines seemed to have decided to trade with you. You are wary, but robots are not known for being deceitful.</text>
 </textList>
@@ -118,7 +118,7 @@
 	<text load="ROCK_SHIP"/>
 	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
-<textList name="ROCK_SHIP">  <!-- JUSTIN - make surrender possible-->
+<textList name="ROCK_SHIP"> <!-- JUSTIN - make surrender possible-->
 	<text>Sower patrol ship arrives and you intercept their internal communications: "...etTarget(inSysFString.readQuadrant(5.7,64.)); self.Mode=AGGRESSIVE;self+=WepArrayChargeHa..." As the code swims before your eyes, you realize that they are attacking!</text>
 	<text>You encounter a Sower vessel and attempt to open trading frequencies, but it immediately opens fire.</text>
 	<text>You jump into the middle of a Sower excavation project on a nearby moon. Unimpressed with your intrusion they move to defend themselves!</text>
@@ -130,7 +130,7 @@
 </textList>
 
 <!-- Matt - these were left unfinished by the devs; I should finish them.
-<textList name="ROCK_FIGHT_DESTROYED">  
+<textList name="ROCK_FIGHT_DESTROYED"> 
 	<text>Victory! You narrowly avoid a hull breach as one of the Rock crew is propelled by the explosion straight toward your bridge.</text>
 	<text>The Rock ship disintegrates, a jump drive burn out turning its crew to stardust.</text>
 	<text>The enemy hull is torn apart by a final volley. They're with the sandman now.</text>
@@ -183,17 +183,17 @@
 	<text>Sower pirates are nearly unheard of, given that (everyone assumes) the Sower are merely intelligent robots. To your amazement, a Sower ship without an IFF signature blazes towards you, weapons hot.</text>
 	<text>A Sower ship flies past your windows and you recognise outcast decorations on the hull. This ship must have been captured by pirates!</text>
 	<text>A motley collection of Sower ships are stationed around this beacon, their terraforming tools powered off. Nearby, there are signs of a destroyed planet; these ships must have been here for milleneia! Programming corrupted, they advance towards you. Defensive maneuvers!</text>
-	<text>You don't know how, but a mixed Mantis and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
+	<text>You don't know how, but a mixed Hissho and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
 	
 	<text>Sower pirates are nearly unheard of, given that (everyone assumes) the Sower are merely intelligent robots. To your amazement, a Sower ship without an IFF signature blazes towards you, weapons hot.</text>
 	<text>A Sower ship flies past your windows and you recognise outcast decorations on the hull. This ship must have been captured by pirates!</text>
 	<text>A motley collection of Sower ships are stationed around this beacon, their terraforming tools powered off. Nearby, there are signs of a destroyed planet; these ships must have been here for milleneia! Programming corrupted, they advance towards you. Defensive maneuvers!</text>
-	<text>You don't know how, but a mixed Mantis and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
+	<text>You don't know how, but a mixed Hissho and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
 	
 	<text>Sower pirates are nearly unheard of, given that (everyone assumes) the Sower are merely intelligent robots. To your amazement, a Sower ship without an IFF signature blazes towards you, weapons hot.</text>
 	<text>A Sower ship flies past your windows and you recognise outcast decorations on the hull. This ship must have been captured by pirates!</text>
 	<text>A motley collection of Sower ships are stationed around this beacon, their terraforming tools powered off. Nearby, there are signs of a destroyed planet; these ships must have been here for milleneia! Programming corrupted, they advance towards you. Defensive maneuvers!</text>	
-	<text>You don't know how, but a mixed Mantis and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
+	<text>You don't know how, but a mixed Hissho and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
 </textList>
 
 <!-----------
@@ -433,26 +433,26 @@
 	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
 
-<event name="ROCK_MANTIS_HUNTER" unique="true">  <!-- JUSTIN TO DO - test the ship status effect-->
-	<text>A Mantis ship here is adorned with Sower parts! It would be a gorier display if they had internal organs, but the message is clear enough: this is a hunter of a very specialised kind.</text>
+<event name="ROCK_MANTIS_HUNTER" unique="true"> <!-- JUSTIN TO DO - test the ship status effect-->
+	<text>A Hissho ship here is adorned with Sower parts! It would be a gorier display if they had internal organs, but the message is clear enough: this is a hunter of a very specialised kind.</text>
 	<ship load="MANTIS_FIGHT" hostile="false"/>
 	<choice hidden="true">
 		<text>Attack!</text>
 		<event>
-			<text>No species deserves a Mantis hunter on their back - time to make the galaxy a little safer. Engage!</text>
+			<text>No species deserves a Hissho hunter on their back - time to make the galaxy a little safer. Engage!</text>
 			<ship hostile="true"/>	
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Ignore them.</text>
 		<event>
-			<text>The Mantis take no interest in your ship - they're lying in wait for the next Sower ship to venture through. You're able to spin up the engines and jump at your leisure.</text>		
+			<text>The Hissho take no interest in your ship - they're lying in wait for the next Sower ship to venture through. You're able to spin up the engines and jump at your leisure.</text>		
 		</event>
 	</choice>
 	<choice hidden="true" req="ROCK_ARMOR">
 		<text>(Sower Ship) Ramming speed.</text>
 		<event>
-			<text>You smash into the aft end of the Mantis ship at flank speed, ripping it apart like a tin can. You cause irreparable damage to their systems. and your ship's armored hull is hardly dented from the impact. To your astonishment, the Mantis are still trying to fight!</text>
+			<text>You smash into the aft end of the Hissho ship at flank speed, ripping it apart like a tin can. You cause irreparable damage to their systems. and your ship's armored hull is hardly dented from the impact. To your astonishment, the Hissho are still trying to fight!</text>
 			<ship hostile="true"/>
 			<status type="divide" target="enemy" system="engines" amount="2"/>
 			<status type="divide" target="enemy" system="shields" amount="2"/>
@@ -462,16 +462,16 @@
 	<choice hidden="true" req="rock">
 		<text>(Sower Crew) Put your Sower crew member on the comm.</text>
 		<event>
-			<text>The two aliens face one another over the vidscreen. "Earth-killing metal-man!" yells the furious Mantis captain. "See, I paint my ship with your companions! I paint my ship with you!" The Sower says little - being, after all, a robot - and merely powers up your weapons. Them's fighting words, apparently.</text>
+			<text>The two aliens face one another over the vidscreen. "Earth-killing metal-man!" yells the furious Hissho captain. "See, I paint my ship with your companions! I paint my ship with you!" The Sower says little - being, after all, a robot - and merely powers up your weapons. Them's fighting words, apparently.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
 
 <event name="ROCK_MANTIS_FREIGHTER" unique="true">
-	<text>A curious sight greets you at this beacon: a disabled Sower freighter drifts in space while two Mantis craft battle it out - presumably over who deserves the spoils.</text>
+	<text>A curious sight greets you at this beacon: a disabled Sower freighter drifts in space while two Hissho craft battle it out - presumably over who deserves the spoils.</text>
 	<choice hidden="true">
-		<text>Wait, then attack the surviving Mantis.</text>
+		<text>Wait, then attack the surviving Hissho.</text>
 		<event load="ROCK_MANTIS_FREIGHTER_LIST"/>
 	</choice>
 	<choice hidden="true">
@@ -483,7 +483,7 @@
 	<choice hidden="true" req="REPAIR">
 		<text>(Repair Drone) Repair the Sower ship.</text>
 		<event>
-			<text>While the two Mantis fight you approach the Sower ship and send a repair drone through one of the many breaches. It fixes the ship up enough to make at least a single jump. You're surprised when, instead, it embarks on a kamikaze run towards the two Mantis, which results in the obliteration of all three!</text>
+			<text>While the two Hissho fight you approach the Sower ship and send a repair drone through one of the many breaches. It fixes the ship up enough to make at least a single jump. You're surprised when, instead, it embarks on a kamikaze run towards the two Hissho, which results in the obliteration of all three!</text>
 			<autoReward level="HIGH">standard</autoReward>
 			<item_modify>
 				<item type="drones" min="-1" max="-1"/>
@@ -493,7 +493,7 @@
 	<choice hidden="true" req="SHIP_REPAIR">
 		<text>(Hull Repair Drone) Repair their hull.</text>
 		<event>
-			<text>While the two Mantis fight you approach the Sower ship and use a drone to fix up the ship. Once the breaches are fixed the shields flicker back on. In a matter of moments they are already in pursuit of one of the Mantis ships. Meanwhile the second Mantis turns toward you.</text>
+			<text>While the two Hissho fight you approach the Sower ship and use a drone to fix up the ship. Once the breaches are fixed the shields flicker back on. In a matter of moments they are already in pursuit of one of the Hissho ships. Meanwhile the second Hissho turns toward you.</text>
 			<item_modify>
 				<item type="drones" min="-1" max="-1"/>
 			</item_modify>
@@ -503,27 +503,27 @@
 </event>
 <eventList name="ROCK_MANTIS_FREIGHTER_LIST">
 	<event>
-		<text>The Mantis craft are both too busy slaughtering one another to notice you. Eventually the smaller ship gets the upper hand when it overrides the enemy door system and flushes the crew into space. Now's the time!</text>
+		<text>The Hissho craft are both too busy slaughtering one another to notice you. Eventually the smaller ship gets the upper hand when it overrides the enemy door system and flushes the crew into space. Now's the time!</text>
 		<ship load="MANTIS_ROCK_MANTIS_FREIGHTER" hostile="true"/>
 		<status type="loss" target="enemy" system="weapons" amount="2"/>
 	</event>
 	<event>
-		<text>The Mantis craft may have their differences, but when it comes to you they are of one mind. The smaller ship suffers a power failure as it moves to engage, but the larger one lets off a volley of fire and moves in to attack!</text>
+		<text>The Hissho craft may have their differences, but when it comes to you they are of one mind. The smaller ship suffers a power failure as it moves to engage, but the larger one lets off a volley of fire and moves in to attack!</text>
 		<ship load="MANTIS_ROCK_MANTIS_FREIGHTER" hostile="true"/>
 	</event>
 </eventList>
 <ship name="MANTIS_ROCK_MANTIS_FREIGHTER" auto_blueprint="SHIPS_MANTIS">
 	<destroyed>
-		<text>In the time it took you to eliminate the Mantis ship the Sower must have repaired their FTL drive and jumped away. You pick the bones of both Mantis vessels.</text>
+		<text>In the time it took you to eliminate the Hissho ship the Sower must have repaired their FTL drive and jumped away. You pick the bones of both Hissho vessels.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>In the time it took you to eliminate the Mantis ship the Sower must have repaired their FTL drive and jumped away. You pick the bones of both Mantis vessels.</text>
+		<text>In the time it took you to eliminate the Hissho ship the Sower must have repaired their FTL drive and jumped away. You pick the bones of both Hissho vessels.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 	<crew>
-		   <crewMember type="mantis" prop="0.80"/>
-		   <crewMember type="engi" prop="0.20"/>
+		  <crewMember type="mantis" prop="0.80"/>
+		  <crewMember type="engi" prop="0.20"/>
 	</crew>
 </ship>
 
@@ -638,7 +638,7 @@
 			<choice hidden="true" req="WEAPONS_MISSILES"> <!--JUSTIN - TO DO - Missile weapons-->
 				<text>(Missile Weapon) Attempt a controlled detonation using a missile.</text>
 				<event>
-					<text>After drawing straws, a crew member goes out to fix a modified warhead to the mine.  You detonate the missile in a way that dislodges the mine. It blows up shortly after. The ship takes some damage in the blasts, but you're still sailing.</text>
+					<text>After drawing straws, a crew member goes out to fix a modified warhead to the mine. You detonate the missile in a way that dislodges the mine. It blows up shortly after. The ship takes some damage in the blasts, but you're still sailing.</text>
 					<damage amount="4"/>
 					<item_modify>
 						<item type="missile" min="-1" max="-1"/>
@@ -706,7 +706,7 @@
 </event>
 <textList name="ROCK_BOARDERS_SHIP">
 	<text>You passively scan a small Sower station that is next to the beacon. However they must not have appreciated your curiosity. Your transporter's safety locks are disabled - a Sower combat unit beams on board!</text>
-	<text>You find a Sower ship docked with a damaged Mantis fighter. They hail you: "We will add your technological and ethnological distinctiveness to our own. Resistance is futile." Before you have a chance re-check which game you're playing, the ship moves in to attack you and you register teleporter signals from the disabled ship. They're using Mantis tech to board you!</text>
+	<text>You find a Sower ship docked with a damaged Hissho fighter. They hail you: "We will add your technological and ethnological distinctiveness to our own. Resistance is futile." Before you have a chance re-check which game you're playing, the ship moves in to attack you and you register teleporter signals from the disabled ship. They're using Hissho tech to board you!</text>
 </textList>
 
 
@@ -809,7 +809,7 @@
 				<text>"It belongs in a museum!"</text>
 				<event>
 					<text>"So do you! I've had enough of your antiquated re-" Grinning mischeviously, your passenger terminates the conversation. "Beam that crate down, and let's get the hell out of here!"</text>
-					<crewMember amount="1" class="human">Indy</crewMember>  
+					<crewMember amount="1" class="human">Indy</crewMember> 
 					<ship load="ROCK_QUEST_MARRIAGE" hostile="true"/>
 				</event>
 			</choice>
@@ -873,7 +873,7 @@ Unlock - follow a mysterious, intelligent Sower to a Dyson Sphere. Activate an E
 		<text>Continue...</text>
 		<event>
 			<text>You receive a communication from your ship - immense power signatures have begun to emanate from the Dyson sphere! It seems the Sowers just needed you to activate the artifact - but why would an Endless artifact respond to a human? The implications of this are staggering. Your ship calls again - the Sower have slaved control of the ship that attacked you over to your navigational computer. Stranger and stranger.</text>
-			<unlockShip id="6">The Sower deliver a cruiser to the hangar.  The Bulwark has been unlocked!</unlockShip>
+			<unlockShip id="6">The Sower deliver a cruiser to the hangar. The Bulwark has been unlocked!</unlockShip>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>

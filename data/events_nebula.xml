@@ -10,7 +10,7 @@ Hostile:
 	NEBULA_REBEL
 	NEBULA_AUTO
 	NEBULA_AUTO_WARNING
-	NEBULA_PIRATE    				NEW
+	NEBULA_PIRATE  				NEW
 	NEBULA_MANTIS_FIGHT				NEW
 	
 Neutral:
@@ -70,7 +70,7 @@ Storm Environment:
 	<text load="START_BEACON_NEBULA"/>
 </event>
 <textList name="START_BEACON_NEBULA">
-	<text>This nebula must have been an important hub at one point; placing all of these jump beacons would be no easy task.  However, now it's hardly navigable.</text>
+	<text>This nebula must have been an important hub at one point; placing all of these jump beacons would be no easy task. However, now it's hardly navigable.</text>
 	<text>Nebulas were always dangerous places. Many electronics fail in these clouds. You will have to tread lightly.</text>
 	<text>You've entered a sector thick with nebulas. You'll have to navigate on instinct.</text>
 	<text>You've entered a nebula-rich sector. You may put a few light years on the fleet, but that's only useful if you make it out the other side.</text>
@@ -93,12 +93,12 @@ Storm Environment:
 <textList name="NEBULA_STORE">
 	<text>Some brave entrepreneurs set up a station here to extract elements from the nebula. There seems to be a public shipyard and rest stop here as well.</text>
 	<text>Seeing a trade depot set up near the beacon implies there is an alien settlement on some nearby rock. You decide to check out their wares.</text>
-	<text>The centre of a hydrogen cloud doesn't seem like a usual place for a store, but the Engi aren't a usual species. Wouldn't hurt to take a look.</text>
-	<text>An Engi cargo vessel hails: "Propose mutually beneficial exchange of properties." That smells like a bargain.</text>
+	<text>The centre of a hydrogen cloud doesn't seem like a usual place for a store, but the Automatons aren't a usual species. Wouldn't hurt to take a look.</text>
+	<text>An Automaton cargo vessel hails: "Propose mutually beneficial exchange of properties." That smells like a bargain.</text>
 	<text>You discover a cluster of Pilgrim refugee ships taking shelter in the folds of the nebula. "I'm sorry we've got nothing to give you, but we need Dust to keep the engines running." You sense they'll strike a trade.</text>
 </textList>
 
-<!-- MATT: Need to update Nebula_Empty to standard.  -->
+<!-- MATT: Need to update Nebula_Empty to standard. -->
 <event name="NEBULA_EMPTY">
 	<text load = "NEBULA_EMPTY_LIST"/>
 	<environment type="nebula"/>
@@ -160,23 +160,23 @@ Storm Environment:
 </event>
 <textList name="NEBULA_PIRATE">	<!-- JUSTIN - ADD MORE -->
 	<text>As you drift through the nebula an unmarked vessel descends from the clouds and into your wake. Their weapons come online.</text>
-	<text>A pirate ship pulls out of the ether and hails: "You know what I love about this part of the galaxy? The explorers! You always carry such fine loot."  They lock weapons.</text>
+	<text>A pirate ship pulls out of the ether and hails: "You know what I love about this part of the galaxy? The explorers! You always carry such fine loot." They lock weapons.</text>
 	<text>As you coast through the nebula a pirate ship matches your course and closes the distance. Better to pick your battleground, but beggars can't be choosers.</text>
 	<text>A hostile vessel descends from out of the nebula. Combat stations!</text>
 	<text>You try to read the ID of a ship ahead in the fog, but it's too thick to penetrate. You have your answer when the ship turns, weapons hot!</text>	
 </textList>
 
-<event name="NEBULA_MANTIS_FIGHT" unique="false">   
+<event name="NEBULA_MANTIS_FIGHT" unique="false">  
 	<text load="NEBULA_MANTIS_FIGHT"/>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<environment type="nebula"/>
 </event>
 <textList name="NEBULA_MANTIS_FIGHT">
-	<text>Nebulas are known to be popular Mantis hunting grounds - information you would have done well to heed here.</text>
-	<text>You detect a Mantis expedition vessel returning home with its haul. So determined are they, in fact, that they don't wait to see if you're hostile before firing.</text>
-	<text>A Mantis ship, lost in the storm, hails you. "Sensors are out. We have no local telemetry. We will take yours." You detect a power increase in their weapons systems.</text>
-	<text>A Mantis ship hails you through the storm: "These are sacred Urggghtnag clan hunting grounds. You are prey." Shields up!</text>
-	<text>You notice a Mantis attack ship ducking between the clouds of swirling space stuff; it's hunting you. You try to get the jump and move in to attack.</text>
+	<text>Nebulas are known to be popular Hissho hunting grounds - information you would have done well to heed here.</text>
+	<text>You detect a Hissho expedition vessel returning home with its haul. So determined are they, in fact, that they don't wait to see if you're hostile before firing.</text>
+	<text>A Hissho ship, lost in the storm, hails you. "Sensors are out. We have no local telemetry. We will take yours." You detect a power increase in their weapons systems.</text>
+	<text>A Hissho ship hails you through the storm: "These are sacred Urggghtnag clan hunting grounds. You are prey." Shields up!</text>
+	<text>You notice a Hissho attack ship ducking between the clouds of swirling space stuff; it's hunting you. You try to get the jump and move in to attack.</text>
 
 </textList>
 
@@ -185,7 +185,7 @@ Storm Environment:
 	Events that could have a fight
 ------------>
 
-<event name="NEBULA_REBEL_UNDETECTED" unique="true">  <!-- give player option to hide, -->
+<event name="NEBULA_REBEL_UNDETECTED" unique="true"> <!-- give player option to hide, -->
 	<text>Your ship emerges quite far away from the beacon. You see an Empire ship waiting nearby, undoubtedly stationed to look for you.</text>
 	<ship load="REBEL" hostile="false"/>
 	<environment type="nebula"/>
@@ -232,7 +232,7 @@ Storm Environment:
 </eventList>
 
 
-<event name="NEBULA_PIRATE_SMUGGLE">   <!-- TO DO -- NEED TO MAKE A NEW PIRATE SHIP THAT ATTEMPTS TO BRIBE YOU WHEN SURRENDERING-->
+<event name="NEBULA_PIRATE_SMUGGLE">  <!-- TO DO -- NEED TO MAKE A NEW PIRATE SHIP THAT ATTEMPTS TO BRIBE YOU WHEN SURRENDERING-->
 	<text>A small ship arrives shortly after you and is acting suspiciously nonchalant - keeping their distance, but trying to make it look like they aren't. They have an IFF code clearance - an older code, but it checks out. Likely a smuggler.</text>
 	<environment type="nebula"/>
 	<choice>
@@ -270,7 +270,7 @@ Storm Environment:
 
 <event name="NEBULA_AUTO_DEFENSE_ITEM" unique="true">
 	<text>An advance Empire USV remains stationed near a small space-station. However, without functioning sensors it is impossible to tell what is inside.</text>
-	<ship load="REBEL_AUTO_ITEM" hostile="false"/>  <!-- ship is in other xmls -->
+	<ship load="REBEL_AUTO_ITEM" hostile="false"/> <!-- ship is in other xmls -->
 	<choice>
 		<text>Attack the automated ship to get to the station.</text>
 		<event>
@@ -406,11 +406,11 @@ Storm Environment:
 </event>
 
 <event name="NEBULA_MANTIS_CHOICE" unique="true">
-	<text>Navigating the fog blind, you practically bump hulls with a Mantis ship. They hail you: "Pah! This transgression will be overlooked. Nebula, very dangerous. Next time, Hu-mans all die."</text>
+	<text>Navigating the fog blind, you practically bump hulls with a Hissho ship. They hail you: "Pah! This transgression will be overlooked. Nebula, very dangerous. Next time, Hu-mans all die."</text>
 	<ship load="MANTIS_FIGHT" hostile="false"/>
 	<environment type="nebula"/>
 	<choice>
-		<text>Really? Discression, from a Mantis? Fuck that. Open fire!</text>
+		<text>Really? Discression, from the Hissho? Fuck that. Open fire!</text>
 		<event>
 			<ship hostile="true"/>
 		</event>
@@ -496,7 +496,7 @@ Storm Environment:
 </event>
 <textList name="NEBULA_BOARDING_TEXT">
 	<text>You see a small station nearby and feel the shudder of shots ringing through the ship. You can't be sure without sensors, but it seems there may be intruders on the ship!</text> 
-	<text>You arrive in the nebula and immediately receive a message from an unknown source, "Prepare to be boarded!"  With the static from the nebula, there's no way to tell who it came from, but you hear shots fired on board the ship.</text>
+	<text>You arrive in the nebula and immediately receive a message from an unknown source, "Prepare to be boarded!" With the static from the nebula, there's no way to tell who it came from, but you hear shots fired on board the ship.</text>
 	<text>You see a number of derelict ships near this beacon. After a short time you hear the tell-tale sounds of a teleporter and shouts coming from within the ship. You've been boarded!</text>
 </textList>
 
@@ -546,7 +546,7 @@ Storm Environment:
 	<boarders min="3" max="5" class="human"/>
 </event>
 <event name="STORM_BOARDING_MANTIS">
-	<text>A Mantis ship is sitting in the middle of the storm, with only essential systems powered up. Unsurprisingly, they beam nearly their entire crew aboard your ship. This is the kind of shit that the Mantis live for; they must be having the time of their lives.</text> 
+	<text>A Hissho ship is sitting in the middle of the storm, with only essential systems powered up. Unsurprisingly, they beam nearly their entire crew aboard your ship. This is the kind of shit that the Hissho live for; they must be having the time of their lives.</text> 
 	<environment type="storm"/>
 	<boarders min="2" max="4" class="mantis"/>
 </event>

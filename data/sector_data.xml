@@ -321,7 +321,7 @@ HOSTILE SECTORS
 
 <sectorDescription name="MANTIS_SECTOR" minSector="4" unique="false"> 
 	<nameList>
-		<name>Mantis Controlled Sector</name>
+		<name>Hissho Controlled Sector</name>
 	</nameList>
 	<trackList>
 		<track>hectic</track>
@@ -349,7 +349,7 @@ HOSTILE SECTORS
 
 <sectorDescription name="MANTIS_HOME" minSector="6" unique="true">  
 	<nameList>
-		<name>Mantis Homeworlds</name>
+		<name>Hissho Nestworlds</name>
 	</nameList>
 	<trackList>
 		<track>hectic</track>
@@ -378,7 +378,7 @@ HOSTILE SECTORS
 
 <sectorDescription name="ENGI_SECTOR" minSector="2" unique="false">  
 	<nameList>
-		<name>Engi Controlled Sector</name>
+		<name>Automaton Controlled Sector</name>
 	</nameList>
 	<trackList>
 		<track>engi</track>
@@ -406,7 +406,7 @@ HOSTILE SECTORS
 
 <sectorDescription name="ENGI_HOME" minSector="4" unique="true"> 
 	<nameList>
-		<name>Engi Homeworlds</name>
+		<name>Automaton Homelands</name>
 	</nameList>
 	<trackList>
 		<track>engi</track>
@@ -436,7 +436,7 @@ HOSTILE SECTORS
 
 <sectorDescription name="ROCK_HOME" minSector="4" unique="true">   
 	<nameList>
-		<name>Sower Homeworlds</name>
+		<name>Sower Forgeworlds</name>
 	</nameList>
 	<trackList>
 		<track>rock</track>
@@ -496,6 +496,7 @@ NEBULA SECTORS
 	<event name="DISTRESS_BEACON" min="1" max="3"/>
 </sectorDescription>
 
+<!--
 <sectorDescription name="SLUG_SECTOR" minSector="4" unique="false">    
 	<nameList>
 		<name>Slug Controlled Nebula</name>
@@ -560,3 +561,4 @@ NEBULA SECTORS
 	<event name="NEBULA_NEUTRAL_SLUG" min="3" max="5"/>
 	<event name="NEUTRAL" min="1" max="2"/>
 </sectorDescription>
+-->

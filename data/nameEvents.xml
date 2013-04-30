@@ -86,7 +86,7 @@
 	</event>
 	<event>
 		<ship load="REBEL" hostile="false"/>
-		<text>A rebel ship arrives at the beacon. "Ah! It seems you did our dirty work for us. Nothing worse than Engi refugees. Let us give you some spare supplies as thanks, we've been chasing those Federation lapdogs through two sectors." Luckily they're too grateful for your help to notice who you are.</text>
+		<text>A rebel ship arrives at the beacon. "Ah! It seems you did our dirty work for us. Nothing worse than Automaton refugees. Let us give you some spare supplies as thanks, we've been chasing those Federation lapdogs through two sectors." Luckily they're too grateful for your help to notice who you are.</text>
 		<item_modify>
 			<item type="scrap" min="25" max="50"/>
 			<item type="fuel" min="1" max="3"/>
@@ -155,7 +155,7 @@
 </eventList>
 
 <event name="ENGI_REFUGEES" unique = "true">
-	<text>You come across a freightor of Engi refugees fleeing the rebels. Their ship is seriously damaged and they clearly need help</text>
+	<text>You come across a freightor of Automaton refugees fleeing the rebels. Their ship is seriously damaged and they clearly need help</text>
 	<choice>
 		<text>You just don't have the equipment or the time to help them. We wish them luck and let them go on their way.</text>
 		<event/>
@@ -170,7 +170,7 @@
 		</event>
 	</choice>
 	<choice req="engi" lvl="1">
-		<text>(Engi) Your crewmember wants to go aboard to see if he can provide any help personally. He requests some Dust to help.</text>
+		<text>(Automaton) Your crewmember wants to go aboard to see if he can provide any help personally. He requests some Dust to help.</text>
 		<event>
 			<text>He returns bearing good news. He was able to improve their engines and convinced one of their crew to join your cause.</text>
 			<item_modify>

@@ -360,11 +360,11 @@ Matt:
 	</choice>
 </event>
 <event name="CRYSTAL_MANTIS_CRYSTAL" unique="false">
-	<text>You discover a number of civilian ships fleeing the area. Shots are fired and you find the assailant; a Mantis ship is attacking one of the smaller ships!</text>
+	<text>You discover a number of civilian ships fleeing the area. Shots are fired and you find the assailant; a Hissho ship is attacking one of the smaller ships!</text>
 	<choice hidden="true">
-		<text>Attack the Mantis.</text>
+		<text>Attack the Hissho.</text>
 		<event>
-			<text>You activate your impulse engines and fly between the Mantis and their prey, weapons charging. You appear to have their full attention.</text>
+			<text>You activate your impulse engines and fly between the Hissho and their prey, weapons charging. You appear to have their full attention.</text>
 			<ship load="MANTIS_CRYSTAL" hostile="true"/>
 		</event>
 	</choice>
