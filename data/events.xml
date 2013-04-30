@@ -1082,13 +1082,6 @@ item - Dust + that thing -->
 			<text>Mercenaries or no, that's a loyalist settlement. You prepare to jump.</text>
 		</event>
 	</choice>
-	<choice hidden="true" req="BEAM_FIRE">
-		<text>(Fire Beam) Show the pirate how to intimidate settlers: burn their crops!</text>
-		<event>
-			<text>The mercenary ship watches as you start to light the meager crops on fire. In a few moments the settlement surrenders, offering tribute to leave them alone. The mercenary seems impressed.</text>
-			<autoReward level="HIGH">drone</autoReward>
-		</event>
-	</choice>		
 	<choice hidden="true" req="BOMB_FIRE">
 		<text>(Fire Bomb) Show the mercenary how to intimidate settlers: start fires in their crude dwellings</text>
 		<event>

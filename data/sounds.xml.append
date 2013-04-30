@@ -43,6 +43,11 @@
 		<name>rough</name>
 		<explore>chiwawa_smoke.ogg</explore>
 		<combat>chiwawa_afghanistan.ogg</combat>
+	</track>
+	<track>
+		<name>rough2</name>
+		<explore>meltdown.ogg</explore>
+		<combat>filtered_water.ogg</combat>
 	</track>	
 	<track>
 		<name>voidEmpire</name>
@@ -69,11 +74,6 @@
 		<explore>perfect_tomorrow.mp3</explore>
 		<combat>target_practice.ogg</combat>
 	</track>	
-	<track>
-		<name>rough2</name>
-		<explore>meltdown.ogg</explore>
-		<combat>filtered_water.ogg</combat>
-	</track>
 	<track>
 		<name>explore</name>
 		<explore>black_wind.ogg</explore>

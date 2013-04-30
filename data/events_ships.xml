@@ -1141,10 +1141,6 @@ Special:
 		<autoReward level="HIGH">standard</autoReward>
 		<status type="clear" target="player" system="oxygen" amount="100"/>
 	</deadCrew>
-	<weaponOverride count="1">
-		<name>BEAM_FIRE</name>
-		<name>BOMB_FIRE</name>
-	</weaponOverride>
 </ship>
 
 <ship name="JELLY_STATUS_DOORS" auto_blueprint="SHIPS_JELLY">

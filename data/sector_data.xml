@@ -1,4 +1,4 @@
-<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved. -->
+\<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved. -->
 
 <sectorType name="CIVILIAN">
 	<sector>CIVILIAN_SECTOR_1</sector>
@@ -25,8 +25,6 @@
 
 <sectorType name="NEBULA">
 	<sector>NEBULA_SECTOR</sector>
-	<sector>SLUG_HOME</sector> 
-	<sector>SLUG_SECTOR</sector>
 </sectorType>
 
 <!-- --------------------
@@ -488,6 +486,7 @@ NEBULA SECTORS
 	<trackList>
 		<track>deepspace</track>
 		<track>void</track>
+		<track>explore</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="4"/>

@@ -1733,6 +1733,31 @@
 	<weaponArt>boss_4</weaponArt> 
 </weaponBlueprint>
 
+<weaponBlueprint name="BEAM_BIO">
+	<type>BEAM</type>
+	<title>Anti-Bio Beam</title> 
+	<short>Anti-Bio Beam</short>
+	<desc>This terrifying beam does no physical damage but rips through organic material, dealing heavy damage to crew members.</desc>
+	<tooltip>2 power beam weapon that greatly damages enemy crew.</tooltip>
+	<!--<desc>Power Req: 2    A beam weapon that does 1 damage and starts fires in a line if the enemy has no shields.</desc>-->
+	<damage>0</damage>
+	<persDamage>4</persDamage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>16</cooldown>
+	<speed>13</speed>
+	<power>2</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>5</rarity>
+	<length>140</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_bio</weaponArt> 
+</weaponBlueprint>
 
 <!-- VANILLA WEAPONS -->
 
@@ -3264,8 +3289,8 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="2" missiles="8">
-		<weapon name="MISSILES_2_PLAYER"/>
-		<weapon name="LASER_BURST_3"/>
+		<weapon name="UE_DRIVER_1"/>
+		<weapon name="UE_DRIVER_1"/>
 	</weaponList>
 	<health amount="30"/>
 	<maxPower amount ="8"/> 
@@ -4252,9 +4277,9 @@ TUTORIAL SHIPS
 		<!--  <drones power="3" room="7"/>  -->
 	</systemList>
 	<weaponList count="3" missiles="30">
-		<weapon name="LASER_BURST_2_A"/>
-		<weapon name="BEAM_2"/>
-		<weapon name="MISSILES_BURST"/>
+		<weapon name="BASIC_LASER_2"/>
+		<weapon name="BASIC_LASER_2"/>
+		<weapon name="BASIC_MISSILE_3"/>
 	</weaponList>
 	<droneList count="1" drones="5">
 		<drone name="COMBAT_1"/>
@@ -4424,4 +4449,3 @@ Boss files
 	<maxPower amount ="31"/>
 	<boardingAI>invasion</boardingAI>
 </shipBlueprint>
-
