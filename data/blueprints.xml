@@ -3,17 +3,27 @@
 <!-- Customization possibilities -->
 
 <blueprintList name="STARTING_WEAPONS">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BEAM_LONG</name>
 	<name>ION_1</name>
 	<name>BOMB_1</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>MISSILES_3</name>
+	<name>BEAM_1</name>
+	<name>BEAM_FIRE</name>
+	<name>LASER_HULL_2</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_ION</name>
+	<name>BOMB_HEAL</name>
 	<name>BASIC_MISSILE_1</name>
 	<name>BASIC_MISSILE_2</name>
 	<name>BASIC_LASER_1</name>
 	<name>BASIC_LASER_2</name>
 	<name>BASIC_KINETIC_1</name>
 	<name>BASIC_KINETIC_2</name>
-	<name>BOMB_FIRE</name>
-	<name>BOMB_ION</name>
-	<name>BOMB_HEAL</name>
 </blueprintList>
 
 <blueprintList name="STARTING_DRONES">
@@ -1733,32 +1743,6 @@
 	<weaponArt>boss_4</weaponArt> 
 </weaponBlueprint>
 
-<weaponBlueprint name="BEAM_BIO">
-	<type>BEAM</type>
-	<title>Anti-Bio Beam</title> 
-	<short>Anti-Bio Beam</short>
-	<desc>This terrifying beam does no physical damage but rips through organic material, dealing heavy damage to crew members.</desc>
-	<tooltip>2 power beam weapon that greatly damages enemy crew.</tooltip>
-	<!--<desc>Power Req: 2    A beam weapon that does 1 damage and starts fires in a line if the enemy has no shields.</desc>-->
-	<damage>0</damage>
-	<persDamage>4</persDamage>
-	<sp>0</sp>
-	<fireChance>0</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>16</cooldown>
-	<speed>13</speed>
-	<power>2</power>
-	<cost>50</cost>
-	<bp>6</bp>
-	<rarity>5</rarity>
-	<length>140</length>
-	<image>beam_contact</image>
-	<launchSounds>
-		<sound>beam2</sound>
-	</launchSounds>
-	<weaponArt>beam_bio</weaponArt> 
-</weaponBlueprint>
-
 <!-- VANILLA WEAPONS -->
 
 <weaponBlueprint name="ARTILLERY_WEAPON">
@@ -1997,6 +1981,311 @@
 	<weaponArt>artillery_fed</weaponArt> 
 </weaponBlueprint>
 
+
+<!--------------
+	SIMPLE LASERS 
+ -------------->
+
+<weaponBlueprint name="LASER_BURST_1">  <!-- 1 shot 1power-->
+	<type>LASER</type>
+	<title>Defense Laser Mark I</title>
+	<short>Basic Laser</short>
+	<desc>Very weak laser.</desc>
+	<tooltip>Only one shot, one damage per shot.</tooltip>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<cost>20</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>laser_light1</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="LASER_BURST_2">  <!--1 power 2 shots-->
+	<type>LASER</type>
+	<title>Dual Shot Laser</title>
+	<short>Dual Lasers</short>
+	<desc>Basic weak dual lasers. Often used by transport ships that can't afford better.</desc>
+	<tooltip>Shoots 2 lasers that do 1 damage each.</tooltip>
+	<damage>1</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<cost>25</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>laser_light1</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_2</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="LASER_BURST_2_A">  <!-- 2 power 2 shots -->
+	<type>LASER</type>
+	<title>Burst Laser Mark I</title>
+	<short>Burst Laser I</short>
+	<desc>This simple burst laser isn't flashy but it gets the job done.</desc>
+	<tooltip>Shoots 2 lasers that do 1 damage each.</tooltip>
+	<damage>1</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>11</cooldown>
+	<power>2</power>
+	<cost>50</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>laser_light1</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_2</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="LASER_BURST_3">
+	<type>LASER</type>
+	<title>Burst Laser Mark II</title>
+	<short>Burst Laser II</short>
+	<desc>Slightly improved version of the burst laser that fires more shots per charge.</desc>
+	<tooltip>Fires 3 lasers, 1 damage each.</tooltip>
+	<damage>1</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>12</cooldown>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>laser_light2</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_3</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="LASER_BURST_5">
+	<type>LASER</type>
+	<title>Burst Laser Mark III</title>
+	<short>Burst L. III</short>
+	<desc>Powerful burst laser that fires off an impressive barrage.</desc>
+	<tooltip>Fires 5 lasers, 1 damage per shot.</tooltip>
+	<damage>1</damage>
+	<shots>5</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>19</cooldown>
+	<power>4</power>
+	<cost>110</cost>
+	<bp>10</bp>
+	<rarity>0</rarity>
+	<image>laser_light2</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_5</weaponArt> 
+</weaponBlueprint>
+
+
+
+
+<!--------------
+	HEAVY LASERS
+ -------------->
+<weaponBlueprint name="LASER_HEAVY_1">
+	<type>LASER</type>
+	<title>Heavy Laser Mark I</title>
+	<short>Heavy Laser I</short>
+	<desc>Heavy lasers can wreak more havoc than their smaller, burst laser counterparts</desc>
+	<tooltip>Fires 1 shot, causes 2 damage with low chance of fire and breaching.</tooltip>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>9</cooldown>
+	<power>1</power>
+	<cost>55</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>laser_heavy1</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_heavy_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="LASER_HEAVY_2">
+	<type>LASER</type>
+	<title>Heavy Laser Mark II</title>
+	<short>Heavy Laser II</short>
+	<desc>This heavy laser fires two shots in quick succession, each dealing 2 damage.</desc>
+	<tooltip>Fires 2 heavy lasers, 2 damage each with low chance of fire and breaching.</tooltip>
+	<damage>2</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>13</cooldown>
+	<power>3</power>
+	<cost>75</cost>
+	<bp>10</bp>
+	<rarity>0</rarity>
+	<image>laser_heavy1</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_heavy_2</weaponArt> 
+</weaponBlueprint>
+
+
+<weaponBlueprint name="LASER_HEAVY_1_SP">
+	<type>LASER</type>
+	<title>Heavy Pierce Laser Mark I</title>
+	<short>Heavy Pierce I</short>
+	<desc>Heavy lasers can wreak more havoc than their smaller, burst laser counterparts. This modified version pierces 1 shield.</desc>
+	<tooltip>Fires 1 shot that does 2 damage with a low chance of fire and breaching. Ignores 1 shield. </tooltip>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>1</sp>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>10</cooldown>
+	<power>2</power>
+	<cost>55</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>laser_heavy1</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_heavy_1</weaponArt> 
+</weaponBlueprint>
+
 <!----------------
 	CRYSTAL SHARD
 ----------------->
@@ -2035,6 +2324,557 @@
 		<sound>miss</sound>
 	</missSounds>
 	<weaponArt>crystal_shard</weaponArt> 
+</weaponBlueprint>
+
+<!--------------
+	MISSILES
+ -------------->
+
+<weaponBlueprint name="MISSILES_1">
+	<type>MISSILES</type>
+	<title>Leto Missiles</title>
+	<short>Leto</short>
+	<desc>This launcher is outdated and weak, but can still be effective.</desc>
+	<tooltip>Fires 1 missile; does 1 damage; pierces all shields.</tooltip>
+	<damage>1</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<fireChance>1</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>9</cooldown>
+	<power>1</power>
+	<cost>20</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>missile_1</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MISSILES_2_PLAYER">
+	<type>MISSILES</type>
+	<title>Artemis Missiles</title>
+	<short>Artemis</short>
+	<desc>Standard missile launcher on most Empire ships.</desc>
+	<tooltip>Fires 1 missile; does 2 damage; pierces all shields.</tooltip>
+	<damage>2</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<fireChance>1</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>11</cooldown>
+	<power>1</power>
+	<cost>38</cost>
+	<bp>5</bp>
+	<rarity>0</rarity>
+	<image>missile_2</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MISSILES_2">
+	<type>MISSILES</type>
+	<title>Artemis Missiles</title>
+	<short>Artemis</short>
+	<desc>Standard missile launcher on most Empire ships.</desc>
+	<tooltip>Fires 1 missile; does 2 damage; pierces all shields.</tooltip>
+	<damage>2</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<fireChance>1</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>10</cooldown>
+	<power>2</power>
+	<cost>38</cost>
+	<bp>5</bp>
+	<rarity>0</rarity>
+	<image>missile_2</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MISSILES_3">
+	<type>MISSILES</type>
+	<title>Hermes Missile</title>
+	<short>Hermes</short>
+	<desc>Standard but powerful missile.</desc>
+	<tooltip>Fires 1 missile; does 3 damage; pierces all shields.</tooltip>
+	<!--<desc>Power Req: 2    Pierces through all shields and deals 3 damage with a chance of fire and breaches.  Uses 1 missile per shot.</desc>-->
+	<damage>3</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<fireChance>3</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>14</cooldown>
+	<power>3</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>missile_3</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_2</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MISSILES_BURST">
+	<type>MISSILES</type>
+	<title>Pegasus Missile</title>
+	<short>Pegasus</short>
+	<desc>Creative missile design allows for two projectiles for the cost of one!</desc>
+	<tooltip>Fires 2 missiles; 2 damage each; pierces  all shields.</tooltip>
+	<!--<desc>Power Req: 3    Fires 2 missiles that pierces through all shields and deals 2 damage. Consumes 2 missile per shot.</desc>-->
+	<damage>2</damage>
+	<missiles>1</missiles>
+	<shots>2</shots>
+	<sp>5</sp>
+	<fireChance>3</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>20</cooldown>
+	<power>3</power>
+	<cost>80</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>missile_2</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+
+
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MISSILES_BREACH">
+	<type>MISSILES</type>
+	<title>Breach Missiles</title>
+	<short>Breach</short>
+
+	<desc>These missiles are designed to cause maximum destruction to ship hull armor.</desc>
+	<tooltip>Fires 1 missile; 4 damage; pierces all shields; high breach chance.</tooltip>
+	<!--<desc>Power Req: 3    Fires a single shot, heavy missile that does 4 damage and causes breaches in the target's hull.</desc>-->
+	<damage>4</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<fireChance>3</fireChance>
+	<breachChance>8</breachChance>
+	<cooldown>22</cooldown>
+
+	<power>3</power>
+	<cost>70</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>missile_breach</image>
+	<launchSounds>
+
+
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+
+
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_2</weaponArt> 
+</weaponBlueprint>
+
+
+
+
+
+<!--------------
+
+	BEAM WEAPONS
+ -------------->
+
+<weaponBlueprint name="BEAM_1">
+	<type>BEAM</type>
+	<title>Mini Beam</title>
+	<short>Mini Beam</short>
+
+
+	<desc>Extremely cheap and weak beam weapon.</desc>
+	<tooltip>One damage per room beam weapon</tooltip>
+	<damage>1</damage>
+
+	<sp>0</sp>
+
+
+
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>12</cooldown>
+	<speed>3</speed>
+	<power>1</power>
+	<cost>20</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>45</length>
+	<launchSounds>
+		<sound>beam1</sound>
+	</launchSounds>
+	<weaponArt>beam_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_LONG">
+	<type>BEAM</type>
+	<title>Pike Beam</title>
+	<short>Pike Beam</short>
+	<desc>Can cut across entire ships, assuming there's no shield to stop it.</desc>
+	<tooltip>Beam weapon with extended line. 1 damage per room.</tooltip>
+	<!--<desc>Power Req: 2    Can cut across an entire ship that has no shields, dealing 1 damage per room.</desc>-->
+	<damage>1</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<speed>13</speed>
+	<cooldown>16</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>5</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>170</length>
+	<launchSounds>
+		<sound>beam1</sound>
+	</launchSounds>
+	<weaponArt>beam_long</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_2">
+	<type>BEAM</type>
+	<title>Halberd Beam</title>
+	<short>Halberd Beam</short>
+	<desc>Slow but reliably powerful standard beam weapon.</desc>
+	<tooltip>Beam weapon, 2 damage per room with small breach chance.</tooltip>
+	<!--<desc>Power Req: 3    A powerful but slow beam that deals 2 damage in a short line with a low chance of breaches.</desc>-->
+	<damage>2</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>17</cooldown>
+	<power>3</power>
+	<cost>70</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<length>80</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_2</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_3">
+	<type>BEAM</type>
+	<title>Glaive Beam</title>
+	<short>Glaive Beam</short>
+	<desc>One of the most powerful weapons of war ever created. Known to take out some ships in a single blast.</desc>
+	<tooltip>Large beam that does 3 damage per room.</tooltip>
+	<!--<desc>Power Req: 4    A very powerful beam weapon that cuts through ships like butter.   Deals 3 damage in a line.</desc>-->
+	<damage>3</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>25</cooldown>
+	<power>4</power>
+	<cost>120</cost>
+	<bp>12</bp>
+	<rarity>0</rarity>
+	<length>80</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_3</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_FIRE">
+	<type>BEAM</type>
+	<title>Fire Beam</title>   <!-- Induction beam? -->
+	<short>Fire Beam</short>
+	<desc>This terrifying beam does no physical damage but ignites fires.</desc>
+	<tooltip>Beam weapon that starts fires.</tooltip>
+	<!--<desc>Power Req: 2    A beam weapon that does 1 damage and starts fires in a line if the enemy has no shields.</desc>-->
+	<damage>0</damage>
+	<sp>0</sp>
+	<fireChance>8</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<power>2</power>
+	<cost>70</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<length>140</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_fire</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_BIO">
+	<type>BEAM</type>
+	<title>Anti-Bio Beam</title> 
+	<short>Anti-Bio Beam</short>
+	<desc>This terrifying beam does no physical damage but rips through organic material, dealing heavy damage to crew members.</desc>
+	<tooltip>2 power beam weapon that greatly damages enemy crew.</tooltip>
+	<!--<desc>Power Req: 2    A beam weapon that does 1 damage and starts fires in a line if the enemy has no shields.</desc>-->
+	<damage>0</damage>
+	<persDamage>4</persDamage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>16</cooldown>
+	<speed>13</speed>
+	<power>2</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>5</rarity>
+	<length>140</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_bio</weaponArt> 
+</weaponBlueprint>
+
+
+
+
+
+<!--------------
+	HULL SMASHER WEAPONS
+ -------------->
+
+<weaponBlueprint name="LASER_HULL_1">
+	<type>LASER</type>
+	<title>Hull Smasher Laser</title>
+	<short>Hull Laser I</short>
+	<desc>Fires 2 shots that deal 1 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>
+	<tooltip>Fires 2 lasers, 1 damage each and 2x damage in systemless rooms.</tooltip>
+	<damage>1</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>14</cooldown>
+	<hullBust>1</hullBust>
+	<power>2</power>
+	<cost>65</cost>
+	<rarity>0</rarity>
+	<speed>75</speed>
+	<image>laser_heavy1</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_hull</weaponArt> 
+</weaponBlueprint>
+
+
+<weaponBlueprint name="LASER_HULL_2">
+	<type>LASER</type>
+	<title>Hull Smasher Laser Mark II</title>
+	<short>Hull Laser II</short>
+
+
+
+
+	<desc>Designed to maximize hull damage.</desc>
+	<tooltip>Fires 3 lasers, 1 damage each and 2x damage in systemless rooms.</tooltip>
+	<!--<desc>Power Req: 3  Fires 3 shots that deal 1 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
+	<damage>1</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>15</cooldown>
+	<hullBust>1</hullBust>
+	<power>3</power>
+
+	<cost>100</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>laser_heavy1</image>
+	<speed>90</speed>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_hull</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_HULL">
+	<type>BEAM</type>
+	<title>Hull Beam</title>
+	<short>Hull Beam</short>
+	<desc>This beam is most powerful when targeting large, empty sections of hull.</desc>
+	<tooltip>Beam weapon; 1 damage; 2x damage in systemless rooms.</tooltip>
+	<!--<desc>Power Req: 3  Fires a beam that deals 1 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
+	<damage>1</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>14</cooldown>
+	<hullBust>1</hullBust>
+	<power>2</power>
+	<cost>70</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>100</length>
+	<launchSounds>
+		<sound>beam1</sound>
+	</launchSounds>
+	<weaponArt>beam_hull</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MISSILES_HULL">
+	<type>MISSILES</type>
+	<title>Hull Missile</title>
+	<short>Hull Mi.</short>
+
+
+	<desc>High hull damage plus a decent breach chance.</desc>
+	<tooltip>Fires 1 missile; 2 damage; 2x damage in systemless rooms.</tooltip>
+	<!--<desc>Power Req: 2  Fires a missile that deals 2 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
+	<damage>2</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<fireChance>1</fireChance>
+	<breachChance>3</breachChance>
+	<hullBust>1</hullBust>
+	<cooldown>17</cooldown>
+	<power>2</power>
+
+	<cost>75</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>missile_hull</image>
+	<launchSounds>
+
+
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_2</weaponArt> 
 </weaponBlueprint>
 
 <!--------------
@@ -3456,7 +4296,7 @@
 <shipBlueprint name="PLAYER_SHIP_MANTIS" layout="mantis_cruiser" img="mantis_cruiser"> 
 	<class>Hissho Cruiser</class>
 	<name>???</name>
-	<unlock>-</unlock>
+	<unlock>Not implemented</unlock>
 	<desc>This warship is not yet implemented.</desc>
 	<systemList>
 		<pilot power="1" room="7" start="true"/>
@@ -3491,7 +4331,7 @@
 <shipBlueprint name="PLAYER_SHIP_MANTIS_2" layout="mantis_cruiser_2" img="mantis_cruiser_2"> 
 	<class>Hissho Cruiser</class>
 	<name>The Basilisk</name>
-	<unlock>-</unlock>
+	<unlock>Not implemented</unlock>
 	<desc>This warship is not yet implemented.</desc>
 	<systemList>
 		<pilot power="1" room="8" start="true"/>
