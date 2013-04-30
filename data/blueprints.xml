@@ -4329,10 +4329,10 @@
 <!-- LAYOUT = DEFAULT --> 
 <!-- SHIP ID = 1 --> 
 <shipBlueprint name="PLAYER_SHIP_STEALTH" layout="stealth" img="stealth">
-	<class>Stealth Cruiser</class>
+	<class>Blockade Runner</class>
 	<name>The Nesasio</name>
-	<unlock>This ship is being built near the Automaton homeworlds.  To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
-	<desc>Constructed for the Pilgrims by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
+	<unlock>This ship is being built near the Automaton homeworlds. To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
+	<desc>Constructed for the IHTG by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
 	<systemList>
 		<pilot power="1" room="0" start="true"/>
 		<doors power="1" room="14" start="true" img="room_doors_2"/>
@@ -4367,10 +4367,10 @@
 <!-- LAYOUT = ALTERNATE --> 
 <!-- SHIP ID = ???? --> 
 <shipBlueprint name="PLAYER_SHIP_STEALTH_2" layout="stealth_2" img="stealth_2">
-	<class>Stealth Cruiser</class>
+	<class>Trade Enforcer</class>
 	<name>DA-SR 12</name>  <!-- direct action - stealth reconnaissance-->
 	<unlock>This ship is being built near the Automaton homeworlds. To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
-	<desc>Constructed for the Pilgrims by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
+	<desc>Constructed for the IHTG by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
 	<systemList>
 		<pilot power="1" room="9" start="true" img="room_pilot_2">
 			<slot>
