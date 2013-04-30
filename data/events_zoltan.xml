@@ -680,7 +680,7 @@ Environmnt:
 <eventList name="NEBULA_ZOLTAN_EYE_LIST">
 	<event>
 		<text>As you approach, an ancient alien voice speaks to you: "Your mission has brought you great battles, and great losses. This will help ease the pain." A few minutes later someone reports medical equipment has appeared on the ship!</text>
-		<weapon name="BOMB_HEAL"/>
+		<augment name="NANO_MEDBAY"/>
 	</event>
 	<event>
 		<text>You approach the planet and wait, but nothing happens. The Sophon hails: "Disappointing. The builders of this artifact must not recognize that which was in them, in you. You must accept their judgement."</text>

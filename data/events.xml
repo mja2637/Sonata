@@ -1082,16 +1082,6 @@ item - Dust + that thing -->
 			<text>Mercenaries or no, that's a loyalist settlement. You prepare to jump.</text>
 		</event>
 	</choice>
-	<choice hidden="true" req="BOMB_FIRE">
-		<text>(Fire Bomb) Show the mercenary how to intimidate settlers: start fires in their crude dwellings</text>
-		<event>
-			<text>The other ship watches as you teleport an incendiary explosive into their settlement. As the settlers scramble to put out the fires, their rudimentary planetary defenses power down. Forcing their surrender was almost laughably easy, but the merc seems impressed with your tactics and agrees to share the settlement's 'tribute'.</text>
-			<item_modify>
-				<item type="missiles" min="-1" max="-1"/>
-			</item_modify>
-			<autoReward level="HIGH">drone</autoReward>
-		</event>
-	</choice>
 </event>
 <event name="PIRATE_STATION_CROPS_RESULT">
 	<text>With the mercenaries gone you signal the station. "Not to be ungrateful, but if the Empire knows we've been dealing with the Pilgrims we'll have to handle worse than a mere mercenary. Sorry we can't give you more."</text>
@@ -1604,13 +1594,6 @@ item - Dust + that thing -->
 				<item type="drones" min="-1" max="-1"/>
 			</item_modify>
 		</event>
-	</choice>
-	<choice hidden="true" req="BEAM_BIO">
-		<text>(Bio Beam) Use the beam to pick off the spiders.</text>
-		<event>
-			<text>You instruct them to drop their shields and you are able to kill the creatures without damaging the station. "The monsters just started bursting into flame as we watched. What a terrifying weapon... Here, take this for your help, friend."</text>
-			<autoReward level="HIGH">stuff</autoReward>
-		</event>	
 	</choice>
 </event>
 <eventList name="DISTRESS_INFESTATION_LIST">
@@ -2830,23 +2813,6 @@ item - Dust + that thing -->
 			<ship load="MANTIS_LANDING_PARTY" hostile="true"/>
 		</event>
 	</choice>
-	<choice hidden="true" req="BOMB_FIRE">
-		<text>(2 Fire Bombs) Teleport fire bombs into key structures.</text>
-		<event>
-			<text>It appears they have not set up a teleporter disruption field yet. You deposit one bomb in a fuel depot and another in the barracks. Hissho comm channels fill with panicked chatter and you watch a number of structures go up in flames.</text>
-			<item_modify>
-				<item type="missiles" min="-2" max="-2"/>
-			</item_modify>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event>
-					<text>With most of their ships and forces focused on the chaos, you slip undetected to a nearby depot. You find some useful resources and an Engi slave who gladly accepts your liberation.</text>
-					<autoReward level="HIGH">stuff</autoReward>
-					<crewMember amount="1" class="engi">Pakwa</crewMember>
-				</event>
-			</choice>
-		</event>
-	</choice>
 </event>			
 <eventList name="MANTIS_LANDING_PARTY_LEAVE">
 	<event>
@@ -2889,14 +2855,6 @@ item - Dust + that thing -->
 	</choice>
 	<choice hidden="true" req="teleporter" lvl="1">
 		<text>(Teleporter) Offer to board their ship.</text>
-		<event load="QUEST_CREWDEAD_CONTINUE"/>
-	</choice>
-	<choice hidden="true" req="BEAM_BIO">
-		<text>(Bio Beam) Offer to 'remove' their crew.</text>
-		<event load="QUEST_CREWDEAD_CONTINUE"/>
-	</choice>
-	<choice hidden="true" req="BOMB_FIRE">
-		<text>(Fire Bomb) Offer to burn the crew out.</text>
 		<event load="QUEST_CREWDEAD_CONTINUE"/>
 	</choice>
 </event>

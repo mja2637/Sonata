@@ -403,8 +403,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 		</item_modify>
 	</event>
 	<event>
-		<text>The Automatons are grateful. They don't have any supplies or weapons to spare, but they do send over a self-teleporting med-bot disperser they hope they won't need.</text>
-		<weapon name="BOMB_HEAL"/>
+		<text>The Automatons are grateful. They don't have any supplies or weapons to spare, but they do have some Dust.</text>
 		<item_modify>
 			<item type="scrap" min="-25" max="-25"/>
 		</item_modify>

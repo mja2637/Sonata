@@ -1,12 +1,10 @@
-<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
-
-<!-- 4 + 3-->
 <img x="-139" y="-10" w="666" h="216"/>
 
 <weaponMounts>
 	<mount x="653" y="98" rotate="true" mirror="true" gib="4" slide="right"/>
 	<mount x="540" y="45" rotate="true" mirror="true" gib="5" slide="up"/>
 	<mount x="540" y="170" rotate="true" mirror="false" gib="5" slide="down"/>
+	<mount x="580" y="275" rotate="true" mirror="true" gib="6" slide="up"/>	
 </weaponMounts>
 
 

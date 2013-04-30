@@ -152,19 +152,6 @@ Matt:
 		<text>Attempt to break through with the weapons you have.</text>
 		<event load="CRYSTAL_CACHE_BREAK"/>
 	</choice>
-	<choice hidden="true" req="MISSILES_BREACH">
-		<text>(Breach Missiles) Use a Breach Missile.</text>
-		<event>
-			<text>Your Breach warheads dislodge and shatter a massive shard of crystal, leaving your away team enough space to climb down and take a look.</text>
-			<item_modify>
-				<item type="missiles" min="-1" max="-1"/>
-			</item_modify>
-			<choice hidden="true">
-				<text>Investigate the cache.</text>
-				<event load="CRYSTAL_CACHE_LIST"/>
-			</choice>
-		</event>
-	</choice>
 	<choice hidden="true" req="crystal">
 		<text>(Crystal Crew Member) Have your Crystalline Being recalibrate your weapons.</text>
 		<event>
@@ -274,11 +261,11 @@ Matt:
 <eventList name="CRYSTAL_SCRAP_EXCITED_LIST">
 	<event>
 		<text>"Very well, a payment in kind. I have these explosives that emulate our race's innate ability. Perhaps that would interest you."</text>
-		<weapon name="BOMB_LOCK"/>
+		<weapon name="WEAPONS_CRYSTAL"/>
 	</event>
 	<event>
 		<text>"Very well, a payment in kind. I have an extra ship weapon laying around here somewhere. Perhaps you could make use of it?"</text>
-		<weapon name="CRYSTAL_BURST_2"/>
+		<weapon name="WEAPONS_CRYSTAL"/>
 	</event>
 </eventList>
 
@@ -675,7 +662,7 @@ Matt:
 							<text>Another cycle passes while the Empire fleet draws ever nearer. You contact the captain again. "Alien Captain, your knowledge of our customs has most impressed us. Your crew-member is on their way back to you now, along with a token of our respect."</text>
 							<modifyPursuit amount="1"/>
 							<autoReward level="HIGH">augment</autoReward>
-							<weapon name="CRYSTAL_HEAVY_2"/>
+							<weapon name="WEAPONS_CRYSTAL"/>
 						</event>
 					</choice>
 				</event>

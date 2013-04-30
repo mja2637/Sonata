@@ -742,35 +742,15 @@ Distress:
 	</event>
 </eventList>
 
-
-
-
-
-
-
 <!-----------
 		SLUG QUESTS
 	QUESTS!
 ------------>
 
-
-
-
 <!-----------
 		SPECIAL
 	Unique special events
 ------------>
-
-
-<!-- SLUG_UNLOCK
-
-Slug ships in the home sector have a 1/3 chance to pick the trigger event when surrendering.  
-It looks like a normal surrender but has another option. They want to give you a weapon (BEAM_BIO) and if you refuse it they give you a quest.
-At the locaton is a tough fight that you need to stay away from.  If you have cloak or piloting + slug or sensors the scary people jump away and you can fight a weaker ship and then get the unlock 
--->
-
-
-
 <event name="NEBULA_SLUG_FIGHT_UNLOCK" unique="true"> <!-- this is the special fight that looks like the normal ones but actually gives you the unlock-->
 	<text load="NEBULA_SLUG_FIGHT"/>
 	<ship load="JELLY_UNLOCK1" hostile="true"/>
@@ -785,8 +765,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<choice>
 				<text>Accept the prototype weapon.</text>
 				<event>
-					<text>This odd beam weapon does no damage to ships but instead greatly hurts the crew! Diabolical!</text>
-					<weapon name="BEAM_BIO"/>
+					<text>This is the strongest pulse weapon yet developed!</text>
+					<weapon name="SOPHON_PULSE_3"/>
 					<ship hostile="false"/>
 				</event>
 			</choice>

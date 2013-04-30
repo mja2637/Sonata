@@ -1,4 +1,4 @@
-\<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved. -->
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved. -->
 
 <sectorType name="CIVILIAN">
 	<sector>CIVILIAN_SECTOR_1</sector>
@@ -8,9 +8,9 @@
 	<sector>CIVILIAN_SECTOR_3</sector>
 	<sector>CIVILIAN_SECTOR_4</sector>
 	<sector>CIVILIAN_SECTOR_4</sector>
-	<sector>ZOLTAN_SECTOR</sector>
-	<sector>ROCK_SECTOR</sector>
+	<sector>ZOLTAN_SECTOR</sector>	
 	<sector>ZOLTAN_HOME</sector>
+	<sector>ROCK_SECTOR</sector>
 </sectorType>
 
 <sectorType name="HOSTILE">
@@ -43,14 +43,6 @@ STRUCTURE SECTORS
 		<track>hectic</track>
 	</trackList>
 	<startEvent>START_BEACON</startEvent>	
-	<!--
-	<event name="TEST" min="8" max="12"/>
-	<event name="STORE" min="8" max="12"/>
-	 <event name="NOTHING_2" min="5" max="7"/>
-	 <event name="NOTHING_3" min="5" max="7"/>
-	 <event name="NOTHING_4" min="5" max="7"/>
-	  -->
-	  
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>
@@ -266,12 +258,6 @@ CIVILIAN SECTORS
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="QUESTS_ROCK" min="1" max="2"/>
 	<event name="NEUTRAL_ROCK" min="7" max="8"/>
-	
-	<!-- Judged Safe
-	<event name="HOSTILE_ROCK" min="6" max="8"/>
-	<event name="HOSTILE_ROCK_PIRATE" min="6" max="8"/>
-	<event name="BOARDERS_ROCK" min="6" max="8"/>
-	<event name="NOTHING_ROCK" min="6" max="8"/> -->
 </sectorDescription>
 
 
@@ -506,7 +492,6 @@ NEBULA SECTORS
 	<event name="DISTRESS_BEACON" min="1" max="3"/>
 </sectorDescription>
 
-<!--
 <sectorDescription name="SLUG_SECTOR" minSector="4" unique="false">    
 	<nameList>
 		<name>Slug Controlled Nebula</name>
@@ -571,4 +556,3 @@ NEBULA SECTORS
 	<event name="NEBULA_NEUTRAL_SLUG" min="3" max="5"/>
 	<event name="NEUTRAL" min="1" max="2"/>
 </sectorDescription>
--->
