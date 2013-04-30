@@ -175,7 +175,7 @@ CIVILIAN SECTORS
 	</nameList>
 	<trackList>
 		<track>garden</track>
-		<track>hectic</track>
+		<track>bump</track>
 		<track>cosmos</track>
 	</trackList>
 	<rarityList>
@@ -207,7 +207,7 @@ CIVILIAN SECTORS
 	<trackList>		
 		<track>cosmos</track>
 		<track>garden</track>
-		<track>hectic</track>
+		<track>bump</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="4"/>
