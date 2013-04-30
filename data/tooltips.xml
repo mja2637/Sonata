@@ -17,7 +17,7 @@
 
 <!-- Ship status tooltips -->
 <hull>Current hull integrity. If it drops to zero, the ship is destroyed.</hull>
-<droneCount>Number of Drone Parts.  Using a Drone consumes one Drone Part.</droneCount>
+<droneCount>Number of Drone Parts. Using a Drone consumes one Drone Part.</droneCount>
 <fuelCount>Amount of fuel. Each jump consumes one fuel.</fuelCount>
 <missileCount>Ammunition reserves. Some weapons consume special ammunition when fired.</missileCount>
 <scrapCount>Current Dust reserves.</scrapCount>
@@ -31,6 +31,6 @@
 <autofire>Toggle to active/deactive weapons automatically firing.</autofire>
 
 <asteroids>You're in an asteroid field. Periodically asteroids will strike your ship.</asteroids>
-<sun>You're too close to a star. Solar flares will light the ship on fire.  Shields will reduce the effect.</sun>
+<sun>You're too close to a star. Solar flares will light the ship on fire. Shields will reduce the effect.</sun>
 <nebula>You're inside of a nebula. Your sensors will not function, but the rebel fleet will advance more slowly towards you.</nebula>
 <storm>This section of the nebula is experiencing a plasma storm. Your main reactor can only function at half capacity.</storm>
