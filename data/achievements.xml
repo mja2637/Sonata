@@ -198,7 +198,7 @@
 <!-- STEALTH ACHIEVEMENTS -->
 <achievement id="ACH_STEALTH_DESTROY">
 	<name>Undiscovered Country</name>
-	<desc>Destroy a ship at full health during a single cloak in the {CLASSIFIED}.<desc>
+	<desc>Destroy a ship at full health during a single cloak in the (CLASSIFIED).<desc>
 	<img>achievements/stealth_1.png</img>
 	<ship>PLAYER_SHIP_STEALTH</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -206,7 +206,7 @@
 
 <achievement id="ACH_STEALTH_AVOID">
 	<name>Phase Shift</name>
-	<desc>With the {CLASSIFIED} avoid 9 points of damage during a single cloak.</desc>
+	<desc>With the (CLASSIFIED) avoid 9 points of damage during a single cloak.</desc>
 	<img>achievements/stealth_2.png</img>
 	<ship>PLAYER_SHIP_STEALTH</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -214,7 +214,7 @@
 
 <achievement id="ACH_STEALTH_TACTICAL">
 	<name>Tactical Approach</name>
-	<desc>With the {CLASSIFIED}, get to sector 8 without jumping to a beacon with an environmental danger.</desc>
+	<desc>With the (CLASSIFIED), get to sector 8 without jumping to a beacon with an environmental danger.</desc>
 	<img>achievements/stealth_3.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_STEALTH</ship>
@@ -349,7 +349,7 @@
 <!-- CRYSTAL CRUISER ACHIEVEMENTS -->
 <achievement id="ACH_CRYSTAL_SHARD">
 	<name>Sweet Revenge</name>
-	<desc>Destroy an enemy ship with a {CLASSIFIED} from the {CLASSIFIED}.</desc>
+	<desc>Destroy an enemy ship with a (CLASSIFIED) from the (CLASSIFIED).</desc>
 	<img>achievements/crystal_cruiser_1.png</img>
 	<ship>PLAYER_SHIP_CRYSTAL</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -357,7 +357,7 @@
 
 <achievement id="ACH_CRYSTAL_LOCKDOWN">
 	<name>No Escape</name>
-	<desc>While using the {CLASSIFIED}, trap 4 enemy {CLASSIFIED} using the {CLASSIFIED} or {CLASSIFIED}.</desc>
+	<desc>While using the (CLASSIFIED), trap 4 enemy (CLASSIFIED) using the (CLASSIFIED) or (CLASSIFIED).</desc>
 	<img>achievements/crystal_cruiser_2.png</img>
 	<ship>PLAYER_SHIP_CRYSTAL</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -365,7 +365,7 @@
 
 <achievement id="ACH_CRYSTAL_CLASH">
 	<name>Deicide</name>
-	<desc>Destroy 15 {CLASSIFIED} ships using the {CLASSIFIED}.</desc>
+	<desc>Destroy 15 (CLASSIFIED) ships using the (CLASSIFIED).</desc>
 	<img>achievements/crystal_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_CRYSTAL</ship>
 	<multiDifficulty>1</multiDifficulty>

@@ -67,22 +67,22 @@
 	<track>
 		<name>home2</name>
 		<explore>perfect_tomorrow.mp3</explore>
-		<combat>target_practice.mp3</combat>
+		<combat>target_practice.ogg</combat>
 	</track>	
 	<track>
 		<name>rough2</name>
-		<explore>meltdown.mp3</explore>
-		<combat>filtered_water.mp3</combat>
+		<explore>meltdown.ogg</explore>
+		<combat>filtered_water.ogg</combat>
 	</track>
 	<track>
 		<name>explore</name>
-		<explore>black_wind.mp3</explore>
-		<combat>the_ripper.mp3</combat>
+		<explore>black_wind.ogg</explore>
+		<combat>the_ripper.ogg</combat>
 	</track>
 	<track>
 		<name>explore2</name>
-		<explore>smooth_sailing.mp3</explore>
-		<combat>cue_me.mp3</combat>
+		<explore>smooth_sailing.ogg</explore>
+		<combat>cue_me.ogg</combat>
 	</track>
 	
 	<track>
