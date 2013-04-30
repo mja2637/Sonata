@@ -4243,9 +4243,9 @@
 <!-- SHIP ID = 2 --> 
 <shipBlueprint name="PLAYER_SHIP_MANTIS" layout="mantis_cruiser" img="mantis_cruiser"> 
 	<class>Hissho Cruiser</class>
-	<name>???</name>
-	<unlock>Not fully implemented.</unlock>
-	<desc>This warship is not yet implemented.</desc>
+	<name>The Gila Monster</name>
+	<unlock>Kill the pirate, you know the deal.</unlock>
+	<desc>(Not fully implemented)</desc>
 	<systemList>
 		<pilot power="1" room="7" start="true"/>
 		<doors power="1" room="14" start="true"/>
@@ -4279,8 +4279,8 @@
 <shipBlueprint name="PLAYER_SHIP_MANTIS_2" layout="mantis_cruiser_2" img="mantis_cruiser_2"> 
 	<class>Hissho Cruiser</class>
 	<name>The Basilisk</name>
-	<unlock>Not fully implemented.</unlock>
-	<desc>This warship is not yet implemented.</desc>
+	<unlock>Kill the pirate, you know the deal.</unlock>
+	<desc>(Not fully implemented)</desc>
 	<systemList>
 		<pilot power="1" room="8" start="true"/>
 		<doors power="1" room="15" start="true"/>
@@ -4332,7 +4332,7 @@
 	<class>Blockade Runner</class>
 	<name>The Nesasio</name>
 	<unlock>This ship is being built near the Automaton homeworlds. To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
-	<desc>Constructed for the IHTG by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
+	<desc>(Not fully implemented) Constructed for the IHTG by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
 	<systemList>
 		<pilot power="1" room="0" start="true"/>
 		<doors power="1" room="14" start="true" img="room_doors_2"/>
@@ -4370,7 +4370,7 @@
 	<class>Trade Enforcer</class>
 	<name>DA-SR 12</name>  <!-- direct action - stealth reconnaissance-->
 	<unlock>This ship is being built near the Automaton homeworlds. To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
-	<desc>Constructed for the IHTG by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
+	<desc>(Not fully implemented) Constructed for the IHTG by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
 	<systemList>
 		<pilot power="1" room="9" start="true" img="room_pilot_2">
 			<slot>
@@ -4438,7 +4438,7 @@
 	<class>Sower Terraformer</class>
 	<name>SANgluk:0x16b3impl</name>
 	<unlock>Prove yourself to the Sower to earn this powerful cruiser.</unlock>
-	<desc>Typical Sower ships are massive and ancient - and this one is no different. You get the feeling that the weapons are attached to this ship as an afterthought. Definitely not meant for human pilots.</desc>
+	<desc>Typical Sower ships are massive and ancient - and this one is no different. You get the feeling that the weapons are attached to this ship as an afterthought.</desc>
 	<systemList>
 		<pilot power="1" room="1" start="true" img="room_pilot_2" >
 			<slot>
@@ -4537,7 +4537,7 @@
 	<class>Automaton Galley</class>
 	<name>Talavaara</name>
 	<unlock>To unlock this Automaton ship you'll need to get to the 5th sector.</unlock>
-	<desc>This relatively primitive ship was cunningly designed by a promising species brought to the brink of extinction by war. The spirit of the ship helps its occupants cling fiercely to life.</desc>
+	<desc>(Not fully implemented) This relatively primitive ship was cunningly designed by a species brought to the brink of extinction by war. The ship feels...alive.</desc>
 	<systemList>  
 		<pilot power="1" room="8" start="true"/>    
 		<doors power="1" room="5" start="true" img="room_doors_4"/>  
@@ -4573,7 +4573,7 @@
 	<class>Automaton Galley</class>
 	<name>Svihkaara</name>
 	<unlock>To unlock this Automaton ship you'll need to get to the 5th sector.</unlock>
-	<desc>The Automatons have upgraded this ship with black market Sophon weaponry and drones provided secretly by the United Empire, scavenging power and cannibalizing systems wherever they can.</desc>
+	<desc>(Not fully implemented) The Automatons have upgraded this ship with black market Sophon weaponry and drones provided secretly by the United Empire, scavenging power and cannibalizing systems wherever they can.</desc>
 	<systemList>  
 		<pilot power="1" room="12" start="true"/>  
 		<doors power="1" room="8" start="true"/>  
@@ -4632,7 +4632,7 @@
 	<class>Pilgrim Destroyer</class>
 	<name>John Paul Jones</name>
 	<unlock>Beat the boss to unlock this advanced Pilgrim destroyer.</unlock>
-	<desc>One of very few new-build Pilgrim ships, this modern destroyer was designed with help from Sophon sympathizers.</desc>
+	<desc>(Not fully implemented) One of very few new-build Pilgrim ships, this modern destroyer was designed with help from Sophon sympathizers.</desc>
 	<systemList>
 		<pilot power="2" room="4" start="true"/>  
 		<doors power="1" room="8" start="true" img="room_doors_5"/>  
@@ -4668,7 +4668,7 @@
 	<class>Pilgrim Destroyer</class>
 	<name>Erasmus</name>
 	<unlock>Beat the boss to unlock this advanced Pilgrim destroyer.</unlock>
-	<desc>One of very few new-build Pilgrim ships, this modern destroyer was designed with help from Sophon sympathizers.</desc>
+	<desc>(Not fully implemented) One of very few new-build Pilgrim ships, this modern destroyer was designed with help from Sophon sympathizers.</desc>
 	<systemList>
 		<pilot power="1" room="7" start="true" img="room_pilot_3">
 			<slot>
@@ -4725,7 +4725,7 @@
 	<class>Slug Cruiser</class>
 	<name>Man of War</name>
 	<unlock>One of the slug ships must know something about this advanced cruiser. Perhaps you can "convince" them to tell you.</unlock>
-	<desc>Designed for use inside nebulae, this cruiser lacks sensors and relies instead on the guile and cunning of the Slugs.</desc>
+	<desc>(Not fully implemented) Designed for use inside nebulae, this cruiser lacks sensors and relies instead on the guile and cunning of the Slugs.</desc>
 	<systemList>
 		<pilot power="1" room="8" start="true"/>  
 		<doors power="2" room="1" start="true" img="room_doors_6"/>  
@@ -4759,7 +4759,7 @@
 	<class>Slug Cruiser</class>
 	<name>The Stormwalker</name>
 	<unlock>One of the slug ships must know something about this advanced cruiser. Perhaps you can "convince" them to tell you.</unlock>
-	<desc>Designed for use inside nebulae, this cruiser lacks sensors and relies instead on the guile and cunning of the Slugs.</desc>
+	<desc>(Not fully implemented) Designed for use inside nebulae, this cruiser lacks sensors and relies instead on the guile and cunning of the Slugs.</desc>
 	<systemList>
 		<pilot power="1" room="11" start="true"/>  
 		<doors power="2" room="19" start="true" img="room_doors_2"/>  
@@ -4856,7 +4856,7 @@
 	<class>Sophon Deca</class>
 	<name>Alamos</name>
 	<unlock>Learn from the Sophon, sometimes diplomacy works.</unlock>
-	<desc>One of the few dedicated warships produced by the Sophon, the tiny Deca is as deadly as it is precise.</desc>
+	<desc>(Not fully implemented) One of the few dedicated warships produced by the Sophon, the tiny Deca is as deadly as it is precise.</desc>
 	<systemList>
 		<pilot power="1" room="14" start="true"/>  
 		<doors power="1" room="8" start="true" img="room_doors_6"/>     
@@ -4914,7 +4914,7 @@
 	<class>Crystal Cruiser</class>
 	<name>Bravais</name>
 	<unlock>Travel to an unknown sector of the galaxy to find this powerful vessel.</unlock>
-	<desc>Oh MAN are you gonna flip shit when you find what I have planned for Crystal</desc>
+	<desc>Oh MAN are you gonna flip shit when you find what I have planned for Crystal.</desc>
 	<systemList>
 		<pilot power="1" room="8" start="true"/>  
 		<doors power="1" room="16" start="true" img="room_doors_8"/>  
@@ -4953,7 +4953,7 @@
 	<class>Crystal Cruiser</class>
 	<name>Carnelian</name>
 	<unlock>Travel to an unknown sector of the galaxy to find this powerful vessel.</unlock>
-	<desc>Oh MAN are you gonna flip shit when you find what I have planned for Crystal</desc>
+	<desc>Oh MAN are you gonna flip shit when you find what I have planned for Crystal.</desc>
 	<systemList>
 		<pilot power="1" room="15" start="true"/>  
 		<doors power="1" room="14" start="true" img="room_doors_7"/>  
