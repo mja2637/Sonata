@@ -150,15 +150,15 @@
 
 <achievement id="ACH_UNITED_FEDERATION">
 	<name>Melting Pot</name>
-	<desc>Have six unique aliens on the Kestrel Cruiser simultaneously.</desc>
+	<desc>Have six unique species on a United Empire vessel simultaneously.</desc>
 	<img>achievements/kestral_1.png</img>
 	<ship>PLAYER_SHIP_HARD</ship>
 	<multiDifficulty>1</multiDifficulty>
 </achievement>
 
 <achievement id="ACH_FULL_ARSENAL">
-	<name>Space Supremacy</name>
-	<desc>Have every system and subsystem installed on the Kestrel Cruiser at one time.</desc>
+	<name>Multirole</name>
+	<desc>Have every system and subsystem installed on the UES Ranger at one time.</desc>
 	<img>achievements/kestral_2.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_HARD</ship>
@@ -166,7 +166,7 @@
 
 <achievement id="ACH_TOUGH_SHIP">
 	<name>Skin of your Teeth</name>
-	<desc>As the Kestrel Cruiser, repair back to full health when it only has 1 HP remaining.</desc>
+	<desc>Repair a United Empire ship back to full health when it only has 1 HP remaining.</desc>
 	<img>achievements/kestral_3.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_HARD</ship>
@@ -202,7 +202,7 @@
 
 <achievement id="ACH_STEALTH_DESTROY">
 	<name>Undiscovered Country</name>
-	<desc>Destroy a ship at full health during a single cloak in the Stealth Cruiser.</desc>
+	<desc>Destroy a ship at full health during a single cloak in the {CLASSIFIED}.<desc>
 	<img>achievements/stealth_1.png</img>
 	<ship>PLAYER_SHIP_STEALTH</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -210,7 +210,7 @@
 
 <achievement id="ACH_STEALTH_AVOID">
 	<name>Phase Shift</name>
-	<desc>With the Stealth Cruiser, avoid 9 points of damage during a single cloak.</desc>
+	<desc>With the {CLASSIFIED} avoid 9 points of damage during a single cloak.</desc>
 	<img>achievements/stealth_2.png</img>
 	<ship>PLAYER_SHIP_STEALTH</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -218,7 +218,7 @@
 
 <achievement id="ACH_STEALTH_TACTICAL">
 	<name>Tactical Approach</name>
-	<desc>With the Stealth Cruiser, get to sector 8 without jumping to a beacon with an environmental danger.</desc>
+	<desc>With the {CLASSIFIED}, get to sector 8 without jumping to a beacon with an environmental danger.</desc>
 	<img>achievements/stealth_3.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_STEALTH</ship>
@@ -227,16 +227,16 @@
 <!-- ENGI ACHIEVEMENTS -->
 
 <achievement id="ACH_ROBOTIC">
-	<name>Skynet</name>
-	<desc>With the Engi Cruiser, have 3 drones functioning at the same time.</desc>
+	<name>CIA</name>
+	<desc>With the Automaton Galley, have 3 drones functioning at the same time.</desc>
 	<img>achievements/circle_cruiser_1.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_CIRCLE</ship>
 </achievement>
 
 <achievement id="ACH_ONLY_DRONES">
-	<name>I hardly lifted a finger</name>
-	<desc>With the Engi Cruiser, destroy an enemy ship using only drones (no weapons).</desc>
+	<name>Skynet</name>
+	<desc>With the Automaton Galley, destroy an enemy ship using only drones (no weapons).</desc>
 	<img>achievements/circle_cruiser_2.png</img>
 	<ship>PLAYER_SHIP_CIRCLE</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -244,7 +244,7 @@
 
 <achievement id="ACH_IONED">
 	<name>The guns...They've stopped</name>
-	<desc>Have 4 enemy systems or subsystems ioned at the same time while using the Engi Cruiser.</desc>
+	<desc>Have 4 enemy systems or subsystems ioned at the same time while using the Automaton Galley.</desc>
 	<img>achievements/circle_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_CIRCLE</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -254,22 +254,22 @@
 
 <achievement id="ACH_ROCK_FIRE">
 	<name>Kaspersky Infection Control</name>
-	<desc>Have your crew kill a burning enemy on their ship while using the Sower Cruiser.</desc>
+	<desc>Have your crew kill a burning enemy on their ship while using the Sower ship or the Kilimanjaro.</desc>
 	<img>achievements/rock_cruiser_1.png</img>
 	<ship>PLAYER_SHIP_ROCK</ship>
 	<multiDifficulty>1</multiDifficulty>
 </achievement>
 
 <achievement id="ACH_ROCK_MISSILES">
-	<name>Do What You're Programmed To Do</name>
-	<desc>While using the Sower Cruiser, destroy an enemy ship which has a defense drone deployed only cannon or missiles.</desc>
+	<name>Old Reliable</name>
+	<desc>While using the Sower ship or the Kilimanjaro, destroy an enemy ship protected by a defense drone with only cannon or missiles.</desc>
 	<img>achievements/rock_cruiser_2.png</img>
 	<ship>PLAYER_SHIP_ROCK</ship>
 	<multiDifficulty>1</multiDifficulty>
 </achievement>
 
 <achievement id="ACH_ROCK_CRYSTAL">
-	<name>Ancestry</name>
+	<name>Apocalypse</name>
 	<desc>Find the secret sector with the Sower Cruiser</desc>
 	<img>achievements/rock_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_ROCK</ship>
@@ -280,7 +280,7 @@
 
 <achievement id="ACH_MANTIS_CREW_DEAD">
 	<name>WAAAARGH!</name>
-	<desc>Kill the crew of 20 ships by sector 6 in the Mantis Cruiser.</desc>
+	<desc>Kill the crew of 20 ships by sector 6 in a Hissho ship.</desc>
 	<img>achievements/mantis_cruiser_1.png</img>
 	<ship>PLAYER_SHIP_MANTIS</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -288,7 +288,7 @@
 
 <achievement id="ACH_MANTIS_SLAUGHTER">
 	<name>Avast, ye scurvy dogs!</name>
-	<desc>Kill 5 enemy crew in a fight without taking hull damage or losing a crew member while using the Mantis Cruiser.</desc>
+	<desc>Kill 5 enemy crew in a fight without taking hull damage or losing a crew member while using a Hissho ship.</desc>
 	<img>achievements/mantis_cruiser_2.png</img>
 	<ship>PLAYER_SHIP_MANTIS</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -296,20 +296,17 @@
 
 <achievement id="ACH_MANTIS_SURVIVOR">
 	<name>GET TO ZE CHOPPAH</name>
-	<desc>While using the Mantis Cruiser, kill the last enemy with your last crew member on their ship.</desc>
+	<desc>While using a Hissho ship, kill the last enemy with your last crew member on their ship.</desc>
 	<img>achievements/mantis_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_MANTIS</ship>
 	<multiDifficulty>1</multiDifficulty>
 </achievement>
 
-
-
-
 <!-- SLUG ACHIEVEMENTS -->
 
 <achievement id="ACH_SLUG_VISION">
 	<name>We're in Position!</name>
-	<desc>While using the Slug Cruiser, have vision of every room of the enemy ship without functioning sensors.</desc>
+	<desc>While using the ???, have vision of every room of the enemy ship without functioning sensors.</desc>
 	<img>achievements/jelly_cruiser_1.png</img>
 	<ship>PLAYER_SHIP_JELLY</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -325,7 +322,7 @@
 
 <achievement id="ACH_SLUG_BIO">
 	<name>Disintegration Ray</name>
-	<desc>While using the Slug Cruiser, kill 3 enemy crew members with one shot from the Anti-Bio Beam.</desc>
+	<desc>While using the ???, kill 3 enemy crew members with one shot from the ???.</desc>
 	<img>achievements/jelly_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_JELLY</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -343,7 +340,7 @@
 
 <achievement id="ACH_FED_DIPLOMACY">
 	<name>Speak Softly</name>
-	<desc>While using the Federation Cruiser, use your crew in 4 special blue event choices by sector 5.</desc>
+	<desc>While using the Pilgrim Destroyer, use your crew in 4 special blue event choices by sector 5.</desc>
 	<img>achievements/fed_cruiser_2.png</img>
 	<ship>PLAYER_SHIP_FED</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -351,7 +348,7 @@
 
 <achievement id="ACH_FED_UPGRADE">
 	<name>Superior Firepower</name>
-	<desc>Get to sector 5 in the Federation Cruiser without upgrading your weapons system.</desc>
+	<desc>Get to sector 5 in the Pilgrim Destroyer without upgrading your weapons system.</desc>
 	<img>achievements/fed_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_FED</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -362,7 +359,7 @@
 
 <achievement id="ACH_CRYSTAL_SHARD">
 	<name>Sweet Revenge</name>
-	<desc>Destroy an enemy ship with a shard from the Crystal Vengeance augment (unique to the Crystal Cruiser).</desc>
+	<desc>Destroy an enemy ship with a {CLASSIFIED} from the {CLASSIFIED}.</desc>
 	<img>achievements/crystal_cruiser_1.png</img>
 	<ship>PLAYER_SHIP_CRYSTAL</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -370,15 +367,15 @@
 
 <achievement id="ACH_CRYSTAL_LOCKDOWN">
 	<name>No Escape</name>
-	<desc>While using the Crystal Cruiser, trap 4 enemy crew in a single room using the Crystal Being power or a Lockdown Bomb.</desc>
+	<desc>While using the {CLASSIFIED}, trap 4 enemy {CLASSIFIED} using the {CLASSIFIED} or {CLASSIFIED}.</desc>
 	<img>achievements/crystal_cruiser_2.png</img>
 	<ship>PLAYER_SHIP_CRYSTAL</ship>
 	<multiDifficulty>1</multiDifficulty>
 </achievement>
 
 <achievement id="ACH_CRYSTAL_CLASH">
-	<name>Clash of the Titans</name>
-	<desc>Destroy 15 Sower Ships (pirates count) using the Crystal Cruiser.</desc>
+	<name>Deicide</name>
+	<desc>Destroy 15 {CLASSIFIED} ships using the {CLASSIFIED}.</desc>
 	<img>achievements/crystal_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_CRYSTAL</ship>
 	<multiDifficulty>1</multiDifficulty>

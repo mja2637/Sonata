@@ -4,14 +4,14 @@ An FTL mod.
 
 With cries of "Sic Semper Tyrannis", nearly a quarter of the United Empire's worlds have seceded to form their own nation. They call themselves the "Pilgrims". The Empire's legislature interpreted this secession as treason, and the overwhelming might of the loyalist fleet has fallen on the Pilgrims. Although the situation is militarily hopeless, your family and friends have all joined the resistance - and so you shall.
 
-This mod is based on the lore of Endless Space by Amplitude Studios, although much of it has been altered.
+This mod is based on the lore of Endless Space by Amplitude Studios, although much (most) of it has been altered.
 
-NOTE: It is highly recommended to use Splette's Higher-Res Backgrounds mod in conjunction with Sonata. Make sure that Higher-Res Backgrounds is loaded BEFORE Sonata in GMM.
 
 1 RACES
 2 WEAPONS
 3 DRONES
 4 VERSION INFO
+5 CHANGELOG
 
 1 RACES
 UNITED EMPIRE
@@ -96,21 +96,20 @@ Prototype Lepton Beam: 2 bars, 1 ion damage, 45 length, 11s cooldown.
 Thermophotonic Xaser (Sophon): 3 bars, 1 damage, 95 length, pierces 1 shield, excellent chance of fire, 16s cooldown.
 Disruptor Beam: 3 bars, 2 damage, 45 length, pierces 1 shield, very good chance to breach, 12s cooldown.
 Bose-Einstein Particle Beam (Sophon): 3 bars, 2 damage, 35 length, insane breach chance, 15s cooldown.
-Condensed Anti-Neutrino Beam (Sophon): 4 bars, 3 damage, 65 length, ignores 1 shield, 20s cooldown.
+Condensed Anti-Neutrino Beam (Sophon): ???
 
 3 DRONES
-
 In Sonata, drones are known as USVs - Unmanned Space Vessels. They come in many shapes and sizes; some are large enough to be considered enemy starships.
 
-Combat: 
+Combat:
+Sower "Roc" Drone
+Sower "Robin" EFP Drone
 Maersk "Kinetic" Gun USV
-Sower "Roc" Gun USV
-Sower "Robin" EFP USV
 Izhmash "Bison" Gauss USV
+Almaz-Rafael "Arsenic" Missile USV
 Raytheon-Denel "Manta" Laser USV
 Boeing "Moray" Anti-System USV
 Bofors-Hitachi "Invader" Heavy Anti-System USV
-Almaz-Rafael "Arsenic" Missile USV
 
 Defense:
 SpaceX "Sulu" Point Defense USV
@@ -121,14 +120,14 @@ Other:
 Dyson-Honda "Ant" Hull Repair USV
 Yamaha-Indra "John Henry" System Repair Droid
 Rheinmetall-Apple "Chesty" Anti-Personnel Droid
-General Dynamics DES (Dynamic Entry System) Boarding Droid 
+General Dynamics DES (Dynamic Entry System) Boarding Droid
 
 
 4 VERSION INFO
 Matt Alioto, mod concept & development
 "Dream Team", lore development
-Sam Pottle, Sophon A, Caseless Autocannon, & Thermophotonic Xaser sprites
-Spiteful_Crow, UE Frigate rewrk
+Sam Pottle, Sophon A, Autocannon, & Xaser sprites
+Spiteful_Crow, UE Frigate rework
 Jeremy McCellips, main menu art
 Bren Tenkage, testing
 
@@ -143,6 +142,8 @@ Ships based on concept art by Amplitude Studios
 
 The latest version/build of the mod can always be grabbed from github at this URL:
 https://github.com/mja2637/Sonata/archive/master.zip
+
+5 CHANGELOG
 7a
 		  - Restored boss dev work
 		  - Fixed several references to "United Earth" instead of "United Empire"
@@ -151,10 +152,13 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Added custom UE weapon sprites (all)
 		  - Added custom projectiles for all current weapons
 		  - Tweaked Ranger mount points
-		  - Event and weapon test tweaks
+		  - Event edits
 		  - Shrank mini ship icons to avoid overlapping border
 		  - Added several new drones & ion weapons
-		  - Added spiteful_crow's new UE Frigate sprite
+		  - Added spiteful_crow's new UE Frigate sprite (currently unused)
+		  - Removed some lower-quality backgrounds and added replacements
+		  - Reduced the frequency of that one song
+		  - Tweaks & balances
 7
 		  - Added Sonata drones
 		  - Added EFP projectile
