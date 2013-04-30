@@ -218,7 +218,7 @@
 </weaponAnim>
 
 <!-- "Ion" -->
-<animSheet name="HELF" w="90" h="56" fw="18" fh="56">weapons/HELF.png</animSheet>
+<animSheet name="HELF" w="90" h="56" fw="18" fh="56">weapons/helf.png</animSheet>
 <weaponAnim name="HELF">
 	<sheet>HELF</sheet>
 	<desc length="5" x="0" y="0"/>

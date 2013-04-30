@@ -198,7 +198,7 @@
 <!-- STEALTH ACHIEVEMENTS -->
 <achievement id="ACH_STEALTH_DESTROY">
 	<name>Undiscovered Country</name>
-	<desc>Destroy a ship at full health during a single cloak in the (CLASSIFIED).<desc>
+	<desc>Destroy a ship at full health during a single cloak in the (CLASSIFIED).</desc>
 	<img>achievements/stealth_1.png</img>
 	<ship>PLAYER_SHIP_STEALTH</ship>
 	<multiDifficulty>1</multiDifficulty>
