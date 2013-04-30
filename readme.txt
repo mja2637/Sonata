@@ -151,13 +151,16 @@ https://github.com/mja2637/Sonata/archive/master.zip
 
 5 CHANGELOG
 7a
-		  - Restored boss dev work
+		  - Restored boss dev work to /alpha
 		  - Fixed several references to "United Earth" instead of "United Empire"
 		  - Changed Engi/Mantis references to Automaton/Hissho
 		  - Added UE Frigate enemy
 		  - Added SOPHON_A: "Verne" (by DCChuckles)
-		  - Added custom UE weapon sprites (all)
+		  - Added custom UE weapon sprites (all 16)
+		  - Added custom Sower/Sophon weapon sprites (some)
 		  - Added custom projectiles for all current weapons
+		  - Several new sound effects
+		  - Reduced the frequency of that one song
 		  - Added 8 new music tracks
 		  - Tweaked Ranger mount points
 		  - Event edits
@@ -165,7 +168,6 @@ https://github.com/mja2637/Sonata/archive/master.zip
 		  - Added several new drones & ion weapons
 		  - Added spiteful_crow's new UE Frigate sprite (currently unused)
 		  - Removed some lower-quality backgrounds and added replacements
-		  - Reduced the frequency of that one song
 		  - Tweaks & balances
 7
 		  - Added Sonata drones

@@ -1578,8 +1578,8 @@
 <weaponBlueprint name="ION_1">
 	<type>LASER</type>
 	<title>High Energy Low Frequency Electrojet</title>
-	<short>HELF Electrojet</short>
-	<desc>An incredibly simple "weapon" that uses principles that have been understood for hundreds of years. Powerful, low-frequency (~2 Hertz) electromagnetic waves are directed at the target, causing minor disruption to electronics in the target.</desc>
+	<short>HELF</short>
+	<desc>An incredibly simple "weapon" that uses principles that have been understood for hundreds of years. Powerful, low-frequency (~2 Hertz) electromagnetic waves are directed at the target, causing minor disruption to its electronics.</desc>
 	<tooltip>Fires a single blast that does 1 ion damage. Can hit and disable shields as well as systems.</tooltip>
 	<damage>0</damage>
 	<ion>1</ion>

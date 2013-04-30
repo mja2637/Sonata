@@ -542,11 +542,11 @@ item - Dust + that thing -->
 		</choice>		
 	</event>
 	<event>
-		<text>"Look at that mofucker! Captain ain't even bothered to repaint the load lines!" He's loudly gesturing at a freighter out the window of the crew mess.</text>
+		<text>"Look at these morons! They haven't even bothered to repaint the load lines!" He's loudly gesturing at a freighter out the window of the crew mess.</text>
 		<choice>
 			<text>"Repaint...?"</text>
 			<event>
-				<text>"Yeah, see that's an IHTG tradeship out of New Mumbai - but they're disguising themselves as locals. Probably spend less on bribes that way. But they're done a SHIT JOB OF IT!" Although he's loud enough ordinarily, that last bit was shouted.</text>
+				<text>"Yeah, see that's an IHTG tradeship out of New Mumbai - but they're disguising themselves as locals. Probably spend less on bribes that way. But they're done a shitty job!"</text>
 				<choice>
 					<text>"IHTG...?"</text>
 					<event>

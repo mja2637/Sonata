@@ -9,7 +9,7 @@
 <kinetic4 volume="3">weapons/kinetic_4.wav</kinetic4>
 <pulse1 volume="20">weapons/pulse.wav</pulse1>
 
-<helf volume="2">weapons/helf.ogg</helf>
+<helf volume="3">weapons/helf.ogg</helf>
 <lepton volume="3">weapons/lepton.ogg</lepton>
 
 <burst_xaser volume="3">weapons/burst_xaser.wav</burst_xaser>
