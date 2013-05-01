@@ -1,7 +1,7 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--   
-			SUMMARY  - 
+<!--  
+			SUMMARY - 
 A list of all main events to be called by lists
 	does not include sub-events)
 	
@@ -48,7 +48,6 @@ Environmnt:
 	<event load="SQUAT_WARNING"/>
 </eventList>
 
-
 <eventList name="NEUTRAL_REBEL">
 	<event load="AUTO_CIVILIAN"/>
 	<event load="SQUAT_REFUEL_STATION"/>
@@ -68,7 +67,7 @@ Environmnt:
 
 
 <eventList name="DISTRESS_BEACON_REBEL">
-	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/> 
 	<event load="REBEL_VS_FEDERATION"/> 
 	<event load="ESCORT_BEACON"/>
 	<event load="FRIENDLY_BEACON"/>
@@ -79,7 +78,7 @@ Environmnt:
 
 <eventList name="NEBULA_REBEL">
 	<event load="NEBULA_EMPTY"/>
-	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_REBEL"/> 
 	<event load="NEBULA_AUTO"/>
 	<event load="NEBULA_AUTO_WARNING"/>
 	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
@@ -87,8 +86,8 @@ Environmnt:
 	<event load="STORM_REBEL"/>
 	<event load="STORM_AUTO"/>
 	<event load="STORM_ITEMS"/>
-	<event load="NEBULA_REBEL_UNDETECTED"/>  
-	<event load="NEBULA_LOST_SHIP"/>  
+	<event load="NEBULA_REBEL_UNDETECTED"/> 
+	<event load="NEBULA_LOST_SHIP"/> 
 	<event load="NEBULA_REBEL_BOARDING"/>
 </eventList>
 
@@ -108,9 +107,9 @@ Environmnt:
 <textList name="START_BEACON_REBEL">
 	<text>This sector was bustling with activity just a few years ago. It attempted to secede but the United Empire "pacified" it. Now, more than half of the jump beacons have been destroyed, many settlements have been abandoned and the UE loyalists patrol constantly.</text>
 	<text>This sector was hit hard by the war. The many Pilgrim settlements and stations located here are now watched over by almost an equal number of loyalist bases, heavy-handedly 'keeping the peace'.</text>
-	<text>Once the Pilgrim forces were scattered, the United Empire came down hard on the locals here.  The United Empire is still actively conducting counter-insurgency operations.</text>
-	<text>At one point this was one of the most commonly traveled sectors.  Knowing that, the loyalists have stationed a number of fleets here.  Be careful.</text>
-	<text>You will have to be very cautious in this sector.  The Empire has full control and is no doubt looking for you.</text>
+	<text>Once the Pilgrim forces were scattered, the United Empire came down hard on the locals here. The United Empire is still actively conducting counter-insurgency operations.</text>
+	<text>At one point this was one of the most commonly traveled sectors. Knowing that, the loyalists have stationed a number of fleets here. Be careful.</text>
+	<text>You will have to be very cautious in this sector. The Empire has full control and is no doubt looking for you.</text>
 </textList>
 
 <event name="STORE_REBEL">
@@ -118,17 +117,17 @@ Environmnt:
 	<store/>
 </event>
 <textList name="STORE_REBEL">
-	<text>You discover a re-supply station used by loyalist military and civilians alike.  You transmit your fake ship identification and for once, they don't seem to recognize your ship.  You try to assume the air of a local as you prepare to dock.</text>
-	<text>You arrive at a small space station that is putting out wide-band broadcasts on black-market channels.  You doubt they would turn away any business, regardless of allegiances.</text>
-	<text>You receive generic advertisements from a nearby public ship-yard.  It seems they are willing to work on any ship, regardless of their loyalties.</text>
+	<text>You discover a re-supply station used by loyalist military and civilians alike. You transmit your fake ship identification and for once, they don't seem to recognize your ship. You try to assume the air of a local as you prepare to dock.</text>
+	<text>You arrive at a small space station that is putting out wide-band broadcasts on black-market channels. You doubt they would turn away any business, regardless of allegiances.</text>
+	<text>You receive generic advertisements from a nearby public ship-yard. It seems they are willing to work on any ship, regardless of their loyalties.</text>
 </textList>
 
 <event name="NOTHING_REBEL">
 	<text load="NOTHING_REBEL"/>
 </event>
 <textList name="NOTHING_REBEL">
-	<text back="BG_BORING">You enter a system bustling with loyalist activity.  Supply freighters and re-supply stations are dwarfed by a few heavy warships. Luckily, no one seems to be paying attention to small cruisers.  No ships are scanning or messaging you.</text>
-	<text back="BG_BORING">You arrive near a small United Empire refueling depot. Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity.  The only message you receive is a denial to your request to dock at the depot.</text> 
+	<text back="BG_BORING">You enter a system bustling with loyalist activity. Supply freighters and re-supply stations are dwarfed by a few heavy warships. Luckily, no one seems to be paying attention to small cruisers. No ships are scanning or messaging you.</text>
+	<text back="BG_BORING">You arrive near a small United Empire refueling depot. Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity. The only message you receive is a denial to your request to dock at the depot.</text> 
 	<text back="BG_BORING">There is not much of interest nearby. A small sun in the distance with a few orbiting planets in nearby space provide little of interest.</text>
 	<text back="BG_BORING" planet="NONE">There are no other ships near this beacon, however you detect a small communication relay. You tap into it without a problem; there are no encryptions. Most of the chatter revolves around troop and fleet movements, not particularly interesting.</text>
 	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">There is a small planet nearby with scattered settlements. A small loyalist fleet is in orbit with many ships ferrying back and forth. It must be a more recently 'recovered' planet.</text>
@@ -222,14 +221,14 @@ Environmnt:
 	</choice>
 </event>
 
-<event name="SQUAT_REFUEL_STATION" unique="true">  
+<event name="SQUAT_REFUEL_STATION" unique="true"> 
 	<img back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL"/>
 	<text>You detect a United Empire scout on an attack approach to a small refueling outpost. Their weapons are charged, but they're not firing yet.</text>
 	<ship load="SQUAT_REFUEL_STATION" hostile="false"/>
 	<choice>
 		<text>Intervene to defend the outpost.</text>
 		<event>
-			<text>The loyalists respond to your threat, "I don't know who you are, but no one defies the United Empire!"  They move in to engage.</text> 
+			<text>The loyalists respond to your threat, "I don't know who you are, but no one defies the United Empire!" They move in to engage.</text> 
 			<ship hostile="true"/>
 		</event>
 	</choice>
@@ -241,7 +240,7 @@ Environmnt:
 	</choice>
 </event>
 
-<event name="AUTO_REFUEL_STATION" unique="true">  
+<event name="AUTO_REFUEL_STATION" unique="true"> 
 	<img back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL"/>
 	<text>You detect a loyalist unmanned space vehicle attacking a small re-fueling outpost.</text>
 	<ship load="REBEL_AUTO_REFUEL" hostile="false"/>
@@ -407,7 +406,7 @@ Environmnt:
 		<text>You are unable to penetrate the computer's defenses. You give up and return to the ship.</text>
 	</event>
 	<event>
-		<text>As you attempt to hack in, you set off a hidden alarm system. It seems that now the loyalists must surely be aware of your position!  You hasten back to the ship to jump away.</text>
+		<text>As you attempt to hack in, you set off a hidden alarm system. It seems that now the loyalists must surely be aware of your position! You hasten back to the ship to jump away.</text>
 		<modifyPursuit amount="1"/>
 	</event>
 </eventList>
@@ -432,7 +431,7 @@ Environmnt:
 
 <eventList name="REBEL_TRANSPORT_DESTROYED">
 	<event>
-		<text>You search the ship and discover that its cargo was new military-grade weaponry!  It was somehow undamaged in the fight and can easily be mounted on the ship.</text>
+		<text>You search the ship and discover that its cargo was new military-grade weaponry! It was somehow undamaged in the fight and can easily be mounted on the ship.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
 	<event>
@@ -448,7 +447,7 @@ Environmnt:
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Searching the remains, you find that the cargo was military-grade Drone Schematics!  You bring them aboard to install in your ship.</text>
+		<text>Searching the remains, you find that the cargo was military-grade Drone Schematics! You bring them aboard to install in your ship.</text>
 		<autoReward level="MED">drone</autoReward>
 	</event>
 	<event>
@@ -495,7 +494,7 @@ Environmnt:
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Searching the remains you find that the cargo was military-grade Drone Schematics!  You bring them aboard to install on your ship.</text>
+		<text>Searching the remains you find that the cargo was military-grade Drone Schematics! You bring them aboard to install on your ship.</text>
 		<autoReward level="MED">drone</autoReward>
 	</event>
 </eventList>
@@ -594,8 +593,8 @@ Environmnt:
 	<ship load="REBEL" hostile="true"/>
 </event>
 <textList name="BOARDERS_REBEL_SHIP" unique="false">
-	<text>You receive a message from a nearby loyalist station, "You have a lot of guts passing through our space, I'll give you that."  He turns, giving an order: "Shoot the bastards, I want that ship intact."</text>
+	<text>You receive a message from a nearby loyalist station, "You have a lot of guts passing through our space, I'll give you that." He turns, giving an order: "Shoot the bastards, I want that ship intact."</text>
 	<text>Your sensors warn of an incoming loyalist ship at the same time as you hear the telltale signs of a teleporter. You hear someone taunt from within the ship, "Say hi to the Endless for me, you'll be seeing them real soon!"</text>
 	<text>Incoming video communitation: "Rebel scum," sneers an Empire officer, "How very generous of you to turn yourself in. Prepare to be boarded."</text>
-	<text>You receive a message on a low-band channel. "You're surrounded, just like the last of your Pilgrim friends.  Just give up already." The enemy has teleported onto our ship!</text>
+	<text>You receive a message on a low-band channel. "You're surrounded, just like the last of your Pilgrim friends. Just give up already." The enemy has teleported onto our ship!</text>
 </textList>
