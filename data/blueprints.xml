@@ -4471,7 +4471,7 @@
 	<droneList count="1" drones="15">
 		<drone name="COMBAT_1_SOWER"/>
 	</droneList>
-	<health amount="40"/>
+	<health amount="33"/>
 	<maxPower amount ="9"/> 
 	<crewCount amount = "3" class="rock"/>
 	<aug name="ROCK_ARMOR"/>
@@ -4515,7 +4515,7 @@
 		<weapon name="BASIC_KINETIC_1"/>
 	</weaponList>
 	<droneList drones="0"/>
-	<health amount="40"/>
+	<health amount="33"/>
 	<maxPower amount ="8"/> 
 	<crewCount amount = "2" class="mantis"/>
 	<crewCount amount = "1" class="engi"/>
@@ -4561,7 +4561,7 @@
 		<drone name="COMBAT_1"/>
 	</droneList>
 	<aug name="NANO_MEDBAY"/>
-	<health amount="28"/>
+	<health amount="30"/>
 	<maxPower amount ="10"/> 
 	<crewCount amount = "2" class="engi"/>
 </shipBlueprint>
@@ -4610,7 +4610,7 @@
 		<drone name="COMBAT_ION"/>
 		<drone name="COMBAT_ION"/>
 	</droneList>
-	<health amount="25"/>
+	<health amount="30"/>
 	<maxPower amount ="11"/> 
 	<crewCount amount = "1" class="engi"/>
 	<crewCount amount = "1" class="human"/>
@@ -4640,16 +4640,16 @@
 		<oxygen power="1" room="9" start="true" img="room_oxygen_4"/>
 		<engines power="2" room="3" start="true"/>
 		<shields power="2" room="11" start="true"/>
-		<weapons power="3" room="15" start="true"/>		
+		<weapons power="4" room="15" start="true"/>		
 		<medbay power="1" room="10" start="true"/>  
 		<teleporter power="1" room="1" start="false"/>
 		<drones power="2" room="16" start="false" img="room_drones_5"/>
 		<artillery power="1" room="6"/>
-		<!--<cloaking power="1" room="6" start="true" img="room_cloaking_5"/>  -->
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="2" missiles="10">	
+		<weapon name="BASIC_KINETIC_2"/>
 		<weapon name="BASIC_KINETIC_2"/>
 		<weapon name="ION_MISSILE"/>
 	</weaponList>
