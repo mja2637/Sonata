@@ -757,7 +757,7 @@
 	<title>Baryon-Gravitophoric Cannon</title>
 	<short>BG Cannon</short>
 	<desc>This cannon fires massive shells fitted with baryon/antibaryon annihilation reactors. On impact, the reactors shred the theory of electroweak baryongenesis and funnel millions of tons of baryons into a 1 millimeter cube. Some shots impact with the density of a neutron star; most collapse into miniature black holes. When the leftover antibaryons needed to maintain symmetry are released, they mutually annihilate whatever is left.</desc>
-	<tooltip>Turn out the sun. Boss killer. (5 damage, pierces 4 shields, breaches)</tooltip>
+	<tooltip>Turn out the sun. (5 damage, pierces 4 shields, breaches)</tooltip>
 	<damage>5</damage>
 	<missiles>2</missiles>
 	<shots>1</shots>
@@ -906,7 +906,7 @@
 	<title>Anti-Baryon Mag AutoCannon</title>
 	<short>!Baryon Mag AC</short>
 	<desc>By manipulating the nucleic structure of certain crystalline solids and then splitting them into "shards" inside a programmed baryonic field, we can create an improbable substance which radiates antibaryons when struck violently. When a sabot-launched shard strikes an enemy, the matter in contact is literally annihilated - it ceases to exist. Such a projectile is essentially unstoppable.</desc>
-	<tooltip>3 shots every 8 seconds, 1 damage, ignore 3 shields, excellent chance to breach.</tooltip>
+	<tooltip>Best fired while cackling maniacally and sporting a mustache. (3 shots, rapid fire, 1 damage, ignore 3 shields, excellent chance to breach)</tooltip>
 	<damage>1</damage>
 	<shots>3</shots>
 	<sp>3</sp>
@@ -1137,13 +1137,13 @@
 	<title>Contained Higgs Pulse Beam</title>
 	<short>Higgs Pulse</short>
 	<desc>Our command of particle physics and thermodynamics on the quantum level allows us to create, contain, and fire stable packets of Higgs bosons at near-light speed. These packets cause intense gravitational shear on impact, followed by spontaneous explosive fusion.</desc>
-	<tooltip>God does not play dice. (2 shots, 3 damage, breaches.)</tooltip>
+	<tooltip>God does not play dice. (2 shots, 3 damage, breaches, unblockable.)</tooltip>
 	<damage>3</damage>
 	<shots>2</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>23</cooldown>
 	<power>4</power>
 	<cost>90</cost>
 	<bp>2</bp>
@@ -4650,7 +4650,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="2" missiles="10">	
-		<weapon name="BASIC_KINETIC_3"/>
+		<weapon name="BASIC_KINETIC_2"/>
 		<weapon name="ION_MISSILE"/>
 	</weaponList>
 	<droneList drones="2"/>

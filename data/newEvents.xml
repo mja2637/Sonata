@@ -1,0 +1,361 @@
+<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
+
+<eventCounts sector="0">
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="0" max="2"/>
+	<event name="HOSTILE1" min="5" max="6"/>
+	<event name="HOSTILE2" min="3" max="4"/>
+	<event name="NEBULA" min="0" max="2"/>
+	<event name="QUESTS" min="1" max="2"/>
+</eventCounts>
+<!--- Leftover events will be filled in with NEUTRAL -->
+
+<eventCounts sector="1">
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="1"/>
+	<event name="HOSTILE1" min="2" max="4"/>
+	<event name="HOSTILE2" min="2" max="4"/>
+	<!-- <event name="NEBULA" min="2" max="6"/> ADDED FOR DEMO -->
+	<event name="HOSTILE_BOARDING" min="1" max="2"/><!-- REMOVED FOR DEMO -->
+	<event name="QUESTS" min="0" max="1"/>
+</eventCounts>	
+<!--- Leftover events will be filled in with NEUTRAL -->
+
+<!-- PLANNING FOR the 3rd Sector-->
+<eventCounts sector="2">
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="1"/>
+	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="NEBULA" min="3" max="7"/>
+	<event name="HOSTILE_BOARDING" min="1" max="2"/><!-- REMOVED FOR DEMO -->
+	<event name="QUESTS" min="1" max="3"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+</eventCounts>
+
+<eventCounts sector="3">
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="NEBULA" min="0" max="4"/>
+	<event name="HOSTILE_BOARDING" min="1" max="2"/><!-- REMOVED FOR DEMO -->
+	<event name="QUESTS" min="1" max="3"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+</eventCounts>
+
+<eventList name="NON_HOSTILE">
+	<event load="NEUTRAL"/>
+	<event load="ITEMS"/>
+</eventList>
+
+<eventList name="HOSTILE1">
+	<event load="SQUAT_WARNING"/>
+	<event load="AUTO_WARNING"/>
+	<!--<event load="AUTO_BAIT"/>-->
+	<event load="AUTO_ASTEROID"/>
+	<event load="AUTO_HACKER"/>
+	<event load="REBEL_AUTO"/>
+	<event load="AUTO_CIVILIAN"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="REBEL"/>
+	<event load="MANTIS_HOSTILE"/>
+</eventList>
+
+<eventList name="HOSTILE2">
+	<event load="PIRATE"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="REBEL"/>
+	<event load="SQUAT_WARNING"/>
+	<event load="SQUAT_REFUEL_STATION"/>
+	<event load="PIRATE_ASTEROID"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="PIRATE_SLAVER"/>
+	<event load="PIRATE_SUN"/>
+	<event load="AUTO_SUN"/>
+	<event load="PIRATE_NO_ESCAPE"/>
+</eventList>
+
+<eventList name="NEUTRAL">	
+	<event load="AUTO_REFUEL_STATION"/>	
+	<event load="FRIENDLY_SLAVER"/>	
+	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="PIRATE_BRIBER"/>	
+	<event load="DONOR_PONY"/>
+	<event load="DONOR_PLAGUE"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="MERCENARY"/>
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="ASTEROID_EXPLORE"/>
+</eventList>
+
+<eventList name="NEUTRAL2">
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="PIRATE_STATION_CROPS"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="MERCENARY"/>
+	<event load="DISTRESS_BEACON"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="AUTO_DEFENSE_MAP"/> 
+	<event load="AUTO_DEFENSE_ITEM"/> 
+	<!-- <event load="TAVERN_HIRE"/> -->
+</eventList>
+
+<eventList name="NEBULA">
+	<event load="NEBULA_EMPTY"/>
+	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_PIRATE_SMUGGLE"/>
+	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
+	<event load="NEBULA_TRADER"/>
+	<event load="STORM_REBEL"/>
+	<event load="STORM_AUTO"/>
+	<event load="STORM_ITEMS"/>
+	<event load="NEBULA_LOST_SHIP"/>   <!-- JUSTIN ADDED -->
+	<event load="NEBULA_BOARDING"/><!-- REMOVED FOR DEMO -->
+	<!-- <event load="STORM_BOARDING"/>  REMOVED FOR DEMO -->
+	<event load="NEBULA_MANTIS_FIGHT"/> 
+	<event load="NEBULA_WEAPONS_TRADER"/>		
+</eventList>
+
+<eventList name="ITEMS">
+	<event load="FIND_DRONE"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REPAIR_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="TRADER_CIV"/>
+</eventList>
+
+<eventList name="DISTRESS_BEACON">
+	<event load="FRIENDLY_BEACON"/>
+	<event load="TRAP_BEACON"/>
+	<event load="STRANDED_BEACON"/>
+	<event load="PIRATE_CIVILIAN_BEACON"/>
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="ESCORT_BEACON"/>
+	<event load="DISTRESS_TRAPPED_MINER"/>
+	<event load="DISTRESS_INFESTATION"/>
+	<event load="DISTRESS_SATELLITE_DEFENSE"/>
+	<event load="DISTRESS_STATION_FIRE"/>
+	<event load="DISTRESS_STATION_DISEASE"/>
+</eventList>
+
+<eventList name="QUESTS">
+	<event load="QUEST_ESCORT"/>
+	<event load="MERCHANT_REQUEST"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="MERCENARY_WORK_START"/>
+	<event load="QUEST_MANTIS_INVASION_START"/>
+	<event load="QUEST_CREWDEAD_START"/>
+</eventList>
+
+<eventList name="HOSTILE_BOARDING">
+	<event load="STATION_SICK"/>
+	<event load="BOARDERS_SUN"/>
+	<event load="BOARDERS_ASTEROID"/>
+	<event load="BOARDERS"/>
+	<event load="GHOST_SHIP"/>
+	<event load="FLOATING_CARGO"/>
+	<event load="BOARDERS_HACKING"/>
+</eventList>
+
+<eventList name="MANTIS_HOSTILE">
+	<event load="MANTIS_FIGHT"/>
+	<event load="MANTIS_FIGHT"/>
+</eventList>
+
+<!--    
+	  ***********
+       TEXT LISTS				  
+	  ***********		
+-->
+
+<textList name="TIPS_LIST">
+	<text>TIP: The civil war has set fathers against sons and best friends against each other - but the loyalists will show no mercy.</text>
+	<text>TIP: Weapons - Race-specific weapons are rarer, more expensive, and deadlier than their generic counterparts.</text>
+	<text>TIP: Weapon types - Missiles are good at ignoring shields, lasers fire damaging beams which shields stop, and kinetic weapons are somewhere in the middle.</text>
+	<text>TIP: Pausing -  Press SPACE at any time to pause the game. You can still issue orders to crew or manipulate system power while paused.</text>
+	<text>TIP: Upgrading - Weapons are deadlier in Sonata, and many ignore shields. Upgrade your ship's defense as soon as possible.</text>
+	<text>TIP: Weapon types - The United Empire uses kinetic weapons like railguns and Gauss guns. Drivers fire more quickly; Empire weapons tend to breach and ignore one shield.</text>
+	<text>TIP: Weapon types - The Sower use big cannon and quick-firing autocannon; some require ammunition. Their ships were built by the Endless, but their weapons are more primitive.</text>
+	<text>TIP: Weapon types - Sophons wield lasers, incredibly deadly weapons that cause fires and damage multiple rooms. Make sure your opponent's shields are down before firing.</text>
+	<text>TIP: System Damage -  When a System fully breaks due to fire or boarders, the hull also takes one damage.</text>
+	<text>TIP: United Empire - Most humans are citizens. It is democratic and has liberal laws. Humans being human, the United Empire can be quite aggressive towards other species.</text>
+	<text>TIP: The Sower - The Endless built the Sower as intelligent terraformers. They have evolved, but retain thier mission: prepare the universe for the return of their creators.</text>
+	<text>TIP: Sophons - The Sophon are an intelligent, inquisitive, emotional race. Although they are driven researchers, their interests extend to art and more...prurient activities.</text>
+	<text>TIP: The Endless - Artifacts of an incredibly advanced, ancient race called the Endless have been found throughout the galaxy; they are believed to be extinct.</text>
+	<text>TIP: Civil war - Many humans, unsatisfied with Empire government and society, have seceded. They are in a desparate fight for survival.</text>
+	<text>TIP: Pilgrims - Most of the seceding humans are Pilgrims. Pilgrims are unique among humanity in that they view the Endless as the Gods of old - most UE citizens are secular.</text>
+	<text>TIP: Shields - Modern starships are equipped with a suite of defensive measures that include armor, soft and hard anti-missile systems, and energy shields.</text>
+	<text>TIP: Shield Piercing - Missiles are agile enough to avoid being shot down and too heavy to be stopped by energy shields. Remember that Defense Drones can shoot down missiles!</text>
+	<text>TIP: Fire - As in ancient navies, fire is a starship's worst enemy. Many warships are built to allow atmosphere venting to prevent infernos.</text>
+	<text>TIP: Breach - Ship hulls are incredibly tough, and some are made from self-repairing nanomaterial. However, you can still to blow a hole large enough to require manual repair.</text>
+	<text>TIP: Evasion -  Evading enemy shots is crucial, but it requires working engines AND a pilot. Assigning an expert to man the engines will increase your evasion as well.</text>
+	<text>TIP: Sensors - If the ship goes dark, you need not panic. Just fix the Sensors Subsystem. Be forewarned that in the icy blackness of space, panic may well be appropriate.</text>
+	<text>TIP: Survival - I hope you know where your fucking towel is at.</text>
+	<text>TIP: Lasers - Laser weapons do damage based on the number of rooms they hit. Each Shield will block 1 damage of a laser; it's best to use lasers when enemy shields are down.</text>
+	<text>TIP: Health -  Pay attention to your crew's health! Use the medbay to keep them patched up.</text>
+	<text>TIP: Upgrades - Don't forget to upgrade your ship!  Often shields are the highest priority, but don't underestimate the usefulness of subsystems.</text>
+	<text>TIP: Fuel - Every jump consumes one unit of fuel, so keep an eye on your reserves.  Buy fuel at stores to avoid being left stranded.</text>
+	<text>TIP: Sower-Human relations - Sower are peaceful unless provoked, but several times their attempts to terraform populated worlds have provoked bloody battles.</text>
+	<text>TIP: Asteroids - Fighting in asteroid fields is dangerous, but use it to your advantage. Take out enemy shields and let the rocks take care of the rest.</text>
+	<text>TIP: Nebulas -  Passing through a Nebula will allow you to temporarily slow down the fleet advancement but they contain their own unique dangers.</text>
+	<text>TIP: Solar Flares - Solar flares will cause hull damage in addition to starting fires. Make sure your shields are up to help mitigate this effect.</text>
+	<text>TIP: Sower-Sophon relations - It is safe to assume that the Sophon drive to research and understand has extended to studying the Sower; conflict between the two races is rare.</text>
+	<text>TIP: Hotkeys -  You can charge or arm weapons using number hotkeys:  The Weapon Slots are 1-4 on your keyboard, and the Drones are 5-7.</text>
+	<text>TIP: Sophon-Human relations - The Sophon were the first friendly race contacted by humanity; theirs is a "special relationship" characterized by curiousity and friendship.</text>
+	<text>TIP: Sophon-Human relations - In the literal sense, Sophon-Human relations aren't rare. Interbreeding is impossible, but that hasn't stopped couples from enjoying the attempt.</text>
+	<text>TIP: Sophon-Empire relations - The United Empire has always maintained excellent relations with the Suphon, and refrained from expanding into traditional Sophon space.</text>
+	<text>TIP: Sophon-Empire relations - There are far more Humans than Sophon, and they have more of a taste for war. War between the two species is unthinkable to most, however.</text>
+	<text>TIP: Sophon-Pilgrim relations - Most Sophon strongly believe in freedom and independence, and hence support peaceful secession even if they disagree with some Pilgrim ideals.</text>
+	<text>TIP: Sophon-Pilgrim relations - It is well known that the Sophon disapprove of the Empire's violent handling of the secession incident.</text>
+	<text>TIP: Sophon-Pilgrim relations - Sophon-Empire relations make open support for the Pilgrims diplomatically unteneble - but they do provide some help behind the scenes.</text>
+	<text>TIP: Loyalists - Many loyal Empire citizens view the seceding Pilgrims as traitors. Humanity is the only known race that does not present a united front.</text>
+	<text>TIP: Civil war - The United Empire legislature hastily declared war when planets seceded. The official position is that it is not a war but an internal police action.</text>
+	<text>TIP: Civil war - The United Empire retained most of its industrial capacity post-secession. It will eventually win any war against the Pilgrims - if it has the stomach for it.</text>
+	<text>TIP: Civil war - The Pilgrims are frantically seeking a diplimatic resolution, but the United Empire will not accept anything other than a return to the pre-war status quo.</text>
+	<text>TIP: Breaches -  If a room with a breach has no Oxygen, try opening all the doors surrounding it to make it less hazardous.</text>
+	<text>TIP: Dust - The galaxy is covered in this stuff. It is an intelligent nanomaterial useful for science, repair, medicine, and even currency.</text>
+	<text>TIP: Dust - Dust was created by the Endless. Current technology cannot create it, but it is extremely useful in every field.</text>
+	<text>TIP: Dust - All known spacefaring races have discovered the existence of Dust. Its properties are so advanced as to be indestinguishable from magic.</text>
+	<text>TIP: Dust - Dust is normally detected and interacted with via specialized instruments: amber spyglasses and golden compasses. Just a gram of Dust is worth a fortune.</text>
+	<text>TIP: Dust - Almost all advanced equipment makes use of Dust in its construction. Dust is near-indestructible and can be recovered after the equipment is destroyed.</text>
+	<text>TIP: Font Size -  Pressing +/- will increase and decrease the font size of event texts.</text>
+	<text>TIP: Weapon Order - Rearrange a weapon or drone schematic by dragging it into the desired position. The left-most slot will be the last to power down if the system is damaged.</text>
+	<text>TIP: Door Subsystem - Upgrading your doors will greatly reduce the chance fire will spread between rooms and slow boarder movement.</text>
+</textList>
+
+   <!--  not good quest event?
+ <event name="TAVERN_HIRE" unique="true">
+	<text load="TAVERN_HIRE_TEXT"/>
+	<choice>
+		<text>Hire a single crew member.</text>
+		<event>
+			<crewMember amount="1"/>
+			<item_modify>
+				<item type="scrap" min="-30" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Hire 2 crew members.</text>
+		<event>
+			<crewMember amount="2"/>
+			<item_modify>
+				<item type="scrap" min="-55" max="-40"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Hire a team of 3.</text>
+		<event>
+			<crewMember amount="3"/>
+			<item_modify>
+				<item type="scrap" min="-100" max="-70"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Don't hire anyone.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="TAVERN_HIRE_TEXT">
+	<text>You find up a space station set up for travelers.  Browsing through its listings, you find a tavern full of mercenaries for hire.  You could pick up some extra crew here.</text>
+	<text>There are a number of ships stationed around a rest stop.  You immediately receive a message saying, "If you're looking for some bodies to fill your ship, you've come to the right place!"</text>
+	<text>This beacon seems to serve as a meeting place for local traffic.  It seems like you can find crew willing to fight on your ship here... for a price.</text>
+</textList>
+-->
+<!-------------------------------
+
+	OUTDATED or TESTING events
+	
+------------------------------->
+
+<!--*******Cloaking-->
+<event name="STEALTH_1">
+	<text>This is a prototype ship which utilizes advanced cloaking technology. The trade off is lack of shields or weaponry. Take advantage of the cloaking device's ability to make enemy shots miss.</text>
+</event>
+
+<!--**********Armor/speed-->
+<event name="STEALTH_2">
+	<text>This ship was based on designs that existed before shielding technology was standard in all ships. Its armored hull and increased mobility are its primary assets.</text>
+</event>
+
+<!--*********Shielded-->
+<event name="STEALTH_3">
+	<text>This ship is designed to test the Federation's new advanced shield recharging technology. Unfortunately, you're being forced to test it alone.</text>
+</event>
+
+<!--*********Boarding-->
+<event name="STEALTH_4">
+	<text>This ship was designed for troop transport behind enemy lines. As such, it isn't equipped with weapons by default but is crewed by the best of the best.</text>
+</event>
+
+
+<!--**********Drones - space-->
+<event name="STEALTH_5">
+	<text>This ship is a modified mining vessel that contained advanced AI for drone management. It isn't quite combat ready, but hopefully the drones will cover its shortcomings.</text>
+</event>
+
+<!--**********Drones - crew-->
+<event name="STEALTH_6">
+	<text>Your new vessel is equipped with state of the art androids and beam weaponry. It was difficult to find a full crew since the androids are rather terrifying to work with.</text>
+</event>
+
+<!--*********Missile fun time-->
+<event name="STEALTH_7">
+	<text>The engineer who designed this ship clearly loved missiles.  Few opponents will be able to withstand this ship's missile barrage, but be sure to watch your ammo reserves.</text>
+</event>
+
+<event name="DEMO_END">
+	<text>Congratulations, that's the end of the training simulation! As a final lesson, you'll experience what it's like to be destroyed by a more powerful enemy. This pirate is equipped with our most advanced weapons and systems, including a prototype cloaking device. It's manned by aliens known to be the best engineers in the galaxy. And we've shutdown your engines as well, so there's no use trying to run away.</text>
+	<status type="limit" target="player" system="engines" amount="0"/>
+	<ship load="IMPOSSIBLE_PIRATE" hostile="true"/>
+</event>
+<ship name="IMPOSSIBLE_PIRATE" blueprint="IMPOSSIBLE_PIRATE">
+	<destroyed>
+		<text>Impossible! He was supposed to be unbeatable! Even the simulation creators haven't done that. Continue on, you've earned it.</text>
+		<item_modify>
+			<item type="scrap" min="100" max="100"/>
+		</item_modify>
+		<status type="limit" target="player" system="engines" amount="100"/>
+	</destroyed>
+</ship>
+
+<event name="ASTEROID_TEST">
+	<img back="BG_DARK" planet="NONE"/>
+	<text>We've come out in an asteroid field! We'll have to wait for the FTL to charge before we can get out of here, let's hope the ship holds up.</text>
+	<environment type="asteroid"/>
+</event>
+
+<event name="CASH_IN_DRONE">
+	<text>Your ship is currently not equipped with a drone system. You reduce the drone schematic to Dust.</text>
+	<choice>
+		<text>Continue...</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="UNLOCK_STEALTH">
+	<text>You stumble across a hidden Federation research laboratory!  They have been experimenting with some unique ship designs.  You download their blueprints for future use.</text>
+</event>
