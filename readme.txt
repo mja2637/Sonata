@@ -65,15 +65,15 @@ Plasma Slugger: 3 bars, 3 damage, very low fire chance, 12 second cooldown.
 Mk 1 Gauss Gun, software-defined (UE): 2 bars, 3 shots, 1 damage, low breach chance, 11 second cooldown.
 Mk 2 Gauss Gun, boson (UE): 3 bars, 3 damage, low breach chance, 13 second cooldown.
 Unstable Slugger: 4 bars, 5 damage, very low breach chance, 14 second cooldown.
-Anti-Baryon Mag AutoCannon (Sower): 4 bars, 3 shots, 1 damage, excellent chance to breach, ignores 3 shields, 8s cooldown.
-Mk 2 Gauss Driver, proton exchange (UE): 4 bars, 3 shots, 2 damage, 1 shield piercing, good fire/breach chance, 18s cooldown.
-Mk 2 Accelerator, tachyon (UE): 4 bars, 5 damage, 2 shield piercing, 15 second cooldown.
+Anti-Baryon Mag AutoCannon (Sower): ???
+Mk 2 Gauss Driver, proton exchange (UE): ???
+Mk 2 Accelerator, tachyon (UE): ???
 
 Some lasers also act like kinetic weapons:
 High Energy Low Frequency Electrojet: 1 bar, 1 shot, 1 ion damage, 8s cooldown.
 Radiothermal Burst Maser (Sophon): 1 bar, 2 shots, 1 damage, very low chance of fire, 11s cooldown.
 Quantized Photonic Burst Xaser (Sophon): 2 bars, 2 shots, 1 damage, good chance of fire, 8s cooldown.
-Contained Higgs Pulse Beam (Sophon): 4 bars, 2 shots, 3 damage, excellent chance to breach, 15s cooldown.
+Contained Higgs Pulse Beam (Sophon): ???
 
 Missile Weapons:
 MW map to the missiles of vanilla FTL, where missiles have been gernalized to mean any sort of special or expensive ammunition. All require 1 missile unless noted.
@@ -87,8 +87,8 @@ Positron Torpedo: 3 bars, 3 damage, ignores 5 shields, very low chance to breach
 Mag Cannon (Sower): 3 bars, 3 damage, ignores 3 shields, low chance to breach, doesn't require missiles, 12s cooldown.
 Compensated Mag AutoCannon (Sower): 3 bars, 3 shots, 1 damage, low chance to breach, ignores 2 shields, doesn't require missiles, 11s cooldown.
 Non-Baryonic Torpedo: 4 bars, 4 damage, low chance of fire, very good chance to breach, ignores 5 shields, 15s cooldown.
-COLD BASIN (UE): 4 bars, 2 ion damage, 3 shots, fair chance of fire, 20s cooldown.
-Baryon-Gravitophoric Cannon (Sower): 4 bars, 5 damage, ignores 4 shields, excellent chance to breach, requires 2 missiles, 15s cooldown.
+COLD BASIN (UE): ???
+Baryon-Gravitophoric Cannon (Sower): ???
 
 Laser Weapons:
 Beams. Good at setting fire.
@@ -141,6 +141,9 @@ AndreaLoko (Beatpick), soundtrack
 Chiwawa (Beatpick), soundtrack
 Dhruva Aliman (Beatpick), soundtrack
 Feorm (Beatpick), soundtrack
+Going After Zen (Beatpick), soundtrack
+Lehtmojoe (Beatpick), soundtrack
+Mokhov (Beatpick), soundtrack
 Proteus Noir (Beatpick), soundtrack
 Paul Ruskay (Relic), soundtrack
 
@@ -150,24 +153,23 @@ The latest version/build of the mod can always be grabbed from github at this UR
 https://github.com/mja2637/Sonata/archive/master.zip
 
 5 CHANGELOG
-7a
-		  - Restored boss dev work to /alpha
-		  - Fixed several references to "United Earth" instead of "United Empire"
-		  - Changed Engi/Mantis references to Automaton/Hissho
-		  - Added UE Frigate enemy
+7a		  
 		  - Added SOPHON_A: "Verne" (by DCChuckles)
+		  - Remixed the weapons load of unimplemented ships (have fun)
+		  - Added UE Frigate enemy
 		  - Added custom UE weapon sprites (all 16)
 		  - Added custom Sower/Sophon weapon sprites (some)
 		  - Added custom projectiles for all current weapons
-		  - Several new sound effects
-		  - Reduced the frequency of that one song
+		  - Several new sound effects		  
 		  - Added 8 new music tracks
 		  - Tweaked Ranger mount points
-		  - Event edits
 		  - Shrank mini ship icons to avoid overlapping border
 		  - Added several new drones & ion weapons
 		  - Added spiteful_crow's new UE Frigate sprite (currently unused)
 		  - Removed some lower-quality backgrounds and added replacements
+		  - Reshuffled sound tracks
+		  - Changed Engi/Mantis references to Automaton/Hissho		  
+		  - Event edits
 		  - Tweaks & balances
 7
 		  - Added Sonata drones

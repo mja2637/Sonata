@@ -220,7 +220,7 @@
 	<maxPower>8</maxPower>
 	<rarity>1</rarity>
 	<upgradeCost>
-		<level>100</level> <!-- level 2 -->
+		<level>60</level> <!-- level 2 -->
 		<level>20</level> <!-- level 3 -->
 		<level>30</level> <!-- level 4 -->
 		<level>40</level> <!-- level 5 -->
@@ -4845,6 +4845,7 @@
 	<maxPower amount ="6"/>
 	<crewCount amount = "3" class="energy"/>
 	<aug name="ENERGY_SHIELD"/>
+	<cloakImage>sophon</cloakImage>
 </shipBlueprint>
  
 <!-- ENERGY SHIP -->
