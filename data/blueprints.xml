@@ -1641,7 +1641,7 @@
 <weaponBlueprint name="ION_MISSILE">
 	<type>MISSILES</type>
 	<title>Kinetic Chaff</title>
-	<short>Kinetic Chaff</short>
+	<short>K Chaff</short>
 	<desc>Modern chaff is a small cloud of highly conductive, electrophoric flechettes that disrupt the enemy's targeting and electronics. The "kinetic" part means that the chaff is swiftly delivered via missile.</desc>
 	<tooltip>Fires 1 missile; 2 ion damage.</tooltip>
 	<damage>0</damage>
@@ -1656,7 +1656,7 @@
 	<cost>50</cost>
 	<bp>6</bp>
 	<rarity>2</rarity>
-	<image>missile2</image>
+	<image>missile_2</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -4203,7 +4203,7 @@
 				<number>0</number> 
 			</slot>
 		</shields>	
-		<engines power="3" room="6" start="true" img="room_engines_2" >
+		<engines power="2" room="6" start="true" img="room_engines_2" >
 			<slot>
 				<direction>left</direction>
 				<number>2</number>
@@ -4224,9 +4224,9 @@
 		<weapon name="UE_GAUSS_2"/>
 		<weapon name="UE_GAUSS_2"/>
 	</weaponList>
-	<health amount="34"/>
-	<maxPower amount ="10"/> 
-	<crewCount amount = "4" class="human"/>
+	<health amount="30"/>
+	<maxPower amount ="8"/> 
+	<crewCount amount = "3" class="human"/>
 	<!-- can use these to override images for reuse -->
 	<shieldImage>kestral</shieldImage>
 	<cloakImage>kestral_2</cloakImage>
@@ -4640,10 +4640,10 @@
 		<oxygen power="1" room="9" start="true" img="room_oxygen_4"/>
 		<engines power="2" room="3" start="true"/>
 		<shields power="2" room="11" start="true"/>
-		<weapons power="4" room="15" start="true"/>
-		<drones power="2" room="16" start="false" img="room_drones_5"/>
+		<weapons power="3" room="15" start="true"/>		
 		<medbay power="1" room="10" start="true"/>  
-		<teleporter power="1" room="1" start="false"/>  
+		<teleporter power="1" room="1" start="false"/>
+		<drones power="2" room="16" start="false" img="room_drones_5"/>
 		<artillery power="1" room="6"/>
 		<!--<cloaking power="1" room="6" start="true" img="room_cloaking_5"/>  -->
 	</systemList>
@@ -4656,7 +4656,7 @@
 	<droneList drones="2"/>
 	<droneList count="0" drones="0"/>
 	<health amount="30"/>
-	<maxPower amount ="10"/> 
+	<maxPower amount ="9"/> 
 	<crewCount amount = "2" class="human"/>
 	<crewCount amount = "1" class="energy"/>
 </shipBlueprint>
@@ -4707,7 +4707,7 @@
 	<droneList drones="0"/>
 	<health amount="30"/>
 	<maxPower amount ="10"/>
-	<crewCount amount = "4" class="human"/>
+	<crewCount amount = "3" class="human"/>
 	<shieldImage>fed_cruiser</shieldImage>
 	<cloakImage>fed_cruiser</cloakImage>
 </shipBlueprint>

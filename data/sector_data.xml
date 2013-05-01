@@ -42,7 +42,7 @@ STRUCTURE SECTORS
 		<track>bump</track>
 		<track>hectic</track>
 	</trackList>
-	<startEvent>START_BEACON</startEvent>	
+	<startEvent>START_BEACON</startEvent>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL2" min="2" max="4"/>

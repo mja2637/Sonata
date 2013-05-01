@@ -1,0 +1,58 @@
+<!--	
+
+Test Events
+	
+-->
+
+<event name="TEST">
+	<text load="TEST_TEXT"/>
+	<ship load = "TEST_SHIP_LOAD" hostile ="true"/>
+</event>
+<textList name="TEST_TEXT">
+	<text>Sower scout</text>
+</textList>
+
+<event name="TEST_SOWER_SCOUT">
+	<text>TEST_SOWER_SCOUT</text>
+	<ship load = "TEST_SOWER_SCOUT_LOAD" hostile ="true"/>
+</event>
+
+<event name="TEST_SOWER_SCOUT_PIRATE">
+	<text>TEST_SOWER_SCOUT_PIRATE</text>
+	<ship load = "TEST_SOWER_SCOUT_PIRATE_LOAD" hostile ="true"/>
+</event>
+
+<event name="TEST_SOWER_FIGHTER">
+	<text>TEST_SOWER_FIGHTER</text>
+	<ship load = "TEST_SOWER_FIGHTER_LOAD" hostile ="true"/>
+</event>
+
+<event name="TEST_SOWER_FIGHTER_PIRATE">
+	<text>TEST_SOWER_FIGHTER_PIRATE</text>
+	<ship load = "TEST_SOWER_FIGHTER_PIRATE_LOAD" hostile ="true"/>
+</event>
+
+<event name="TEST_UE_GUNSHIP">
+	<text>TEST_UE_GUNSHIP</text>
+	<ship load="TEST_UE_GUNSHIP_LOAD" hostile="true" />
+</event>
+
+<event name="FREE_NANO">
+	<text>FREE NANO!</text>
+	<augment name="NANO_MEDBAY"/>
+</event>
+
+<event name="FREE_AUG">
+	<text>FREE AUG!</text>
+	<augment name="RANDOM"/>
+</event>
+
+<event name="CRYSTAL_TEST">
+	<text>Testing Crystal Teleport</text>
+	<choice>
+		<text>Travel to the Crystal Sector</text>
+		<event>
+			<secretSector/>
+		</event>
+	</choice>
+</event>
