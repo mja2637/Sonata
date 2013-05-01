@@ -3296,7 +3296,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<rarity>0</rarity>
-	<image>UE_GAUSS_PROJ_1</image>
+	<image>SIMPLE_GUN_PROJ</image>
 	<launchSounds>
 		<sound>kinetic4</sound>
 		<sound>kinetic4</sound>
@@ -3325,7 +3325,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<rarity>0</rarity>
-	<image>UE_DRIVER_PROJ_1</image>
+	<image>SIMPLE_GUN_PROJ</image>
 	<launchSounds>
 		<sound>kinetic3</sound>
 		<sound>kinetic3</sound>
@@ -3412,7 +3412,7 @@
 	<breachChance>2</breachChance>
 	<rarity>0</rarity>
 	<speed>120</speed>
-	<image>UE_DRIVER_PROJ_3</image>
+	<image>MEDIUM_RAIL_PROJ</image>
 	<launchSounds>
 		<sound>kinetic2</sound>
 		<sound>kinetic2</sound>
@@ -4408,7 +4408,7 @@
 		<teleporter power="1" room="14" start="false"/>
 		<cloaking power="2" room="11" start="true" img="room_cloaking"/>
 	</systemList>
-	<weaponList count="1" missiles="0">
+	<weaponList count="2" missiles="0">
 		<weapon name="BASIC_KINETIC_1"/>
 		<weapon name="SOPHON_LASER_4"/>
 	</weaponList>
