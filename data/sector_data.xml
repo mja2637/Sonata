@@ -38,9 +38,9 @@ STRUCTURE SECTORS
 	</nameList>
 	<trackList>
 		<track>home</track>
-		<track>home2</track>
 		<track>bump</track>
-		<track>hectic</track>
+		<track>home2</track>		
+		<track>explore</track>
 	</trackList>
 	<startEvent>START_BEACON</startEvent>
 	<event name="STORE" min="2" max="3"/>
@@ -81,9 +81,9 @@ CIVILIAN SECTORS
 		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
-		<track>home2</track>
-		<track>bump</track>
 		<track>explore</track>
+		<track>home2</track>
+		<track>bump</track>		
 		<track>explore2</track>
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
@@ -103,10 +103,10 @@ CIVILIAN SECTORS
 		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
-		<track>home2</track>
-		<track>bump</track>
-		<track>explore</track>
 		<track>explore2</track>
+		<track>explore</track>
+		<track>home2</track>
+		<track>bump</track>		
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
@@ -124,11 +124,11 @@ CIVILIAN SECTORS
 	<nameList>
 		<name>Civilian Sector</name>
 	</nameList>
-	<trackList>
-		<track>home2</track>
+	<trackList>		
 		<track>bump</track>
 		<track>explore</track>
 		<track>explore2</track>
+		<track>home2</track>
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
@@ -168,11 +168,11 @@ CIVILIAN SECTORS
 	<nameList>
 		<name>Sophon Controlled Sector</name>
 	</nameList>
-	<trackList>
-		<track>garden</track>
+	<trackList>		
+		<track>home2</track>
 		<track>bump</track>
-		<track>cosmos</track>
 		<track>explore</track>
+		<track>explore2</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="3"/>
@@ -200,11 +200,11 @@ CIVILIAN SECTORS
 	<nameList>
 		<name>Sophon Homeworlds</name>
 	</nameList>
-	<trackList>		
-		<track>cosmos</track>
-		<track>garden</track>
+	<trackList>
+		<track>explore2</track>
+		<track>home2</track>
 		<track>bump</track>
-		<track>explore</track>
+		<track>explore</track>		
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="4"/>
@@ -233,10 +233,10 @@ CIVILIAN SECTORS
 	<nameList>
 		<name>Sower Controlled Sector</name>
 	</nameList>
-	<trackList>		
-		<track>wasteland</track>
-		<track>voidPirate</track>
+	<trackList>
 		<track>rough2</track>
+		<track>wasteland</track>
+		<track>garden</track>		
 		<track>explore</track>
 	</trackList>
 	<rarityList>
@@ -347,7 +347,6 @@ HOSTILE SECTORS
 	</nameList>
 	<trackList>
 		<track>hectic</track>
-		<track>debris</track>
 		<track>rough</track>
 		<track>rough2</track>
 		<track>voidPirate</track>
@@ -470,9 +469,10 @@ NEBULA SECTORS
 		<name>Uncharted Nebula</name>
 	</nameList>
 	<trackList>
+		<track>garden</track>		
+		<track>explore2</track>
 		<track>deepspace</track>
-		<track>void</track>
-		<track>explore</track>
+		<track>explore</track>		
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="4"/>
