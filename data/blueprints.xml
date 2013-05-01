@@ -136,7 +136,7 @@
 
 <!-- 	
 	*********************
-	  SYSTEM BLUEPRINTS
+	 SYSTEM BLUEPRINTS
 	*********************
 -->
 <systemBlueprint name="oxygen">
@@ -335,8 +335,8 @@
 	<cost>60</cost>
 </systemBlueprint>
 
-<!--    *********************
-          WEAPON BLUEPRINTS
+<!--  *********************
+     WEAPON BLUEPRINTS
 		*********************
 		
 		Humans - UE/Pilgrim/IHTG
@@ -790,7 +790,7 @@
 	<weaponArt>SOWER_CANNON_4</weaponArt>
 </weaponBlueprint>
  
-  <weaponBlueprint name="SOWER_AUTOCANNON_1">
+ <weaponBlueprint name="SOWER_AUTOCANNON_1">
 	<type>LASER</type>
 	<title>Caseless AutoCannon</title>
 	<short>Caseless AC</short>
@@ -985,7 +985,7 @@
 	<launchSounds>
 		<sound>beam1</sound>
 	</launchSounds>
-	<weaponArt>laser_burst_2</weaponArt>  
+	<weaponArt>laser_burst_2</weaponArt> 
 </weaponBlueprint>
 
  <weaponBlueprint name="SOPHON_LASER_3">
@@ -1712,8 +1712,8 @@
 	<weaponArt>boss_4</weaponArt> 
 </weaponBlueprint>
 
-<!--    *********************
-          VANILLA BLUEPRINTS
+<!--  *********************
+     VANILLA BLUEPRINTS
 		*********************
 -->
 
@@ -1831,8 +1831,8 @@
 	<title>Boss Missile</title>
 	<short>Boss M.</short>
 	<desc>Artillery that fires 3 missiles that deal 1 damage.</desc>
-	<tooltip>Fires 3 missiles; 1 damage each; pierces  all shields.</tooltip>
-	<!--<desc>Power Req: 3    Fires 2 missiles that pierces through all shields and deals 2 damage. Consumes 2 missile per shot.</desc>-->
+	<tooltip>Fires 3 missiles; 1 damage each; pierces all shields.</tooltip>
+	<!--<desc>Power Req: 3  Fires 2 missiles that pierces through all shields and deals 2 damage. Consumes 2 missile per shot.</desc>-->
 	<damage>1</damage>
 	<missiles>0</missiles>
 	<shots>3</shots>
@@ -1869,7 +1869,7 @@
 	<short>Boss Beam</short>
 	<desc>2 damage beam with a long trail.</desc>
 	<tooltip>Beam weapon, 2 damage per room with small breach chance.</tooltip>
-	<!--<desc>Power Req: 3    A powerful but slow beam that deals 2 damage in a short line with a low chance of breaches.</desc>-->
+	<!--<desc>Power Req: 3  A powerful but slow beam that deals 2 damage in a short line with a low chance of breaches.</desc>-->
 	<damage>2</damage>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
@@ -1958,7 +1958,7 @@
 	SIMPLE LASERS 
  -------------->
 
-<weaponBlueprint name="LASER_BURST_1">  <!-- 1 shot 1power-->
+<weaponBlueprint name="LASER_BURST_1"> <!-- 1 shot 1power-->
 	<type>LASER</type>
 	<title>Defense Laser Mark I</title>
 	<short>Basic Laser</short>
@@ -1995,7 +1995,7 @@
 	<weaponArt>laser_burst_1</weaponArt> 
 </weaponBlueprint>
 
-<weaponBlueprint name="LASER_BURST_2">  <!--1 power 2 shots-->
+<weaponBlueprint name="LASER_BURST_2"> <!--1 power 2 shots-->
 	<type>LASER</type>
 	<title>Dual Shot Laser</title>
 	<short>Dual Lasers</short>
@@ -2032,7 +2032,7 @@
 	<weaponArt>laser_burst_2</weaponArt> 
 </weaponBlueprint>
 
-<weaponBlueprint name="LASER_BURST_2_A">  <!-- 2 power 2 shots -->
+<weaponBlueprint name="LASER_BURST_2_A"> <!-- 2 power 2 shots -->
 	<type>LASER</type>
 	<title>Burst Laser Mark I</title>
 	<short>Burst Laser I</short>
@@ -2416,7 +2416,7 @@
 	<short>Hermes</short>
 	<desc>Standard but powerful missile.</desc>
 	<tooltip>Fires 1 missile; does 3 damage; pierces all shields.</tooltip>
-	<!--<desc>Power Req: 2    Pierces through all shields and deals 3 damage with a chance of fire and breaches.  Uses 1 missile per shot.</desc>-->
+	<!--<desc>Power Req: 2  Pierces through all shields and deals 3 damage with a chance of fire and breaches. Uses 1 missile per shot.</desc>-->
 	<damage>3</damage>
 	<missiles>1</missiles>
 	<shots>1</shots>
@@ -2452,8 +2452,8 @@
 	<title>Pegasus Missile</title>
 	<short>Pegasus</short>
 	<desc>Creative missile design allows for two projectiles for the cost of one!</desc>
-	<tooltip>Fires 2 missiles; 2 damage each; pierces  all shields.</tooltip>
-	<!--<desc>Power Req: 3    Fires 2 missiles that pierces through all shields and deals 2 damage. Consumes 2 missile per shot.</desc>-->
+	<tooltip>Fires 2 missiles; 2 damage each; pierces all shields.</tooltip>
+	<!--<desc>Power Req: 3  Fires 2 missiles that pierces through all shields and deals 2 damage. Consumes 2 missile per shot.</desc>-->
 	<damage>2</damage>
 	<missiles>1</missiles>
 	<shots>2</shots>
@@ -2490,7 +2490,7 @@
 	<short>Breach</short>
 	<desc>These missiles are designed to cause maximum destruction to ship hull armor.</desc>
 	<tooltip>Fires 1 missile; 4 damage; pierces all shields; high breach chance.</tooltip>
-	<!--<desc>Power Req: 3    Fires a single shot, heavy missile that does 4 damage and causes breaches in the target's hull.</desc>-->
+	<!--<desc>Power Req: 3  Fires a single shot, heavy missile that does 4 damage and causes breaches in the target's hull.</desc>-->
 	<damage>4</damage>
 	<missiles>1</missiles>
 	<shots>1</shots>
@@ -2559,7 +2559,7 @@
 	<short>Pike Beam</short>
 	<desc>Can cut across entire ships, assuming there's no shield to stop it.</desc>
 	<tooltip>Beam weapon with extended line. 1 damage per room.</tooltip>
-	<!--<desc>Power Req: 2    Can cut across an entire ship that has no shields, dealing 1 damage per room.</desc>-->
+	<!--<desc>Power Req: 2  Can cut across an entire ship that has no shields, dealing 1 damage per room.</desc>-->
 	<damage>1</damage>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
@@ -2584,7 +2584,7 @@
 	<short>Halberd Beam</short>
 	<desc>Slow but reliably powerful standard beam weapon.</desc>
 	<tooltip>Beam weapon, 2 damage per room with small breach chance.</tooltip>
-	<!--<desc>Power Req: 3    A powerful but slow beam that deals 2 damage in a short line with a low chance of breaches.</desc>-->
+	<!--<desc>Power Req: 3  A powerful but slow beam that deals 2 damage in a short line with a low chance of breaches.</desc>-->
 	<damage>2</damage>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
@@ -2608,7 +2608,7 @@
 	<short>Glaive Beam</short>
 	<desc>One of the most powerful weapons of war ever created. Known to take out some ships in a single blast.</desc>
 	<tooltip>Large beam that does 3 damage per room.</tooltip>
-	<!--<desc>Power Req: 4    A very powerful beam weapon that cuts through ships like butter.   Deals 3 damage in a line.</desc>-->
+	<!--<desc>Power Req: 4  A very powerful beam weapon that cuts through ships like butter.  Deals 3 damage in a line.</desc>-->
 	<damage>3</damage>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
@@ -2628,11 +2628,11 @@
 
 <weaponBlueprint name="BEAM_FIRE">
 	<type>BEAM</type>
-	<title>Fire Beam</title>   <!-- Induction beam? -->
+	<title>Fire Beam</title>  <!-- Induction beam? -->
 	<short>Fire Beam</short>
 	<desc>This terrifying beam does no physical damage but ignites fires.</desc>
 	<tooltip>Beam weapon that starts fires.</tooltip>
-	<!--<desc>Power Req: 2    A beam weapon that does 1 damage and starts fires in a line if the enemy has no shields.</desc>-->
+	<!--<desc>Power Req: 2  A beam weapon that does 1 damage and starts fires in a line if the enemy has no shields.</desc>-->
 	<damage>0</damage>
 	<sp>0</sp>
 	<fireChance>8</fireChance>
@@ -2656,7 +2656,7 @@
 	<short>Anti-Bio Beam</short>
 	<desc>This terrifying beam does no physical damage but rips through organic material, dealing heavy damage to crew members.</desc>
 	<tooltip>2 power beam weapon that greatly damages enemy crew.</tooltip>
-	<!--<desc>Power Req: 2    A beam weapon that does 1 damage and starts fires in a line if the enemy has no shields.</desc>-->
+	<!--<desc>Power Req: 2  A beam weapon that does 1 damage and starts fires in a line if the enemy has no shields.</desc>-->
 	<damage>0</damage>
 	<persDamage>4</persDamage>
 	<sp>0</sp>
@@ -2728,7 +2728,7 @@
 	<short>Hull Laser II</short>
 	<desc>Designed to maximize hull damage.</desc>
 	<tooltip>Fires 3 lasers, 1 damage each and 2x damage in systemless rooms.</tooltip>
-	<!--<desc>Power Req: 3  Fires 3 shots that deal 1 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
+	<!--<desc>Power Req: 3 Fires 3 shots that deal 1 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
 	<damage>1</damage>
 	<shots>3</shots>
 	<sp>0</sp>
@@ -2767,7 +2767,7 @@
 	<short>Hull Beam</short>
 	<desc>This beam is most powerful when targeting large, empty sections of hull.</desc>
 	<tooltip>Beam weapon; 1 damage; 2x damage in systemless rooms.</tooltip>
-	<!--<desc>Power Req: 3  Fires a beam that deals 1 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
+	<!--<desc>Power Req: 3 Fires a beam that deals 1 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
 	<damage>1</damage>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
@@ -2792,7 +2792,7 @@
 	<short>Hull Mi.</short>
 	<desc>High hull damage plus a decent breach chance.</desc>
 	<tooltip>Fires 1 missile; 2 damage; 2x damage in systemless rooms.</tooltip>
-	<!--<desc>Power Req: 2  Fires a missile that deals 2 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
+	<!--<desc>Power Req: 2 Fires a missile that deals 2 damage to rooms with a system or subsystem and double damage to rooms without either.</desc>-->
 	<damage>2</damage>
 	<missiles>1</missiles>
 	<shots>1</shots>
@@ -2843,7 +2843,7 @@
 	<power>3</power>
 	<cost>80</cost>
 	<bp>6</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<image>ion_1_shot</image>
 	<explosion>explosion_small_ion</explosion>
 	<launchSounds>
@@ -2878,7 +2878,7 @@
 	<locked>1</locked>
 	<desc>Self-teleporting explosive that damages systems and crew but not the hull. Can target your own ship.</desc>
 	<tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-	<!--<desc>Power Req: 2     Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
+	<!--<desc>Power Req: 2   Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
 	<damage>0</damage>
 	<sysDamage>2</sysDamage>
 	<persDamage>2</persDamage>
@@ -2910,7 +2910,7 @@
 	<locked>1</locked>
 	<desc>Self-teleporting explosive designed to damage systems and causes a breach. Can target your own ship.</desc>
 	<tooltip>Bomb weapon; requires a missile; does 1 damage to systems, and creates a hull breach. Can target your own ship.</tooltip>
-	<!--<desc>Power Req: 2     Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
+	<!--<desc>Power Req: 2   Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
 	<damage>0</damage>
 	<sysDamage>1</sysDamage>
 	<persDamage>2</persDamage>
@@ -2942,7 +2942,7 @@
 	<locked>1</locked>
 	<desc>Slower than Mark 1 but breaches and does more damage to systems. Can target your own ship.</desc>
 	<tooltip>Bomb weapon; requires a missile; does 3 damage to systems, and creates a hull breach. Can target your own ship.</tooltip>
-	<!--<desc>Power Req: 2     Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
+	<!--<desc>Power Req: 2   Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
 	<damage>0</damage>
 	<sysDamage>3</sysDamage>
 	<persDamage>3</persDamage>
@@ -3068,7 +3068,7 @@
 	<short>Lock B.</short>
 	<locked>1</locked>
 	<desc>Self-teleporting explosive that does no damage but creates a dense wall preventing movement in or out of the room. Can target your own ship.</desc>
-	<tooltip>Bomb weapon; requires a missile; does no damage;  prevents movement in or out of room. Can target your own ship.</tooltip>
+	<tooltip>Bomb weapon; requires a missile; does no damage; prevents movement in or out of room. Can target your own ship.</tooltip>
 	<damage>0</damage>
 	<sysDamage>0</sysDamage>
 	<persDamage>0</persDamage>
@@ -3094,12 +3094,12 @@
 	<weaponArt>bomb_lockdown</weaponArt> 
 </weaponBlueprint>
 
-<!--    *********************
-          Crystal Weapon BLUEPRINTS
+<!--  *********************
+     Crystal Weapon BLUEPRINTS
 		*********************
 -->
 
-<weaponBlueprint name="CRYSTAL_BURST_1">  
+<weaponBlueprint name="CRYSTAL_BURST_1"> 
 	<type>MISSILES</type>
 	<title>Crystal Burst Mark I</title>
 	<short>Crystal B. I</short>
@@ -3137,7 +3137,7 @@
 	<weaponArt>crystal_burst_1</weaponArt> 
 </weaponBlueprint>
 
-<weaponBlueprint name="CRYSTAL_BURST_2">  
+<weaponBlueprint name="CRYSTAL_BURST_2"> 
 	<type>MISSILES</type>
 	<title>Crystal Burst Mark II</title>
 	<short>Crystal B. II</short>
@@ -3175,7 +3175,7 @@
 	<weaponArt>crystal_burst_2</weaponArt> 
 </weaponBlueprint>
 
-<weaponBlueprint name="CRYSTAL_HEAVY_1">  
+<weaponBlueprint name="CRYSTAL_HEAVY_1"> 
 	<type>MISSILES</type>
 	<title>Heavy Crystal Mark I</title>
 	<short>Crystal H. I</short>
@@ -3214,7 +3214,7 @@
 </weaponBlueprint>
 
 
-<weaponBlueprint name="CRYSTAL_HEAVY_2">  
+<weaponBlueprint name="CRYSTAL_HEAVY_2"> 
 	<type>MISSILES</type>
 	<title>Heavy Crystal Mark II</title>
 	<short>Crystal H. II</short>
@@ -3254,8 +3254,8 @@
 
 
 
-<!--    *********************
-          DRONE BLUEPRINTS
+<!--  *********************
+     DRONE BLUEPRINTS
 		*********************
 -->
 
@@ -3608,7 +3608,7 @@
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>7</dodge>
-	<speed>16</speed> <!--- Change this to increase/decrease firing speed -->  <!-- was 20-->
+	<speed>16</speed> <!--- Change this to increase/decrease firing speed --> <!-- was 20-->
 	<cost>50</cost>
 	<bp>3</bp>
 	<droneImage>drone_combat</droneImage>
@@ -3624,7 +3624,7 @@
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>7</dodge>
-	<speed>14</speed> <!--- Change this to increase/decrease firing speed -->  <!-- was 20-->
+	<speed>14</speed> <!--- Change this to increase/decrease firing speed --> <!-- was 20-->
 	<cost>50</cost>
 	<bp>3</bp>
 	<droneImage>drone_combat</droneImage>
@@ -3640,7 +3640,7 @@
 	<power>2</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>7</dodge>
-	<speed>13</speed> <!--- Change this to increase/decrease firing speed -->  <!-- was 20-->
+	<speed>13</speed> <!--- Change this to increase/decrease firing speed --> <!-- was 20-->
 	<cost>45</cost>
 	<bp>3</bp>
 	<droneImage>drone_combat</droneImage>
@@ -3672,7 +3672,7 @@
 	<power>4</power>
 	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
 	<dodge>8</dodge>
-	<speed>28</speed> <!--- Change this to increase/decrease firing speed -->  <!-- was 45-->
+	<speed>28</speed> <!--- Change this to increase/decrease firing speed --> <!-- was 45-->
 	<cost>100</cost>
 	<bp>8</bp>
 	<droneImage>drone_combat2</droneImage>
@@ -3682,7 +3682,7 @@
 	<rarity>5</rarity>
 </droneBlueprint>
 
-<!--- This guy, for now, flies like the combat drone but heals the ship  -->
+<!--- This guy, for now, flies like the combat drone but heals the ship -->
 <droneBlueprint name="SHIP_REPAIR">
 	<type>SHIP_REPAIR</type>
 	<title>Dyson-Honda "Ant" USV</title>
@@ -3802,9 +3802,9 @@
 	<rarity>0</rarity>
 </droneBlueprint>
 
-<!--    
+<!--  
 	*********************
-	  ITEM BLUEPRINTS
+	 ITEM BLUEPRINTS
 	*********************
 -->
 <itemBlueprint name="fuel">
@@ -3832,7 +3832,7 @@
 </itemBlueprint>
 
 
-<!--    
+<!--  
 	*******************************
 		AUGMENTATION BLUEPRINTS
 	*******************************
@@ -3860,7 +3860,7 @@
 
 <augBlueprint name="ENERGY_SHIELD"> 
 	<title>Sophon Shield</title>
-	<desc>An unexplained technology creates this nearly impenetrable shield.  Only the energy outburst from an FTL engine is powerful enough to recharge it.</desc>
+	<desc>An unexplained technology creates this nearly impenetrable shield. Only the energy outburst from an FTL engine is powerful enough to recharge it.</desc>
 	<cost>80</cost>
 	<bp>8</bp>
 	<rarity>0</rarity>
@@ -3869,8 +3869,8 @@
 </augBlueprint>
 
 <augBlueprint name="NANO_MEDBAY">
-	<title>Automaton Med-bot Dispersal</title>
-	<desc>Floods the ship with Automaton nano med-bots, healing the crew even when they are outside of the med-bay (at a reduced speed).</desc>
+	<title>Symbiotic Vessel</title>
+	<desc>This Automaton vessel is somehow connected to its crew, and maintains an aura of organic nanobots that slowly heal all of its inhabitants.</desc>
 	<cost>60</cost>
 	<bp>12</bp>
 	<rarity>0</rarity>
@@ -3879,8 +3879,8 @@
 </augBlueprint>
 
 <augBlueprint name="SLUG_GEL">
-	<title>Slug Repair Gel</title>
-	<desc>Slug ships excrete a thick gel that automatically repairs any hull breaches.</desc>
+	<title>Autoheal Metamaterials</title>
+	<desc>The ship incorporates a layer of advanced self-healing metamaterials. These materials automatically react to heat and tensile stress, sealing any breaches.</desc>
 	<cost>60</cost>
 	<bp>12</bp>
 	<rarity>0</rarity>
@@ -3889,7 +3889,7 @@
 </augBlueprint>
 
 <augBlueprint name="CREW_STIMS">
-	<title>Mantis Pheromones</title>
+	<title>Warrior Spirit</title>
 	<desc>Your crew's movement speed is increased by 25 percent.</desc>
 	<cost>50</cost>
 	<bp>9</bp>
@@ -3909,8 +3909,8 @@
 </augBlueprint>
 
 <augBlueprint name="SYSTEM_CASING">
-	<title>Reinforced System Casing</title>
-	<desc>All ship systems have additional plating that provides a 15 percent chance to negate damage when hit (hull will still be damaged)</desc>
+	<title>Redundant Pathing</title>
+	<desc>All ship systems have redundant wiring and multiple backup circuits, providing a 15 percent chance to negate damage when hit (hull will still be damaged).</desc>
 	<cost>100</cost>
 	<bp>15</bp>
 	<rarity>0</rarity>
@@ -3920,8 +3920,8 @@
 <!-- END RACE SPECIFIC AUGMENTS -->
 
 <augBlueprint name="ION_ARMOR"> 
-	<title>Reverse Ion Field</title>
-	<desc>Protects your ship from ion damage, giving a 20 percent chance to negate it entirely.</desc>
+	<title>Electroweak Hardening</title>
+	<desc>Protects your ship from system disruption, giving a 20 percent chance to negate it entirely.</desc>
 	<cost>60</cost>
 	<bp>8</bp>
 	<rarity>2</rarity>
@@ -4016,7 +4016,7 @@
 	<stackable>false</stackable>
 </augBlueprint>
 
-<augBlueprint name="DRONE_RECOVERY">  
+<augBlueprint name="DRONE_RECOVERY"> 
 	<title>Drone Recovery Arm</title>
 	<desc>Non-destroyed drones will be retrieved when jumping, allowing their parts to be reused.</desc>
 	<cost>50</cost>
@@ -4045,7 +4045,7 @@
 	<value>0.15</value>
 </augBlueprint>
  
-<!--    
+<!--  
 
 					---------------------------------------
 					***************************************
@@ -4088,86 +4088,86 @@
 </shipBlueprint>
 
 
-<!--  
-   ***********************
-   The Kestrel
-   ***********************
+<!-- 
+  ***********************
+  The Kestrel
+  ***********************
  -->
 
  <!-- Slots for when placing computers are numbered like so:
 	0 1
 	2 3
 -->
-<!-- slot for medbay defines which slot is blocked -   "-2" means no blocked slot-->
+<!-- slot for medbay defines which slot is blocked -  "-2" means no blocked slot-->
 									
 <!-- THE KESTREL -->
 <!-- LAYOUT = DEFAULT --> 
-<!-- SHIP ID = 0 -->    
+<!-- SHIP ID = 0 -->  
 <shipBlueprint name="PLAYER_SHIP_HARD" layout="kestral_a" img="kestral">
-  <class>United Empire Frigate</class>
-  <name>UES Ranger</name>
-  <desc>That old workhorse, the United Empire frigate is the eyes of the fleet. This example has been stolen by the Pilgrims.</desc>
-  <systemList>
-    <pilot power="1" room="5" start="true" img="room_pilot_2" >
+ <class>United Empire Frigate</class>
+ <name>UES Ranger</name>
+ <desc>That old workhorse, the United Empire frigate is the eyes of the fleet. This example has been stolen by the Pilgrims.</desc>
+ <systemList>
+  <pilot power="1" room="5" start="true" img="room_pilot_2" >
 		<slot>
 			<direction>right</direction>
 			<number>2</number> 
 		</slot>
 	</pilot>	
-    <doors power="1" room="9" start="true" img="room_doors_6" >
+  <doors power="1" room="9" start="true" img="room_doors_6" >
 		<slot>
 			<direction>down</direction>
 			<number>1</number> 
 		</slot>
 	</doors>	
-    <sensors power="1" room="7" start="true" img="room_sensors" />
-    <medbay power="1" room="0" start="true" img="room_medbay_5" >
+  <sensors power="1" room="7" start="true" img="room_sensors" />
+  <medbay power="1" room="0" start="true" img="room_medbay_5" >
 		<slot>
 			<number>4</number> 
 		</slot>
 	</medbay>		
-    <oxygen power="1" room="3" start="true" img="room_oxygen_11" >
+  <oxygen power="1" room="3" start="true" img="room_oxygen_11" >
 		<slot>
 			<direction>up</direction>
 			<number>0</number> 
 		</slot>
 	</oxygen>
-    <shields power="2" room="4" start="true" img="room_shields_8">
+  <shields power="2" room="4" start="true" img="room_shields_8">
 		<slot>
 			<direction>right</direction>
 			<number>1</number> 
 		</slot>
 	</shields>
-    <engines power="2" room="6" start="true" img="room_engines" >
+  <engines power="2" room="6" start="true" img="room_engines" >
 		<slot>
 			<direction>down</direction>
 			<number>0</number> 
 		</slot>
 	</engines>
-    <weapons power="3" room="1" start="true" img="room_weapons_3" >
+  <weapons power="3" room="1" start="true" img="room_weapons_3" >
 		<slot>
 			<direction>right</direction>
 			<number>0</number> 
 		</slot>
 	</weapons>	
-    <drones power="2" room="8" start="false" img="room_drones" />
-    <teleporter power="1" room="10" start="false" img="room_teleporter" />
-    <cloaking power="1" room="2" start="false" img="room_cloaking" />
-  </systemList>
-  <weaponSlots>4</weaponSlots>
-  <droneSlots>2</droneSlots>
-  <weaponList count="3" missiles="9">
-    <weapon name="UE_GAUSS_1" />
-    <weapon name="UE_GAUSS_1" />
-    <weapon name="BASIC_MISSILE_1" />
-  </weaponList>
-  <droneList count="0" drones="0" />
-  <health amount="30" />
-  <maxPower amount="8" />
-  <crewCount amount="3" class="human" />
-  <shieldImage>kestral</shieldImage>
-  <cloakImage>kestral</cloakImage>
-  <aug name="ADV_SCANNERS" />
+  <drones power="2" room="8" start="false" img="room_drones" />
+  <teleporter power="1" room="10" start="false" img="room_teleporter" />
+  <cloaking power="1" room="2" start="false" img="room_cloaking" />
+ </systemList>
+ <weaponSlots>4</weaponSlots>
+ <droneSlots>2</droneSlots>
+ <weaponList count="3" missiles="9">
+  <weapon name="UE_GAUSS_1" />
+  <weapon name="UE_GAUSS_1" />
+  <weapon name="BASIC_MISSILE_1" />
+ </weaponList>
+ <droneList count="0" drones="0" />
+ <health amount="30" />
+ <maxPower amount="8" />
+ <crewCount amount="3" class="human" />
+ <shieldImage>kestral</shieldImage>
+ <cloakImage>kestral</cloakImage>
+ <aug name="ADV_SCANNERS" />
 </shipBlueprint>
 
 <!-- THE KESTREL -->
@@ -4232,10 +4232,10 @@
 	<cloakImage>kestral_2</cloakImage>
 </shipBlueprint>
 
-<!--  
-   ***********************
-   MANTIS SHIP
-   ***********************
+<!-- 
+  ***********************
+  MANTIS SHIP
+  ***********************
  -->
 
 <!-- MANTIS SHIP -->
@@ -4275,7 +4275,7 @@
 
 <!-- MANTIS SHIP -->
 <!-- LAYOUT = ALTERNATE --> 
-<!-- SHIP ID = 2 -->    
+<!-- SHIP ID = 2 -->  
 <shipBlueprint name="PLAYER_SHIP_MANTIS_2" layout="mantis_cruiser_2" img="mantis_cruiser_2"> 
 	<class>Hissho Cruiser</class>
 	<name>The Basilisk</name>
@@ -4319,10 +4319,10 @@
 	<cloakImage>mantis_cruiser</cloakImage>
 </shipBlueprint> 
 
-<!--  
-   ***********************
-   STEALTH SHIP
-   ***********************
+<!-- 
+  ***********************
+  STEALTH SHIP
+  ***********************
  -->
 
 <!-- STEALTH SHIP -->
@@ -4368,7 +4368,7 @@
 <!-- SHIP ID = ???? --> 
 <shipBlueprint name="PLAYER_SHIP_STEALTH_2" layout="stealth_2" img="stealth_2">
 	<class>Trade Enforcer</class>
-	<name>DA-SR 12</name>  <!-- direct action - stealth reconnaissance-->
+	<name>DA-SR 12</name> <!-- direct action - stealth reconnaissance-->
 	<unlock>This ship is being built near the Automaton homeworlds. To unlock it you'll need to help them, but keep in mind they only trust their own kind.</unlock>
 	<desc>(Not fully implemented) Constructed for the IHTG by the Automatons, this ship is designed to use cloaking technology and speed to get behind enemy lines.</desc>
 	<systemList>
@@ -4425,15 +4425,15 @@
 	<cloakImage>stealth</cloakImage>
 </shipBlueprint> 
 
-<!--  
-   ***********************
-   ROCK SHIP
-   ***********************
+<!-- 
+  ***********************
+  ROCK SHIP
+  ***********************
  -->
 
 <!-- ROCK SHIP -->
 <!-- LAYOUT = DEFAULT --> 
-<!-- SHIP ID = 6 -->   
+<!-- SHIP ID = 6 -->  
 <shipBlueprint name="PLAYER_SHIP_ROCK" layout="rock_cruiser" img="rock_cruiser">
 	<class>Sower Terraformer</class>
 	<name>SANgluk:0x16b3impl</name>
@@ -4479,7 +4479,7 @@
 
 <!-- ROCK SHIP -->
 <!-- LAYOUT = ALTERNATE -->
-<!-- SHIP ID = 6 -->   
+<!-- SHIP ID = 6 -->  
 <shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser" img="rock_cruiser_2">
 	<class>Pirate Sower</class>
 	<name>Kilimanjaro</name>
@@ -4524,10 +4524,10 @@
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
 
-<!--  
-   ***********************
-   ENGI SHIP
-   ***********************
+<!-- 
+  ***********************
+  ENGI SHIP
+  ***********************
  -->
 
 <!-- ENGI SHIP -->
@@ -4538,16 +4538,16 @@
 	<name>Talavaara</name>
 	<unlock>To unlock this Automaton ship you'll need to get to the 5th sector.</unlock>
 	<desc>(Not fully implemented) This relatively primitive ship was cunningly designed by a species brought to the brink of extinction by war. The ship feels...alive.</desc>
-	<systemList>  
-		<pilot power="1" room="8" start="true"/>    
-		<doors power="1" room="5" start="true" img="room_doors_4"/>  
-		<sensors power="1" room="4" start="true" img="room_sensors_4"/>   
+	<systemList> 
+		<pilot power="1" room="8" start="true"/>  
+		<doors power="1" room="5" start="true" img="room_doors_4"/> 
+		<sensors power="1" room="4" start="true" img="room_sensors_4"/>  
 		<oxygen power="2" room="15" start="true" img="room_oxygen_4"/>
 		<engines power="1" room="2" start="true" img="room_engines_2"/> 
 		<shields power="2" room="3" start="true" img="room_shields_4"/> 
 		<weapons power="3" room="11" start="true"/> 
 		<drones power="2" room="0" start="true"/> 
-		<medbay power="2" room="7" start="true"/>   
+		<medbay power="2" room="7" start="true"/>  
 		<teleporter power="1" room="9" start="false"/>
 		<cloaking power="1" room="12" start="false" img="room_cloaking_4"/> 
 	</systemList>
@@ -4574,32 +4574,32 @@
 	<name>Svihkaara</name>
 	<unlock>To unlock this Automaton ship you'll need to get to the 5th sector.</unlock>
 	<desc>(Not fully implemented) The Automatons have upgraded this ship with black market Sophon weaponry and drones provided secretly by the United Empire, scavenging power and cannibalizing systems wherever they can.</desc>
-	<systemList>  
-		<pilot power="1" room="12" start="true"/>  
-		<doors power="1" room="8" start="true"/>  
-		<sensors power="1" room="2" start="false"/>  
-		<oxygen power="2" room="5" start="true" img="room_oxygen_6"/>  
-		<engines power="1" room="0" start="true" img="room_engines_2"/>  
+	<systemList> 
+		<pilot power="1" room="12" start="true"/> 
+		<doors power="1" room="8" start="true"/> 
+		<sensors power="1" room="2" start="false"/> 
+		<oxygen power="2" room="5" start="true" img="room_oxygen_6"/> 
+		<engines power="1" room="0" start="true" img="room_engines_2"/> 
 		<shields power="2" room="10" start="true" img="room_shields_7">
 			<slot>
 				<direction>up</direction>
 				<number>1</number> 
 			</slot>
-		</shields>  
-		<weapons power="2" room="1" start="true" img="room_weapons_8">  
+		</shields> 
+		<weapons power="2" room="1" start="true" img="room_weapons_8"> 
 			<slot>
 				<direction>up</direction>
 				<number>1</number> 
 			</slot>
 		</weapons>
-		<drones power="4" room="7" start="true" img="room_drones_6"/>  
+		<drones power="4" room="7" start="true" img="room_drones_6"/> 
 		<medbay power="2" room="6" start="true" img="room_medbay_6">
 			<slot>
 				<number>-2</number>
 			</slot>
 		</medbay>
-		<teleporter power="1" room="3" start="false"/>  
-		<cloaking power="1" room="11" start="false" img="room_cloaking_7"/>  
+		<teleporter power="1" room="3" start="false"/> 
+		<cloaking power="1" room="11" start="false" img="room_cloaking_7"/> 
 	</systemList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
@@ -4619,29 +4619,29 @@
 	<cloakImage>circle_cruiser</cloakImage>
 </shipBlueprint>
 
-<!--  
-   ***********************
+<!-- 
+  ***********************
 	FEDERATION SHIP
-   ***********************
+  ***********************
  -->
 
 <!-- FEDERATION SHIP -->
 <!-- LAYOUT = DEFAULT --> 
-<!-- SHIP ID = 4 -->    
+<!-- SHIP ID = 4 -->  
 <shipBlueprint name="PLAYER_SHIP_FED" layout="fed_cruiser" img="fed_cruiser">
 	<class>Pilgrim Destroyer</class>
 	<name>John Paul Jones</name>
 	<unlock>Beat the boss to unlock this advanced Pilgrim destroyer.</unlock>
 	<desc>(Not fully implemented) One of very few new-build Pilgrim ships, this modern destroyer was designed with help from Sophon sympathizers.</desc>
 	<systemList>
-		<pilot power="2" room="4" start="true"/>  
-		<doors power="1" room="8" start="true" img="room_doors_5"/>  
-		<sensors power="1" room="13" start="true"/>  
+		<pilot power="2" room="4" start="true"/> 
+		<doors power="1" room="8" start="true" img="room_doors_5"/> 
+		<sensors power="1" room="13" start="true"/> 
 		<oxygen power="1" room="9" start="true" img="room_oxygen_4"/>
 		<engines power="2" room="3" start="true"/>
 		<shields power="2" room="11" start="true"/>
 		<weapons power="4" room="15" start="true"/>		
-		<medbay power="1" room="10" start="true"/>  
+		<medbay power="1" room="10" start="true"/> 
 		<teleporter power="1" room="1" start="false"/>
 		<drones power="2" room="16" start="false" img="room_drones_5"/>
 		<artillery power="1" room="6"/>
@@ -4663,7 +4663,7 @@
 
 <!-- FEDERATION SHIP -->
 <!-- LAYOUT = ALTERNATE --> 
-<!-- SHIP ID = 4 -->    
+<!-- SHIP ID = 4 -->  
 <shipBlueprint name="PLAYER_SHIP_FED_2" layout="fed_cruiser_2" img="fed_cruiser_2">
 	<class>Pilgrim Destroyer</class>
 	<name>Erasmus</name>
@@ -4675,9 +4675,9 @@
 				<direction>right</direction>
 				<number>1</number> 
 			</slot>
-		</pilot>  
-		<doors power="1" room="17" start="true" img="room_doors_2"/>  
-		<sensors power="1" room="0" start="true"/>  
+		</pilot> 
+		<doors power="1" room="17" start="true" img="room_doors_2"/> 
+		<sensors power="1" room="0" start="true"/> 
 		<oxygen power="1" room="8" start="true" img="room_oxygen_9"/>
 		<engines power="2" room="15" start="true" img="room_engines_2"/>
 		<shields power="2" room="14" start="true" img="room_shields_7">
@@ -4693,9 +4693,9 @@
 				<number>-2</number>
 			</slot>
 		</medbay>
-		<teleporter power="1" room="5" start="false"/>  
+		<teleporter power="1" room="5" start="false"/> 
 		<artillery power="1" room="12"/>
-		<!--<cloaking power="1" room="12" start="true" img="room_cloaking_5"/>  -->
+		<!--<cloaking power="1" room="12" start="true" img="room_cloaking_5"/> -->
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -4712,10 +4712,10 @@
 	<cloakImage>fed_cruiser</cloakImage>
 </shipBlueprint>
 
-<!--  
-   ***********************
-   SLUG SHIP
-   ***********************
+<!-- 
+  ***********************
+  SLUG SHIP
+  ***********************
  -->
 
 <!-- SLUG SHIP -->
@@ -4727,17 +4727,17 @@
 	<unlock>One of the slug ships must know something about this advanced cruiser. Perhaps you can "convince" them to tell you.</unlock>
 	<desc>(Not fully implemented) Designed for use inside nebulae, this cruiser lacks sensors and relies instead on the guile and cunning of the Slugs.</desc>
 	<systemList>
-		<pilot power="1" room="8" start="true"/>  
-		<doors power="2" room="1" start="true" img="room_doors_6"/>  
+		<pilot power="1" room="8" start="true"/> 
+		<doors power="2" room="1" start="true" img="room_doors_6"/> 
 		<oxygen power="1" room="4" start="true" img="room_oxygen_6"/>
-		<engines power="2" room="6" start="true" img="room_engines_2"/>  
-		<shields power="2" room="13" start="true" img="room_shields_6"/>  
-		<weapons power="3" room="5" start="true" img="room_weapons_6"/>  
-		<medbay power="1" room="3" start="true"/>  
-		<sensors power="1" room="11" start="false" img="room_sensors_6"/>  
-		<drones power="2" room="14" start="false" img="room_drones_5"/>  
-		<teleporter power="1" room="10" start="false"/>  
-		<cloaking power="1" room="2" start="false" img="room_cloaking_6"/>  
+		<engines power="2" room="6" start="true" img="room_engines_2"/> 
+		<shields power="2" room="13" start="true" img="room_shields_6"/> 
+		<weapons power="3" room="5" start="true" img="room_weapons_6"/> 
+		<medbay power="1" room="3" start="true"/> 
+		<sensors power="1" room="11" start="false" img="room_sensors_6"/> 
+		<drones power="2" room="14" start="false" img="room_drones_5"/> 
+		<teleporter power="1" room="10" start="false"/> 
+		<cloaking power="1" room="2" start="false" img="room_cloaking_6"/> 
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -4761,27 +4761,27 @@
 	<unlock>One of the slug ships must know something about this advanced cruiser. Perhaps you can "convince" them to tell you.</unlock>
 	<desc>(Not fully implemented) Designed for use inside nebulae, this cruiser lacks sensors and relies instead on the guile and cunning of the Slugs.</desc>
 	<systemList>
-		<pilot power="1" room="11" start="true"/>  
-		<doors power="2" room="19" start="true" img="room_doors_2"/>  
-		<sensors power="1" room="0" start="false" img="room_sensors_2"/>    
-		<oxygen power="1" room="15" start="true" img="room_oxygen_8"/>  
+		<pilot power="1" room="11" start="true"/> 
+		<doors power="2" room="19" start="true" img="room_doors_2"/> 
+		<sensors power="1" room="0" start="false" img="room_sensors_2"/>  
+		<oxygen power="1" room="15" start="true" img="room_oxygen_8"/> 
 		<engines power="2" room="2" start="true"/>
-		<shields power="2" room="12" start="true" img="room_shields_7">  
+		<shields power="2" room="12" start="true" img="room_shields_7"> 
 			<slot>
 				<direction>up</direction>
 				<number>1</number> 
 			</slot>
 		</shields>
-		<weapons power="2" room="13" start="true" img="room_weapons_4">  
+		<weapons power="2" room="13" start="true" img="room_weapons_4"> 
 			<slot>
 				<direction>up</direction>
 				<number>0</number> 
 			</slot>
 		</weapons>
-		<medbay power="1" room="7" start="false"/>  
+		<medbay power="1" room="7" start="false"/> 
 		<drones power="2" room="18" start="false" img="room_drones_10"/>
-		<teleporter power="1" room="3" start="true"/>  
-		<cloaking power="1" room="5" start="false"/>  
+		<teleporter power="1" room="3" start="true"/> 
+		<cloaking power="1" room="5" start="false"/> 
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -4798,41 +4798,41 @@
 	<cloakImage>jelly_cruiser</cloakImage>
 </shipBlueprint>
 
-<!--  
-   ***********************
-   ENERGY SHIP
-   ***********************
+<!-- 
+  ***********************
+  ENERGY SHIP
+  ***********************
  -->
  
  
 <!-- ENERGY SHIP -->
 <!-- LAYOUT = DEFAULT --> 
-<!-- SHIP ID = 7 -->  
+<!-- SHIP ID = 7 --> 
 <shipBlueprint name="PLAYER_SHIP_ENERGY" layout="energy_cruiser" img="energy_cruiser">
 	<class>Sophon Kilo</class>
 	<name>Verne</name>
 	<unlock>Learn from the Sophon, sometimes diplomacy works.</unlock>
 	<desc>Although designed as a multi-purpose scientific vessel, advanced Sophon shielding and weapons technology make the Kilo a force to be reckoned with.</desc>
 	<systemList>
-		<pilot power="1" room="5" start="true"/>  
-		<doors power="1" room="2" start="true" img="room_doors_6"/>     
-		<sensors power="2" room="0" start="true"/>  
-		<oxygen power="1" room="9" start="true" img="room_oxygen_2"/>    
-		<engines power="1" room="6" start="true" img="room_engines_2"/>    
+		<pilot power="1" room="5" start="true"/> 
+		<doors power="1" room="2" start="true" img="room_doors_6"/>   
+		<sensors power="2" room="0" start="true"/> 
+		<oxygen power="1" room="9" start="true" img="room_oxygen_2"/>  
+		<engines power="1" room="6" start="true" img="room_engines_2"/>  
 		<shields power="2" room="12" start="true" img="room_shields_7">
 			<slot>
 				<direction>up</direction>
 				<number>1</number> 
 			</slot>
-		</shields>     
-		<weapons power="3" room="11" start="true" img="room_weapons_7"/>  
-		<drones power="2" room="8" start="false" img="room_drones_8"/>     
+		</shields>   
+		<weapons power="3" room="11" start="true" img="room_weapons_7"/> 
+		<drones power="2" room="8" start="false" img="room_drones_8"/>   
 		<medbay power="1" room="4" start="true" img="room_medbay_4"> 
 			<slot>
 				<number>0</number> 
 			</slot>
-		</medbay>    
-		<teleporter power="1" room="1" start="false"/>  
+		</medbay>  
+		<teleporter power="1" room="1" start="false"/> 
 		<cloaking power="1" room="3" start="false" img="room_cloaking_3"/> 
 	</systemList>
 	<weaponSlots>3</weaponSlots>
@@ -4849,7 +4849,7 @@
  
 <!-- ENERGY SHIP -->
 <!-- LAYOUT = Alternate --> 
-<!-- SHIP ID = 7 -->  
+<!-- SHIP ID = 7 --> 
 <!-- testship -->
 <shipBlueprint name="PLAYER_SHIP_ENERGY_2" layout="energy_cruiser_2" img="energy_cruiser_2">
 
@@ -4858,16 +4858,16 @@
 	<unlock>Learn from the Sophon, sometimes diplomacy works.</unlock>
 	<desc>(Not fully implemented) One of the few dedicated warships produced by the Sophon, the tiny Deca is as deadly as it is precise.</desc>
 	<systemList>
-		<pilot power="1" room="14" start="true"/>  
-		<doors power="1" room="8" start="true" img="room_doors_6"/>     
-		<sensors power="1" room="13" start="true" img="room_sensors_4"/>  
-		<oxygen power="1" room="12" start="true" img="room_oxygen_7"/>    
-		<engines power="3" room="3" start="true" img="room_engines_5">  
+		<pilot power="1" room="14" start="true"/> 
+		<doors power="1" room="8" start="true" img="room_doors_6"/>   
+		<sensors power="1" room="13" start="true" img="room_sensors_4"/> 
+		<oxygen power="1" room="12" start="true" img="room_oxygen_7"/>  
+		<engines power="3" room="3" start="true" img="room_engines_5"> 
 			<slot>
 				<direction>up</direction>
 				<number>0</number> 
 			</slot>
-		</engines>     
+		</engines>   
 		<shields power="1" room="5" start="true" img="room_shields_8"/>
 		<weapons power="2" room="7" start="true" img="room_weapons_4">
 			<slot>
@@ -4875,13 +4875,13 @@
 				<number>0</number>
 			</slot>
 		</weapons>
-		<drones power="2" room="2" start="false"/>     
+		<drones power="2" room="2" start="false"/>   
 		<medbay power="1" room="0" start="true" img="room_medbay_4"> 
 			<slot>
 				<number>0</number> 
 			</slot>
-		</medbay>    
-		<teleporter power="1" room="4" start="false"/>  
+		</medbay>  
+		<teleporter power="1" room="4" start="false"/> 
 		<cloaking power="1" room="6" start="false"/> 
 	</systemList>
 	<weaponSlots>2</weaponSlots>
@@ -4901,36 +4901,36 @@
 	<cloakImage>energy_cruiser</cloakImage>
 </shipBlueprint>
 
-<!--  
-   ***********************
-   CRYSTAL SHIP
-   ***********************
+<!-- 
+  ***********************
+  CRYSTAL SHIP
+  ***********************
  -->
 
 <!-- CRYSTAL SHIP -->
 <!-- LAYOUT = DEFAULT --> 
-<!-- SHIP ID = 8 -->  
+<!-- SHIP ID = 8 --> 
 <shipBlueprint name="PLAYER_SHIP_CRYSTAL" layout="crystal_cruiser" img="crystal_cruiser">
 	<class>Crystal Cruiser</class>
 	<name>Bravais</name>
 	<unlock>Travel to an unknown sector of the galaxy to find this powerful vessel.</unlock>
 	<desc>Oh MAN are you gonna flip shit when you find what I have planned for Crystal.</desc>
 	<systemList>
-		<pilot power="1" room="8" start="true"/>  
-		<doors power="1" room="16" start="true" img="room_doors_8"/>  
-		<sensors power="1" room="3" start="true" img="room_sensors_2"/>  
-		<oxygen power="1" room="7" start="true" img="room_oxygen_10"/>  
-		<engines power="2" room="0" start="true" img="room_engines_2"/>  
-		<shields power="2" room="6" start="true" img="room_shields_2"/>  
-		<weapons power="3" room="17" start="true" img="room_weapons_7"/>  
-		<drones power="2" room="1" start="false" img="room_drones_7"/>  
+		<pilot power="1" room="8" start="true"/> 
+		<doors power="1" room="16" start="true" img="room_doors_8"/> 
+		<sensors power="1" room="3" start="true" img="room_sensors_2"/> 
+		<oxygen power="1" room="7" start="true" img="room_oxygen_10"/> 
+		<engines power="2" room="0" start="true" img="room_engines_2"/> 
+		<shields power="2" room="6" start="true" img="room_shields_2"/> 
+		<weapons power="3" room="17" start="true" img="room_weapons_7"/> 
+		<drones power="2" room="1" start="false" img="room_drones_7"/> 
 		<medbay power="1" room="13" start="true" img="room_medbay_3">
 			<slot>
 				<number>3</number>
 			</slot>
 		</medbay>
-		<teleporter power="1" room="15" start="false"/>  
-		<cloaking power="1" room="9" start="false" img="room_cloaking_2"/>  
+		<teleporter power="1" room="15" start="false"/> 
+		<cloaking power="1" room="9" start="false" img="room_cloaking_2"/> 
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -4955,26 +4955,26 @@
 	<unlock>Travel to an unknown sector of the galaxy to find this powerful vessel.</unlock>
 	<desc>Oh MAN are you gonna flip shit when you find what I have planned for Crystal.</desc>
 	<systemList>
-		<pilot power="1" room="15" start="true"/>  
-		<doors power="1" room="14" start="true" img="room_doors_7"/>  
-		<sensors power="1" room="10" start="true" img="room_sensors_2"/>  
-		<oxygen power="1" room="8" start="true" img="room_oxygen_7"/>  
-		<engines power="2" room="2" start="true" img="room_engines_2"/>  
-		<shields power="2" room="1" start="true" img="room_shields_7">  
+		<pilot power="1" room="15" start="true"/> 
+		<doors power="1" room="14" start="true" img="room_doors_7"/> 
+		<sensors power="1" room="10" start="true" img="room_sensors_2"/> 
+		<oxygen power="1" room="8" start="true" img="room_oxygen_7"/> 
+		<engines power="2" room="2" start="true" img="room_engines_2"/> 
+		<shields power="2" room="1" start="true" img="room_shields_7"> 
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</shields>
-		<weapons power="1" room="4" start="true" img="room_weapons_7"/>  
-		<drones power="2" room="13" start="false" img="room_drones_5"/>  
+		<weapons power="1" room="4" start="true" img="room_weapons_7"/> 
+		<drones power="2" room="13" start="false" img="room_drones_5"/> 
 		<medbay power="1" room="9" start="true" img="room_medbay_4">
 			<slot>
 				<number>0</number>
 			</slot>
 		</medbay>
-		<teleporter power="1" room="3" start="true"/>  
-		<cloaking power="1" room="7" start="true"/>  
+		<teleporter power="1" room="3" start="true"/> 
+		<cloaking power="1" room="7" start="true"/> 
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -5008,37 +5008,37 @@ TUTORIAL SHIPS
 	</weaponList>
 	<health amount="5"/>	
 	<maxPower amount ="11"/>
-	<crewCount amount = "1"  class="human"/>
+	<crewCount amount = "1" class="human"/>
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_TUTORIAL" layout="kestral_a" img="kestral">
-  <class>Training Ship</class>
-  <name>Port Arthur</name>
-  <desc>This frigate was built to UE spec decades ago, before being picked up by civilians in the military surplus market. Old frigates are easy to handle and are commonly used for guard duty, law enforcement, or (in this case) instruction.</desc>
-  <systemList>
-    <pilot power="1" room="5" start="true" img="room_pilot" />
-    <doors power="1" room="9" start="true" img="room_doors" />
-    <sensors power="1" room="7" start="true" img="room_sensors" />
-    <medbay power="1" room="0" start="true" img="room_medbay" />
-    <oxygen power="1" room="3" start="true" img="room_oxygen" />
-    <shields power="2" room="4" start="true" img="room_pilot" />
-    <engines power="2" room="6" start="true" img="room_engines" />
-    <weapons power="4" room="1" start="true" img="room_weapons" />
-    <drones power="2" room="8" start="false" img="room_drones" />
-    <teleporter power="1" room="10" start="false" img="room_teleporter" />
-    <cloaking power="1" room="2" start="false" img="room_cloaking" />
-  </systemList>
-  <weaponSlots>2</weaponSlots>
-  <droneSlots>2</droneSlots>
-  <weaponList count="3" missiles="20">
-    <weapon name="UE_GAUSS_2" />
-    <weapon name="BASIC_MISSILE_2" />
-  </weaponList>
-  <droneList count="0" drones="0" />
-  <health amount="25" />
-  <maxPower amount="9" />
-  <crewCount amount="2" class="human" />
-  <aug name="ADV_SCANNERS" />
+ <class>Training Ship</class>
+ <name>Port Arthur</name>
+ <desc>This frigate was built to UE spec decades ago, before being picked up by civilians in the military surplus market. Old frigates are easy to handle and are commonly used for guard duty, law enforcement, or (in this case) instruction.</desc>
+ <systemList>
+  <pilot power="1" room="5" start="true" img="room_pilot" />
+  <doors power="1" room="9" start="true" img="room_doors" />
+  <sensors power="1" room="7" start="true" img="room_sensors" />
+  <medbay power="1" room="0" start="true" img="room_medbay" />
+  <oxygen power="1" room="3" start="true" img="room_oxygen" />
+  <shields power="2" room="4" start="true" img="room_pilot" />
+  <engines power="2" room="6" start="true" img="room_engines" />
+  <weapons power="4" room="1" start="true" img="room_weapons" />
+  <drones power="2" room="8" start="false" img="room_drones" />
+  <teleporter power="1" room="10" start="false" img="room_teleporter" />
+  <cloaking power="1" room="2" start="false" img="room_cloaking" />
+ </systemList>
+ <weaponSlots>2</weaponSlots>
+ <droneSlots>2</droneSlots>
+ <weaponList count="3" missiles="20">
+  <weapon name="UE_GAUSS_2" />
+  <weapon name="BASIC_MISSILE_2" />
+ </weaponList>
+ <droneList count="0" drones="0" />
+ <health amount="25" />
+ <maxPower amount="9" />
+ <crewCount amount="2" class="human" />
+ <aug name="ADV_SCANNERS" />
 </shipBlueprint>
 
 <shipBlueprint name="IMPOSSIBLE_PIRATE" layout="jelly_truffle" img="jelly_truffle_pirate">
@@ -5052,7 +5052,7 @@ TUTORIAL SHIPS
 		<engines power="8" room="2"/>
 		<weapons power="8" room="5"/>
 		<cloaking power="1" room="7"/>
-		<!--  <drones power="3" room="7"/>  -->
+		<!-- <drones power="3" room="7"/> -->
 	</systemList>
 	<weaponList count="3" missiles="30">
 		<weapon name="BASIC_LASER_2"/>
@@ -5167,10 +5167,10 @@ Boss files
 	<class>UES Mahan</class>
 	<systemList>
 		<pilot power="3" room="0"/> 
-		<shields power="8" room="1"/>  
-		<teleporter power="2" room="3"/>  
-		<!--<weapons power="1" room="6"/>  -->
-		<medbay power="3" room="5"/>  
+		<shields power="8" room="1"/> 
+		<teleporter power="2" room="3"/> 
+		<!--<weapons power="1" room="6"/> -->
+		<medbay power="3" room="5"/> 
 		<engines power="3" room="8"/> 
 		<oxygen power="2" room="7"/>
 		<sensors power="2" room="13"/>
@@ -5195,11 +5195,11 @@ Boss files
 <shipBlueprint name="BOSS_3" layout="boss_3" img="boss_3">
 	<class>UES Mahan</class>
 	<systemList>
-		<pilot power="3" room="0"/>  
-		<shields power="8" room="1"/>  
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/> 
 		<teleporter power="2" room="3"/> 
-		<!--<weapons power="4" room="6"/>  -->
-		<medbay power="3" room="5"/>   
+		<!--<weapons power="4" room="6"/> -->
+		<medbay power="3" room="5"/>  
 		<engines power="6" room="8"/>
 		<oxygen power="2" room="7"/>
 
