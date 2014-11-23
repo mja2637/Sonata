@@ -319,7 +319,7 @@
 </blueprintList>
 
 
-<!----------------------            SHIP LISTS            --------------------->
+<!-- SHIP LISTS -->
 
 <blueprintList name="SHIPS_FED">
 	<name>FED_SCOUT</name>
@@ -418,9 +418,7 @@
 </blueprintList>
 
 
-<!----------------------
-  REBELS
-  --------------------->
+<!-- REBELS -->
 
 <shipBlueprint name="REBEL_FAT" layout="rebel_squat" img="rebel_squat">
 	<class>UE Gunship</class>
@@ -543,9 +541,7 @@
 	<crewCount amount = "3"  max="4" class="human"/>
 </shipBlueprint>
 
-<!----------------------
-  AUTOMATED
-  --------------------->
+<!-- AUTOMATED -->
 
 <shipBlueprint name="AUTO_BASIC" layout="auto_basic" img="auto_basic">
 	<class>Kiowa USV</class>
@@ -579,9 +575,7 @@
 	<crewCount amount = "0" max="0" class="human"/>
 </shipBlueprint>
 
-<!----------------------
-  SLUG SHIPS
-  --------------------->
+<!-- SLUG SHIPS -->
 
 <shipBlueprint name="JELLY_BUTTON" layout="jelly_button" img="jelly_button">
 	<class>Slug Interceptor</class>
@@ -643,9 +637,7 @@
 </shipBlueprint>
 
 
-<!----------------------
- ROCK SHIPS!
-  --------------------->
+<!-- ROCK SHIPS! -->
 
 <shipBlueprint name="ROCK_SCOUT" layout="rock_scout" img="rock_scout">
 	<class>Sower Surveyor</class>
@@ -783,9 +775,7 @@
 	<aug name="ROCK_ARMOR"/>
 </shipBlueprint>
 
-<!----------------------
- MANTIS SHIPS!
-  --------------------->
+<!-- MANTIS SHIPS! -->
 
 <shipBlueprint name="MANTIS_SCOUT" layout="mantis_scout" img="mantis_scout">
 	<class>Peregrine</class>
@@ -847,9 +837,7 @@
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
 
-<!----------------------
- FED SHIPS!
-  --------------------->
+<!-- FED SHIPS! -->
 
 <shipBlueprint name="FED_SCOUT" layout="fed_scout" img="fed_scout">
 	<class>Civilian Runabout</class>
@@ -923,9 +911,7 @@
 	<crewCount amount = "2" max="4" class="human"/>
 </shipBlueprint>
 
-<!----------------------
- CIRCLE SHIPS!
-  --------------------->
+<!-- CIRCLE SHIPS! -->
 
 <shipBlueprint name="CIRCLE_SCOUT" layout="circle_scout" img="circle_scout">
 	<class>Engi Scout</class>
@@ -972,9 +958,7 @@
 </shipBlueprint>
 
 
-<!----------------------
- ZOLTAN  SHIPS!
-  --------------------->
+<!-- ZOLTAN  SHIPS! -->
 
 <shipBlueprint name="ZOLTAN_FIGHTER" layout="energy_fighter" img="energy_fighter">
 	<class>Sophon Investigator</class>
@@ -1032,9 +1016,7 @@
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
 
-<!----------------------
- CRYSTAL SHIPS!
-  --------------------->
+<!-- CRYSTAL SHIPS! -->
 
 <shipBlueprint name="CRYSTAL_SCOUT" layout="crystal_scout" img="crystal_scout">
 	<class>Crystal Scout</class>

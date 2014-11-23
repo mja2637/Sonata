@@ -1,15 +1,15 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--   
-			SUMMARY  - 
+<!--
+			SUMMARY  -
 A list of all main events to be called by lists
 	does not include sub-events)
-	
+
 Structure:
 	START_BEACON_REBEL
 	STORE_REBEL
 	NOTHING_REBEL
-	
+
 Hostile:
 	AUTO_BAIT
 	AUTO_ASTEROID
@@ -18,7 +18,7 @@ Hostile:
 	AUTO_HACKER
 	REBEL
 	SQUAT_WARNING
-	
+
 Neutral:
 	AUTO_CIVILIAN
 	SQUAT_REFUEL_STATION
@@ -28,12 +28,12 @@ Neutral:
 	AUTO_DEFENSE_RADAR
 	REBEL_TRANSPORT
 	BROKEN_REBEL_DRONE
-	
-	
+
+
 Environmnt:
 	NEBULA_REBEL_BOARDING
 
---->
+-->
 
 <eventList name="NOTHING_REBEL_SECTOR">
 	<event load="NOTHING_REBEL"/>
@@ -68,8 +68,8 @@ Environmnt:
 
 
 <eventList name="DISTRESS_BEACON_REBEL">
-	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
-	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>
+	<event load="REBEL_VS_FEDERATION"/>
 	<event load="ESCORT_BEACON"/>
 	<event load="FRIENDLY_BEACON"/>
 	<event load="TRAP_BEACON"/>
@@ -79,7 +79,7 @@ Environmnt:
 
 <eventList name="NEBULA_REBEL">
 	<event load="NEBULA_EMPTY"/>
-	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_REBEL"/>
 	<event load="NEBULA_AUTO"/>
 	<event load="NEBULA_AUTO_WARNING"/>
 	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
@@ -87,8 +87,8 @@ Environmnt:
 	<event load="STORM_REBEL"/>
 	<event load="STORM_AUTO"/>
 	<event load="STORM_ITEMS"/>
-	<event load="NEBULA_REBEL_UNDETECTED"/>  
-	<event load="NEBULA_LOST_SHIP"/>  
+	<event load="NEBULA_REBEL_UNDETECTED"/>
+	<event load="NEBULA_LOST_SHIP"/>
 	<event load="NEBULA_REBEL_BOARDING"/>
 </eventList>
 
@@ -97,10 +97,10 @@ Environmnt:
 	<event load="FEDERATION_PLANET_SIGNAL"/>
 </eventList>
 
-<!-----------
+<!--
 		STRUCTURE!!!
-	Requred structural 
------------->
+	Requred structural
+-->
 
 <event name="START_BEACON_REBEL">
 	<text load="START_BEACON_REBEL"/>
@@ -128,17 +128,17 @@ Environmnt:
 </event>
 <textList name="NOTHING_REBEL">
 	<text back="BG_BORING">You enter a system bustling with loyalist activity.  Supply freighters and re-supply stations are dwarfed by a few heavy warships. Luckily, no one seems to be paying attention to small cruisers.  No ships are scanning or messaging you.</text>
-	<text back="BG_BORING">You arrive near a small United Empire refueling depot. Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity.  The only message you receive is a denial to your request to dock at the depot.</text> 
+	<text back="BG_BORING">You arrive near a small United Empire refueling depot. Your ship is being scanned multiple times so they must recognize you, but there appears to be no combat-ready ships in the vicinity.  The only message you receive is a denial to your request to dock at the depot.</text>
 	<text back="BG_BORING">There is not much of interest nearby. A small sun in the distance with a few orbiting planets in nearby space provide little of interest.</text>
 	<text back="BG_BORING" planet="NONE">There are no other ships near this beacon, however you detect a small communication relay. You tap into it without a problem; there are no encryptions. Most of the chatter revolves around troop and fleet movements, not particularly interesting.</text>
 	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">There is a small planet nearby with scattered settlements. A small loyalist fleet is in orbit with many ships ferrying back and forth. It must be a more recently 'recovered' planet.</text>
 </textList>
 
 
-<!-----------
+<!--
 		HOSTILE!!!
 	Events that call up a fight for sure
------------->
+-->
 
 
 <event name="AUTO_BAIT" unique="true">
@@ -198,10 +198,10 @@ Environmnt:
 </event>
 
 
-<!-----------
+<!--
 		NEUTRAL!!!
 	Events that could have a fight
------------->
+-->
 
 
 
@@ -222,40 +222,40 @@ Environmnt:
 	</choice>
 </event>
 
-<event name="SQUAT_REFUEL_STATION" unique="true">  
+<event name="SQUAT_REFUEL_STATION" unique="true">
 	<img back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL"/>
 	<text>You detect a United Empire scout on an attack approach to a small refueling outpost. Their weapons are charged, but they're not firing yet.</text>
 	<ship load="SQUAT_REFUEL_STATION" hostile="false"/>
 	<choice>
 		<text>Intervene to defend the outpost.</text>
 		<event>
-			<text>The loyalists respond to your threat, "I don't know who you are, but no one defies the United Empire!"  They move in to engage.</text> 
+			<text>The loyalists respond to your threat, "I don't know who you are, but no one defies the United Empire!"  They move in to engage.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice>
 		<text>Avoid the conflict.</text>
 		<event>
-			<text>The UE ship fires some warning shots but eventually powers down their weapons. The outpost seems to have given them what they demanded.</text> 
+			<text>The UE ship fires some warning shots but eventually powers down their weapons. The outpost seems to have given them what they demanded.</text>
 		</event>
 	</choice>
 </event>
 
-<event name="AUTO_REFUEL_STATION" unique="true">  
+<event name="AUTO_REFUEL_STATION" unique="true">
 	<img back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL"/>
 	<text>You detect a loyalist unmanned space vehicle attacking a small re-fueling outpost.</text>
 	<ship load="REBEL_AUTO_REFUEL" hostile="false"/>
 	<choice>
 		<text>Intervene to defend the outpost.</text>
 		<event>
-			<text>Detecting the higher threat, the USV moves in to engage your ship.</text> 
+			<text>Detecting the higher threat, the USV moves in to engage your ship.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice>
 		<text>Avoid the conflict.</text>
 		<event>
-			<text>You steer clear of the conflict. The outpost receives a beating but the ship stops its attack before it's destroyed.</text> 
+			<text>You steer clear of the conflict. The outpost receives a beating but the ship stops its attack before it's destroyed.</text>
 		</event>
 	</choice>
 </event>
@@ -457,7 +457,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>This ship's cargo was not salvageable. However, they seem to have been surveying the region; they possess detailed maps and data. You download what you can to the ship's map.</text>
-		<reveal_map/>		
+		<reveal_map/>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
@@ -551,13 +551,13 @@ Environmnt:
 		</choice>
 	</event>
 </eventList>
-		
 
 
-<!-----------
+
+<!--
 		ENVIRONMENT!!!
 	Events with unique environments
------------->
+-->
 
 
 <event name="NEBULA_REBEL_BOARDING">
@@ -572,13 +572,13 @@ Environmnt:
 	<choice hidden="true" req="teleporter">
 		<text>(Teleporter) Beam them the fuck back OFF your ship!</text>
 		<event/>
-	</choice>	
+	</choice>
 </event>
 
-<!-----------
+<!--
 		BOARDERS!!!
 	Events with boarder calls
------------->
+-->
 <event name="BOARDERS_REBEL_SHIP">
 	<text load="BOARDERS_REBEL_SHIP"/>
 	<choice>
@@ -586,11 +586,11 @@ Environmnt:
 		<event>
 			<boarders min="2" max="3" class="human"/>
 		</event>
-	</choice>	
+	</choice>
 	<choice hidden="true" req="teleporter">
 		<text>(Teleporter) Beam the boarders into space.</text>
 		<event/>
-	</choice>	
+	</choice>
 	<ship load="REBEL" hostile="true"/>
 </event>
 <textList name="BOARDERS_REBEL_SHIP" unique="false">

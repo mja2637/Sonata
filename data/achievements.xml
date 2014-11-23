@@ -1,7 +1,7 @@
 
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!------- IMPLEMENTED ----------->
+<!-- IMPLEMENTED -->
 <achievement id="ACH_SECTOR_5">
 	<name>Just Getting Started</name>
 	<desc>Get to sector 5.</desc>

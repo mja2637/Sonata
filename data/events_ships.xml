@@ -1,12 +1,12 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--  
-			SUMMARY - 
+<!--
+			SUMMARY -
 A list of all main events to be called by lists
 	does not include sub-events)
-	
-	Matt: It seems like other events call ship encounters from this file.	
-	
+
+	Matt: It seems like other events call ship encounters from this file.
+
 Pirates
 	PIRATE
 		PIRATE_CIVILIAN
@@ -56,13 +56,13 @@ Civilian:
 
 Special:
 	GHOST_SHIP
---->
+-->
 
-<!--------------------------------
+<!--
 
 	TEST SHIP
-	
----------------------------------->
+
+-->
 <ship name="TEST_SHIP_LOAD" auto_blueprint="REBEL_SKINNY_ELITE">
 	<destroyed>
 		<text>-</text>
@@ -130,11 +130,11 @@ Special:
 </ship>
 
 
-<!--------------------------------
+<!--
 
 	PIRATE SHIPS
-	
----------------------------------->
+
+-->
 
 <ship name="PIRATE" auto_blueprint="SHIPS_PIRATE">
 	<surrender chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
@@ -166,7 +166,7 @@ Special:
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>  
+			<event load="SAVE_CIVILIAN_LIST"/>
 		</choice>
 	</destroyed>
 	<deadCrew>
@@ -174,7 +174,7 @@ Special:
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>  
+			<event load="SAVE_CIVILIAN_LIST"/>
 		</choice>
 	</deadCrew>
 </ship>
@@ -402,11 +402,11 @@ Special:
 
 
 
-<!--------------------------------
+<!--
 
 	REBEL SHIPS
-	
----------------------------------->
+
+-->
 
 <ship name="REBEL" auto_blueprint="SHIPS_REBEL">
 	<surrender chance="0.5" min="2" max="3" load="PIRATE_SURRENDER"/>
@@ -421,7 +421,7 @@ Special:
 </ship>
 
 
-<ship name="REBEL_AUTO_FUEL" auto_blueprint="SHIPS_AUTO"> 
+<ship name="REBEL_AUTO_FUEL" auto_blueprint="SHIPS_AUTO">
 	<escape timer="80" min="30" max="30"/>
 	<gotaway>
 		<text>The ship jumps away without a word. You hope they didn't leave to get reinforcements.</text>
@@ -432,7 +432,7 @@ Special:
 	</destroyed>
 </ship>
 
-<ship name="REBEL_FUEL" auto_blueprint="SHIPS_REBEL"> 
+<ship name="REBEL_FUEL" auto_blueprint="SHIPS_REBEL">
 	<escape timer="80" min="30" max="30"/>
 	<gotaway>
 		<text>The ship jumps away without a word. You hope they didn't leave to get reinforcements.</text>
@@ -488,15 +488,15 @@ Special:
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
 			<text>Contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>  
+			<event load="SAVE_CIVILIAN_LIST"/>
 		</choice>
 	</destroyed>
 	<deadCrew>
 		<text>No more life signs detected on the pirate ship. You hasten to contact the civilian ship.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
-			<text>Contact the civilian ship.</text>	
-			<event load="SAVE_CIVILIAN_LIST"/>  
+			<text>Contact the civilian ship.</text>
+			<event load="SAVE_CIVILIAN_LIST"/>
 		</choice>
 	</deadCrew>
 </ship>
@@ -579,7 +579,7 @@ Special:
 		<modifyPursuit amount="1"/>
 	</destroyed>
 </ship>
-		
+
 <ship name="SQUAT_REFUEL_STATION" auto_blueprint="SHIPS_REBEL">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
@@ -802,11 +802,11 @@ Special:
 </ship>
 
 
-<!--------------------------------
+<!--
 
 	ENGI SHIPS
-	
----------------------------------->
+
+-->
 
 <ship name="ENGI_SHIP" auto_blueprint="SHIPS_CIRCLE">
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -829,7 +829,7 @@ Special:
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Attempt to contact the Automatons.</text>
-			<event load="SAVE_ENGI_STATION"/>  
+			<event load="SAVE_ENGI_STATION"/>
 		</choice>
 	</destroyed>
 	<deadCrew>
@@ -837,7 +837,7 @@ Special:
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Attempt to contact the Automatons.</text>
-			<event load="SAVE_ENGI_STATION"/>  
+			<event load="SAVE_ENGI_STATION"/>
 		</choice>
 	</deadCrew>
 </ship>
@@ -857,17 +857,17 @@ Special:
 	</deadCrew>
 </ship>
 
-<!--------------------------------
+<!--
 
 	ROCK SHIPS
-	
----------------------------------->
+
+-->
 
 <ship name="ROCK_SHIP" auto_blueprint="SHIPS_ROCK">  <!-- JUSTIN - MAKE A SURRENDER!!-->
 	<surrender chance="0.7" min="3" max="4" load="ROCK_SHIP_SURRENDER"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
-</ship> 
+</ship>
 
 <ship name="ROCK_PIRATE" auto_blueprint="SHIPS_ROCK_PIRATE">
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -902,11 +902,11 @@ Special:
 
 
 
-<!--------------------------------
+<!--
 
 	MANTIS SHIPS
-	
----------------------------------->
+
+-->
 
 
 <ship name="MANTIS_FIGHT" auto_blueprint="SHIPS_MANTIS">
@@ -926,7 +926,7 @@ Special:
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Attempt to contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>  
+			<event load="SAVE_CIVILIAN_LIST"/>
 		</choice>
 	</destroyed>
 	<deadCrew>
@@ -934,7 +934,7 @@ Special:
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Attempt to contact the civilian ship.</text>
-			<event load="SAVE_CIVILIAN_LIST"/>  
+			<event load="SAVE_CIVILIAN_LIST"/>
 		</choice>
 	</deadCrew>
 	<crew>
@@ -1018,11 +1018,11 @@ Special:
 </ship>
 
 
-<!--------------------------------
+<!--
 
 	SLUG SHIPS
-	
----------------------------------->
+
+-->
 
 <ship name="JELLY" auto_blueprint="SHIPS_JELLY">
 	<surrender chance="0.5" min="3" max="4" load="SLUG_SURRENDER"/>
@@ -1224,11 +1224,11 @@ Special:
 
 
 
-<!--------------------------------
+<!--
 
 	ZOLTAN SHIPS
-	
----------------------------------->
+
+-->
 
 <ship name="ZOLTAN_SHIP" auto_blueprint="SHIPS_ZOLTAN">  <!-- JUSTIN - MAKE A SURRENDER!!-->
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -1317,7 +1317,7 @@ Special:
 </ship>
 
 
-<ship name="ZOLTAN_PRIMITIVES_ZOLTAN" auto_blueprint="SHIPS_ZOLTAN">  
+<ship name="ZOLTAN_PRIMITIVES_ZOLTAN" auto_blueprint="SHIPS_ZOLTAN">
 	<destroyed>
 		<text>The loyalist contacts you. "Lovely, you've done our job for us! We'll let you live as thanks. However, I can't promise the fleet will show you the same courtesy." They jump off. You collect what you can from the remains of the Sophon ship.</text>
 		<modifyPursuit amount="1"/>
@@ -1447,11 +1447,11 @@ Special:
 
 
 
-<!--------------------------------
+<!--
 
 	ZOLTAN SECTOR SHIPS SHIPS
-	
----------------------------------->
+
+-->
 
 
 
@@ -1484,11 +1484,11 @@ Special:
 
 
 
-<!--------------------------------
+<!--
 
 	FEDERATION SHIPS SHIPS
-	
----------------------------------->
+
+-->
 
 <ship name="FED_SHIP" auto_blueprint="SHIPS_FED">
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -1496,11 +1496,11 @@ Special:
 </ship>
 
 
-<!--------------------------------
+<!--
 
 	CIVILIAN SHIPS
-	
----------------------------------->
+
+-->
 
 <ship name="CIVILIAN_SHIP" auto_blueprint="SHIPS_CIVILIAN">
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -1530,15 +1530,15 @@ Special:
 
 
 
-<!--------------------------------
+<!--
 
 	CRYSTAL SHIPS
-	
-	and ships used in the crystal sector
-	
----------------------------------->
 
-<ship name="CRYSTAL_SHIP" auto_blueprint="SHIPS_CRYSTAL">  
+	and ships used in the crystal sector
+
+-->
+
+<ship name="CRYSTAL_SHIP" auto_blueprint="SHIPS_CRYSTAL">
 	<surrender chance="0.6" min="3" max="4">
 		<text load="CRYSTAL_SHIP_SURRENDER"/>
 		<choice hidden="true">
@@ -1554,12 +1554,12 @@ Special:
 	</surrender>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
-</ship> 
+</ship>
 
-<ship name="CRYSTAL_SHIP_NO_SURRENDER" auto_blueprint="SHIPS_CRYSTAL">  
+<ship name="CRYSTAL_SHIP_NO_SURRENDER" auto_blueprint="SHIPS_CRYSTAL">
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
-</ship> 
+</ship>
 
 <ship name="CRYSTAL_FED" auto_blueprint="SHIPS_CRYSTAL">
 	<destroyed>
@@ -1705,11 +1705,11 @@ Special:
 
 
 
-<!--------------------------------
+<!--
 
 	SPECIAL SHIPS
-	
----------------------------------->
+
+-->
 
 
 

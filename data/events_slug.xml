@@ -1,19 +1,19 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--   
-			SUMMARY  - 
+<!--
+			SUMMARY  -
 A list of all main events to be called by lists
 	does not include sub-events)
-	
+
 Structure:
 	START_BEACON_SLUG
 	NOTHING_SLUG
 	NEBULA_NOTHING_SLUG
 	NEBULA_STORE_SLUG
-	
-Item:	
-	
-	
+
+Item:
+
+
 Hostile WITHOUT nebula:
 	SLUG_FIGHT
 	SLUG_MANTIS
@@ -29,7 +29,7 @@ Hostile WITH nebula:
 	NEBULA_SLUG_OXYGEN
 	NEBULA_SLUG_MEDBAY
 
-	
+
 Neutral WITHOUT nebula:
 
 
@@ -38,17 +38,17 @@ Neutral WITH nebula:
 	NEBULA_SLUG_HULLFIX
 	NEBULA_SLUG_FAKE_STORE
 
-	
+
 Storm:
 	STORM_SLUG_FIGHT
-	
-	
+
+
 Distress:
 	SLUG_DISTRESS_ROCK
 	SLUG_DISTRESS_QUESTION
 	SLUG_DISTRESS_MANTIS
-	
---->
+
+-->
 
 
 <eventList name="HOSTILE_SLUG">
@@ -57,7 +57,7 @@ Distress:
 	<event load="SLUG_PIRATE"/>
 	<event load="SLUG_REBEL"/>
 	<event load="DONOR_BLACK_RAVEN"/>
-	
+
 </eventList>
 
 
@@ -119,7 +119,7 @@ Distress:
 
 <eventList name="QUESTS_SLUG">
 	<event load="QUEST_SLUG_PIRATE_TRAP"/>
-	
+
 	<!-- JUSTIN TO DO - For now i'm putting quests into neutral-->
 
 </eventList>
@@ -127,11 +127,11 @@ Distress:
 
 
 
-	
-<!-----------
+
+<!--
 		STRUCTURE!!!
-	Requred structural 
------------->
+	Requred structural
+-->
 <!-- start beacon goes here -->
 
 
@@ -177,15 +177,15 @@ Distress:
 
 
 
-<!-----------
+<!--
 		ITEM!!!
 	Events that can give something usually no fight
------------->
-	
-<!-----------
+-->
+
+<!--
 		HOSTILE!!! - NO nebula
 	Events that call up a fight for sure
------------->
+-->
 
 <event name="SLUG_FIGHT" unique="true">
 	<text>It's rare for the Slugs to stay exposed in open space for long periods - the ship here may be lost, or just passing through, but either way he moves in to attack!</text>
@@ -195,7 +195,7 @@ Distress:
 <event name="SLUG_MANTIS" unique="true">
 	<text>You intercept comm chatter from an incoming Mantis ship. "Look. This ship appears not to be owned by the squishy ones. Maybe they won't smell so bad when we cut them open." They move in on your position.</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
-</event> 
+</event>
 
 <event nme="SLUG_PIRATE" unique="false">
 	<text load="SLUG_PIRATE"/>
@@ -220,10 +220,10 @@ Distress:
 
 
 
-<!-----------
+<!--
 		NEUTRAL!!!   (WITH STORM)
 	Events that could have a fight
------------->
+-->
 
 
 <event name="NEBULA_SLUG_CHOOSE_DEATH" unique="true">
@@ -263,7 +263,7 @@ Distress:
 		</event>
 	</choice>
 </event>
-			
+
 <event name="NEBULA_SLUG_HULLFIX" unique="true">
 	<text>You arrive to find a small Slug repair station. "Greetingsss traveller! Care for a fix up? We could eassily patch up ssome of that damage."</text>
 	<environment type="nebula"/>
@@ -354,7 +354,7 @@ Distress:
 			<text>Accept.</text>
 			<event>
 				<text>You perform the transaction and watch carefully as their machines patch the hull. However, everything seems fine. Once they're complete you get ready to jump.</text>
-				<damage amount="-10"/>				
+				<damage amount="-10"/>
 				<item_modify>
 					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
@@ -457,10 +457,10 @@ Distress:
 
 
 
-<!-----------
+<!--
 		NEBULA!!!  HOSTILE
 	Events with unique environments
------------->
+-->
 
 
 
@@ -476,7 +476,7 @@ Distress:
 	<text>A Slug passenger ship hails: "Please, your worthy alien highnessesss, we are unarmed and sseeking asssylum." You approach cautiously, and weapons immediately spring from their hull!</text>
 	<text>A Slug ship - a rogue, you suspect - approaches, but when he sees you're a Pilgrim he thinks better of the sneak attack and fires everything he has.</text>
 	<text>Direct attacks are not preferred by the Slugs, but of the three you see at this beacon, one has the brass to make a move on your position!</text>
-	
+
 	<text>Your sensors are no match for the Slug's telepathic abilities - a ship you never even saw opens fire from astern!</text>
 	<text>The Slug vessel you encounter here has obviously made a big score and is looking to test its new armaments. They picked the wrong ship to attack.</text>
 	<text>A Slug passenger ship hails: "Please, your worthy alien highnessesss, we are unarmed and sseeking asssylum." You approach cautiously, and weapons immediately spring from their hull!</text>
@@ -533,7 +533,7 @@ Distress:
 	</choice>
 </event>
 
-<event name="NEBULA_SLUG_MEDBAY" unique="true"> 
+<event name="NEBULA_SLUG_MEDBAY" unique="true">
 	<text>A Slug ship hails you: "We've detected some worrying radiation coming from your medical unit, perhaps you should take a look?" As he signs off, your medical bay shuts off and their crew teleports aboard from a nearby station. They don't look like engineers.</text>
 	<status type="limit" target="player" system="medbay" amount="0"/>
 	<ship load="JELLY_STATUS_MEDBAY" hostile="true"/>
@@ -554,15 +554,15 @@ Distress:
 
 
 
-<!-----------
+<!--
 		NEBULA!!!  NEUTRAL
 	Events with unique environments
------------->
+-->
 
-<!-----------
+<!--
 		STORM!!!
 	Events with storm
------------->
+-->
 
 <event name="STORM_SLUG_FIGHT">
 	<text load="STORM_SLUG_FIGHT"/>
@@ -573,20 +573,20 @@ Distress:
 	<text>The ion storm here threatens to deactivate your core systems; a fact made all the worse for the largely unaffected Slug ships circling like space-vultures.</text>
 	<text>The Slug ship that descends into view as you enter the ion storm must have sensed your distress - defensive action!</text>
 	<text>You arrive in the middle of an ion storm. Slugs generally avoid these storms but you find one waiting in ambush. Prepare for a fight!</text>
-	<text>You find yourself stuck in the middle of an ion storm with a Slug ship just a short distance away, refusing all hails. You cautiously try to slip further into the clouds but they turn suddenly to attack!</text>	
+	<text>You find yourself stuck in the middle of an ion storm with a Slug ship just a short distance away, refusing all hails. You cautiously try to slip further into the clouds but they turn suddenly to attack!</text>
 </textList>
 
 
-<!-----------
+<!--
 		BOARDERS!!!
 	Events with boarder calls
------------->
+-->
 
 
-<!-----------
+<!--
 		DISTRESS!!!
 	Events that should be a distress signal
------------->
+-->
 
 <event name="SLUG_DISTRESS_ROCK" unique="true">
 	<text>You arrive to find a Slug ship in the middle of boarding a disabled Sower vessel.</text>
@@ -629,7 +629,7 @@ Distress:
 	<event>
 		<text>After the battle the Sower ship pings you. That's pretty open of them, considering the Sower's reputation.</text>
 	</event>
-	<event>	
+	<event>
 		<text>It appears the Sower ship was long since abandoned. You strip what you can from it.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
@@ -705,9 +705,9 @@ Distress:
 		<item type="drones" min="-2" max="-1"/>
 	</item_modify>
 </event>
-<event name="SLUG_DISTRESS_QUESTION_TRUE">   
+<event name="SLUG_DISTRESS_QUESTION_TRUE">
 	<text>"That isss... correct. You sssurprise me. Human, is it? Yesss... we can be partners." The Slug beams aboard and joins your crew!</text>
-	<crewMember amount="1" class="slug"/>  
+	<crewMember amount="1" class="slug"/>
 </event>
 
 <event name="SLUG_DISTRESS_MANTIS" unique="true">
@@ -736,21 +736,21 @@ Distress:
 		<text>It doesn't look like they can stand much more damage. After a few shots their ship breaks apart and you move in to loot the remains.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</event>
-	<event>	
+	<event>
 		<text>The Slug captain hails you: "A misstake! A sssimple misstake. Of course we can pay you! Ssseee? An augmentation has already transported." You allow them to leave with their lives.</text>
 		<autoReward level="LOW">augment</autoReward>
 	</event>
 </eventList>
 
-<!-----------
+<!--
 		SLUG QUESTS
 	QUESTS!
------------->
+-->
 
-<!-----------
+<!--
 		SPECIAL
 	Unique special events
------------->
+-->
 <event name="NEBULA_SLUG_FIGHT_UNLOCK" unique="true"> <!-- this is the special fight that looks like the normal ones but actually gives you the unlock-->
 	<text load="NEBULA_SLUG_FIGHT"/>
 	<ship load="JELLY_UNLOCK1" hostile="true"/>
@@ -855,9 +855,9 @@ Distress:
 		</event>
 	</choice>
 </event>
-	
-	
-	
+
+
+
 <event name="SLUG_SURRENDER">
 	<text>"You have besssted us! Will you accept what is in our storeesss in exchange for our livess?"</text>
 	<choice hidden="true">
@@ -869,7 +869,7 @@ Distress:
 		<event/>
 	</choice>
 </event>
-	
+
 <eventList name="SLUG_SURRENDER_LIST">
 	<event>
 		<text>"Here! We have lotsss of fuel! Take it all"</text>
@@ -885,7 +885,7 @@ Distress:
 		<text>"Take it and leave ussss be."</text>
 		<autoReward level="MED">stuff</autoReward>
 		<ship hostile="false"/>
-	</event>		
+	</event>
 </eventList>
 
 
@@ -970,7 +970,7 @@ Distress:
 		<text>Your Sower's analytical processors are able to identify a heavy anaesthetic contained in the flask. His ruse discovered, the Slug immediately returns to his ship and opens fire.</text>
 		<ship hostile="true"/>
 	</event>
-</eventList> 
+</eventList>
 
 
 <!-- quest-->
@@ -991,7 +991,7 @@ Distress:
 		</event>
 	</choice>
 </event>
-<event name="QUEST_SLUG_PIRATE_TRAP2"> 
+<event name="QUEST_SLUG_PIRATE_TRAP2">
 	<environment type="nebula"/>
 	<text>You catch up with the two Slug ships and they're already carrying out their raid! One is in close combat with the pirate, the other seems to be heading for a small space cache the pirate was protecting. </text>
 	<choice hidden="true">
@@ -1029,7 +1029,7 @@ Distress:
 			<item_modify>
 				<item type="scrap" min="-55" max="-55"/>
 			</item_modify>
-			<crewMember amount="1" class="slug">Slocknog</crewMember> 
+			<crewMember amount="1" class="slug">Slocknog</crewMember>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1045,7 +1045,7 @@ Distress:
 			<text>Rescue him.</text>
 			<event>
 				<text>When he sees the shuttle headed for his position the Slug thanks you with what looks like sincerity. He readily joins your crew.</text>
-				<crewMember amount="1" class="slug">Slocknog</crewMember> 
+				<crewMember amount="1" class="slug">Slocknog</crewMember>
 			</event>
 		</choice>
 		<choice>
@@ -1056,7 +1056,7 @@ Distress:
 		</choice>
 	</event>
 </eventList>
-	
+
 <event name="SLUG_DISTRESS_TRICK" unique="true">
 	<text>You find a Slug vessel broadcasting the distress signal and contact them. "Ah, yesss, we are having problems with our oxygen generation unit. Perhaps your crew can assist in repairsss?"</text>
 	<environment type="nebula"/>
@@ -1095,7 +1095,7 @@ Distress:
 		<autoReward level="HIGH">med</autoReward>
 	</event>
 </eventList>
-	
+
 <event name="SLUG_DISTRESS_PILOTING" unique="true"> <!-- changed to engines-->
 	<text>The distress signal originates from a tampered jump beacon. A Slug vessel jumps in and announces he has hacked your engines system. "Of course if you, as one of the few remaining ships in the resistance, swear allegiance to the Slug Empire you will be free to go."</text>
 	<environment type="nebula"/>

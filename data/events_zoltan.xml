@@ -1,32 +1,32 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!-- 
-			SUMMARY - 
-A list of all main events to be called by lists
+<!--
+SUMMARY
+	A list of all main events to be called by lists
 	does not include sub-events)
-	
+
 Structure:
 	START_BEACON_ZOLTAN
 	STORE_ZOLTAN
 	NOTHING_ZOLTAN
-	
-Item:	
+
+Item:
 	ZOLTAN_FREE_AUGMENT
 	ZOLTAN_FREE_MAP
 	ZOLTAN_ODD_MOON (ZOLTAN_ODD_MOON_CHEK)
-	
+
 Hostile:
 	ZOLTAN_FIGHT
 	ZOLTAN_PIRATE
 	ZOLTAN_MANTIS
 	ZOLTAN_ENGI
 
-	
+
 Neutral:
 	ZOLTAN_LIFERAFT (ZOLTAN_LIFERAFT_HIRE)
-	
+
 Environmnt:
---->
+-->
 
 <eventList name="NOTHING_ZOLTAN_SECTOR">
 	<event load="NOTHING_ZOLTAN"/>
@@ -55,7 +55,7 @@ Environmnt:
 	<event load="ZOLTAN_CREW_SCAN"/>
 	<event load="FRIENDLY_SLAVER"/>
 	<event load="PIRATE_BRIBER"/>
-	<event load="ASTEROID_EXPLORE"/>	
+	<event load="ASTEROID_EXPLORE"/>
 </eventList>
 
 <eventList name="ITEM_ZOLTAN">
@@ -100,15 +100,15 @@ Environmnt:
 	<event load="STORM_ZOLTAN_SUPPLY_CHOICE"/>
 	<event load="NEBULA_EMPTY"/>
 	<event load="NEBULA_EMPTY"/>
-	<event load="NEBULA_REBEL"/> 
+	<event load="NEBULA_REBEL"/>
 	<event load="NEBULA_AUTO"/>
 </eventList>
 
 
-<!-----------
+<!--
 		STRUCTURE!!!
-	Requred structural 
------------->
+	Requred structural
+-->
 
 <event name="START_BEACON_ZOLTAN">
 	<text load="START_BEACON_ZOLTAN"/>
@@ -128,7 +128,7 @@ Environmnt:
 	<text>The IHTG has set up a joint shop with a group of Sophon machinists. Although it is difficult to tie most Sophon down to a single trade, these are mere engineers and applied scientists, and likely have little opportunity elsewhere in Sophon society.</text>
 	<text>This planet, a backwater otherwise, is known as one of the more capitalist areas in Sophon territory. Here, you can find Sophon who condenscend to haggle, trade, and build equipment for profit rather than fun.</text>
 	<text>A faint IFF signature - a private encryption scheme. A small team of Hissho has hunkered down on a small moon. They're selling goods, which were obtained illegally as a matter of course. This being bat country, you don't want to stop here; if they've just come off a fresh kill, though, you may get an honest trade.</text>
-	
+
 	<text>The IHTG has set up a joint shop with a group of Sophon machinists. Although it is difficult to tie most Sophon down to a single trade, these are mere engineers and applied scientists, and likely have little opportunity elsewhere in Sophon society.</text>
 	<text>This planet, a backwater otherwise, is known as one of the more capitalist areas in Sophon territory. Here, you can find Sophon who condenscend to haggle, trade, and build equipment for profit rather than fun.</text>
 	<text>A faint IFF signature - a private encryption scheme. A small team of Hissho has hunkered down on a small moon. They're selling goods, which were obtained illegally as a matter of course. This being bat country, you don't want to stop here; if they've just come off a fresh kill, though, you may get an honest trade.</text>
@@ -145,7 +145,7 @@ Environmnt:
 		<choice hidden="true" req="energy">
 			<text>Talk to your Sophon crewmember</text>
 			<event>
-				<text>"This is a typical Sophon vacation spot - some of them are admiring this event, while others are relaxing by performing scientific measurements on it."</text>				
+				<text>"This is a typical Sophon vacation spot - some of them are admiring this event, while others are relaxing by performing scientific measurements on it."</text>
 			</event>
 		</choice>
 	</event>
@@ -154,7 +154,7 @@ Environmnt:
 		<choice hidden="true" req="energy">
 			<text>Talk to your Sophon crewmember</text>
 			<event>
-				<text>"I've read about this ancient Human game - 'pule'? All the predictive trigonometry and physics in the galaxy won't help you predict the ball's path after a few bounces. War is the same way; it cannot be reduced to calculated maneuvers and risk management. You Humans have always been better at that sort of fuzzy thinking."</text>				
+				<text>"I've read about this ancient Human game - 'pule'? All the predictive trigonometry and physics in the galaxy won't help you predict the ball's path after a few bounces. War is the same way; it cannot be reduced to calculated maneuvers and risk management. You Humans have always been better at that sort of fuzzy thinking."</text>
 			</event>
 		</choice>
 	</event>
@@ -163,15 +163,15 @@ Environmnt:
 		<choice hidden="true" req="energy">
 			<text>Talk to your Sophon crewmember</text>
 			<event>
-				<text>"No reason to be offended, they just didn't feel compelled to answer."</text>				
+				<text>"No reason to be offended, they just didn't feel compelled to answer."</text>
 			</event>
 		</choice>
 		<choice hidden="true" req="human">
 			<text>Talk to your Human crewmember</text>
 			<event>
-				<text>"Eh, they get like this. Took a few years to get used to it after we made first contact. It's hard to be mad at them; when they DO talk to you, they're nice enough."</text>				
+				<text>"Eh, they get like this. Took a few years to get used to it after we made first contact. It's hard to be mad at them; when they DO talk to you, they're nice enough."</text>
 			</event>
-		</choice>		
+		</choice>
 	</event>
 	<event>
 		<text>A Sophon orbital research park is stationed at this beacon. You admire the beautiful architecture of the station, but its massive power signature makes you nervous. Time to move on.</text>
@@ -181,7 +181,7 @@ Environmnt:
 				<text>"Sophon have lost interest in boring old Electro-Weak theory research. This power signature indicates that the station is examining the nature of sub-Quantum phenomena; much juicier stuff." He pauses for a moment before remarking, "Yes. 'Juicy'. Such a delightful word! Human language is nearly as colorful as ours."</text>
 			</event>
 		</choice>
-	</event>	
+	</event>
 	<event>
 		<text>A message broadcast from a nearby planet announces the presence of an ancient Sophon university available for visiting. Likely just a tourist trap, but still too bad you don't have the time to visit.</text>
 		<choice hidden="true" req="energy">
@@ -199,13 +199,13 @@ Environmnt:
 				<text>"Nostalgia? I've lived with you Humans for a while now, but I still haven't figured that out. Intriguing. I have to agree, this sector is particularly aesthetically pleasing."</text>
 			</event>
 		</choice>
-	</event>	
+	</event>
 </eventList>
 
-<!-----------
+<!--
 		DISTRESS!!!
 	Beacons
------------->
+-->
 
 <event name="ZOLTAN_DISTRESS_MANTIS" unique="true">
 	<text>Your jump interrupts a Sophon security ship as it follows a Hissho pirate into an asteroid field. They message you, "This is a delicate matter - please, don't feel the need to assist."</text>
@@ -238,14 +238,14 @@ Environmnt:
 	<text>You arrive to find an elegant Sophon yacht, all curves and flying buttresses, laying silent in space. You hail; no answer. The ship is abandoned. It's a mystery what happened to the crew, but it'd be a shame to let the opportunity go to waste.</text>
 	<distressBeacon/>
 	<autoReward level="RANDOM">standard</autoReward>
-	
+
 </event>
-	
-<!-----------
+
+<!--
 		QUEST!!!
 	Beacons
------------->
-	
+-->
+
 
 <event name="ZOLTAN_TRADE_HUB" unique="true">
 	<img back="PLANET_CLOSE" planet="NONE"/>
@@ -253,7 +253,7 @@ Environmnt:
 	<choice hidden="true">
 		<text>Try to talk your way in.</text>
 		<event load="ZOLTAN_TRADE_HUB_TALK"/>
-	</choice>	
+	</choice>
 	<choice hidden="true" req="teleporter" lvl="1">
 		<text>(Teleporter) Beam directly to the civilian deck.</text>
 		<event>
@@ -270,7 +270,7 @@ Environmnt:
 			<text>They scan ID that declares your crewmember an official citizen, collect their fee, and let you pass.</text>
 			<item_modify>
 				<item type="scrap" min="-10" max="-10"/>
-			</item_modify> 
+			</item_modify>
 			<event load="ZOLTAN_TRADE_HUB_SUCCESS"/>
 		</event>
 	</choice>
@@ -333,7 +333,7 @@ Environmnt:
 					<text>"I am conducting a research study on the differential between United Empire and Pilgrim Human conduct," your crewmember says to the Sophon captain, "Although it is lamentable to disturb the development of this race, we must prioritize research of the behavior of sentient races." It seems to have worked, and the Sophon move off. Naturally, the Empire warship attacks you immediately. What did you expect?</text>
 					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
 				</event>
-			</choice>			
+			</choice>
 			<choice hidden="true">
 				<text>Protect the aliens' way of life - Attack the United Empire ship.</text>
 				<event>
@@ -347,7 +347,7 @@ Environmnt:
 					<text>"Tumhara matta chode hain! I am sick of you motherfucking loyalists in this motherfucking game! Yob tvoyu maht, nekulturniy suka! Go suck up a Hissho, you socialist panty-wasted scruffy-looking nerf herders!" You may not have accomplished much with your words, but damn if that didn't feel good.</text>
 					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
 				</event>
-			</choice>			
+			</choice>
 			<choice hidden="true">
 				<text>Leave.</text>
 				<event>
@@ -358,10 +358,10 @@ Environmnt:
 	</choice>
 </event>
 
-<!-----------
+<!--
 		ITEM!!!
 	Events that can give something ususally no fight
------------->
+-->
 <event name="ZOLTAN_FREE_AUGMENT" unique="true">
 	<text>A Sophon academy sits docked just outside the beacon perimeter. They're happy to show you the fruits of their labor, and offer something to take home with you.</text>
 	<autoReward level="LOW">augment</autoReward>
@@ -372,7 +372,7 @@ Environmnt:
 	<reveal_map/>
 	<ship load="ZOLTAN_SHIP" hostile="false"/>
 </event>
-	
+
 <event name="ZOLTAN_ODD_MOON" unique="true">
 	<text>Something strikes you as odd about a moon in the distance.</text>
 	<choice hidden="true">
@@ -409,7 +409,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Sending a shuttle to explore a beckoning cave system you discover signs of a battle - and a still-functioning weapon!</text>
-		<autoReward level="LOW">weapon</autoReward>	
+		<autoReward level="LOW">weapon</autoReward>
 	</event>
 	<event>
 		<text>A deep scan of the surface reveals a cave system that runs for miles, and what looks like a Dust reservoir left over from some heavy-duty construction.</text>
@@ -427,7 +427,7 @@ Environmnt:
 		</choice>
 	</event>
 </eventList>
-	
+
 <eventList name="ZOLTAN_ODD_MOON_EXPLOSION">
 	<event>
 		<text>A portion of the surface layer is destroyed in an impressive display, revealing miles of caves. You don't have time to fully explore them, but you find some remains of an old subterranean base that could be useful.</text>
@@ -450,12 +450,12 @@ Environmnt:
 		</item_modify>
 	</event>
 </eventList>
-	
-	
-<!-----------
+
+
+<!--
 		HOSTILE!!!
 	Events that call up a fight for sure
------------->
+-->
 <event name="ZOLTAN_FIGHT">
 	<img back="BACKGROUND" planet="NONE"/>
 	<text load="ZOLTAN_FIGHT"/>
@@ -470,7 +470,7 @@ Environmnt:
 	<text>A Sophon ship is waiting at this beacon. They request your identification, but radiation from the sun in this system is disrupting your communications. They take your silence for aggression and move in to attack.</text>
 	<text>The Sophon ship patrolling this area hails you: "This area is off limits. Secrecy is vital." They power their weapons.</text>
 	<!-- Add more! -->
-	
+
 </textList>
 
 <event name="ZOLTAN_PIRATE">
@@ -485,7 +485,7 @@ Environmnt:
 	<text>A ship with pirate markings demands your surrender. It is sad times when even Sophon space is beset by pirates. You doubt these fools will be missed.</text>
 	<text>You spot a pirate ship looting a small Sophon cruiser. They spot you and move in to attack before your FTL drive has a chance to recharge.</text>
 	<!-- Add more instead of repeating ! -->
-	
+
 	<text>"Emergency, all ships in range, we are under attack!" The frequency matches a nearby Sophon ship; you move in on their pursuer. They take your intervention as a cue to jump away. Cowards.</text>
 	<text>You jump just in time to witness a Sophon ship's FTL drive overload. In their final moments they implore you not to get involved, but it's too late - their attacker is already upon you!</text>
 	<text>Despite their precautions, pirates have begun to harass the local Sophon settlements across this sector. One such pirate spots your ship and moves in to attack.</text>
@@ -511,10 +511,10 @@ Environmnt:
 </event>
 
 
-<!-----------
+<!--
 		NEUTRAL!!!
 	Events that could have a fight
------------->
+-->
 
 <event name="ZOLTAN_LIFERAFT" unique="true"> <!-- ALSO A QUEST!!-->
 	<img back="DEEP_SPACE" planet="NONE"/>
@@ -538,7 +538,7 @@ Environmnt:
 		<text>She responds haughtily, "Friend, I'm a doctor, not a resistance fighter. I'm not cut out for this space hero business."</text>
 	</event>
 	<event>
-		<text>She thinks for a moment before looking you in the eye. "Any opportunity to..." she smiles, "...perform research on such a remarkable Human specimen." Is she coming on to you?		
+		<text>She thinks for a moment before looking you in the eye. "Any opportunity to..." she smiles, "...perform research on such a remarkable Human specimen." Is she coming on to you?
 		</text>
 		<item_modify>
 			<item type="scrap" min="-40" max="-40"/>
@@ -547,7 +547,7 @@ Environmnt:
 	</event>
 </eventList>
 
-	
+
 <event name="ZOLTAN_SCIENCE_DOCK" unique="true">
 	<img back="DEEP_SPACE" planet="NONE"/>
 	<text>In a sector of deep space, what appears to be a Sophon science ship requests permission to dock.</text>
@@ -561,7 +561,7 @@ Environmnt:
 			<text>They leave without a word.</text>
 		</event>
 	</choice>
-</event>	
+</event>
 <eventList name="ZOLTAN_SCIENCE_DOCK_LIST">
 	<event>
 		<text>You allow them to approach, but are caught unaware when they open fire!</text>
@@ -624,7 +624,7 @@ Environmnt:
 			<text>You give the guards permission to dock with the ship, but before they come on board your crew member slowly advances to meet them. As far as you can tell no words were exchanged, but the guards offer you some supplies and say the ship checks out. Best to not ask questions.</text>
 			<autoReward level="MED">fuel_only</autoReward>
 		</event>
-	</choice>			
+	</choice>
 </event>
 <eventList name="ZOLTAN_CREW_SCAN_LIST">
 	<event>
@@ -650,11 +650,11 @@ Environmnt:
 		</choice>
 	</event>
 </eventList>
-			
-<!-----------
+
+<!--
 		NEBULA!!!
 	Events with unique environments
------------->
+-->
 <event name="NEBULA_ZOLTAN_ROCK" unique="true">
 	<img back="BG_NEBULA" planet="NONE"/>
 	<text>At the center of this nebula, a small Sower vessel is mining materials from a metallic asteroid. It seems to identify you as hostile, and opens fire!</text>
@@ -670,7 +670,7 @@ Environmnt:
 		<text>Pull the ship in closer.</text>
 		<event load="NEBULA_ZOLTAN_EYE_LIST"/>
 	</choice>
-	<choice>	
+	<choice>
 		<text>Leave.</text>
 		<event>
 			<text>Your mission is to save the resistance, not discover new wonders around the galaxy. You prepare to jump.</text>
@@ -722,11 +722,11 @@ Environmnt:
 	</choice>
 </event>
 
-		
-<!-----------
+
+<!--
 		BOARDERS!!!
 	Events with boarder calls
------------->
+-->
 
 <event name="ZOLTAN_BOARDERS">
 	<text>"You never should have come here - your presence endangers the entire Sophon race! Some Sophon's tolerance of you Pilgrims risks ending years of friendship between us and the United Empire. Your secession, your life, are not worth our peace. Prepare to defend yourselves!"</text>
@@ -736,11 +736,11 @@ Environmnt:
 		<event>
 			<boarders min="3" max="4" class="energy"/>
 		</event>
-	</choice>	
+	</choice>
 	<choice hidden="true" req="teleporter">
 		<text>(Teleporter) "Prepare to suck vacuum!" Beam the boarders off your ship.</text>
 		<event/>
-	</choice>	
+	</choice>
 </event>
 
 <event name="ZOLTAN_BOARDERS_MANTIS">
@@ -751,17 +751,17 @@ Environmnt:
 		<event>
 			<boarders min="2" max="3" class="mantis"/>
 		</event>
-	</choice>	
+	</choice>
 	<choice hidden="true" req="teleporter">
 		<text>(Teleporter) Beam 'em into space. Pop goes the Hissho.</text>
 		<event/>
-	</choice>	
+	</choice>
 </event>
 
-<!-----------
+<!--
 		SPECIAL!!!
 	-
------------->
+-->
 
 <event name="ZOLTAN_PEACE_QUEST" unique="true">
 	<text>An unarmed Sophon transport vessel is slowly making its way toward the beacon here. They hail: "This is a Sophon peace envoy. We carry no weapons or shielding and rely on the mercy of others to communicate our message."</text>
@@ -885,8 +885,8 @@ Environmnt:
 	<text>The Sophon captain hails and mutters something about the border patrol force catching up with you someday; you're more interested in his offer of surrender.</text>
 	<text>"We assumed that your species intelligence was directly proportional to your brute strength. We yield."</text>
 	<text>"You have bested us. If only your species' efforts were put to use improving the galaxy rather than your military might."</text>
-	
-	<!-- duplicate for now -- add more?-->	
+
+	<!-- duplicate for now -- add more?-->
 	<text>"Yes, yes, you've demonstrated your species' capacity for violence quite extensively, well done. If we reward your efforts will you bother someone else?"</text>
 	<text>The enemy's power signature suddenly ceases, save for a weak, repeating signal - it's safe to assume they're trying to surrender. Accept their offer?</text>
 	<text>Communications report that the Sophon are broadcasting on all frequencies. The captain appears on screen and says, "In the face of superior force, acquiescence is only...logical. Take what you require."</text>

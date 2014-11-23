@@ -1,1 +1,1 @@
-7z.exe a -tzip Sonata.ftl audio data img readme.txt
+7z.exe a -tzip Sonata.ftl audio data img mod-appendix readme.md

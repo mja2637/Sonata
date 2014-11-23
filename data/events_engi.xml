@@ -1,10 +1,10 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--  
-			SUMMARY - 
+<!--
+			SUMMARY -
 A list of all main events to be called by lists
 	does not include sub-events)
-	
+
 Structure:
 	START_BEACON_ENGI
 	STORE_ENGI
@@ -14,21 +14,21 @@ Items:
 	ENGI_GIFT
 	ENGI_FLEET_DELAY
 	ENGI_MONSTER
-	
+
 Hostile:
 	ENGI_MANTIS_FIGHT		NEW!!!
 	ENGI_REBEL_FIGHT		NEW!!!
 	ENGI_PIRATE_FIGHT		NEW!!!
-	
+
 Neutral:
 	ENGI_STATION_DISTRESS  (could be quest or distress - uses SAVE_ENGI_STATION)
-	
+
 Environment:
-	
+
 Boarders:
 
 Special
---->
+-->
 
 
 <!--
@@ -39,11 +39,11 @@ The Engi don't map neatly to any ES races (since the Sower are taken). Horatio/A
 Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hissho slave race. To that end, the Engi sector should be repurposed to do exposition on Hissho-Human relations (potentially WRT the Hissho-Automaton war, perhaps with implications of the French-Indian War a la Assassin's Creed 3?)
 
 -->
-	
 
-<!--------------------------------
+
+<!--
 	ENGI EVENTLIST   ''  " " "
----------------------------------->
+-->
 
 <eventList name="NOTHING_ENGI_SECTOR">
 	<event load="NOTHING_ENGI"/>
@@ -60,7 +60,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<event load="ENGI_FLEET_DELAY"/>
 <!--	<event load="ENGI_MONSTER"/> -->
 	<event load="ENGI_SURRENDER"/>
-	
+
 	<event load="FIND_DRONE"/>
 	<event load="FIND_WEAPON"/>
 	<event load="REFUEL_STATION"/>
@@ -70,7 +70,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<event load="ENGI_MANTIS_FIGHT"/>
 	<event load="ENGI_REBEL_FIGHT"/>
 	<event load="ENGI_PIRATE_FIGHT"/>
-	
+
 	<event load="PIRATE"/>
 	<event load="PIRATE_CHOICE"/>
 	<event load="REBEL"/>
@@ -85,16 +85,16 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<event load="ENGI_STATION_DISTRESS"/>
 	<event load="MANTIS_FIGHT_CHOICE"/>
 	<event load="MANTIS_CIVILIAN"/>
-	
+
 	<event load="PIRATE_BRIBER"/>
 	<event load="ASTEROID_EXPLORE"/>
 	<event load="BROKEN_REBEL_DRONE"/>
-	<event load="AUTO_DEFENSE_ITEM"/> 
-	
+	<event load="AUTO_DEFENSE_ITEM"/>
+
 	<event load="ALISON_MANTIS_CREW"/> <!-- new alison written event -->
-	
+
 	<event load="ZOLTAN_CREW_STUDY"/>
-	
+
 	<event load="ASTEROID_DERELICT_SHIP"/> <!-- CRYSTAL UNLOCK-->
 </eventList>
 
@@ -102,8 +102,8 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	<event load="ENGI_STATION_DISTRESS"/>
 	<event load="DISTRESS_ENGI_REBEL"/>
 	<event load="DISTRESS_ENGI_REACTOR"/>
-	
-	<event load="CIVILIAN_ASTEROIDS_BEACON"/> 
+
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>
 	<event load="FRIENDLY_BEACON"/>
 	<event load="TRAP_BEACON"/>
 	<event load="DISTRESS_TRAPPED_MINER"/>
@@ -123,10 +123,10 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 
 
 
-<!-----------
+<!--
 		STRUCTURE!!!
 	Others events necessary for strucrtural stuff
------------->
+-->
 
 <event name="START_BEACON_ENGI">
 	<text load="START_BEACON_ENGI"/>
@@ -170,10 +170,10 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 
 
 
-<!-----------
+<!--
 		ITEMS!!!
 	Events that give items
------------->
+-->
 
 <event name="ENGI_GIFT">
 	<text load="ENGI_GIFT"/>
@@ -262,10 +262,10 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 
 
 
-<!-----------
+<!--
 		HOSTILE!!!
 	Events that call up a fight for sure
------------->
+-->
 
 <event name="ENGI_MANTIS_FIGHT">
 	<text load="ENGI_MANTIS_FIGHT"/>
@@ -291,10 +291,10 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 
 
 
-<!-----------
+<!--
 		NEUTRAL!!!
 	Events that could have a fight
------------->
+-->
 
 <event name="ENGI_STATION_DISTRESS" unique="false">
 	<text>You receive a distress call from a nearby Automaton ship. "Assistance requested. Danger present. Imminent destruction."</text>
@@ -368,13 +368,13 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 
 
 
-<!-----------
+<!--
 		DISTRESS!!!
-	Events that havea distress beacon 
------------->
+	Events that havea distress beacon
+-->
 
 <event name="DISTRESS_ENGI_REBEL" unique="true">
-	<text>The distress signal originates at a small Automaton ship under attack by a Hissho fighter - but when they see Pilgrim markings they turn to attack!</text> 
+	<text>The distress signal originates at a small Automaton ship under attack by a Hissho fighter - but when they see Pilgrim markings they turn to attack!</text>
 	<distressBeacon/>
 	<ship load="DISTRESS_ENGI_REBEL" hostile="true"/>
 </event>
@@ -425,9 +425,9 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 	</item_modify>
 	<augment name="NANO_MEDBAY"/>
 </event>
-		
-		
-		
+
+
+
 <event name="DISTRESS_ENGI_REACTOR" unique="true">
 	<text>You arrive at a smoldering Automaton research station, its distress call unanswered - attacked by pirates or Hissho most likely. There may be someone left alive, or else something of value left on board.</text>
 	<distressBeacon/>
@@ -460,7 +460,7 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 			<text>Save the Automaton!</text>
 			<event load="DISTRESS_ENGI_REACTOR_ENGI"/>
 		</choice>
-		<choice hidden="true">	
+		<choice hidden="true">
 			<text>Save the drone schematic.</text>
 			<event load="DISTRESS_ENGI_REACTOR_DRONE"/>
 		</choice>
@@ -523,15 +523,15 @@ Thusly think I will mostly remove the Engi, perhaps keeping a few around as a Hi
 </event>
 
 
-<!-- I don't know what race the Engi will represent yet. Was thinking that maybe this could be the UE and 
+<!-- I don't know what race the Engi will represent yet. Was thinking that maybe this could be the UE and
 <!-- Pilgrims working together to steal a Craver ship from the Hissho. -->
-<!-----------
+<!--
 		SPECIAL!!!
 	Unique events
------------->
+-->
 
 <event name="ENGI_UNLOCK_1" unique="true">
-	<text>You arrive near a small fleet of civilian Automaton ships. A simple decryption and translation of their comm frequency tells you that they are having a frantic discussion about something obviously troubling them.</text> 
+	<text>You arrive near a small fleet of civilian Automaton ships. A simple decryption and translation of their comm frequency tells you that they are having a frantic discussion about something obviously troubling them.</text>
 	<choice>
 		<text>Message them and ask if you can help.</text>
 		<event>

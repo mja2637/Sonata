@@ -1,41 +1,41 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--   
-			SUMMARY  - 
+<!--
+			SUMMARY  -
 A list of all main events to be called by lists
 	does not include sub-events)
-	
+
 Structure:
 
 Items:
-	
+
 Hostile:
-	
+
 Neutral:
-	
+
 Environment:
-	
+
 Boarders:
 
 Special
---->
+-->
 
 
 <!--
-Matt: 
+Matt:
 	This will be a Craver (Swarm) sector. The tone will be far more...morbid...than it is currently.
-	
+
 	- How do we get here?
 	- How do we obtain the ship? Will it be a 'stock' Craver ship?
 	- How do we leave?
 	- What's the storyline?
 -->
-	
 
-	
-<!-------------------CRYSTAL EVENTLIST     
+
+
+<!--CRYSTAL EVENTLIST
 ''   " " "
---------------------------------->
+-->
 
 
 <eventList name="ITEMS_CRYSTAL">
@@ -56,7 +56,7 @@ Matt:
 	<event load="CRYSTAL_REBEL"/>
 	<event load="CRYSTAL_HUNTER"/>
 	<event load="CRYSTAL_AUTO"/>
-	
+
 </eventList>
 
 <eventList name="NEUTRAL_CRYSTAL">
@@ -70,7 +70,7 @@ Matt:
 	<event load="CRYSTAL_CHATTY"/>
 	<event load="CRYSTAL_REQUEST"/>
 	<event load="CRYSTAL_HELP_DIG"/>
-	
+
 </eventList>
 
 
@@ -83,9 +83,10 @@ Matt:
 
 
 
-<!-----------STRUCTURE!!!	
+<!--
+	STRUCTURE!!!
 	Others events necessary for strucrtural stuff
------------->
+-->
 
 <event name="START_BEACON_CRYSTAL">
 	<text>You arrive in a sector not listed in any star charts. Strange crystalline ships dot the horizon. Your companion speaks, "Here we are, my home sector. It has been a long time since others have set foot here, I wonder how you will be received."</text>
@@ -113,7 +114,7 @@ Matt:
 	<text>"Ah! Hello aliens", says a rotund crystalline being on the vid screen. "I hoped I would run into one of you. I am a collector of alien artifacts and hoped you would have some equipment to barter!"</text>
 	<text>You arrive at a trade depot and find a store that is willing to open communications with you. "I can't say I've traded with your kind before, but perhaps we could work out some sort of exchange."</text>
 	<text>You receive an incoming transmission, but it seems badly garbled. Eventually you realise it's advertising an equipment store. "Apologies," says the vendor, when you finally get him on the vid screen, "Long time since use universal translator no necessary. Please, buy, buy!"</text>
-	
+
 	<text>You arrive in an area bustling with crystalline ships and stations.  A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
 	<text>"Ah! Hello aliens", says a rotund crystalline being on the vid screen. "I hoped I would run into one of you. I am a collector of alien artifacts and hoped you would have some equipment to barter!"</text>
 	<text>You arrive at a trade depot and find a store that is willing to open communications with you. "I can't say I've traded with your kind before, but perhaps we could work out so sort of exchange?"</text>
@@ -125,14 +126,14 @@ Matt:
 	<text load="NOTHING_CRYSTAL"/>
 </event>
 <textList name="NOTHING_CRYSTAL">
-	<text>As soon as you arrive, all of the ships docked at a nearby station scatter and jump while the station itself uses some form of cloak technology to disappear. They mustn't like outsiders here...</text>	
+	<text>As soon as you arrive, all of the ships docked at a nearby station scatter and jump while the station itself uses some form of cloak technology to disappear. They mustn't like outsiders here...</text>
 	<text>No ships are in range, so you take the time to scan the area. It seems like every planet you've seen so far shows signs of highly developed habitation without overpopulation. They must have a very structured and well regulated society.</text>
 	<text>There appears to be no one living near this node, a rare sight in this highly developed sector.</text>
 	<text>You arrive near a civilian settlement. It looks like their homes, ships and stations all rely heavily on an intriguing crystalline material. You wonder how they are able to create so much of this substance, as yet undiscovered in the rest of the galaxy.</text>
 	<text>A few merchant ships pass nearby but they are either ignoring your hails or their computer isn't designed to work through the same frequencies...</text>
 	<text>A number of civilian ships seem to be evacuating a small colony. One ship messages you before jumping away, "Damn you aliens! This is why we closed that long-ranged beacon in the first place!"</text>
 
-	<text>As soon as you arrive, all of the ships docked at a nearby station scatter and jump away, while the station itself uses some form of cloak technology to disappear. They mustn't like outsiders here...</text>	
+	<text>As soon as you arrive, all of the ships docked at a nearby station scatter and jump away, while the station itself uses some form of cloak technology to disappear. They mustn't like outsiders here...</text>
 	<text>No ships are in range, so you take the time to scan the area. It seems like every planet you've seen so far shows signs of highly developed habitation without overpopulation. They must have a very structured and well regulated society.</text>
 	<text>There appears to be no one living near this node, a rare sight in this highly developed sector.</text>
 	<text>You arrive near a civilian settlement. It looks like their homes, ships and stations all rely heavily on an intriguing crystalline material. You wonder how they are able to create so much of this substance, as yet undiscovered in the rest of the galaxy.</text>
@@ -142,9 +143,10 @@ Matt:
 
 
 
-<!-----------ITEMS!!!
+<!--
+	ITEMS!!!
 	Events that give items
--------------->
+-->
 
 <event name="CRYSTAL_CACHE" unique="true">
 	<text>Odd radar pings from a huge, orbiting asteroid here reveal a Crystalline cache of some kind. A deep crater has been sealed over with a thick layer of crystal to keep whatever's inside safe - it'd take some serious firepower to break though.</text>
@@ -161,7 +163,7 @@ Matt:
 				<event load="CRYSTAL_CACHE_LIST"/>
 			</choice>
 		</event>
-	</choice>	
+	</choice>
 </event>
 <eventList name="CRYSTAL_CACHE_BREAK">
 	<event>
@@ -184,7 +186,7 @@ Matt:
 		<weapon name="WEAPONS_CRYSTAL"/>
 		<autoReward level="LOW">stuff</autoReward>
 	</event>
-	<event>	
+	<event>
 		<text>Your away team is greeted at the crater by the owners of the cache, who are none too happy. You grab what you can and run back to the ship, but not before they teleport aboard!</text>
 		<weapon name="WEAPONS_CRYSTAL"/>
 		<autoReward level="LOW">stuff</autoReward>
@@ -227,17 +229,15 @@ Matt:
 	</event>
 </eventList>
 
-
-		
 <event name="CRYSTAL_SCRAP_EXCITED" unique="true">
 	<text>You receive a signal from a private relay on a nearby inhabited planet. "Are you the alien ship they've been talking about?! You are! Please, I am a collector of alien artifacts, I'm sure what is scrap to you is priceless to me."</text>
 	<choice hidden="true">
 		<text>Charge up some old parts with Dust and offer them.</text>
 		<event>
 			<text>"My word! Is this... a 25th century Izhmash-Grumman thrust stabilizer?! What do you want for it? Wait, I have a better proposal. I long to see the galaxy. I propose I come with you. What do you say?"</text>
-			<item_modify>    
+			<item_modify>
 				<item type="scrap" min="-50" max="-50"/>
-			</item_modify>	
+			</item_modify>
 			<choice hidden="true">
 				<text>Accept.</text>
 				<event>
@@ -270,9 +270,10 @@ Matt:
 </eventList>
 
 
-<!-----------HOSTILE!!!
+<!--
+	HOSTILE!!!
 	Events that call up a fight for sure
------------->
+-->
 
 <event name="CRYSTAL_FIGHT" unique="false">
 	<text load="CRYSTAL_FIGHT"/>
@@ -284,15 +285,15 @@ Matt:
 	<text>You receive a message, "Hah. It looks like another worthless alien-filled craft. Prepare to meet your maker!" Weapon locks detected.</text>
 	<text>A Crystalline ship messages you, "I've heard tales that our isolation has finally ended. As a warrior I must demand to test my skills against you!" Before you can respond they move in to attack.</text>
 	<text>You arrive in a busy sector. At first no one pays any mind to your alien ship but soon you're registering a number of scan signatures. You get the feeling you're not wanted here just seconds before registering enemy weapon locks!</text>
-	<text>You jump next to a node busy with traffic, but before long all nearby ships notice you and keep their distance, uncertain of your allegiance. After an awkward standoff, a military ship breaks away from the rest and charges you.</text> 
+	<text>You jump next to a node busy with traffic, but before long all nearby ships notice you and keep their distance, uncertain of your allegiance. After an awkward standoff, a military ship breaks away from the rest and charges you.</text>
 	<text>A barrage of rasps and clicks is broadcast over the comm; the universal translator understands little, but the words 'aliens', 'allowed' and 'no' come through quite clearly. You'll have to prove your right to be here in combat!</text>
-	
+
 	<text>You arrive near a fleet of crystal ships, civilian or mercantile from the looks of them. You pause to scan one but they react immediately and send an escort to fight you off. Prepare to engage!</text>
 	<text>You arrive at the beacon and are immediately greeted by an automatic message or warning of some kind. The translator can't seem to discern its purpose but after a few short moments an alarm goes off and a hostile ship jumps in!</text>
 	<text>You receive a message, "Hah. It looks like another worthless alien-filled craft. Prepare to meet your maker!" Weapon locks detected.</text>
 	<text>A Crystalline ship messages you, "I've heard tales that our isolation has finally ended. As a warrior I must demand to test my skills against you!" Before you can respond they move in to attack.</text>
 	<text>You arrive in a busy sector. At first no one pays any mind to your alien ship but soon you're registering a number of scan signatures. You get the feeling you're not wanted here just seconds before registering enemy weapon locks!</text>
-	<text>You jump next to a node busy with traffic, but before long all nearby ships notice you and keep their distance, uncertain of your allegiance. After an awkward standoff, a military ship breaks away from the rest and charges you.</text> 
+	<text>You jump next to a node busy with traffic, but before long all nearby ships notice you and keep their distance, uncertain of your allegiance. After an awkward standoff, a military ship breaks away from the rest and charges you.</text>
 	<text>A barrage of rasps and clicks is broadcast over the comm; the universal translator understands little, but the words 'aliens', 'allowed' and 'no' come through quite clearly. You'll have to prove your right to be here in combat!</text>
 </textList>
 
@@ -305,7 +306,7 @@ Matt:
 	<text>Crystal shards fly past your ship as soon as you jump. You scan to find the assailant and discover a Crystalline ship carrying a number of humans in its cargo bay. It must be hunting the intruding ships!</text>
 	<ship load="CRYSTAL_HUNTER" hostile="true"/>
 </event>
-	
+
 <event name="CRYSTAL_REBEL" unique="false">
 	<text>As soon as you arrive, a loyalist warship jumps in after you; they must be really hot on your tail.</text>
 	<ship load="REBEL" hostile="true"/>
@@ -318,9 +319,10 @@ Matt:
 
 
 
-<!-----------NEUTRAL!!!
+<!--
+	NEUTRAL!!!
 	Events that could have a fight
------------->
+-->
 
 <event name="CRYSTAL_REBEL_CRYSTAL" unique="false">
 	<text>Crystal shards fly past the screen as soon as you arrive. Checking the scanners, it looks like a crystalline ship is engaged with an Empire ship!</text>
@@ -416,8 +418,6 @@ Matt:
 		</event>
 	</choice>
 </event>
-
-			
 
 <event name="CRYSTAL_FED" unique="false">
 	<text>There appears to be a fight going on nearby. A Crystalline border guard is chasing a small Pilgrim ship!</text>
@@ -573,7 +573,7 @@ Matt:
 	</event>
 </eventList>
 
-		
+
 <event name="CRYSTAL_REQUEST" unique="true">
 	<text>The moment you arrive you notice a Crystalline ship in the vicinity keeping its distance. They message you, "The humans that are trying to hunt YOU down are creating havoc everywhere they go."</text>
 	<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="false"/>
@@ -614,8 +614,8 @@ Matt:
 		<boarders min="1" max="2" class="crystal"/>
 	</event>
 </eventList>
-		
-		
+
+
 <event name="CRYSTAL_HELP_DIG" unique="true">
 	<text>A large Crystalline ship is floating in space here. They hail: "Aliens?! How curious. We request your aid. We have men buried on a nearby planet and we must dig them out."</text>
 	<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="false"/>
@@ -676,22 +676,19 @@ Matt:
 		</event>
 	</choice>
 </event>
-		
-		
-		
-<!-----------DISTRESS!!!	
-	Events that havea distress beacon  
------------->
 
 
 
+<!--
+	DISTRESS!!!
+	Events that have a distress beacon
+-->
 
 
-
-<!-----------SPECIAL!!!
+<!--
+	SPECIAL!!!
 	Unique events
------------->
-
+-->
 
 <event name="BOARDERS_CRYSTAL" unique="false">
 	<text load="BOARDERS_CRYSTAL"/>
@@ -710,7 +707,7 @@ Matt:
 	<text>They appear to be transmitting the universal signals for surrender. Will you let them go?</text>
 	<text>They message you, "I see now there was a misunderstanding and there is no need for more bloodshed. Will you forgive our lack of discretion?"</text>
 	<text>"We cannot beat you, we surrender. Surely there is mercy wherever you come from."</text>
-	
+
 	<text>"We yield, aliens. We have no wish to die fighting you."</text>
 	<text>"You have bested us! I will no longer underestimate you invaders. Please, let us leave in peace."</text>
 	<text>They appear to be transmitting the universal signals for surrender. Will you let them go?</text>
@@ -765,6 +762,3 @@ Matt:
 		</choice>
 	</event>
 </eventList>
-				
-		
-

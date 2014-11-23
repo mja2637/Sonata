@@ -1,18 +1,18 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
-<!--	
+<!--
 
 Structure:
 	FLEET_EASY_NEBULA
 	NEBULA_EMPTY
-	
+
 Hostile:
 	NEBULA_REBEL
 	NEBULA_AUTO
 	NEBULA_AUTO_WARNING
 	NEBULA_PIRATE  				NEW
 	NEBULA_MANTIS_FIGHT				NEW
-	
+
 Neutral:
 	NEBULA_REBEL_UNDETECTED
 	NEBULA_PIRATE_SMUGGLE
@@ -22,7 +22,7 @@ Neutral:
 	NEBULA_ROCK_RACIST				NEW
 	NEBULA_MANTIS_CHOICE			NEW
 	NEBULA_REBEL_CHASE				NEW
-	
+
 Boarders:
 	NEBULA_BOARDING
 
@@ -35,7 +35,7 @@ Storm Environment:
 	STORM_BOARDING
 	STORM_ITEMS
 
---->
+-->
 
 <eventList name="NEBULA_HOSTILE">
 	<event load="NEBULA_REBEL"/>
@@ -61,10 +61,10 @@ Storm Environment:
 	<event load="NEBULA_REBEL_CHASE"/>
 </eventList>
 
-<!-----------
+<!--
 		STRUCTURE!!!
 	Others events necessary for strucrtural stuff
------------->
+-->
 
 <event name="START_BEACON_NEBULA">
 	<text load="START_BEACON_NEBULA"/>
@@ -115,10 +115,10 @@ Storm Environment:
 	<text>There's nothing here, save for vast swirls of gas reflecting rays from a distant sun.</text>
 </textList>
 
-<!-----------
+<!--
 		HOSTILE!!!
 	Events that call up a fight for sure
------------->
+-->
 
 <event name="NEBULA_REBEL">
 	<text load="NEBULA_REBEL_LIST"/>
@@ -163,10 +163,10 @@ Storm Environment:
 	<text>A pirate ship pulls out of the ether and hails: "You know what I love about this part of the galaxy? The explorers! You always carry such fine loot." They lock weapons.</text>
 	<text>As you coast through the nebula a pirate ship matches your course and closes the distance. Better to pick your battleground, but beggars can't be choosers.</text>
 	<text>A hostile vessel descends from out of the nebula. Combat stations!</text>
-	<text>You try to read the ID of a ship ahead in the fog, but it's too thick to penetrate. You have your answer when the ship turns, weapons hot!</text>	
+	<text>You try to read the ID of a ship ahead in the fog, but it's too thick to penetrate. You have your answer when the ship turns, weapons hot!</text>
 </textList>
 
-<event name="NEBULA_MANTIS_FIGHT" unique="false">  
+<event name="NEBULA_MANTIS_FIGHT" unique="false">
 	<text load="NEBULA_MANTIS_FIGHT"/>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<environment type="nebula"/>
@@ -180,10 +180,10 @@ Storm Environment:
 
 </textList>
 
-<!-----------
+<!--
 		NEUTRAL!!!
 	Events that could have a fight
------------->
+-->
 
 <event name="NEBULA_REBEL_UNDETECTED" unique="true"> <!-- give player option to hide, -->
 	<text>Your ship emerges quite far away from the beacon. You see an Empire ship waiting nearby, undoubtedly stationed to look for you.</text>
@@ -199,7 +199,7 @@ Storm Environment:
 		<text>Attempt to remain concealed.</text>
 		<event load="NEBULA_REBEL_UNDETECTED_LIST"/>
 	</choice>
-	<choice req="cloaking" hidden="true" > 
+	<choice req="cloaking" hidden="true" >
 		<text>(Cloaking) Cloak to stay hidden.</text>
 		<event>
 			<text>You use your cloaking system to slip further into the nebula undetected.</text>
@@ -299,8 +299,8 @@ Storm Environment:
 	<choice>
 		<text>Keep your position, they can handle themselves.</text>
 		<event/>
-	</choice>	
-	<choice req="teleporter" hidden="true"> 
+	</choice>
+	<choice req="teleporter" hidden="true">
 		<text>(Teleporter) Lock onto their life-signs with your teleporter.</text>
 		<event>
 			<text>You beam the Pilgrim crew aboard. One gladly joins your crew, the rest wait to be dropped off at the next station.</text>
@@ -463,13 +463,13 @@ Storm Environment:
 		<modifyPursuit amount="1"/>
 	</event>
 </eventList>
-		
 
 
-<!-----------
+
+<!--
 		ITEMS!!!
 	Events that give items
------------->
+-->
 
 <event name="NEBULA_TRADER" unique="true">
 	<text>Inside a more open region of the nebula, a small Sophon science vessel hails you with a trade offer.</text>
@@ -484,10 +484,10 @@ Storm Environment:
 	</choice>
 </event>
 
-<!-----------
+<!--
 		BOARDERS!!!
 	Events with boarder calls
------------->
+-->
 
 <event name="NEBULA_BOARDING">
 	<text load="NEBULA_BOARDING_TEXT"/>
@@ -495,15 +495,15 @@ Storm Environment:
 	<boarders min="2" max="4" class="human"/>
 </event>
 <textList name="NEBULA_BOARDING_TEXT">
-	<text>You see a small station nearby and feel the shudder of shots ringing through the ship. You can't be sure without sensors, but it seems there may be intruders on the ship!</text> 
+	<text>You see a small station nearby and feel the shudder of shots ringing through the ship. You can't be sure without sensors, but it seems there may be intruders on the ship!</text>
 	<text>You arrive in the nebula and immediately receive a message from an unknown source, "Prepare to be boarded!" With the static from the nebula, there's no way to tell who it came from, but you hear shots fired on board the ship.</text>
 	<text>You see a number of derelict ships near this beacon. After a short time you hear the tell-tale sounds of a teleporter and shouts coming from within the ship. You've been boarded!</text>
 </textList>
 
-<!-----------
+<!--
 		STORM!!!
 	Events with storm
------------->
+-->
 <event name="STORM_AUTO" unique = "true">
 	<text>You jump into a sector of the nebula beset by a plasma storm. A loyalist USV stationed at the beacon moves in to attack.</text>
 	<environment type="storm"/>
@@ -541,12 +541,12 @@ Storm Environment:
 </event>
 
 <event name="STORM_BOARDING">
-	<text>You find two heavily damaged ships floating nearby, the remains of a battle. However, a teleporter nearby must be working, as you hear the sounds of someone beaming aboard followed by the shouts of a boarding party.</text> 
+	<text>You find two heavily damaged ships floating nearby, the remains of a battle. However, a teleporter nearby must be working, as you hear the sounds of someone beaming aboard followed by the shouts of a boarding party.</text>
 	<environment type="storm"/>
 	<boarders min="3" max="5" class="human"/>
 </event>
 <event name="STORM_BOARDING_MANTIS">
-	<text>A Hissho ship is sitting in the middle of the storm, with only essential systems powered up. Unsurprisingly, they beam nearly their entire crew aboard your ship. This is the kind of shit that the Hissho live for; they must be having the time of their lives.</text> 
+	<text>A Hissho ship is sitting in the middle of the storm, with only essential systems powered up. Unsurprisingly, they beam nearly their entire crew aboard your ship. This is the kind of shit that the Hissho live for; they must be having the time of their lives.</text>
 	<environment type="storm"/>
 	<boarders min="2" max="4" class="mantis"/>
 </event>
@@ -574,7 +574,7 @@ Storm Environment:
 		<autoReward level="HIGH">stuff</autoReward>
 	</event>
 	<event>
-		<text>Within the ship graveyard you find one ship that seems relatively untouched. On board you find an unconscious passenger, and take her back to the ship. Once awake she offers to join your crew in thanks.</text>	
+		<text>Within the ship graveyard you find one ship that seems relatively untouched. On board you find an unconscious passenger, and take her back to the ship. Once awake she offers to join your crew in thanks.</text>
 		<crewMember amount="1"/>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
@@ -595,7 +595,7 @@ Storm Environment:
 
 <eventList name="STORM_ITEMS_PILOTING">
 	<event>
-		<text>Within the ship graveyard you find one ship that seems relatively untouched. On board you find an unconscious passenger and take him back to the ship. Once awake he offers to join your crew in thanks.</text>	
+		<text>Within the ship graveyard you find one ship that seems relatively untouched. On board you find an unconscious passenger and take him back to the ship. Once awake he offers to join your crew in thanks.</text>
 		<crewMember amount="1"/>
 		<autoReward level="LOW">standard</autoReward>
 	</event>

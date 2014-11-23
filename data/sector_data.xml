@@ -4,11 +4,11 @@
 	<sector>CIVILIAN_SECTOR_1</sector>
 	<sector>CIVILIAN_SECTOR_2</sector>
 	<sector>CIVILIAN_SECTOR_2</sector>
-	<sector>CIVILIAN_SECTOR_3</sector>	
+	<sector>CIVILIAN_SECTOR_3</sector>
 	<sector>CIVILIAN_SECTOR_3</sector>
 	<sector>CIVILIAN_SECTOR_4</sector>
 	<sector>CIVILIAN_SECTOR_4</sector>
-	<sector>ZOLTAN_SECTOR</sector>	
+	<sector>ZOLTAN_SECTOR</sector>
 	<sector>ZOLTAN_HOME</sector>
 	<sector>ROCK_SECTOR</sector>
 </sectorType>
@@ -20,16 +20,16 @@
 	<sector>MANTIS_HOME</sector>
 	<sector>ENGI_SECTOR</sector>
 	<sector>ENGI_HOME</sector>
-	<sector>ROCK_HOME</sector>	
+	<sector>ROCK_HOME</sector>
 </sectorType>
 
 <sectorType name="NEBULA">
 	<sector>NEBULA_SECTOR</sector>
 </sectorType>
 
-<!-- --------------------
-STRUCTURE SECTORS
- ----------------------->
+<!--
+	STRUCTURE SECTORS
+-->
 
 <!-- Start sector; also default to prevent crashes if bad sector names are loaded-->
 <sectorDescription name="STANDARD_SPACE" minSector="0" unique="false">
@@ -39,7 +39,7 @@ STRUCTURE SECTORS
 	<trackList>
 		<track>home</track>
 		<track>bump</track>
-		<track>home2</track>		
+		<track>home2</track>
 		<track>explore</track>
 	</trackList>
 	<startEvent>START_BEACON</startEvent>
@@ -63,7 +63,7 @@ STRUCTURE SECTORS
 	</nameList>
 	<trackList>
 		<track>laststand2</track>
-		<track>laststand1</track>		
+		<track>laststand1</track>
 		<track>laststand3</track>
 	</trackList>
 	<startEvent>BOSS_NEUTRAL</startEvent>
@@ -73,17 +73,17 @@ STRUCTURE SECTORS
 	<event name="BOSS_NEUTRAL" min="7" max="10"/>
 </sectorDescription>
 
-<!-- --------------------
-CIVILIAN SECTORS
- ----------------------->
-<sectorDescription name="CIVILIAN_SECTOR_1" minSector="1" unique="true"> 
+<!--
+	CIVILIAN SECTORS
+-->
+<sectorDescription name="CIVILIAN_SECTOR_1" minSector="1" unique="true">
 	<nameList>
 		<name>Civilian Sector</name>
 	</nameList>
 	<trackList>
 		<track>explore</track>
 		<track>home2</track>
-		<track>bump</track>		
+		<track>bump</track>
 		<track>explore2</track>
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
@@ -92,13 +92,13 @@ CIVILIAN SECTORS
 	<event name="NOTHING_1" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
-	<event name="NEBULA" min="0" max="8"/> 
+	<event name="NEBULA" min="0" max="8"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
 </sectorDescription>
 
-<sectorDescription name="CIVILIAN_SECTOR_2" minSector="2" unique="true"> 
+<sectorDescription name="CIVILIAN_SECTOR_2" minSector="2" unique="true">
 	<nameList>
 		<name>Civilian Sector</name>
 	</nameList>
@@ -106,7 +106,7 @@ CIVILIAN SECTORS
 		<track>explore2</track>
 		<track>explore</track>
 		<track>home2</track>
-		<track>bump</track>		
+		<track>bump</track>
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
@@ -114,17 +114,17 @@ CIVILIAN SECTORS
 	<event name="NOTHING_2" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
-	<event name="NEBULA" min="0" max="8"/> 
+	<event name="NEBULA" min="0" max="8"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
 </sectorDescription>
 
-<sectorDescription name="CIVILIAN_SECTOR_3" minSector="4" unique="true"> 
+<sectorDescription name="CIVILIAN_SECTOR_3" minSector="4" unique="true">
 	<nameList>
 		<name>Civilian Sector</name>
 	</nameList>
-	<trackList>		
+	<trackList>
 		<track>bump</track>
 		<track>explore</track>
 		<track>explore2</track>
@@ -136,13 +136,13 @@ CIVILIAN SECTORS
 	<event name="NOTHING_3" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
-	<event name="NEBULA" min="0" max="8"/> 
+	<event name="NEBULA" min="0" max="8"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
 </sectorDescription>
 
-<sectorDescription name="CIVILIAN_SECTOR_4" minSector="6" unique="true"> 
+<sectorDescription name="CIVILIAN_SECTOR_4" minSector="6" unique="true">
 	<nameList>
 		<name>Civilian Sector</name>
 	</nameList>
@@ -158,17 +158,17 @@ CIVILIAN SECTORS
 	<event name="NOTHING_4" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE2" min="4" max="6"/>
-	<event name="NEBULA" min="0" max="8"/> 
+	<event name="NEBULA" min="0" max="8"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
 	<event name="HOSTILE1" min="2" max="2"/>
 </sectorDescription>
 
-<sectorDescription name="ZOLTAN_SECTOR" minSector="1" unique="false">   
+<sectorDescription name="ZOLTAN_SECTOR" minSector="1" unique="false">
 	<nameList>
 		<name>Sophon Controlled Sector</name>
 	</nameList>
-	<trackList>		
+	<trackList>
 		<track>home2</track>
 		<track>bump</track>
 		<track>explore</track>
@@ -196,7 +196,7 @@ CIVILIAN SECTORS
 	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
 </sectorDescription>
 
-<sectorDescription name="ZOLTAN_HOME" minSector="4" unique="true">   
+<sectorDescription name="ZOLTAN_HOME" minSector="4" unique="true">
 	<nameList>
 		<name>Sophon Homeworlds</name>
 	</nameList>
@@ -204,7 +204,7 @@ CIVILIAN SECTORS
 		<track>explore2</track>
 		<track>home2</track>
 		<track>bump</track>
-		<track>explore</track>		
+		<track>explore</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="4"/>
@@ -229,14 +229,14 @@ CIVILIAN SECTORS
 	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
 </sectorDescription>
 
-<sectorDescription name="ROCK_SECTOR" minSector="2" unique="false">   
+<sectorDescription name="ROCK_SECTOR" minSector="2" unique="false">
 	<nameList>
 		<name>Sower Controlled Sector</name>
 	</nameList>
 	<trackList>
 		<track>rough2</track>
 		<track>wasteland</track>
-		<track>garden</track>		
+		<track>garden</track>
 		<track>explore</track>
 	</trackList>
 	<rarityList>
@@ -261,11 +261,11 @@ CIVILIAN SECTORS
 </sectorDescription>
 
 
-<!-- --------------------
-HOSTILE SECTORS
- ----------------------->
- 
-<sectorDescription name="PIRATE_SECTOR" minSector="0" unique="false">  
+<!--
+	HOSTILE SECTORS
+-->
+
+<sectorDescription name="PIRATE_SECTOR" minSector="0" unique="false">
 	<nameList>
 		<name>Pirate Controlled Sector</name>
 	</nameList>
@@ -289,7 +289,7 @@ HOSTILE SECTORS
 </sectorDescription>
 
 
-<sectorDescription name="REBEL_SECTOR" minSector="0" unique="false">  
+<sectorDescription name="REBEL_SECTOR" minSector="0" unique="false">
 	<nameList>
 		<name>Loyalist Sector</name>
 	</nameList>
@@ -298,7 +298,7 @@ HOSTILE SECTORS
 		<track>rough2</track>
 		<track>voidEmpire</track>
 		<track>bump</track>
-	</trackList>	
+	</trackList>
 	<startEvent>START_BEACON_REBEL</startEvent>
 	<event name="STORE_REBEL" min="1" max="2"/>
 	<event name="STORE" min="0" max="1"/>
@@ -313,12 +313,12 @@ HOSTILE SECTORS
 </sectorDescription>
 
 
-<sectorDescription name="MANTIS_SECTOR" minSector="4" unique="false"> 
+<sectorDescription name="MANTIS_SECTOR" minSector="4" unique="false">
 	<nameList>
 		<name>Hissho Controlled Sector</name>
 	</nameList>
 	<trackList>
-		<track>hectic</track>		
+		<track>hectic</track>
 		<track>rough</track>
 		<track>rough2</track>
 		<track>voidPirate</track>
@@ -341,7 +341,7 @@ HOSTILE SECTORS
 	<event name="NEUTRAL_MANTIS" min="6" max="7"/>
 </sectorDescription>
 
-<sectorDescription name="MANTIS_HOME" minSector="6" unique="true">  
+<sectorDescription name="MANTIS_HOME" minSector="6" unique="true">
 	<nameList>
 		<name>Hissho Nestworlds</name>
 	</nameList>
@@ -370,11 +370,11 @@ HOSTILE SECTORS
 	<event name="NEUTRAL_MANTIS" min="6" max="7"/>
 </sectorDescription>
 
-<sectorDescription name="ENGI_SECTOR" minSector="2" unique="false">  
+<sectorDescription name="ENGI_SECTOR" minSector="2" unique="false">
 	<nameList>
 		<name>Automaton Controlled Sector</name>
 	</nameList>
-	<trackList>		
+	<trackList>
 		<track>garden</track>
 		<track>rough2</track>
 		<track>home2</track>
@@ -398,7 +398,7 @@ HOSTILE SECTORS
 	<event name="HOSTILE_ENGI" min="5" max="7"/>
 </sectorDescription>
 
-<sectorDescription name="ENGI_HOME" minSector="4" unique="true"> 
+<sectorDescription name="ENGI_HOME" minSector="4" unique="true">
 	<nameList>
 		<name>Automaton Homelands</name>
 	</nameList>
@@ -428,7 +428,7 @@ HOSTILE SECTORS
 	<event name="HOSTILE_ENGI" min="5" max="7"/>
 </sectorDescription>
 
-<sectorDescription name="ROCK_HOME" minSector="4" unique="true">   
+<sectorDescription name="ROCK_HOME" minSector="4" unique="true">
 	<nameList>
 		<name>Sower Forgeworlds</name>
 	</nameList>
@@ -436,7 +436,7 @@ HOSTILE SECTORS
 		<track>rough2</track>
 		<track>garden</track>
 		<track>wasteland</track>
-		<track>voidPirate</track>		
+		<track>voidPirate</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="0"/>
@@ -457,22 +457,22 @@ HOSTILE SECTORS
 	<event name="BOARDERS_ROCK" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="QUESTS_ROCK" min="2" max="3"/>
-	<event name="NEUTRAL_ROCK" min="7" max="8"/>	
+	<event name="NEUTRAL_ROCK" min="7" max="8"/>
 </sectorDescription>
 
-<!-- --------------------
-NEBULA SECTORS
- ----------------------->
+<!--
+	NEBULA SECTORS
+-->
 
-<sectorDescription name="NEBULA_SECTOR" minSector="0" unique="false"> 
+<sectorDescription name="NEBULA_SECTOR" minSector="0" unique="false">
 	<nameList>
 		<name>Uncharted Nebula</name>
 	</nameList>
 	<trackList>
-		<track>garden</track>		
+		<track>garden</track>
 		<track>explore2</track>
 		<track>deepspace</track>
-		<track>explore</track>		
+		<track>explore</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="4"/>
@@ -492,7 +492,7 @@ NEBULA SECTORS
 	<event name="DISTRESS_BEACON" min="1" max="3"/>
 </sectorDescription>
 
-<sectorDescription name="SLUG_SECTOR" minSector="4" unique="false">    
+<sectorDescription name="SLUG_SECTOR" minSector="4" unique="false">
 	<nameList>
 		<name>Slug Controlled Nebula</name>
 	</nameList>
@@ -524,7 +524,7 @@ NEBULA SECTORS
 	<event name="NEUTRAL" min="1" max="2"/>
 </sectorDescription>
 
-<sectorDescription name="SLUG_HOME" minSector="6" unique="true">    
+<sectorDescription name="SLUG_HOME" minSector="6" unique="true">
 	<nameList>
 		<name>Slug Home Nebula</name>
 	</nameList>

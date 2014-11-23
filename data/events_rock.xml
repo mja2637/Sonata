@@ -17,11 +17,11 @@
 	<event load="ROCK_MANTIS_FREIGHTER"/>
 	<event load="ROCK_ATHIEST"/>
 	<event load="ROCK_LOOTING"/>
-	<event load="ROCK_STARSHIP_MINE"/>	
+	<event load="ROCK_STARSHIP_MINE"/>
 	<event load="PIRATE_CIVILIAN"/>
 	<event load="MERCENARY"/>
-	<event load="FRIENDLY_SLAVER"/>	
-	<event load="ASTEROID_DERELICT_SHIP"/> 
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="ASTEROID_DERELICT_SHIP"/>
 </eventList>
 
 <eventList name="BOARDERS_ROCK">
@@ -38,7 +38,7 @@
 <eventList name="HOSTILE_ROCK_PIRATE">
 	<event load="ROCK_PIRATE"/>
 	<event load="ROCK_PIRATE_ASTEROID"/>
-	<event load="ROCK_PIRATE_SUN"/>	
+	<event load="ROCK_PIRATE_SUN"/>
 </eventList>
 
 <eventList name="DISTRESS_BEACON_ROCK">
@@ -46,8 +46,8 @@
 	<event load="TRAP_BEACON"/>
 	<event load="STRANDED_BEACON"/>
 	<event load="PIRATE_CIVILIAN_BEACON"/>
-	<event load="CIVILIAN_ASTEROIDS_BEACON"/> 
-	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>
+	<event load="REBEL_VS_FEDERATION"/>
 	<event load="ESCORT_BEACON"/>
 	<event load="DISTRESS_TRAPPED_MINER"/>
 	<event load="DISTRESS_INFESTATION"/>
@@ -61,7 +61,7 @@
 </eventList>
 
 <eventList name="QUESTS_ROCK">
-	<event load="ROCK_QUEST_MARRIAGE_START"/>	
+	<event load="ROCK_QUEST_MARRIAGE_START"/>
 	<event load="QUEST_ESCORT"/>
 	<event load="FEDERATION_PLANET_SIGNAL"/>
 	<event load="MERCENARY_WORK_START"/>
@@ -69,10 +69,10 @@
 </eventList>
 
 
-<!-----------
-		STRUCTURE!!!
-	Requred structural 
------------->
+<!--
+	STRUCTURE!!!
+	Requred structural
+-->
 <event name="START_BEACON_ROCK">
 	<text load="START_BEACON_ROCK"/>
 </event>
@@ -88,7 +88,7 @@
 </event>
 <textList name="STORE_ROCK">
 	<text>You cross paths with a Sower vessel returning from a rare diplomatic mission. Equally surprising, they are remotely pinging your ship's inventory system.</text>
-	<text>You come across a Sower colony on a world in the early stages of terraformation. They must need Dust and raw materials from offworld; they are contacting your ship using the standard galactic communications protocol.</text>	
+	<text>You come across a Sower colony on a world in the early stages of terraformation. They must need Dust and raw materials from offworld; they are contacting your ship using the standard galactic communications protocol.</text>
 	<text>With the local Sower settlements unwilling to communicate with other life forms, an opportunistic Hissho crew has postponed its piratical activities and set up shop to catch any passing trade.</text>
 	<text>A fabrication system in the lifeless husk of a massive Sower capital ship is still functioning after hundreds of thousands of years. A lively interspecies market has formed around this nucleus.</text>
 	<text>You receive a hail on Pilgrim frequencies; a large Sower colony running metastrategic subroutines seemed to have decided to trade with you. You are wary, but robots are not known for being deceitful.</text>
@@ -106,13 +106,13 @@
 	<text>There's not much at this beacon. Just a few abandoned depots, stripped clean.</text>
 	<text>A few Sower logistics vessels pass by but they ignore all communications. Must not be in their programming.</text>
 	<text>You see a small trading post and hail them, but there is only silence.</text>
-	<text>You see a Sophon merchant and ask about his wares. He responds, "Sorry, but it took years to gain their trust. I can't be seen communicating with you. I hope you understand." He cuts communications.</text>	
+	<text>You see a Sophon merchant and ask about his wares. He responds, "Sorry, but it took years to gain their trust. I can't be seen communicating with you. I hope you understand." He cuts communications.</text>
 </textList>
 
-<!-----------
-		HOSTILE!!!
+<!--
+	HOSTILE!!!
 	Events that call up a fight for sure
------------->
+-->
 
 <event name="ROCK_SHIP">
 	<text load="ROCK_SHIP"/>
@@ -130,7 +130,7 @@
 </textList>
 
 <!-- Matt - these were left unfinished by the devs; I should finish them.
-<textList name="ROCK_FIGHT_DESTROYED"> 
+<textList name="ROCK_FIGHT_DESTROYED">
 	<text>Victory! You narrowly avoid a hull breach as one of the Rock crew is propelled by the explosion straight toward your bridge.</text>
 	<text>The Rock ship disintegrates, a jump drive burn out turning its crew to stardust.</text>
 	<text>The enemy hull is torn apart by a final volley. They're with the sandman now.</text>
@@ -161,12 +161,12 @@
 	<text>Their systems suffering, the Sower vessel ejects several tons of matter and diverts what little power remains to engines. They are attempting to limp away.</text>
 	<text>Shields failing and hull integrity on the ropes, the Sower vessel transmits an intergalactic standard distress signal, as well as their cargo manifest.</text>
 	<text>They seem to have given up on their attack and are standing off at a safe distance. Perhaps they're willing to trade their mineral riches for safety.</text>
-	
+
 	<text>The Sower vessel diverts power from weapons to their communications array and pings your ship: "... . .... . ..... .........". They must be signalling their surrender.</text>
 	<text>Their systems suffering, the Sower vessel ejects several tons of matter and diverts what little power remains to engines. They are attempting to limp away.</text>
 	<text>Shields failing and hull integrity on the ropes, the Sower vessel transmits an intergalactic standard distress signal, as well as their cargo manifest.</text>
 	<text>They seem to have given up on their attack and are standing off at a safe distance. Perhaps they're willing to trade their mineral riches for safety.</text>
-	
+
 	<text>The Sower vessel diverts power from weapons to their communications array and pings your ship: "... . .... . ..... .........". They must be signalling their surrender.</text>
 	<text>Their systems suffering, the Sower vessel ejects several tons of matter and diverts what little power remains to engines. They are attempting to limp away.</text>
 	<text>Shields failing and hull integrity on the ropes, the Sower vessel transmits an intergalactic standard distress signal, as well as their cargo manifest.</text>
@@ -184,22 +184,22 @@
 	<text>A Sower ship flies past your windows and you recognise outcast decorations on the hull. This ship must have been captured by pirates!</text>
 	<text>A motley collection of Sower ships are stationed around this beacon, their terraforming tools powered off. Nearby, there are signs of a destroyed planet; these ships must have been here for milleneia! Programming corrupted, they advance towards you. Defensive maneuvers!</text>
 	<text>You don't know how, but a mixed Hissho and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
-	
+
 	<text>Sower pirates are nearly unheard of, given that (everyone assumes) the Sower are merely intelligent robots. To your amazement, a Sower ship without an IFF signature blazes towards you, weapons hot.</text>
 	<text>A Sower ship flies past your windows and you recognise outcast decorations on the hull. This ship must have been captured by pirates!</text>
 	<text>A motley collection of Sower ships are stationed around this beacon, their terraforming tools powered off. Nearby, there are signs of a destroyed planet; these ships must have been here for milleneia! Programming corrupted, they advance towards you. Defensive maneuvers!</text>
 	<text>You don't know how, but a mixed Hissho and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
-	
+
 	<text>Sower pirates are nearly unheard of, given that (everyone assumes) the Sower are merely intelligent robots. To your amazement, a Sower ship without an IFF signature blazes towards you, weapons hot.</text>
 	<text>A Sower ship flies past your windows and you recognise outcast decorations on the hull. This ship must have been captured by pirates!</text>
-	<text>A motley collection of Sower ships are stationed around this beacon, their terraforming tools powered off. Nearby, there are signs of a destroyed planet; these ships must have been here for milleneia! Programming corrupted, they advance towards you. Defensive maneuvers!</text>	
+	<text>A motley collection of Sower ships are stationed around this beacon, their terraforming tools powered off. Nearby, there are signs of a destroyed planet; these ships must have been here for milleneia! Programming corrupted, they advance towards you. Defensive maneuvers!</text>
 	<text>You don't know how, but a mixed Hissho and Human pirate crew has managed to capture a Sower ship and convert it for their use! Perhaps they thought the Sower ship's Endless Hull was worth the effort; let's see how it fairs against your ship's weaponry.</text>
 </textList>
 
-<!-----------
-		NEUTRAL!!!
+<!--
+	NEUTRAL!!!
 	Events that could have a fight
------------->
+-->
 <event name="ROCK_LOOTING" unique="true">
 	<text>You find a disabled Sower transport floating near the beacon. You consider stripping it of useful parts but are uncertain why it's there in the first place.</text>
 	<choice hidden="true">
@@ -217,7 +217,7 @@
 	<choice hidden="true" req="rock">
 		<text>Have your Sower ping the ship's diagnostic systems.</text>
 		<event load="ROCK_LOOTING_ROCK"/>
-	</choice>	
+	</choice>
 </event>
 <eventList name="ROCK_LOOTING_STRIP">
 	<event>
@@ -248,7 +248,7 @@
 		<autoReward level="low">standard</autoReward>
 	</event>
 	<event>
-		<text>You begin the salvage operation but before long your crew warns you of an approaching ship. You hasten to leave before they get within firing range.</text>		
+		<text>You begin the salvage operation but before long your crew warns you of an approaching ship. You hasten to leave before they get within firing range.</text>
 		<autoReward level="low">standard</autoReward>
 	</event>
 </eventList>
@@ -278,7 +278,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true">	
+			<choice hidden="true">
 				<text>Order the away team to side with the establishment.</text>
 				<event>
 					<text>It's not long before the violence on the planet becomes a full-scale battle, your away team and their military-grade weaponry in the very center of it.</text>
@@ -289,13 +289,13 @@
 				</event>
 			</choice>
 		</event>
-	</choice>		
+	</choice>
 	<choice hidden="true">
 		<text>Leave.</text>
 		<event>
 			<text>As long as they're not shooting at the ship it's best to leave them be.</text>
 		</event>
-	</choice>		
+	</choice>
 	<choice hidden="true" req="weapons" lvl="6">
 		<text>(Improved Weapons) Fire a warning shot near to the commotion to announce your arrival.</text>
 		<event>
@@ -359,7 +359,7 @@
 			</event>
 		</choice>
 	</event>
-	<event>	
+	<event>
 		<text>As the battle proceeds the action moves away from your team's location. During the lull they're able to secure some abandoned weapons; by the time they're done the battle is largely over and they return to ship.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
@@ -419,7 +419,7 @@
 			</event>
 		</choice>
 	</event>
-	<event>	
+	<event>
 		<text>As the battle proceeds the action moves away from your team's location. During the lull they're able to secure some abandoned weapons; by the time they're done the battle is largely over and they return to ship.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
@@ -440,13 +440,13 @@
 		<text>Attack!</text>
 		<event>
 			<text>No species deserves a Hissho hunter on their back - time to make the galaxy a little safer. Engage!</text>
-			<ship hostile="true"/>	
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Ignore them.</text>
 		<event>
-			<text>The Hissho take no interest in your ship - they're lying in wait for the next Sower ship to venture through. You're able to spin up the engines and jump at your leisure.</text>		
+			<text>The Hissho take no interest in your ship - they're lying in wait for the next Sower ship to venture through. You're able to spin up the engines and jump at your leisure.</text>
 		</event>
 	</choice>
 	<choice hidden="true" req="ROCK_ARMOR">
@@ -475,7 +475,7 @@
 		<event load="ROCK_MANTIS_FREIGHTER_LIST"/>
 	</choice>
 	<choice hidden="true">
-		<text>Ignore them.</text>	
+		<text>Ignore them.</text>
 		<event>
 			<text>There's quite enough action here already - prepare for light speed.</text>
 		</event>
@@ -539,7 +539,7 @@
 	<choice hidden="true">
 		<text>Stay and capture the Sophon.</text>
 		<event>
-			<text>The Sophon should have known better than to interfere. They still refuse to officially recognize the Pilgrim government - let 'em roast.</text>	
+			<text>The Sophon should have known better than to interfere. They still refuse to officially recognize the Pilgrim government - let 'em roast.</text>
 			<ship load="ROCK_ZOLTAN_HELP_ZOLTAN" hostile="true"/>
 		</event>
 	</choice>
@@ -550,7 +550,7 @@
 		</event>
 	</choice>
 </event>
-<ship name="ROCK_ZOLTAN_HELP_ROCK" auto_blueprint="SHIPS_ROCK"> 
+<ship name="ROCK_ZOLTAN_HELP_ROCK" auto_blueprint="SHIPS_ROCK">
 	<destroyed>
 		<text>The Sower ship's hull breaks apart. You salvage the wreck before contacting the Sophon ship.</text>
 		<autoReward level="LOW">standard</autoReward>
@@ -574,7 +574,7 @@
 		</choice>
 	</deadCrew>
 </ship>
-<ship name="ROCK_ZOLTAN_HELP_ZOLTAN" auto_blueprint="SHIPS_ZOLTAN"> 
+<ship name="ROCK_ZOLTAN_HELP_ZOLTAN" auto_blueprint="SHIPS_ZOLTAN">
 	<destroyed>
 		<text>The Sower ship arrives just as you put the finishing blows to the Sophon ship. They're not of a mind to thank you, and you get the impression it'd be best if you left post haste..</text>
 		<autoReward level="LOW">standard</autoReward>
@@ -655,7 +655,7 @@
 					</item_modify>
 					<autoReward level="LOW">scrap_only</autoReward>
 				</event>
-			</choice>			
+			</choice>
 		</event>
 	</choice>
 	<choice hidden="true" req="engines" lvl="5">
@@ -694,13 +694,13 @@
 	</event>
 </eventList>
 
-<!-----------
-		BOARDERS!!!
+<!--
+	BOARDERS!!!
 	Events with boarder calls
------------->
+-->
 
 <event name="ROCK_BOARDERS_SHIP">
-	<text load="ROCK_BOARDERS_SHIP"/>	
+	<text load="ROCK_BOARDERS_SHIP"/>
 	<boarders min="1" max="3" class="rock"/>
 	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
@@ -711,7 +711,7 @@
 
 
 <event name="ROCK_BOARDERS_ASTEROID">
-	<text load="ROCK_BOARDERS_ASTEROID"/>	
+	<text load="ROCK_BOARDERS_ASTEROID"/>
 	<boarders min="1" max="2" class="rock"/>
 	<environment type="asteroid"/>
 	<ship load="ROCK_SHIP" hostile="true"/>
@@ -722,22 +722,22 @@
 </textList>
 
 <event name="ROCK_BOARDERS_SUN">
-	<text load="ROCK_BOARDERS_SUN"/>	
+	<text load="ROCK_BOARDERS_SUN"/>
 	<environment type="sun"/>
 	<boarders min="2" max="3" class="rock"/>
 </event>
 <textList name="ROCK_BOARDERS_SUN">
 	<text>As soon as you arrive you hear the telltale sounds of a teleporter and clanks reverberating through the ship. Time to go 5-0 on Johnny 5's mechanical ass.</text>
 	<text>With their high resistance to heat, the Sower often attempt to harness the massive energy output of stars. You're not surprised to find Sower here next to this dying sun, but you are surprised when they teleport aboard!</text>
-	
+
 	<text>As soon as you arrive you hear the telltale sounds of a teleporter and clanks reverberating through the ship. Time to go 5-0 on Johnny 5's mechanical ass.</text>
 	<text>With their high resistance to heat, the Sower often attempt to harness the massive energy output of stars. You're not surprised to find Sower here next to this dying sun, but you are surprised when they teleport aboard!</text>
 </textList>
 
-<!-----------
-		ENVIRONMENT!!!
+<!--
+	ENVIRONMENT!!!
 	Events with unique environments
------------->
+-->
 
 <event name="ROCK_FIGHT_ASTEROID" unique="true">
 	<environment type="asteroid"/>
@@ -770,9 +770,9 @@
 	<text>A Sower ship is silhouetted against a sun in supernova. Is it attempting to terraform an entire star!? The follies of machines and men...regardless, they charge their weapons as you approach.</text>
 </textList>
 
-<!-----------
-		QUESTS!!!
------------->
+<!--
+	QUESTS!!!
+-->
 
 <event name="ROCK_QUEST_MARRIAGE_START" unique="true">
 	<img back="EXCITING" planet="NONE"/>
@@ -803,13 +803,13 @@
 					<text>Your passenger shakes his head. "I never would have thought a Pilgrim would betray the Endless." Before you can power up your engines, loyalist assault troops beam aboard, grab the passenger, and beam back to the carrier. They left some Dust. Best to leave before the Empire rethinks its generosity.</text>
 					<augment name="RANDOM"/>
 					<autoReward level="LOW">scrap_only</autoReward>
-				</event>					
+				</event>
 			</choice>
 			<choice hidden="true">
 				<text>"It belongs in a museum!"</text>
 				<event>
 					<text>"So do you! I've had enough of your antiquated re-" Grinning mischeviously, your passenger terminates the conversation. "Beam that crate down, and let's get the hell out of here!"</text>
-					<crewMember amount="1" class="human">Indy</crewMember> 
+					<crewMember amount="1" class="human">Indy</crewMember>
 					<ship load="ROCK_QUEST_MARRIAGE" hostile="true"/>
 				</event>
 			</choice>
@@ -822,19 +822,19 @@
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>"You call this archeology?" You blow the closest loyalist ship into dust and escape the system.</text>	
+		<text>"You call this archeology?" You blow the closest loyalist ship into dust and escape the system.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
 </ship>
 
 
 
-<!-----------
-		SPECIAL!!!
+<!--
+	SPECIAL!!!
 	Special events
 
 Unlock - follow a mysterious, intelligent Sower to a Dyson Sphere. Activate an Endless artifact which powers it up.
------------->
+-->
 
 
 <event name="ROCK_UNLOCK1" unique="true">
@@ -864,7 +864,7 @@ Unlock - follow a mysterious, intelligent Sower to a Dyson Sphere. Activate an E
 <event name="ROCK_UNLOCK2">
 	<text>You arrive at the coordinates and sensors show you dangerously close to a star! Squinting against the blinding light, you can see a massive, dark object between you and the star. You'll have to analyze it later - the Sower ship attacks!</text>
 	<ship load="ROCK_UNLOCK2" hostile="true"/>
-	<environment type="sun"/>	
+	<environment type="sun"/>
 </event>
 <event name="ROCK_UNLOCK3">
 	<text>Your mouth drops open in awe - you didn't think something like this was physically possible. Your ship comes out of FTL in front of a massive Dyson sphere surrounding an M-class star! The ship that had just tried to kill you is docked and already being repaired. Before you have time to close your mouth, you feel a tingling sensation as you are beamed off the ship. You materialize in a clean white room and are able to breath. There is nothing in the room but a massive Endless artifact that seems to still be active. Perhaps reacting to your presence, it begins to glow with a bright white light.</text>

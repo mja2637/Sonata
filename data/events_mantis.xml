@@ -1,37 +1,37 @@
 <!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved -->
 
 <!-- ' , " " "
-			SUMMARY - 
+			SUMMARY -
 A list of all main events to be called by lists
 	does not include sub-events)
-	
+
 Structure:
 	START_BEACON_MANTIS
 	STORE_MANTIS
 	NOTHING_MANTIS
-	
+
 Items:
 	MANTIS_CAPTURE_COMMANDO			NEW!!
 	MANTIS_GAMBLE					NEW!!
-	
+
 Hostile:
 	MANTIS_FIGHT
-	
+
 Neutral:
 	MANTIS_FIGHT_CHOICE
 	MANTIS_CIVILIAN
 	MANTIS_CREW
-	
+
 Environment:
 						???	MANTIS_NEBULA_FIGHT
 	MANTIS_SUN_FIGHT
-	
+
 Boarders:
 	MANTIS_BOARDERS
 
 Special
 	MANTIS_NAMED_THIEF
---->
+-->
 
 <eventList name="NOTHING_MANTIS_SECTOR">
 	<event load="NOTHING_MANTIS"/>
@@ -44,9 +44,9 @@ Special
 </eventList>
 
 
-<!--------------------------------
+<!--
 	MANTIS EVENTLISTS
----------------------------------->
+-->
 
 
 <eventList name="HOSTILE_MANTIS">
@@ -54,7 +54,7 @@ Special
 	<event load="MANTIS_FIGHT"/>
 	<event load="MANTIS_SUN_FIGHT"/>
 	<event load="DONOR_MANTIS_CHASE"/>
-	
+
 	<event load="REBEL"/>
 	<event load="AUTO_ASTEROID"/>
 	<event load="AUTO_WARNING"/>
@@ -65,10 +65,10 @@ Special
 	<event load="MANTIS_FIGHT_CHOICE"/>
 	<event load="MANTIS_CIVILIAN"/>
 	<event load="MANTIS_CREW"/>
-	
+
 	<event load="REBEL_TRANSPORT"/>
 	<event load="BROKEN_REBEL_DRONE"/>
-	
+
 	<event load="ALISON_MANTIS_CREW"/> <!-- new alison written event -->
 </eventList>
 
@@ -92,10 +92,10 @@ Special
 
 
 
-<!-----------
+<!--
 		STRUCTURE!!!
 	Others events necessary for strucrtural stuff
------------->
+-->
 
 <event name="START_BEACON_MANTIS">
 	<text>You've entered a poorly charted area of space that's known to be home to the Hissho. Ensure your hull plating is up to scratch and that you have enough fuel in the tank to make it through.</text>
@@ -129,10 +129,10 @@ Special
 
 
 
-<!-----------
+<!--
 		ITEMS!!!
 	Events that give items
------------->
+-->
 
 <event name="MANTIS_CAPTURE_COMMANDO" unique="true">
 	<text>You come across an Automaton wreck with one life-sign aboard; it turns out to be the sole survivor of the Hissho boarding party that wiped out the ship's crew. He's in no state to fight and he's brought aboard.</text>
@@ -171,7 +171,7 @@ Special
 	</event>
 </eventList>
 <eventList name="MANTIS_CAPTURE_COMMANDO_TALK">
-	<event>	
+	<event>
 		<text>It's not clear what occurs between the two Hissho behind the locked door, but when they emerge the commando is prepared to provide telemetry on the local sector. He then leaves on the Automaton ship. Your map has been updated.</text>
 		<reveal_map/>
 	</event>
@@ -181,8 +181,8 @@ Special
 		<autoReward level="MED">stuff</autoReward>
 	</event>
 </eventList>
-		
-	
+
+
 <event name="MANTIS_GAMBLE" unique="true">
 	<text>This node is currently home to a Hissho leisure ship: a place of brothels and combat arenas for warriors to release steam. When they scan your inventory they indicate that you're eligible to engage in a grand game of chance.</text>
 	<choice hidden="true">
@@ -270,12 +270,12 @@ Special
 
 
 
-<!-----------
+<!--
 		HOSTILE!!!
 	Events that call up a fight for sure
------------->
+-->
 
-<event name="MANTIS_FIGHT" unique="false">  
+<event name="MANTIS_FIGHT" unique="false">
 	<text load="MANTIS_FIGHT"/>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 </event>
@@ -307,12 +307,12 @@ Special
 
 
 
-<!-----------
+<!--
 		NEUTRAL!!!
 	Events that could have a fight
------------->
+-->
 
-<event name="MANTIS_FIGHT_CHOICE" unique="false">  
+<event name="MANTIS_FIGHT_CHOICE" unique="false">
 	<text load="MANTIS_FIGHT_CHOICE"/>
 	<ship load="MANTIS_FIGHT" hostile="false"/>
 	<choice hidden="true">
@@ -364,7 +364,7 @@ Special
 	</event>
 </eventList>
 
-<event name="MANTIS_CIVILIAN" unique="false">  
+<event name="MANTIS_CIVILIAN" unique="false">
 	<text load="MANTIS_CIVILIAN"/>
 	<ship load="MANTIS_CIVILIAN" hostile="false"/>
 	<choice hidden="true">
@@ -387,7 +387,7 @@ Special
 	<text>A Hissho ship engaging a civilian hails you. Sparks fly about his cockpit as he yells, "Stay out of this human! Else you are next!"</text>
 	<text>Local sensors pick up two ships engaged in a heated battle. It seems the Hissho military ship will surely defeat its prey.</text>
 	<text>You pick up a distress call from a civilian ship. It's being chased by a Hissho ship!</text>
-	
+
 	<text>A Hissho vessel flashes past your view-screen, weapons and engines at full. A tiny blip on the sensor readout marks its quarry.</text>
 	<text>You spot a Hissho ship hunting in the distance.</text>
 	<text>A Hissho ship engaging a civilian hails you. Sparks fly about his cockpit as he yells, "Stay out of this human! Else you are next!"</text>
@@ -398,7 +398,7 @@ Special
 	<text>Smoking, the civilian ship limps on. You set your sights on the future.</text>
 	<text>The noise of the FTL spinning up almost drowns out the explosions. Almost.</text>
 	<text>You let them pass and try not to think about it.</text>
-	
+
 	<text>Smoking, the civilian ship limps on. You set your sights on the future.</text>
 	<text>The noise of the FTL spinning up almost drowns out the explosions. Almost.</text>
 	<text>You let them pass and try not to think about it.</text>
@@ -417,7 +417,7 @@ Special
 		<event load="MANTIS_CREW_LIST"/>
 	</choice>
 </event>
-<eventList name="MANTIS_CREW_LIST">	
+<eventList name="MANTIS_CREW_LIST">
 	<event>
 		<text>The Hissho inside is FURIOUS. He cuts the closest person in half with a single swipe. Kill it before anyone else is hurt.</text>
 		<boarders min="1" max="1" class="mantis"/>
@@ -433,20 +433,20 @@ Special
 	</event>
 </eventList>
 
-<!-----------
+<!--
 		ENVIRONMENT!!!
 	Events with unique environments
------------->
-<event name="MANTIS_SUN_FIGHT" unique="false">  
+-->
+<event name="MANTIS_SUN_FIGHT" unique="false">
 	<text>Who knows why the Hissho would venture so close to a sun. Perhaps it makes for more of a challenge?</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<environment type="sun"/>
 </event>
 
-<!-----------
+<!--
 		BOARDERS!!!
 	Events with boarders
------------->
+-->
 <event name="MANTIS_BOARDERS">
 	<text load="MANTIS_BOARDERS"/>
 	<choice>
@@ -454,11 +454,11 @@ Special
 		<event>
 			<boarders min="2" max="4" class="mantis"/>
 		</event>
-	</choice>	
+	</choice>
 	<choice hidden="true" req="teleporter">
 		<text>(Teleporter) Beam 'em into space.</text>
 		<event/>
-	</choice>	
+	</choice>
 </event>
 <textList name="MANTIS_BOARDERS">
 	<text>A derelict and still smoking Hissho vessel floats by. The battle must have been recent; its surviving crew beam aboard.</text>
@@ -470,10 +470,10 @@ Special
 
 
 
-<!-----------
+<!--
 		SPECIAL!!!
 	Unique events
------------->
+-->
 
 <event name="MANTIS_NAMED_THIEF" unique="true"> <!-- NOTE - make globally unique -->
 	<ship load="MANTIS_NAMED_THIEF" hostile="false"/>
