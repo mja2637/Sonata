@@ -57,6 +57,7 @@ Boarders:
 	<event load="ASTEROID_EXPLORE"/>
 
 	<event load="ASTEROID_DERELICT_SHIP"/> <!-- CRYSTAL UNLOCK-->
+	<event load="REFUGEE_NO_DISTRESS_PIRATE"/> <!--DLC - In newEvents-->
 </eventList>
 
 
@@ -79,6 +80,7 @@ Boarders:
 	<event load="DISTRESS_TRAPPED_MINER"/>
 	<event load="DISTRESS_STATION_FIRE"/>
 	<event load="DISTRESS_STATION_DISEASE"/>
+	<event load="REFUGEE_DISTRESS_PIRATE"/> <!--DLC - In newEvents-->
 </eventList>
 
 <eventList name="NEBULA_PIRATE">
@@ -168,6 +170,19 @@ Boarders:
 	<text>Once you arrive, your screen lights up with warnings. A nearby pirate seems to have advanced hacking tools and they have tried to shut down our engines. Your crew manages to keep them barely operational and you move into attack.</text>
 	<status type="limit" target="player" system="engines" amount="1"/>
 	<ship load="PIRATE_NO_ESCAPE" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<status type="limit" target="player" system="engines" amount="1"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="hacking"> <!-- CHANGED - added -->
+		<text>(Hacking System) Counter the remote hacking.</text>
+		<event>
+			<text>Your Hacking System automatically counters the digital assault and you move in to fight the ship.</text>
+			<status type="limit" target="player" system="hacking" amount="0"/>
+		</event>
+	</choice>
 </event>
 
 <!--
@@ -223,7 +238,7 @@ Boarders:
 		</choice>
 	</event>
 	<event>
-		<text>The ship that the pirate was assaulting was a science vessel. They thank you for saving them and offer a small reward.</text>
+		<text>Apparently the ship that was being assaulted was a science vessel. They thank you for saving them and offer a small reward.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
 	<event>
@@ -274,6 +289,7 @@ Boarders:
 		<choice hidden="true">
 			<text>Destroy the ship and salvage it</text>
 			<event>
+				<text>You strip the ship of anything useful and leave its crew to hope help arrives.</text>
 				<autoReward level="LOW">standard</autoReward>
 			</event>
 		</choice>
@@ -314,7 +330,7 @@ Boarders:
 	<choice>
 		<text>Pay their toll.</text>
 		<event>
-			<text>"You made the right decision friend."</text>
+			<text>"You made the right decision, friend."</text>
 			<item_modify>
 				<item type="scrap" min="-25" max="-15"/>
 			</item_modify>
@@ -330,12 +346,16 @@ Boarders:
 </event>
 
 <event name="PIRATE_SLAVER" unique="false">
-	<text>An especially well-armed pirate ship approaches you. "Hand over one of your crew-members and the rest of you can go free unharmed"</text>
+	<text>An especially well-armed pirate ship approaches you. "Hand over one of your crew-members and the rest of you can go free unharmed."</text>
 	<ship load="PIRATE_SLAVER" hostile="false"/>
 	<choice>
 		<text>Draw straws and send a crew-member over to the slavers.</text>
 		<event>
-			<crewMember amount="-1"/>
+			<text>The chosen crew-member leaves without complaint, knowing you had no choice.</text>
+			<removeCrew>
+				<clone>false</clone>
+				<text>You briefly consider cloning a replacement, but decide to respect the Pilgrim taboo against simultaneous duplicates.</text>
+			</removeCrew>
 		</event>
 	</choice>
 	<choice>
@@ -368,12 +388,12 @@ Boarders:
 
 <event name="FRIENDLY_SLAVER" unique="true"> <!-- add an event if you kill the crew? -->
 	<ship load="PIRATE_SLAVER" hostile="false"/>
-	<text>You recognize the ship as a well known slave trader. He hails you and offers you "laborers" for cheap.</text>
+	<text>You recognize the ship as a well-known slave trader. He hails you and offers you "laborers" for cheap.</text>
 	<choice>
 		<text>Buy one slave and free them to join your crew.</text>
 		<event>
 			<item_modify>
-				<item type="scrap" min="-50" max="-60"/>
+				<item type="scrap" min="-45" max="-25"/>
 			</item_modify>
 			<crewMember amount="1"/>
 		</event>
@@ -482,7 +502,7 @@ Boarders:
 </textList>
 
 
-<event name="BOARDERS_SUN">
+<event name="BOARDERS_SUN" unique="true">
 	<text>You arrive to find yourself extremely close to a star. You receive a message from a pirate ship, "I'm glad you arrived; our ship is damaged and we were getting desperate... I hope you don't mind if we take yours." Hostiles detected on board our ship!</text>
 	<choice>
 		<text>Continue...</text>
@@ -497,7 +517,7 @@ Boarders:
 	<environment type="sun"/>
 </event>
 
-<event name="BOARDERS_ASTEROID">
+<event name="BOARDERS_ASTEROID" unique="true">
 	<img back="BG_DARK" planet="NONE"/>
 	<environment type="asteroid"/>
 	<text>You jump into a perilous asteroid field. Worse, sensors show a pirate stronghold has locked onto our ship and is activating a teleporter. Prepare for a fight!</text>
@@ -520,7 +540,7 @@ Boarders:
 		<event load="FLOATING_CARGO_LIST"/>
 	</choice>
 	<choice hidden="true">
-		<text>Leave it alone, looks suspicious.</text>
+		<text>Leave it alone, this looks suspicious.</text>
 		<event>
 			<text>You leave the cargo alone and prepare to jump.</text>
 		</event>
@@ -536,7 +556,7 @@ Boarders:
 </event>
 <eventList name="FLOATING_CARGO_LIST">
 	<event>
-		<text>They appear to be filled with some military supplies! You take everything you can use and jettison the rest.</text>
+		<text>They appear to be filled with military supplies! You take everything you can use and jettison the rest.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
 	<event>
@@ -561,7 +581,7 @@ Boarders:
 		</item_modify>
 	</event>
 	<event>
-		<text>Your advanced sensors are able to breach the protective barrier and scan the cargo. It appears to be filled with some military supplies! You take everything you can use.</text>
+		<text>Your Advanced Sensors are able to breach the protective barrier and scan the cargo. It appears to be filled with military supplies! You take everything you can use.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
 	<event>

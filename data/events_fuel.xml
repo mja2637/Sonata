@@ -34,6 +34,12 @@ Sector Specific:
 	<fleet>rebel</fleet>
 </event>
 
+<event name="NO_FUEL_FLEET_DLC">
+	<text>Your pilot deftly avoids incoming artillery fire from the surrounding fleet while you try to sort out exactly what your plan is... One of the many approaching fighters gets into weapon range and your scanners detect it has surplus fuel. Maybe you can still pull this off.</text>
+	<ship load = "REBEL_FLEET_FUEL" hostile ="true"/>
+	<fleet>rebel</fleet>
+	<environment type="PDS" target="player"/>
+</event>
 <!--
 DEFAULT FUEL EVENTS
 Beacon Off.....
@@ -51,6 +57,7 @@ Beacon Off.....
 	<event load="FUEL_APPROACH"/>
 	<event load="FUEL_OFF_ENGI_DUBIOUS"/>
 	<event load="FUEL_OFF_ROCK_WRECK"/>
+	<event load="NO_FUEL_REFUGEE_FRIENDLY"/> <!-- DLC - below -->
 </eventList>
 
 <event name="FUEL_FLEET_DELAY">
@@ -288,6 +295,7 @@ Beacon On!!!!
 	<event load="FUEL_ON_MANTIS_ATTACK"/>
 	<event load="FUEL_ON_REBEL_WARNING"/>
 	<event load="FUEL_ON_REBEL_ATTACK"/>
+	<event load="NO_FUEL_REFUGEE"/> <!-- DLC - below -->
 </eventList>
 
 <event name="FUEL_FLEET_DISTRESS">
@@ -333,7 +341,7 @@ Beacon On!!!!
 			<autoReward level="LOW">fuel_only</autoReward>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="false">
 		<text>5 Fuel for 20 Dust.</text>
 		<event>
 			<text>"Automated re-fueling complete."</text>
@@ -343,7 +351,7 @@ Beacon On!!!!
 			</item_modify>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="false">
 		<text>Buy 2 Fuel for 8 Dust.</text>
 		<event>
 			<text>"Automated re-fueling complete."</text>
@@ -396,18 +404,18 @@ Beacon On!!!!
 	<event>
 		<item_modify>
 			<item type="fuel" min="2" max="5"/>
-			<item type="scrap" min="-15" max="-25"/>
+			<item type="scrap" min="-25" max="-15"/>
 		</item_modify>
 	</event>
 </eventList>
 <eventList name="FUEL_TRADER_PT2"> <!-- this list is if the player cant afford the initial trade, he'll either give up and leave or give a second cheaper offer.-->
 	<event>
-		<text>They respond: "Seeing how you're in need, is this trade acceptable?"</text>
+		<text>They respond: "Seeing that you're in need, is this trade acceptable?"</text>
 		<choice>
 			<text>Accept the offer.</text>
 			<event load="FUEL_TRADER_LOW_LIST"/>
 		</choice>
-		<choice hidden="true">>
+		<choice hidden="true">
 			<text hidden="true">Decline again.</text>
 			<event load="FUEL_TRADER_PT3"/>
 		</choice>
@@ -426,7 +434,7 @@ Beacon On!!!!
 		</choice>
 	</event>
 	<event>
-		<text>Before they jump away, their captain says, "I'm sorry but we are unable to help in any other way."</text>
+		<text>Before they jump away, their captain says, "I'm sorry, but we are unable to help in any other way."</text>
 	</event>
 </eventList>
 <eventList name="FUEL_TRADER_LOW_LIST">
@@ -445,7 +453,7 @@ Beacon On!!!!
 	<event>
 		<item_modify>
 			<item type="fuel" min="3" max="7"/>
-			<item type="scrap" min="-5" max="-12"/>
+			<item type="scrap" min="-12" max="-5"/>
 		</item_modify>
 	</event>
 </eventList>
@@ -593,6 +601,13 @@ Beacon On!!!!
 			<text>The Sower don't take kindly to aliens picking through their belongings, no matter how decrepit they may seem, and you don't take risks in Sower territory. </text>
 		</event>
 	</choice>
+	<choice hidden="true" req="LIFE_SCANNER"> <!--DLC-->
+		<text>(Life Scanner) Run additional scans.</text>
+		<event>
+			<text>The ship appears to be entirely lifeless. Your crew is able to find some usable fuel cells after a brief search.</text>
+			<autoReward level="MED">fuel_only</autoReward>
+</event>
+	</choice>
 </event>
 <eventList name="FUEL_OFF_ROCK_WRECK_LIST">
 	<event>
@@ -615,7 +630,7 @@ Beacon On!!!!
 			<event>
 				<text>Despite its fragile condition, the Sower is good to his word and returns your crew-member, who is suitably grateful. Sadly, gratitude doesn't power the FTL drive.</text> <!-- JUSTIN - TO DO - I don't like this one since you don't know who's being ransomed -->
 				<item_modify >
-					<item type="scrap" min="-25" max="-40"/>
+					<item type="scrap" min="-40" max="-25"/>
 				</item_modify>
 			</event>
 		</choice>
@@ -623,7 +638,10 @@ Beacon On!!!!
 			<text>Refuse.</text>
 			<event>
 				<text>It's a tough call, but it's for the Pilgrims and the liberty of all. You set off before you can change your mind.</text>
-				<crewMember amount="-1"/>
+				<removeCrew>
+					<clone>false</clone>
+					<text>Before preparing to jump you check the Clone Bay but there is no sign of activity.</text>
+				</removeCrew>
 			</event>
 		</choice>
 	</event>
@@ -715,7 +733,7 @@ Beacon On!!!!
 			<event>
 				<text>Everything looks secure but suddenly a number of supplies disappear! He must have planted a portable teleporter into your cargo bay somehow. Before you can react his ship is long gone.</text>
 				<item_modify steal="true">
-					<item type="scrap" min="-20" max="-35"/>
+					<item type="scrap" min="-35" max="-20"/>
 					<item type="missiles" min="-4" max="-2"/>
 				</item_modify>
 			</event>
@@ -733,7 +751,7 @@ Beacon On!!!!
 <event name="FUEL_ON_SLUG_OVERPRICED">
 	<text>A mobile Slugman fuel depot enters scanning range. "My prices are fair, but I ask one thing - do not insult me with negotiation!" You check out his price list.</text>
 	<ship load="JELLY_OVERPRICED" hostile="false"/>
-	<choice hidden="true">
+	<choice hidden="false">
 		<text>Buy 5 fuel for 50 Dust.</text>
 		<event>
 			<text>The trader looks shocked. You're struck by the sense that this is the first time anyone's ever paid him these prices.</text>
@@ -743,7 +761,7 @@ Beacon On!!!!
 			</item_modify>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="false">
 		<text>Buy 10 fuel for 95 Dust. (BEST DEAL!)</text>
 		<event>
 			<text>The trader looks shocked. You're struck by the sense that this is the first time anyone's ever paid him these prices.</text>
@@ -761,3 +779,157 @@ Beacon On!!!!
 		</event>
 	</choice>
 </event>
+
+
+
+
+
+
+
+
+
+<!-----------
+
+***************************************
+		DLC!!!
+	Events added with the DLC
+***************************************
+	NO_FUEL_REFUGEE
+	NO_FUEL_REFUGEE_FRIENDLY
+	------------>
+
+
+<!-- Distress beacon on -->
+
+<eventList name="NO_FUEL_REFUGEE">  <!-- I made this one compile all 3 so they're less likely than the normal events-->
+	<event>
+		<text>A refugee ship fleeing the Rebel advance enters the system, having picked up your distress beacon. While it doesn't have much fuel to spare, it recognizes you are part of the Federation and offers to split its remaining fuel with you.</text>
+		<autoReward level="LOW">fuel_only</autoReward>
+	</event>
+	<event load="NO_FUEL_REFUGEE_DAMAGED"/>
+	<event load="NO_FUEL_REFUGEE_PIRATE"/>
+</eventList>
+
+<event name="NO_FUEL_REFUGEE_DAMAGED">
+	<text>A refugee ship fleeing the Rebel advance enters the system, having picked up your distress beacon. While it doesn't have much fuel to spare, its hull looks damaged - it is in bad need of scrap and is willing to trade fuel for it.</text>
+	<choice>
+		<text>Trade some scrap for fuel.</text>
+		<event>
+			<text>The refugees thank you for the parts, and gladly pass along the much-needed fuel. They wish you well on your mission, and declare their support for the Federation.</text>
+			<item_modify>
+				<item type="fuel" min="3" max="3"/>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Engi Crew) Negotiate a better trade.</text>
+		<event>
+			<text>Your Engi analyzes scans of the extensive damage to their hull, calculating potential repair costs. The refugees grumble and protest, but in the end, they admit that their need for repairs is greater than their fuel surplus and offer a better trade.</text>
+			<choice>
+				<text>Accept it.</text>
+				<event>
+					<item_modify>
+						<item type="fuel" min="6" max="6"/>
+						<item type="scrap" min="-10" max="-10"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice>
+				<text>Refuse it.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Refuse their offer.</text>
+		<event load="NO_FUEL_REFUGEE_REFUSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>The helpless refugees make easy targets. Attack them.</text>
+		<event>
+			<text>Panicked, the refugees immediately surrender as your weapons power up. They pass along their fuel and what few other supplies they have left in exchange for their lives.</text>
+			<autoReward level="MED">fuel</autoReward>
+		</event>
+	</choice>
+</event>
+
+<eventList name="NO_FUEL_REFUGEE_REFUSE">
+	<event>
+		<text>The refugee ship cuts communications and jumps from the system without another word, the galactic equivalent of giving you the cold shoulder.</text>
+	</event>
+	<event>
+		<text>The refugees become desperate at your refusal - apparently, their hull is even more damaged than it first appears. Almost begging, they offer a better trade than before.</text>
+		<choice>
+			<text>Accept it.</text>
+			<event>
+				<item_modify>
+					<item type="fuel" min="6" max="6"/>
+					<item type="scrap" min="-10" max="-10"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Refuse their offer again.</text>
+			<event>
+				<text>The refugee ship cuts communications and jumps from the system without another word, the galactic equivalent of giving you the cold shoulder.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<event name="NO_FUEL_REFUGEE_PIRATE">
+	<text>A refugee ship fleeing the Rebel advance enters the system, having picked up your distress beacon. While it doesn't have much fuel to spare, it is bad need of armaments and is willing to trade for them.</text>
+	<choice>
+		<text>Offer some missiles for fuel.</text>
+		<event load="NO_FUEL_REFUGEE_PIRATE_ACCEPT"/>
+	</choice>
+	<choice>
+		<text>Refuse their offer.</text>
+		<event load="NO_FUEL_REFUGEE_PIRATE_REJECT"/>
+	</choice>
+</event>
+
+<eventList name="NO_FUEL_REFUGEE_PIRATE_ACCEPT">
+	<event>
+		<text>The refugee ship makes the exchange, and wishes you well on your mission.</text>
+		<item_modify>
+			<item type="fuel" min="5" max="7"/>
+			<item type="missiles" min="-1" max="-1"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Having traded supplies, the ship suddenly powers up and attacks - it's a pirate ship!</text>
+		<item_modify>
+			<item type="fuel" min="5" max="7"/>
+			<item type="missiles" min="-1" max="-1"/>
+		</item_modify>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+</eventList>
+
+<eventList name="NO_FUEL_REFUGEE_PIRATE_REJECT">
+	<event>
+		<text>The refugee ship apologizes, but they need their fuel. They wish you well, and then vanish from the system.</text>
+	</event>
+	<event>
+		<text>Sensing your reluctance, the refugee ship nevertheless parts with a small amount of fuel. It warns you to leave the sector as quickly as possible before it is overtaken by Rebels, then it jumps and vanishes to parts unknown.</text>
+		<autoReward level="LOW">fuel_only</autoReward>
+	</event>
+	<event>
+		<text>Taking your reluctance as weakness, the refugee ship suddenly bristles with weapons - it's a pirate ship, and it believes it's found easy prey!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event>
+		<text>Taking your reluctance as weakness, the refugee ship suddenly bristles with weapons - it's a pirate ship, and it believes it's found easy prey!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+</eventList>
+
+<!--- Distress beacon off -->
+
+<event name="NO_FUEL_REFUGEE_FRIENDLY">
+	<text>A refugee ship fleeing the Rebel advance enters the system. It seems surprised to see you stranded, and admits it was following you from afar in the hopes of you leading it to Federation space. While it doesn't have much fuel to spare, it recognizes you are part of the Federation and offers to split its remaining fuel with you.</text>
+	<autoReward level="MED">fuel_only</autoReward>
+</event>
+

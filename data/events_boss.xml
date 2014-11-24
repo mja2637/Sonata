@@ -201,7 +201,7 @@ Neutral
 		<text>The people you rescued were primarily refugees fleeing the conflict. They offer you their sincere gratitude.</text>
 	</event>
 	<event>
-		<text>You are hailed, "Thank you!  It's not much but we can repair a bit of damage before you jump off into the war. Good luck!"</text>
+		<text>You are hailed, "Thank you! It's not much but we can repair a bit of damage before you jump off into the war. Good luck!"</text>
 		<damage amount="-8"/>
 	</event>
 	<event>
@@ -218,7 +218,7 @@ Neutral
 	<destroyed>
 		<text>With the loyalist ship destroyed you are free to contact their would-be victim.</text>
 		<autoReward level="MED">standard</autoReward>
-		<choice>
+		<choice hidden="true">
 			<text>Contact the survivors.</text>
 			<event load="BOSS_SCOUT_RESCUE_LIST"/>
 		</choice>
@@ -226,7 +226,7 @@ Neutral
 	<deadCrew>
 		<text>With the UN ship defeated you quickly salvage what you can and move to contact their prey.</text>
 		<autoReward level="HIGH">standard</autoReward>
-		<choice>
+		<choice hidden="true">
 			<text>Contact the survivors.</text>
 			<event load="BOSS_SCOUT_RESCUE_LIST"/>
 		</choice>

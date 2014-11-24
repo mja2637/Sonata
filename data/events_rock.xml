@@ -10,6 +10,17 @@
 	<event load="NOTHING_3"/>
 </eventList>
 
+<eventList name="HOSTILE_ROCK">
+	<event load="ROCK_SHIP"/>
+	<event load="ROCK_FIGHT_ASTEROID"/>
+</eventList>
+
+<eventList name="HOSTILE_ROCK_PIRATE">
+	<event load="ROCK_PIRATE"/>
+	<event load="ROCK_PIRATE_ASTEROID"/>
+	<event load="ROCK_PIRATE_SUN"/>
+</eventList>
+
 <eventList name="NEUTRAL_ROCK">
 	<event load="ROCK_NURSERY"/>
 	<event load="ROCK_ZOLTAN_HELP"/>
@@ -22,6 +33,7 @@
 	<event load="MERCENARY"/>
 	<event load="FRIENDLY_SLAVER"/>
 	<event load="ASTEROID_DERELICT_SHIP"/>
+	<event load="ROCK_SLUG_ARGUMENT"/> <!--DLC - newEvents-->
 </eventList>
 
 <eventList name="BOARDERS_ROCK">
@@ -30,16 +42,6 @@
 	<event load="ROCK_BOARDERS_SUN"/>
 </eventList>
 
-<eventList name="HOSTILE_ROCK">
-	<event load="ROCK_SHIP"/>
-	<event load="ROCK_FIGHT_ASTEROID"/>
-</eventList>
-
-<eventList name="HOSTILE_ROCK_PIRATE">
-	<event load="ROCK_PIRATE"/>
-	<event load="ROCK_PIRATE_ASTEROID"/>
-	<event load="ROCK_PIRATE_SUN"/>
-</eventList>
 
 <eventList name="DISTRESS_BEACON_ROCK">
 	<event load="FRIENDLY_BEACON"/>
@@ -319,8 +321,11 @@
 		</choice>
 	</event>
 	<event>
-		<text>The fight goes poorly, and your team eventually finds itself out on the flank with a wounded Sower combat unit in tow. They make a desperate push for the shuttle co-ordinates, but one falls. The survivor helps the damaged Sower aboard.</text>
-		<crewMember amount="-1"/>
+		<text>The fight goes poorly, and your team eventually finds itself out on the flank with a wounded Rock combatant in tow. They make a desperate push for the shuttle co-ordinates, but one falls. The survivor helps the injured Rock aboard.</text>
+		<removeCrew>
+			<clone>true</clone>
+			<text>Fortunately, your crewmember was close enough to the ship for the Clone Bay to revive them.</text>
+		</removeCrew>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
@@ -348,6 +353,10 @@
 	</event>
 	<event>
 		<text>Your team comes under heavy fire. One is blinded by a flash bomb and staggers past the lip of a quarry and to their death far below; the other succeeds in joining with friendly forces and ultimately claims control of the institution!</text>
+		<removeCrew>
+			<clone>true</clone>
+			<text>Fortunately, your crewmember was close enough to the ship for the Clone Bay to revive them.</text>
+		</removeCrew>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
@@ -380,7 +389,10 @@
 	</event>
 	<event>
 		<text>The fight goes poorly, and your team eventually finds itself out on the flank with a wounded Rock combatant in tow. They make a desperate push for the shuttle co-ordinates, but one falls. The survivor helps the injured Rock aboard.</text>
-		<crewMember amount="-1"/>
+		<removeCrew>
+			<clone>true</clone>
+			<text>Fortunately, your crewmember was close enough to the ship for the Clone Bay to revive them.</text>
+		</removeCrew>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
@@ -408,6 +420,10 @@
 	</event>
 	<event>
 		<text>Your team comes under heavy fire. One is blinded by a flash bomb and staggers past the lip of a quarry and to their death far below; the other succeeds in joining with friendly forces and ultimately claims control of the institution!</text>
+		<removeCrew>
+			<clone>true</clone>
+			<text>Fortunately, your crewmember was close enough to the ship for the Clone Bay to revive them.</text>
+		</removeCrew>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
@@ -639,7 +655,8 @@
 				<text>(Missile Weapon) Attempt a controlled detonation using a missile.</text>
 				<event>
 					<text>After drawing straws, a crew member goes out to fix a modified warhead to the mine. You detonate the missile in a way that dislodges the mine. It blows up shortly after. The ship takes some damage in the blasts, but you're still sailing.</text>
-					<damage amount="4"/>
+					<damage amount="3"/>
+					<damage amount="1" system="random"/>  <!--DLC-->
 					<item_modify>
 						<item type="missile" min="-1" max="-1"/>
 					</item_modify>
@@ -689,8 +706,12 @@
 	</event>
 	<event>
 		<text>The weapon detonates. Everything goes dark, the bridge illuminated by flames pouring from the hull, your bomb disposal volunteer spinning off toward a nearby sun. You put out the fires and prepare to move on.</text>
-		<crewMember amount="-1"/>
-		<damage amount="6"/>
+		<removeCrew>
+			<clone>true</clone>
+			<text>Fortunately, your crewmember was close enough to the ship for the Clone Bay to revive them. Sheepish and apologetic, they rejoin the crew.</text>
+		</removeCrew>
+		<damage amount="5"/>
+		<damage amount="1" system="room" effect="breach"/>  <!--DLC-->
 	</event>
 </eventList>
 
@@ -830,6 +851,34 @@
 
 
 <!--
+<event name="ROCK_BOARDERS_SHIP" unique="true">
+	<text load="ROCK_BOARDERS_SHIP"/>
+	<boarders min="1" max="3" class="rock"/>
+	<ship load="ROCK_SHIP" hostile="true"/>
+</event>
+<textList name="ROCK_BOARDERS_SHIP">
+	<text>You passively scan a small Rock station that is next to the beacon. However they must not have appreciated your curiosity. A Rock ship pulls away from the station and you register an incoming teleporter signal as well!</text>
+	<text>You find a Rock ship docked with a damaged Mantis fighter. Before you have a chance to hail them, the ship moves in to attack you and you register teleporter symbols from the disabled ship. They're using Mantis tech to board you!</text>
+</textList>
+<event name="ROCK_BOARDERS_ASTEROID" unique="true">
+	<text load="ROCK_BOARDERS_ASTEROID"/>
+	<boarders min="1" max="2" class="rock"/>
+	<environment type="asteroid"/>
+	<ship load="ROCK_SHIP" hostile="true"/>
+</event>
+<textList name="ROCK_BOARDERS_ASTEROID">
+	<text>You arrive in an asteroid field and immediately begin evasive maneuvers when a loud clunk reverberates through the ship. At first you think the hull has been hit, but the noise came from some Rock intruders teleporting aboard the ship!</text>
+	<text>Your shields are being taxed as they deflect the debris from an asteroid field. As you weave your way between the rocks, you happen upon a Rock pirate stronghold. You register teleport signatures and hear shouts aboard the ship.</text>
+</textList>
+<event name="ROCK_BOARDERS_SUN" unique="true">
+	<text load="ROCK_BOARDERS_SUN"/>
+	<environment type="sun"/>
+	<boarders min="2" max="3" class="rock"/>
+</event>
+<textList name="ROCK_BOARDERS_SUN">
+	<text>As soon as you arrive you hear the telltale sounds of a teleporter and shouts reverberating through the ship, "Prepare to burn, fleshy meat-sack aliens!"</text>
+	<text>With their high resistance to heat, outlaw Rocks often settle very close to stars. That is why it is hardly surprising when your ship gets boarded as you stumble past a hidden settlement.</text>
+</textList>
 	SPECIAL!!!
 	Special events
 

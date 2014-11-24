@@ -102,7 +102,7 @@ Matt:
 	<text>You arrive at the coordinates to find a massive Crystalline cruiser docked at a small repair station. You arrange for the ship to be sent back to the Pilgrim base while you stock up and have the station repair your hull.</text>
 	<autoReward level="MED">fuel</autoReward>
 	<damage amount="-10"/>
-	<unlockShip id="8">The Crystalline ship is sent to the hangar.  The ??? has been unlocked!</unlockShip>
+	<unlockShip id="8">The Crystalline ship is sent to the hangar. The Bravais has been unlocked!</unlockShip>
 </event>
 
 <event name="STORE_CRYSTAL">
@@ -110,15 +110,15 @@ Matt:
 	<store/>
 </event>
 <textList name="STORE_CRYSTAL">
-	<text>You arrive in an area bustling with crystalline ships and stations.  A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
+	<text>You arrive in an area bustling with crystalline ships and stations. A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
 	<text>"Ah! Hello aliens", says a rotund crystalline being on the vid screen. "I hoped I would run into one of you. I am a collector of alien artifacts and hoped you would have some equipment to barter!"</text>
 	<text>You arrive at a trade depot and find a store that is willing to open communications with you. "I can't say I've traded with your kind before, but perhaps we could work out some sort of exchange."</text>
-	<text>You receive an incoming transmission, but it seems badly garbled. Eventually you realise it's advertising an equipment store. "Apologies," says the vendor, when you finally get him on the vid screen, "Long time since use universal translator no necessary. Please, buy, buy!"</text>
+	<text>You receive an incoming transmission, but it seems badly garbled. Eventually you realize it's advertising an equipment store. "Apologies," says the vendor, when you finally get him on the vid screen, "Long time since use universal translator no necessary. Please, buy, buy!"</text>
 
-	<text>You arrive in an area bustling with crystalline ships and stations.  A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
+	<text>You arrive in an area bustling with crystalline ships and stations. A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
 	<text>"Ah! Hello aliens", says a rotund crystalline being on the vid screen. "I hoped I would run into one of you. I am a collector of alien artifacts and hoped you would have some equipment to barter!"</text>
 	<text>You arrive at a trade depot and find a store that is willing to open communications with you. "I can't say I've traded with your kind before, but perhaps we could work out so sort of exchange?"</text>
-	<text>You receive an incoming transmission, but it seems badly garbled. Eventually you realise it's advertising an equipment store. "Apologies," says the vendor, when you finally get him on the vid screen, "Long time since use universal translator necessary. Please, buy, buy!"</text>
+	<text>You receive an incoming transmission, but it seems badly garbled. Eventually you realize it's advertising an equipment store. "Apologies," says the vendor, when you finally get him on the vid screen, "Long time since use universal translator necessary. Please, buy, buy!"</text>
 </textList>
 
 <event name="NOTHING_CRYSTAL">
@@ -131,14 +131,14 @@ Matt:
 	<text>There appears to be no one living near this node, a rare sight in this highly developed sector.</text>
 	<text>You arrive near a civilian settlement. It looks like their homes, ships and stations all rely heavily on an intriguing crystalline material. You wonder how they are able to create so much of this substance, as yet undiscovered in the rest of the galaxy.</text>
 	<text>A few merchant ships pass nearby but they are either ignoring your hails or their computer isn't designed to work through the same frequencies...</text>
-	<text>A number of civilian ships seem to be evacuating a small colony. One ship messages you before jumping away, "Damn you aliens! This is why we closed that long-ranged beacon in the first place!"</text>
+	<text>A number of civilian ships seem to be evacuating a small colony. One ship messages you before jumping away, "Damn you aliens! This is why we closed that Long-range Beacon in the first place!"</text>
 
 	<text>As soon as you arrive, all of the ships docked at a nearby station scatter and jump away, while the station itself uses some form of cloak technology to disappear. They mustn't like outsiders here...</text>
 	<text>No ships are in range, so you take the time to scan the area. It seems like every planet you've seen so far shows signs of highly developed habitation without overpopulation. They must have a very structured and well regulated society.</text>
 	<text>There appears to be no one living near this node, a rare sight in this highly developed sector.</text>
 	<text>You arrive near a civilian settlement. It looks like their homes, ships and stations all rely heavily on an intriguing crystalline material. You wonder how they are able to create so much of this substance, as yet undiscovered in the rest of the galaxy.</text>
 	<text>A few merchant ships pass nearby but they are either ignoring your hails or their computer isn't designed to work through the same frequencies...</text>
-	<text>A number of civilian ships seem to be evacuating a small colony. One ship messages you before jumping away, "Damn you aliens! This is why we closed that long-ranged beacon in the first place!"</text>
+	<text>A number of civilian ships seem to be evacuating a small colony. One ship messages you before jumping away, "Damn you aliens! This is why we closed that Long-range Beacon in the first place!"</text>
 </textList>
 
 
@@ -153,6 +153,19 @@ Matt:
 	<choice hidden="true">
 		<text>Attempt to break through with the weapons you have.</text>
 		<event load="CRYSTAL_CACHE_BREAK"/>
+	</choice>
+	<choice hidden="true" req="MISSILES_BREACH">
+		<text>(Breach Missiles) Use a Breach Missile.</text>
+		<event>
+			<text>Your Breach warheads dislodge and shatter a massive shard of crystal, leaving your away team enough space to climb down and take a look.</text>
+			<item_modify>
+				<item type="missiles" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Investigate the cache.</text>
+				<event load="CRYSTAL_CACHE_LIST"/>
+			</choice>
+		</event>
 	</choice>
 	<choice hidden="true" req="crystal">
 		<text>(Crystal Crew Member) Have your Crystalline Being recalibrate your weapons.</text>
@@ -193,12 +206,15 @@ Matt:
 		<boarders min="2" max="3" class="crystal"/>
 	</event>
 	<event>
-		<text>You send a crew-member down to check out the cache. The comm goes dead, and shortly thereafter massive gravity readings are detected on the asteroid. You must have triggered some kind of singularity booby trap! We've got to leave now before we're pulled in!</text>
+		<text>You send a crewmember down to check out the cache. The comm goes dead, and shortly thereafter massive gravity readings are detected on the asteroid. You must have triggered some kind of singularity booby trap! We've got to leave now before we're pulled in!</text>
 		<choice hidden="true">
 			<text>Pull out now!</text>
 			<event>
-				<text>You push the impulse engines to their limit and are able to break out of the gravity well. Your crew-member, along with the stockpile, is reduced to the size of a tennis ball - but you're left in one piece.</text>
-				<crewMember amount="-1"/>
+				<text>You push the impulse engines to their limit and are able to break out of the gravity well. Your crewmember, along with the stockpile, is reduced to the size of a tennis ball - but you're left in one piece.</text>
+				<removeCrew>
+					<clone>true</clone>
+					<text>Luckily, your clone bay is able to revive your crewmember.</text>
+				</removeCrew>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -236,7 +252,7 @@ Matt:
 		<event>
 			<text>"My word! Is this... a 25th century Izhmash-Grumman thrust stabilizer?! What do you want for it? Wait, I have a better proposal. I long to see the galaxy. I propose I come with you. What do you say?"</text>
 			<item_modify>
-				<item type="scrap" min="-50" max="-50"/>
+				<item type="scrap" min="-35" max="-35"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Accept.</text>
@@ -261,11 +277,11 @@ Matt:
 <eventList name="CRYSTAL_SCRAP_EXCITED_LIST">
 	<event>
 		<text>"Very well, a payment in kind. I have these explosives that emulate our race's innate ability. Perhaps that would interest you."</text>
-		<weapon name="WEAPONS_CRYSTAL"/>
+		<weapon name="BOMB_LOCK"/>
 	</event>
 	<event>
 		<text>"Very well, a payment in kind. I have an extra ship weapon laying around here somewhere. Perhaps you could make use of it?"</text>
-		<weapon name="WEAPONS_CRYSTAL"/>
+		<weapon name="CRYSTAL_BURST_2"/>
 	</event>
 </eventList>
 
@@ -451,7 +467,7 @@ Matt:
 <event name="CRYSTAL_FED_DESERTER" unique="true">
 	<text>For a moment you assume it's a glitch,  but no... you've found a Pilgrim military ship! They hail you and, after some probing, reveal that they deserted the Pilgrim fleet before stumbling into this sector while seeking refuge.</text>
 	<ship load="FED_SHIP" hostile="false"/>
-	<choice hidden="true">
+	<choice hidden="false">
 		<text>Offer supplies.</text>
 		<event>
 			<text> You send over some supplies to help them on their way and in return they upload their flight plan to your computer, allowing you to map the sector! "The resistance fleet's still standing - get there while you can!"</text>
@@ -495,11 +511,21 @@ Matt:
 			<autoReward level="MED">standard</autoReward>
 		</event>
 	</choice>
+	<choice hidden="true" req="BACKUP_DNA"> <!--DLC-->
+		<text>(Backup DNA Bank) Send your crew's data.</text>
+		<event>
+			<text>"What is this? Full genetic and personal profiles stored digitally? I did not think this possible... This will help our research immeasurably. Please, take this in exchange for your help."</text>
+			<autoReward level="MED">weapon</autoReward>
+		</event>
+	</choice>
 </event>
 <eventList name="CRYSTAL_HUMAN_TESTS_ACCEPT">
 	<event>
-		<text>After a short time the scientist returns, "We... must regret... we have made a grave miscalculation. Your bodies are considerably more fragile than we expected and your companion is... broken. We apologize and offer a fine military grade weapon as consolation."</text>
-		<crewMember amount="-1"/>
+		<text>After a short time the scientist returns, "We... must regret... we have made a grave miscalculation. Your bodies are considerably more fragile than we expected and your companion is... broken. We apologize and offer a fine military-grade weapon as consolation."</text>
+		<removeCrew>
+			<clone>true</clone>
+			<text>You accept their apology and decide it's better not to mention that your Clone Bay is in the process of reviving the lost crewmember.</text>
+		</removeCrew>
 		<autoReward level="LOW">weapon</autoReward>
 	</event>
 	<event>
@@ -593,10 +619,18 @@ Matt:
 				<text>Accept the Dust but give them false flight plans.</text>
 				<event load="CRYSTAL_REQUEST_LIST"/>
 			</choice>
+			<choice hidden="true" req="FLEET_DISTRACTION"> <!--DLC-->
+				<text>(Distraction Buoy) Accept the scrap but give them falsified flight plans.</text>
+				<event>
+					<text>Your distraction buoy allows you to create very convincing flight plan. They accept it as true and give you the scrap. The deception may not be the most honorable tactic but staying ahead of the fleet is your highest priority.</text>
+					<autoReward level="HIGH">scrap_only</autoReward>
+					<modifyPursuit amount="-1"/>
+				</event>
+			</choice>
 			<choice hidden="true">
 				<text>Refuse.</text>
 				<event>
-					<text>You apologise for the trouble you've brought them, but explain that you have no choice. They seem to understand, and break the comm link to set about preparing defenses.</text>
+					<text>You apologize for the trouble you've brought them, but explain that you have no choice. They seem to understand, and break the comm link to set about preparing defenses.</text>
 				</event>
 			</choice>
 		</event>
@@ -628,6 +662,10 @@ Matt:
 				<event>
 					<text>You're committed to both saving the Pilgrims and upholding the principles they worked to maintain. Your crew-member will remain and make good on the promise - you still have a galaxy to save. They give you some supplies for your trouble.</text>
 					<autoReward level="MED">fuel</autoReward>
+					<removeCrew>
+						<clone>false</clone>
+						<text></text>
+					</removeCrew>
 				</event>
 			</choice>
 			<choice hidden="true">
@@ -647,6 +685,10 @@ Matt:
 						<event>
 							<text>You're committed to both saving the Pilgrims and upholding the principles they worked to maintain. Your crew-member will remain and make good on the promise - you still have a galaxy to save. They give you some supplies for your trouble.</text>
 							<autoReward level="HIGH">fuel</autoReward>
+							<removeCrew>
+								<clone>false</clone>
+								<text></text>
+							</removeCrew>
 						</event>
 					</choice>
 					<choice hidden="true">
@@ -662,7 +704,7 @@ Matt:
 							<text>Another cycle passes while the Empire fleet draws ever nearer. You contact the captain again. "Alien Captain, your knowledge of our customs has most impressed us. Your crew-member is on their way back to you now, along with a token of our respect."</text>
 							<modifyPursuit amount="1"/>
 							<autoReward level="HIGH">augment</autoReward>
-							<weapon name="WEAPONS_CRYSTAL"/>
+							<weapon name="CRYSTAL_HEAVY_2"/>
 						</event>
 					</choice>
 				</event>

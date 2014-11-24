@@ -75,7 +75,7 @@ Storm Environment:
 	<text>You've entered a sector thick with nebulas. You'll have to navigate on instinct.</text>
 	<text>You've entered a nebula-rich sector. You may put a few light years on the fleet, but that's only useful if you make it out the other side.</text>
 	<text>Thanks to the high nebula density of this sector very little of it has been charted, and rumours of what lurks in the depths abound.</text>
-	<text>The gases that make up the nebulas in this sector threaten to impair your systems, but you have to press on.</text>
+	<text>The gases that make up the nebulas in this sector threaten to impair your systems; but you have to press on.</text>
 </textList>
 
 <!-- for when the fleet takes over a nebula beacon -->
@@ -281,13 +281,71 @@ Storm Environment:
 		<text>Avoid provoking the ship.</text>
 		<event/>
 	</choice>
-	<choice req="cloaking" hidden="true">
-		<text>(Cloaking) Use your stealth to access the space station undetected.</text>
+	<choice req="cloaking" lvl="1" max_group="0" hidden="true">
+		<text>(Cloaking) Attempt to stealthily access the space station.</text>
+		<event load="NEBULA_AUTO_DEFENSE_ITEM_CLOAK"/>
+	</choice>
+	<choice req="cloaking" lvl="2" max_group="0" hidden="true">
+		<text>(Improved Cloaking) Use your stealth to access the space station.</text>
+			<event>
+			<text>You successfully sneak by the ship and access the station undetected.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
 		<event load="DEFENSE_ITEM_LIST"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="hacking" lvl="1" max_group="1" hidden="false"><!--DLC-->
+		<text>(Hacking) Try to hack the station to prevent an alert.</text>
+		<event load="NEBULA_AUTO_DEFENSE_ITEM_HACK"/>
+	</choice>
+	<choice req="hacking" lvl="2" max_group="1" hidden="false"><!--DLC-->
+		<text>(Improved Hacking) Hack the station to prevent an alert.</text>
+		<event>
+			<text>You successfully hack into the station and sever the connection to the automated ship, accessing the station completely undetected.</text>
+			<item_modify>
+				<item type="drones" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DEFENSE_ITEM_LIST"/>
+			</choice>
+		</event>
 	</choice>
 	<environment type="nebula"/>
 </event>
-
+<eventList name="NEBULA_AUTO_DEFENSE_ITEM_CLOAK"> <!--DLC EVENTLIST-->
+	<event>
+		<text>You successfully sneak by the ship and access the station undetected.</text>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DEFENSE_ITEM_LIST"/>
+		</choice>
+	</event>
+	<event>	
+		<text>You try to sneak past the automated ship but it quickly turns and attacks!</text>
+		<ship hostile="true"/>
+	</event>
+</eventList>
+<eventList name="NEBULA_AUTO_DEFENSE_ITEM_HACK"> <!--DLC EVENTLIST-->
+	<event>
+		<text>You successfully hack into the station and sever the connection to the automated ship. You access the station undetected.</text>
+		<item_modify>
+			<item type="drones" min="-1" max="-1"/>
+		</item_modify>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DEFENSE_ITEM_LIST"/>
+		</choice>
+	</event>
+	<event>	
+		<text>You send a drone to hack the station but the automated ship notices and turns to attack!</text>
+		<item_modify>
+			<item type="drones" min="-1" max="-1"/>
+		</item_modify>
+		<ship hostile="true"/>
+	</event>
+</eventList>
 
 <event name="NEBULA_LOST_SHIP" unique="true">
 	<text>A heavily damaged Pilgrim ship is hiding in the nebula at this beacon. Before you have time to make contact with them, they fade into the nebula.</text>
@@ -355,6 +413,10 @@ Storm Environment:
 		<text>Purchase "more dakka". [Dust: -65]</text>
 		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
 	</choice>
+	<choice req="mind" hidden="true"> <!--DLC-->
+		<text>(Mind Control) Convince him to make it a better deal.</text>
+		<event load="NEBULA_WEAPONS_TRADER_LIST2"/>
+	</choice>
 </event>
 <eventList name="NEBULA_WEAPONS_TRADER_LIST">
 	<event>
@@ -379,6 +441,31 @@ Storm Environment:
 			<text>Learn a valuable lesson and move on.</text>
 			<event/>
 		</choice>
+	</event>
+</eventList>
+<eventList name="NEBULA_WEAPONS_TRADER_LIST2"> <!--DLC-->
+	<event>
+		<text>Once "convinced" to help he lowers the price and describes the weapon. However, he eventually comes to his senses and confusedly takes back his discount. He is clearly unsure why he offered it in the first place.</text>
+		<choice>
+			<text>Buy the weapon.</text>
+			<event>
+				<text>You purchase the weapon and thank him for his help.</text>
+				<item_modify>
+					<item type="scrap" min="-45" max="-45"/>
+				</item_modify>
+				<weapon name="RANDOM"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Decline.</text>
+			<event>
+				<text>You thank him for his offer and prepare to move on.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Once "convinced" to help, he casually states that his offer was actually a lie and that they planned to attack your ship. By the time he returns to his senses you've already prepared your ship to fight.</text>
+		<ship hostile="true"/>
 	</event>
 </eventList>
 
@@ -445,7 +532,14 @@ Storm Environment:
 	<choice req="ADV_SCANNERS" hidden="true">
 		<text>(Long-ranged Scanner) Try to track them as you move to engage.</text>
 		<event>
-			<text>As soon as they see you they make a run for it. You squeeze what you can out of the malfunctioning sensors and are able to keep track of them enough to get in firing range.</text>
+			<text>As soon as they see you they make a run for it. You squeeze what you can out of the malfunctioning sensors and are able to keep track of them long enough to get in firing range.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice req="LIFE_SCANNER" hidden="true"><!--DLC-->
+		<text>(Lifeform Scanner) Use their life signatures to follow.</text>
+		<event>
+			<text>Your augment's ability to keep track of their life signatures within the nebula proves useful. You catch up to the ship and prepare for a fight.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
@@ -489,7 +583,7 @@ Storm Environment:
 	Events with boarder calls
 -->
 
-<event name="NEBULA_BOARDING">
+<event name="NEBULA_BOARDING" unique="true">
 	<text load="NEBULA_BOARDING_TEXT"/>
 	<environment type="nebula"/>
 	<boarders min="2" max="4" class="human"/>
@@ -513,9 +607,15 @@ Storm Environment:
 			<ship load = "REBEL_AUTO" hostile="true"/>
 		</event>
 	</choice>
-	<choice req="engines" lvl="3" hidden="true">
+	<choice req="engines" lvl="3" max_group="0" hidden="true">
 		<text>(Engines) Attempt to out-run it.</text>
 		<event load="STORM_AUTO_ESCAPE"/>
+	</choice>
+	<choice req="engines" lvl="6" max_group="0" hidden="true">
+		<text>(Improved Engines) Attempt to out-run it.</text>
+		<event>
+			<text>You successfully lose the ship in the storm.</text>
+		</event>
 	</choice>
 	<choice req="cloaking" hidden="true">
 		<text>(Cloaking) Use your cloak to escape.</text>
@@ -548,7 +648,8 @@ Storm Environment:
 <event name="STORM_BOARDING_MANTIS">
 	<text>A Hissho ship is sitting in the middle of the storm, with only essential systems powered up. Unsurprisingly, they beam nearly their entire crew aboard your ship. This is the kind of shit that the Hissho live for; they must be having the time of their lives.</text>
 	<environment type="storm"/>
-	<boarders min="2" max="4" class="mantis"/>
+	<boarders min="3" max="4" class="human"/>
+	<autoReward level="MED">standard</autoReward>
 </event>
 
 <event name="STORM_ITEMS" unique = "true">
@@ -571,6 +672,7 @@ Storm Environment:
 	<event>
 		<text>Despite your caution, the lack of detection equipment allows debris to crash into your ship, damaging the hull. You salvage what you can and prepare to jump before anything worse happens.</text>
 		<damage amount="4"/>
+		<damage amount="0" system="random" effect="breach"/>  <!--DLC-->
 		<autoReward level="HIGH">stuff</autoReward>
 	</event>
 	<event>
@@ -580,7 +682,10 @@ Storm Environment:
 	</event>
 	<event>
 		<text>While the crew is off the ship searching through the wrecks, two hulls crash into each other breaking the crew's tethers. You have no time to react as someone is knocked away, floating helplessly into the gaseous clouds...</text>
-		<crewMember amount="-1"/>
+		<removeCrew>
+			<clone>true</clone>
+			<text>Fortunately, your crewmember was close enough to the ship for the Clone Bay to revive them.</text>
+		</removeCrew>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>

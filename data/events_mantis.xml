@@ -149,14 +149,29 @@ Special
 		<text>(Hissho Crew Member) Interrogate him.</text>
 		<event load="MANTIS_CAPTURE_COMMANDO_TALK"/>
 	</choice>
+	<choice req="mind" hidden="true"> <!--DLC-->
+		<text>(Mind Control) Interrogate him.</text>
+		<event>
+			<text>Your mind control device allows you to quickly get his story without resistance. It appears the boarding party was attempting to steal an weapon that the Automaton ship was transporting. However their team was wiped out by USVs.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You find the weapon in a hidden storage hold and decide to patch the ship up enough to let the Hissho leave.</text>
+					<autoReward level="LOW">weapon</autoReward>
+				</event>
+			</choice>
+		</event>
+	</choice>
 </event>
 <eventList name="MANTIS_CAPTURE_COMMANDO_RELEASE">
 	<event>
 		<text>You help patch up the Automaton ship and he takes off without another word.</text>
+		<autoReward level="MED">stuff</autoReward>
 	</event>
 	<event>
-		<text>He takes your mercy as a sign of weakness and rigged up a small timed explosive before making off in the Automaton vessel.</text>
-		<damage amount="3"/>
+		<text>He takes your mercy as a sign of weakness and rigs up a small timed explosive before making off in the Engi vessel.</text>
+		<damage amount="2"/>
+		<damage amount="1" system="random" effect="fire"/>  <!--DLC-->
 	</event>
 </eventList>
 <eventList name="MANTIS_CAPTURE_COMMANDO_KILL">
@@ -234,7 +249,7 @@ Special
 		<choice req="engines" lvl="4" hidden="true">
 			<text>(Adv. Engines) Dodge the debt and power up the engines.</text>
 			<event>
-				<text>You are able to get out of firing range of the cruiser before they can react. However a smaller ship breaks off from a patrol and moves in to engage.</text>
+				<text>You are able to get out of firing range of the cruiser before they can react. However, a smaller ship breaks off from a patrol and moves in to engage.</text>
 				<ship load="MANTIS_FIGHT" hostile="true"/>
 			</event>
 		</choice>
@@ -340,7 +355,7 @@ Special
 </textList>
 <eventList name="MANTIS_FIGHT_CHOICE_AVOID">
 	<event>
-		<text>You power down non-essential systems and wait for the FTL drive to charge. They either don't want to fight or have failed to notice your ship, the later being more likely.</text>
+		<text>You power down non-essential systems and wait for the FTL drive to charge. They either don't want to fight or have failed to notice your ship, the latter being more likely.</text>
 	</event>
 	<event>
 		<text>Before you have a chance to slink away the Mantis ship notices you and powers up their weapons.</text>
@@ -421,7 +436,10 @@ Special
 	<event>
 		<text>The Hissho inside is FURIOUS. He cuts the closest person in half with a single swipe. Kill it before anyone else is hurt.</text>
 		<boarders min="1" max="1" class="mantis"/>
-		<crewMember amount="-1"/>
+		<removeCrew>
+			<clone>true</clone>
+			<text>The Hissho is shocked to see the crewmember it just slaughtered step out of the Clone Bay.</text>
+		</removeCrew>
 	</event>
 	<event>
 		<text>The Hissho inside considers you a messenger from the god of mercy and demands to join your crew.</text>
@@ -530,9 +548,81 @@ Special
 							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Pilgrim council, sure they can make good use of it.</text>
 							<augment name="RANDOM"/>
 							<autoReward level="HIGH">scrap_only</autoReward>
-							<crewMember amount="1" class="mantis">Kazaaak</crewMember> <!-- NOTE - Make him a special unique character/color? At least give him the right name? -->
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember> <!-- NOTE - Make him a special unique character/color? At least give him the right name? -->
 							<quest event="MANTIS_NAMED_THIEF_STASH"/>
 							<unlockShip id="2">A Hissho cruiser has been unlocked and added to the hangar!</unlockShip>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="clonebay" lvl="2">
+				<text>(Adv. Clonebay) Quickly configure the Clonebay to save him.</text>
+				<event>
+					<text>Your haste has paid off and you register him into the Clonebay's database. After he passes away he is quickly reconstructed on board your ship. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
+					<choice hidden="true">  <!-- NOTE - Add other options?-->
+						<text>Accept.</text>
+						<event>
+							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
+							<augment name="CREW_STIMS"/>
+							<autoReward level="HIGH">scrap_only</autoReward>
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE - Make him a special unique character/color?  At least give him the right name? -->
+							<quest event="MANTIS_NAMED_THIEF_STASH"/>
+							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="sensors" lvl="3">
+		<text>(Sensors) Quickly scan their ship for survivors.</text>
+		<event>
+			<text>You detect KazaaakplethKilik slumped in a corner dying.</text>
+			<choice hidden="true">
+				<text>Let him die.</text>
+				<event>
+					<text>Thus ends the life of the famed captain, KazaaakplethKilik... You wonder what secrets went with him to the grave as you thoroughly loot his ship.</text>
+					<autoReward level="HIGH">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Dock and try to speak with him.</text>
+				<event>
+					<text>In his dying moments he gives up the location of his secret stash. You strip the ship wondering what other secrets went with him to the grave.</text>
+					<quest event="MANTIS_NAMED_THIEF_STASH"/>
+					<autoReward level="HIGH">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true" req="medbay" lvl="2">
+				<text>(Adv. Medbay) Dock and quickly take him back to the medbay.</text>
+				<event>
+					<text>Your haste has paid off and you are able to bring him back from the brink of death. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
+					<choice hidden="true">  <!-- NOTE - Add other options?-->
+						<text>Accept.</text>
+						<event>
+							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
+							<augment name="CREW_STIMS"/>
+							<autoReward level="HIGH">scrap_only</autoReward>
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE - Make him a special unique character/color?  At least give him the right name? -->
+							<quest event="MANTIS_NAMED_THIEF_STASH"/>
+							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="clonebay" lvl="2">
+				<text>(Adv. Clonebay) Quickly configure the Clonebay to save him.</text>
+				<event>
+					<text>Your haste has paid off and you register him into the Clonebay's database. After he passes away he is quickly reconstructed on board your ship. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
+					<choice hidden="true">  <!-- NOTE - Add other options?-->
+						<text>Accept.</text>
+						<event>
+							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
+							<augment name="CREW_STIMS"/>
+							<autoReward level="HIGH">scrap_only</autoReward>
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE - Make him a special unique character/color?  At least give him the right name? -->
+							<quest event="MANTIS_NAMED_THIEF_STASH"/>
+							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
 						</event>
 					</choice>
 				</event>

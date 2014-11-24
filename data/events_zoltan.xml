@@ -53,6 +53,7 @@ Environmnt:
 	<event load="ZOLTAN_SCIENCE_DOCK"/>
 	<event load="ZOLTAN_RIFT_FIGHT"/>
 	<event load="ZOLTAN_CREW_SCAN"/>
+	<event load="REFUGEE_NO_DISTRESS_ZOLTAN"/> <!--DLC - In newEvents-->
 	<event load="FRIENDLY_SLAVER"/>
 	<event load="PIRATE_BRIBER"/>
 	<event load="ASTEROID_EXPLORE"/>
@@ -79,6 +80,7 @@ Environmnt:
 <eventList name="DISTRESS_BEACON_ZOLTAN">
 	<event load="ZOLTAN_DISTRESS_MANTIS"/>
 	<event load="ZOLTAN_DISTRESS_SHELL"/>
+	<event load="REFUGEE_DISTRESS_ZOLTAN"/> <!--DLC - In newEvents-->
 	<event load="DISTRESS_SATELLITE_DEFENSE"/>
 	<event load="DISTRESS_STATION_FIRE"/>
 	<event load="FRIENDLY_BEACON"/>
@@ -271,7 +273,10 @@ Environmnt:
 			<item_modify>
 				<item type="scrap" min="-10" max="-10"/>
 			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
 			<event load="ZOLTAN_TRADE_HUB_SUCCESS"/>
+			</choice>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -625,6 +630,13 @@ Environmnt:
 			<autoReward level="MED">fuel_only</autoReward>
 		</event>
 	</choice>
+	<choice hidden="true" req="mind">
+		<text>(Mind Control) Make the guards believe they have already checked your crew today.</text>
+		<event>
+			<text>The captain of the guard appears on the vid screen "Back so soon friend! Well, no need to waste your time further. Here, take these spare fuel canisters and get on with your mission." Your ship is cleared to pass.</text>
+			<autoReward level="MED">fuel_only</autoReward>
+		</event>
+	</choice>
 </event>
 <eventList name="ZOLTAN_CREW_SCAN_LIST">
 	<event>
@@ -635,8 +647,11 @@ Environmnt:
 		<choice hidden="true">
 			<text>Give up your crew member.</text>
 			<event>
-				<text>It's a tough call, but Sophon law holds sway here. Besides, that one always seemed a bit...shifty.</text>
-				<crewMember amount="-1"/>
+				<text>It's a tough call, but Sophon law holds sway here. Besides, that one always seemed a bit shifty.</text>
+				<removeCrew>
+					<clone>false</clone>
+					<text>Unfortunately your crewmember was taken away unharmed so your Clone Bay was unable to retrieve them.</text>
+				</removeCrew>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -691,8 +706,11 @@ Environmnt:
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>As you approach, a kaleidoscope of colours fills the view-screen and one of your crew begins to age rapidly in reverse, eventually disappearing into nothingness. Let's hope they've transcended physical existence, and not just been forced out of it.</text>
-		<crewMember amount="-1"/>
+		<text>As you approach, a kaleidoscope of colors fills the viewscreen and one of your crew begins to age rapidly in reverse, eventually disappearing into nothingness. Let's hope they've transcended physical existence, and not just been forced out of it.</text>
+		<removeCrew>
+			<clone>false</clone>
+			<text>You check your Cloning Bay but it lies dormant. Whatever just happened to your crewmember must be irreversible.</text>
+		</removeCrew>
 	</event>
 </eventList>
 
@@ -861,7 +879,20 @@ Environmnt:
 		</event>
 	</choice>
 </event>
-
+<eventList name="ZOLTAN_PEACE_QUEST_REWARD"><!--DLC2 DLC3-->
+	<event>
+		<text>"Although your methods are crude and most certainly ineffective, it is clear you took our previous meeting to heart. If your ship represents the Federation's willingness to adapt we shall do what we can to aid in their fight. This technology should aid your quest."</text>
+		<unlockShip id="7">A Sophon cruiser has been unlocked and added to the hangar!</unlockShip>
+		<autoReward level="LOW">scrap_only</autoReward>
+		<augment name="ENERGY_SHIELD"/>
+	</event>
+	<event>
+		<text>"Although your methods are crude and most certainly ineffective, it is clear you took our previous meeting to heart. If your ship represents the Federation's willingness to adapt we shall do what we can to aid in their fight. I will personally assist."</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<unlockShip id="7">A Sophon cruiser has been unlocked and added to the hangar!</unlockShip>
+		<crewMember amount="1" class="energy" all_skills="2">Envoy</crewMember>
+	</event>
+</eventList>
 
 <event name="ZOLTAN_SURRENDER">
 	<text load="ZOLTAN_SURRENDER"/>

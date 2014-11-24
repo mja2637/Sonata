@@ -247,14 +247,16 @@ Special:
 
 <ship name="PIRATE_NO_ESCAPE" auto_blueprint="SHIPS_PIRATE">
 	<destroyed>
-		<text>With the pirate ship destroyed, your engines come online again. You salvage what you can from the debris.</text>
+		<text>With the pirate ship destroyed, your ship's system is restored to full functionality. You salvage what you can from the debris.</text>
 		<autoReward level="RANDOM">fuel</autoReward>
 		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</destroyed>
 	<deadCrew>
 		<text>With the pirate ship disabled, your engines come online again. You salvage what you can from their ship.</text>
 		<autoReward level="MED">fuel</autoReward>
 		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</deadCrew>
 </ship>
 
@@ -374,7 +376,7 @@ Special:
 		<choice hidden="true">
 			<text>Let the pirate escape and go after the Slugman ship.</text>
 			<event>
-				<text>The pirate's too badly damaged to pursue you and you catch up to the Slugmen before they jump. "Ah, of courssse, we would never leave without providing the agreed upon ssspoils." They transfer over a decent chunk of the profits and set off.</text>
+				<text>The pirate's too badly damaged to pursue you, and you catch up to the Slugs before they jump. "Ah, of courssse, we would never leave without providing the agreed upon ssspoils." They transfer over a decent chunk of the profits and set off.</text>
 				<autoReward level="HIGH">scrap_only</autoReward>
 				<ship hostile="false"/>
 			</event>
@@ -468,11 +470,13 @@ Special:
 		<text>The ship explodes, leaving behind a cloud of Dust.</text>
 		<autoReward level="MED">standard</autoReward>
 		<status type="clear" target="player" system="shields" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</destroyed>
 	<deadCrew>
 		<text>The ship explodes, leaving behind a cloud of Dust.</text>
 		<autoReward level="MED">standard</autoReward>
 		<status type="clear" target="player" system="shields" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</deadCrew>
 </ship>
 
@@ -539,12 +543,23 @@ Special:
 		<text>You salvage what you can and approach the station. It is used to relay information to the Empire fleet. You could attempt to hack it to give them false information.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 		<choice>
-			<text>Hack into the station.</text>
+			<text>Attempt to manually hack into the station.</text>
 			<event load="DEFENSE_RADAR_LIST"/>
 		</choice>
 		<choice>
 			<text>Don't risk it. Leave the station.</text>
 			<event/>
+		</choice>
+		<choice hidden="true" req="hacking">
+			<text>(Hacking) Use a USV to hack into the station.</text>
+			<event>
+				<text>You successfully hack into their system and transmit false information about your location. That should hold off the fleet for at least a little while. You also are able to download data about the surrounding beacons.</text>
+				<reveal_map/>
+				<modifyPursuit amount="-1"/>
+				<item_modify>
+					<item type="drones" min="-1" max="-1"/>
+				</item_modify>
+			</event>
 		</choice>
 	</destroyed>
 </ship>
@@ -559,7 +574,7 @@ Special:
 		<modifyPursuit amount="1"/>
 	</gotaway>
 	<destroyed>
-		<text>Their ship breaks apart and you feel relief in the knowledge that you will hopefully still be one step ahead of the fleet.</text>
+		<text>The ship breaks apart and you feel relief in the knowledge that you will hopefully still be one step ahead of the fleet.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
 </ship>
@@ -728,13 +743,13 @@ Special:
 		<text>The ship jumps away without a word. You assume they just went to get reinforcements...</text>
 	</gotaway>
 	<destroyed>
-		<text>You manage to retrieve a few precious fuel capsules before the big fleet cruisers start to fire.</text>
+		<text>You manage to retrieve a few precious fuel capsules. You hurry to jump away from the cruiser fire!</text>
 		<item_modify>
 			<item type="fuel" min="2" max="4"/>
 		</item_modify>
 	</destroyed>
 	<deadCrew>
-		<text>You manage to retrieve a few precious fuel capsules before the big fleet cruisers start to fire.</text>
+		<text>You manage to retrieve a few precious fuel capsules. You hurry to jump away from the cruiser fire!</text>
 		<item_modify>
 			<item type="fuel" min="2" max="4"/>
 		</item_modify>
@@ -757,7 +772,7 @@ Special:
 	</destroyed>
 	<deadCrew>
 		<text>A quick search of their communication logs shows that the tech you were searching for never passed through this base... It must have been a decoy! You strip what you can and prepare to jump.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
 <ship name="REBEL_ENGI_UNLOCK_2REAL" auto_blueprint="SHIPS_REBEL">
@@ -882,7 +897,7 @@ Special:
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
 <ship name="ROCK_UNLOCK2" auto_blueprint="ROCK_ASSAULT_ELITE">
-	<escape timer="32" min="24" max="24" >
+	<escape timer="32" min="28" max="28" >
 		<text>The Sower ship starts to power up its FTL drive. If we're going to earn their trust we must endure the heat for as long as they can!</text>
 		<ship hostile="true"/>
 	</escape>
@@ -931,7 +946,7 @@ Special:
 	</destroyed>
 	<deadCrew>
 		<text>No more life signs detected on the pirate ship. You hasten to contact the civilian ship.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Attempt to contact the civilian ship.</text>
 			<event load="SAVE_CIVILIAN_LIST"/>
@@ -957,7 +972,7 @@ Special:
 	<destroyed load="ENGI_UNLOCK_4"/>
 	<deadCrew>
 		<text>You strip what you can and contact the Automaton ships.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 		<choice>
 			<text>Continue...</text>
 			<event load="ENGI_UNLOCK_4"/>
@@ -986,7 +1001,7 @@ Special:
 	</destroyed>
 	<deadCrew>
 		<text>The Hissho defeated, you contact the weakened Slug vessel. "You sssee," they begin, "we are most grateful, but, that is, we do not currently have the liquid asssets to reward you at this time."</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Leave them be.</text>
 			<event>
@@ -1057,13 +1072,15 @@ Special:
 	</gotaway>
 	<destroyed>
 		<text>With the escort destroyed you take a look at your impressive prize. Your mission is too pressing to take a test flight, so you rig its computer to guide the ship back to the main Pilgrim hangar.</text>
-		<autoReward level="HIGH">augment</autoReward>
 		<unlockShip id="5">The Slug cruiser has been unlocked and added to the hangar!</unlockShip>
+		<autoReward level="HIGH">standard</autoReward>
+		<augment name="SLUG_GEL"/>
 	</destroyed>
 	<deadCrew>
 		<text>With the escort destroyed you take a look at your impressive prize. Your mission is too pressing to take a test flight, so you rig its computer to guide the ship back to the main Pilgrim hangar.</text>
-		<autoReward level="HIGH">augment</autoReward>
 		<unlockShip id="5">The Slug cruiser has been unlocked and added to the hangar!</unlockShip>
+		<autoReward level="HIGH">standard</autoReward>
+		<augment name="SLUG_GEL"/>
 	</deadCrew>
 </ship>
 
@@ -1079,7 +1096,7 @@ Special:
 	</destroyed>
 	<deadCrew>
 		<text>With the Slugs no longer a threat, you strip the ship and return to the Sower.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="SLUG_DISTRESS_ROCK_RESULT"/>
@@ -1126,7 +1143,7 @@ Special:
 	</destroyed>
 	<deadCrew>
 		<text>With their crew dead, you quickly shut off their hacking module and your systems return to normal. You strip the ship.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 		<status type="clear" target="player" system="oxygen" amount="100"/>
 	</deadCrew>
 </ship>
@@ -1135,36 +1152,50 @@ Special:
 		<text>The Slug ship breaks apart and your systems return to normal. You collect what you can.</text>
 		<autoReward level="MED">standard</autoReward>
 		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</destroyed>
 	<deadCrew>
-		<text>With their crew dead, you quickly shut off their hacking module and your systems return to normal. You strip the ship.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<text>With their crew dead, their hacking system shuts down and your systems return to normal. You strip the ship.</text>
+		<autoReward level="MED">standard</autoReward>
 		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</deadCrew>
+	<weaponOverride count="1">
+		<name>BEAM_FIRE</name>
+		<name>BOMB_FIRE</name>
+	</weaponOverride>
 </ship>
 
 <ship name="JELLY_STATUS_DOORS" auto_blueprint="SHIPS_JELLY">
 	<destroyed>
 		<text>The Slug ship breaks apart and your systems return to normal. You collect what you can.</text>
 		<autoReward level="MED">standard</autoReward>
-		<status type="clear" target="player" system="doors" amount="100"/>
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</destroyed>
 	<deadCrew>
 		<text>With their crew dead, you quickly shut off their hacking module and your systems return to normal. You strip the ship.</text>
 		<autoReward level="HIGH">standard</autoReward>
-		<status type="clear" target="player" system="doors" amount="100"/>
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</deadCrew>
+	<weaponOverride count="1">
+		<name>BEAM_FIRE</name>
+		<name>BOMB_FIRE</name>
+	</weaponOverride>
 </ship>
 <ship name="JELLY_STATUS_ENGINES" auto_blueprint="SHIPS_JELLY">
 	<destroyed>
 		<text>The Slug ship breaks apart and your engines return to normal. You collect what you can.</text>
 		<autoReward level="MED">standard</autoReward>
 		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</destroyed>
 	<deadCrew>
 		<text>With their crew dead, you quickly shut off their hacking module and your engines return to normal. You strip the ship.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</deadCrew>
 </ship>
 <ship name="JELLY_STATUS_SHIELDS" auto_blueprint="SHIPS_JELLY">
@@ -1182,12 +1213,12 @@ Special:
 
 <ship name="JELLY_STATUS_PILOT" auto_blueprint="SHIPS_JELLY">
 	<destroyed>
-		<text>The Slug ship breaks apart and your piloting return to normal. You collect what you can.</text>
+		<text>The Slug ship breaks apart and your piloting returns to normal. You collect what you can.</text>
 		<autoReward level="MED">standard</autoReward>
 		<status type="clear" target="player" system="pilot" amount="100"/>
 	</destroyed>
 	<deadCrew>
-		<text>With their crew dead, you quickly shut off their hacking module and your piloting return to normal. You strip the ship.</text>
+		<text>With their crew dead, you quickly shut off their hacking module and your piloting returns to normal. You strip the ship.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<status type="clear" target="player" system="pilot" amount="100"/>
 	</deadCrew>
@@ -1206,16 +1237,32 @@ Special:
 	</deadCrew>
 </ship>
 
+<ship name="JELLY_STATUS_HACKING" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>The Slug ship breaks apart and their hacking module is destroyed. You collect what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="hacking"/>
+	</destroyed>
+	<deadCrew>
+		<text>With their crew dead, you quickly shut off their hacking module and your weapon system returns to normal. You strip the ship.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="hacking"/>
+	</deadCrew>
+</ship>
 <ship name="JELLY_STATUS_MEDBAY" auto_blueprint="SHIPS_JELLY">
 	<destroyed>
 		<text>The Slug ship breaks apart and your systems return to normal. You collect what you can.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<status type="clear" target="player" system="medbay" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+		<status type="clear" target="player" system="clonebay" amount="100"/>
 	</destroyed>
 	<deadCrew>
 		<text>With their crew dead, you quickly shut off their hacking module and your systems return to normal. You strip the ship.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<status type="clear" target="player" system="medbay" amount="100"/>
+		<status type="clear" target="player" system="clonebay" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
 	</deadCrew>
 </ship>
 
@@ -1260,7 +1307,7 @@ Special:
 	</destroyed>
 	<deadCrew>
 		<text>While you rummage through their ship for salvage, you wonder what it was that could have provoked them to act so irrationally.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
 
@@ -1305,7 +1352,7 @@ Special:
 
 
 
-<ship name="ZOLTAN_SHIP_SAVE_MANTIS1" auto_blueprint="SHIPS_JELLY">
+<ship name="ZOLTAN_SHIP_SAVE_MANTIS1" auto_blueprint="SHIPS_ZOLTAN">
 	<destroyed>
 		<text>The Hissho are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
 		<autoReward level="LOW">standard</autoReward>
@@ -1333,11 +1380,11 @@ Special:
 <ship name="ZOLTAN_PRIMITIVES_REBEL" auto_blueprint="SHIPS_REBEL">
 	<destroyed>
 		<text>The Sophon hail once the smoke disperses. "Thank you. We were led to believe human ideals died with the Empire's unity. Let us aid you a little, for old times' sake." You accept their reward and Dust, then collect some remains from the loyalist ship.</text>
-		<autoReward level="MED">weapon</autoReward>
+		<autoReward level="LOW">weapon</autoReward>
 	</destroyed>
 	<deadCrew>
 		<text>The Sophon hail once the smoke disperses. "Thank you. We were led to believe human ideals died with the Empire's unity. Let us aid you a little, for old times' sake." You accept their reward and Dust, then collect some remains from the loyalist ship. </text>
-		<autoReward level="HIGH">weapon</autoReward>
+		<autoReward level="MED">weapon</autoReward>
 	</deadCrew>
 </ship>
 
@@ -1611,7 +1658,7 @@ Special:
 	</destroyed>
 	<deadCrew>
 		<text>The crew of the enemy ship has been eliminated. You salvage what you can. The rest of the convoy used the time to put a significant amount of distance between you and them. Nothing left to do but jump.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
 
@@ -1640,7 +1687,7 @@ Special:
 	</destroyed>
 	<deadCrew>
 		<text>The crew of the enemy ship has been eliminated. You salvage what you can. Who knows how many people you've saved by stopping this ship.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
 
@@ -1721,6 +1768,9 @@ Special:
 	<crew>
 		  <crewMember class="ghost" prop="2"/>
 	</crew>
+	<deadCrew>
+		<text>Should not be seen</text>
+	</deadCrew>
 </ship>
 
 
