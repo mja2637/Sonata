@@ -344,10 +344,48 @@ https://github.com/mja2637/Sonata/archive/master.zip
 
 CHANGELOG
 =====
+TODO:
+	- On-hover details background regression
+	- Dialog background (many backgrounds have reverted)
+	- Dude on the upper-left in the garage
+	- Ship selection mismatch with background
+	- CTD when selecting Pilgrim destroyer
+	- 'Advanced content' styling
+	- 'Quest'/'Victory' icon style
+	- Game start style/background match
+	- Crew position button styling
+	- Crew skills styling
+	- Galactic map beacon locator styling
+	- Resources styling in dialog
+	- Sower Surveyor image misaligned with shield
+	- Lore pass
+	- CTD jumping somewhere in first sector
+	- Extract XML changes (.append files)
+	- Pirate fighter/pirate invader gib misalignment
+	- Nudge pirate invader shield up a bit
+	- UES Long Island graphic
+	- Sower move shield a tad to the right
+	- Sector map screen is jacked up
+	- Disable DLC or at least control it
+
+	Update files:
+		autoBlueprints
+		blueprints
+		boss files
+		energy_cruiser
+		all events
+		kestrel
+		newEvents
+		rebel ships
+		rock ships
+		sector_data
+		sounds (just in case)
+
 - 0.8.0
 	- Converted to semantic versioning
 	- Readme converted to Markdown
 	- Added mod metadata for SMM
+	- Extracted several .append files
 - 7a
 	- Added SOPHON_A: "Verne" (by DCChuckles)
 	- Remixed the weapons load of unimplemented ships (have fun)

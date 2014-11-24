@@ -347,7 +347,7 @@ item - Dust + that thing -->
 	<choice>
 		<text>Fight the ship.</text>
 		<event>
-			<text>Mercenaries don't care who they fight - why should you? You could use some spare Dust; you signal your crew to charge weapons.</text>
+			<text>You could use some spare Dust; you signal your crew to charge weapons.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
@@ -423,7 +423,7 @@ item - Dust + that thing -->
 			</event>
 		</choice>
 		<choice>
-			<text>It is to you. Attack!</text>
+			<text>It's worth it to us. Attack!</text>
 			<event/>
 		</choice>
 	</surrender>
@@ -1422,7 +1422,7 @@ item - Dust + that thing -->
 	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED">You are hailed at the beacon by the calm voice of a Interstellar Holdings Trading Group customer service representative. The store is spotless and well-stocked and the staff radiates competence; it is likely the best store in the quadrant. It's basically a fucking professional operation.</text>
 	<text>You receive a wide-band automated message, "Welcome to our humble trade depot and shipyard! All are welcome!" The IHGT is a civilian organization, but well-maintained gunships are on station. They maintain the peace at a trade depot which likely serves both sides in this war.</text>
 	<text>A well armed independent transport ship and a squadron of fighters are in orbit nearby. You are wary of their trustworthiness but beggars can't be choosers.</text>
-	<text>A spacecraft engineer has set up a bespoke shop in a small, but immaculate, space station. You board and speak with him about his services.</text>
+	<text>A spacecraft engineer has set up a bespoke shop in a small but immaculate space station. You board and speak with him about his services.</text>
 	<text back="DEEP_SPACE" planet="NONE">You encounter a Sophon long-range science vessel. Its 5-year mission is to explore strange new worlds and seek out life and new civilizations. They are hungry for news of the war and seem willing to trade.</text>
 	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED">It's a frontier planet, but apparently the United Empire had used it as a staging area some weeks ago. The place was a mess after they left, but sympathetic locals are more than willing to sell you some of the supplies they left behind.</text>
 	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED">The station cantina's menu advertises chicken sandwiches, but the meat smells suspiciously like space rat. Perhaps you'll have better luck with their equipment shop.</text>
@@ -1435,7 +1435,7 @@ item - Dust + that thing -->
 <textList name="FIND_DRONE">
 	<text>When you ask a nearby station for aid, a friendly programmer gives you the schematics for a drone!</text>
 	<text>An abandoned space station circles a lonely planet. A quick check yields schematics for a drone. You bring it aboard the ship.</text>
-	<text>Pilgrim sympathizers contact you as you arrive. "We know your mission should be secret, so don't ask how we know about it. Take this schematic, it's all we can do to help."</text>
+	<text>Pilgrim sympathizers contact you as you arrive. "We know about your mission - don't ask where we got the intel. Take this schematic, it's all we can do to help."</text>
 	<text>A small Automaton shuttle is trying to fend off a Hissho warship. You move in to engage but after a quick scan of your ship the Hissho ship retreats. The Automatons offer you a drone schematic as thanks for your timely arrival.</text>
 	<text>You find an abandoned mining station on a nearby moon. A quick scan shows no life forms, however you discover a usable drone schematic!</text>
 
@@ -2438,7 +2438,7 @@ item - Dust + that thing -->
 	<text>"Alright, you win! Here's some equipment from our stores, leave us alone!"</text>
 	<text>The ship repeatedly hails you. It looks like they want to surrender.</text>
 	<text>"You are considerably more well-armed than I would have thought. We surrender."</text>
-	<text>They send you a message: "Your ship is surprisingly well equipped! Please take this and let us live."</text>
+	<text>They send you a message: "Your shit is, uh...ASTONISHINGLY well equipped. Take this and let us live."</text>
 	<text>"Please don't kill us. We will give you everything we have!"</text>
 	<text>They offer you some of their cargo if you let them live.</text>
 	<text>They offer to give you some of their goods if you don't destroy their ship.</text>
@@ -2450,7 +2450,7 @@ item - Dust + that thing -->
 	<text>"Alright, you win! Here's some equipment from our stores, leave us alone!"</text>
 	<text>The ship repeatedly hails you. It looks like they want to surrender.</text>
 	<text>"You are considerably more well-armed than I would have thought. We surrender."</text>
-	<text>They send you a message: "I cannot believe how well equipped your ship is! Please take this and let us live."</text>
+	<text>They send you a message: "Your shit is, uh...ASTONISHINGLY well equipped. Take this and let us live."</text>
 	<text>"Please don't kill us. We'll give you everything we have!"</text>
 	<text>"The day is yours! Show us your honor by allowing us to leave with our lives."</text>
 	<text>They offer you some of their cargo if you let them live.</text>

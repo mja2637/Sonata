@@ -868,7 +868,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>You dock with the station to take a look inside. However no sooner do you open the airlock than pirates burst in. Meanwhile scanners pick up a previously undetected pirate ship moving in to attack!</text>
+		<text>You dock with the station and prepare to take a look inside. As soon as your ship makes contact, two pirates burst in through the airlock. Even worse - scanners are picking up a previously undetected pirate ship moving in to attack!</text>
 		<boarders min="2" max="2"/>
 		<ship load="PIRATE" hostile="true"/>
 	</event>

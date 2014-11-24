@@ -1,5 +1,3 @@
-<!-- Copyright (c) 2012 by Subset Games. Modification developed by Matt Alioto. All rights reserved. -->
-
 <sectorType name="CIVILIAN">
 	<sector>CIVILIAN_SECTOR_1</sector>
 	<sector>CIVILIAN_SECTOR_2</sector>
@@ -45,10 +43,10 @@
 	<startEvent>START_BEACON</startEvent>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="1" max="2"/>
-	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NEUTRAL_CIVILIAN" min="2" max="4"/>
 	<event name="NOTHING_1" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
-	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="HOSTILE_CIVILIAN" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="4"/>
 	<event name="QUESTS" min="1" max="1"/>
 	<event name="HOSTILE1" min="2" max="2"/>
@@ -88,10 +86,10 @@
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
-	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NEUTRAL_CIVILIAN" min="2" max="4"/>
 	<event name="NOTHING_1" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
-	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="HOSTILE_CIVILIAN" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
@@ -110,10 +108,10 @@
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
-	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NEUTRAL_CIVILIAN" min="2" max="4"/>
 	<event name="NOTHING_2" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
-	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="HOSTILE_CIVILIAN" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
@@ -132,10 +130,10 @@
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
-	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NEUTRAL_CIVILIAN" min="2" max="4"/>
 	<event name="NOTHING_3" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
-	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="HOSTILE_CIVILIAN" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
@@ -154,10 +152,10 @@
 	</trackList>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
-	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NEUTRAL_CIVILIAN" min="2" max="4"/>
 	<event name="NOTHING_4" min="3" max="3"/>
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
-	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="HOSTILE_CIVILIAN" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/>
 	<event name="HOSTILE_BOARDING" min="0" max="1"/>
 	<event name="QUESTS" min="0" max="2"/>
@@ -346,53 +344,6 @@
 	<event name="NEUTRAL_PIRATE" min="5" max="6"/>
 </sectorDescription>
 
-
-<sectorDescription name="REBEL_SECTOR_MINIBOSS" minSector="4" unique="true">   <!-- This is the unique sector that has the mini-boss fight-->
-	<nameList>
-		<name>Empire Stronghold</name>
-	</nameList>
-	<trackList>
-		<track>colonial</track>
-		<track>wasteland</track>
-		<track>hacking</track>
-		<track>lostship</track>
-	</trackList>
-	<startEvent>START_BEACON_REBEL</startEvent>
-	<event name="FLAGSHIP_CONSTRUCTION" min="1" max="1"/>
-	<event name="STORE_REBEL" min="1" max="2"/>
-	<event name="ITEMS" min="1" max="2"/>
-	<event name="HOSTILE_REBEL" min="6" max="8"/>
-	<event name="BOARDERS_REBEL" min="1" max="1"/>
-	<event name="DISTRESS_BEACON_REBEL" min="1" max="2"/>
-	<event name="NEBULA_REBEL" min="0" max="5"/>
-	<event name="NOTHING_REBEL_SECTOR" min="1" max="2"/> <!-- need more -->
-	<event name="QUESTS_REBEL" min="0" max="2"/> <!-- need more -->
-	<event name="NEUTRAL_REBEL" min="5" max="6"/>
-</sectorDescription>
-<sectorDescription name="REBEL_SECTOR" minSector="0" unique="false">
-	<nameList>
-		<name>Loyalist Sector</name>
-	</nameList>
-	<trackList>
-		<track>rough</track>
-		<track>rough2</track>
-		<track>voidEmpire</track>
-		<track>bump</track>
-	</trackList>
-	<startEvent>START_BEACON_REBEL</startEvent>
-	<event name="STORE_REBEL" min="1" max="2"/>
-	<event name="STORE" min="0" max="1"/>
-	<event name="ITEMS" min="1" max="2"/>
-	<event name="HOSTILE_REBEL" min="6" max="8"/>
-	<event name="BOARDERS_REBEL" min="1" max="1"/>
-	<event name="DISTRESS_BEACON_REBEL" min="1" max="2"/>
-	<event name="NEBULA_REBEL" min="0" max="5"/>
-	<event name="NOTHING_REBEL_SECTOR" min="1" max="4"/>
-	<event name="QUESTS_REBEL" min="0" max="2"/>
-	<event name="NEUTRAL_REBEL" min="5" max="6"/>
-</sectorDescription>
-
-
 <sectorDescription name="MANTIS_SECTOR" minSector="4" unique="false">
 	<nameList>
 		<name>Hissho Controlled Sector</name>
@@ -449,8 +400,6 @@
 	<event name="ITEMS" min="1" max="2"/>
 	<event name="NEUTRAL_MANTIS" min="6" max="7"/>
 </sectorDescription>
-
-
 
 <sectorDescription name="ROCK_HOME" minSector="4" unique="true">
 	<nameList>

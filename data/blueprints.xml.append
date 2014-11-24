@@ -2128,7 +2128,7 @@
 	<tip>tip_crew</tip>
 	<title>Rheinmetall-Apple "Chesty" Droid</title>
 	<short>Anti-Pers.</short>
-	<desc>Will seek out and attempt to destroy any intruders on-board your ship.</desc>
+	<desc>Will seek out and attempt to destroy any intruders on board your ship.</desc>
 	<power>2</power>
 	<cost>35</cost>
 	<bp>3</bp>

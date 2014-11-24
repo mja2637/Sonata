@@ -156,7 +156,7 @@ Environmnt:
 	<ship load="REBEL_AUTO_WARNING" hostile="true"/>
 </event>
 <textList name="REBEL_AUTO">
-	<text>You discover one of the United Empire's unmanned space vehicles. The ship's AI wastes no time in engaging your ship.</text>
+	<text>You discover one of the United Empire's unmanned space vehicles. The ship's AI identifies your ship as hostile and immediately turns to engage.</text>
 	<text>Your ship is hailed: "This is an automated message. Secession is treason. Prepare to die." It appears this United Empire ship is run by an AI.</text>
 	<text>A loyalist autonomous scout is exploring this beacon. You attempt to hide behind a nearby moon, but the ship finds you and begins its assault.</text>
 	<text>The AI of a nearby small United Empire scout immediately identifies you as a threat and engages.</text>
@@ -195,7 +195,7 @@ Environmnt:
 	<text>A small loyalist ship is docked at a small station. You try to lay low but it spots you. Power up the weapons!</text>
 	<text>A United Empire ship has been patrolling this region. As soon as you arrive it begins its assault.</text>
 	<text>A loyalist ship hails you: "Enough running - the punishment for treason is death!"</text>
-	<text>You receive a transmission: "Sorry sir, this is nothing personal but we're under orders." The United Empire ship's weapons go hot.</text>
+	<text>You receive a transmission: "We have our orders. Nothing personal." The United Empire ship's weapons go hot.</text>
 	<text>You receive a transmission: "I sympathize with the Pilgrims - but treason is treason. Gridley, you may fire when ready." The loyalist ship's weapons go hot.</text>
 	<text>You come out of FTL just in time to see a Pilgrim escort craft's reactor breach under sustained Gauss fire: it explodes. You are hailed by a loyalist, crying and screaming about treason, duty, and the brother whose ship he just destroyed...you find it unprofessional. A United Empire gunship approaches.</text>
 	<text>By the time you notice the loyalist ship behind the beacon, it's too late to avoid a fight.</text>

@@ -157,23 +157,23 @@
 <!-- Sower Exposition -->
 <eventList name="SOWER_EXP_1">
 	<event>
-		<text>You found a usable API early on - you can send simple messages such as "Guard" or "Repair", and the Sower was able and willing to do it. There's a higher-level language inside the kernel, worked into everything. You think you will eventually find a way to interface with it; it's just a matter of time.</text>
+		<text>You found a usable API early on, so you can send the Sower simple messages such as "Guard" or "Repair", and it generally does what you need it to. There's a higher-level language inside the kernel, worked into everything, that would support more advanced behavior. You think you'll eventually find a way to interface with it; it's just a matter of time.</text>
 	</event>
 	<event>
-		<text>Your Sower discovered and began using your ship computer's declared services remarkably fast. It recently began to output status messages to crewmember terminals - simple enumerations like "SYSTEM_REPAIR_TASK_SUCC_EN" and "O2_IN_NORM := true". It's learning.</text>
+		<text>The Sower accessed your ship's networks, and it's begun using your ship computer's declared services. It recently began to output status messages to crewmember terminals - simple enumerations like "SYSTEM_REPAIR_TASK_SUCC_EN" and "O2_IN_NORM := true". It's learning.</text>
 		<choice>
 			<text>Continue...</text>
 			<event>
-				<text>Presumably, the Sower intelligence is a combination of programming and empiric data - nature and nuture. Without a way to rewrite their own progamming, though, Sower can only learn so much. Since you've observed drastic deviations from typical Sower behavior, there must be something deeper.</text>
+				<text>Presumably, the Sower intelligence is a combination of code and experiential data - nature and nuture. You've noticed that your Sower crewmember is starting to behave much differently than it did when it first came aboard. Are the Sower capable of rewriting their own programming as they learn?</text>
 			</event>
 		</choice>
 	</event>
 	<event>
-		<text>It had rapidly pinged one of your ship's unused databases, so you started dumping simple data and function pointers into it in hopes of a communications breakthrough. After figuring out how to fling simple alphanumeric messages at one another, the Sower has started populating one column with code in an odd high-level language.</text>
+		<text>It started rapidly querying one of your ship's unused databases; on a hunch, you started dumping simple data and function pointers into it in hopes of a communications breakthrough. It didn't take you long to figure out how to fling simple alphanumeric messages at one another. Now, the Sower has started populating several tables with code in an odd high-level language.</text>
 		<choice>
 			<text>Continue...</text>
 			<event>
-				<text>As best you can determine, this code poses no threat to your ship's systems. It seems to involve decision-making and experiencial behavior adjustment; you'll need to study it further in order to make any use of it.</text>
+				<text>As best you can determine, this code poses no threat to your ship's systems. It seems to involve decision-making and experiencial behavior adjustment. You'll need to study it further in order to make any use of it.</text>
 			</event>
 		</choice>
 	</event>
