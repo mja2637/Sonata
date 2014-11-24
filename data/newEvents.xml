@@ -1355,7 +1355,7 @@ PIRATE_SALESMAN
 			</event>
 		</choice>
 	</event>
-</event>
+</eventList>
 
 
 <event name="TERRAFORMING_SCAN"  unique="true"> <!-- in neutral only-->

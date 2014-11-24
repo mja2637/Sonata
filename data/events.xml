@@ -526,7 +526,7 @@ item - Dust + that thing -->
 			<text>The fight brings them out of your immediate scanning range; however, after a time the distress calls stop.</text>
 		</event>
 	</choice>
-	<choice req="weapons" lvl="6" hidden="true" hidden="true">
+	<choice req="weapons" lvl="6" hidden="true">
 		<text>(Improved Weapons) Fire a warning shot from your strongest weapon.</text>
 		<event load="PIRATE_CIVILIAN_BEACON_BEAM"/>
 	</choice>
@@ -3323,6 +3323,3 @@ Someone asks you to help them on a land-based combat mission, borrow the crew me
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
-<event name="CHARACTER_TEST">
-	<text>`abcdefghijklmno °±²³´µ¶·¸¹º»¼½ ¾¿ÀÁÂÃÄÅÆÇ ÈÉÊËÌÍÎÏ ĞÑÒÓÔÕ Ö×ØÙÚÛ ÜİŞßàá âãäåæç èéêëìí îïğñòóô õö÷øùúûüış ÿŒœŠšŸƒ</text>
-</event>

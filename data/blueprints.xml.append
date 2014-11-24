@@ -3566,7 +3566,7 @@
 		<mind power="1" room="0" start="false" img="room_mind_11"/> <!--F-->
 		<hacking power="1" room="5" start="false" img="room_hacking_2"> <!-- F-->
 			<slot>
-				<direlction>down</direction>
+				<direction>down</direction>
 				<number>0</number>
 			</slot>
 		</hacking>
