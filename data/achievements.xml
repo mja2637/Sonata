@@ -30,7 +30,7 @@
 
 <achievement id="ACH_UNLOCK_ALL">
 	<name>Your Own Fleet</name>
-	<desc>Unlock every playable ship.</desc>
+	<desc>Unlock the Type A layout for every playable ship.</desc>
 	<img>achievements/4.png</img>
 </achievement>
 
@@ -156,7 +156,7 @@
 
 <achievement id="ACH_FULL_ARSENAL">
 	<name>Multirole</name>
-	<desc>Have every system and subsystem installed on the UES Ranger at one time.</desc>
+	<desc>Have 11 systems installed on the UES Ranger at one time.</desc>
 	<img>achievements/kestral_2.png</img>
 	<multiDifficulty>1</multiDifficulty>
 	<ship>PLAYER_SHIP_HARD</ship>
@@ -264,7 +264,7 @@
 
 <achievement id="ACH_ROCK_CRYSTAL">
 	<name>Apocalypse</name>
-	<desc>Find the secret sector with the Sower Cruiser</desc>
+	<desc>Find the secret sector with the Sower Cruiser.</desc>
 	<img>achievements/rock_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_ROCK</ship>
 	<multiDifficulty>1</multiDifficulty>
@@ -368,5 +368,31 @@
 	<desc>Destroy 15 (CLASSIFIED) ships using the (CLASSIFIED).</desc>
 	<img>achievements/crystal_cruiser_3.png</img>
 	<ship>PLAYER_SHIP_CRYSTAL</ship>
+	<multiDifficulty>1</multiDifficulty>
+</achievement>
+
+<!-- LANIUS SHIP ACHIEVEMENTS -->
+
+<achievement id="ACH_LANIUS_ADVANCED">
+	<name>Advanced Mastery</name>
+	<desc>Have Hacking, Mind Control and the Battery active at once.</desc>
+	<img>achievements/anaerobic_cruiser_1.png</img>
+	<ship>PLAYER_SHIP_ANAEROBIC</ship>
+	<multiDifficulty>1</multiDifficulty>
+</achievement>
+
+<achievement id="ACH_LANIUS_SCRAP">
+	<name>Scrap Hoarder</name>
+	<desc>Have at least 600 scrap in your ship storage.</desc>
+	<img>achievements/anaerobic_cruiser_2.png</img>
+	<ship>PLAYER_SHIP_ANAEROBIC</ship>
+	<multiDifficulty>1</multiDifficulty>
+</achievement>
+
+<achievement id="ACH_LANIUS_OXYGEN">
+	<name>Loss of Cabin Pressure</name>
+	<desc>Get to sector 8 without your ship's net oxygen levels exceeding 20 percent (starts after the first jump).</desc>
+	<img>achievements/anaerobic_cruiser_3.png</img>
+	<ship>PLAYER_SHIP_ANAEROBIC</ship>
 	<multiDifficulty>1</multiDifficulty>
 </achievement>

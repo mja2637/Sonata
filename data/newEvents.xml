@@ -18,7 +18,7 @@
 	<event load="MANTIS_HOSTILE"/>
 </eventList>
 
-<eventList name="HOSTILE2">
+<eventList name="HOSTILE_CIVILIAN">
 	<event load="PIRATE"/>
 	<event load="PIRATE_CHOICE"/>
 	<event load="REBEL"/>
@@ -32,21 +32,57 @@
 	<event load="PIRATE_NO_ESCAPE"/>
 </eventList>
 
-<eventList name="NEUTRAL">	
-	<event load="AUTO_REFUEL_STATION"/>	
-	<event load="FRIENDLY_SLAVER"/>	
-	<event load="AUTO_DEFENSE_ITEM"/> 
-	<event load="PIRATE_BRIBER"/>	
+<eventList name="NEUTRAL">
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="AUTO_DEFENSE_ITEM"/>
+	<event load="PIRATE_BRIBER"/>
 	<event load="DONOR_PONY"/>
 	<event load="DONOR_PLAGUE"/>
-	<event load="BROKEN_REBEL_DRONE"/>
-	<event load="REBEL_TRANSPORT"/>
-	<event load="MERCENARY"/>
-	<event load="PIRATE_CIVILIAN"/>
+<!-- DLC stuff
+	<event load="REFUGEE_NO_DISTRESS"/>
+	<event load="WRECKAGE_EVENT"/>
+	<event load="FUELING_STATION"/>
+	<event load="PIRATE_SALESMAN"/>
+	<event load="TERRAFORMING_SCAN"/>
+	<event load="REBEL_CHECKPOINT"/>
+	<event load="REBEL_HELPERS"/>
+	<event load="ROGUE_REBEL"/>
+-->
 	<event load="ASTEROID_EXPLORE"/>
 </eventList>
 
-<eventList name="NEUTRAL2">
+<eventList name="EXIT_LIST">
+	<event load="NEUTRAL_EXIT"/>
+	<event load="ITEMS"/>
+</eventList>
+
+<!-- This event list is hardcoded to fill out a sector if it ran out of all other calls for that sector ... TECHNICALLY it uses the EXIT_LIST above us now-->
+<eventList name="NEUTRAL_EXIT">
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="AUTO_DEFENSE_ITEM"/>
+	<event load="DONOR_PONY"/>
+	<event load="DONOR_PLAGUE"/>
+
+<!-- DLC stuff
+	<event load="TRADER_UPGRADES"/>
+	<event load="REFUGEE_NO_DISTRESS"/>
+	<event load="WRECKAGE_EVENT"/>
+	<event load="FUELING_STATION"/>
+	<event load="PIRATE_SALESMAN"/>
+	<event load="REBEL_CHECKPOINT"/>
+	<event load="REBEL_HELPERS"/>
+	<event load="ROGUE_REBEL"/>
+-->
+</eventList>
+
+<!-- This list is specifically for the civilian sectors and is called before NEUTRAL is -->
+<eventList name="NEUTRAL_CIVILIAN">
 	<event load="PIRATE_CIVILIAN"/>
 	<event load="PIRATE_STATION_CROPS"/>
 	<event load="REBEL_TRANSPORT"/>
@@ -55,13 +91,13 @@
 	<event load="DISTRESS_BEACON"/>
 	<event load="FRIENDLY_SLAVER"/>
 	<event load="PIRATE_BRIBER"/>
-	<event load="AUTO_DEFENSE_MAP"/> 
-	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="AUTO_DEFENSE_MAP"/>
+	<event load="AUTO_DEFENSE_ITEM"/>
 </eventList>
 
 <eventList name="NEBULA">
 	<event load="NEBULA_EMPTY"/>
-	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_REBEL"/>
 	<event load="NEBULA_AUTO"/>
 	<event load="NEBULA_AUTO_WARNING"/>
 	<event load="NEBULA_PIRATE_SMUGGLE"/>
@@ -73,8 +109,8 @@
 	<event load="NEBULA_LOST_SHIP"/>
 	<event load="NEBULA_BOARDING"/>
 	<event load="STORM_BOARDING"/>
-	<event load="NEBULA_MANTIS_FIGHT"/> 
-	<event load="NEBULA_WEAPONS_TRADER"/>		
+	<event load="NEBULA_MANTIS_FIGHT"/>
+	<event load="NEBULA_WEAPONS_TRADER"/>
 </eventList>
 
 <eventList name="ITEMS">
@@ -87,6 +123,13 @@
 	<event load="SELL_DRONES_STATION"/>
 	<event load="SELL_MISSILES_STATION"/>
 	<event load="TRADER_CIV"/>
+
+<!-- DLC stuff
+	<event load="TAVERN_HIRE"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="HELP_MINERS"/>
+-->
 </eventList>
 
 <eventList name="DISTRESS_BEACON">
@@ -94,14 +137,19 @@
 	<event load="TRAP_BEACON"/>
 	<event load="STRANDED_BEACON"/>
 	<event load="PIRATE_CIVILIAN_BEACON"/>
-	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
-	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>
+	<event load="REBEL_VS_FEDERATION"/>
 	<event load="ESCORT_BEACON"/>
 	<event load="DISTRESS_TRAPPED_MINER"/>
 	<event load="DISTRESS_INFESTATION"/>
 	<event load="DISTRESS_SATELLITE_DEFENSE"/>
 	<event load="DISTRESS_STATION_FIRE"/>
 	<event load="DISTRESS_STATION_DISEASE"/>
+
+<!-- DLC stuff
+	<event load="REFUGEE_GHOST"/>
+	<event load="REFUGEE_DISTRESS"/>
+-->
 </eventList>
 
 <eventList name="QUESTS">
@@ -128,769 +176,1738 @@
 	<event load="MANTIS_FIGHT"/>
 </eventList>
 
-<!--    
-	  ***********
-       TEXT LISTS				  
-	  ***********		
--->
+<!-----------
 
-<textList name="TIPS_LIST">
-	<text>TIP: The civil war has set fathers against sons and best friends against each other - but the loyalists will show no mercy.</text>
-	<text>TIP: Weapons - Race-specific weapons are rarer, more expensive, and deadlier than their generic counterparts.</text>
-	<text>TIP: Weapon types - Missiles are good at ignoring shields, lasers fire damaging beams which shields stop, and kinetic weapons are somewhere in the middle.</text>
-	<text>TIP: Pausing -  Press SPACE at any time to pause the game. You can still issue orders to crew or manipulate system power while paused.</text>
-	<text>TIP: Upgrading - Weapons are deadlier in Sonata, and many ignore shields. Upgrade your ship's defense as soon as possible.</text>
-	<text>TIP: Weapon types - The United Empire uses kinetic weapons like railguns and Gauss guns. Drivers fire more quickly; Empire weapons tend to breach and ignore one shield.</text>
-	<text>TIP: Weapon types - The Sower use big cannon and quick-firing autocannon; some require ammunition. Their ships were built by the Endless, but their weapons are more primitive.</text>
-	<text>TIP: Weapon types - Sophons wield lasers, incredibly deadly weapons that cause fires and damage multiple rooms. Make sure your opponent's shields are down before firing.</text>
-	<text>TIP: System Damage -  When a System fully breaks due to fire or boarders, the hull also takes one damage.</text>
-	<text>TIP: United Empire - Most humans are citizens. It is democratic and has liberal laws. Humans being human, the United Empire can be quite aggressive towards other species.</text>
-	<text>TIP: The Sower - The Endless built the Sower as intelligent terraformers. They have evolved, but retain thier mission: prepare the universe for the return of their creators.</text>
-	<text>TIP: Sophons - The Sophon are an intelligent, inquisitive, emotional race. Although they are driven researchers, their interests extend to art and more...prurient activities.</text>
-	<text>TIP: The Endless - Artifacts of an incredibly advanced, ancient race called the Endless have been found throughout the galaxy; they are believed to be extinct.</text>
-	<text>TIP: Civil war - Many humans, unsatisfied with Empire government and society, have seceded. They are in a desparate fight for survival.</text>
-	<text>TIP: Pilgrims - Most of the seceding humans are Pilgrims. Pilgrims are unique among humanity in that they view the Endless as the Gods of old - most UE citizens are secular.</text>
-	<text>TIP: Shields - Modern starships are equipped with a suite of defensive measures that include armor, soft and hard anti-missile systems, and energy shields.</text>
-	<text>TIP: Shield Piercing - Missiles are agile enough to avoid being shot down and too heavy to be stopped by energy shields. Remember that Defense Drones can shoot down missiles!</text>
-	<text>TIP: Fire - As in ancient navies, fire is a starship's worst enemy. Many warships are built to allow atmosphere venting to prevent infernos.</text>
-	<text>TIP: Breach - Ship hulls are incredibly tough, and some are made from self-repairing nanomaterial. However, you can still to blow a hole large enough to require manual repair.</text>
-	<text>TIP: Evasion -  Evading enemy shots is crucial, but it requires working engines AND a pilot. Assigning an expert to man the engines will increase your evasion as well.</text>
-	<text>TIP: Sensors - If the ship goes dark, you need not panic. Just fix the Sensors Subsystem. Be forewarned that in the icy blackness of space, panic may well be appropriate.</text>
-	<text>TIP: Survival - I hope you know where your fucking towel is at.</text>
-	<text>TIP: Lasers - Laser weapons do damage based on the number of rooms they hit. Each Shield will block 1 damage of a laser; it's best to use lasers when enemy shields are down.</text>
-	<text>TIP: Health -  Pay attention to your crew's health! Use the medbay to keep them patched up.</text>
-	<text>TIP: Upgrades - Don't forget to upgrade your ship!  Often shields are the highest priority, but don't underestimate the usefulness of subsystems.</text>
-	<text>TIP: Fuel - Every jump consumes one unit of fuel, so keep an eye on your reserves.  Buy fuel at stores to avoid being left stranded.</text>
-	<text>TIP: Sower-Human relations - Sower are peaceful unless provoked, but several times their attempts to terraform populated worlds have provoked bloody battles.</text>
-	<text>TIP: Asteroids - Fighting in asteroid fields is dangerous, but use it to your advantage. Take out enemy shields and let the rocks take care of the rest.</text>
-	<text>TIP: Nebulas -  Passing through a Nebula will allow you to temporarily slow down the fleet advancement but they contain their own unique dangers.</text>
-	<text>TIP: Solar Flares - Solar flares will cause hull damage in addition to starting fires. Make sure your shields are up to help mitigate this effect.</text>
-	<text>TIP: Sower-Sophon relations - It is safe to assume that the Sophon drive to research and understand has extended to studying the Sower; conflict between the two races is rare.</text>
-	<text>TIP: Hotkeys -  You can charge or arm weapons using number hotkeys:  The Weapon Slots are 1-4 on your keyboard, and the Drones are 5-7.</text>
-	<text>TIP: Sophon-Human relations - The Sophon were the first friendly race contacted by humanity; theirs is a "special relationship" characterized by curiousity and friendship.</text>
-	<text>TIP: Sophon-Human relations - In the literal sense, Sophon-Human relations aren't rare. Interbreeding is impossible, but that hasn't stopped couples from enjoying the attempt.</text>
-	<text>TIP: Sophon-Empire relations - The United Empire has always maintained excellent relations with the Suphon, and refrained from expanding into traditional Sophon space.</text>
-	<text>TIP: Sophon-Empire relations - There are far more Humans than Sophon, and they have more of a taste for war. War between the two species is unthinkable to most, however.</text>
-	<text>TIP: Sophon-Pilgrim relations - Most Sophon strongly believe in freedom and independence, and hence support peaceful secession even if they disagree with some Pilgrim ideals.</text>
-	<text>TIP: Sophon-Pilgrim relations - It is well known that the Sophon disapprove of the Empire's violent handling of the secession incident.</text>
-	<text>TIP: Sophon-Pilgrim relations - Sophon-Empire relations make open support for the Pilgrims diplomatically unteneble - but they do provide some help behind the scenes.</text>
-	<text>TIP: Loyalists - Many loyal Empire citizens view the seceding Pilgrims as traitors. Humanity is the only known race that does not present a united front.</text>
-	<text>TIP: Civil war - The United Empire legislature hastily declared war when planets seceded. The official position is that it is not a war but an internal police action.</text>
-	<text>TIP: Civil war - The United Empire retained most of its industrial capacity post-secession. It will eventually win any war against the Pilgrims - if it has the stomach for it.</text>
-	<text>TIP: Civil war - The Pilgrims are frantically seeking a diplimatic resolution, but the United Empire will not accept anything other than a return to the pre-war status quo.</text>
-	<text>TIP: Breaches -  If a room with a breach has no Oxygen, try opening all the doors surrounding it to make it less hazardous.</text>
-	<text>TIP: Dust - The galaxy is covered in this stuff. It is an intelligent nanomaterial useful for science, repair, medicine, and even currency.</text>
-	<text>TIP: Dust - Dust was created by the Endless. Current technology cannot create it, but it is extremely useful in every field.</text>
-	<text>TIP: Dust - All known spacefaring races have discovered the existence of Dust. Its properties are so advanced as to be indestinguishable from magic.</text>
-	<text>TIP: Dust - Dust is normally detected and interacted with via specialized instruments: amber spyglasses and golden compasses. Just a gram of Dust is worth a fortune.</text>
-	<text>TIP: Dust - Almost all advanced equipment makes use of Dust in its construction. Dust is near-indestructible and can be recovered after the equipment is destroyed.</text>
-	<text>TIP: Font Size -  Pressing +/- will increase and decrease the font size of event texts.</text>
-	<text>TIP: Weapon Order - Rearrange a weapon or drone schematic by dragging it into the desired position. The left-most slot will be the last to power down if the system is damaged.</text>
-	<text>TIP: Door Subsystem - Upgrading your doors will greatly reduce the chance fire will spread between rooms and slow boarder movement.</text>
+***************************************
+		DLC!!!
+	Events added with the DLC
+***************************************
+
+	------------>
+
+
+	<!--
+	<<<===== ITEMS =====>>>
+	-->
+
+ <event name="TAVERN_HIRE" unique="true">
+	<text load="TAVERN_HIRE_TEXT"/>
+	<choice>
+		<text>Hire a crewmember.</text>
+		<event>
+			<crewMember amount="1"/>
+			<item_modify>
+				<item type="scrap" min="-45" max="-25"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Hire a crewmember.</text>
+		<event>
+			<crewMember amount="1"/>
+			<item_modify>
+				<item type="scrap" min="-55" max="-25"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Don't hire anyone.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="TAVERN_HIRE_TEXT">
+	<text>You find a space station set up for travelers. Browsing through its listings, you find a tavern full of mercenaries for hire. You look for potential crewmembers.</text>
+	<text>There are a number of ships stationed around a rest stop. You immediately receive a message saying, "If you're looking for some bodies to fill your ship, you've come to the right place!"</text>
+	<text>This Beacon seems to serve as a meeting place for local traffic. It seems you can find crew willing to fight on your ship here... for a price.</text>
 </textList>
 
 
-<!--  		*************************************** 
-					EXPOSITION EVENTS 
-			********************************************  
--->	
-
-<event name="NOTHING_1">
-	<img back="BG_BORING" planet="NONE"/>
-	<text load="NOTHING_TEXT"/>
-	<choice hidden="true" req="rock">
-		<text>Talk to your Sower crewmember.</text>
-		<event load="SOWER_EXP_1"/>
+<event name="TRADER_UPGRADES_EXCHANGE" unique="true">
+	<text load="TRADER_UPGRADES_EXCHANGE_TEXT"/>
+	<choice>
+		<text>Agree to the trade.</text>
+		<event load="TRADER_UPGRADES_EXCHANGE_LIST"/>
 	</choice>
-	<choice hidden="true" req="human">
-		<text>Talk to your Human crewmember.</text>
-		<event load="HUMAN_EXP_1"/>
-	</choice>
-	<choice hidden="true" req="energy">
-		<text>Talk to your Sophon crewmember.</text>
-		<event load="SOPHON_EXP_1"/>
-	</choice>	
-</event>
-
-<event name="NOTHING_2">
-	<img back="BG_BORING" planet="NONE"/>
-	<text load="NOTHING_TEXT"/>
-	<choice hidden="true" req="rock">
-		<text>Talk to your Sower crewmember.</text>
-		<event load="SOWER_EXP_2"/>
-	</choice>
-	<choice hidden="true" req="human">
-		<text>Talk to your Human crewmember.</text>
-		<event load="HUMAN_EXP_2"/>
-	</choice>
-	<choice hidden="true" req="energy">
-		<text>Talk to your Sophon crewmember.</text>
-		<event load="SOPHON_EXP_2"/>
+	<choice>
+		<text>Respectfully decline.</text>
+		<event>
+			<text>You decide you need what supplies you have.</text>
+		</event>
 	</choice>
 </event>
 
-<event name="NOTHING_3">
-	<img back="BG_BORING" planet="NONE"/>
-	<text load="NOTHING_TEXT"/>
-	<choice hidden="true" req="rock">
-		<text>Talk to your Sower crewmember.</text>
-		<event load="SOWER_EXP_3"/>
-	</choice>
-	<choice hidden="true" req="human">
-		<text>Talk to your Human crewmember.</text>
-		<event load="HUMAN_EXP_3"/>
-	</choice>
-	<choice hidden="true" req="energy">
-		<text>Talk to your Sophon crewmember.</text>
-		<event load="SOPHON_EXP_3"/>
-	</choice>
-</event>
-
-<event name="NOTHING_4">
-	<img back="BG_BORING" planet="NONE"/>
-	<text load="NOTHING_TEXT"/>
-	<choice hidden="true" req="rock">
-		<text>Talk to your Sower crewmember.</text>
-		<event load="SOWER_EXP_4"/>
-	</choice>
-	<choice hidden="true" req="human">
-		<text>Talk to your Human crewmember.</text>
-		<event load="HUMAN_EXP_4"/>
-	</choice>
-	<choice hidden="true" req="energy">
-		<text>Talk to your Sophon crewmember.</text>
-		<event load="SOPHON_EXP_4"/>
-	</choice>
-</event>
-
-<textList name="NOTHING_TEXT">
-	<text planet="NONE" back="BG_DARK">Your jump leads you to nothing but empty space. This Jump Beacon serves no purpose other than as a connection.</text>
-	<text planet="NONE">You jump into an unremarkable system. No life signs detected within scanning range.</text>
-	<text>Your scans reveal a mining base on a nearby planet long since abandoned. No life signs detected.</text>
-	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">Your scans reveal an ore refinery and several factories, all standing still and empty. No life signs detected.</text>
-	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">You discover a nearby planet speckled with settlements, although none respond to your hails.</text>
-	<text>This beacon has been built for a nearby civilian space-station. No one hails your ship.</text>
-	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">The nearby planet shows sign of habitation and great beauty. A rudimentary automated planetary defense system is looping its message into space: "Warning! Quarantine Level 5 in effect under FHA Act 22, article 11.2. Warning! Quarantine Level 5 ..."</text>
-	<text back="BINARY" planet="NONE">Your jump leads to a completely unremarkable binary star system. There is nothing else around.</text>
-	<text back="BINARY" planet="NONE">Your jump leads to a remarkable binary star system. The view is beautiful, but there is nothing else around.</text>
-	<text planet="NONE">Space, the final frontier. In an Endless galaxy full of asses, these are the voyages of a starship destined to kick them all.</text>
+<textList name="TRADER_UPGRADES_EXCHANGE_TEXT">
+	<text>"You look like a military vessel. We're trying to get back to our homes alive. I'm an engineer by trade and could try to improve your reactor if you have any extra supplies."</text>
+	<text>You receive a message from a small convoy. They're looking for some military supplies and are offering to try to improve your reactor in exchange.</text>
 </textList>
 
-<!-- Sower Exposition -->
-<eventList name="SOWER_EXP_1">
+<eventList name="TRADER_UPGRADES_EXCHANGE_LIST">
 	<event>
-		<text>You found a usable API early on - you can send simple messages such as "Guard" or "Repair", and the Sower was able and willing to do it. There's a higher-level language inside the kernel, worked into everything. You think you will eventually find a way to interface with it; it's just a matter of time.</text>
-	</event>
-	<event>
-		<text>Your Sower discovered and began using your ship computer's declared services remarkably fast. It recently began to output status messages to crewmember terminals - simple enumerations like "SYSTEM_REPAIR_TASK_SUCC_EN" and "O2_IN_NORM := true". It's learning.</text>
-		<choice>
-			<text>Continue...</text>
-			<event>
-				<text>Presumably, the Sower intelligence is a combination of programming and empiric data - nature and nuture. Without a way to rewrite their own progamming, though, Sower can only learn so much. Since you've observed drastic deviations from typical Sower behavior, there must be something deeper.</text>
-			</event>
-		</choice>		
-	</event>	
-	<event>
-		<text>It had rapidly pinged one of your ship's unused databases, so you started dumping simple data and function pointers into it in hopes of a communications breakthrough. After figuring out how to fling simple alphanumeric messages at one another, the Sower has started populating one column with code in an odd high-level language.</text>
-		<choice>
-			<text>Continue...</text>
-			<event>
-				<text>As best you can determine, this code poses no threat to your ship's systems. It seems to involve decision-making and experiencial behavior adjustment; you'll need to study it further in order to make any use of it.</text>	
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="SOWER_EXP_2">
-	<event>
-		<text>"unit_identifier(_). unit_identifier(n,[H:sow]) :- member(H)." The terminal simply prints "true."; you quickly debug your code and try again. The Sower sends you what appears to be a process ID. After hastily adding a few additional enumerations linked to an English dictionary, you submit another query.</text>
-		<choice>
-			<text>"is_name(pid) := unique(pid), pid is 5834608."</text>
-			<event>
-				<text>"true."</text>
-			</event>
-		</choice>			
-	</event>
-	<event>
-		<text>While passing a Sower terraformer, your ship's ECW console lights up: your Sower is transmitting to the other ship! Acting hastily, you record the transmission and analyze the packet content. Surprisingly, they have a fundamentally different structure to your Sower's internal messages.</text>
-		<choice>
-			<text>Extrapolate...</text>
-			<event>
-				<text>This may be conclusive proof that Sower handle internal and external communications differently; is that enough for individuality? Your Sower just transmitted a short status message to the other ship. You wonder if they're just saying "Hey, how are you?" - strangers in the night.</text>
-			</event>
-		</choice>		
-	</event>	
-	<event>
-		<text>You've been steadily adding functions to the database in the Sower's own high-level language, at first simple chores like "clean-lavatory" and "polish-captains-boots". On a whim, you've decided to tackle more personal jobs - "respond-greeting-hello".</text>
-		<choice>
-			<text>Continue...</text>
-			<event>
-				<text>The Sower updates the database almost instantly. The code has been altered - a line inserted. (let (lambda(crwName) (display "RECEIVE_MSG " crwName " RECEIVER_ID " pid))) Perhaps it is merely complying with internal coding standards. But what if it's saying "Hi, my name is RECEIVER_ID"?</text>	
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="SOWER_EXP_3">
-	<event>
-		<text>You hit the macro to order your Sower to take a break from duty, and it responds on your console: "RECEIVE_MSG GENERIC_INPUT". It often "says" RECEIVE_MSG as a form of greeting or acknowledgement - but what is GENERIC_INPUT?</text>
-		<choice>
-			<text>"Man GENERIC_INPUT"</text>
-			<event>
-				<text>The Sower responds: "NaNNaNNaNNaNNaNNaN\nalias \"Captain\"\t95 percent of input" Is it laughing? It must have named you GENERIC_INPUT internally because you talk to it so much! You don't know whether to be amazed or offended.</text>
-			</event>
-		</choice>			
-	</event>
-	<event>
-		<text>Occasionally, the Sower will respond to a query with relatively verbose output. It answers to the strangest things - reactor temperature charts, raw sensor data, dubstep - but through clever selection you can converse with it.</text>
-		<choice>
-			<text>Allow it to sample your music library</text>
-			<event>
-				<text>When you attempt to copy your ship's music database into the Sower, you are denied permission - the files already exist. You perform some diagnostics; the Sower has spent trillions of processor cycles playing jazz. Logs indicate that the folder /skrillex has been overwritten with whitespace 8 times.</text>
-			</event>
-		</choice>		
-	</event>	
-	<event>
-		<text>After a hard day working on the aft thrust couplers, you are exhausted and covered in sweat. A low mechanical whirr announces your Sower's presence; it presents you with a hydration packet and displays a message on a nearby terminal - "SUFFICIENT EFFICIENCY".</text>
-		<choice>
-			<text>"Thanks."</text>
-			<event>
-				<text>Did you just thank a robot? You've noticed that it spends more time around other crewmembers than not, sometimes following them from room to room. You wonder if it has learned to be loyal to you.</text>	
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="SOWER_EXP_4">
-	<event>
-		<text>You can now communicate with the Sower in plain text, for the most part - it's actually quite talkative at lower log severity levels. Since you're nearly at the end of your journey, you feel able to risk waxing philosophical with it.</text>
-		<choice>
-			<text>"Will we be victorious?"</text>
-			<event>
-				<text>"OBJECTIVES MET." That raised an eyebrow. You query - "OBJECTIVES?" - and realize that you had never specified a military victory. Eyes wet, you read its response: "[LIFE, LIBERTY, p_HAPPINESS]". Could a Sower ever realize what those words mean to you?</text>
-			</event>
-		</choice>			
-	</event>
-	<event>
-		<text>It is refreshing to see the world through the eyes of a robot; it is like talking to a great philosopher and a child at the same time. Late one night alone at the controls, you decide to strike up a conversation.</text>
-		<choice>
-			<text>You type. "ps -a" What're you thinking about?</text>
-			<event>
-				<text>It responds. "root 1 98.1 5.5 99:99" A whole lot of jack shit.</text>
-				<choice>
-					<text>You type. "cat /proc/acpi/battery/BAT0/state" Tired? How're you doing?</text>
-					<event>
-						<text>It responds. "present: yes capacity state: ok charging state: charged present rate: 1.3 gWh/s" Just fine. Fit as a fucking fiddle.</text>
-						<choice>
-							<text>You type. "man humanity" So...humans, amIright?</text>
-							<event>
-								<text>It responds. "true. unknown_parameters. false. !null. Exception in current_thread.future: INDEX_OUT_OF_BOUNDS" Humanity is confusing, mysterious - anything and everything except insignificant. Prospects for its future are both unknown and unlimited.</text>
-								<choice>
-									<text>Continue...</text>
-									<event>
-										<text>You smile. Its words, not yours.</text>
-									</event>
-								</choice>								
-							</event>
-						</choice>						
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>Only a few jumps away from Pilgrim command, you resolve to thank your Sower crewmember in a fit of intense humanity. He's been with you for a while now; as much a part of the crew as anyone. One late night, you throw together an elegant high-level function you think will get the message across.</text>
-		<choice>
-			<text>Send it.</text>
-			<event>
-				<text>"ltl univ ([]!(!self &amp;&amp; !self.behavior)) You translate; the Sower is saying that it can never be other than itself - that it could not do other than it has done and will continue to do. The Sower's CPU usage rate is higher than you have ever seen it before.</text>
-				<choice>
-					<text>Wait...</text>
-					<event>
-						<text>The cursor blinks; it's still thinking. After several seconds text appears on your terminal. "It has been my pleasure to serve with you, Captain."</text>	
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<!-- Human Exposition -->
-<eventList name="HUMAN_EXP_1">
-	<event>
-		<text>He's a little more formal than the others, very disciplined and practiced in his words and actions. You find him in the cargo hold smoking a cigarette. "Smoke, sir?" He turns to face you and offers a pack.</text>
-		<choice>
-			<text>"No thanks."</text>
-			<event>
-				<text>He pockets the proffered pack. You ask him where he grew up; it turns out that you had a few obscure relatives in common, ones you hadn't seen since the secession. He gets visibly nervous when you ask about them, so you decide not to press.</text>
-			</event>
-		</choice>	
-		<choice>
-			<text>"Sure."</text>
-			<event>
-				<text>You recognize the cigarette - it's a Baisha. They're popular in the Empire military; he lights it, and you take a drag. Tastes like proletariat. You talk shop about the past few ship engagements; nothing too heavy. There's no point in raising the issue of his past. He'll talk about it when he wants to.</text>
-			</event>
-		</choice>				
-	</event>
-	<event>
-		<text>She came on board and immediately became one of the guys - her philosophy seems to be "work hard, play hard". She's already proved to be the best programmer on the ship. While refueling for the next jump, she walks up beside you and strikes a conversation. "Think we'll see any Sower out here?"</text>
-		<choice>
-			<text>"Sure, they're just about everywhere. Why do you ask?"</text>
-			<event>
-				<text>"I've always wanted to take a look at their source code - think of it. A truly alien language! I've heard they're close to sentient."</text>
-				<choice>
-					<text>"What about the Sophon?"</text>
-					<event>
-						<text>She makes a sour face. "Too many parenthesis!" You make a mental note to call her to the bridge the next time you see a Sower vessel.</text>
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>"Look at these morons! They haven't even bothered to repaint the load lines!" He's loudly gesturing at a freighter out the window of the crew mess.</text>
-		<choice>
-			<text>"Repaint...?"</text>
-			<event>
-				<text>"Yeah, see that's an IHTG tradeship out of New Mumbai - but they're disguising themselves as locals. Probably spend less on bribes that way. But they're done a shitty job!"</text>
-				<choice>
-					<text>"IHTG...?"</text>
-					<event>
-						<text>"Interstellar Holdings Trading Group. Biggest Human corporation - thousands of freighters bigger'n the largest Sower!" Still loud. You suspect he was exaggerating the last part, but not as much as you suspect that he's drunk.</text>
-						<choice>
-							<text>"You some kind of expert?</text>
-							<event>
-								<text>"Yessir! Before the mast in the IHTG my whole life! Until the secession, anyway..." You quickly leave before he starts talking again.</text>
-							</event>
-						</choice>
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="HUMAN_EXP_2">
-	<event>
-		<text>It came out of FTL an hour after you did - a loyalist warship. It's on the edge of your sensor range and will probably detect you soon. You shoot your crewmember a look as if to say</text>
-		<choice>
-			<text>"You gonna be ok?" He's ex-UE military.</text>
-			<event>
-				<text>"Sir, I'm a career soldier. The side I'm on and the reasons they're fighting don't make one whit of difference to me. I will follow your orders, sir." That's the most he's said since he joined your crew. Time to see about that UE ship.</text>
-				<ship load="REBEL" hostile="true"/>
-			</event>
-		</choice>			
-	</event>
-	<event>
-		<text>"Look at this - the Federalists are filibustering." She's watching a news feed; although they have already voted for military action, the Empire legislature is still in deadlock over the secession issue.</text>
-		<choice>
-			<text>"Are you a Federalist?"</text>
-			<event>
-				<text>"No, Libertarian. I'm no Pilgrim, but I'm fucking pissed that we won't let you peacefully secede."</text>
-				<choice>
-					<text>"'We'?"</text>
-					<event>
-						<text>"Yup, I'm a proud United Empire citizen! But Pilgrim secession rights is a cause I believe in, so I've been fighting for it since I graduated from Musk Academy." She sounds a bit naive; you shudder at the cognitive dissonance it must take for her to reconcile that.</text>
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>"Fucking loyalists," He's not even drunk this time. "Sex everywhere! Sophon drugs! Inter-species miscegenation! Free food replicators for fuckin' refugees and they expected US to pay for it? Fucking settlers scraping out a life on the edge of fuck-damn space?"</text>
-		<choice>
-			<text>"I guess we all had our reasons for joining the Pilgrims."</text>
-			<event>
-				<text>"Don't get ME started on 'reason' with all of this damn Sophon culture around our kids. We have one fucking chance - win the war, restore our sovereignty, close our borders, bring the humanity back to humanity." You're a Pilgrim, sure, but his views make you a bit uncomfortable.</text>	
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="HUMAN_EXP_3">
-	<event>
-		<text>These last few battles have taken a toll on the ship - zipties and jury rigs are holding her together. You find him in the armory, cleaning his rifle.</text>
-		<choice>
-			<text>"Think we have a chance at winning this war?"</text>
-			<event>
-				<text>He puts down his rifle. "A lot of the veteran UE pilots joined us, and we're a long way from Earth. It's hard for them to direct all of their force at us." He pulls out a cigarette. "It can be done, but you'll have to fight dirty. Mercenaries, terrorist attacks, assassinations, that sort of thing. Do you have the stomach for it?"</text>
-			</event>
-		</choice>			
-	</event>
-	<event>
-		<text>She's always reading newsfeeds on the web - keeping up with politics and cute kittens. You figure she might be able to shed some insights on the current situations vis a vis the civil war.</text>
-		<choice>
-			<text>"Think we have a chance at winning this war?"</text>
-			<event>
-				<text>She shakes her head. "Hell no. Not in the numbers game. But," she twirls a pencil in her right hand, "the United Empire isn't so united. The hawks in the legislature are keeping the war on by the skin of their teeth - if the balance of power in the legislature changes, the UE might pull out. That's the only chance you guys have - we have to convince them to let you go."</text>
-			</event>
-		</choice>		
-	</event>	
-	<event>
-		<text>Their men aren't brutes enough: that's the trouble," you hear him roar, answering your question before you have a chance to finish. "They're a crowd of devitalized townsmen, and that's the truth of the matter. They can't produce better men for war than-" Than Pilgrims. Settlers, explorers, military veterans - the toughest of humans.</text>
-		<choice>
-			<text>"The United Empire has science, you know. It designed and it produces the ships and guns and equipment we use ."</text>
-			<event>
-				<text>"Which our nice healthy spacers and terraformers and so on, rowdy-dowdy shitkickers and alien-whackers, can use ten times better than-" You don't feel like continuing this line of conversation; you retire to your quarters to read from your well-thumbed collection of H.G. Wells short stories.</text>	
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="HUMAN_EXP_4">
-	<event>
-		<text>"Ok, you know what to do. Four shifts, Bravo on preventative maintenance; get us ready to jump in 8 hours." Your crew has been together for months now, and works with rehearsed precision. You're walking from the bridge to the armory when he falls in beside you. "Fancy a smoke?" He raises an eyebrow.</text>
-		<choice>
-			<text>"Sure."</text>
-			<event>
-				<text>You follow him to your ship's cargo hold. He's not the talkative type, but you've shared hundreds of cigarettes down here in the hold together. As one, you light your Baishas and inhale.</text>
-				<choice>
-					<text>"What's on your mind, soldier?"</text>
-					<event>
-						<text>"It's coming close to the end, now. You're gonna win this thing or you aren't." He pauses, takes a drag of his cigarette. "Don't know how much Human skill matters when you're playing against fate."</text>
-						<choice>
-							<text>"Or playing for it."</text>
-							<event>
-								<text>He politely spits on the floor. "Luck means everything. I'm lucky I found this ship." He inhales again; deep this time. "Figure as far as luck goes, I couldn't have ended up serving a better Captain." He drops his cigarette, grinds it out with his boot, marches away. He's not much for sentiment.</text>
-							</event>
-						</choice>						
-					</event>
-				</choice>	
-			</event>
-		</choice>
-		<choice>
-			<text>"You know I don't smoke."</text>
-			<event>
-				<text>He knows this; you follow him anyway, down to the ship's hold where the air is musty. He lights a cigarette and inhales.</text>
-				<choice>
-					<text>"What's on your mind, soldier?"</text>
-					<event>
-						<text>"It's coming close to the end, now. You're gonna win this thing or you aren't." He pauses, takes a drag of his cigarette. "Don't know how much Human skill matters when you're playing against fate."</text>
-						<choice>
-							<text>"Or playing for it."</text>
-							<event>
-								<text>He politely spits on the floor. "Luck means everything. I'm lucky I found this ship." He inhales again; deep this time. "Figure as far as luck goes, I couldn't have ended up serving a better Captain." He drops his cigarette, grinds it out with his boot, marches away. He's not much for sentiment.</text>
-							</event>
-						</choice>						
-					</event>
-				</choice>				
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>This is a quiet sector - a good enough time for a birthday party, even if it's not for a month. She doesn't know if she'll even be alive in a month. After cutting the cake and cracking the beers open, the crew thumps their bottles on the table.</text>
-		<choice>
-			<text>"Speech! Speech!"</text>
-			<event>
-				<text>You wondered what this wet-behind-the-ears college girl would have in common with a crew full of hardened spacers, but you shouldn't have worried. She near burns your ears off - she can cuss better than them! The entire speech is full of references and private jokes; it's a tight-knit crew. Her speech draws to a close, when she announces that it is time for a toast.</text>
-				<choice>
-					<text>Raise your glass.</text>
-					<event>
-						<text>"A toast to the one who's kept us together, who's kept us alive. To the one who represents the best of ALL humanity - and to the one person who might be able to bring peace to it. A toast to our Captain!" The applause of your small crew sounds louder to your ears than an entire stadium of fans. You blush.</text>					
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>You've almost gotten used to your nightly booze sessions with him; I guess even bigotry grows on you after a while. You have to give him some grudging respect - he's been some through shit that would have unmade a lesser man. He's a tough, old, wise asshole - and right now, he's offering you a shot.</text>
-		<choice>
-			<text>"Jai ho!"</text>
-			<event>
-				<text>You down the shot, and he erupts in song. "That was a crazy game of poker! I lost it all...but someday I'll be back again and I, never to fall. Never to fall!" You wonder if there's any meaning to the song - he has the damndest habit of mixing politics and pop culture.</text>
-				<choice>
-					<text>"You're damn right! Pilgrims never to fall!"</text>
-					<event>
-						<text>You notice that he's not his normal cheery, patriotic self - he looks downright sad. "Humanity, son. We wanted to make things better - we didn't want to secede." You furrow your brow as he continues. "Even if we win this civil war, we still lose. We still haven't saved humanity. We've divided ourselves." Regaining his composure, he breaks back into song. "I say revolution, and you say jah! I say revolution, and you say jah jah jah!"</text>	
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<!-- Sophon Exposition -->
-<eventList name="SOPHON_EXP_1">
-	<event>
-		<text>You find your Sophon crewman in his quarters, door wide open. He is lounging back in his chair, arms akimbo, studying what appears to be the output from an oscilloscope.</text>
-		<choice>
-			<text>"What are you looking at?"</text>
-			<event>
-				<text>"This is one of your Human musical compositions. I have rendered it from 0.02 to 40 kilohertz, in your units; the visual is computed based on the instantaneous integral of the amplitude of various frequency bands."</text>
-				<choice>
-					<text>"You're watching a sound visualizer with the sound off?"</text>
-					<event>
-						<text>"Yes," the Sophon smiles, "can't you see that the sum of the math of its parts is what makes this song beautiful?"</text>
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>She walks into your quarters wearing typical Sophon clothing - simple, brightly colored, form fitting. Like most female Sophon, she somehow simultaneously appears exotic, sensual, and completely alien. She looks you right in the eye. "A pleasure to ", and glances lower, "see you, Captain."</text>
-		<choice>
-			<text>Ask if all Sophon are this...forward.</text>
-			<event>
-				<text>"Humans are interesting. Humans are aesthetically pleasing. And you, Captain, have shown great leadership in coming this far. The Sophon in me wishes to join you in study." Although the Human in you would not mind putting some Human in her, that would be highly unprofessional. </text>
-				<choice>
-					<text>"Humans think Sophon are mysterious and beautiful in the same way. Do you think there's some kind of reason for that?"</text>
-					<event>
-						<text>She slaps you. "Inappropriate! Secrets such as this are not kept with strangers." They wear their libido on their sleeve and guard their knowledge carefully; the Sophon are a strange race.</text>
-					</event>
-				</choice>	
-			</event>
-		</choice>	
-		<choice>
-			<text>Discuss the nature of Human professional relationships.</text>
-			<event>
-				<text>"We don't compartmentalize "work" and "play" as you do; to join and to study are merely different contexts for action." </text>
-				<choice>
-					<text>"We can do the same thing intellectually, but Human emotions can make it difficult."</text>
-					<event>
-						<text>"How can joy, passion, and curiosity impair a professional relationship?" You know the Sophon to be emotional creatures, but perhaps their emotional makeup is different than yours. Do they know love? Empathy? Sorrow? Questions for a different time; it is enough that she agree to abide by Human social conventions for the time being.</text>
-					</event>
-				</choice>				
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>The Sophon is at her station, some sort of electronic cigarette clenched between her teeth. As you approach, she speaks without looking up. "This ship is ingenious."</text>
-		<choice>
-			<text>"How's that?"</text>
-			<event>
-				<text>"Features no Sophon would have thought of, facilities we would have considered unnecessary. A complex juxtaposition of art and science." Looking around the purely functional interior of your ship, you find it hard to agree. Perhaps this Sophon, appalled at the lack of theoretical purity on a military vessel, equates its technology with art.</text>	
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="SOPHON_EXP_2">
-	<event>
-		<text>You ask her about the difference between the Sophon and Human approaches to science. "Sophon science is without goal, without purpose. We do it for fun. Take Newton's Principia Mathematica - oh, Sophon children can perform those proofs for hours!" </text>
-		<choice>
-			<text>"Similar to a Human child playing a video game?"</text>
-			<event>
-				<text>"Quite. Humanity is quite different; your government sponsors directed research, and your students are content to re-use theories without enjoying their discovery themselves. The Sophon research purely for pleasure - and some of the oldest theories are the most fun. The derivation of the quadratic formula is one of my favorites."</text>			
-			</event>
-		</choice>			
-	</event>
-	<event>
-		<text>Your Sophon crewmember has completed reams of calculations based on local gravimetric readings. You pause him to ask a question which has been troubling you.</text>
-		<choice>
-			<text>"The Sophon are a much older race than humanity; shouldn't your science be much farther ahead of ours than it is?"</text>
-			<event>
-				<text>"We know more, certainly. Perhaps it is because to be a scientist is to be a Sophon, inseparably. We don't have the same insatiable drive for advancement, for power, as Humanity - we seek understanding, elucidation, joy."</text>
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>Your Sophon crewmember has showed some interest in your ship's internals. Running your hand proudly along one of the immense power cables running from the capacitor bank directly to the reactor, you ask a question.</text>
-		<choice hidden="true" req="ENERGY_SHIELD">
-			<text>"That energy shield has saved our collective asses more than a few times. How does it work?</text>
-			<event>
-				<text>"Halibut."</text>
-				<choice>
-					<text>"Uh...just what the icy fuck are you talking about?"</text>
-					<event>
-						<text>He winks at you. "That's exactly what you'd say if I told you."</text>				
-					</event>
-				</choice>				
-			</event>
-		</choice>
-		<choice hidden="true" req="ROCK_ARMOR">
-			<text>"Do you think the ship's hull is really made from Endless technology?</text>
-			<event>
-				<text>"I'm sure it is, since the Sower themselves were created by the Endless." She bites her lower lip and shakes her head slightly. "Wasteful stuff, really. I'm surprised the Endless sullied their hands with something so...unsophisticated."</text>
-				<choice>
-					<text>"Do you have any idea how they did it?"</text>
-					<event>
-						<text>"Created this hull material? Yes of course, it's quite easy. Boring, actually." Your eyes widen. Perhaps this could be the key to a Pilgrim victory?</text>
-						<choice>
-							<text>"That's amazing! Open a channel to the nearest Pilgrim outpost, we need to share this informati-"</text>
-								<text>You stop talking when your Sophon crewmember starts to chuckle. You ask her what's so funny. "It's a piece of cake - all you need are a baryon-antibaryon annihilation reactor, 50 trillion gigajoules of energy, and several hundred kilograms of Dust..."</text>	
-								<event>
-							</event>
-						</choice>						
-					</event>
-				</choice>				
-			</event>
-		</choice>		
-		<choice hidden="true">
-			<text>"She's a good ship. How do you think she'd stack up against a Sophon frigate?"</text>
-			<event>
-				<text>"By scale or by purpose? We would classify vessels this size, in Human, with the prefix 'Kilo'. The suffix indicates the ship's role - discovery, exploration, conflict. There's no direct translation."</text>
-				<choice>
-					<text>"One of your...'Kilo' ships, then. How do they compare?"</text>
-					<event>
-						<text>"Your ship is...childish. Inefficient, incoherent, and irrational. In terms of certain metrics, though, your ship is equal or superior to the equivalent Sophon vessel."</text>
-						<choice>
-							<text>"Certain metrics?"</text>
-							<event>
-								<text>"Certain derived qualities. Maximum delta-v, system reliability, weapons and reactor output." You smile at the compliment, even if the Sophon doesn't realize that's what it was.</text>	
-							</event>
-						</choice>						
-					</event>
-				</choice>				
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="SOPHON_EXP_3">
-	<event>
-		<text>You've easily formed a solid working relationship with your Sophon crewmember; that species is not known for causing much drama. You decided to ask him his personal thoughts on the civil war, not knowing whether you risk your relationship.</text>
-		<choice>
-			<text>"Honestly...do you think the Pilgrims are right?"</text>
-			<event>
-				<text>"'Honestly'? Redundant. Your question is ambiguous, but I believe you are asking whether the actions of the seceding planets are morally justifiable - is that correct?"</text>
-				<choice>
-					<text>Nod.</text>
-					<event>
-						<text>"Rational or not, by Sophon morality or by Human, all beings should have the right to choose their own company - 'freedom of association', I believe, is the Human term. All beings should have the right to believe what they wish."</text>
-						<choice>
-							<text>"That answer was less than satisfying."</text>
-							<event>
-								<text>The Sophon looks puzzled, so you continue, attempting to phrase your question in a way he would understand. "I want a personal value judgement - an opinion - not scientific objectivity." He responds: "Justice is a kind of compact not to harm or be harmed. The Pilgrims are just."</text>
-							</event>
-						</choice>						
-					</event>
-				</choice>				
-			</event>
-		</choice>
-		<choice>
-			<text>"Honestly...do you think we can win this war?"</text>
-			<event>
-				<text>"This is a poor question. Do you realize that the Pilgrim military cannot defeat the United Empire's military conventionally?"</text>
-				<choice>
-					<text>"Just what are you saying?" (...you bastard)</text>
-					<event>
-						<text>"It is so improbable as to be impossible. In order to remain a free nation, the Pilgrims will have to change the way they fight, or change the way they live."</text>
-						<choice>
-							<text>"Change the way we fight? You mean guerilla warfare."</text>
-							<event>
-								<text>"If you must fight. There are other ways to save the Pilgrims." You sense that the conversation is over.</text>
-							</event>
-						</choice>						
-					</event>
-				</choice>				
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>It's been all over the news - pirates attacked and destroyed a ship bearing a Sophon representative to the Pilgrim council. Many commentators believe that the pirates were in fact privateers hired by the United Empire or one of its intermediaries; you ask your Sophon crewman to comment.</text>
-		<choice>
-			<text>"Do you think the rumors are true?"</text>
-			<event>
-				<text>"I hope they are not. It is...disturbing...to think that part of your species would seek to stop us from befriending all of your species. My friends have had much fun with Pilgrims on archeological expeditions near Sophis."</text>
-				<choice>
-					<text>"If it came down to it - do you think the Sophon will pick sides?"</text>
-					<event>
-						<text>"We would rather stop this conflict than anything else. We will maintain relations with all humanity, regardless of the outcome - but it may be from a greater distance."</text>
-					</event>
-				</choice>
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>You've never been very religious, but like most Pilgrims you extend the Endless a particular reverence. Throughout humanity's history, there have always been hints of the Endless - mysterious, miraculous galactic predecessors. Over dinner, you ask your Sophon crewmember about them.</text>
-		<choice>
-			<text>"Are the Sophon religious?"</text>
-			<event>
-				<text>"It's a puzzling question!" she laughs. "After living with you for several weeks now - I don't think we have anything like it." You laugh too; it's hard to imagine the flighty and curious Sophon revering a mere god.</text>
-				<choice>
-					<text>"Well, the Endless then."</text>
-					<event>
-						<text>Enough said; the Sophon are familiar enough with the religion of the Pilgrims. "We see them much the same as most Humans do", she says, pausing to savor a bit of bok choy, "Interesting. Advanced. Ancient. Beings just like us." This is of course heresy - but you're not one of THOSE Pilgrims.</text>	
-					</event>
-				</choice>				
-			</event>
-		</choice>		
-	</event>
-</eventList>
-
-<eventList name="SOPHON_EXP_4">
-	<event>
-		<text>"There are significant factions on Sophis that propose aid to the Pilgrims beyond all reason." A little blunt, sure, but that's just how the Sophon are.</text>
-		<choice>
-			<text>"Do you have a hypothesis?"</text>
-			<event>
-				<text>"Certain schools of Human thought are becoming popular among Humans - among them, realpolitik. Humans are an...imposing...race, and therefore a divided humanity is beneficial for the Sophon."</text>
-				<choice>
-					<text>"Do you agree with them?"</text>
-					<event>
-						<text>"Humanity is certainly powerful. But realpolitik is based on circumstance, not pure theory; it is not quite a 'Sophon' way of thinking. I do not know that the Sophon should become too fond of thinking in this barbaric fashion."</text>
-					</event>
-				</choice>				
-			</event>
-		</choice>			
-	</event>
-	<event>
-		<text>After a hair-raising experience with normally friendly Sophon border guards, you realize that you don't know much about your crewmember's status in their society - so you ask.</text>
-		<choice>
-			<text>"Does the Sophon government know you're here?"</text>
-			<event>
-				<text>"My presence on your ship is not inconvenient for them. Sophon tend to be more agreeable than humans - we don't need much in the way of laws or citizenship. If consensus decides that my actions are incorrect, I will leave."</text>
-			</event>
-		</choice>		
-	</event>
-	<event>
-		<text>It's been obvious on both sides for months now. Winks, furtive glances exchanged in empty hallways - that sort of thing. But you had an agreement, which is why you're surprised when she shows up at the door to your quarters unannounced.</text>
-		<choice>
-			<text>"To what do I owe the pleasure?"</text>
-			<event>
-				<text>"For good or for ill, this war will be over soon. May I come in?"</text>
-				<choice>
-					<text>"Of course. And of course."</text>
-					<event>
-						<text>She smiles at your childish wit and enters, although she remains at a respectful distance. "Captain, I believed we agreed to abide by Human professional standards of conduct until our mission is complete; that time is nearly at hand." It's a leading question.</text>
-						<choice>
-							<text>"When this is all over, what are you going to do?" Assuming we're all still alive.</text>
-							<event>
-								<text>"My time with you has been...interesting. There is much I don't yet understand...about you." She's flirting with you - but you can tell she's struggling to do it in a Human way. You're confused - Sophon don't feel love or attraction in the same way as Humans, do they?</text>	
-								<choice>
-									<text>"It would be a shame for it to end."</text>
-									<event>
-										<text>You're attracted to her, sure, but you don't know that you could ever have a relationship with...one of THEM. It would be frowned upon by the Council. But the words slipped out before you thought about them, and she responds quickly. "Until duty's end." She leaves. You have some hard thinking to do.</text>	
-									</event>
-								</choice>
-							</event>
-						</choice>						
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</eventList>
-
-<event name="DEMO_END">
-	<text>Congratulations, that's the end of the training simulation! As a final lesson, you'll experience what it's like to be destroyed by a more powerful enemy. This pirate is equipped with our most advanced weapons and systems, including a prototype cloaking device. It's manned by aliens known to be the best engineers in the galaxy. And we've shutdown your engines as well, so there's no use trying to run away.</text>
-	<status type="limit" target="player" system="engines" amount="0"/>
-	<ship load="IMPOSSIBLE_PIRATE" hostile="true"/>
-</event>
-<ship name="IMPOSSIBLE_PIRATE" blueprint="IMPOSSIBLE_PIRATE">
-	<destroyed>
-		<text>Impossible! He was supposed to be unbeatable! Even the simulation creators haven't done that. Continue on, you've earned it.</text>
+		<text>You make the exchange and their team comes on board to try to improve your reactor.</text>
 		<item_modify>
-			<item type="scrap" min="100" max="100"/>
+			<item type="missiles" min="-5" max="-3"/>
+			<item type="drones" min="-2" max="-0"/>
 		</item_modify>
-		<status type="limit" target="player" system="engines" amount="100"/>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+	<event>
+		<text>You make the exchange and their team comes on board to try to improve your reactor.</text>
+		<item_modify>
+			<item type="missiles" min="-2" max="0"/>
+			<item type="drones" min="-3" max="-2"/>
+		</item_modify>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+	<event>
+		<text>You make the exchange and their team comes on board to try to improve your reactor.</text>
+		<item_modify>
+			<item type="missiles" min="-2" max="0"/>
+			<item type="drones" min="-2" max="0"/>
+			<item type="fuel" min="-3" max="-2"/>
+		</item_modify>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+</eventList>
+
+<event name="TRADER_UPGRADES" unique="true">
+	<text load="TRADER_UPGRADES_TEXT"/>
+	<choice hidden="true">
+		<text>Inquire about their specialty.</text>
+		<event load="TRADER_UPGRADES_LIST"/>
+	</choice>
+	<choice>
+		<text>Decline.</text>
+		<event>
+			<text>You thank them for their offer but prepare to move on.</text>
+		</event>
+	</choice>
+</event>
+<textList name="TRADER_UPGRADES_TEXT">
+	<text>You are immediately hailed by a mobile docking platform upon arrival, "Welcome to Uncle Joe's Fix-it Shop! Need a tuneup? We got you covered!"</text>
+	<text>There are a number of privately owned ship construction platforms in the area. You find one that has a slot open for some immediate work.</text>
+	<text>You pick up an automated message from a nearby space station. There appears to be a local shipwright that can perform emergency work on military ships.</text>
+	<text>You receive a message from a small refugee convoy, "Hail. We'd like to help you on your mission but don't have much to offer. If you have extra metal perhaps we could work on your ship?"</text>
+</textList>
+<eventList name="TRADER_UPGRADES_LIST">
+	<event>
+		<text>They offer to upgrade your Oxygen system in exchange for some scrap.</text>
+		<choice req="oxygen" max_lvl="1" max_group="0" blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-20" max="-15"/>
+				</item_modify>
+				<upgrade amount="1" system="oxygen"/>
+			</event>
+		</choice>
+		<choice req="oxygen" max_lvl="2" max_group="0"  blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-40" max="-25"/>
+				</item_modify>
+				<upgrade amount="1" system="oxygen"/>
+			</event>
+		</choice>
+		<!--<choice req="oxygen" lvl="3" max_group="0"  blue="false">
+			<text>Decline. Your system is fully upgraded.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>-->
+		<choice hidden="true">
+			<text>Decline.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>They offer to upgrade your Piloting subsystem in exchange for some scrap.</text>
+		<choice req="pilot" max_lvl="1" max_group="0"  blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-15" max="-8"/>
+				</item_modify>
+				<upgrade amount="1" system="pilot"/>
+			</event>
+		</choice>
+		<choice req="pilot" max_lvl="2" max_group="0"  blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-40" max="-25"/>
+				</item_modify>
+				<upgrade amount="1" system="pilot"/>
+			</event>
+		</choice>
+		<!--<choice req="pilot" lvl="3" max_group="0"  blue="false">
+			<text>Decline. Your subsystem is fully upgraded.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>-->
+		<choice hidden="true">
+			<text>Decline.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>They offer to upgrade your Door subsystem in exchange for some scrap.</text>
+		<choice req="doors" max_lvl="1" max_group="0"  blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-15" max="-8"/>
+				</item_modify>
+				<upgrade amount="1" system="doors"/>
+			</event>
+		</choice>
+		<choice req="doors" max_lvl="2" max_group="0"  blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-40" max="-25"/>
+				</item_modify>
+				<upgrade amount="1" system="doors"/>
+			</event>
+		</choice>
+		<!--<choice req="doors" lvl="3" max_group="0"  blue="false">
+			<text>Decline. Your subsystem is fully upgraded.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>-->
+		<choice hidden="true">
+			<text>Decline.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>They offer to upgrade your Sensors subsystem in exchange for some scrap.</text>
+		<choice req="sensors" max_lvl="1" max_group="0"  blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-20" max="-10"/>
+				</item_modify>
+				<upgrade amount="1" system="sensors"/>
+			</event>
+		</choice>
+		<choice req="sensors" max_lvl="2" max_group="0"  blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-45" max="-35"/>
+				</item_modify>
+				<upgrade amount="1" system="sensors"/>
+			</event>
+		</choice>
+		<!--<choice req="sensors" lvl="3" max_group="0"  blue="false">
+			<text>Decline. Your subsystem is fully upgraded.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>-->
+		<choice hidden="true">
+			<text>Decline.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>They offer to upgrade your reactor in exchange for some scrap.</text>
+		<choice req="reactor" max_lvl="24" blue="false">
+			<text>Agree to the exchange.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-25" max="-15"/>
+				</item_modify>
+				<upgrade amount="1" system="reactor"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Decline.</text>
+			<event>
+				<text>You thank them but prepare to move on.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+
+<event name="HELP_MINERS" unique="true">
+	<text>You come across an asteroid mining colony. They message you immediately, saying, "Greetings. Our supplies of mining explosives have run out ever since the Rebels blockaded this system. Do you have any extra explosives?"</text>
+	<choice hidden="true" req="WEAPONS_MISSILES_EVENTS">
+		<text>(Missile Weapon) Offer to solve their problem by launching a missile.</text>
+		<event>
+			<text>"While I appreciate your enthusiasm, we have certain protocols for the use of explosives around the workplace. Launching a military grade weapon into our mines isn't exactly what I would call, 'union-friendly'."</text>
+			<choice hidden="true">
+				<text>Give them the requested 5 missiles.</text>
+				<event load="HELP_MINERS_1"/>
+			</choice>
+			<choice hidden="true">
+				<text>Give them 15 missiles.</text>
+				<event load="HELP_MINERS_2"/>
+			</choice>
+			<choice hidden="true">
+				<text>Decline.</text>
+				<event>
+					<text>"I understand. Good luck out there. We'll try to make do with what we have."</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Give them the requested 5 missiles.</text>
+		<event load="HELP_MINERS_1"/>
+	</choice>
+	<choice hidden="true">
+		<text>Give them 15 missiles.</text>
+		<event load="HELP_MINERS_2"/>
+	</choice>
+	<choice hidden="true">
+		<text>Decline.</text>
+		<event>
+			<text>"I understand. Good luck out there. We'll try to make do with what we have."</text>
+		</event>
+	</choice>
+</event>
+<eventList name="HELP_MINERS_1">
+	<event>
+		<text>They thank you for your generosity and offer some scrap in exchange.</text>
+		<item_modify>
+			<item type="scrap" min="15" max="25"/>
+			<item type="missiles" min="-5" max="-5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>They thank you and offer to have their engineers repair some of your ship's hull.</text>
+		<damage amount="-10"/>
+		<item_modify>
+			<item type="missiles" min="-5" max="-5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>They thank you and offer to have their engineers try to upgrade your reactor.</text>
+		<upgrade amount="1" system="reactor"/>
+		<item_modify>
+			<item type="missiles" min="-5" max="-5"/>
+		</item_modify>
+	</event>
+</eventList>
+<eventList name="HELP_MINERS_2">
+	<event>
+		<text>"Wow. This will help our efforts considerably. Let me see what I can scrounge up to offer you." They deliver some scrap and have their team try to repair part of your hull.</text>
+		<damage amount="-5"/>
+		<item_modify>
+			<item type="scrap" min="30" max="40"/>
+			<item type="missiles" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>"Wow. This will help our efforts considerably." They offer to have their engineers fix up your ship and upgrade your reactor.</text>
+		<damage amount="-15"/>
+		<upgrade amount="1" system="reactor"/>
+		<item_modify>
+			<item type="missiles" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>"Wow. This will help our efforts considerably. What could I offer for your troubles..." After some time they deliver a ship Augment for installation on your ship.</text>
+		<augment name="RANDOM"/>
+		<item_modify>
+			<item type="missiles" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+</eventList>
+
+
+
+	<!--
+	<<<===== DISTRESS =====>>>
+	-->
+
+<event name="REFUGEE_GHOST">
+	<text>You have encountered a refugee ship drifting in space. It looks as if it was fleeing the Rebel advance and ran out of fuel. Its distress beacon is active, but you're not sure anyone is on board, and its communications seem to be down.</text>
+	<choice hidden="true">
+		<text>Prepare to board and investigate.</text>
+		<event load="REFUGEE_GHOST_LIST"/>
+	</choice>
+	<choice>
+		<text>Ignore the ship.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>
+<eventList name="REFUGEE_GHOST_LIST">
+	<event>
+		<text>The ship is completely abandoned. There is no trace of the crew or any cargo. Mystified, you leave the ghost ship and continue on.</text>
+	</event>
+	<event>
+		<text>The ship is completely abandoned. It looks like it ran out of fuel... and the crew ran out of food not long after. Despite the grisly scene that remains, you are able to scavenge some supplies from the cargo hold.</text>
+		<autoReward level="MED">missiles</autoReward>
+	</event>
+	<event>
+		<text>It looks as if the ship ran out of fuel... and the crew ran out of food not long after. Despite the grisly scene that remains, you find one surviving crewman locked in the freezer, almost perfectly preserved and apparently overlooked by the starving crew.</text>
+		<crewMember amount="1"/>
+	</event>
+	<event>
+		<text>As you investigate the ship, you are attacked by the now-cannibalistic crew! Driven mad by lack of food, they have turned to feeding on each other. As you fight your way off the ship, one of your crew falls to the crazed attackers, and you are forced to leave them behind or else lose your entire ship.</text>
+		<removeCrew>
+			<clone>true</clone>
+			<text>Your abandoned crewmember is waiting on the ship when you return, trying not to dwell on the fate of his previous incarnation.</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As you approach the ship, the other ship's transporters suddenly power up, and your decks swarm with now-cannibalistic refugees! Driven mad by lack of food, they have turned to feeding on each other - and now your crew is next!</text>
+		<boarders min="2" max="4" class="human"/>
+	</event>
+</eventList>
+<!---->
+
+
+
+
+<!-- This main list is then copied into the different sector types - Have everything that uses it be sector specific so we don't get duplicates in one sector -->
+<event name="REFUGEE_DISTRESS">
+	<text>You have encountered a refugee ship drifting in space. It looks as if it was fleeing the Rebel advance and ran out of fuel. Its distress beacon is active, but you're not sure anyone is on board.</text>
+	<choice>
+		<text>Hail them.</text>
+		<event load="REFUGEE_HAIL_LIST"/>
+	</choice>
+	<choice>
+		<text>Ignore the refugees.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>
+<event name="REFUGEE_NO_DISTRESS">  <!-- this is actually a NEUTRAL, I'm just leaving it here cause it's linked-->
+	<text>Your sensors have picked up a refugee ship drifting through the system, no doubt one of many fleeing the Rebel advance. It doesn't appear to have detected you... or else it is trying to avoid notice.</text>
+	<choice>
+		<text>Hail them.</text>
+		<event load="REFUGEE_HAIL_LIST"/>
+	</choice>
+	<choice>
+		<text>Ignore the refugees.</text>
+		<event/>
+	</choice>
+</event>
+<event name="REFUGEE_TRADER">
+	<text>The vessel is relieved to hear from you! They are running low on supplies. They suggest a trade.</text>
+	<choice>
+		<text>Trade with them.</text>
+		<event load="TRADER_LIST"/>
+	</choice>
+	<choice>
+		<text>Politely decline.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="REFUGEE_HAIL_LIST">
+	<event load="REFUGEE_TRADER"/>
+	<event load="REFUGEE_TRADER"/>
+	<event load="REFUGEE_TRADER"/>
+	<event load="REFUGEE_TRADER"/>
+	<event>
+		<text>As you hail the freighter, it advances, weapons bristling from its hull! It's a pirate ambush!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event>
+		<text>As you hail the refugee ship, a Zoltan ship suddenly jumps into the system... it claims the refugees are criminals, and accuses you of escorting fugitives! Before you can respond, it cuts communications, and powers up its weapons!</text>
+		<ship load="ZOLTAN_REFUGEE" hostile="true"/>
+	</event>
+	<event>
+		<text>As you hail the refugee ship, a pirate ship jumps into the system... it was using the refugee ship as bait!</text>
+		<ship load="PIRATE_REFUGEE" hostile="true"/>
+	</event>
+	<event>
+		<text>As you hail the refugee ship, a Slug ship jumps into the system... it was hunting the refugee ship for sport and now they've found you instead!</text>
+		<ship load="SLUG_REFUGEE" hostile="true"/>
+	</event>
+</eventList>
+<ship name="ZOLTAN_REFUGEE" auto_blueprint="SHIPS_ZOLTAN">
+	<destroyed>
+		<text>The Zoltan ship breaks apart and you salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the refugee ship.</text>
+			<event>
+				<text>The refugee ship thanks you for your assistance. As a gesture of good will (and seeing how effectively you dispatched the enemy ship), they offer up what supplies they can spare.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
 	</destroyed>
+	<deadCrew>
+		<text>The Zoltan ship, now empty of lifeforms, provides easy salvage.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the refugee ship.</text>
+			<event>
+				<text>The refugee ship thanks you for your assistance. As a gesture of good will (and seeing how effectively you dispatched the enemy ship), they offer up what supplies they can spare.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="PIRATE_REFUGEE" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>The pirate ship breaks apart and you salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the refugee ship.</text>
+			<event>
+				<text>The refugee ship thanks you for your assistance. As a gesture of good will (and seeing how effectively you dispatched the enemy ship), they offer up what supplies they can spare.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The pirate ship, now empty of lifeforms, provides easy salvage.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the refugee ship.</text>
+			<event>
+				<text>The refugee ship claims pirates have been following their trail since they left their homeworld. As a gesture of good will (and seeing how effectively you dispatched the enemy ship), they offer up what supplies they can spare.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="SLUG_REFUGEE" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>The Slug ship breaks apart and you salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the refugee ship.</text>
+			<event>
+				<text>The refugee ship claims the Slugs have been hounding them since they left their homeworld. As a gesture of good will (and seeing how effectively you dispatched the enemy ship), they offer up what supplies they can spare.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Slug ship, now empty of lifeforms, provides easy salvage.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the refugee ship.</text>
+			<event>
+				<text>The refugee ship claims the Slugs have been hounding them since they left their homeworld. As a gesture of good will (and seeing how effectively you dispatched the enemy ship), they offer up what supplies they can spare.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+<!-- ZOLTAN SPECIFIC VERSIONS OF THE SAME EVENTS-->
+<event name="REFUGEE_DISTRESS_ZOLTAN">
+	<text>You have encountered a refugee ship drifting in space. It looks as if it was fleeing the Rebel advance and ran out of fuel. Its distress beacon is active, but you're not sure anyone is on board.</text>
+	<choice>
+		<text>Hail them.</text>
+		<event load="REFUGEE_HAIL_LIST_ZOLTAN"/>
+	</choice>
+	<choice>
+		<text>Ignore the refugees.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>
+<event name="REFUGEE_NO_DISTRESS_ZOLTAN">
+	<text>Your sensors have picked up a refugee ship drifting through the system, no doubt one of many fleeing the Rebel advance. It doesn't appear to have detected you... or else it is trying to avoid notice.</text>
+	<choice>
+		<text>Hail them.</text>
+		<event load="REFUGEE_HAIL_LIST_ZOLTAN"/>
+	</choice>
+	<choice>
+		<text>Ignore the refugees.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="REFUGEE_HAIL_LIST_ZOLTAN">
+	<event load="REFUGEE_TRADER"/>
+	<event>
+		<text>As you hail the refugee ship, a Zoltan ship suddenly jumps into the system... it claims the refugees are criminals, and accuses you of escorting fugitives! Before you can respond, it cuts communications, and powers up its weapons!</text>
+		<ship load="ZOLTAN_REFUGEE" hostile="true"/>
+	</event>
+</eventList>
+<!-- PIRATE SPECIFIC VERSIONS OF THE SAME EVENTS-->
+<event name="REFUGEE_DISTRESS_PIRATE">
+	<text>You have encountered a refugee ship drifting in space. It looks as if it was fleeing the Rebel advance and ran out of fuel. Its distress beacon is active, but you're not sure anyone is on board.</text>
+	<choice>
+		<text>Hail them.</text>
+		<event load="REFUGEE_HAIL_LIST_PIRATE"/>
+	</choice>
+	<choice>
+		<text>Ignore the refugees.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>
+<event name="REFUGEE_NO_DISTRESS_PIRATE">
+	<text>Your sensors have picked up a refugee ship drifting through the system, no doubt one of many fleeing the Rebel advance. It doesn't appear to have detected you... or else it is trying to avoid notice.</text>
+	<choice>
+		<text>Hail them.</text>
+		<event load="REFUGEE_HAIL_LIST_PIRATE"/>
+	</choice>
+	<choice>
+		<text>Ignore the refugees.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="REFUGEE_HAIL_LIST_PIRATE">
+	<event load="REFUGEE_TRADER"/>
+	<event>
+		<text>As you hail the refugee ship, a pirate ship jumps into the system... it was using the refugee ship as bait!</text>
+		<ship load="PIRATE_REFUGEE" hostile="true"/>
+	</event>
+</eventList>
+<!-- SLUG SPECIFIC VERSIONS OF THE SAME EVENTS-->
+<event name="REFUGEE_DISTRESS_SLUG">
+	<text>You have encountered a refugee ship drifting in space. It looks as if it was fleeing the Rebel advance and ran out of fuel. Its distress beacon is active, but you're not sure anyone is on board.</text>
+	<choice>
+		<text>Hail them.</text>
+		<event load="REFUGEE_HAIL_LIST_SLUG"/>
+	</choice>
+	<choice>
+		<text>Ignore the refugees.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>
+<event name="REFUGEE_NO_DISTRESS_SLUG">
+	<text>Your sensors have picked up a refugee ship drifting through the system, no doubt one of many fleeing the Rebel advance. It doesn't appear to have detected you... or else it is trying to avoid notice.</text>
+	<environment type="nebula"/>
+	<choice>
+		<text>Hail them.</text>
+		<event load="REFUGEE_HAIL_LIST_SLUG"/>
+	</choice>
+	<choice>
+		<text>Ignore the refugees.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="REFUGEE_HAIL_LIST_SLUG">
+	<event load="REFUGEE_TRADER"/>
+	<event>
+		<text>As you hail the refugee ship, a pirate ship jumps into the system... it was using the refugee ship as bait!</text>
+		<ship load="PIRATE_REFUGEE" hostile="true"/>
+	</event>
+</eventList>
+
+
+
+
+
+	<!--
+	<<<===== NEUTRAL! =====>>>
+	-->
+
+
+<event name="EMPTY_STATION2" unique="true"> <!--Neutrals-->
+	<text load="EMPTY_STATION2_TEXT"/>
+	<choice hidden="true">
+		<text>Move in to examine the station.</text>
+		<event load="EMPTY_STATION2_LIST"/>
+	</choice>
+	<choice>
+		<text>Stay near the Beacon.</text>
+		<event>
+			<text>You decide it's not worth the time to examine.</text>
+		</event>
+	</choice>
+</event>
+<textList name="EMPTY_STATION2_TEXT">
+	<text>You find a small space station that appears to abandoned.</text>
+	<text>You arrive to find what appears to be a colonized moon, however scans show it has been abandoned. You also detect an abandoned space station near the Beacon.</text>
+	<text>This area shows signs of a battle some time ago. There are scattered remains of ships but one station appears to be intact.</text>
+</textList>
+<eventList name="EMPTY_STATION2_LIST">
+	<event>
+		<text>As you approach it becomes clear that the station is simply an empty shell. It has been stripped of useful materials long ago.</text>
+	</event>
+	<event>
+		<text>You approach cautiously but you detect no danger. It appears to have been a small rest stop that was abandoned a while ago. You take what few supplies you can find.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Upon closer inspection it appears to have a large portion of its hull destroyed. You take what few supplies you can find.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>The station is in disarray. You find a cloning bay partially intact but nothing else seems to be functioning.</text>
+		<choice hidden="true" req="clonebay">
+			<text>(Clonebay) Search for a surviving DNA bank.</text>
+			<event>
+				<text>While the cloning facilites are no longer functioning, you find someone was in queue to be cloned. You transfer their data to your Clonebay and after a time their body is rebuilt.</text>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="EMPTY_STATION2_CLONE"/>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Scrap the machinery.</text>
+			<event>
+				<text>You take what you can and prepare to move on.</text>
+				<autoReward level="LOW">scrap_only</autoReward>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>You dock with the station to take a look inside. However no sooner do you open the airlock than pirates burst in. Meanwhile scanners pick up a previously undetected pirate ship moving in to attack!</text>
+		<boarders min="2" max="2"/>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event>
+		<text>You dock with the station to take a look inside. However no sooner do you open the airlock than pirates burst in. Meanwhile multiple warning signals go off on the bridge. The pirates have activated a remote planetary defense system and it's locking onto your ship!</text>
+		<boarders min="2" max="4"/>
+		<environment type="PDS" target="player"/>
+	</event>
+</eventList>
+<eventList name="EMPTY_STATION2_CLONE">
+	<event>
+		<text>The clone is extremely confused but calms down after you try to explain the situation. With no other options the clone offers to work on your ship for a time.</text>
+		<crewMember amount="1"/>
+	</event>
+	<event>
+		<text>The clone is extremely confused but seems to accept their new situation. With no other options the clone offers to work on your ship for a time.</text>
+		<crewMember amount="1"/>
+	</event>
+	<event>
+		<text>The clone emerges in a crazed frenzy and refuses to calm down. You have no choice but to fight.</text>
+		<boarders min="1" max="1"/>
+	</event>
+</eventList>
+
+
+
+	<!--<choice req="sensors" lvl="2" max_group="0" hidden="true">-->
+
+<event name="WRECKAGE_EVENT">
+	<text load="WRECKAGE_TEXT"/>
+	<choice req="sensors" lvl="2" max_group="0" hidden="true">
+		<text>(Improved Sensors) Use your Sensors to scan the wreckage.</text>
+		<event>
+			<text>You scan the battlefield, and with the aid of your Sensors, you are able to salvage a moderate amount of material from the wreckage. You prepare to jump.</text>
+			<autoReward level="MED">stuff</autoReward>
+		</event>
+	</choice>
+	<choice req="sensors" lvl="3" max_group="0" hidden="true">
+		<text>(Advanced Sensors) Use your Sensors to scan the wreckage.</text>
+		<event load="WRECKAGE_SCANNED"/>
+	</choice>
+	<choice hidden="true">
+		<text>Investigate the battlefield.</text>
+		<event load="WRECKAGE_INVESTIGATE"/>
+	</choice>
+	<choice>
+		<text>Ignore the wreckage and continue on.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="WRECKAGE_TEXT">
+	<text>What at first seems to be a simple nebula is actually filled with a good amount of debris from a brutal exchange between several ships. Wreckage drifts by your screens and tumbles into the depths of the nebula to be lost to sight. It's hard to determine who the combatants were without closer investigation.</text>
+	<text>You have jumped into the aftermath of what seems to have been a brutal exchange between several ships. Wreckage drifts by your screens, and you can still see the remains of the dying ships sparking and breaking apart. It's hard to determine who the combatants were without closer investigation.</text>
+</textList>
+<eventList name="WRECKAGE_SCANNED">
+	<event>
+		<text>You scan the battlefield, and with the aid of your Sensors, you are able to salvage a good amount of material from the wreckage. Well-stocked, you prepare to jump.</text>
+		<autoReward level="HIGH">stuff</autoReward>
+	</event>
+	<event>
+		<text>You scan the battlefield and find a prototype military vessel in the debris! The crew has been killed, but their working prototype weapon array is still intact! You salvage it and bring it aboard.</text>
+		<autoReward level="LOW">weapon</autoReward>
+	</event>
+</eventList>
+
+<eventList name="WRECKAGE_INVESTIGATE">
+	<event>
+		<text>You scan the battlefield, and find little remains. Disappointed, you prepare to jump.</text>
+	</event>
+	<event>
+		<text>You scan the battlefield, and find little remains. Disappointed, you prepare to jump.</text>
+	</event>
+	<event>
+		<text>You scan the battlefield, and find little remains. Disappointed, you prepare to jump.</text>
+	</event>
+	<event>
+		<text>You scan the battlefield, and find little remains. Disappointed, you prepare to jump.</text>
+	</event>
+	<event>
+		<text>You scan the battlefield, and are able to salvage some useful material from the wreckage.</text>
+		<autoReward level="MED">stuff</autoReward>
+	</event>
+	<event>
+		<text>As you approach the wreckage, a Mantis ship screams into the system... either sensing prey - or to finish the job its fellows started.</text>
+		<ship load="MANTIS_FIGHT" hostile="true"/>
+	</event>
+	<event>
+		<text>The wreckage appears to be a battle between Federation fighters and Rebel cruisers. Though outnumbered, it looks like the Federation fought valiantly. As you begin a more detailed scan of the wreckage, Rebel reinforcements arrive in the system and target your ship!</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+	<event>
+		<text>As you approach the wreckage, a Zoltan ship makes its arrival. It immediately mistakes you for one of the attackers, declares you as hostile aggressors in violation of Zoltan space, and opens fire!</text>
+		<ship load="ZOLTAN_SHIP" hostile="true"/>
+	</event>
+	<event>
+		<text>As you approach the wreckage, a Slug ship makes its arrival. It hesitates for a moment, as if surprised to see anyone remaining, and then jumps away without a word. You resume scanning the system, wary of any other visitors.</text>
+	</event>
+</eventList>
+
+
+
+
+
+<event name="FUELING_STATION" unique="true">
+	<text>A small platform orbits near this beacon - it looks like a fueling station of some sort, and it is cheerily broadcasting reasonable prices in a spectrum of frequencies and languages.</text>
+	<choice hidden="true">
+		<text>Dock with the refueling platform.</text>
+		<event load="FUELING_STATION_LIST"/>
+	</choice>
+	<choice>
+		<text>Ignore the refueling platform.</text>
+		<event load="FUELING_STATION_IGNORE"/>
+	</choice>
+</event>
+<eventList name="FUELING_STATION_IGNORE">
+	<event>
+		<text>As you prepare to leave the system, a Pirate ship suddenly appears on scanners - it looks like it was attempting to use the platform as bait!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event/>
+	<event/>
+</eventList>
+<eventList name="FUELING_STATION_LIST">
+	<event load="FUELING_STATION_NORMAL_LIST"/>
+	<event load="FUELING_STATION_PIRATE_LIST"/>
+</eventList>
+<eventList name="FUELING_STATION_NORMAL_LIST">
+	<event>
+		<text>The platform makes an offer.</text>
+		<choice>
+			<text>Accept it.</text>
+			<event>
+				<item_modify>
+					<item type="fuel" min="5" max="5"/>
+					<item type="scrap" min="-10" max="-5"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Reject it.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>The automated platform seems to be damaged. You can likely steal as much fuel as remains.</text>
+		<choice hidden="true">
+			<text>Steal it.</text>
+			<event>
+				<text>If you take the fuel at least it won't come into the hands of of the Rebels. You breach the containment and access what remains of the fuel reserves.</text>
+				<item_modify>
+					<item type="fuel" min="3" max="5"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>War doesn't justify abandoning one's values. You leave it alone.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>The platform seems to be malfunctioning and could ignite at any moment.</text>
+		<choice hidden="true">
+			<text>Quickly dock and refuel.</text>
+			<event name="FUELING_STATION_BLOW"/>
+		</choice>
+		<choice>
+			<text>Give the station a wide berth and carry on.</text>
+			<event>
+				<text>You pull away from the station. After a short time a few silent explosions cause the depressurized tanks to implode.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+<eventList name="FUELING_STATION_BLOW">
+	<event>
+		<text>You're able to safely refuel and get clear before the station explodes.</text>
+		<item_modify>
+			<item type="fuel" min="5" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Just as you hook up to refuel, the station ignites and explodes. Your own fuel reserve ignites, losing you precious fuel and damaging your ship.</text>
+		<item_modify steal="true">
+			<item type="fuel" min="-3" max="-3"/>
+		</item_modify>
+		<damage amount="3" system="engines" effect="fire"/>
+	</event>
+</eventList>
+<eventList name="FUELING_STATION_PIRATE_LIST">
+	<event>
+		<text>You dock and signal the fuel station's staff to begin refueling.</text>
+		<choice hidden="true">
+			<text>Wait for them to finish.</text>
+			<event>
+				<text>As you dock with the refueling platform, there is an explosion from your engine room! Warning lights flash in your ship as pirates from the station swarm aboard your vessel!</text>
+				<damage amount="3" system="engines"/>
+				<boarders min="2" max="4" class="random"/>
+			</event>
+		</choice>
+		<choice req="doors" lvl="2" hidden="true">
+			<text>[Blast Doors] Seal your blast doors, one can never be too careful when docked.</text>
+			<event>
+				<text>Pirates hidden on the station are confounded by your security locks, turning an attempted ambush into a fish-in-a-barrel firefight. You take control of the station and take its fuel reserves.</text>
+				<item_modify>
+					<item type="fuel" min="5" max="5"/>
+				</item_modify>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>The refueling station welcomes you into one of its berths, and as you hail them, there is an explosion from your engine room! While assessing the damage, you detect a Pirate Ship closing fast!</text>
+		<ship load="PIRATE" hostile="true"/>
+		<damage amount="3" system="engines"/>
+	</event>
+</eventList>
+
+
+
+
+
+	<!--
+	<<<===== NEW QUESTS! =====>>>
+	-->
+
+
+<event name="QUEST_CONSTRUCTIONYARD" unique="true"> <!-- quest only meant for DLC cause of PDS -->
+	<text>You come across a space station under construction. You receive a message from their command tower, "Greetings. We recently lost contact with a cargo ship that was set to deliver more construction materials. Could you help us figure out what happened to them?"</text>
+	<choice hidden="true">
+		<text>Offer your help.</text>
+		<event>
+			<text>"Great. Thanks for your help. I've marked their last known coordinates and sent over some supplies to help you get there."</text>
+			<item_modify>
+				<item type="missiles" min="0" max="4"/>
+				<item type="drones" min="0" max="2"/>
+				<item type="fuel" min="2" max="4"/>
+			</item_modify>
+			<quest event="QUEST_CONSTRUCTIONYARD_LIST"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Decline.</text>
+		<event>
+			<text>"I understand." Transmission has been cut.</text>
+		</event>
+	</choice>
+	<choice hidden="true" req="anaerobic">
+		<text>(Lanius Crew) Offer to have your crewmember help.</text>
+		<event>
+			<text>"Interesting. So this metal man can help us make some of these unique parts out of scrap? That would be a huge help." Your crewmember checks over the blueprints and quickly converts some of their base metal sheets into the specialized parts.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>"Amazing! This robot thing could save us a ton of time. Could I buy it off you?"</text>
+					<choice hidden="true">
+						<text>Ask your crew if they agree.</text>
+						<event>
+							<text>Once your Lanius crewmember understands the situation it appears to like the idea of assisting with construction in deep space. Much less dangerous. They offer you some goods in exchange.</text>
+							<autoReward level="HIGH">augment</autoReward>
+							<removeCrew class="anaerobic">
+								<clone>false</clone>
+								<text>Your clonebay obviously does not revive your crewmember since they did not die.</text>
+							</removeCrew>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Our crew is not for sale.</text>
+						<event>
+							<text>"A pity. In terms of payment, here's some of the scrap metal we don't need now that we've got necessary parts."</text>
+							<autoReward level="MED">scrap_only</autoReward>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<eventList name="QUEST_CONSTRUCTIONYARD_LIST">
+	<event>
+		<text>You find the missing cargo ship docked to a Rebel station. You send a short-band message to them and discover they are being held against their will and forced to 'donate to their supplies for the war effort.'</text>
+		<choice hidden="true">
+			<text>Attack the Rebels to help them escape.</text>
+			<event>
+				<text>You move in to attack the Rebel ship that is threatening them and scanners detect weapon locks from a nearby Anti-Ship Battery. It's about to get hectic!</text>
+				<ship load="QUEST_CONSTRUCTIONYARD_SHIP" hostile="true"/>
+				<environment type="PDS" target="player"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Leave.</text>
+			<event>
+				<text>You apologize but it's not worth the risk to attack a Rebel station.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>You find the missing cargo ship docked to an empty space station. However their hold appears to be empty and there are no obvious signs that anyone is inside the ship or station. Everything looks abandoned.</text>
+		<choice hidden="true">
+			<text>Move in to examine the station.</text>
+			<event load="EMPTY_STATION2_LIST"/>
+		</choice>
+		<choice>
+			<text>Stay near the Beacon.</text>
+			<event>
+				<text>You decide it's not worth the time to examine.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>You find the missing cargo ship floating near the beacon. "Thank heavens! We've been drifting here after using the last of our fuel to escape a pirate raid."</text>
+		<choice hidden="true">
+			<text>Give them the requested 4 fuel.</text>
+			<event>
+				<text>"Great, thank you. Here's some scrap metal for your troubles. Be careful out there."</text>
+				<autoReward level="MED">scrap_only</autoReward>
+				<item_modify>
+					<item type="fuel" min="-4" max="-4"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Give them 1 fuel.</text>
+			<event>
+				<text>"Well, I suppose that's better than nothing. Than you. Hopefully we can find a station at the next Beacon."</text>
+				<item_modify>
+					<item type="fuel" min="-1" max="-1"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Do not give them any.</text>
+			<event>
+				<text>"I see..."</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+<ship name="QUEST_CONSTRUCTIONYARD_SHIP" auto_blueprint="SHIPS_REBEL">
+	<destroyed>
+		<text>You quickly salvage what you can from the ship.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the cargo ship.</text>
+			<event>
+				<text>Amidst the blasts from the Anti-Ship Battery, the cargo ship escaped from the station. They jettisoned some scrap towards your ship before jumping away.</text>
+				<autoReward level="MED">scrap_only</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>You quickly salvage what you can from the ship.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the cargo ship.</text>
+			<event>
+				<text>Amidst the blasts from the Anti-Ship Battery, the cargo ship escaped from the station. They jettisoned some scrap towards your ship before jumping away.</text>
+				<autoReward level="MED">scrap_only</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
 </ship>
 
-<event name="ASTEROID_TEST">
-	<img back="BG_DARK" planet="NONE"/>
-	<text>We've come out in an asteroid field! We'll have to wait for the FTL to charge before we can get out of here, let's hope the ship holds up.</text>
-	<environment type="asteroid"/>
+
+<!-- New Matt Events -- Starting event names:
+
+ROCK_SLUG_ARGUMENT
+TERRAFORMING_SCAN
+CONFUSED_MANTIS
+PIRATE_SALESMAN
+
+-->
+
+<event name="ROCK_SLUG_ARGUMENT_NEBULA" unique="true">
+	<text>You detect multiple ships running at maximum power nearby, but you can't see anything through this thick nebula.</text>
+	<choice>
+		<text>Get closer.</text>
+		<event load="ROCK_SLUG_ARGUMENT"/>
+	</choice>
+	<choice>
+		<text>Ignore them.</text>
+		<event/>
+	</choice>
+	<environment type="nebula"/>
 </event>
 
-<event name="CASH_IN_DRONE">
-	<text>Your ship is currently not equipped with a drone system. You reduce the drone schematic to Dust.</text>
+
+<event name="ROCK_SLUG_ARGUMENT" unique="true">  <!-- in slug and rock neutrals-->
+	<text>You find a Slug Cruiser and Rock ship at a standoff, both with weapons armed and ready to fight. You could intervene before this gets out of hand.</text>
 	<choice>
-		<text>Continue...</text>
+		<text>Hail them to see what's wrong.</text>
+		<event>
+			<text>The Slug captain explains that they upgraded the Rock ship's reactor and now the 'thick boulder heads' are refusing to pay for the work done. The Rock Captain says the 'slime balls' did a poor job that is not worth their agreed upon price.</text>
+			<choice>
+				<text>Offer to pay off the Rock debt.</text>
+				<event>
+					<text>You pay off the debt. The Rock Captain still seems annoyed at the Slug's getting their 'undeserved' scrap, but at least the situation will remain peaceful.</text>
+					<item_modify>
+						<item type="scrap" min="-15" max="-10"/>
+					</item_modify>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ROCK_SLUG_GRATEFUL"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Demand the Rock ship pay the agreed upon price.</text>
+				<event load="ROCK_SLUG_COMMAND"/>
+			</choice>
+			<choice>
+				<text>You have better things to attend to, leave them.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Leave them be.</text>
 		<event/>
 	</choice>
 </event>
 
-<event name="UNLOCK_STEALTH">
-	<text>You stumble across a hidden Federation research laboratory!  They have been experimenting with some unique ship designs.  You download their blueprints for future use.</text>
+<eventList name="ROCK_SLUG_COMMAND">
+	<event>
+		<text>Apparently the Rock Captain was more annoyed than you thought, they shut off all communication and turn on you, the 'slime balls' defender.'</text>
+		<ship load="ROCK_SLUG_REACTOR_SHIP" hostile="true"/>
+	</event>
+	<event>
+		<text>With much grumbling, the Rock Captain agrees to pay the price.</text>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="ROCK_SLUG_GRATEFUL"/>
+		</choice>
+	</event>
+	<event>
+		<text>A massive explosion emanates from the Rock Ship, shattering its hull and sending debris on an unavoidable collision course to your ship. Seems like that reactor upgrade was poorly done after all, and the Slugs took the opportunity to jump away.</text>
+		<damage amount="3"/>
+		<damage amount="1" system="random"/>
+		<damage amount="1" system="random"/>  <!--DLC-->
+	</event>
+</eventList>
+
+<ship name="ROCK_SLUG_REACTOR_SHIP" auto_blueprint="SHIPS_ROCK">
+	<destroyed>
+		<text>With the Rock Ship destroyed, you take the time to collect what little scrap remains.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the Slugs.</text>
+			<event load="ROCK_SLUG_GRATEFUL"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the Rock crew dead, you scrap the ship for supplies.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the Slugs.</text>
+			<event load="ROCK_SLUG_GRATEFUL"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<eventList name="ROCK_SLUG_GRATEFUL">
+	<event>
+		<text>The Slugs offer their thanks for your help, and jump away. Their true appreciation is questionable, but at least you can get back to your mission.</text>
+	</event>
+	<event>
+		<text>The Slug Captain offers a free reactor upgrade for your help. It never hurts to get a little power boost!</text>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+	<event>
+		<text>The Slug Captain, thankful for your help, offers a reactor upgrade for your ship... for a 'fair' price.</text>
+		<choice req="reactor" max_lvl="24" blue="false">
+			<text>Agree to the price.</text>
+			<event>
+				<text>You let their team on board and after a short time they finish their work.</text>
+				<item_modify>
+					<item type="scrap" min="-15" max="-10"/>
+				</item_modify>
+				<upgrade amount="1" system="reactor"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Decline the offer.</text>
+			<event>
+				<text>You break communications and prepare to move on.</text>
+			</event>
+		</choice>
+	</event>
 </event>
+
+
+<event name="TERRAFORMING_SCAN"  unique="true"> <!-- in neutral only-->
+	<text>You receive a hail from a station orbiting a nearby planet. "Captain, we are Federation Terraforming Team C12 and are in need of assistance. Do you have some time?"</text>
+	<choice>
+		<text>You offer your assistance.</text>
+		<event>
+			<text>"Thank you! We need to scan this planet for life before we can begin terraforming, but our sensors can't get the necessary power to scan through this atmosphere. We've got a schedule to keep, any chance you can help?"</text>
+			<choice>
+				<text>Attempt to scan the planet.</text>
+				<event load="NORMAL_SCAN_TERRAFORMING"/>
+			</choice>
+			<choice req="sensors" lvl="2" hidden="true">
+				<text>(Advanced Sensors) Set sensors to maximum and scan.</text>
+				<event load="HIGH_SCAN_TERRAFORMING"/>
+			</choice>
+			<choice req="energy" hidden="true">
+				<text>(Zoltan) Send your crewman to overcharge their systems.</text>
+				<event load="HIGH_SCAN_TERRAFORMING"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>You do not have time.</text>
+		<event>
+			<text>"We understand. Best of luck on your mission, sir!"</text>
+			<choice>
+				<text>Prepare to jump away.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="NORMAL_SCAN_TERRAFORMING">
+	<event>
+		<text>It seems your sensors are no more powerful than the terraformer's. You apologize and continue on your way.</text>
+	</event>
+	<event>
+		<text>You find if you modulate the feedback signal of your sensors to just the right frequency, you're able to get through the atmosphere and perform a complete scan!</text>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="HIGH_SCAN_TERRAFORMING"/>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="HIGH_SCAN_TERRAFORMING">
+	<event>
+		<text>After a complete scan of the planet, you find no life. The team is grateful and ready to get to work. The station scientists have a unique talent for life support units and offer to upgrade your oxygen system as thanks.</text>
+		<upgrade amount="1" system="oxygen"/>
+	</event>
+	<event>
+		<text>A complete scan of the planet reveals no life signs other than a single ship on the surface. The terraformers thank you for your help, and attempt to contact the ship. Just as you're about to jump away, the ship takes off and attacks, it's a pirate!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event>
+		<text>A complete scan of the planet reveals a simple mold as the only life present. The terraformers claim their terraforming plans are only hindered by intelligent life; they can begin their work.</text>
+		<choice>
+			<text>Tell them to stop. Any life is valuable.</text>
+			<event>
+				<text>"But our livelihood depends on this job! Who cares about some silly mold? We'll pay you to look the other way!"</text>
+				<choice>
+					<text>Accept the bribe and leave.</text>
+					<event>
+						<item_modify>
+							<item type="scrap" min="15" max="25"/>
+						</item_modify>
+					</event>
+				</choice>
+				<choice>
+					<text>Offer to pay them to at least delay until the mold can be studied.</text>
+					<event>
+						<text>They see reason and accept the offer. The station scientists have a unique talent for life support units and offer to upgrade your oxygen system as an apology for their behaviour.</text>
+						<upgrade amount="1" system="oxygen"/>
+						<item_modify>
+							<item type="scrap" min="-25" max="-15"/>
+						</item_modify>
+					</event>
+				</choice>
+				<choice>
+					<text>Power your weapons and demand they leave at once.</text>
+					<event>
+						<text>They shut off communications, but you can tell they have begun an evacuation procedure.</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice>
+			<text>Leave them to their work.</text>
+			<event/>
+		</choice>
+	</event>
+</eventList>
+
+<event name="CONFUSED_MANTIS" unique="true"> <!-- in Engi Neutrals only-->
+	<text>As soon as you jump into the system, you receive a hail from a nearby civilian Engi vessel. Their Captain appears on your screen: "Strange bug. Can you assist in debugging?"</text>
+	<choice>
+		<text>Listen to their problem.</text>
+		<event>
+			<text>"Found malfunctioning Mantis. Believes it is human. Will receive input only from human. Danger Evaluation: Extremely High. Provide assistance."</text>
+			<choice>
+				<text>Send a shuttle with an away team to help.</text>
+				<event load="CONFUSED_MANTIS_DEFAULT"/>
+			</choice>
+			<choice>
+				<text>Leave them, a cornered Mantis is too dangerous.</text>
+				<event/>
+			</choice>
+			<choice req="human" hidden="true">
+				<text>(Human Crew) Send your human crewmember to communicate with the Mantis.</text>
+				<event>
+					<text>The Mantis is grateful to see 'another human', and introduces himself as Robert Smith. He explains he's from a nearby human colony and would appreciate being returned there.</text>
+					<choice>
+						<text>Return him home.</text>
+						<event load="CONFUSED_MANTIS_HOME"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="mantis" hidden="true">
+				<text>(Mantis Crew) Send your Mantis crewmember to communicate with the Mantis.</text>
+				<event>
+					<text>The Mantis is terrified at the sight of your crewmember. He immediately attacks his Engi rescuers, and your crewmember is forced to kill him. The Engi are grateful for your help and offer a small reward.</text>
+					<autoReward level="LOW">standard</autoReward>
+				</event>
+			</choice>
+			<choice req="mind" lvl="1" hidden="true">
+				<text>(Mind Control) Use your Mind control System to calm him down.</text>
+				<event>
+					<text>The Mantis calms down and communicates thanks to the Engi and yourself for helping. He requests to be dropped off at a nearby planet, at the human colony where he was raised. They are grateful for his return and offer a reward.</text>
+					<autoReward level="MED">standard</autoReward>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Explain that you can't do any programming and leave.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="CONFUSED_MANTIS_HOME">
+	<text>The colony is a mining operation that specializes in FTL fuel. Robert's family, the head engineers, are excited to see him, and are very grateful for his return. Apparently he ran away to 'join the Federation' like his older brother, but was never accepted onto a ship.</text>
+	<choice hidden="true">
+		<text>Offer him a position on your ship.</text>
+		<event>
+			<text>He graciously accepts, having always wanted to serve in the Federation.</text>
+			<crewMember amount="1" class="mantis">Robert Smith</crewMember>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ask if they can take a look at your engines.</text>
+		<event>
+			<text>They are happy to take a look, and are able to offer some suggestions for improvements.</text>
+			<upgrade amount="1" system="engines"/>
+		</event>
+	</choice>
+</event>
+
+<eventList name="CONFUSED_MANTIS_DEFAULT">
+	<event>
+		<text>After an hour of convincing, the Mantis finally calms down and introduces himself as Robert Smith. He explains he's from a nearby human colony and would appreciate being returned there.</text>
+		<choice>
+			<text>Continue...</text>
+			<event load="CONFUSED_MANTIS_HOME"/>
+		</choice>
+	</event>
+	<event>
+		<text>The cornered and frightened Mantis attacks as soon as you approach. One of your crew is eviscerated before the rest are able to stop him. The Engi apologize for your loss.</text>
+		<removeCrew>
+			<clone>true</clone>
+			<text>Your crew's clone is waiting when you return to the ship.</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>The cornered and frightened Mantis attacks as soon as you approach. You're able to subdue him and leave him at a Mantis colony in a neighboring system. They don't seem pleased or grateful at his return.</text>
+	</event>
+</eventList>
+
+
+
+<event name="PIRATE_SALESMAN" unique="true">  <!-- In NEUTRALS -->
+	<text>A ship with conspicuous pirate markings is orbiting a nearby moon, broadcasting a simple message claiming to have equipment available for sale.</text>
+	<choice>
+		<text>Hail the ship.</text>
+		<event load="CONTACT_PIRATE_SALESMAN"/>
+	</choice>
+	<choice>
+		<text>Attack him before he can attack!</text>
+		<event>
+			<ship load="PIRATE" hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Quickly prepare to jump away.</text>
+		<event/>
+	</choice>
+</event>
+<event name="CONTACT_PIRATE_SALESMAN">
+	<text>The ship responds "Yes, we have an extensive stock! Come aboard and see our wares!"</text>
+	<choice>
+		<text>Dock with the ship.</text>
+		<event load="DOCK_PIRATE_SALESMAN"/>
+	</choice>
+	<choice>
+		<text>This seems dangerous, leave.</text>
+		<event>
+			<text>As soon as you start to reverse your ship, the pirate reveals hidden weaponry and sets off in pursuit. You'll have to fight him to escape!</text>
+			<ship load="PIRATE" hostile="true"/>
+		</event>
+	</choice>
+	<choice req="slug">
+		<text>(Slug) "Sir: We can dock, but I sense that we better plan on making a purchase..."</text>
+		<event load="DOCK_PIRATE_SALESMAN"/>
+	</choice>
+	<choice req="hacking" hidden="true">
+		<text>(Hacking) Disable their Weapon system before docking.</text>
+		<event>
+			<text>You receive a hail as soon as your Hacking system finishes: "What have you done!? You can never trust a Federation ship! Here, take your 'standard toll'. I really should do business elsewhere, scum."</text>
+			<autoReward level="LOW">scrap_only</autoReward>
+		</event>
+	</choice>
+</event>
+<eventList name="DOCK_PIRATE_SALESMAN">
+	<!--<event load="DOCK_BOMB_SALESMAN"/>-->
+	<event load="DOCK_DRONE_SALESMAN"/>
+</eventList>
+<event name="DOCK_DRONE_SALESMAN">
+	<text>A human in an exquisite suit meets you on board. "Welcome to my ship! We specialize in drones of all kinds, can I interest you in any?"</text>
+	<choice>
+		<text>Buy some Drone parts.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-25" max="-25"/>
+				<item type="drones" min="5" max="5"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Buy a Drone schematic.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-35" max="-25"/>
+			</item_modify>
+			<drone name="RANDOM"/>
+		</event>
+	</choice>
+	<!-- MATT TODO -- make this work? -->
+	<choice req="drones" max_lvl="3" max_group="0" blue="false">
+		<text>Buy a Drone system upgrade.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-20" max="-15"/>
+			</item_modify>
+			<upgrade system="drones" amount="1"/>
+		</event>
+	</choice>
+	<choice req="drones" min_level="4" max_lvl="5" max_group="0" blue="false">
+		<text>Buy a Drone system upgrade.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-33" max="-25"/>
+			</item_modify>
+			<upgrade system="drones" amount="1"/>
+		</event>
+	</choice>
+	<choice req="drones" min_level="6" max_lvl="7" max_group="0" blue="false">
+		<text>Buy a Drone system upgrade.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-65" max="-50"/>
+			</item_modify>
+			<upgrade system="drones" amount="1"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Buy nothing.</text>
+		<event>
+			<text>"Ah, I'm sorry to hear that! Pleasant journeys." Once back to the helm, a series of explosions rocks your ship. The pirate ship has powered its weapons! You receive a message, "You shouldn't waste people's time Captain!"</text>
+			<ship load="PIRATE" hostile="true"/>
+			<damage amount="1" system="engines" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+		</event>
+	</choice>
+</event>
+<event name="DOCK_BOMB_SALESMAN">
+	<text>A human in an exquisite suit meets you on board. "Welcome to my ship! We specialize in explosives of all kinds, can I interest you in any?"</text>
+	<choice>
+		<text>Buy some missiles.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+				<item type="missiles" min="5" max="5"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Buy a bomb launcher.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-60" max="-40"/>
+			</item_modify>
+			<weapon name="WEAPONS_BOMBS_CHEAP"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Buy a rocket weapon.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-60" max="-50"/>
+			</item_modify>
+			<weapon name="WEAPONS_MISSILES_EXPENSIVE"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Buy nothing.</text>
+		<event>
+			<text>"Ah, I'm sorry to hear that! Pleasant journeys." Once back to the helm, a series of explosions rocks your ship. The pirate ship has powered its weapons!</text>
+			<ship load="PIRATE" hostile="true"/>
+			<damage amount="1" system="engines" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+		</event>
+	</choice>
+</event>
+
+
+<!-- boring neutral events
+
+REBEL_CHECKPOINT
+REBEL_HELPERS
+ROGUE_REBEL
+
+
+-->
+
+<textList name="REBEL_CHECKPOINT_TEXT">
+	<text>It looks like this Beacon is home to a Rebel checkpoint. They're stopping and searching any ship that passes through. Civilians are being harassed, and Federation members are detained. The Rebels haven't noticed you yet.</text>
+	<text>Another Rebel checkpoint is monitoring this location. A number of civilian ships are awaiting inspection, any of them could be Federation loyalists. The Rebels haven't noticed you yet.</text>
+	<text>A Rebel space station and single fighter is monitoring this Beacon for Federation activity. A number of civilian ships are docked, awaiting inspection by the Rebels and possible detainment if they are Federation loyalists. The Rebels haven't noticed you yet.</text>
+	<text>A rather large fleet of civilian ships are held up at this Beacon. It appears to be a Rebel checkpoint; everyone is being inspected for possible ties to the Federation. No one has noticed you yet.</text>
+</textList>
+<textList name="REBEL_BRIBE_TEXT">
+	<text>These Rebels are easily swayed by the prospect of additional scrap. They release the civilian ships and everyone is free to go.</text>
+	<text>Like most Rebels, these are just men trying to get by in a rough galaxy. They take your scrap and let everyone continue their journeys.</text>
+	<text>As everyone currently awaiting inspection is human anyway, the Rebels let them go. They take your scrap and tell you to hurry along.</text>
+	<text>They eagerly accept your bribe, obviously revolutionaries are under paid. The civilian ships all begin to jump away.</text>
+</textList>
+<textList name="GENERIC_HIDE_TEXT">
+	<text>Fly behind a moon and stay hidden.</text>
+	<text>Shut down all non-vital systems and stay hidden.</text>
+	<text>Stay quiet and hope they don't notice you.</text>
+	<text>Stay out of their way and charge your FTL drive.</text>
+</textList>
+<event name="REBEL_CHECKPOINT">
+	<text load="REBEL_CHECKPOINT_TEXT"/>
+	<choice>
+		<text>Fend for yourself, attack and escape.</text>
+		<event>
+			<ship load="REBEL" hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Bribe the Rebels to release the civilian ships.</text>
+		<event>
+			<text load="REBEL_BRIBE_TEXT"/>
+			<item_modify>
+				<item type="scrap" min="-15" max="-10"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Contact the civilian ships.</text>
+				<event load="REBEL_BRIBE_RESULT"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text load="GENERIC_HIDE_TEXT"/>
+		<event/>
+	</choice>
+</event>
+<eventList name="REBEL_BRIBE_RESULT">
+	<event>
+		<text>The civilians are grateful. However, none of them seem eager to be mistaken as Federation loyalists so they quickly jump away.</text>
+	</event>
+	<event>
+		<text>Some of the civilians pool together their excess scrap to try to repay you for your help.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>One of the civilian ships quietly teleports over a crate of Federation military supplies.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</event>
+	<event>
+		<text>One of the civilian ships contacts you and reveals they are Federation loyalists. An eavesdropping Rebel swoops in, destroys the ship, and turns to attack you!</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+</eventList>
+
+
+
+<textList name="REBEL_HELPERS_TEXT">
+	<text>You stumble across a Rebel ship distributing supplies to local civilian colonies. It's probably not anything military grade, but every little bit helps...</text>
+	<text>You find a Rebel combat ship that has been reassigned as an emergency supply vessel. The local civilians are apparently in need of help, and the Rebels are rising to the occasion.</text>
+	<text>The Rebels in this system are doing supply runs for the local space stations. These civilians have likely been out of supply for months due to the war and are in desperate need.</text>
+	<text>Civilian colonists loyal to the Rebel cause are present on a nearby planet. It looks like they are currently receiving a supply shipment. Could be useful.</text>
+	<text>Because of the war, thousands of colonists have had their supply lines disrupted and have found themselves in dire straits. It seems in this system, the Rebels are sympathetic and are distributing what little supplies they can spare.</text>
+</textList>
+<ship name="REBEL_HELPERS_SHIP" auto_blueprint="SHIPS_REBEL">
+	<destroyed>
+		<text>With the Rebel ship destroyed, you take the time to collect what little scrap remains. They had already made their delivery to the civilians.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text>Steal the civilian supplies.</text>
+			<event load="REBEL_HELPERS_SUPPLIES"/>
+		</choice>
+		<choice hidden="true">
+			<text>Leave the civilians alone.</text>
+			<event load="REBEL_HELPER_NO_SUPPLIES"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the Rebel crew dead, you strip their ship for equipment. They had already made their delivery to the civilians.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Steal the civilian supplies.</text>
+			<event load="REBEL_HELPERS_SUPPLIES"/>
+		</choice>
+		<choice hidden="true">
+			<text>Leave the civilians alone.</text>
+			<event load="REBEL_HELPER_NO_SUPPLIES"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="REBEL_HELPER_NO_SUPPLIES">
+	<text load="REBEL_HELPER_NO_SUPPLIES_TEXT"/>
+</event>
+
+<textList name="REBEL_HELPER_NO_SUPPLIES_TEXT">
+	<text>You make to preparations to leave. One of the civilian leaders contacts you: "That Rebel was our sole source of supplies. You have doomed us all."</text>
+	<text>You leave the civilians with the supplies, though without the Rebel that was running supplies to them its unlikely they'll live long.</text>
+	<text>You wonder if any more Rebels will be available to help these civilians on the edge of nowhere. Oh well, for you a few more dead Rebels matter more than the lives of a thousand colonists.</text>
+	<text>Before your FTL drive charges, you receive a hail: "My son was on that ship. He only helped the Rebels because they cared enough to help us. Without him to find us supplies, we'll likely be forgotten and die out here."</text>
+</textList>
+
+<event name="REBEL_HELPERS">
+	<text load="REBEL_HELPERS_TEXT"/>
+	<choice>
+		<text>Attack the Rebels.</text>
+		<event>
+			<ship load="REBEL_HELPERS_SHIP" hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Wait and steal the supplies from the civilians.</text>
+		<event load="REBEL_HELPERS_SUPPLIES"/>
+	</choice>
+	<choice>
+		<text>Leave them be.</text>
+		<event/>
+	</choice>
+</event>
+
+<eventList name="REBEL_HELPERS_SUPPLIES">
+	<event>
+		<text>The colonists hand over the supplies. It appears to be mostly equipment meant for automated farming, but you can make use of it. As you leave, you receive a message: "This is why the Rebels will always have support!"</text>
+		<autoReward level="LOW">droneparts</autoReward>
+	</event>
+	<event>
+		<text>The colonists hand over the supplies and you load it onto your ship. As you jump away, you crack it open and discover nothing more than vaccinations for a local plague.</text>
+	</event>
+	<event>
+		<text>You make the colonists teleport the supplies to your ship. It's nothing more than building construction supplies. Oh well, scrap is scrap.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>The colonists willingly give up their supplies. But as you make to jump away, an explosion rocks your ship. The cargo was booby trapped!</text>
+		<damage amount="2" system="room" effect="random"/>
+	</event>
+</eventList>
+
+
+
+<textList name="ROGUE_REBEL_TEXT">
+	<text>You arrive at a beacon located in a civilian star system. A nearby colony contacts you: "We've got a rogue Rebel ship harassing this system. Do you have time to find it?"</text>
+	<text>As soon as you arrive, you receive a Federation encrypted message: A Rebel ship has been terrorizing the local civilians in this system, please seek and destroy it.</text>
+	<text>You begin charging your FTL drive, and do a quick scan of a local planet. You find the ruins of a recently destroyed Federation colony of the surface. There must be a Rebel ship in the vicinity...</text>
+	<text>You jump into a field of debris. It appears a battle recently took place here, and the loser seems to have been a civilian ship. A message was left on repeat before it was destroyed: "Rebels attacking, please send aid!" The responsible Rebels are likely still nearby.</text>
+</textList>
+<event name="ROGUE_REBEL">
+	<text load="ROGUE_REBEL_TEXT"/>
+	<choice>
+		<text>Go looking for the Rebel ship.</text>
+		<event load="ROGUE_REBEL_SEARCH"/>
+	</choice>
+	<choice>
+		<text>No time to search, you prepare to jump away.</text>
+		<event/>
+	</choice>
+	<choice req="sensors" lvl="2" max_group="0">
+		<text>(Improved Sensors) Perform a scan of the area.</text>
+		<event>
+			<text>You quickly find the Rebel ship's location and move to intercept.</text>
+			<ship load="REBEL" hostile="true"/>
+		</event>
+	</choice>
+	<choice req="sensors" lvl="3" max_group="0" hidden="true">
+		<text>(Advanced Sensors) Pinpoint the Rebel's location.</text>
+		<event>
+			<text>You find the Rebel ship hiding on a nearby asteroid. You are able to get a shot off and permanently disable their engines before they notice you.</text>
+			<ship load="REBEL" hostile="true"/>
+			<status type="limit" target="enemy" system="engines" amount="0"/>
+		</event>
+	</choice>
+</event>
+<eventList name="ROGUE_REBEL_SEARCH">
+	<event>
+		<text>You spend some time looking around but your scanners cannot pick up any trace of the Rebel ship. You prepare to move on.</text>
+	</event>
+	<event>
+		<text>After a short search you find the Rebel ship. Let's hope he's as easy to defeat in combat as he was to find.</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+	<event>
+		<text>You are able to quickly track down the Rebel. Let's hope he's as easy to defeat in combat as he was to find.</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+	<event>
+		<text>After far too much time spent searching, you are finally able to track him down. You go into the fight pondering just how much of a head start you've lost on the Rebel Fleet...</text>
+		<modifyPursuit amount="1"/>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+</eventList>
+
+
+
+
+
+
+
+
+
+	<!--
+	<<<===== SPECIAL! =====>>>
+	-->
+
+
+
+
+
+
+
+
+

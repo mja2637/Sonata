@@ -2,6 +2,8 @@
 
 <img x="-73" y="50" w="566" h="511"/>
 
+<!-- Only used for iPad -->
+<glowOffset x="67" y="24"/>
 
 <weaponMounts>
 	<mount x="150" y="50" rotate="false" mirror="true" gib="4" slide="up"/>
@@ -20,20 +22,32 @@
 		<velocity min="0.1" max="1"/>
 		<direction min="20" max="160"/>
 		<angular min="-1" max="1"/>
-	</gib1>
+		<glowOffset x="28" y="26"/> <!-- individual setting -- only for ipad -- not needed -->
+		<x>379</x>
+		<y>150</y>
+	</gib2>
 	<gib2>
 		<velocity min="0.1" max="0.3"/>
 		<direction min="280" max="350"/>
 		<angular min="-1" max="1"/>
+		<glowOffset x="27" y="31"/> <!-- individual setting -- only for ipad -- not needed -->
+		<x>332</x>
+		<y>79</y>
 	</gib2>
 	<gib3>
 		<velocity min="0.4" max="1"/>
 		<direction min="190" max="260"/>
 		<angular min="-0.4" max="1"/>
+		<glowOffset x="27" y="24"/> <!-- individual setting -- only for ipad -- not needed -->
+		<x>184</x>
+		<y>0</y>
 	</gib3>
 	<gib4>
 		<velocity min="0" max="0"/>
 		<direction min="0" max="0"/>
 		<angular min="0" max="0"/>
+		<glowOffset x="25" y="24"/> <!-- individual setting -- only for ipad -- not needed -->
+		<x>42</x>
+		<y>0</y>
 	</gib4>
 </explosion>

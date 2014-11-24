@@ -1,0 +1,759 @@
+<!--
+	  ***********
+       TEXT LISTS
+	  ***********
+-->
+
+<textList name="TIPS_LIST">
+	<text>TIP: The civil war has set fathers against sons and best friends against each other - but the loyalists will show no mercy.</text>
+	<text>TIP: Weapons - Race-specific weapons are rarer, more expensive, and deadlier than their generic counterparts.</text>
+	<text>TIP: Weapon types - Missiles are good at ignoring shields, lasers fire damaging beams which shields stop, and kinetic weapons are somewhere in the middle.</text>
+	<text>TIP: Pausing -  Press SPACE at any time to pause the game. You can still issue orders to crew or manipulate system power while paused.</text>
+	<text>TIP: Upgrading - Weapons are deadlier in Sonata, and many ignore shields. Upgrade your ship's defense as soon as possible.</text>
+	<text>TIP: Weapon types - The United Empire uses kinetic weapons like railguns and Gauss guns. Drivers fire more quickly; Empire weapons tend to breach and ignore one shield.</text>
+	<text>TIP: Weapon types - The Sower use big cannon and quick-firing autocannon; some require ammunition. Their ships were built by the Endless, but their weapons are more primitive.</text>
+	<text>TIP: Weapon types - Sophons wield lasers, incredibly deadly weapons that cause fires and damage multiple rooms. Make sure your opponent's shields are down before firing.</text>
+	<text>TIP: System Damage -  When a System fully breaks due to fire or boarders, the hull also takes one damage.</text>
+	<text>TIP: United Empire - Most humans are citizens. It is democratic and has liberal laws. Humans being human, the United Empire can be quite aggressive towards other species.</text>
+	<text>TIP: The Sower - The Endless built the Sower as intelligent terraformers. They have evolved, but retain thier mission: prepare the universe for the return of their creators.</text>
+	<text>TIP: Sophons - The Sophon are an intelligent, inquisitive, emotional race. Although they are driven researchers, their interests extend to art and more...prurient activities.</text>
+	<text>TIP: The Endless - Artifacts of an incredibly advanced, ancient race called the Endless have been found throughout the galaxy; they are believed to be extinct.</text>
+	<text>TIP: Civil war - Many humans, unsatisfied with Empire government and society, have seceded. They are in a desparate fight for survival.</text>
+	<text>TIP: Pilgrims - Most of the seceding humans are Pilgrims. Pilgrims are unique among humanity in that they view the Endless as the Gods of old - most UE citizens are secular.</text>
+	<text>TIP: Shields - Modern starships are equipped with a suite of defensive measures that include armor, soft and hard anti-missile systems, and energy shields.</text>
+	<text>TIP: Shield Piercing - Missiles are agile enough to avoid being shot down and too heavy to be stopped by energy shields. Remember that Defense Drones can shoot down missiles!</text>
+	<text>TIP: Fire - As in ancient navies, fire is a starship's worst enemy. Many warships are built to allow atmosphere venting to prevent infernos.</text>
+	<text>TIP: Breach - Ship hulls are incredibly tough, and some are made from self-repairing nanomaterial. However, you can still to blow a hole large enough to require manual repair.</text>
+	<text>TIP: Evasion -  Evading enemy shots is crucial, but it requires working engines AND a pilot. Assigning an expert to man the engines will increase your evasion as well.</text>
+	<text>TIP: Sensors - If the ship goes dark, you need not panic. Just fix the Sensors Subsystem. Be forewarned that in the icy blackness of space, panic may well be appropriate.</text>
+	<text>TIP: Survival - I hope you know where your fucking towel is at.</text>
+	<text>TIP: Lasers - Laser weapons do damage based on the number of rooms they hit. Each Shield will block 1 damage of a laser; it's best to use lasers when enemy shields are down.</text>
+	<text>TIP: Health -  Pay attention to your crew's health! Use the medbay to keep them patched up.</text>
+	<text>TIP: Upgrades - Don't forget to upgrade your ship!  Often shields are the highest priority, but don't underestimate the usefulness of subsystems.</text>
+	<text>TIP: Fuel - Every jump consumes one unit of fuel, so keep an eye on your reserves.  Buy fuel at stores to avoid being left stranded.</text>
+	<text>TIP: Sower-Human relations - Sower are peaceful unless provoked, but several times their attempts to terraform populated worlds have provoked bloody battles.</text>
+	<text>TIP: Asteroids - Fighting in asteroid fields is dangerous, but use it to your advantage. Take out enemy shields and let the rocks take care of the rest.</text>
+	<text>TIP: Nebulas -  Passing through a Nebula will allow you to temporarily slow down the fleet advancement but they contain their own unique dangers.</text>
+	<text>TIP: Solar Flares - Solar flares will cause hull damage in addition to starting fires. Make sure your shields are up to help mitigate this effect.</text>
+	<text>TIP: Sower-Sophon relations - It is safe to assume that the Sophon drive to research and understand has extended to studying the Sower; conflict between the two races is rare.</text>
+	<text>TIP: Hotkeys -  You can charge or arm weapons using number hotkeys:  The Weapon Slots are 1-4 on your keyboard, and the Drones are 5-7.</text>
+	<text>TIP: Sophon-Human relations - The Sophon were the first friendly race contacted by humanity; theirs is a "special relationship" characterized by curiousity and friendship.</text>
+	<text>TIP: Sophon-Human relations - In the literal sense, Sophon-Human relations aren't rare. Interbreeding is impossible, but that hasn't stopped couples from enjoying the attempt.</text>
+	<text>TIP: Sophon-Empire relations - The United Empire has always maintained excellent relations with the Suphon, and refrained from expanding into traditional Sophon space.</text>
+	<text>TIP: Sophon-Empire relations - There are far more Humans than Sophon, and they have more of a taste for war. War between the two species is unthinkable to most, however.</text>
+	<text>TIP: Sophon-Pilgrim relations - Most Sophon strongly believe in freedom and independence, and hence support peaceful secession even if they disagree with some Pilgrim ideals.</text>
+	<text>TIP: Sophon-Pilgrim relations - It is well known that the Sophon disapprove of the Empire's violent handling of the secession incident.</text>
+	<text>TIP: Sophon-Pilgrim relations - Sophon-Empire relations make open support for the Pilgrims diplomatically unteneble - but they do provide some help behind the scenes.</text>
+	<text>TIP: Loyalists - Many loyal Empire citizens view the seceding Pilgrims as traitors. Humanity is the only known race that does not present a united front.</text>
+	<text>TIP: Civil war - The United Empire legislature hastily declared war when planets seceded. The official position is that it is not a war but an internal police action.</text>
+	<text>TIP: Civil war - The United Empire retained most of its industrial capacity post-secession. It will eventually win any war against the Pilgrims - if it has the stomach for it.</text>
+	<text>TIP: Civil war - The Pilgrims are frantically seeking a diplimatic resolution, but the United Empire will not accept anything other than a return to the pre-war status quo.</text>
+	<text>TIP: Breaches -  If a room with a breach has no Oxygen, try opening all the doors surrounding it to make it less hazardous.</text>
+	<text>TIP: Dust - The galaxy is covered in this stuff. It is an intelligent nanomaterial useful for science, repair, medicine, and even currency.</text>
+	<text>TIP: Dust - Dust was created by the Endless. Current technology cannot create it, but it is extremely useful in every field.</text>
+	<text>TIP: Dust - All known spacefaring races have discovered the existence of Dust. Its properties are so advanced as to be indestinguishable from magic.</text>
+	<text>TIP: Dust - Dust is normally detected and interacted with via specialized instruments: amber spyglasses and golden compasses. Just a gram of Dust is worth a fortune.</text>
+	<text>TIP: Dust - Almost all advanced equipment makes use of Dust in its construction. Dust is near-indestructible and can be recovered after the equipment is destroyed.</text>
+	<text>TIP: Font Size -  Pressing +/- will increase and decrease the font size of event texts.</text>
+	<text>TIP: Weapon Order - Rearrange a weapon or drone schematic by dragging it into the desired position. The left-most slot will be the last to power down if the system is damaged.</text>
+	<text>TIP: Door Subsystem - Upgrading your doors will greatly reduce the chance fire will spread between rooms and slow boarder movement.</text>
+</textList>
+
+<textList name="TIPS_LIST_PC">
+	<text load="TIPS_LIST"/>
+	<text>TIP: Pausing -  Press SPACE at any time to pause the game. You can still issue orders to crew or manipulate system power while paused.</text>
+	<text>TIP: Selling -  Weapons, USVs, and Augments can be sold for 1/2 the purchasing price at stores. Click on the SELL tab at the top.</text>
+	<text>TIP: Hotkeys -  You can charge or arm weapons using number hotkeys: The Weapon Slots are 1-4 on your keyboard, and the USVs are 5-7 (customizeable in the options).</text>
+	<text>TIP: Font Size -  Pressing +/- (customizable in options) will let you change the event text size.</text>
+	<text>TIP: Weapon Order -  Rearrange a Weapon or USV schematic by dragging it into the desired position. The left-most slot will be the last to power down if the system is damaged.</text>
+</textList>
+
+<!--  		***************************************
+					EXPOSITION EVENTS
+			********************************************
+-->
+
+<event name="NOTHING_1">
+	<img back="BG_BORING" planet="NONE"/>
+	<text load="NOTHING_TEXT"/>
+	<choice hidden="true" req="rock">
+		<text>Talk to your Sower crewmember.</text>
+		<event load="SOWER_EXP_1"/>
+	</choice>
+	<choice hidden="true" req="human">
+		<text>Talk to your Human crewmember.</text>
+		<event load="HUMAN_EXP_1"/>
+	</choice>
+	<choice hidden="true" req="energy">
+		<text>Talk to your Sophon crewmember.</text>
+		<event load="SOPHON_EXP_1"/>
+	</choice>
+</event>
+
+<event name="NOTHING_2">
+	<img back="BG_BORING" planet="NONE"/>
+	<text load="NOTHING_TEXT"/>
+	<choice hidden="true" req="rock">
+		<text>Talk to your Sower crewmember.</text>
+		<event load="SOWER_EXP_2"/>
+	</choice>
+	<choice hidden="true" req="human">
+		<text>Talk to your Human crewmember.</text>
+		<event load="HUMAN_EXP_2"/>
+	</choice>
+	<choice hidden="true" req="energy">
+		<text>Talk to your Sophon crewmember.</text>
+		<event load="SOPHON_EXP_2"/>
+	</choice>
+</event>
+
+<event name="NOTHING_3">
+	<img back="BG_BORING" planet="NONE"/>
+	<text load="NOTHING_TEXT"/>
+	<choice hidden="true" req="rock">
+		<text>Talk to your Sower crewmember.</text>
+		<event load="SOWER_EXP_3"/>
+	</choice>
+	<choice hidden="true" req="human">
+		<text>Talk to your Human crewmember.</text>
+		<event load="HUMAN_EXP_3"/>
+	</choice>
+	<choice hidden="true" req="energy">
+		<text>Talk to your Sophon crewmember.</text>
+		<event load="SOPHON_EXP_3"/>
+	</choice>
+</event>
+
+<event name="NOTHING_4">
+	<img back="BG_BORING" planet="NONE"/>
+	<text load="NOTHING_TEXT"/>
+	<choice hidden="true" req="rock">
+		<text>Talk to your Sower crewmember.</text>
+		<event load="SOWER_EXP_4"/>
+	</choice>
+	<choice hidden="true" req="human">
+		<text>Talk to your Human crewmember.</text>
+		<event load="HUMAN_EXP_4"/>
+	</choice>
+	<choice hidden="true" req="energy">
+		<text>Talk to your Sophon crewmember.</text>
+		<event load="SOPHON_EXP_4"/>
+	</choice>
+</event>
+
+<textList name="NOTHING_TEXT">
+	<text planet="NONE" back="BG_DARK">Your jump leads you to nothing but empty space. This Jump Beacon serves no purpose other than as a connection.</text>
+	<text planet="NONE">You jump into an unremarkable system. No life signs detected within scanning range.</text>
+	<text>Your scans reveal a mining base on a nearby planet long since abandoned. No life signs detected.</text>
+	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">Your scans reveal an ore refinery and several factories, all standing still and empty. No life signs detected.</text>
+	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">You discover a nearby planet speckled with settlements, although none respond to your hails.</text>
+	<text>This beacon has been built for a nearby civilian space-station. No one hails your ship.</text>
+	<text back="BACKGROUND_PLANET" planet="PLANET_POPULATED_SMALL">The nearby planet shows sign of habitation and great beauty. A rudimentary automated planetary defense system is looping its message into space: "Warning! Quarantine Level 5 in effect under FHA Act 22, article 11.2. Warning! Quarantine Level 5 ..."</text>
+	<text back="BINARY" planet="NONE">Your jump leads to a completely unremarkable binary star system. There is nothing else around.</text>
+	<text back="BINARY" planet="NONE">Your jump leads to a remarkable binary star system. The view is beautiful, but there is nothing else around.</text>
+	<text planet="NONE">Space, the final frontier. In an Endless galaxy full of asses, these are the voyages of a starship destined to kick them all.</text>
+</textList>
+
+<!-- Sower Exposition -->
+<eventList name="SOWER_EXP_1">
+	<event>
+		<text>You found a usable API early on - you can send simple messages such as "Guard" or "Repair", and the Sower was able and willing to do it. There's a higher-level language inside the kernel, worked into everything. You think you will eventually find a way to interface with it; it's just a matter of time.</text>
+	</event>
+	<event>
+		<text>Your Sower discovered and began using your ship computer's declared services remarkably fast. It recently began to output status messages to crewmember terminals - simple enumerations like "SYSTEM_REPAIR_TASK_SUCC_EN" and "O2_IN_NORM := true". It's learning.</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>Presumably, the Sower intelligence is a combination of programming and empiric data - nature and nuture. Without a way to rewrite their own progamming, though, Sower can only learn so much. Since you've observed drastic deviations from typical Sower behavior, there must be something deeper.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>It had rapidly pinged one of your ship's unused databases, so you started dumping simple data and function pointers into it in hopes of a communications breakthrough. After figuring out how to fling simple alphanumeric messages at one another, the Sower has started populating one column with code in an odd high-level language.</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>As best you can determine, this code poses no threat to your ship's systems. It seems to involve decision-making and experiencial behavior adjustment; you'll need to study it further in order to make any use of it.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="SOWER_EXP_2">
+	<event>
+		<text>"unit_identifier(_). unit_identifier(n,[H:sow]) :- member(H)." The terminal simply prints "true."; you quickly debug your code and try again. The Sower sends you what appears to be a process ID. After hastily adding a few additional enumerations linked to an English dictionary, you submit another query.</text>
+		<choice>
+			<text>"is_name(pid) := unique(pid), pid is 5834608."</text>
+			<event>
+				<text>"true."</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>While passing a Sower terraformer, your ship's ECW console lights up: your Sower is transmitting to the other ship! Acting hastily, you record the transmission and analyze the packet content. Surprisingly, they have a fundamentally different structure to your Sower's internal messages.</text>
+		<choice>
+			<text>Extrapolate...</text>
+			<event>
+				<text>This may be conclusive proof that Sower handle internal and external communications differently; is that enough for individuality? Your Sower just transmitted a short status message to the other ship. You wonder if they're just saying "Hey, how are you?" - strangers in the night.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>You've been steadily adding functions to the database in the Sower's own high-level language, at first simple chores like "clean-lavatory" and "polish-captains-boots". On a whim, you've decided to tackle more personal jobs - "respond-greeting-hello".</text>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>The Sower updates the database almost instantly. The code has been altered - a line inserted. (let (lambda(crwName) (display "RECEIVE_MSG " crwName " RECEIVER_ID " pid))) Perhaps it is merely complying with internal coding standards. But what if it's saying "Hi, my name is RECEIVER_ID"?</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="SOWER_EXP_3">
+	<event>
+		<text>You hit the macro to order your Sower to take a break from duty, and it responds on your console: "RECEIVE_MSG GENERIC_INPUT". It often "says" RECEIVE_MSG as a form of greeting or acknowledgement - but what is GENERIC_INPUT?</text>
+		<choice>
+			<text>"Man GENERIC_INPUT"</text>
+			<event>
+				<text>The Sower responds: "NaNNaNNaNNaNNaNNaN\nalias \"Captain\"\t95 percent of input" Is it laughing? It must have named you GENERIC_INPUT internally because you talk to it so much! You don't know whether to be amazed or offended.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Occasionally, the Sower will respond to a query with relatively verbose output. It answers to the strangest things - reactor temperature charts, raw sensor data, dubstep - but through clever selection you can converse with it.</text>
+		<choice>
+			<text>Allow it to sample your music library</text>
+			<event>
+				<text>When you attempt to copy your ship's music database into the Sower, you are denied permission - the files already exist. You perform some diagnostics; the Sower has spent trillions of processor cycles playing jazz. Logs indicate that the folder /skrillex has been overwritten with whitespace 8 times.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>After a hard day working on the aft thrust couplers, you are exhausted and covered in sweat. A low mechanical whirr announces your Sower's presence; it presents you with a hydration packet and displays a message on a nearby terminal - "SUFFICIENT EFFICIENCY".</text>
+		<choice>
+			<text>"Thanks."</text>
+			<event>
+				<text>Did you just thank a robot? You've noticed that it spends more time around other crewmembers than not, sometimes following them from room to room. You wonder if it has learned to be loyal to you.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="SOWER_EXP_4">
+	<event>
+		<text>You can now communicate with the Sower in plain text, for the most part - it's actually quite talkative at lower log severity levels. Since you're nearly at the end of your journey, you feel able to risk waxing philosophical with it.</text>
+		<choice>
+			<text>"Will we be victorious?"</text>
+			<event>
+				<text>"OBJECTIVES MET." That raised an eyebrow. You query - "OBJECTIVES?" - and realize that you had never specified a military victory. Eyes wet, you read its response: "[LIFE, LIBERTY, p_HAPPINESS]". Could a Sower ever realize what those words mean to you?</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>It is refreshing to see the world through the eyes of a robot; it is like talking to a great philosopher and a child at the same time. Late one night alone at the controls, you decide to strike up a conversation.</text>
+		<choice>
+			<text>You type. "ps -a" What're you thinking about?</text>
+			<event>
+				<text>It responds. "root 1 98.1 5.5 99:99" A whole lot of jack shit.</text>
+				<choice>
+					<text>You type. "cat /proc/acpi/battery/BAT0/state" Tired? How're you doing?</text>
+					<event>
+						<text>It responds. "present: yes capacity state: ok charging state: charged present rate: 1.3 gWh/s" Just fine. Fit as a fucking fiddle.</text>
+						<choice>
+							<text>You type. "man humanity" So...humans, amIright?</text>
+							<event>
+								<text>It responds. "true. unknown_parameters. false. !null. Exception in current_thread.future: INDEX_OUT_OF_BOUNDS" Humanity is confusing, mysterious - anything and everything except insignificant. Prospects for its future are both unknown and unlimited.</text>
+								<choice>
+									<text>Continue...</text>
+									<event>
+										<text>You smile. Its words, not yours.</text>
+									</event>
+								</choice>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Only a few jumps away from Pilgrim command, you resolve to thank your Sower crewmember in a fit of intense humanity. He's been with you for a while now; as much a part of the crew as anyone. One late night, you throw together an elegant high-level function you think will get the message across.</text>
+		<choice>
+			<text>Send it.</text>
+			<event>
+				<text>"ltl univ ([]!(!self &amp;&amp; !self.behavior)) You translate; the Sower is saying that it can never be other than itself - that it could not do other than it has done and will continue to do. The Sower's CPU usage rate is higher than you have ever seen it before.</text>
+				<choice>
+					<text>Wait...</text>
+					<event>
+						<text>The cursor blinks; it's still thinking. After several seconds text appears on your terminal. "It has been my pleasure to serve with you, Captain."</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<!-- Human Exposition -->
+<eventList name="HUMAN_EXP_1">
+	<event>
+		<text>He's a little more formal than the others, very disciplined and practiced in his words and actions. You find him in the cargo hold smoking a cigarette. "Smoke, sir?" He turns to face you and offers a pack.</text>
+		<choice>
+			<text>"No thanks."</text>
+			<event>
+				<text>He pockets the proffered pack. You ask him where he grew up; it turns out that you had a few obscure relatives in common, ones you hadn't seen since the secession. He gets visibly nervous when you ask about them, so you decide not to press.</text>
+			</event>
+		</choice>
+		<choice>
+			<text>"Sure."</text>
+			<event>
+				<text>You recognize the cigarette - it's a Baisha. They're popular in the Empire military; he lights it, and you take a drag. Tastes like proletariat. You talk shop about the past few ship engagements; nothing too heavy. There's no point in raising the issue of his past. He'll talk about it when he wants to.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>She came on board and immediately became one of the guys - her philosophy seems to be "work hard, play hard". She's already proved to be the best programmer on the ship. While refueling for the next jump, she walks up beside you and strikes a conversation. "Think we'll see any Sower out here?"</text>
+		<choice>
+			<text>"Sure, they're just about everywhere. Why do you ask?"</text>
+			<event>
+				<text>"I've always wanted to take a look at their source code - think of it. A truly alien language! I've heard they're close to sentient."</text>
+				<choice>
+					<text>"What about the Sophon?"</text>
+					<event>
+						<text>She makes a sour face. "Too many parenthesis!" You make a mental note to call her to the bridge the next time you see a Sower vessel.</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>"Look at these morons! They haven't even bothered to repaint the load lines!" He's loudly gesturing at a freighter out the window of the crew mess.</text>
+		<choice>
+			<text>"Repaint...?"</text>
+			<event>
+				<text>"Yeah, see that's an IHTG tradeship out of New Mumbai - but they're disguising themselves as locals. Probably spend less on bribes that way. But they're done a shitty job!"</text>
+				<choice>
+					<text>"IHTG...?"</text>
+					<event>
+						<text>"Interstellar Holdings Trading Group. Biggest Human corporation - thousands of freighters bigger'n the largest Sower!" Still loud. You suspect he was exaggerating the last part, but not as much as you suspect that he's drunk.</text>
+						<choice>
+							<text>"You some kind of expert?</text>
+							<event>
+								<text>"Yessir! Before the mast in the IHTG my whole life! Until the secession, anyway..." You quickly leave before he starts talking again.</text>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="HUMAN_EXP_2">
+	<event>
+		<text>It came out of FTL an hour after you did - a loyalist warship. It's on the edge of your sensor range and will probably detect you soon. You shoot your crewmember a look as if to say</text>
+		<choice>
+			<text>"You gonna be ok?" He's ex-UE military.</text>
+			<event>
+				<text>"Sir, I'm a career soldier. The side I'm on and the reasons they're fighting don't make one whit of difference to me. I will follow your orders, sir." That's the most he's said since he joined your crew. Time to see about that UE ship.</text>
+				<ship load="REBEL" hostile="true"/>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>"Look at this - the Federalists are filibustering." She's watching a news feed; although they have already voted for military action, the Empire legislature is still in deadlock over the secession issue.</text>
+		<choice>
+			<text>"Are you a Federalist?"</text>
+			<event>
+				<text>"No, Libertarian. I'm no Pilgrim, but I'm fucking pissed that we won't let you peacefully secede."</text>
+				<choice>
+					<text>"'We'?"</text>
+					<event>
+						<text>"Yup, I'm a proud United Empire citizen! But Pilgrim secession rights is a cause I believe in, so I've been fighting for it since I graduated from Musk Academy." She sounds a bit naive; you shudder at the cognitive dissonance it must take for her to reconcile that.</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>"Fucking loyalists," He's not even drunk this time. "Sex everywhere! Sophon drugs! Inter-species miscegenation! Free food replicators for fuckin' refugees and they expected US to pay for it? Fucking settlers scraping out a life on the edge of fuck-damn space?"</text>
+		<choice>
+			<text>"I guess we all had our reasons for joining the Pilgrims."</text>
+			<event>
+				<text>"Don't get ME started on 'reason' with all of this damn Sophon culture around our kids. We have one fucking chance - win the war, restore our sovereignty, close our borders, bring the humanity back to humanity." You're a Pilgrim, sure, but his views make you a bit uncomfortable.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="HUMAN_EXP_3">
+	<event>
+		<text>These last few battles have taken a toll on the ship - zipties and jury rigs are holding her together. You find him in the armory, cleaning his rifle.</text>
+		<choice>
+			<text>"Think we have a chance at winning this war?"</text>
+			<event>
+				<text>He puts down his rifle. "A lot of the veteran UE pilots joined us, and we're a long way from Earth. It's hard for them to direct all of their force at us." He pulls out a cigarette. "It can be done, but you'll have to fight dirty. Mercenaries, terrorist attacks, assassinations, that sort of thing. Do you have the stomach for it?"</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>She's always reading newsfeeds on the web - keeping up with politics and cute kittens. You figure she might be able to shed some insights on the current situations vis a vis the civil war.</text>
+		<choice>
+			<text>"Think we have a chance at winning this war?"</text>
+			<event>
+				<text>She shakes her head. "Hell no. Not in the numbers game. But," she twirls a pencil in her right hand, "the United Empire isn't so united. The hawks in the legislature are keeping the war on by the skin of their teeth - if the balance of power in the legislature changes, the UE might pull out. That's the only chance you guys have - we have to convince them to let you go."</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Their men aren't brutes enough: that's the trouble," you hear him roar, answering your question before you have a chance to finish. "They're a crowd of devitalized townsmen, and that's the truth of the matter. They can't produce better men for war than-" Than Pilgrims. Settlers, explorers, military veterans - the toughest of humans.</text>
+		<choice>
+			<text>"The United Empire has science, you know. It designed and it produces the ships and guns and equipment we use ."</text>
+			<event>
+				<text>"Which our nice healthy spacers and terraformers and so on, rowdy-dowdy shitkickers and alien-whackers, can use ten times better than-" You don't feel like continuing this line of conversation; you retire to your quarters to read from your well-thumbed collection of H.G. Wells short stories.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="HUMAN_EXP_4">
+	<event>
+		<text>"Ok, you know what to do. Four shifts, Bravo on preventative maintenance; get us ready to jump in 8 hours." Your crew has been together for months now, and works with rehearsed precision. You're walking from the bridge to the armory when he falls in beside you. "Fancy a smoke?" He raises an eyebrow.</text>
+		<choice>
+			<text>"Sure."</text>
+			<event>
+				<text>You follow him to your ship's cargo hold. He's not the talkative type, but you've shared hundreds of cigarettes down here in the hold together. As one, you light your Baishas and inhale.</text>
+				<choice>
+					<text>"What's on your mind, soldier?"</text>
+					<event>
+						<text>"It's coming close to the end, now. You're gonna win this thing or you aren't." He pauses, takes a drag of his cigarette. "Don't know how much Human skill matters when you're playing against fate."</text>
+						<choice>
+							<text>"Or playing for it."</text>
+							<event>
+								<text>He politely spits on the floor. "Luck means everything. I'm lucky I found this ship." He inhales again; deep this time. "Figure as far as luck goes, I couldn't have ended up serving a better Captain." He drops his cigarette, grinds it out with his boot, marches away. He's not much for sentiment.</text>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice>
+			<text>"You know I don't smoke."</text>
+			<event>
+				<text>He knows this; you follow him anyway, down to the ship's hold where the air is musty. He lights a cigarette and inhales.</text>
+				<choice>
+					<text>"What's on your mind, soldier?"</text>
+					<event>
+						<text>"It's coming close to the end, now. You're gonna win this thing or you aren't." He pauses, takes a drag of his cigarette. "Don't know how much Human skill matters when you're playing against fate."</text>
+						<choice>
+							<text>"Or playing for it."</text>
+							<event>
+								<text>He politely spits on the floor. "Luck means everything. I'm lucky I found this ship." He inhales again; deep this time. "Figure as far as luck goes, I couldn't have ended up serving a better Captain." He drops his cigarette, grinds it out with his boot, marches away. He's not much for sentiment.</text>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>This is a quiet sector - a good enough time for a birthday party, even if it's not for a month. She doesn't know if she'll even be alive in a month. After cutting the cake and cracking the beers open, the crew thumps their bottles on the table.</text>
+		<choice>
+			<text>"Speech! Speech!"</text>
+			<event>
+				<text>You wondered what this wet-behind-the-ears college girl would have in common with a crew full of hardened spacers, but you shouldn't have worried. She near burns your ears off - she can cuss better than them! The entire speech is full of references and private jokes; it's a tight-knit crew. Her speech draws to a close, when she announces that it is time for a toast.</text>
+				<choice>
+					<text>Raise your glass.</text>
+					<event>
+						<text>"A toast to the one who's kept us together, who's kept us alive. To the one who represents the best of ALL humanity - and to the one person who might be able to bring peace to it. A toast to our Captain!" The applause of your small crew sounds louder to your ears than an entire stadium of fans. You blush.</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>You've almost gotten used to your nightly booze sessions with him; I guess even bigotry grows on you after a while. You have to give him some grudging respect - he's been some through shit that would have unmade a lesser man. He's a tough, old, wise asshole - and right now, he's offering you a shot.</text>
+		<choice>
+			<text>"Jai ho!"</text>
+			<event>
+				<text>You down the shot, and he erupts in song. "That was a crazy game of poker! I lost it all...but someday I'll be back again and I, never to fall. Never to fall!" You wonder if there's any meaning to the song - he has the damndest habit of mixing politics and pop culture.</text>
+				<choice>
+					<text>"You're damn right! Pilgrims never to fall!"</text>
+					<event>
+						<text>You notice that he's not his normal cheery, patriotic self - he looks downright sad. "Humanity, son. We wanted to make things better - we didn't want to secede." You furrow your brow as he continues. "Even if we win this civil war, we still lose. We still haven't saved humanity. We've divided ourselves." Regaining his composure, he breaks back into song. "I say revolution, and you say jah! I say revolution, and you say jah jah jah!"</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<!-- Sophon Exposition -->
+<eventList name="SOPHON_EXP_1">
+	<event>
+		<text>You find your Sophon crewman in his quarters, door wide open. He is lounging back in his chair, arms akimbo, studying what appears to be the output from an oscilloscope.</text>
+		<choice>
+			<text>"What are you looking at?"</text>
+			<event>
+				<text>"This is one of your Human musical compositions. I have rendered it from 0.02 to 40 kilohertz, in your units; the visual is computed based on the instantaneous integral of the amplitude of various frequency bands."</text>
+				<choice>
+					<text>"You're watching a sound visualizer with the sound off?"</text>
+					<event>
+						<text>"Yes," the Sophon smiles, "can't you see that the sum of the math of its parts is what makes this song beautiful?"</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>She walks into your quarters wearing typical Sophon clothing - simple, brightly colored, form fitting. Like most female Sophon, she somehow simultaneously appears exotic, sensual, and completely alien. She looks you right in the eye. "A pleasure to ", and glances lower, "see you, Captain."</text>
+		<choice>
+			<text>Ask if all Sophon are this...forward.</text>
+			<event>
+				<text>"Humans are interesting. Humans are aesthetically pleasing. And you, Captain, have shown great leadership in coming this far. The Sophon in me wishes to join you in study." Although the Human in you would not mind putting some Human in her, that would be highly unprofessional. </text>
+				<choice>
+					<text>"Humans think Sophon are mysterious and beautiful in the same way. Do you think there's some kind of reason for that?"</text>
+					<event>
+						<text>She slaps you. "Inappropriate! Secrets such as this are not kept with strangers." They wear their libido on their sleeve and guard their knowledge carefully; the Sophon are a strange race.</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice>
+			<text>Discuss the nature of Human professional relationships.</text>
+			<event>
+				<text>"We don't compartmentalize "work" and "play" as you do; to join and to study are merely different contexts for action." </text>
+				<choice>
+					<text>"We can do the same thing intellectually, but Human emotions can make it difficult."</text>
+					<event>
+						<text>"How can joy, passion, and curiosity impair a professional relationship?" You know the Sophon to be emotional creatures, but perhaps their emotional makeup is different than yours. Do they know love? Empathy? Sorrow? Questions for a different time; it is enough that she agree to abide by Human social conventions for the time being.</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>The Sophon is at her station, some sort of electronic cigarette clenched between her teeth. As you approach, she speaks without looking up. "This ship is ingenious."</text>
+		<choice>
+			<text>"How's that?"</text>
+			<event>
+				<text>"Features no Sophon would have thought of, facilities we would have considered unnecessary. A complex juxtaposition of art and science." Looking around the purely functional interior of your ship, you find it hard to agree. Perhaps this Sophon, appalled at the lack of theoretical purity on a military vessel, equates its technology with art.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="SOPHON_EXP_2">
+	<event>
+		<text>You ask her about the difference between the Sophon and Human approaches to science. "Sophon science is without goal, without purpose. We do it for fun. Take Newton's Principia Mathematica - oh, Sophon children can perform those proofs for hours!" </text>
+		<choice>
+			<text>"Similar to a Human child playing a video game?"</text>
+			<event>
+				<text>"Quite. Humanity is quite different; your government sponsors directed research, and your students are content to re-use theories without enjoying their discovery themselves. The Sophon research purely for pleasure - and some of the oldest theories are the most fun. The derivation of the quadratic formula is one of my favorites."</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Your Sophon crewmember has completed reams of calculations based on local gravimetric readings. You pause him to ask a question which has been troubling you.</text>
+		<choice>
+			<text>"The Sophon are a much older race than humanity; shouldn't your science be much farther ahead of ours than it is?"</text>
+			<event>
+				<text>"We know more, certainly. Perhaps it is because to be a scientist is to be a Sophon, inseparably. We don't have the same insatiable drive for advancement, for power, as Humanity - we seek understanding, elucidation, joy."</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Your Sophon crewmember has showed some interest in your ship's internals. Running your hand proudly along one of the immense power cables running from the capacitor bank directly to the reactor, you ask a question.</text>
+		<choice hidden="true" req="ENERGY_SHIELD">
+			<text>"That energy shield has saved our collective asses more than a few times. How does it work?</text>
+			<event>
+				<text>"Halibut."</text>
+				<choice>
+					<text>"Uh...just what the icy fuck are you talking about?"</text>
+					<event>
+						<text>He winks at you. "That's exactly what you'd say if I told you."</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true" req="ROCK_ARMOR">
+			<text>"Do you think the ship's hull is really made from Endless technology?</text>
+			<event>
+				<text>"I'm sure it is, since the Sower themselves were created by the Endless." She bites her lower lip and shakes her head slightly. "Wasteful stuff, really. I'm surprised the Endless sullied their hands with something so...unsophisticated."</text>
+				<choice>
+					<text>"Do you have any idea how they did it?"</text>
+					<event>
+						<text>"Created this hull material? Yes of course, it's quite easy. Boring, actually." Your eyes widen. Perhaps this could be the key to a Pilgrim victory?</text>
+						<choice>
+							<text>"That's amazing! Open a channel to the nearest Pilgrim outpost, we need to share this informati-"</text>
+								<text>You stop talking when your Sophon crewmember starts to chuckle. You ask her what's so funny. "It's a piece of cake - all you need are a baryon-antibaryon annihilation reactor, 50 trillion gigajoules of energy, and several hundred kilograms of Dust..."</text>
+								<event>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>"She's a good ship. How do you think she'd stack up against a Sophon frigate?"</text>
+			<event>
+				<text>"By scale or by purpose? We would classify vessels this size, in Human, with the prefix 'Kilo'. The suffix indicates the ship's role - discovery, exploration, conflict. There's no direct translation."</text>
+				<choice>
+					<text>"One of your...'Kilo' ships, then. How do they compare?"</text>
+					<event>
+						<text>"Your ship is...childish. Inefficient, incoherent, and irrational. In terms of certain metrics, though, your ship is equal or superior to the equivalent Sophon vessel."</text>
+						<choice>
+							<text>"Certain metrics?"</text>
+							<event>
+								<text>"Certain derived qualities. Maximum delta-v, system reliability, weapons and reactor output." You smile at the compliment, even if the Sophon doesn't realize that's what it was.</text>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="SOPHON_EXP_3">
+	<event>
+		<text>You've easily formed a solid working relationship with your Sophon crewmember; that species is not known for causing much drama. You decided to ask him his personal thoughts on the civil war, not knowing whether you risk your relationship.</text>
+		<choice>
+			<text>"Honestly...do you think the Pilgrims are right?"</text>
+			<event>
+				<text>"'Honestly'? Redundant. Your question is ambiguous, but I believe you are asking whether the actions of the seceding planets are morally justifiable - is that correct?"</text>
+				<choice>
+					<text>Nod.</text>
+					<event>
+						<text>"Rational or not, by Sophon morality or by Human, all beings should have the right to choose their own company - 'freedom of association', I believe, is the Human term. All beings should have the right to believe what they wish."</text>
+						<choice>
+							<text>"That answer was less than satisfying."</text>
+							<event>
+								<text>The Sophon looks puzzled, so you continue, attempting to phrase your question in a way he would understand. "I want a personal value judgement - an opinion - not scientific objectivity." He responds: "Justice is a kind of compact not to harm or be harmed. The Pilgrims are just."</text>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice>
+			<text>"Honestly...do you think we can win this war?"</text>
+			<event>
+				<text>"This is a poor question. Do you realize that the Pilgrim military cannot defeat the United Empire's military conventionally?"</text>
+				<choice>
+					<text>"Just what are you saying?" (...you bastard)</text>
+					<event>
+						<text>"It is so improbable as to be impossible. In order to remain a free nation, the Pilgrims will have to change the way they fight, or change the way they live."</text>
+						<choice>
+							<text>"Change the way we fight? You mean guerilla warfare."</text>
+							<event>
+								<text>"If you must fight. There are other ways to save the Pilgrims." You sense that the conversation is over.</text>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>It's been all over the news - pirates attacked and destroyed a ship bearing a Sophon representative to the Pilgrim council. Many commentators believe that the pirates were in fact privateers hired by the United Empire or one of its intermediaries; you ask your Sophon crewman to comment.</text>
+		<choice>
+			<text>"Do you think the rumors are true?"</text>
+			<event>
+				<text>"I hope they are not. It is...disturbing...to think that part of your species would seek to stop us from befriending all of your species. My friends have had much fun with Pilgrims on archeological expeditions near Sophis."</text>
+				<choice>
+					<text>"If it came down to it - do you think the Sophon will pick sides?"</text>
+					<event>
+						<text>"We would rather stop this conflict than anything else. We will maintain relations with all humanity, regardless of the outcome - but it may be from a greater distance."</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>You've never been very religious, but like most Pilgrims you extend the Endless a particular reverence. Throughout humanity's history, there have always been hints of the Endless - mysterious, miraculous galactic predecessors. Over dinner, you ask your Sophon crewmember about them.</text>
+		<choice>
+			<text>"Are the Sophon religious?"</text>
+			<event>
+				<text>"It's a puzzling question!" she laughs. "After living with you for several weeks now - I don't think we have anything like it." You laugh too; it's hard to imagine the flighty and curious Sophon revering a mere god.</text>
+				<choice>
+					<text>"Well, the Endless then."</text>
+					<event>
+						<text>Enough said; the Sophon are familiar enough with the religion of the Pilgrims. "We see them much the same as most Humans do", she says, pausing to savor a bit of bok choy, "Interesting. Advanced. Ancient. Beings just like us." This is of course heresy - but you're not one of THOSE Pilgrims.</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="SOPHON_EXP_4">
+	<event>
+		<text>"There are significant factions on Sophis that propose aid to the Pilgrims beyond all reason." A little blunt, sure, but that's just how the Sophon are.</text>
+		<choice>
+			<text>"Do you have a hypothesis?"</text>
+			<event>
+				<text>"Certain schools of Human thought are becoming popular among Humans - among them, realpolitik. Humans are an...imposing...race, and therefore a divided humanity is beneficial for the Sophon."</text>
+				<choice>
+					<text>"Do you agree with them?"</text>
+					<event>
+						<text>"Humanity is certainly powerful. But realpolitik is based on circumstance, not pure theory; it is not quite a 'Sophon' way of thinking. I do not know that the Sophon should become too fond of thinking in this barbaric fashion."</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>After a hair-raising experience with normally friendly Sophon border guards, you realize that you don't know much about your crewmember's status in their society - so you ask.</text>
+		<choice>
+			<text>"Does the Sophon government know you're here?"</text>
+			<event>
+				<text>"My presence on your ship is not inconvenient for them. Sophon tend to be more agreeable than humans - we don't need much in the way of laws or citizenship. If consensus decides that my actions are incorrect, I will leave."</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>It's been obvious on both sides for months now. Winks, furtive glances exchanged in empty hallways - that sort of thing. But you had an agreement, which is why you're surprised when she shows up at the door to your quarters unannounced.</text>
+		<choice>
+			<text>"To what do I owe the pleasure?"</text>
+			<event>
+				<text>"For good or for ill, this war will be over soon. May I come in?"</text>
+				<choice>
+					<text>"Of course. And of course."</text>
+					<event>
+						<text>She smiles at your childish wit and enters, although she remains at a respectful distance. "Captain, I believed we agreed to abide by Human professional standards of conduct until our mission is complete; that time is nearly at hand." It's a leading question.</text>
+						<choice>
+							<text>"When this is all over, what are you going to do?" Assuming we're all still alive.</text>
+							<event>
+								<text>"My time with you has been...interesting. There is much I don't yet understand...about you." She's flirting with you - but you can tell she's struggling to do it in a Human way. You're confused - Sophon don't feel love or attraction in the same way as Humans, do they?</text>
+								<choice>
+									<text>"It would be a shame for it to end."</text>
+									<event>
+										<text>You're attracted to her, sure, but you don't know that you could ever have a relationship with...one of THEM. It would be frowned upon by the Council. But the words slipped out before you thought about them, and she responds quickly. "Until duty's end." She leaves. You have some hard thinking to do.</text>
+									</event>
+								</choice>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<event name="ASTEROID_TEST">
+	<img back="BG_DARK" planet="NONE"/>
+	<text>We've come out in an asteroid field! We'll have to wait for the FTL to charge before we can get out of here, let's hope the ship holds up.</text>
+	<environment type="asteroid"/>
+</event>
+
+<event name="CASH_IN_DRONE">
+	<text>Your ship is currently not equipped with an unmanned space vehicle deployment system. You reduce the USV schematic to Dust.</text>
+	<choice>
+		<text>Continue...</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="UNLOCK_STEALTH">
+	<text>You stumble across a hidden Empire research laboratory!  They have been experimenting with some unique ship designs.  You download their blueprints for future use.</text>
+</event>
