@@ -281,6 +281,21 @@
 	<name>ION_2</name>
 </blueprintList>
 
+<!-- USED IN EVENT DOCK_BOMB_SALESMAN -->
+<blueprintList name="WEAPONS_BOMBS_CHEAP">
+	<name>BOMB_ION</name>
+	<name>BOMB_1</name>
+	<name>BOMB_BREACH_1</name>
+</blueprintList>
+
+<!-- USED IN EVENT DOCK_BOMB_SALESMAN -->
+<blueprintList name="WEAPONS_MISSILES_EXPENSIVE">
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILES_BREACH</name>
+</blueprintList>
+
+
 <blueprintList name="WEAPONS_CRYSTAL">
 	<name>ION_MISSILE</name>
 </blueprintList>
